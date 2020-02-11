@@ -105,7 +105,7 @@ class RedmineIssueDownloader:
             msg('Data from request (as text): %s' % r.text)
             raise Exception('Failed to convert issue count data to JSON.\nUrl: %s\nAuth:%s" % (url, auth)')
 
-        if not data.has_key('total_count'):
+        if 'total_count' not in data:
             msgx('Total count not found in data: \n[%s]' % data)
 
         return data['total_count']
@@ -166,7 +166,7 @@ print (data['total_count'])
 
         RECORD_RETRIEVAL_SIZE = 100
 
-        num_loops = ticket_cnt / RECORD_RETRIEVAL_SIZE
+        num_loops = ticket_cnt // RECORD_RETRIEVAL_SIZE
         extra_recs = ticket_cnt % RECORD_RETRIEVAL_SIZE
         if extra_recs > 0:
             num_loops+=1
