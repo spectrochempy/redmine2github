@@ -169,7 +169,7 @@ class LabelHelper:
 
         for name in label_names:
             github_label_name = self.label_map.get_github_label_from_redmine_name(name)
-            print 'name', name, 'github_label_name: ', github_label_name
+            print('name', name, 'github_label_name: ', github_label_name)
             if github_label_name:
                 mapped_label_names.append(github_label_name)
         #msgx('blah')

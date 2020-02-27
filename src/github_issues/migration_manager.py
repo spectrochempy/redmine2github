@@ -143,7 +143,7 @@ class MigrationManager:
             # Don't process after the redmine_issue_END_number
             if self.redmine_issue_end_number:
                 if redmine_issue_num > self.redmine_issue_end_number:
-                    print redmine_issue_num, self.redmine_issue_end_number
+                    print(redmine_issue_num, self.redmine_issue_end_number)
                     break
             
             issue_cnt += 1
@@ -187,7 +187,7 @@ class MigrationManager:
             # Don't process after the redmine_issue_END_number
             if self.redmine_issue_end_number:
                 if redmine_issue_num > self.redmine_issue_end_number:
-                    print redmine_issue_num, self.redmine_issue_end_number
+                    print(redmine_issue_num, self.redmine_issue_end_number)
                     break
             
             issue_cnt += 1
@@ -208,7 +208,7 @@ class MigrationManager:
                 time.sleep(1)
 
 if __name__=='__main__':
-    json_input_directory = os.path.join(REDMINE_ISSUES_DIRECTORY, '2014-1224')
+    json_input_directory = os.path.join(REDMINE_ISSUES_DIRECTORY, '2020-0227')
 
     kwargs = dict(include_comments=True\
                 , redmine_issue_start_number=1\

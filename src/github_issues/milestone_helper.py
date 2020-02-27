@@ -95,7 +95,7 @@ class MilestoneHelper:
             #auth = dict(login=GITHUB_LOGIN, password=GITHUB_PASSWORD_OR_PERSONAL_ACCESS_TOKEN, repo=GITHUB_TARGET_REPOSITORY, user=GITHUB_TARGET_USERNAME)
             self.github_conn = pygithub3.Github(**get_github_auth())
         return self.github_conn
-        
+
     def get_create_milestone_number(self, title):
         """Given a milestone title, retrieve the milestone number.
         If the milestone doesn't exist, then create it and return the new number
