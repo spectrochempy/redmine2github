@@ -163,7 +163,7 @@ class MilestoneHelper:
             return None
 
         fixed_version = redmine_issue_dict.get('fixed_version', {})
-        if not fixed_version.has_key('name'):
+        if 'name' not in fixed_version:
             return None
 
 

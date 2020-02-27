@@ -403,7 +403,7 @@ class GithubIssueMaker:
         if not status_info:
             return False
 
-        if status_info.has_key('name') and status_info.get('name', None) in self.ISSUE_STATE_CLOSED:
+        if 'name' in status_info and status_info.get('name', None) in self.ISSUE_STATE_CLOSED:
             return True
 
         return False

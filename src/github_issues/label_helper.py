@@ -142,7 +142,7 @@ class LabelHelper:
             if label_info_dict is None:
                 return None
         
-        if label_info_dict.has_key('id') and label_info_dict.has_key('name'):
+        if 'id' in label_info_dict and 'name' in label_info_dict:
             if non_formatted:
                 return label_info_dict['name']
                 
