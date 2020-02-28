@@ -2,9 +2,16 @@
 
 Scripts to migrate redmine tickets to github issues.  This is for a 1-time move--so it's a mix of automation and manual decisions.  e.g., Get-it-done, but make the process repeatable.
 
-### Setup with [virtualenvwrapper](http://virtualenvwrapper.readthedocs.org/en/latest/install.html#basic-installation)
+### Setup with [virtual environment](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
 
-* ```mkvirtualenv redmine_move```
+Install pip
+* ```python3 -m pip install --user --upgrade pip```
+
+Run venv in the project directory
+* ```python3 -m venv env```
+* ```source env/bin/activate```
+
+Install required packages
 * ```pip install -r requirements/base.txt```
 
 ### Make a config file
