@@ -213,10 +213,10 @@ if __name__=='__main__':
     kwargs = dict(include_comments=True\
                 , redmine_issue_start_number=1\
                 , redmine_issue_end_number=5000\
-                #, user_mapping_filename=USER_MAP_FILE       # optional
+                , user_mapping_filename=USER_MAP_FILE       # optional
                 , include_assignee=False    # Optional. Assignee must be in the github repo and USER_MAP_FILE above
                 , label_mapping_filename=LABEL_MAP_FILE     # optional
-                #, milestone_mapping_filename=MILESTONE_MAP_FILE # optional
+                , milestone_mapping_filename=MILESTONE_MAP_FILE # optional
             )
     mm = MigrationManager(json_input_directory\
                             , REDMINE_TO_GITHUB_MAP_FILE\
