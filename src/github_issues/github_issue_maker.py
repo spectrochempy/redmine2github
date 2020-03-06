@@ -335,7 +335,7 @@ class GithubIssueMaker:
 
         # Format related ticket numbers
         #
-        related_commits_formatted = [ """%s - %s""" % (x, (related_comments[i][:50].replace("\n","") + '..') if len(related_comments[i]) > 50 else related_comments[i].replace("\n","")) for i,x in enumerate(related_revision)]
+        related_commits_formatted = [ """%s - %s""" % (x, (related_comments[i][:50].replace("\n","").replace("#","") + '..') if len(related_comments[i]) > 50 else related_comments[i].replace("\n","").replace("#","")) for i,x in enumerate(related_revision)]
         related_commits_str = '\n '.join(related_commits_formatted)
         msg('Related commits:\n %s' % related_commits_str)
 
