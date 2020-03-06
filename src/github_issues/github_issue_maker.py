@@ -257,6 +257,108 @@ class GithubIssueMaker:
         msg('Issue updated!')#' % issue.body)
 
 
+    def update_github_issue_with_commits(self, redmine_json_fname, redmine2github_issue_map):
+        """
+        Update a GitHub issue with related commits as specified in Redmine changesets
+
+        - Read the current github description
+        - Add related notes to the bottom of description
+        - Update the description
+
+        "changesets": [
+                {
+                    "revision": "4d5f6793c5ed41ae58037765bbcadeceb9a58f72",
+                    "user": {
+                        "id": 140,
+                        "name": "Spyhawk"
+                    },
+                    "comments": "mod: use fixed height hitboxes from etpub, refs #198",
+                    "committed_on": "2013-11-27T20:38:24Z"
+                },
+                {
+                    "revision": "f24596c5b8a4574b636e86b33b079ecaef4f5adb",
+                    "user": {
+                        "id": 140,
+                        "name": "Spyhawk"
+                    },
+                    "comments": "game: added g_debugHitboxes CVAR_CHEAT, refs #198",
+                    "committed_on": "2013-11-27T20:38:58Z"
+                }
+        ],
+        "id": 198,
+        """
+        if not os.path.isfile(redmine_json_fname):
+            msgx('ERROR.  update_github_issue_with_commits. file not found: %s' % redmine_json_fname)
+
+        #msg('issue map: %s' % redmine2github_issue_map)
+
+        json_str = open(redmine_json_fname, 'rU').read()
+        rd = json.loads(json_str)       # The redmine issue as a python dict
+        #msg('rd: %s' % rd)
+
+        if rd.get('changesets', None) is None:
+            msg('no changesets')
+            return
+
+        redmine_issue_num = rd.get('id', None)
+        if redmine_issue_num is None:
+            return
+
+        github_issue_num = redmine2github_issue_map.get(str(redmine_issue_num), None)
+        if github_issue_num is None:
+            msg('Redmine issue not in nap')
+            return
+
+
+        # Related commits under 'changesets'
+        #
+        related_revision = []
+        related_comments = []
+        for change in rd.get('changesets'):
+            revision = change.get('revision', None)
+            comments = change.get('comments', None)
+            if revision is None:
+                continue
+
+            related_revision.append(revision)
+            related_comments.append(comments)
+        #
+        # end: Related tickets under 'changesets'
+
+
+        #
+        # Update github issue with related changeset commits
+        #
+        #
+        if len(related_revision) == 0 and len(related_comments)==0:
+            return
+
+        # Format related ticket numbers
+        #
+        related_commits_formatted = [ """%s - %s""" % (x, (related_comments[i][:50].replace("\n","") + '..') if len(related_comments[i]) > 50 else related_comments[i].replace("\n","")) for i,x in enumerate(related_revision)]
+        related_commits_str = '\n '.join(related_commits_formatted)
+        msg('Related commits:\n %s' % related_commits_str)
+
+        try:
+            issue = self.get_github_conn().issues.get(number=github_issue_num)
+        except pygithub3.exceptions.NotFound:
+            msg('Issue not found!')
+            return
+
+        template = self.jinja_env.get_template('related_commits.md')
+
+        template_params = { 'original_description' : issue.body\
+                            , 'related_commits' : related_commits_str\
+
+                            }
+
+        updated_description = template.render(template_params)
+
+        issue = self.get_github_conn().issues.update(number=github_issue_num, data={'body':updated_description})
+
+        msg('Issue updated!')#' % issue.body)
+
+
     def format_redmine_issue_link(self, issue_id):
         if issue_id is None:
             return None

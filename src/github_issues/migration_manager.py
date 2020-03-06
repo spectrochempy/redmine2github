@@ -154,8 +154,43 @@ class MigrationManager:
         
             gm.update_github_issue_with_related(json_fname_fullpath, redmine2github_issue_map)
             
-    
-    
+    def migrate_related_commits(self):
+        """
+        After github issues are already migrated, go back and udpate the descriptions to include related commits
+
+        """
+
+        gm = GithubIssueMaker()
+
+        issue_cnt = 0
+        redmine2github_issue_map = self.get_dict_from_map_file()
+
+        for json_fname in self.get_redmine_json_fnames():
+
+            # Pull the issue number from the file name
+            redmine_issue_num = int(json_fname.replace('.json', ''))
+
+            # Start processing at or after redmine_issue_START_number
+            if not redmine_issue_num >= self.redmine_issue_start_number:
+                msg('Skipping Redmine issue: %s (start at %s)' % (redmine_issue_num, self.redmine_issue_start_number ))
+                continue        # skip Attempt to create issue
+                # his
+
+            # Don't process after the redmine_issue_END_number
+            if self.redmine_issue_end_number:
+                if redmine_issue_num > self.redmine_issue_end_number:
+                    print(redmine_issue_num, self.redmine_issue_end_number)
+                    break
+
+            issue_cnt += 1
+
+            msgt('(%s) Loading redmine issue: [%s] from file [%s]' % (issue_cnt, redmine_issue_num, json_fname))
+
+            json_fname_fullpath = os.path.join(self.redmine_json_directory, json_fname)
+
+            gm.update_github_issue_with_commits(json_fname_fullpath, redmine2github_issue_map)
+
+
     def migrate_issues(self):
         
         self.sanity_check()
@@ -234,5 +269,10 @@ if __name__=='__main__':
     #-------------------------------------------------
     #mm.migrate_related_tickets()
 
+    #-------------------------------------------------
+    # Run 3 - Using the issues maps created in Run 1 (redmine issue num -> new github issue num),
+    #        update github issues to include commits to related tickets
+    #
+    #-------------------------------------------------
+    #mm.migrate_related_commits()
 
-        
