@@ -1,0 +1,114 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "60beb18bc2a4a1cd61e8739254cf196d98e02c18",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: increased r_displayRefresh range check, fixes #1322",
+            "committed_on": "2019-07-11T16:13:16Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 8375,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Sounds like a relic. I see no issue in increasing this value.",
+            "created_on": "2019-07-11T15:54:55Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "16",
+                    "new_value": "25"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8376,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:60beb18bc2a4a1cd61e8739254cf196d98e02c18.",
+            "created_on": "2019-07-11T16:16:23Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1322,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "category": {
+        "id": 25,
+        "name": "Renderer"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Increase r_displayrefresh limit",
+    "description": "There currently is a limit of 200 for r_displayrefresh which doesn't make much sense for 240hz monitors.\r\n@sensi_ from Discord asked about the possibility of increasing this limit.\r\nAre there reasons against that (backwards compatibility) or is this limit simply an old relic?",
+    "start_date": "2019-07-11",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-07-11T11:38:41Z",
+    "updated_on": "2019-07-11T16:16:23Z",
+    "closed_on": "2019-07-11T16:16:23Z"
+}

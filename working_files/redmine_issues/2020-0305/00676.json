@@ -1,0 +1,406 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 158,
+            "issue_id": 676,
+            "issue_to_id": 586,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 165,
+            "issue_id": 676,
+            "issue_to_id": 703,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "e364ceca10a8b7b1a96df4d4c4231a4185dbd1e8",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: changed adrenaline shader to match syringe color, fixes #676",
+            "committed_on": "2014-11-29T09:36:50Z"
+        },
+        {
+            "revision": "e5640250403e5ff9463a9ee5e191a6bdc0c885d5",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: fixed adrenaline shader color, refs #676",
+            "committed_on": "2015-12-02T13:48:02Z"
+        },
+        {
+            "revision": "bac157a2ecfbe9768009b4cc7597e3a2bee8d83d",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: better workaround for self adrenaline shader color, refs #676",
+            "committed_on": "2015-12-02T16:31:43Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3910,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-11-28T15:34:51Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "586"
+                }
+            ]
+        },
+        {
+            "id": 3916,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "This is not a bug. Syringe and adrenaline are the very same thing. Lvl 4 medic just earn the ability to inject syringe to themselves while being alive. \r\n\r\nHowever, the color of self-adrenaline might be adjusted to match the color of syringe (red to green).",
+            "created_on": "2014-11-28T18:01:00Z",
+            "details": []
+        },
+        {
+            "id": 3917,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Yeah, that would be pretty nice addition.\r\n\r\n-*S",
+            "created_on": "2014-11-28T18:06:01Z",
+            "details": []
+        },
+        {
+            "id": 3925,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-29T09:42:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3928,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Oops, the legacy shader isn't overwriting the default shader provided by script/models_multiplayer.shader (pak0.pk3) . Reopening.",
+            "created_on": "2014-11-29T11:20:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 3972,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-12-02T17:22:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Using syringe will decrease the number of adrenalines and vice versa",
+                    "new_value": "Change adrenaline shader to match syringe color"
+                }
+            ]
+        },
+        {
+            "id": 4022,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2014-12-10T14:01:27Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "703"
+                }
+            ]
+        },
+        {
+            "id": 4192,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-12-21T12:40:59Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "6",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 5532,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Does anyone know to handle this properly? I'm thinking about shipping a modified copy of script/models_multiplayer.shader into our own pak3.pk3, but that sounds a bit overkill.",
+            "created_on": "2015-12-02T11:23:42Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 5535,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-12-02T15:13:46Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 5538,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Isn't the q why the pak0 shader isn't overwritten? Our pak3 is loaded after pak0 so our shader should be the valid one.  ",
+            "created_on": "2015-12-02T15:45:21Z",
+            "details": []
+        },
+        {
+            "id": 5540,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Yeah, I remember having talked about this issue with Ensi, and as far as I remember this is the expected behavior (I can't tell the exact reason though). This said, a better workaround could be to ship a modified texture file in the pak3.pk3 instead of the whole shader script. Don't know why I haven't thought about this in the first place... ",
+            "created_on": "2015-12-02T16:25:59Z",
+            "details": []
+        },
+        {
+            "id": 5541,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-12-02T17:21:53Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 5542,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "The new shader file could have a different name and just contain the modified ETL shaders :) Like etl.shader, if shipping the file as a whole is seen as an issue",
+            "created_on": "2015-12-02T18:32:19Z",
+            "details": []
+        },
+        {
+            "id": 5543,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Mateos wrote:\r\n> The new shader file could have a different name and just contain the modified ETL shaders :) Like etl.shader, if shipping the file as a whole is seen as an issue\r\n\r\nMy first attempt was to put the modified shader in legacy.shader, but that didn't work. Any idea?\r\nFor now I've just included a modified texture, but it's a real cheap workaround.",
+            "created_on": "2015-12-02T18:59:12Z",
+            "details": []
+        },
+        {
+            "id": 5544,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Hmm, usually the game loads in reversed order, so \"legacy\" would be loaded after \"models.*\" shaders...\r\nOr is the shader loading process the opposite of the PK3 loading order? ^^'",
+            "created_on": "2015-12-02T19:55:35Z",
+            "details": []
+        },
+        {
+            "id": 5545,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-12-02T20:48:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 5547,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "There are a lot of shader files in pak0, some being loaded before and after legacy.shader. We can't rely in overwriting existing shaders (either shaders starting with a-l or m-z wouldn't be overwritten). So, we need to either use another shader name entirely, ship the entire modified shader, or in that case, use that cheap hack for adrenaline texture.\r\n\r\nClosing for real now, please reopen if any of you has a really proper solution to this issue.",
+            "created_on": "2015-12-02T21:32:14Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 676,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "Change adrenaline shader to match syringe color",
+    "description": "As the title says. First you have 5 syringes and adrenalines. Then you use an adrenaline, you will have 4 of them. Then you switch to syringes and you will notice that you will have 4 of those too even you haven't used any of them.\r\n\r\n-*S",
+    "start_date": "2014-11-28",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-28T15:06:16Z",
+    "updated_on": "2015-12-02T21:32:14Z",
+    "closed_on": "2015-12-02T21:32:14Z"
+}

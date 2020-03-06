@@ -1,0 +1,295 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "eb912d71768363a4168196b815d18fe60ba6c528",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "console title adjusted refs #70",
+            "committed_on": "2012-08-14T19:14:11Z"
+        },
+        {
+            "revision": "58032e2fab738cfff2587b7ee384c7bf8b3c2f87",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "some files in sys slightly optimized, clean up, formatting\nconsolen ame for windows clients adjusted refs #70 refs #31",
+            "committed_on": "2012-08-18T15:04:58Z"
+        },
+        {
+            "revision": "6d950d8f9035fe46c0eaa1acea75850cebacfe79",
+            "user": {
+                "id": 7,
+                "name": "TheDushan"
+            },
+            "comments": "Added Windows console, refs #70 and www.etlegacy.com/boards/1/topics/16",
+            "committed_on": "2012-12-04T00:44:43Z"
+        },
+        {
+            "revision": "db1aae97b607c3505c38573a825e6e425ceac6b6",
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "comments": "misc: removed unused vars, changed args types to int in CON_ResizeWindowsCon, refs #70",
+            "committed_on": "2015-12-30T17:13:48Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 208,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-08-02T11:52:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 232,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-08-06T08:56:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "44"
+                }
+            ]
+        },
+        {
+            "id": 265,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "I see you've done some changes. But it seems you forgot to change console's name (see the pic above)",
+            "created_on": "2012-08-14T18:28:05Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "34",
+                    "new_value": "console.png"
+                }
+            ]
+        },
+        {
+            "id": 266,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "@ user#3 's last commit\n\nThe console is named the same for both client and server executables.\nI mean it's \"...Dedicated Server Console\" even for client.\n\nMaybe call it just \"ET:L Console\"?",
+            "created_on": "2012-08-14T22:44:28Z",
+            "details": []
+        },
+        {
+            "id": 392,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-10-21T15:11:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 570,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "http://obrazki.elektroda.pl/7573167600_1353152404.png\r\n\r\nTypo - a space is missing.",
+            "created_on": "2012-11-17T11:44:35Z",
+            "details": []
+        },
+        {
+            "id": 572,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Dragon wrote:\r\n> http://obrazki.elektroda.pl/7573167600_1353152404.png\r\n> \r\n> Typo - a space is missing.\r\nDone.\r\n",
+            "created_on": "2012-11-17T17:38:43Z",
+            "details": []
+        },
+        {
+            "id": 726,
+            "user": {
+                "id": 7,
+                "name": "TheDushan"
+            },
+            "notes": "I will close this issue :)",
+            "created_on": "2012-12-04T00:56:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "due_date",
+                    "new_value": "2018-12-04"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "44",
+                    "new_value": "7"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "3",
+                    "new_value": "7"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                },
+                {
+                    "property": "attr",
+                    "name": "estimated_hours",
+                    "new_value": "1.0"
+                }
+            ]
+        },
+        {
+            "id": 727,
+            "user": {
+                "id": 7,
+                "name": "TheDushan"
+            },
+            "notes": "",
+            "created_on": "2012-12-04T01:10:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "3",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 831,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-12-16T23:33:01Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 2424,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "created_on": "2013-12-14T17:58:44Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "new_value": "Windows"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 70,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 7,
+        "name": "Immediate"
+    },
+    "author": {
+        "id": 35,
+        "name": "Dragonji"
+    },
+    "assigned_to": {
+        "id": 7,
+        "name": "TheDushan"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 5,
+        "name": "2.71rc1"
+    },
+    "subject": "Starting console",
+    "description": "http://www.etlegacy.com/boards/1/topics/16\r\n\r\nWould be nice to have old console back, it was really helpful for solving some problems.",
+    "start_date": "2012-08-01",
+    "due_date": "2018-12-04",
+    "done_ratio": 100,
+    "estimated_hours": 1.0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Windows"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-08-01T13:32:13Z",
+    "updated_on": "2013-12-14T17:58:44Z",
+    "closed_on": "2012-12-04T01:10:00Z"
+}

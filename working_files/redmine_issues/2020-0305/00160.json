@@ -1,0 +1,269 @@
+{
+    "children": [
+        {
+            "id": 162,
+            "tracker": {
+                "id": 3,
+                "name": "Task"
+            },
+            "subject": "Create  2.72 distribution packages for RedHat/Fedora"
+        },
+        {
+            "id": 161,
+            "tracker": {
+                "id": 3,
+                "name": "Task"
+            },
+            "subject": "Create ET:L distribution packages for Debian"
+        },
+        {
+            "id": 163,
+            "tracker": {
+                "id": 3,
+                "name": "Task"
+            },
+            "subject": "Create 2.72 distribution packages for Suse"
+        },
+        {
+            "id": 286,
+            "tracker": {
+                "id": 3,
+                "name": "Task"
+            },
+            "subject": "Create 2.71 distribution packages for Arch"
+        }
+    ],
+    "attachments": null,
+    "relations": [
+        {
+            "id": 50,
+            "issue_id": 136,
+            "issue_to_id": 160,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "16600803727e0d9f6033620f536f7aa4e3be5546",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: changed INSTALL_DEFAULT_MODDIR to /lib/etlegacy, refs #160",
+            "committed_on": "2014-02-01T13:26:00Z"
+        },
+        {
+            "revision": "bafc5c35392e25bce68540dd51903f74377439f9",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: create CPack Linux archives",
+            "committed_on": "2014-12-26T20:03:52Z"
+        },
+        {
+            "revision": "6a9865d101b2ecb6eb50b5592854ebf3213f487f",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: added missing CPack STGZ header file",
+            "committed_on": "2014-12-26T23:27:21Z"
+        },
+        {
+            "revision": "c2f05427d15c4edfb06deddc039d27ab6a514e18",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: use git version for Linux archives",
+            "committed_on": "2014-12-26T23:53:42Z"
+        },
+        {
+            "revision": "dfcb34b355b8272c71da6fa71edef491579341f2",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: added CPack Linux assets downloader",
+            "committed_on": "2014-12-27T10:59:35Z"
+        },
+        {
+            "revision": "777041c5b7587527f214df9b14da8951feb4fd5b",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: updated easybuild.sh paths",
+            "committed_on": "2014-12-27T11:51:46Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 889,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-01-03T11:27:25Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "General task to create distribution packages - see sub tasks.\r\n\r\nOwner of sub task is package maintainer.",
+                    "new_value": "General task to prepare/create distribution packages - see sub tasks.\r\n\r\nCreate a subtask for further distribution packages. Owner of sub task will be package maintainer.\r\n\r\nSee also http://www.etlegacy.com/projects/etlegacy/wiki/All_about_*nix_Distribution_Packages"
+                }
+            ]
+        },
+        {
+            "id": 1356,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-03-18T12:09:14Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Create distribution packages for *nix systems",
+                    "new_value": "Create  2.71rc1 distribution packages for *nix systems"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "5",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 2466,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "created_on": "2013-12-14T18:07:44Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "new_value": "Linux"
+                }
+            ]
+        },
+        {
+            "id": 2929,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Currently playing with OBS, with some success but there's still a lot to do.\r\n\r\nFor reference, we could embed the \"OBS iframe\":http://software.opensuse.org/download/doc on the download page.",
+            "created_on": "2014-01-31T17:46:48Z",
+            "details": []
+        },
+        {
+            "id": 2933,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "If nobody have an objection, I'll change the INSTALL_DEFAULT_MODDIR in CMakeList.txt from \"share/etlegacy\" to \"lib/etlegacy\", since this is the proper way to it. The directory '/usr/share' is really only for data, no .so files are allowed.\r\n\r\nAbout the future 64bits releases: some distributions use /usr/lib64 instead of /usr/lib (RPM distributions), but this can be easily overridden by the packager.",
+            "created_on": "2014-02-01T13:02:59Z",
+            "details": []
+        },
+        {
+            "id": 3810,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-22T00:40:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "tracker_id",
+                    "old_value": "2",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 4240,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Cpack handles all the packaging for us, and 2.71 packages are out.",
+            "created_on": "2014-12-29T14:38:18Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "38",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 160,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Create  2.71rc1 distribution packages for *nix systems",
+    "description": "General task to prepare/create distribution packages - see sub tasks.\r\n\r\nCreate a subtask for further distribution packages. Owner of sub task will be package maintainer.\r\n\r\nSee also http://www.etlegacy.com/projects/etlegacy/wiki/All_about_*nix_Distribution_Packages",
+    "start_date": "2013-01-03",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-01-03T11:05:26Z",
+    "updated_on": "2015-10-16T18:19:57Z",
+    "closed_on": "2014-12-29T14:38:18Z"
+}

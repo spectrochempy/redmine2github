@@ -1,0 +1,473 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "802428f9507b92252313f929466666e3df67a289",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "linux: easybuild script fix refs #123",
+            "committed_on": "2012-12-01T21:21:48Z"
+        },
+        {
+            "revision": "3b0d898ea2335176298dbf8b13ee9b623a4bcae4",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "generic: more precise 64bit check for including cstdio, added\noption BUILD_WITH_CSTDIO_INCLUDED to force the include if required refs\n#123",
+            "committed_on": "2013-01-02T14:21:13Z"
+        },
+        {
+            "revision": "8a5316799be7585fe668c463afbc6e70c6891611",
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "comments": "Added cstdio workaround to easybuild script, fixes #123",
+            "committed_on": "2013-01-09T22:16:39Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 548,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "That's odd. For some reasons Windows code is used and this is true (should be false): \r\n\r\n#if defined WIN32 || defined _WINDOWS || defined _WIN32",
+            "created_on": "2012-11-16T14:19:51Z",
+            "details": []
+        },
+        {
+            "id": 549,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Can you attach the console printing while compiling? see 'running on:'\r\n\r\nIn the script there is a function _detectlinuxdistro() (line 34)- I think we should extend it for mint\r\n",
+            "created_on": "2012-11-16T14:25:15Z",
+            "details": []
+        },
+        {
+            "id": 550,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-11-16T14:32:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 551,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-11-16T14:33:12Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "9"
+                }
+            ]
+        },
+        {
+            "id": 554,
+            "user": {
+                "id": 65,
+                "name": "lakersforce"
+            },
+            "notes": "",
+            "created_on": "2012-11-16T19:03:54Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "56",
+                    "new_value": "easybuild.log.zip"
+                }
+            ]
+        },
+        {
+            "id": 581,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "Next time please use:\r\n\r\n<pre>easybuild.sh > output.log 2>&1</pre>\r\nThe last thing \"2>&1\" is very important, because it redirects stderr to stdout - which is written to file, so both errors and normal output will be placed in log.",
+            "created_on": "2012-11-17T20:37:47Z",
+            "details": []
+        },
+        {
+            "id": 582,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "Also, please tell us what shell do you use? It's bash? Or zsh? Or something else? And what version?",
+            "created_on": "2012-11-17T20:41:19Z",
+            "details": []
+        },
+        {
+            "id": 583,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "Sorry, it was my fault (-;\r\n\r\nI thought that I committed fixed code but I didn't indeed.\r\nNow it should works (-;\r\n\r\nAlso, next time please specify which commit do you use on your git so we can resolve such problems faster just in seeing that file on github.com webpage (-;",
+            "created_on": "2012-11-17T20:44:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                },
+                {
+                    "property": "attr",
+                    "name": "estimated_hours",
+                    "new_value": "0.1"
+                }
+            ]
+        },
+        {
+            "id": 584,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "",
+            "created_on": "2012-11-17T20:47:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "3",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 680,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "\n\n-./easybuild.sh: line 110: [: missing `]'-\n",
+            "created_on": "2012-11-29T10:11:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 706,
+            "user": {
+                "id": 53,
+                "name": "ponce"
+            },
+            "notes": "lakersforce wrote:\r\n> /home/rune/src/etlegacy/src/Omnibot/Common/BotLoadLibrary.cpp:310:60: fejl: \u2018vsnprintf\u2019 was not declared in this scope\r\n\r\nfor this specific error, I had to include stdio stuff too on 32bit (slackware linux).\r\n\r\nI used a small patch (attached). \r\n",
+            "created_on": "2012-12-01T10:01:51Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "66",
+                    "new_value": "stdio.patch"
+                }
+            ]
+        },
+        {
+            "id": 707,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "ponce, can you attach your console log when start the script? \r\n",
+            "created_on": "2012-12-01T11:12:46Z",
+            "details": []
+        },
+        {
+            "id": 712,
+            "user": {
+                "id": 53,
+                "name": "ponce"
+            },
+            "notes": "in the tar.gz there's the modified easybuild.sh (fixed line 110 and excluded bundled libs), the build.log and a folder with the slackbuild I'm using (made myself following the slackware standard packaging rules).",
+            "created_on": "2012-12-01T19:44:11Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "67",
+                    "new_value": "slackware_build.tar.gz"
+                }
+            ]
+        },
+        {
+            "id": 713,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I see ... i686 is mostly 32bit but could also be 64bit. I do assume your system is based on 64bit? In that case we have to find a way to detect that.",
+            "created_on": "2012-12-01T21:42:32Z",
+            "details": []
+        },
+        {
+            "id": 714,
+            "user": {
+                "id": 53,
+                "name": "ponce"
+            },
+            "notes": "actually it's a 32bit qemu-kvm virtual machine with slackware-14.0.\n\nthen I use the resulting package on my multilib laptop (that runs slackware64-14.0).",
+            "created_on": "2012-12-02T05:29:53Z",
+            "details": []
+        },
+        {
+            "id": 715,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "It's getting a bit odd now ... you shouldn't have to include <cstdio> on 32 bit. I have had a closer look into your logs and as mentioned above: \r\n\r\n<pre>\r\n[100%] Building CXX object CMakeFiles/qagame.mp.i386.dir/src/game/g_etbot_interface.cpp.o\r\n[100%] Building CXX object CMakeFiles/qagame.mp.i386.dir/src/Omnibot/Common/BotLoadLibrary.cpp.o\r\n/root/_etlegacy/etlegacy/etlegacy/src/Omnibot/Common/BotLoadLibrary.cpp: In function 'const char* OB_VA(const char*, ...)':\r\n/root/_etlegacy/etlegacy/etlegacy/src/Omnibot/Common/BotLoadLibrary.cpp:298:75: error: 'vsnprintf' was not declared in this scope\r\n/root/_etlegacy/etlegacy/etlegacy/src/Omnibot/Common/BotLoadLibrary.cpp: In function 'int OB_VA_OWNBUFFER(char*, int, const char*, ...)':\r\n/root/_etlegacy/etlegacy/etlegacy/src/Omnibot/Common/BotLoadLibrary.cpp:310:60: error: 'vsnprintf' was not declared in this scope\r\nmake[2]: *** [CMakeFiles/qagame.mp.i386.dir/src/Omnibot/Common/BotLoadLibrary.cpp.o] Error 1\r\n</pre>\r\n\r\n... if this error occures you are compiling windows related code for linux\r\n\r\nsee BotLoadLibrary.cpp line 110 and 298\r\n",
+            "created_on": "2012-12-02T10:49:31Z",
+            "details": []
+        },
+        {
+            "id": 845,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "IR4T4 wrote:\r\n> -./easybuild.sh: line 110: [: missing `]'-\r\n\r\nWhy you opened this ticket btw? I don't see that next posts are related to this bug...\r\n\r\n=== Oh wait...\r\neasybuild script is not related to this bug. I'm removing it from name of bug because it makes confusion.",
+            "created_on": "2012-12-23T19:42:42Z",
+            "details": []
+        },
+        {
+            "id": 846,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "",
+            "created_on": "2012-12-23T19:46:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Building of et:legacy fails using the easybuild.sh script",
+                    "new_value": "Building Omnibot with ET: Legacy fails"
+                }
+            ]
+        },
+        {
+            "id": 847,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I think the real problem is not the script itself. It's more an issue about not detecting the correct OS ?! Windows sources are compiled for linux ... BotLoadLibrary.cpp line 298 is windows only code. See also line 110.",
+            "created_on": "2012-12-24T12:14:48Z",
+            "details": []
+        },
+        {
+            "id": 865,
+            "user": {
+                "id": 53,
+                "name": "ponce"
+            },
+            "notes": "I think line 276 the right block start\r\n\r\nhttp://www.etlegacy.com/projects/etlegacy/repository/revisions/master/entry/src/Omnibot/Common/BotLoadLibrary.cpp#L276",
+            "created_on": "2012-12-30T12:09:00Z",
+            "details": []
+        },
+        {
+            "id": 866,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "ponce wrote:\r\n> I think line 276 the right block start\r\nDamn you are right! ... (note to myself: never trust the view of IDEs)\r\n\r\nponce, can you check the used stdarg.h file? ... int vsnprintf(char *str, size_t size, const char *format, va_list ap) should be defined inside.\r\n \r\nhttp://linux.about.com/library/cmd/blcmdl3_vsnprintf.htm\r\n\r\n----\r\nUpdate: This issue is a known problem on some linux system. I'll add an additional option to cmakelists.txt and we enable this for mint and slackware in easybuild.sh\r\n",
+            "created_on": "2012-12-30T12:39:50Z",
+            "details": []
+        },
+        {
+            "id": 867,
+            "user": {
+                "id": 53,
+                "name": "ponce"
+            },
+            "notes": "just for reference, here I got\r\n\r\ngcc-4.7.1-i486-1: /usr/lib/gcc/i486-slackware-linux/4.7.1/include/stdarg.h\r\nglibc-2.15-i486-7: /usr/include/stdio.h\r\n\r\n$ grep int\\ vsnprintf /usr/include/stdio.h\r\nextern int vsnprintf (char *__restrict __s, size_t __maxlen,\r\n$ grep int\\ vsnprintf /usr/lib/gcc/i486-slackware-linux/4.7.1/include/stdarg.h\r\n$",
+            "created_on": "2012-12-30T20:02:45Z",
+            "details": []
+        },
+        {
+            "id": 875,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "New cmake option BUILD_WITH_CSTDIO_INCLUDED introduced. The check for 64 bit is simplified/more precise (TODO: check for Darwin and WIN).\r\n\r\n@ponce: give it a go\r\n\r\n@morsik: easybuild.sh might catch affected distributions now and set this flag in the script\r\n   ",
+            "created_on": "2013-01-02T14:51:32Z",
+            "details": []
+        },
+        {
+            "id": 876,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-01-02T14:53:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 884,
+            "user": {
+                "id": 53,
+                "name": "ponce"
+            },
+            "notes": "I can confirm it builds fine here on slackware-14.0 setting that option in CMakeLists.txt: thanks a lot! :)",
+            "created_on": "2013-01-03T06:21:21Z",
+            "details": []
+        },
+        {
+            "id": 937,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "Applied in changeset commit:8a5316799be7585fe668c463afbc6e70c6891611.",
+            "created_on": "2013-01-09T22:31:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 938,
+            "user": {
+                "id": 53,
+                "name": "ponce"
+            },
+            "notes": "_BROKENDISTROS, LOL",
+            "created_on": "2013-01-10T06:41:27Z",
+            "details": []
+        },
+        {
+            "id": 940,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "The final q is: why some 32bit distros don't define \"int vsnprintf(char *str, size_t size, const char *format, va_list ap)\" in stdarg.h",
+            "created_on": "2013-01-10T07:40:40Z",
+            "details": []
+        },
+        {
+            "id": 2463,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "created_on": "2013-12-14T18:07:42Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "new_value": "Linux"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 123,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 65,
+        "name": "lakersforce"
+    },
+    "assigned_to": {
+        "id": 4,
+        "name": "morsik"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 5,
+        "name": "2.71rc1"
+    },
+    "subject": "Building Omnibot with ET: Legacy fails",
+    "description": "Compilation fails with the following error, when using the easybuild script on GNU/Linux (using Linux Mint 14RC1):\r\n\r\nBuilding CXX object CMakeFiles/qagame.mp.i386.dir/src/Omnibot/Common/BotLoadLibrary.cpp.o\r\n/home/rune/src/etlegacy/src/Omnibot/Common/BotLoadLibrary.cpp: In function \u2018const char* OB_VA(const char*, ...)\u2019:\r\n/home/rune/src/etlegacy/src/Omnibot/Common/BotLoadLibrary.cpp:298:75: fejl: \u2018vsnprintf\u2019 was not declared in this scope\r\n/home/rune/src/etlegacy/src/Omnibot/Common/BotLoadLibrary.cpp: In function \u2018int OB_VA_OWNBUFFER(char*, int, const char*, ...)\u2019:\r\n/home/rune/src/etlegacy/src/Omnibot/Common/BotLoadLibrary.cpp:310:60: fejl: \u2018vsnprintf\u2019 was not declared in this scope\r\nmake[2]: *** [CMakeFiles/qagame.mp.i386.dir/src/Omnibot/Common/BotLoadLibrary.cpp.o] Fejl 1\r\nmake[1]: *** [CMakeFiles/qagame.mp.i386.dir/all] Fejl 2\r\nmake: *** [all] Fejl 2\r\n",
+    "start_date": "2012-11-16",
+    "done_ratio": 100,
+    "estimated_hours": 0.1,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-11-16T12:36:50Z",
+    "updated_on": "2013-12-14T18:07:42Z",
+    "closed_on": "2013-01-09T22:31:45Z"
+}

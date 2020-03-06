@@ -1,0 +1,105 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 448,
+            "issue_id": 1360,
+            "issue_to_id": 1208,
+            "relation_type": "duplicates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 8536,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Duplicate of #1208. Closing this entry now.",
+            "created_on": "2019-11-13T13:32:40Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 8537,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-11-13T13:32:49Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "duplicates",
+                    "new_value": "1208"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1360,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 505,
+        "name": "ryven"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Can't get closer to the wall while in prone",
+    "description": "Check why player while in prone can't get close enough to the wall, it's like there is an invisible barrier that pushes you back, as if there was some prediction error.",
+    "start_date": "2019-11-13",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-11-13T13:12:56Z",
+    "updated_on": "2019-11-13T13:32:40Z",
+    "closed_on": "2019-11-13T13:32:40Z"
+}

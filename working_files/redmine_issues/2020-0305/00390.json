@@ -1,0 +1,114 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "e7af77dc43b29efde4c55f698c0761308c4e366e",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: added constructible xp sharing, fixes #390",
+            "committed_on": "2013-11-09T19:10:44Z"
+        },
+        {
+            "revision": "e5bfe13b7bb21b34ff21133806dc558af6626ac4",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: compilation fix for VS, refs #390",
+            "committed_on": "2013-11-09T20:55:46Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2225,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-11-08T15:09:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 2232,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:e7af77dc43b29efde4c55f698c0761308c4e366e.",
+            "created_on": "2013-11-09T19:54:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 390,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "Add constructible XP sharing",
+    "description": "\"When multiple engineers help build a constructible, each gets his share of XP once the constructible is build. The share of gained XP is proportional to how much the engineer built.\"\r\n\r\nETPub introduces g_constructibleXPSharing for this, but I don't think a new cvar is needed. After all, I can't imagine a situation were people would prefer to have the current behavior instead (except for stealing XP of teammates). This feature is more a bugfix than a feature, so I'd suggest to implement it by default.",
+    "start_date": "2013-11-08",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-11-08T09:05:15Z",
+    "updated_on": "2013-11-09T19:54:29Z",
+    "closed_on": "2013-11-09T19:54:29Z"
+}

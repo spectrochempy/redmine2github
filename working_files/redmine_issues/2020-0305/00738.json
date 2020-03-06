@@ -1,0 +1,428 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 182,
+            "issue_id": 738,
+            "issue_to_id": 726,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 252,
+            "issue_id": 738,
+            "issue_to_id": 875,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "37a396f183bd9ba2ec510dda634b7a003131bfe7",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "game: fix team class HP bonus at first spawn, refs #875 #738\n\nAdd dynamics max HP computation depending of medics count and decrease slowly HP in case health is too high",
+            "committed_on": "2019-12-09T22:36:35Z"
+        },
+        {
+            "revision": "0642ec2ba310714e60e79954b773d12dddfa350d",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "Revert \"game: fix team class HP bonus at first spawn, refs #875 #738\"\n\nThis reverts commit 37a396f183bd9ba2ec510dda634b7a003131bfe7.\n\n* Max HP with all bonuses is wrong for medics (170hp instead of 156hp)\n* Autoregen for medics doesn't kick at spawn, only when wounded\n* Some rounding errors in health values",
+            "committed_on": "2019-12-27T14:29:03Z"
+        },
+        {
+            "revision": "9c49313a6cdab560fe3f35d417e0a56d194afc1d",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "mod: fix revert \"game: fix team class HP bonus at first spawn, refs #875 #738\"\n\nThis reverts commit 0642ec2ba310714e60e79954b773d12dddfa350d",
+            "committed_on": "2019-12-30T13:08:17Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 4145,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2014-12-18T11:26:25Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "497",
+                    "new_value": "2014-12-18-125306-mml_minastirith_fp3.jpg"
+                }
+            ]
+        },
+        {
+            "id": 4148,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Not a bug, working as intended. Health is set at every new spawn.",
+            "created_on": "2014-12-18T13:12:23Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "21"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 4149,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-12-18T13:12:31Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "726"
+                }
+            ]
+        },
+        {
+            "id": 4151,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Yes it is set at every new spawn but why does it indicate that you would be able to get more HP than you actually have? Many times I have given healthpacks away for nothing because of this. If your current HP is 100 then it is 100 and then then the healthbar is all ok. But when a medic joins then the current HP is still 100, not more or less and that's why the healthbar should show the same until you will spawn for the next time, not change on the fly.\r\n\r\n-*S",
+            "created_on": "2014-12-18T13:26:08Z",
+            "details": []
+        },
+        {
+            "id": 4152,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Because you can receive additional HP. That's not a bug.\r\nHealth is set at spawn, but MAX_HEALTH is dynamic and might change depending on the number of medic in a team.",
+            "created_on": "2014-12-18T13:42:55Z",
+            "details": []
+        },
+        {
+            "id": 4154,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "But the thing is... you can't recieve more HP... That's what I'm after. If a medic joins then your total HP should update to 110 HP and you should be able to recieve an additional healthpack, but this is not the case.\r\n\r\n-*S",
+            "created_on": "2014-12-18T13:55:27Z",
+            "details": []
+        },
+        {
+            "id": 4155,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Sorry, I misunderstood the issue then. Reopening.",
+            "created_on": "2014-12-18T14:05:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "6",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "6",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 4174,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2014-12-19T11:24:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "0"
+                }
+            ]
+        },
+        {
+            "id": 5268,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-09-10T22:10:43Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "875"
+                }
+            ]
+        },
+        {
+            "id": 5941,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-08-29T16:18:52Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 8601,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "Applied in changeset commit:37a396f183bd9ba2ec510dda634b7a003131bfe7",
+            "created_on": "2019-12-09T22:42:51Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "251"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 8622,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-12-27T14:41:10Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "10"
+                }
+            ]
+        },
+        {
+            "id": 8647,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "",
+            "created_on": "2019-12-30T20:38:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "10",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 8652,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2020-01-04T16:31:52Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 8653,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "This issue is still present on latest master. Or rather, it might be a side effect of not fully functional #875.",
+            "created_on": "2020-01-04T16:36:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 8656,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Nevermind, this is actually the expected behaviour. Closing as fixed.",
+            "created_on": "2020-01-04T16:53:10Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 738,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 251,
+        "name": "Aranud"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Healthbar bug",
+    "description": "How to reproduce:\r\n\r\n1. Join into the game as soldier\r\n2. Join with other client as medic\r\n3. Look with the medic to soldier, he seems not to have full HP even he has\r\n\r\nThe healthbar won't update back to full HP until the soldier spawns next time. When he will spawn with 10 more HP.\r\n\r\n-*S",
+    "start_date": "2014-12-18",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-12-18T11:06:41Z",
+    "updated_on": "2020-01-04T16:53:10Z",
+    "closed_on": "2020-01-04T16:53:10Z"
+}

@@ -1,0 +1,181 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 100,
+            "issue_id": 387,
+            "issue_to_id": 74,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 108,
+            "issue_id": 387,
+            "issue_to_id": 332,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 2189,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "It doesn't truly work on OS X though. Context creation on Mac OS X is fixed in the *sdl2* branch. ",
+            "created_on": "2013-11-01T13:07:49Z",
+            "details": []
+        },
+        {
+            "id": 2231,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-11-09T09:12:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 2446,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "created_on": "2013-12-14T18:02:59Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "new_value": "OS X"
+                }
+            ]
+        },
+        {
+            "id": 2663,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-01-01T16:03:10Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "332"
+                }
+            ]
+        },
+        {
+            "id": 3027,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I don't know the current status here but we'll focus this again when we move to SDL2",
+            "created_on": "2014-02-16T10:37:41Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 3046,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "I forgot to close this issue. That #error was removed, so it now starts although it does not actually work. The context creation on OS X is fixed in the SDL2 branch.",
+            "created_on": "2014-02-16T12:38:34Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "11"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 300,
+            "name": "swillits"
+        }
+    ],
+    "time_entries": null,
+    "id": 387,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 273,
+        "name": "otty"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "GLimp_InitOpenGL3xContext fails on MacOSX by design - but it shouldn't",
+    "description": "Compiling rendergl2 on MacOSX failes in sdl_glimp.c running through GLimp_InitOpenGL3xContext() in line 493. There is a ERR_FATAL thrown, because the two conditions before are not true. In XreaL, there is no such check and this code compiles just fine for Mac. A clean solution would be nice, because on Mac it looks like you dont need anything but propper GLmajor and GLminor detection.",
+    "start_date": "2013-11-01",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "OS X"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-11-01T09:34:09Z",
+    "updated_on": "2014-02-16T12:38:34Z",
+    "closed_on": "2014-02-16T12:38:34Z"
+}

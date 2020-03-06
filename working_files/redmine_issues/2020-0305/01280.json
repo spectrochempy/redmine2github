@@ -1,0 +1,140 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 8125,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Damage linearly decreases with the distance. Relevant code \"here\":https://github.com/etlegacy/etlegacy/blob/389602e99c844a69f6bb57387e0f2b2238478d18/src/game/g_weapon.c#L3375.\r\nWhat is the actual issue here? No enough/too much damage?",
+            "created_on": "2019-05-06T15:04:54Z",
+            "details": []
+        },
+        {
+            "id": 8128,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "That bodyshots deal more damage than headshots. I don't know the logic behind damage fall off. I just filed the issue for future reference so it doesn't get lost in Discord.\r\nIf it's by design and not an issue then it can be closed again, I think.",
+            "created_on": "2019-05-06T15:25:20Z",
+            "details": []
+        },
+        {
+            "id": 8145,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Yep. See Bullet_Fire_Extended() and G_Damage().\r\n\r\n* Weapon at far distance (>2500 units) are capped at 50% damage (smg: 18*0.5 = 9). Other weapons might do even less damage.\r\n* HS (2*damage of weapon, but 50 HP minimum) at far distance are reduced by 80%, after which the 20% helmet reduction applies: (hs: 50*0.2*0.8=8).\r\n\r\nNot sure if that is worth \"fixing\" though. What would need to be done? Increase damage of HS at long range? By how much?",
+            "created_on": "2019-05-06T19:29:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "tracker_id",
+                    "old_value": "3",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 8149,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "That's probably indeed a too dangerous change just to accommodate for a single report. As long as the competitive scene doesn't care about it at a large scale, I think we shouldn't do it.\r\nCould you set it to Invalid?\r\n\r\nSorry for filing so many invalid tickets in the last days, I just thought before valid concerns get lost in the Discord abyss....",
+            "created_on": "2019-05-08T12:25:56Z",
+            "details": []
+        },
+        {
+            "id": 8150,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Okay, done. We'll see in the future, but that's pretty much a non issue imho.",
+            "created_on": "2019-05-08T18:38:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1280,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Investigate max distance damage head/body",
+    "description": "John_Mullins reported in Discord that at max distance a headshot to a helmet deals 8HP damage and a bodyshot 9HP damage.\r\nThis would need some discussion and investigation I assume, since changing damage values is potentially critical for competitive players.\r\n\r\nNevertheless, ticket filed for future reference.",
+    "start_date": "2019-05-06",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-05-06T13:02:02Z",
+    "updated_on": "2019-05-08T18:38:54Z",
+    "closed_on": "2019-05-08T18:38:54Z"
+}

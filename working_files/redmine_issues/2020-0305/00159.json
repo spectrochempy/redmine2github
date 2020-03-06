@@ -1,0 +1,333 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 234,
+            "issue_id": 834,
+            "issue_to_id": 159,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "cdfcf142e3ae70e1130774e96b7fa29c491e6ce5",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "client: don't play the silence - skipping dummy blank sound in\nSOUNDSYSTEM_StartSoundEx() FIXME: activate for openAL refs #159",
+            "committed_on": "2012-12-31T16:06:20Z"
+        },
+        {
+            "revision": "e0f8361e4dd11a8cf5bfdcebb6183897e89ef793",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "client: increased the limit of same sound at same time refs #159",
+            "committed_on": "2012-12-31T18:41:31Z"
+        },
+        {
+            "revision": "43b76e8cd9d787e83787802fa4192a68df764fde",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "client: more info about sound / cosmetics refs #159",
+            "committed_on": "2013-01-08T10:08:16Z"
+        },
+        {
+            "revision": "cdb01493d93789c621b7da9fa959f89c3223aa91",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "client: increased the limit of 'external' same sound at same time to\n16. This is about 20% of MAX_CHANNELS and not the final fix refs #159",
+            "committed_on": "2013-01-30T18:47:29Z"
+        },
+        {
+            "revision": "7e039d31e07443a10b6d8b5899c4aac1c3868289",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "client: don\u2019t play the silence - skipping dummy blank sound for openAL\ntoo refs #159",
+            "committed_on": "2013-04-18T08:11:41Z"
+        },
+        {
+            "revision": "144590271bbd9c473115896b8a0d966f2c292415",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "client: 'allowed' sound limit removed in S_Base_StartSoundEx refs #159",
+            "committed_on": "2013-05-09T13:52:22Z"
+        },
+        {
+            "revision": "c78f6cc72c2b4bd8ebd3b21664c4f152d7c55a52",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "client: fixing performance and sound issues/reverting vanilla code - we\nonly want the time - Com_Milliseconds() does more than that refs #159",
+            "committed_on": "2013-11-10T05:37:13Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 868,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Happened to me as well when I was testing ET:L.",
+            "created_on": "2012-12-31T12:40:46Z",
+            "details": []
+        },
+        {
+            "id": 870,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Bill, thank you for reporting. I've increased the limit to 8.\r\n\r\nThe big picture is drawn by an older quake3 sound code merge ... and ET is not q3 #-) \r\nActually I couldn't find such a limit (allowed) in snd_dma.c of the GPL code. However the limit of 4 equal sounds at same time is by far to low for ET when the entnum is not listener_number -> enemies/world.\r\n\r\n\r\n ",
+            "created_on": "2012-12-31T19:33:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 871,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-12-31T19:36:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 890,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "{TODO}\r\nInspect sound on bigger servers and increase limit again in case of missing sounds. (But I can imagine it's just good noise now.)",
+            "created_on": "2013-01-03T11:52:36Z",
+            "details": []
+        },
+        {
+            "id": 906,
+            "user": {
+                "id": 89,
+                "name": "Bill"
+            },
+            "notes": "Ah yes, I see this function is basically identical to the snd_dma in the original Q3 source, not ET!\r\n\r\nAlso, I noticed 8 is not quite enough.  I specifically noticed some FG42 sounds being dropped.  And getting more into the \"big picture\" ... I guess the limit is just there because MAX_CHANNELS is 96.  With allowed = 8, that means you might run out of channels with more than 12 people nearby.  (And then fewer people if we increase it some more.)\r\n\r\nBut looking at the GPL code it looks like they used a different fix for ET.  There are added code blocks starting on lines 753, 772, 818, and 837, plus some other stuff sprinkled in here and there.  These basically have the engine make more of an effort to re-use sound channels allocated earlier, when there are a bunch of sounds coming from one entity (which apparently happens when shooting an smg).",
+            "created_on": "2013-01-06T15:30:07Z",
+            "details": []
+        },
+        {
+            "id": 908,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Interesting and no q about the FG42 ... the fire rate is just high. I think we should revert here. Limits on single entities would fit much better than limits on same sound into the ETL picture.",
+            "created_on": "2013-01-06T16:11:51Z",
+            "details": []
+        },
+        {
+            "id": 1015,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-01-24T13:13:30Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "5",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1546,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-04-18T08:11:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Sounds frequently do not play",
+                    "new_value": "Sounds frequently do not play / fix sound issues"
+                }
+            ]
+        },
+        {
+            "id": 1668,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-05-03T14:43:27Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "5",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 1673,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "The hardcoded limit which causes our issues has been removed - I couldn't find a good reason why this is set. As long as there are available channels for sounds we don't 'cut' them anymore. \r\n",
+            "created_on": "2013-05-09T14:13:34Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 2426,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "created_on": "2013-12-14T17:58:45Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "new_value": "Windows"
+                }
+            ]
+        },
+        {
+            "id": 4875,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-03-25T17:47:16Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "834"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 159,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 89,
+        "name": "Bill"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 7,
+        "name": "2.71rc2"
+    },
+    "subject": "Sounds frequently do not play / fix sound issues",
+    "description": "I'm using Windows 8 Pro, and have confirmed this bug in both the 2.70rc1 client and the latest build.  An SMG fired by someone else will often only make a noise for some of the shots.  It might make a noise for three shots, then be silent for three shots, and then repeat.  (This can be extremely disorienting.)\r\n\r\nI can \"fix\" the issue by editing snd_dma.c, lines 614 and 618.  That seems to only allow 4 sounds to play at a time, or 8 in some cases, by setting a variable named 'allowed' to either 4 or 8.  I changed these values to 8 and 16, respectively.  But I do not understand how this fits into the big picture, so it is possible that it should be revised in some other way.\r\n\r\nI asked for confirmation in the IRC channel, but nobody else (whether using Windows or not) could confirm the bug.  I do not think the OS would matter, but maybe it does not affect other operating systems if they use OpenAL instead of DMA.",
+    "start_date": "2012-12-31",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Windows"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-12-31T02:59:24Z",
+    "updated_on": "2013-12-14T17:58:45Z",
+    "closed_on": "2013-05-09T14:13:34Z"
+}

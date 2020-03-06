@@ -1,0 +1,135 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 3141,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-04-03T14:58:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Add ip_max_clients filter",
+                    "new_value": "Add custom cvar filter in server browser"
+                }
+            ]
+        },
+        {
+            "id": 3142,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "If we add such a feature we should do it on real server side, not only for one mod. I think this  was introduced to limit spoof attacks. \r\nHowever I'm actually not sure if we should add such a cvar to  the serverinfo. In that case it's increasing the configstring and to me that's a high prize for such a non often used client feature. ",
+            "created_on": "2014-04-03T15:30:23Z",
+            "details": []
+        },
+        {
+            "id": 3144,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "You are right IR4T4. I believe the only way to achieve this without overloading the serverstring info with plenty of additional cvar would be to ping each server individually with the chosen customized cvar filter. It's hardly efficient, and probably not worth the hassle either.",
+            "created_on": "2014-04-03T15:41:02Z",
+            "details": []
+        },
+        {
+            "id": 3146,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-04-05T14:54:35Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3211,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-05-31T08:17:26Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 531,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 15,
+        "name": "Mod UI"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Add custom cvar filter in server browser",
+    "description": "\"Requested in forum\":http://dev.etlegacy.com/boards/3/topics/884 : add a filter that lists g_ip_map_clients value.\r\n\r\nInstead, maybe add a custom filter that allows to retrieve any specified cvar?",
+    "start_date": "2014-04-03",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-04-03T14:56:37Z",
+    "updated_on": "2014-05-31T08:17:26Z",
+    "closed_on": "2014-04-05T14:54:35Z"
+}

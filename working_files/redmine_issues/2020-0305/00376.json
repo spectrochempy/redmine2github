@@ -1,0 +1,221 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 193,
+            "issue_id": 376,
+            "issue_to_id": 470,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 104,
+            "issue_id": 425,
+            "issue_to_id": 376,
+            "relation_type": "duplicates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "8dba1d9742d10536553cdffeaae980751d5d6a64",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "cgame: added cg_fun_fovscale which is also enabled by default, fixes #376",
+            "committed_on": "2013-10-28T11:37:49Z"
+        },
+        {
+            "revision": "711f0d5c4c3cacb914746d560c9e1f22209d348d",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "ui: added cg_fun_fovscale option, refs #376",
+            "committed_on": "2013-10-29T11:49:41Z"
+        },
+        {
+            "revision": "78062d7649497afded89afcf672fce1a67e66bd8",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "Revert \"ui: added cg_fun_fovscale option, refs #376\"\n\nThis reverts commit 711f0d5c4c3cacb914746d560c9e1f22209d348d.",
+            "committed_on": "2013-10-29T12:17:17Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2130,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Spyhawk wrote:\r\n> Also simply name the option \"cg_fovscale\" since this isn't only about the gun, but also all the other 3D models of the player (nade, pliers, medpack, ..).\r\ncg_viewmodel_fovscale then :)\r\n\r\nI think cg_gun_fovscale would be better as it would eliminate useless cvars in user configs (so one doesn't have cg_gun_fovscale and cg_fovscale in config at the same time) as all ETPub-based mods use cg_gun_fovscale as a name for the cvar.",
+            "created_on": "2013-10-21T17:56:11Z",
+            "details": []
+        },
+        {
+            "id": 2174,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Applied in changeset commit:8dba1d9742d10536553cdffeaae980751d5d6a64.",
+            "created_on": "2013-10-28T11:40:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 2212,
+            "user": {
+                "id": 252,
+                "name": "Unode"
+            },
+            "notes": "Was it a typo or intentionally added as cg_ *fun* _fovscale instead of *gun* as stated in the ticket text?",
+            "created_on": "2013-11-04T18:38:49Z",
+            "details": []
+        },
+        {
+            "id": 2213,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Typo, but only in the commit text. In the code it is cg_gun_fovscale, no worries.",
+            "created_on": "2013-11-04T19:05:20Z",
+            "details": []
+        },
+        {
+            "id": 2389,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-12-11T23:49:57Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "duplicated",
+                    "new_value": "425"
+                }
+            ]
+        },
+        {
+            "id": 2390,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-12-11T23:50:34Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "44"
+                }
+            ]
+        },
+        {
+            "id": 4359,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Can @cg_gun_fovscale@ be disabled by default? It confuses a really large amount of players because the only mod that enables it by default is ETPub.",
+            "created_on": "2015-01-11T15:09:20Z",
+            "details": []
+        },
+        {
+            "id": 4360,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-01-11T15:17:50Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "470"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 35,
+            "name": "Dragonji"
+        }
+    ],
+    "time_entries": null,
+    "id": 376,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 44,
+        "name": "Jacker"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "add option to scale gun when not using a fov of 90",
+    "description": "Implement a similar \"cg_gun_fovscale\" (0|1) option of the one provided by Silent mod. This is especially useful when using a widescreen and that you want to keep a \"natural\" field of view (ie, 102 degrees for 16:10 screen, 106 for 16:9, etc.) but still want the gun to be realistically scaled.\r\n\r\nAlso simply name the option \"cg_fovscale\" since this isn't only about the gun, but also all the other 3D models of the player (nade, pliers, medpack, ..).",
+    "start_date": "2013-10-21",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-10-21T13:11:51Z",
+    "updated_on": "2015-01-11T15:09:20Z",
+    "closed_on": "2013-10-28T11:40:58Z"
+}

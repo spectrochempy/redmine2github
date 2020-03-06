@@ -1,0 +1,182 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "670ed91bbe6d70af80f6cfffb0b1df8940873a83",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "Merge pull request #26 from harleking/patch-1\n\nDescriptions added/changed, cg_run removedd (obsolete) refs #225",
+            "committed_on": "2013-03-23T09:21:52Z"
+        },
+        {
+            "revision": "430242ea7a0cfa496dc80cdf8d48c83aa143180a",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "ui: missing tooltips added refs #225",
+            "committed_on": "2013-08-19T15:31:25Z"
+        },
+        {
+            "revision": "f87b9107653630fc7507ebb0e148209260d8f591",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "ui: missing tooltips added II fixes #225",
+            "committed_on": "2013-08-19T18:51:53Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1271,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-03-06T18:33:47Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "72"
+                }
+            ]
+        },
+        {
+            "id": 1387,
+            "user": {
+                "id": 110,
+                "name": "Harlekin"
+            },
+            "notes": "Most complete list of explanations you will find here: http://web.archive.org/web/20080327004255/http://www.rtcw.jolt.co.uk/content/enemy_territory/cmdcvarlist/index.html\r\n",
+            "created_on": "2013-03-23T17:52:48Z",
+            "details": []
+        },
+        {
+            "id": 1835,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-08-19T15:30:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "72",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 1836,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-08-19T17:01:55Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "60"
+                }
+            ]
+        },
+        {
+            "id": 1837,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Applied in changeset commit:f87b9107653630fc7507ebb0e148209260d8f591.",
+            "created_on": "2013-08-19T19:00:27Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "60",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 225,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 72,
+        "name": "deki"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 15,
+        "name": "Mod UI"
+    },
+    "fixed_version": {
+        "id": 7,
+        "name": "2.71rc2"
+    },
+    "subject": "Mouseover text in settings",
+    "description": "Some settings don't have an explanation text yet, that appears when hovering the mouse over the setting.",
+    "start_date": "2013-03-03",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-03-03T22:20:01Z",
+    "updated_on": "2013-08-19T19:00:27Z",
+    "closed_on": "2013-08-19T19:00:27Z"
+}

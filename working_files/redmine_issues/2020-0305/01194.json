@@ -1,0 +1,134 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "13bdeb90d22ff338a249cf3b8295a9712cbcc1be",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "server: fix bots affected by limit of sv_ipMaxClients value",
+            "committed_on": "2019-01-27T19:55:48Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7695,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-01-27T20:02:59Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 7735,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-02-06T16:33:51Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "7",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 7770,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-02-14T10:36:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1194,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 5,
+        "name": "Server"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "sv_ipMaxClients doesn't exclude bots",
+    "description": "The sv_ipMaxClients setting doesn't exclude bots, so if bit are enabled and their number is greater than the set value players cannot connect to the server.\r\n\r\nSignaled by Harlekin.",
+    "start_date": "2019-01-27",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-01-27T19:44:14Z",
+    "updated_on": "2019-02-14T10:36:17Z",
+    "closed_on": "2019-02-14T10:36:17Z"
+}

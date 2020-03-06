@@ -1,0 +1,156 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "1f517754a89f09bb7eab237021527a9638e28c9c",
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "comments": "game: prevent pushing spawn-protected players, refs #1295",
+            "committed_on": "2019-05-24T14:22:52Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 8212,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-05-18T22:20:11Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "17"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8234,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Changed this from bug to feature since the behaviour was intended to be able to push spawn-protected players.\r\n\r\n-*S",
+            "created_on": "2019-05-24T12:10:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "tracker_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Make spawn-protected players inmune to pushing",
+                    "new_value": "Make spawn-protected players immune to pushing"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "90"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 8235,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Thanks, PR merged.",
+            "created_on": "2019-05-24T14:24:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1295,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 821,
+        "name": "Bystry"
+    },
+    "assigned_to": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Make spawn-protected players immune to pushing",
+    "description": "ETPro has it. Seems logical. ",
+    "start_date": "2019-05-19",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-05-18T22:18:40Z",
+    "updated_on": "2019-05-24T14:24:57Z",
+    "closed_on": "2019-05-24T14:24:57Z"
+}

@@ -1,0 +1,121 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 102,
+            "issue_id": 410,
+            "issue_to_id": 32,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 2325,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-12-08T01:03:21Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "32"
+                }
+            ]
+        },
+        {
+            "id": 5070,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-08-08T14:47:23Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "0",
+                    "new_value": "44"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "17"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 410,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "assigned_to": {
+        "id": 44,
+        "name": "Jacker"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "Refactor and extend downloading code (cURL)",
+    "description": "Code for downloading files using cURL is divided between client and common sources with very hacky bits of autoupdate code mixed in. It has to be moved in a single location and cleaned.\r\n\r\nThe following features should not be very hard to implement:\r\n\r\nh2. Multi-threaded downloads\r\n\r\nThere is a very simple example of how to use multithreaded downloads in cURL with pthread: http://curl.haxx.se/libcurl/c/multithread.html\r\n\r\nh2. Resume partial downloads\r\n\r\nAs user:TheDushan suggested, we should use @CURLOPT_RESUME_FROM@ if there is a .tmp file that we can resume from.\r\n\r\nExample of resumable download using cURL is on \"stackoverflow\":http://stackoverflow.com/questions/9409997/how-to-resume-file-download-through-ftp-using-curl-in-c\r\n",
+    "start_date": "2013-12-08",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-12-08T01:03:04Z",
+    "updated_on": "2015-08-08T14:47:23Z",
+    "closed_on": "2015-08-08T14:47:23Z"
+}

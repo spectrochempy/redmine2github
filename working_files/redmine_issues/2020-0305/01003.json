@@ -1,0 +1,373 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 312,
+            "issue_id": 1003,
+            "issue_to_id": 1000,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 313,
+            "issue_id": 1003,
+            "issue_to_id": 481,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 323,
+            "issue_id": 1020,
+            "issue_to_id": 1003,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "f9d7c6a86a4e871262e2db2a1bf218886c0d130a",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: acivate G_ScriptAction_SetMainObjective / wm_set_main_objective\nrefs #1003",
+            "committed_on": "2017-03-04T23:18:25Z"
+        },
+        {
+            "revision": "d147d26f41678f278f351611513c393a0fb3a031",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: paint the main objective given by mapper in yellow (command map)\nrefs #1003",
+            "committed_on": "2017-03-06T15:28:55Z"
+        },
+        {
+            "revision": "b07fb04ac8cab4878854a828599d17ba7cbce32e",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: final fix for wm_set_main_objective script commands refs #1003\n\nnotes:\nwm_set_main_objective no longer expects the objective number (which was\nnever in sync with the game and did never work)\nthe new param is the target name of used toi - see oasis.script (also\nfor some notes) - you'll identify all toi entities via /entiylist cmd",
+            "committed_on": "2017-03-07T19:42:51Z"
+        },
+        {
+            "revision": "a22816ef86d26b104f67f1bb0ff16f3d23c15bd9",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed clang warning, refs #1003",
+            "committed_on": "2017-03-08T00:13:41Z"
+        },
+        {
+            "revision": "d3be5a795a21ffc343177ef08bb760ea775309f4",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: allow all targetnames for wm_set_main_objective toi refs #1003",
+            "committed_on": "2017-03-08T15:39:58Z"
+        },
+        {
+            "revision": "df99df556816825d46e4d5911fae493071ee157f",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed command map objective icon color when spectating, refs #1003",
+            "committed_on": "2019-04-18T17:07:47Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 6429,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-02-17T15:53:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "1",
+                    "new_value": "21"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 6430,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2017-02-17T16:13:51Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1000"
+                }
+            ]
+        },
+        {
+            "id": 6432,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-02-17T19:41:43Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "481"
+                }
+            ]
+        },
+        {
+            "id": 6434,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "",
+            "created_on": "2017-02-17T22:24:05Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "716",
+                    "new_value": "DB-obj-indicators.jpg"
+                },
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Add directional objective Indicators to the HUD.\r\n\r\nExample from Dirtybomb: http://www.f2p.com/wp-content/uploads/2014/02/Dirty-Bomb-screenshots-14.jpg",
+                    "new_value": "Add directional objective indicators to the HUD.\r\n\r\nExample from Dirty Bomb attached below."
+                },
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "21",
+                    "new_value": "16"
+                }
+            ]
+        },
+        {
+            "id": 6438,
+            "user": {
+                "id": 656,
+                "name": "belst"
+            },
+            "notes": "Icons are placeholder",
+            "created_on": "2017-02-18T15:45:26Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "718",
+                    "new_value": "goldedit.png"
+                },
+                {
+                    "property": "attachment",
+                    "name": "717",
+                    "new_value": "supply.png"
+                }
+            ]
+        },
+        {
+            "id": 6440,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "I really like the concepts, belst, but it shows the frequently discussed problems of them. Those icons are very intrusive.\r\nThey should be easily toggleable to display or hide, depending on whether you know the map or not. Maybe through an entry in the \"Game\" menu tab.\r\nThe intrusiveness can be reduced by making them smaller and transparent and also removing the \"Escort\", \"Repair\" and distance labels.\r\n\r\nI would also not display secondary objectives. For me the primary objective in Supply is the truck. Both the capture and the plant indicator should only be visible with direct line of sight, as they are rather secondary. Same as the CP in Goldrush. To say which objective is primary and therefore which indicator should be permanent requires a new script routine. Displaying the \"cunstruct\" indicator for the crane controls in Supply from the beginning, is not smart. It should only appear once the truck is in position. The mapper then has to put a ETL specific script routing behind the announcement \"Truck is in position\" , \"protect the Gold\" \"blabla\" to switch the primary indicator from Truck to Crane controls.\r\n\r\nIf all indicators are only displayed with direct line of sight, this script routine would not be necessary. However, we need to somehow tell the game which indicators are primary and should be displayed through walls. The same thing applies to limiting this to the compass, as spyhawk mentioned. Having the objective icons from the commandmap appear at the outer border of the compass, shows the direction they are at. They do not show the height difference though. To tell the game which icons to display at the border, we also need to tell the game which icons those are (a.k.a. which are primary).\r\n\r\n\r\n",
+            "created_on": "2017-02-18T16:48:00Z",
+            "details": []
+        },
+        {
+            "id": 6441,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "//Second update to somewhat maintain read-ability.\r\n\r\nWhat we could do is to have a look at the existign hints and make those show through walls. Pak0/gfx/2d/... DisarmHint, RepairHint, DynamiteHint,...\r\nWe could let the player choose which hints he wants displayed through walls and which not. DynamiteHint and DisarmHint are pretty straight forward, as those are usually crucial map-objectives. But we have no vehicle hint. (TankHint is for things that the tank shoots, like the Fueldump sewers grate). We also have no unique hint for stealable objectives like docs, radar parts, etc. Those use the regular usableHint. That one is also used by doors and what not.\r\n\r\nGenerally I like the idea of those indicators, but I can't really see how we can easily implement them, without a range of compromises.\r\n",
+            "created_on": "2017-02-18T16:54:27Z",
+            "details": []
+        },
+        {
+            "id": 6445,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Using icons visible through wall is a bad idea, it's way too intrusive even optionally. There are issues in differentiating main and secondary objectives too - no way we'll provide additional scripts for all these maps.\r\n\r\nWhy not using the compass feature and the already provided code instead? The same way medic see revive icons on the compass, and the fieldops the \"need ammo\" icon, we can do the very same for engi/covops with the construct/destruct objectives. See the attached screenshots. I have enabled it for engineer - this is not a makeup, but actual working code.\r\n\r\n* using compass means the icon is visible at 360 degrees, with direction relative to you.\r\n* there is only planar view available, but if really needed we could work around it with some new icons/arrow to display the elevation.\r\n* icons are bigger when close to the player, smaller when far away\r\n* can be filtered by classes (construct and destruct for engi, only some of the destruct for covops, etc), or display some filter to all classes (see the command map existing filters)\r\n\r\nIt's not perfect, can become somewhat heavy in some situation (see last screenshot, with fireteam members icons also displayed), but it isn't bad either as the code uses a fading effect between filters and thus does not show everything at the same time.\r\n\r\nWe could also display icons over the objective (I like the idea), but these should be only visible when in sight. I don't see the use of icons visible through walls when the compass does the job in a better manner.",
+            "created_on": "2017-02-19T11:44:29Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "720",
+                    "new_value": "Screenshot_20170219_120637.png"
+                },
+                {
+                    "property": "attachment",
+                    "name": "721",
+                    "new_value": "Screenshot_20170219_120648.png"
+                },
+                {
+                    "property": "attachment",
+                    "name": "722",
+                    "new_value": "Screenshot_20170219_120656.png"
+                },
+                {
+                    "property": "attachment",
+                    "name": "723",
+                    "new_value": "Screenshot_20170219_121150.png"
+                }
+            ]
+        },
+        {
+            "id": 6446,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "I'm in favour of the combination of on-screen indicators when in direct line of sight (primary and secondary objectives) and the compass for permanent objective indicators.\r\nThe fireteam members should definitely have a different icon than objectives, otherwise it is going to be a mess.\r\n\r\nBut we still have the problem that we can't properly differentiate between primary and secondary objectives. Take Railgun for example. When the ammo is loaded onto the gun, the primary objective is to construct the gun controls. That is not a dynamite objective.\r\nIn my opinion we should provide the possibility for future mappers to set those indicators up properly. We don't need to create hundreds of files ourselves, but maybe there is a bored volunteer. And for our 'official' ETL maps, we could set them up properly. \r\n\r\n____________________________________________________________\r\nI'd also like to make a suggestion for the second/alternative/minimalistic HUD:\r\nHaving the on-screen indicators in direct line of sight combined with compass indicators, makes the map inside the compass relatively redundant. In your example shots from oasis for example, the icon for the oasis wall is at the very top, because you are looking straight at it. However, in the map your player icon is looking right, because the map is fixated. Relying on the compass and on-screen indicators is entirely sufficient to get around in the map. Because of that, I would like to suggest a \"flat compass thing\":https://songbirdsings13.files.wordpress.com/2013/09/skyrim_field_of_view.jpg for the minimalistic HUD. Known from Skyrim, Fallout and many other RPGs.\r\nPrimary objectives, when not in line of sight of the player are displayed at the end of the bar, so the player knows he needs to turn around to see the objs. Player icons could be done like the enemy icons in this exampe, the diamond shaped thingies. Fireteam members could receive a different colour. Or you only display fireteam members there. \r\nObjectives can be displayed related to their style. Dynamite and pliers for example. Is it possible to display the disarm icon as primary objectives for defending engineers, once a dynamite has been planted? So they know where to go.\r\n",
+            "created_on": "2017-02-19T12:28:28Z",
+            "details": []
+        },
+        {
+            "id": 6493,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "{TODO}\r\n* rework location system (add new display option?)\r\n* use location distance? (system already exists but is unused)\r\n\r\nSee G_ScriptAction_SetMainObjective(), CS_MAIN_AXIS_OBJECTIVE and CS_MAIN_ALLIES_OBJECTIVE that are currently unused. We should use them!",
+            "created_on": "2017-03-03T11:41:24Z",
+            "details": []
+        },
+        {
+            "id": 6554,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-03-11T23:56:15Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1020"
+                }
+            ]
+        },
+        {
+            "id": 6658,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-04-10T14:39:40Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 8691,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2020-01-20T12:07:40Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1391"
+                }
+            ]
+        },
+        {
+            "id": 8693,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2020-01-20T12:07:59Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "old_value": "1391"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1003,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 656,
+        "name": "belst"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Add Objective Indicators to the HUD",
+    "description": "Add directional objective indicators to the HUD.\r\n\r\nExample from Dirty Bomb attached below.",
+    "start_date": "2017-02-17",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-02-17T15:44:36Z",
+    "updated_on": "2017-04-10T14:39:40Z"
+}

@@ -1,0 +1,57 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": null,
+    "journals": [],
+    "watchers": [],
+    "time_entries": null,
+    "id": 307,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "assigned_to": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "fixed_version": {
+        "id": 20,
+        "name": "2.73"
+    },
+    "subject": "N/A",
+    "description": "",
+    "start_date": "1970-01-01",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "1970-01-01T00:00:00Z",
+    "updated_on": "1970-01-01T00:00:00Z",
+    "closed_on": "1970-01-01T00:00:00Z"
+}

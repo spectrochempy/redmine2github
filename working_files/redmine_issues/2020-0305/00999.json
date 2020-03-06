@@ -1,0 +1,121 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 310,
+            "issue_id": 999,
+            "issue_to_id": 240,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 6401,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-02-13T13:35:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 6402,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "",
+            "created_on": "2017-02-13T13:39:07Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "240"
+                }
+            ]
+        },
+        {
+            "id": 6404,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Already implemented (although not the on screen editor available in etpro).",
+            "created_on": "2017-02-13T13:54:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 999,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 530,
+        "name": "Dominator56"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Customizable HUD?",
+    "description": "So I was browsing the baconET forum the other day and I found this snippet of a customizable HUD\r\n\r\nhttp://z4.invisionfree.com/baconet/index.php?showtopic=68\r\n\r\nI have no idea if this is planned or if this is of any use, as I didn't test it, but that could be an interesting feature imo. ",
+    "start_date": "2017-02-13",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-02-13T13:31:19Z",
+    "updated_on": "2017-02-13T13:54:36Z",
+    "closed_on": "2017-02-13T13:54:36Z"
+}

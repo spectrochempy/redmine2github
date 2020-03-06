@@ -1,0 +1,145 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 490,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-11-11T22:41:47Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 524,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-11-13T23:16:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "When player health is low and receiving high damage there is no fall over animation.",
+                    "new_value": "When player health is low and receiving high damage there is sometimes no fall over animation. Hard to reproduce."
+                }
+            ]
+        },
+        {
+            "id": 808,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-12-15T11:48:42Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "5",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 816,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-12-15T13:25:19Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "7",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 105,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 5,
+        "name": "2.71rc1"
+    },
+    "subject": "Fix die animation with low health",
+    "description": "When player health is low and receiving high damage there is sometimes no fall over animation. Hard to reproduce.",
+    "start_date": "2012-11-07",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-11-07T11:00:30Z",
+    "updated_on": "2012-12-15T13:25:19Z",
+    "closed_on": "2012-12-15T13:25:19Z"
+}

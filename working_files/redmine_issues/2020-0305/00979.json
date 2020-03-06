@@ -1,0 +1,164 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 303,
+            "issue_id": 979,
+            "issue_to_id": 67,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 375,
+            "issue_id": 1152,
+            "issue_to_id": 979,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "5e599f1de04c1ddd1e92991bdde58bd65c76b549",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "general: increased max cl_maxpackets to 125, refs #979",
+            "committed_on": "2017-01-23T23:06:55Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 6253,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-01-23T00:24:53Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "67"
+                }
+            ]
+        },
+        {
+            "id": 6255,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-01-23T00:25:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 6260,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I don't see any reason not to increase the max value to 125, and make it default too.\r\n\r\nThe CB inspired config files and UI would also need to be adjusted. ",
+            "created_on": "2017-01-23T15:54:12Z",
+            "details": []
+        },
+        {
+            "id": 6266,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-01-24T00:22:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 7449,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-12-28T12:25:39Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1152"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 979,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 650,
+        "name": "Terifire"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "cl_maxpackets cap",
+    "description": "The current cap is 100, while the current most common setting for com_maxfps is 125. \r\nThis means the client actually sends about 63 packets per second, as is explained here http://www.mikemartin.co/gaming_guides/quake3_smoothness_guide#TOC-CL_MAXPACKETS-AND-COM_MAXFPS.\r\n\r\nI propose raising the cap to 125, which would work well with the maxfps setting of 125, and has been thoroughly tested in more recent games/mods (Quake3 CPMA, QuakeLive, and also Tremulous).",
+    "start_date": "2017-01-23",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-01-22T23:34:58Z",
+    "updated_on": "2017-01-24T00:22:07Z",
+    "closed_on": "2017-01-24T00:22:07Z"
+}

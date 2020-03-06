@@ -1,0 +1,173 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 144,
+            "issue_id": 274,
+            "issue_to_id": 620,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 3677,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-11-10T15:43:26Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "274"
+                }
+            ]
+        },
+        {
+            "id": 3822,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-11-22T12:17:28Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "old_value": "",
+                    "new_value": "Linux"
+                }
+            ]
+        },
+        {
+            "id": 4203,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-12-21T21:15:25Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "6",
+                    "new_value": "16"
+                }
+            ]
+        },
+        {
+            "id": 4312,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-01-07T14:00:22Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "16",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 6053,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Can't reproduce anymore.",
+            "created_on": "2016-09-18T07:43:25Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 6054,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-09-18T07:45:47Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 620,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "On QWERTZ keyboards first entered char in console is '|' when SHIFT + '7' is pressed",
+    "description": "System is linux, steps to reproduce:\r\n\r\n- open console by '^' key\r\n- press SHIFT + '7' (for '/') \r\n\r\nIt prints '|' instead of '/'",
+    "start_date": "2014-11-10",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-10T15:40:04Z",
+    "updated_on": "2016-09-18T07:45:47Z",
+    "closed_on": "2016-09-18T07:45:47Z"
+}

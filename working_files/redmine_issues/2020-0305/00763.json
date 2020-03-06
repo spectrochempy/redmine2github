@@ -1,0 +1,129 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 4332,
+            "user": {
+                "id": 2,
+                "name": "Anonymous"
+            },
+            "notes": "",
+            "created_on": "2015-01-10T11:23:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 4333,
+            "user": {
+                "id": 2,
+                "name": "Anonymous"
+            },
+            "notes": "Project and POT import are up and running at\r\nhttps://www.transifex.com/projects/p/etlegacy\r\n\r\nTo do: export of translations to git repo.",
+            "created_on": "2015-01-10T12:18:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 4344,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "I followed the \"tutorial on how to integrate Transifex with a Github repo\":http://blog.transifex.com/post/67760039192/github-transifex-integration, but I do not think it is working.\r\n\r\nWhen txgh receives a notification from Github, it shows this in the terminal:\r\n\r\n<pre>\r\n178.17.4.25 - - [10/Jan/2015 21:43:37] \"POST /hooks/github HTTP/1.1\" 500 4850 0.0100\r\nTypeError - no implicit conversion of nil into String:\r\n        /usr/lib64/ruby/gems/2.0.0/gems/json-1.8.0/lib/json/common.rb:155:in `initialize'\r\n        /usr/lib64/ruby/gems/2.0.0/gems/json-1.8.0/lib/json/common.rb:155:in `new'\r\n        /usr/lib64/ruby/gems/2.0.0/gems/json-1.8.0/lib/json/common.rb:155:in `parse'\r\n        /home/etlegacy/webapps/txgh/app/app.rb:61:in `block in <class:Hooks>'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `call'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `block in compile!'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `[]'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (3 levels) in route!'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/sinatra-1.4.3/lib/sinatra/base.rb:966:in `route_eval'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (2 levels) in route!'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/sinatra-1.4.3/lib/sinatra/base.rb:987:in `block in process_route'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `catch'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `process_route'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/sinatra-1.4.3/lib/sinatra/base.rb:948:in `block in route!'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `each'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `route!'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/sinatra-1.4.3/lib/sinatra/base.rb:1059:in `block in dispatch!'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/sinatra-1.4.3/lib/sinatra/base.rb:1056:in `dispatch!'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `block in call!'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `call!'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/sinatra-1.4.3/lib/sinatra/base.rb:870:in `call'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/rack-protection-1.5.0/lib/rack/protection/xss_header.rb:18:in `call'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/rack-protection-1.5.0/lib/rack/protection/path_traversal.rb:16:in `call'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/rack-protection-1.5.0/lib/rack/protection/json_csrf.rb:18:in `call'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/rack-protection-1.5.0/lib/rack/protection/frame_options.rb:31:in `call'\r\n        /usr/local/lib64/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/nulllogger.rb:9:in `call'\r\n        /usr/local/lib64/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/sinatra-1.4.3/lib/sinatra/showexceptions.rb:21:in `call'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/sinatra-1.4.3/lib/sinatra/base.rb:175:in `call'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/sinatra-1.4.3/lib/sinatra/base.rb:1949:in `call'\r\n        /usr/local/lib64/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/builder.rb:138:in `call'\r\n        /usr/local/lib64/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/urlmap.rb:65:in `block in call'\r\n        /usr/local/lib64/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/urlmap.rb:50:in `each'\r\n        /usr/local/lib64/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/urlmap.rb:50:in `call'\r\n        /usr/local/lib64/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'\r\n        /usr/local/lib64/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'\r\n        /usr/local/lib64/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/puma-2.5.1/lib/puma/rack_patch.rb:13:in `call'\r\n        /usr/local/lib64/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'\r\n        /usr/local/lib64/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/puma-2.5.1/lib/puma/server.rb:472:in `handle_request'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/puma-2.5.1/lib/puma/server.rb:343:in `process_client'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/puma-2.5.1/lib/puma/server.rb:242:in `block in run'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/puma-2.5.1/lib/puma/thread_pool.rb:92:in `call'\r\n        /home/etlegacy/.gem/ruby/2.0.0/gems/puma-2.5.1/lib/puma/thread_pool.rb:92:in `block in spawn_thread'\r\n</pre>",
+            "created_on": "2015-01-10T21:43:05Z",
+            "details": []
+        },
+        {
+            "id": 4489,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "",
+            "created_on": "2015-01-22T18:01:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 13,
+            "name": "RaFaL"
+        }
+    ],
+    "time_entries": null,
+    "id": 763,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 2,
+        "name": "Anonymous"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 10,
+        "name": "N/A"
+    },
+    "subject": "Move translations to a GMS platform (e.g. Transifex)",
+    "description": "Forcing volunteers to study mostly Linux-only tools (e.g. Poedit) and open Pull Requests for every edit of translation is just not cool. Also updating .po files after every single template change is *pain*.\r\n\r\nA platform like Transifex or Launchpad will help us crowdsource translations from concerned citizens without technical skills. Maintaining existing ones will become easier too.",
+    "start_date": "2015-01-09",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-01-09T10:51:06Z",
+    "updated_on": "2015-01-22T18:01:16Z",
+    "closed_on": "2015-01-22T18:01:16Z"
+}

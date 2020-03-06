@@ -1,0 +1,146 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "99174d5c39be99e93bb01f2888818423f7b9af6b",
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "comments": "changed Sys_OpenURL, fixes #12",
+            "committed_on": "2012-03-12T08:12:38Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "",
+            "created_on": "2012-03-03T17:53:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "",
+            "created_on": "2012-03-03T20:12:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "",
+            "created_on": "2012-03-03T22:49:23Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "3",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 5100,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-08-08T18:56:09Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "17"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 12,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "assigned_to": {
+        "id": 4,
+        "name": "morsik"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "Replace Sys_OpenURL",
+    "description": "Currently, the game searches for openurl.sh script which does not exist.",
+    "start_date": "2012-03-02",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2012-03-02T13:51:07Z",
+    "updated_on": "2015-08-08T18:56:09Z",
+    "closed_on": "2012-03-03T22:49:23Z"
+}

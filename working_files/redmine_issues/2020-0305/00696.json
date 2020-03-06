@@ -1,0 +1,73 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 6533,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-03-07T15:11:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 696,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Demo playback issues",
+    "description": "1. Weird shadows from brass is left behind when rewinding\r\n2. All the brass is \"already\" there when rewinding\r\n3. Some smokes will show before it ever happened when you rewind, for example gun smoke (see screenshots)\r\n4. Smoke coming from a gun will still play when demo is paused\r\n5. Most sounds will still play even the demo is paused (reload, airstrike, tank move sound etc.)\r\n6. Left hand side of the screen where the kills are shown... won't actually reset to the right state after rewinding. Meaning that when some kills have happened and you rewind and the same kills happen again, the same kills will be shown on top of each other (see screenshots)\r\n\r\nThere are far more issues with this but these are now which came to my mind.\r\n\r\n-*S",
+    "start_date": "2014-12-06",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-12-06T15:22:16Z",
+    "updated_on": "2017-03-07T15:11:54Z"
+}

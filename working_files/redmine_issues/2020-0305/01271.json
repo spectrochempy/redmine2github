@@ -1,0 +1,149 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 424,
+            "issue_id": 1282,
+            "issue_to_id": 1271,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "44ba59a27ed754b7ede5481db8d6e00a9d8b8e97",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: reverted max members per fireteam to original value, refs #1271",
+            "committed_on": "2019-12-13T23:03:30Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 8091,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-05-01T16:49:18Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "16"
+                }
+            ]
+        },
+        {
+            "id": 8103,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "{TODO} We can do something similar for:\r\n* minimap,\r\n* command map,\r\n* FT window,\r\n* FT icons on the compass (most important)\r\n* maybe scoreboard (if that is possible?)\r\n* maybe icon above FT members\r\n\r\nAlso:\r\n* Revert FT max members to 6 (instead of the increased 8)\r\n* Find 6 good colours that aren't yellow, red, blue (used on minimap for teams and ammo/revive icons)\r\n* Colour the class icon in the respective colour in FT window. No extra shape needed.\r\n* Use small triangles to distinguish players from other icons (the circle could be kept for objectives only)\r\n* Rotate these triangles to show direction faced by FT members, relative to the player\r\n* Replace FT icons by simpler \"symbols\":https://images-ext-2.discordapp.net/external/Z1gCeI127MjbpQccSvRHkRBbLI8ZuoIZEQU0b7OoBo0/https/s3.amazonaws.com/files.thegamecrafter.com/5071cd3b3838569fdb27ef18129e75e3a0edce6c and colour them to match member personal colour.\r\n\r\nCheck how the existing FT selection members feature can be leveraged/improved upon with that idea.\r\nKeep attention of not bloating the HUD either. The feature should be discrete but useful, and should not become a Christmas decoration tree.",
+            "created_on": "2019-05-02T16:57:22Z",
+            "details": []
+        },
+        {
+            "id": 8104,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-05-02T16:58:33Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "1086",
+                    "new_value": "Inked20190502180638_1_LI.jpg"
+                }
+            ]
+        },
+        {
+            "id": 8135,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-05-06T16:42:35Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1282"
+                }
+            ]
+        },
+        {
+            "id": 8148,
+            "user": {
+                "id": 821,
+                "name": "Bystry"
+            },
+            "notes": "",
+            "created_on": "2019-05-07T21:39:35Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "1093",
+                    "new_value": "cs_colours.jpg"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1271,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 821,
+        "name": "Bystry"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Give each member of FT a color in scoreboard, on mini-map and command map",
+    "description": "An interesting feature from CS:GO matchmaking. It consists of giving each player from your team a color (green, yellow, blue, etc.) on both mini-map, command map and scoreboard. It would be especially convenient for mixed matches and future matchmaking system, in which case you play with random people. That way you don't have to pronounce weird nicks and also you can see where exactly each player is at any given time.  ",
+    "start_date": "2019-05-01",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-05-01T16:30:31Z",
+    "updated_on": "2019-05-07T21:39:35Z"
+}

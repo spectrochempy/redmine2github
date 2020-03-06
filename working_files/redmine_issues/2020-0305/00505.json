@@ -1,0 +1,157 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "2ac15e3247d876ce5f188b5d013c0bdd6d1bdbc1",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "ladm: added cointoss and pm inbuilt commands",
+            "committed_on": "2014-02-13T00:30:39Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2990,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Could you describe this feature a bit more? What is it for?",
+            "created_on": "2014-02-12T17:08:15Z",
+            "details": []
+        },
+        {
+            "id": 2992,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "It's really a simple referee command, that returns \"Heads\" or \"Tails\" to everybody.\r\n\r\nIt's useful to make small decision such as \"Which team starts on the Axis side on the first SW round?\".",
+            "created_on": "2014-02-12T17:47:10Z",
+            "details": []
+        },
+        {
+            "id": 2993,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Command makes sense :)",
+            "created_on": "2014-02-12T17:58:26Z",
+            "details": []
+        },
+        {
+            "id": 2994,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Now that I think about it, wouldn't it be better implemented in Lua in the core admin package (noq and/or ladm)?",
+            "created_on": "2014-02-12T18:09:53Z",
+            "details": []
+        },
+        {
+            "id": 2995,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "I see. Definitely belongs to lua.",
+            "created_on": "2014-02-12T18:14:12Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "project_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "16",
+                    "new_value": "22"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 2996,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Added in commit commit:2ac15e3247d876ce5f188b5d013c0bdd6d1bdbc1",
+            "created_on": "2014-02-13T00:38:37Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 505,
+    "project": {
+        "id": 4,
+        "name": "Lua scripts for the Legacy mod"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 22,
+        "name": "Lua scripts"
+    },
+    "fixed_version": {
+        "id": 4,
+        "name": "ALL"
+    },
+    "subject": "Cointoss",
+    "description": "Missing little feature, mostly useful for competition: cointoss (virtual coin flipping).\r\n\r\nAlso add a button in the Referee menu.",
+    "start_date": "2014-02-12",
+    "done_ratio": 100,
+    "created_on": "2014-02-12T14:55:23Z",
+    "updated_on": "2014-02-13T00:38:37Z",
+    "closed_on": "2014-02-13T00:38:37Z"
+}

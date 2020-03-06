@@ -1,0 +1,217 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "8a7d58af9a93aab947f19086e747bb6725afd24e",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: relax level.num_entities refs #431",
+            "committed_on": "2013-12-26T00:10:24Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2514,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-12-23T11:55:38Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "I do suppose the introduction of antilag (see G_Trace and usage of G_BuildLeg/G_BuildHead) messed up level.num_entities.\r\n\r\nWith 20 players level.num_entities grows rapidly to a max value of MAX_GENTITIES-1. This wasn't originally intended - quake f.e. isn't affected. To test: Run a server with 20 bots and call 'entitiylist' cmd regularily.\r\n\r\nlevel.num_entities should be keept as small as possible (it's the max index of used game entities) so all the loops spread over in the code are kept as short as possible. The intensive usage of G_BuildLeg/G_BuildHead/G_Trace denis that. \r\n\r\nHere is my first fix:\r\n<pre>\r\n/*\r\n=================\r\nG_FreeEntity\r\n\r\nMarks the entity as free\r\n=================\r\n*/\r\nvoid G_FreeEntity(gentity_t *ed)\r\n{\r\n#ifdef FEATURE_OMNIBOT\r\n\tBot_Event_EntityDeleted(ed);\r\n#endif\r\n\r\n\tif (ed->free)\r\n\t{\r\n\t\ted->free(ed);\r\n\t}\r\n\r\n\ttrap_UnlinkEntity(ed);       // unlink from world\r\n\r\n\tif (ed->neverFree)\r\n\t{\r\n\t\treturn;\r\n\t}\r\n\r\n\t// this fixes level.num_entities rapidly reaching MAX_GENTITIES-1\r\n\t// real temporary server ents don't have to relax (=spawned, immediately freed and not transmitted)\r\n\t// ET_TEMP* entities are linked for a short amount of time but have no ent->r.svFlags set (not broadcasted)\r\n\t//\r\n\t// FIXME: inspect events & optimize in same way\r\n\t// - if events are freed EVENT_VALID_MSEC has already passed - but keep in mind these are broadcasted\r\n\t// || e->s.eType > ET_EVENTS // if freeAfterEvent is set don't relax ...\r\n\tif ((ed->s.eType == ET_TEMPHEAD || ed->s.eType == ET_TEMPLEGS) && trap_Cvar_VariableIntegerValue(\"l_free\") == 0)\r\n\t{\r\n\t\tmemset(ed, 0, sizeof(*ed));\r\n\t\ted->classname = \"freed\";\r\n\t\t// ents are immediately available (and reuse a 'slot')\r\n\t\ted->freetime  = -9999;  // e->freetime is never greater than level.startTime + 2000 see G_Spawn()\r\n\t\ted->inuse     = qfalse;\r\n\r\n\t\tif (trap_Cvar_VariableIntegerValue(\"l_see\") == 1)\r\n\t\t{\r\n\t\t\tG_Printf(\"------> freed %4i:\\n\", level.num_entities );\r\n\t\t}\r\n\t}\r\n\telse // all other ents relax\r\n\t{\r\n\t\tmemset(ed, 0, sizeof(*ed));\r\n\t\ted->classname = \"freed\";\r\n\t\ted->freetime  = level.time;\r\n\t\ted->inuse     = qfalse;\r\n\t}\r\n}\r\n</pre>\r\n\r\nlevel.num_entities no longer reaches  MAX_GENTITIES-1 quickly ... even with 20 bots the value is 'constant' and far away from MAX_GENTITIES-1 - do same test as above.\r\n\r\nI didn't commit this because I want to ensure there are no side effects on network games. Listen server works properly.\r\n\r\nLet's test!\r\n\r\nnote: entitlist won't show ET_TEMP* entities - they are processed in between a frame.\r\n",
+                    "new_value": "I do suppose the introduction of antilag (see G_Trace and usage of G_BuildLeg/G_BuildHead) messed up level.num_entities.\r\n\r\nWith 20 players level.num_entities grows rapidly to a max value of MAX_GENTITIES-1. This wasn't originally intended - quake f.e. isn't affected. To test: Run a server with 20 bots and call 'entitiylist' cmd regularily.\r\n\r\nlevel.num_entities should be keept as small as possible (it's the max index of used game entities) so all the loops spread over in the code are kept as short as possible. The intensive usage of G_BuildLeg/G_BuildHead/G_Trace denis that. \r\n\r\nHere is my first fix:\r\n<pre><code class=\"C\">\r\n/*\r\n=================\r\nG_FreeEntity\r\n\r\nMarks the entity as free\r\n=================\r\n*/\r\nvoid G_FreeEntity(gentity_t *ed)\r\n{\r\n#ifdef FEATURE_OMNIBOT\r\n\tBot_Event_EntityDeleted(ed);\r\n#endif\r\n\r\n\tif (ed->free)\r\n\t{\r\n\t\ted->free(ed);\r\n\t}\r\n\r\n\ttrap_UnlinkEntity(ed);       // unlink from world\r\n\r\n\tif (ed->neverFree)\r\n\t{\r\n\t\treturn;\r\n\t}\r\n\r\n\t// this fixes level.num_entities rapidly reaching MAX_GENTITIES-1\r\n\t// real temporary server ents don't have to relax (=spawned, immediately freed and not transmitted)\r\n\t// ET_TEMP* entities are linked for a short amount of time but have no ent->r.svFlags set (not broadcasted)\r\n\t//\r\n\t// FIXME: inspect events & optimize in same way\r\n\t// - if events are freed EVENT_VALID_MSEC has already passed - but keep in mind these are broadcasted\r\n\t// || e->s.eType > ET_EVENTS // if freeAfterEvent is set don't relax ...\r\n\tif ((ed->s.eType == ET_TEMPHEAD || ed->s.eType == ET_TEMPLEGS) && trap_Cvar_VariableIntegerValue(\"l_free\") == 0)\r\n\t{\r\n\t\tmemset(ed, 0, sizeof(*ed));\r\n\t\ted->classname = \"freed\";\r\n\t\t// ents are immediately available (and reuse a 'slot')\r\n\t\ted->freetime  = -9999;  // e->freetime is never greater than level.startTime + 2000 see G_Spawn()\r\n\t\ted->inuse     = qfalse;\r\n\r\n\t\tif (trap_Cvar_VariableIntegerValue(\"l_see\") == 1)\r\n\t\t{\r\n\t\t\tG_Printf(\"------> freed %4i:\\n\", level.num_entities );\r\n\t\t}\r\n\t}\r\n\telse // all other ents relax\r\n\t{\r\n\t\tmemset(ed, 0, sizeof(*ed));\r\n\t\ted->classname = \"freed\";\r\n\t\ted->freetime  = level.time;\r\n\t\ted->inuse     = qfalse;\r\n\t}\r\n}\r\n</code></pre>\r\n\r\nlevel.num_entities no longer reaches  MAX_GENTITIES-1 quickly ... even with 20 bots the value is 'constant' and far away from MAX_GENTITIES-1 - do same test as above.\r\n\r\nI didn't commit this because I want to ensure there are no side effects on network games. Listen server works properly.\r\n\r\nLet's test!\r\n\r\nnote: entitlist won't show ET_TEMP* entities - they are processed in between a frame.\r\n"
+                }
+            ]
+        },
+        {
+            "id": 2602,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-12-28T23:40:15Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "I do suppose the introduction of antilag (see G_Trace and usage of G_BuildLeg/G_BuildHead) messed up level.num_entities.\r\n\r\nWith 20 players level.num_entities grows rapidly to a max value of MAX_GENTITIES-1. This wasn't originally intended - quake f.e. isn't affected. To test: Run a server with 20 bots and call 'entitiylist' cmd regularily.\r\n\r\nlevel.num_entities should be keept as small as possible (it's the max index of used game entities) so all the loops spread over in the code are kept as short as possible. The intensive usage of G_BuildLeg/G_BuildHead/G_Trace denis that. \r\n\r\nHere is my first fix:\r\n<pre><code class=\"C\">\r\n/*\r\n=================\r\nG_FreeEntity\r\n\r\nMarks the entity as free\r\n=================\r\n*/\r\nvoid G_FreeEntity(gentity_t *ed)\r\n{\r\n#ifdef FEATURE_OMNIBOT\r\n\tBot_Event_EntityDeleted(ed);\r\n#endif\r\n\r\n\tif (ed->free)\r\n\t{\r\n\t\ted->free(ed);\r\n\t}\r\n\r\n\ttrap_UnlinkEntity(ed);       // unlink from world\r\n\r\n\tif (ed->neverFree)\r\n\t{\r\n\t\treturn;\r\n\t}\r\n\r\n\t// this fixes level.num_entities rapidly reaching MAX_GENTITIES-1\r\n\t// real temporary server ents don't have to relax (=spawned, immediately freed and not transmitted)\r\n\t// ET_TEMP* entities are linked for a short amount of time but have no ent->r.svFlags set (not broadcasted)\r\n\t//\r\n\t// FIXME: inspect events & optimize in same way\r\n\t// - if events are freed EVENT_VALID_MSEC has already passed - but keep in mind these are broadcasted\r\n\t// || e->s.eType > ET_EVENTS // if freeAfterEvent is set don't relax ...\r\n\tif ((ed->s.eType == ET_TEMPHEAD || ed->s.eType == ET_TEMPLEGS) && trap_Cvar_VariableIntegerValue(\"l_free\") == 0)\r\n\t{\r\n\t\tmemset(ed, 0, sizeof(*ed));\r\n\t\ted->classname = \"freed\";\r\n\t\t// ents are immediately available (and reuse a 'slot')\r\n\t\ted->freetime  = -9999;  // e->freetime is never greater than level.startTime + 2000 see G_Spawn()\r\n\t\ted->inuse     = qfalse;\r\n\r\n\t\tif (trap_Cvar_VariableIntegerValue(\"l_see\") == 1)\r\n\t\t{\r\n\t\t\tG_Printf(\"------> freed %4i:\\n\", level.num_entities );\r\n\t\t}\r\n\t}\r\n\telse // all other ents relax\r\n\t{\r\n\t\tmemset(ed, 0, sizeof(*ed));\r\n\t\ted->classname = \"freed\";\r\n\t\ted->freetime  = level.time;\r\n\t\ted->inuse     = qfalse;\r\n\t}\r\n}\r\n</code></pre>\r\n\r\nlevel.num_entities no longer reaches  MAX_GENTITIES-1 quickly ... even with 20 bots the value is 'constant' and far away from MAX_GENTITIES-1 - do same test as above.\r\n\r\nI didn't commit this because I want to ensure there are no side effects on network games. Listen server works properly.\r\n\r\nLet's test!\r\n\r\nnote: entitlist won't show ET_TEMP* entities - they are processed in between a frame.\r\n",
+                    "new_value": "I do suppose the introduction of antilag (see G_Trace and usage of G_BuildLeg/G_BuildHead) messed up level.num_entities.\r\n\r\nWith 20 players level.num_entities grows rapidly to a max value of MAX_GENTITIES-1. This wasn't originally intended - quake f.e. isn't affected. To test: Run a server with 20 bots and call 'entitiylist' cmd regularily.\r\n\r\nlevel.num_entities should be keept as small as possible (it's the max index of used game entities) so all the loops spread over in the code are kept as short as possible. The intensive usage of G_BuildLeg/G_BuildHead/G_Trace denies that. \r\n\r\nHere is my first fix:\r\n<pre><code class=\"C\">\r\n/*\r\n=================\r\nG_FreeEntity\r\n\r\nMarks the entity as free\r\n=================\r\n*/\r\nvoid G_FreeEntity(gentity_t *ed)\r\n{\r\n#ifdef FEATURE_OMNIBOT\r\n\tBot_Event_EntityDeleted(ed);\r\n#endif\r\n\r\n\tif (ed->free)\r\n\t{\r\n\t\ted->free(ed);\r\n\t}\r\n\r\n\ttrap_UnlinkEntity(ed);       // unlink from world\r\n\r\n\tif (ed->neverFree)\r\n\t{\r\n\t\treturn;\r\n\t}\r\n\r\n\t// this fixes level.num_entities rapidly reaching MAX_GENTITIES-1\r\n\t// real temporary server ents don't have to relax (=spawned, immediately freed and not transmitted)\r\n\t// ET_TEMP* entities are linked for a short amount of time but have no ent->r.svFlags set (not broadcasted)\r\n\t//\r\n\t// FIXME: inspect events & optimize in same way\r\n\t// - if events are freed EVENT_VALID_MSEC has already passed - but keep in mind these are broadcasted\r\n\t// || e->s.eType > ET_EVENTS // if freeAfterEvent is set don't relax ...\r\n\tif ((ed->s.eType == ET_TEMPHEAD || ed->s.eType == ET_TEMPLEGS) && trap_Cvar_VariableIntegerValue(\"l_free\") == 0)\r\n\t{\r\n\t\tmemset(ed, 0, sizeof(*ed));\r\n\t\ted->classname = \"freed\";\r\n\t\t// ents are immediately available (and reuse a 'slot')\r\n\t\ted->freetime  = -9999;  // e->freetime is never greater than level.startTime + 2000 see G_Spawn()\r\n\t\ted->inuse     = qfalse;\r\n\r\n\t\tif (trap_Cvar_VariableIntegerValue(\"l_see\") == 1)\r\n\t\t{\r\n\t\t\tG_Printf(\"------> freed %4i:\\n\", level.num_entities );\r\n\t\t}\r\n\t}\r\n\telse // all other ents relax\r\n\t{\r\n\t\tmemset(ed, 0, sizeof(*ed));\r\n\t\ted->classname = \"freed\";\r\n\t\ted->freetime  = level.time;\r\n\t\ted->inuse     = qfalse;\r\n\t}\r\n}\r\n</code></pre>\r\n\r\nlevel.num_entities no longer reaches  MAX_GENTITIES-1 quickly ... even with 20 bots the value is 'constant' and far away from MAX_GENTITIES-1 - do same test as above.\r\n\r\nI didn't commit this because I want to ensure there are no side effects on network games. Listen server works properly.\r\n\r\nLet's test!\r\n\r\nnote: entitlist won't show ET_TEMP* entities - they are processed in between a frame.\r\n"
+                }
+            ]
+        },
+        {
+            "id": 2603,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Code is commited. I've added a cvar 'l_free' which disables the optimization if set to 1.\r\n\r\n{FIXME} remove the tmp cvar ",
+            "created_on": "2013-12-28T23:44:56Z",
+            "details": []
+        },
+        {
+            "id": 2673,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-01-02T08:33:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 3213,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-05-31T08:20:42Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 3852,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-11-23T11:17:59Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "6",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 7529,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-01-06T08:39:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 7610,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-01-19T15:07:52Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "22",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 431,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 2,
+        "name": "In Progress"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Fix level.num_entities",
+    "description": "I do suppose the introduction of antilag (see G_Trace and usage of G_BuildLeg/G_BuildHead) messed up level.num_entities.\r\n\r\nWith 20 players level.num_entities grows rapidly to a max value of MAX_GENTITIES-1. This wasn't originally intended - quake f.e. isn't affected. To test: Run a server with 20 bots and call 'entitiylist' cmd regularily.\r\n\r\nlevel.num_entities should be keept as small as possible (it's the max index of used game entities) so all the loops spread over in the code are kept as short as possible. The intensive usage of G_BuildLeg/G_BuildHead/G_Trace denies that. \r\n\r\nHere is my first fix:\r\n<pre><code class=\"C\">\r\n/*\r\n=================\r\nG_FreeEntity\r\n\r\nMarks the entity as free\r\n=================\r\n*/\r\nvoid G_FreeEntity(gentity_t *ed)\r\n{\r\n#ifdef FEATURE_OMNIBOT\r\n\tBot_Event_EntityDeleted(ed);\r\n#endif\r\n\r\n\tif (ed->free)\r\n\t{\r\n\t\ted->free(ed);\r\n\t}\r\n\r\n\ttrap_UnlinkEntity(ed);       // unlink from world\r\n\r\n\tif (ed->neverFree)\r\n\t{\r\n\t\treturn;\r\n\t}\r\n\r\n\t// this fixes level.num_entities rapidly reaching MAX_GENTITIES-1\r\n\t// real temporary server ents don't have to relax (=spawned, immediately freed and not transmitted)\r\n\t// ET_TEMP* entities are linked for a short amount of time but have no ent->r.svFlags set (not broadcasted)\r\n\t//\r\n\t// FIXME: inspect events & optimize in same way\r\n\t// - if events are freed EVENT_VALID_MSEC has already passed - but keep in mind these are broadcasted\r\n\t// || e->s.eType > ET_EVENTS // if freeAfterEvent is set don't relax ...\r\n\tif ((ed->s.eType == ET_TEMPHEAD || ed->s.eType == ET_TEMPLEGS) && trap_Cvar_VariableIntegerValue(\"l_free\") == 0)\r\n\t{\r\n\t\tmemset(ed, 0, sizeof(*ed));\r\n\t\ted->classname = \"freed\";\r\n\t\t// ents are immediately available (and reuse a 'slot')\r\n\t\ted->freetime  = -9999;  // e->freetime is never greater than level.startTime + 2000 see G_Spawn()\r\n\t\ted->inuse     = qfalse;\r\n\r\n\t\tif (trap_Cvar_VariableIntegerValue(\"l_see\") == 1)\r\n\t\t{\r\n\t\t\tG_Printf(\"------> freed %4i:\\n\", level.num_entities );\r\n\t\t}\r\n\t}\r\n\telse // all other ents relax\r\n\t{\r\n\t\tmemset(ed, 0, sizeof(*ed));\r\n\t\ted->classname = \"freed\";\r\n\t\ted->freetime  = level.time;\r\n\t\ted->inuse     = qfalse;\r\n\t}\r\n}\r\n</code></pre>\r\n\r\nlevel.num_entities no longer reaches  MAX_GENTITIES-1 quickly ... even with 20 bots the value is 'constant' and far away from MAX_GENTITIES-1 - do same test as above.\r\n\r\nI didn't commit this because I want to ensure there are no side effects on network games. Listen server works properly.\r\n\r\nLet's test!\r\n\r\nnote: entitlist won't show ET_TEMP* entities - they are processed in between a frame.\r\n",
+    "start_date": "2013-12-23",
+    "done_ratio": 50,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-12-23T09:54:31Z",
+    "updated_on": "2019-01-19T15:07:52Z"
+}

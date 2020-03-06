@@ -1,0 +1,108 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 6670,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-04-11T12:56:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 7525,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-01-06T08:35:43Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 7780,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-02-14T10:40:18Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "22",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1013,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Add r_displayRefresh to the menus",
+    "description": "Sets refresh rate or 0 (default + recommended) for unspecified. Requires restart.\r\n\r\nValid values: 0 - 200\r\n\r\nNote: This cvar was flagged as unsafe in vanilla. I don't know what's going on when the set refresh value is behind the limits\r\nof the display device.",
+    "start_date": "2017-03-02",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-03-02T16:46:46Z",
+    "updated_on": "2019-02-14T10:40:18Z"
+}

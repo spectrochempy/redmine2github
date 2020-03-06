@@ -1,0 +1,87 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 8129,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Engineers don't have access to adrenaline. That's probably another side effect of of fun feature...\r\n\r\n* Engineer + flak jacket = 50% damage = 200 HP damage from Panzer (gibbed, or limbo if max health with max team bonus HP).\r\n* Medic + Adrenaline = 50% damage = 200 HP damage from Panzer (gibbed, or limbo if max health with max team bonus HP + 12% medic bonus)\r\n\r\nWe shouldn't increase the backstab damage value, because this would gib players way too easily (2 stabs on medic+adre send him in limbo, but increasing it to send medic to limbo in one stab would have the effect of gibbing other classes directly). Working as intended, as far as I can see.",
+            "created_on": "2019-05-06T15:35:25Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1279,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Rework adrenaline + backstab combo",
+    "description": "Okay so, I've always been under the impression that adrenaline just gives you unlimited stamina for the duration, but today I've learned that it also reduces any damage taken by 50%.\r\nSo using the backstab skill (cvops lvl 4) on someone with adrenaline doesn't insta-gib, but rather reduce their health by 50% with each attack.\r\n*Hypothetically*, an engineer with flak jacket (lvl 4) on adrenaline would \"survive a direct Panzerfaust shot into the face\":https://cdn.discordapp.com/attachments/260750790203932672/574923890346688522/engpanz.gif which is just mad.\r\n\r\nI don't know what the best approach here would be.\r\nPersonally, I would suggest to remove the health benefit of adrenaline and only make it grant unlimited stamina for its duration.\r\nAlternatively, we could force backstab to deal 100% in *all* cases even if the other person has adrenaline active?\r\nOr we just don't change it and accept that it's very much intended.",
+    "start_date": "2019-05-06",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-05-06T12:54:10Z",
+    "updated_on": "2019-05-06T15:35:25Z",
+    "closed_on": "2019-05-06T15:35:25Z"
+}

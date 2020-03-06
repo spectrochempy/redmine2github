@@ -1,0 +1,160 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 28,
+            "issue_id": 101,
+            "issue_to_id": 92,
+            "relation_type": "blocks",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "cf69fd24ed34d5aaee44c946fd10fb390a5b0a43",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: fix for broken windows build refs #101",
+            "committed_on": "2012-11-04T04:07:07Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 448,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Sorry did not notice that as gcc builds fine. \r\n\r\nShould be ok again ...",
+            "created_on": "2012-11-04T04:19:23Z",
+            "details": []
+        },
+        {
+            "id": 449,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-11-04T04:19:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 453,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2012-11-04T09:13:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 2451,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "created_on": "2013-12-14T18:05:56Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "new_value": "Windows"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 1,
+            "name": "Radegast"
+        }
+    ],
+    "time_entries": null,
+    "id": 101,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 6,
+        "name": "Urgent"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 1,
+        "name": "2.70rc1"
+    },
+    "subject": "Clean up of bg_pmove.c broke Windows build",
+    "description": "Introduced in revision commit:013e8079\r\n<pre>\r\nScanning dependencies of target cgame_mp_x86\r\n[  0%] Building C object CMakeFiles/cgame_mp_x86.dir/src/game/bg_pmove.c.obj\r\nbg_pmove.c\r\nC:\\etlegacy\\source\\src\\game\\bg_pmove.c(1054) : error C2143: syntax error : missing ';' before 'type'\r\nC:\\etlegacy\\source\\src\\game\\bg_pmove.c(1055) : error C2275: 'qboolean' : illegal use of this type as an expression\r\n        c:\\etlegacy\\source\\src\\ui\\../qcommon/q_shared.h(308) : see declaration of 'qboolean'\r\nC:\\etlegacy\\source\\src\\game\\bg_pmove.c(1055) : error C2146: syntax error : missing ';' before identifier 'userinput'\r\nC:\\etlegacy\\source\\src\\game\\bg_pmove.c(1055) : error C2065: 'userinput' : undeclared identifier\r\nC:\\etlegacy\\source\\src\\game\\bg_pmove.c(1057) : error C2065: 'userinput' : undeclared identifier\r\nC:\\etlegacy\\source\\src\\game\\bg_pmove.c(1057) : error C2065: 'spd' : undeclared identifier\r\nC:\\etlegacy\\source\\src\\game\\bg_pmove.c(1074) : error C2065: 'userinput' : undeclared identifier\r\nC:\\etlegacy\\source\\src\\game\\bg_pmove.c(1074) : error C2065: 'spd' : undeclared identifier\r\n</pre>",
+    "start_date": "2012-11-03",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Windows"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-11-03T20:44:16Z",
+    "updated_on": "2013-12-14T18:05:56Z",
+    "closed_on": "2012-11-04T09:13:32Z"
+}

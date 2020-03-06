@@ -1,0 +1,195 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 54,
+            "issue_id": 182,
+            "issue_to_id": 78,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 55,
+            "issue_id": 182,
+            "issue_to_id": 179,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 1130,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-02-10T11:56:55Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "5",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1594,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "",
+            "created_on": "2013-04-27T10:58:25Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Inspect memory usage ...",
+                    "new_value": "Inspect memory usage..."
+                },
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Currently ETL uses about 430-440 MB of memory at start. With com_hunkmegs 128 and com_soundmegs 160 there is a gap about 140-150MB. Genuine ET bin uses 360-370MB with same megs settings.\r\n\r\nInspect the 'gap' and figure out why ETL uses more memory. It's maybe related to #78.",
+                    "new_value": "Currently ET:L uses about 430-440 MB of memory at start. With com_hunkmegs 128 and com_soundmegs 160 there is a gap about 140-150MB. Genuine ET bin uses 360-370MB with same megs settings.\r\n\r\nInspect the 'gap' and figure out why ET:L uses more memory. It's maybe related to #78."
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 1670,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-05-03T15:07:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "5",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 1728,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-06-04T21:41:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "7",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 5020,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-07-24T09:39:01Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "17"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 102,
+            "name": "BSzili"
+        },
+        {
+            "id": 1,
+            "name": "Radegast"
+        },
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 182,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "Inspect memory usage...",
+    "description": "Currently ET:L uses about 430-440 MB of memory at start. With com_hunkmegs 128 and com_soundmegs 160 there is a gap about 140-150MB. Genuine ET bin uses 360-370MB with same megs settings.\r\n\r\nInspect the 'gap' and figure out why ET:L uses more memory. It's maybe related to #78.",
+    "start_date": "2013-01-30",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-01-30T06:44:32Z",
+    "updated_on": "2015-07-24T09:39:01Z",
+    "closed_on": "2015-07-24T09:39:01Z"
+}

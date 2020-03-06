@@ -1,0 +1,145 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 6196,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "Added sample file for testing.",
+            "created_on": "2016-12-16T16:14:08Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "677",
+                    "new_value": "func_rotating.pk3"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "13"
+                }
+            ]
+        },
+        {
+            "id": 6197,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "After some brain storm with kemon we came up with decision that it could be entities colision issue ",
+            "created_on": "2016-12-16T17:55:57Z",
+            "details": []
+        },
+        {
+            "id": 6198,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2016-12-18T09:35:00Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "677",
+                    "old_value": "func_rotating.pk3"
+                }
+            ]
+        },
+        {
+            "id": 6199,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "Added func_door_rotating to the sample map",
+            "created_on": "2016-12-18T09:35:22Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "679",
+                    "new_value": "func_rotating.pk3"
+                }
+            ]
+        },
+        {
+            "id": 6669,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-04-10T16:02:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "21"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 969,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "assigned_to": {
+        "id": 13,
+        "name": "RaFaL"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "func_rotating trigger landmines",
+    "description": "Func_rotating and possibly func_door_rotating should not be triggering landmines in my opinion. Landmines are pressure and not movement triggered.\r\nSomething that is rotating or swinging around above ground should not have an efffect.\r\nEspecially for func_rotating it is annoying and the best example for that is \"Ammo Depot\":http://magics-territory.com/files/wet/maps/ammodepot_sc.html. The searchlights on the bunker are rotating and everywhere in that radius you can *not* plant landmines, although it is only light and 100 meters above ground.\r\n\r\nAdmittedly for func_door_rotating it would provide a small gameplay change, however I think in the logical direction. This is a seperate issue though and probably needs discussion.",
+    "start_date": "2016-12-13",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2016-12-13T11:54:56Z",
+    "updated_on": "2017-04-10T16:02:07Z"
+}

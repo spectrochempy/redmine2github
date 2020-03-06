@@ -1,0 +1,98 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "606d82fddc122bdbf8b5bd087bde792386575f55",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: classname for leg & head entities set refs #399",
+            "committed_on": "2013-11-14T04:57:54Z"
+        },
+        {
+            "revision": "ea000e2d602e1b1da2b808971843d4a4c4f3292f",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: no need to set classname for ET_TEMP* entities - their are not\nprocessed in the common way fixes #399",
+            "committed_on": "2013-12-31T20:54:45Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2645,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Applied in changeset commit:ea000e2d602e1b1da2b808971843d4a4c4f3292f.",
+            "created_on": "2013-12-31T13:08:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 399,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "FIX ent classname(s)",
+    "description": "ent->classname isn't always set after G_Spawn() calls. Inspect & fix!",
+    "start_date": "2013-11-14",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-11-14T04:56:55Z",
+    "updated_on": "2013-12-31T13:08:05Z",
+    "closed_on": "2013-12-31T13:08:05Z"
+}

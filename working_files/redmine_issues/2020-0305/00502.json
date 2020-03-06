@@ -1,0 +1,394 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 119,
+            "issue_id": 412,
+            "issue_to_id": 502,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "ace391e204ff0ee5d01183149f7ede355a90dbca",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "general: fixed missing color codes, refs #502",
+            "committed_on": "2014-02-05T11:13:10Z"
+        },
+        {
+            "revision": "3308280b3dbb48086605d58ab1f302dd0ee5cc71",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "general: treat '^' as a color code character, refs #502\n\nAs the double ^^ will cancel itself, a string can be decolourized in\na single pass. This also avoid having different characters in the\ncolourized and decolourized strings.",
+            "committed_on": "2014-02-15T11:35:11Z"
+        },
+        {
+            "revision": "8be99042e965642603ec03a657543bb0aaf31c19",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: fixed console color codes input, refs #412, refs #502",
+            "committed_on": "2014-02-15T19:52:49Z"
+        },
+        {
+            "revision": "d62050cfe1b3a6a24f154680134e5dc67fe9e2f1",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: fixed console cursor when using arrow keys, refs #502",
+            "committed_on": "2014-02-22T08:49:04Z"
+        },
+        {
+            "revision": "6f6127ab352ecb01858a97c146c0a0023df53b3a",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: fixed double '^^' color rendering on console input, fixes #502",
+            "committed_on": "2014-02-22T08:50:37Z"
+        },
+        {
+            "revision": "0e4504a80289a26fbf1dd2e6c9eb188ea7bccd48",
+            "user": {
+                "id": 300,
+                "name": "swillits"
+            },
+            "comments": "client: fixes color code issues introduced recently, refs #412, #502",
+            "committed_on": "2014-03-16T21:22:46Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2935,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-02-01T13:11:22Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "412"
+                }
+            ]
+        },
+        {
+            "id": 2936,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "All mods are affected -> client issue.",
+            "created_on": "2014-02-01T15:50:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "17",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 2937,
+            "user": {
+                "id": 300,
+                "name": "swillits"
+            },
+            "notes": "My original commit message had a good explanation of the change, but that commit was nuked when it was merged into master.\r\n\r\nHistory:\r\n\r\nWhen fixing #412, originally I fixed the case where ^\\n was causing problems, but additionally misinterpreted the code's use of the word \"escape\" and then \"fixed\" something that wasn't broken. That resulted in a long discussion with Ensiform where he pointed out my confusion with that, and then told me that like ioq3, the valid characters should be explicitly checked.\r\n\r\nWhile the original implementation allowed *any* character to follow ^ and be interpreted as a color code, as the wolf wiki points out, there are only 32 colors, and thus there only need to be 32 color codes starting at ascii 48, so it goes from 0-9 : ; < = > ? @ A-O, with A-O being case-insensitive, and * being a special case added for reset. Any other character is superfluous. \r\n\r\nThe particular case in #412 was that ^\\n was being eaten as a color code and then causing havoc. Since the color character ^ isn't actually a true escape character as in every other sense (that was my original confusion), the only of way of knowing if a given \"^X\" (where X is any character) should be interpreted as a color or not is to check if X is a valid color code character. I believe my original fix only ignored control characters, but with Ensiform's suggestion, the new change explicitly only considers the previous mentioned characters as valid. \r\n\r\nOff the top of my head, I believe changing it to simply ignore control characters and ^ would let everything work like shown in WolfWiki and still not demonstrate of the original bugs.",
+            "created_on": "2014-02-01T18:49:16Z",
+            "details": []
+        },
+        {
+            "id": 2938,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Right, actually none of the colors have been lost, just the superfluous ways to enter them and for good reasons.\r\n(note: the reason I nuked the initial commit message is because its short form wasn't explicit at all - \"fixes 412\" - and a good short message is way better than a too long description without a short form imho.\r\n\r\nClosing the issue now.",
+            "created_on": "2014-02-01T22:32:41Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "300"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 2942,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "This problem is far from being actually fixed or to be invalid. I'll show you a couple of screenshots.\r\nThe first screenshot is showing what the console shown of the name.\r\nThe second screenshot is showing what the name supposed to really be.\r\nThese pictures were taken in a NQ server.\r\n\r\n-*S",
+            "created_on": "2014-02-01T22:53:13Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "285",
+                    "new_value": "problem01.jpg"
+                },
+                {
+                    "property": "attachment",
+                    "name": "284",
+                    "new_value": "problem02.jpg"
+                }
+            ]
+        },
+        {
+            "id": 2943,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Yup, we could actually readd ASCII characters from 80 to 127, but nothing beyond.\r\n\r\nFron Ensi:\r\n\r\n<pre>\r\n#define Q_IsColorString(p) ((p) && *(p) == Q_COLOR_ESCAPE && *((p)+1) && isgraph(*((p)+1)))   but also make sure to check that (p)+1 does not equal Q_COLOR_ESCAPE, ie '^'.\r\n\r\nnot sure i trust using isgraph\r\nsome of the is* functions will actually crash upon hitting extended chars on windows with MSVC compile\r\n...\r\n&& *((p)+1) != Q_COLOR_ESCAPE (?)\r\n</pre>\r\n\r\n\r\n\r\n\r\n",
+            "created_on": "2014-02-01T23:36:39Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "6",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 2947,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Spyhawk wrote:\r\n> Yup, we could actually readd ASCII characters from 80 to 127, but nothing beyond.\r\nWe should do that for client compatibility reasons.\r\n\r\n",
+            "created_on": "2014-02-02T14:32:37Z",
+            "details": []
+        },
+        {
+            "id": 2956,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I've changed the code to latest Ensi' suggestion.\r\nJacker, please check that VS doesn't report any underlying issue at compil time (but should be fine).",
+            "created_on": "2014-02-05T11:23:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "300",
+                    "new_value": "140"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 2981,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-02-09T17:44:55Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3004,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Reopening. We really should treat '^' as a colour code character too (ie, reverting to initial behavior).\r\n\r\nThe reason is that string like \"^o[BOT^6]^^78^^43Name\" will shows as \"[BOT]^8^3Name\" when coloured, and \"[BOT]Name\" when uncoloured, as name are uncoloured recursively in a loop to prevent players to use colored name when then shouldn't.\r\n\r\nTreating '^' as a colour code character allows '^^' to cancel itself. It's also faster to compute since no looping is needed.\r\n\r\nThis means that #412 has to be fixed in another way, but at the moment I guess it's better to have a console slightly bugged than buggy in-game strings.",
+            "created_on": "2014-02-15T14:03:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 3012,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Unlike et260b, et:l shows the color code when you enter it (ie, sometext^4someyellowtext). I'm not sure why this has been changed, but this is however broken with the double '^^' characters and the color doesn't match what is effectively displayed.\r\n\r\nI changed it back to the \"color code hidden as you type it\", and also fixed the cursor position.",
+            "created_on": "2014-02-15T19:58:42Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3066,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Reopening. The hack I introduced in \"8be99042\":https://github.com/etlegacy/etlegacy/commit/8be99042e965642603ec03a657543bb0aaf31c19 to fix the cursor position when typing color codes doesn't take into account the arrow keys.\r\n\r\nMight need to have a look at ae2fd4dbd4ba57fb0b96e774e9a57af8dca7e53f to fix this issue.",
+            "created_on": "2014-02-20T21:26:48Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 3067,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:6f6127ab352ecb01858a97c146c0a0023df53b3a.",
+            "created_on": "2014-02-22T10:26:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 502,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "Some of the colourcodes don't work",
+    "description": "So as the title says, some of the colourcodes don't work.\r\nSome symbols that used to work in vanilla ET doesn't work either. For example: \"+\" \".\" \",\" \"@\" and so on.\r\nBut those letters I found not working are: q, w, r, t, y, u, p, s, z, x, v\r\n\r\nAll the colour codes existing in vanilla ET are shown here: http://wolfwiki.anime.net/index.php/Color_Codes\r\n\r\n-*S",
+    "start_date": "2014-02-01",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-02-01T13:05:23Z",
+    "updated_on": "2014-02-22T10:26:44Z",
+    "closed_on": "2014-02-22T10:26:44Z"
+}

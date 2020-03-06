@@ -1,0 +1,270 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 107,
+            "issue_id": 68,
+            "issue_to_id": 452,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "72978c5559b231c83ce9ee575d054112a9159e84",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: added new and fixed secretdocs model, refs #452\n\nRecreation by keMoN",
+            "committed_on": "2014-01-03T15:14:01Z"
+        },
+        {
+            "revision": "4c97a57730f09a261e75671b8e4178971d779910",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: updated secretdocs model, refs #452",
+            "committed_on": "2014-01-05T11:24:21Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2627,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2013-12-29T19:18:01Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "14"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 2634,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2013-12-30T16:54:52Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "parent_id",
+                    "new_value": "68"
+                }
+            ]
+        },
+        {
+            "id": 2635,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2013-12-30T17:05:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "parent_id",
+                    "old_value": "68"
+                }
+            ]
+        },
+        {
+            "id": 2637,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2013-12-30T17:05:29Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "68"
+                }
+            ]
+        },
+        {
+            "id": 2736,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "Attached files:\r\nsecretdocs_fixed.md3 - modified/fixed version of the stock model. Uses the original geometry and textures.\r\nsecretdocs_recreation.md3 - uses pak0 textures, but new/own geometry - minor texture modifications\r\n\r\n//EDIT: If needed I can submit the secretdocs.map file and secretdocs.ase file to 'proof' the recreation",
+            "created_on": "2014-01-03T13:08:20Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "263",
+                    "new_value": "secretdocs_recreation.md3"
+                }
+            ]
+        },
+        {
+            "id": 2737,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "keMoN wrote:\r\n> //EDIT: If needed I can submit the secretdocs.map file and secretdocs.ase file to 'proof' the recreation\r\nNot as a proof, but those 'source' files should be uploaded to https://github.com/etlegacy/etlegacy-assets repository.\r\n\r\nWe desperately need someone who knows how to model and map W:ET. If you are planning to continue contributing to the project, I can give you write access to our repositories.",
+            "created_on": "2014-01-03T13:39:59Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "256"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "50"
+                },
+                {
+                    "property": "attr",
+                    "name": "parent_id",
+                    "new_value": "218"
+                }
+            ]
+        },
+        {
+            "id": 2738,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Yes, the source model should be uploaded to etlegacy-assets. The new recreated model is now in the main repo.",
+            "created_on": "2014-01-03T15:15:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 2753,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "Sorry for bringing it up again.\r\nI tested the model again and realised that the last step (converting from .ase to .md3) rotated the model.\r\nI attached a fixed version of it. Consider it final!\r\nAdditioinally the source-file, plus other files used in the process including a README file.",
+            "created_on": "2014-01-05T10:54:23Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "271",
+                    "new_value": "secretdocs.7z"
+                },
+                {
+                    "property": "attachment",
+                    "name": "272",
+                    "new_value": "secretdocs_recreation_fixed.md3"
+                }
+            ]
+        },
+        {
+            "id": 2754,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2014-01-05T11:44:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 452,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "assigned_to": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "category": {
+        "id": 14,
+        "name": "Mod pak3.pk3"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "parent": {
+        "id": 218
+    },
+    "subject": "Fix faulty secretdocs.md3 model",
+    "description": "The secretdocs.md3 from models/multiplayer/secretdocs/secretdocs.md3 is faulty.\r\nThe modelfile points to *models\\multiplayer\\secretdocs\\wood_m12.tga* eventhough the texture is not present.\r\nChanging the path to *textures/wood/wood_m12* fixes it easily.\r\n\r\n\r\nI don't know to what extend you trust me, but I attached a fixed version anyway.\r\n\r\n\r\nCurrently present Work-Around: Repacking the texture (e.g. caen, adlerhorst, frostbite, ...)\r\n\r\nNo shader work-around present in pak0",
+    "start_date": "2013-12-29",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-12-29T19:14:01Z",
+    "updated_on": "2014-01-05T11:44:00Z",
+    "closed_on": "2014-01-05T11:44:00Z"
+}

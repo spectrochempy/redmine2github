@@ -1,0 +1,109 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 3428,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "This isn't an ETL related bug. \r\n\r\nhttp://tux-is-gaming.blogspot.com.au/2014/02/fixing-alsa-lib-pcmc7843sndpcmrecover.html?showComment=1394964710443#c3501258764752400662\r\n",
+            "created_on": "2014-09-03T19:01:01Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                },
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "old_value": "",
+                    "new_value": "Linux"
+                }
+            ]
+        },
+        {
+            "id": 3429,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-09-04T14:34:52Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 3471,
+            "user": {
+                "id": 351,
+                "name": "guybrush"
+            },
+            "notes": "If you install the pulseaudio headers (libpulse-dev on ubuntu, pulseaudio-devel on fedora) and recompile, SDL2 will have support for pulseaudio. I arrived here with the same problem, and this fixed it. You may need to 'export SDL_AUDIODRIVER=pulse' before running ET to force it, but pulse should be the default anyway when the support is compiled in.\r\nThe linked default.pa hacks worked, but broke a lot of my audio like hotplugging usb headphones.\r\nCould we check for the pulse devel libraries in the easybuild.sh and warn if not present?",
+            "created_on": "2014-09-20T06:03:36Z",
+            "details": []
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 574,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 286,
+        "name": "Calinou"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Buggy sound: ALSA lib pcm.c:7843:(snd_pcm_recover) underrun occurred",
+    "description": "\u201cALSA lib pcm.c:7843:(snd_pcm_recover) underrun occurred\u201d is spammed in the console. The sound does play, but is buggy (sounds like strange, low-volume buzzes).\r\n\r\nOS is Xubuntu 14.04. Client is 2.71rc4. Tried with a local game.",
+    "start_date": "2014-09-02",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-09-02T20:04:10Z",
+    "updated_on": "2014-09-20T06:03:36Z",
+    "closed_on": "2014-09-03T19:01:01Z"
+}

@@ -1,0 +1,95 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "8a509be1c546dcdb3dfcf976a4205962d566ad04",
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "comments": "cgame: revert cg_railTrailTime cvar removal, fixes #1333",
+            "committed_on": "2019-07-18T14:21:12Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 8413,
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "notes": "Applied in changeset commit:8a509be1c546dcdb3dfcf976a4205962d566ad04.",
+            "created_on": "2019-07-18T15:32:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1333,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 505,
+        "name": "ryven"
+    },
+    "assigned_to": {
+        "id": 505,
+        "name": "ryven"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Add back cg_railTrailTime cvar",
+    "description": "`cg_railTrailTime` is used to control the duration railtrail is sustained, which is used to debug such things like hitboxes and bullet fire. \r\nIt was remove by the changeset https://dev.etlegacy.com/projects/etlegacy/repository/revisions/96c79ff2e1c067e2c49e17f791a571ae4a1a8cb1 for unknown reason. \r\nThere is no way to abuse it in game, so i suggest to revert the removal, as this cvar is quite useful in debugging.",
+    "start_date": "2019-07-18",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-07-18T14:13:50Z",
+    "updated_on": "2019-07-18T15:32:17Z",
+    "closed_on": "2019-07-18T15:32:17Z"
+}

@@ -1,0 +1,56 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1117,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Shrink CS_SYSTEMINFO",
+    "description": "Currently in sv_paks and sv_paknames (as part of CS_SYSTEMINFO) all pk3s/maps on the server are referenced which is not needed.\r\n\r\nIdea:\r\n\r\n- create a whitelist for custom pk3s (server cvar)\r\n- only reference plain install pk3s, pk3s from the whitelist and the current map in sv_pak vars.\r\n\r\nBy only referencing the real required pk3s CS_SYSTEMINFO will no longer be cut when too many pk3s (maps) are on server and we have *all* benfits of a in total shorten CS. \r\n\r\n{TODO}\r\nFind the cause why campaign mode doesn't only trigger map download for the current map. Other maps from campaign have to be downloaded for the first connect.\r\n",
+    "start_date": "2018-10-16",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2018-10-15T22:13:01Z",
+    "updated_on": "2018-10-15T22:13:01Z"
+}

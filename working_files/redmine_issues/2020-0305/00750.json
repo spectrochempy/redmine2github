@@ -1,0 +1,495 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "fc014da074ca5addb63f700da08f1c3575fac0d7",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "client: print more info about sound when format is 'malformed' refs #750",
+            "committed_on": "2015-01-02T14:29:00Z"
+        },
+        {
+            "revision": "f7d59925d1b5bddbf9fa2b595e79e6e1284e2de8",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: do not overwrite channel volume variable, refs #750",
+            "committed_on": "2015-04-02T10:39:02Z"
+        },
+        {
+            "revision": "d2e98203b3720b997ad9c7337acae5ebf64b834a",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: make s_musicVolume independent from s_volume, refs #750",
+            "committed_on": "2015-08-04T23:30:43Z"
+        },
+        {
+            "revision": "dcea48fc745eb08a42251b27824bee07946caba8",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: fixed non spatialized sounds normalized twice, fixes #750",
+            "committed_on": "2015-08-05T10:24:27Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 4251,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "I can confirm this and also was mentioned by some other ET:L users.\r\n\r\n-*S",
+            "created_on": "2014-12-31T13:23:37Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "16"
+                }
+            ]
+        },
+        {
+            "id": 4252,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2014-12-31T13:25:37Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "16",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 4253,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-12-31T13:54:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 4443,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-01-18T22:22:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "17"
+                }
+            ]
+        },
+        {
+            "id": 4594,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-02-15T09:21:27Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "3",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 4598,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-02-15T09:24:19Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 4877,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Commit of interest: \"572cefcf7c134be34af47be35140d5b8765e6fee\":https://github.com/etlegacy/etlegacy/commit/572cefcf7c134be34af47be35140d5b8765e6fee, later reverted in \"cc3ba71c0e5b112a779a1e0e3aab4279043a9e60\":https://github.com/etlegacy/etlegacy/commit/cc3ba71c0e5b112a779a1e0e3aab4279043a9e60#diff-a81166cccc17e32338aeda58b00e2676.\r\n\r\nHaven't had a look (I can't reproduce this issue), but it might be related.",
+            "created_on": "2015-03-26T09:13:48Z",
+            "details": []
+        },
+        {
+            "id": 4878,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "I have been able to reproduce this since... Long time. It's rather annoying since it affects the ability to hear those announcements during big firefights. Could it be OS related then or some CVAR? I tried some CVARs but nothing changed. Or if that's the commit... We can always try out. I'm at work and will be busy for the rest of the day so I can't try it out.\r\n\r\n-*S",
+            "created_on": "2015-03-26T09:50:43Z",
+            "details": []
+        },
+        {
+            "id": 4892,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "This code... Calculating twice the same, put in two variables... The point?\r\n\r\nMaybe these two removed values where > 1, and so removing them have lowered the volume value?",
+            "created_on": "2015-03-30T08:01:38Z",
+            "details": []
+        },
+        {
+            "id": 4896,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Alright I tried this out. By removing rvol and lvol like in the commit, the problem didn't occur anymore. Commander sounds were fine after that. But if this causes other issues... this should be fixed correctly.\r\n\r\n-*S",
+            "created_on": "2015-04-01T22:28:58Z",
+            "details": []
+        },
+        {
+            "id": 4897,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Possible fix pushed - feedback needed!\r\n\r\nThere were two variables ('r') with the same name in the same function. The first one likely conflicted with the 'right' channel volume - I just renamed it to avoid overwriting the second in memory.",
+            "created_on": "2015-04-02T10:43:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 4900,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "The fix did the trick for me, so it should do for others too.\r\nClosing it as fixed. If the problem still occurs, post here.\r\n\r\n-*S",
+            "created_on": "2015-04-02T23:39:12Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 4906,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "This still occurs in other mods. Legacy seems fine.\r\n\r\n-*S",
+            "created_on": "2015-04-04T16:51:29Z",
+            "details": []
+        },
+        {
+            "id": 4907,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-04-04T17:45:11Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 4919,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "This is really weird but volume is okay with Legacy mod and definitely too low with every other mod.",
+            "created_on": "2015-04-17T12:24:56Z",
+            "details": []
+        },
+        {
+            "id": 4920,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Could it be Legacy then, which would be too loud?\r\n\r\nOr is the sound volume the same between ETL and Vanilla with Legacy mod, and lower only with ETL for other mods?",
+            "created_on": "2015-04-17T12:43:44Z",
+            "details": []
+        },
+        {
+            "id": 4922,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I am unable to reproduce this issue.\r\n\r\nPrevious change fixed a variable overwrite (2 'r' variables in the same function), which apparently improved the situation a bit.",
+            "created_on": "2015-04-26T14:00:39Z",
+            "details": []
+        },
+        {
+            "id": 4959,
+            "user": {
+                "id": 467,
+                "name": "jayd"
+            },
+            "notes": "I can reproduce this issue on Windows 8.1, in a server running the silEnT mod. Can I do anything to help? I'd be willing to let a dev remote into my computer and do some troubleshooting and such to find the root cause of the problem.\r\n",
+            "created_on": "2015-07-08T14:22:14Z",
+            "details": []
+        },
+        {
+            "id": 4960,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Check if you can reproduce the issue on Legacy mod.",
+            "created_on": "2015-07-08T18:02:45Z",
+            "details": []
+        },
+        {
+            "id": 4961,
+            "user": {
+                "id": 421,
+                "name": "kimi"
+            },
+            "notes": "Win7 64 vanilla ET client etlegacy mod => sounds good\r\nWin7 64  ET legacy client etlegacy mod => too low",
+            "created_on": "2015-07-08T18:31:10Z",
+            "details": []
+        },
+        {
+            "id": 5003,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-07-24T05:41:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 5035,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "We need feedback about this after the 2.73 release -> moved to 2.74",
+            "created_on": "2015-07-26T09:21:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "17",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 5050,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "The issue somewhat reappeared on my system for some reason (Legacy mod).\r\n\r\nAnd the issue seems related to the s_volume setting. With the default 0.8 value, the commander voice volume is all right, but when set to a lower value (f.e. 0.25) it is too low compared to other \"effects\" sounds.\r\n\r\nOn a sidenote, the music volume (s_musicvolume) is highly dependent on the s_volume slider too. If s_volume is set to 0.8, then s_musicvolume set to 0.25 means \"set music to 25% of the 0.8 sound volume\".",
+            "created_on": "2015-08-04T14:06:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 5051,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Spyhawk wrote:\r\n> On a sidenote, the music volume (s_musicvolume) is highly dependent on the s_volume slider too. If s_volume is set to 0.8, then s_musicvolume set to 0.25 means \"set music to 25% of the 0.8 sound volume\".\r\nI remember reporting this more than half a year ago but people on IRC said they couldn't reproduce :D",
+            "created_on": "2015-08-04T15:01:18Z",
+            "details": []
+        },
+        {
+            "id": 5055,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Dragonji wrote:\r\n> I remember reporting this more than half a year ago but people on IRC said they couldn't reproduce :D\r\n\r\nI could reproduce it, but we never opened a ticket for that issue. Should now be fixed.\r\n\r\n{FIXME} \r\n* -Check openAL implementation (s_initsound = 2)- OK!\r\n\r\n",
+            "created_on": "2015-08-04T23:34:10Z",
+            "details": []
+        },
+        {
+            "id": 5056,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:dcea48fc745eb08a42251b27824bee07946caba8.",
+            "created_on": "2015-08-05T10:33:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 5057,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-08-05T19:46:22Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "17"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 421,
+            "name": "kimi"
+        },
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 750,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 35,
+        "name": "Dragonji"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "Commander sounds volume is too low",
+    "description": "In comparision with 2.60b, commander sounds in ET:L are barely audible.  Raise their volume to match to vanilla's default.",
+    "start_date": "2014-12-31",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-12-31T13:16:24Z",
+    "updated_on": "2015-08-05T19:46:22Z",
+    "closed_on": "2015-08-05T10:33:49Z"
+}

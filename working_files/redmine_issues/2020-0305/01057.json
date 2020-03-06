@@ -1,0 +1,120 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 351,
+            "issue_id": 1057,
+            "issue_to_id": 760,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 6888,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2017-08-28T12:31:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "It might be worth a thought to improve the !pause functionality. It could be another reason used for convincing the (remaining) competitive scene to try out Legacy mod.\r\n\r\nIn the official rulebook of cybergamer it says the following:\r\n*The following tactics are illegal and will result in a forfeit loss of the map or round in which the action took place:*\r\nboosting more than one player\r\n*pausing the match intentionally while the crane is moving the gold onto the truck on supply\r\npausing the match intentionally while the tank is destroying the bank wall on sw_goldrush_te*\r\nbug exploitation of any kind\r\n\r\nPeople should be able to use !pause whenever they require it and it should not require an admin to check if !pause has been used to gain a gameplay advantage.\r\nDuring a !pause *everything* should stop. However, apparently some script functions are still being executed. An example by ryven: in supply, the crane stops moving in pause, but the gold  still gets attached after some time.\r\n\r\n\r\n*Is it possible to freeze all loops, counters and actions taking place during a !pause?*",
+                    "new_value": "It might be worth a thought to improve the !pause functionality. It could be another reason used for convincing the (remaining) competitive scene to try out Legacy mod.\r\n\r\nIn the official rulebook of cybergamer it says the following:\r\nThe following tactics are illegal and will result in a forfeit loss of the map or round in which the action took place:\r\npausing the match intentionally while the crane is moving the gold onto the truck on supply\r\npausing the match intentionally while the tank is destroying the bank wall on sw_goldrush_te\r\n\r\nPeople should be able to use !pause whenever they require it and it should not require an admin to check if !pause has been used to gain a gameplay advantage.\r\nDuring a !pause *everything* should stop. However, apparently some script functions are still being executed. An example by ryven: in supply, the crane stops moving in pause, but the gold  still gets attached after some time.\r\n\r\n\r\n*Is it possible to freeze all loops, counters and actions taking place during a !pause?*"
+                }
+            ]
+        },
+        {
+            "id": 6889,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2017-08-28T12:32:15Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "It might be worth a thought to improve the !pause functionality. It could be another reason used for convincing the (remaining) competitive scene to try out Legacy mod.\r\n\r\nIn the official rulebook of cybergamer it says the following:\r\nThe following tactics are illegal and will result in a forfeit loss of the map or round in which the action took place:\r\npausing the match intentionally while the crane is moving the gold onto the truck on supply\r\npausing the match intentionally while the tank is destroying the bank wall on sw_goldrush_te\r\n\r\nPeople should be able to use !pause whenever they require it and it should not require an admin to check if !pause has been used to gain a gameplay advantage.\r\nDuring a !pause *everything* should stop. However, apparently some script functions are still being executed. An example by ryven: in supply, the crane stops moving in pause, but the gold  still gets attached after some time.\r\n\r\n\r\n*Is it possible to freeze all loops, counters and actions taking place during a !pause?*",
+                    "new_value": "It might be worth a thought to improve the !pause functionality. It could be another reason used for convincing the (remaining) competitive scene to try out Legacy mod.\r\n\r\nIn the official \"rulebook\":https://eu.cybergamer.com/pc/et/ladder/rules/ of cybergamer it says the following:\r\nThe following tactics are illegal and will result in a forfeit loss of the map or round in which the action took place:\r\npausing the match intentionally while the crane is moving the gold onto the truck on supply\r\npausing the match intentionally while the tank is destroying the bank wall on sw_goldrush_te\r\n\r\nPeople should be able to use !pause whenever they require it and it should not require an admin to check if !pause has been used to gain a gameplay advantage.\r\nDuring a !pause *everything* should stop. However, apparently some script functions are still being executed. An example by ryven: in supply, the crane stops moving in pause, but the gold  still gets attached after some time.\r\n\r\n\r\n*Is it possible to freeze all loops, counters and actions taking place during a !pause?*"
+                }
+            ]
+        },
+        {
+            "id": 6953,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2017-10-23T13:39:27Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "760"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 1057,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Improve the !pause functionality",
+    "description": "It might be worth a thought to improve the !pause functionality. It could be another reason used for convincing the (remaining) competitive scene to try out Legacy mod.\r\n\r\nIn the official \"rulebook\":https://eu.cybergamer.com/pc/et/ladder/rules/ of cybergamer it says the following:\r\nThe following tactics are illegal and will result in a forfeit loss of the map or round in which the action took place:\r\npausing the match intentionally while the crane is moving the gold onto the truck on supply\r\npausing the match intentionally while the tank is destroying the bank wall on sw_goldrush_te\r\n\r\nPeople should be able to use !pause whenever they require it and it should not require an admin to check if !pause has been used to gain a gameplay advantage.\r\nDuring a !pause *everything* should stop. However, apparently some script functions are still being executed. An example by ryven: in supply, the crane stops moving in pause, but the gold  still gets attached after some time.\r\n\r\n\r\n*Is it possible to freeze all loops, counters and actions taking place during a !pause?*",
+    "start_date": "2017-08-28",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-08-28T12:31:06Z",
+    "updated_on": "2017-08-28T12:32:15Z"
+}

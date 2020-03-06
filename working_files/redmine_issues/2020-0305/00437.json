@@ -1,0 +1,137 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 228,
+            "issue_id": 830,
+            "issue_to_id": 437,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 2587,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2013-12-27T12:28:53Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 2619,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-12-29T14:15:33Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 4394,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2015-01-16T16:21:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "When next map starts console would start from the bottom again.",
+                    "new_value": "When next map starts console would start from the bottom again"
+                }
+            ]
+        },
+        {
+            "id": 4753,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2015-03-11T12:48:19Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "830"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 437,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "When next map starts console would start from the bottom again",
+    "description": "So there is this when you have scrolled up in your console a bit and the next map starts, your console is all the way up and it doesn't show anything. You have to scroll down all the ay or press End to get back to the bottom. So make this work, when next map loads and you open console it would be straight in the bottom instead of all the way up.\r\n\r\n-*S",
+    "start_date": "2013-12-26",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-12-26T04:16:50Z",
+    "updated_on": "2015-01-16T16:21:36Z"
+}

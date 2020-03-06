@@ -1,0 +1,100 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "be4419ea38b9f8668c3a68da2e4e94678276b717",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: LUA et_Damage should take HS into account, refs #756",
+            "committed_on": "2015-01-04T17:31:31Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 4282,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-01-04T17:58:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 756,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 177,
+        "name": "Zelly"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 16,
+        "name": "2.72"
+    },
+    "subject": "lua et_Damage damage shows normal damage on headshot",
+    "description": "Testing out the lua et_Damage callback I noticed it does not show headshot damage.\r\nPossible some other similar stuff, where the damage is changed after it is sent to lua.",
+    "start_date": "2015-01-03",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-01-03T03:24:09Z",
+    "updated_on": "2015-01-04T17:58:50Z",
+    "closed_on": "2015-01-04T17:58:50Z"
+}

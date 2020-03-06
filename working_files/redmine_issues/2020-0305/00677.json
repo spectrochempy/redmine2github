@@ -1,0 +1,107 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 3908,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Was it intended? See the \"official manual\":http://www.splashdamage.com/wolfguide/html/manual.html#L4_FirstAid.",
+            "created_on": "2014-11-28T15:17:30Z",
+            "details": []
+        },
+        {
+            "id": 3912,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I guess \"Adrenalin Self\" is correct, as in \"to adrenalin yourself\". It's the verb form.",
+            "created_on": "2014-11-28T15:34:57Z",
+            "details": []
+        },
+        {
+            "id": 3927,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-29T10:09:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 677,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Medic level 4 reward message",
+    "description": "It says: \"Adrenalin Self\". It sounds very weird. And I think there should be another message for it.\r\n\r\n-*S",
+    "start_date": "2014-11-28",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-28T15:13:44Z",
+    "updated_on": "2014-11-29T10:09:32Z",
+    "closed_on": "2014-11-29T10:09:32Z"
+}

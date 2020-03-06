@@ -1,0 +1,132 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 392,
+            "issue_id": 1192,
+            "issue_to_id": 1191,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7663,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-01-24T12:16:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "tracker_id",
+                    "old_value": "1",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 7664,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-01-24T13:03:23Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "It looks like the windows installer allows to overwrite previous installation a bit too easily, which leads to \"user issues\":https://dev.etlegacy.com/boards/2/topics/3541?r=3549#message-3549.\r\nWe don't track where the game is installed in the win registry, but we should at least ensure the directory selected doesn't exist anymore.",
+                    "new_value": "It looks like the windows installer allows to overwrite previous installation a bit too easily, which leads to \"user issues\":https://dev.etlegacy.com/boards/2/topics/3541?r=3549#message-3549.\r\nWe don't track where the game is installed in the win registry, but we should at least ensure the selected directory doesn't exist or is empty."
+                }
+            ]
+        },
+        {
+            "id": 7676,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-01-24T13:18:30Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1192"
+                }
+            ]
+        },
+        {
+            "id": 7781,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I had a look at this, and it doesn't seem trivial to implement (though I'm far from being a nsis guru).",
+            "created_on": "2019-02-14T10:41:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "22",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1191,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Prevent windows installer to overwrite old installation",
+    "description": "It looks like the windows installer allows to overwrite previous installation a bit too easily, which leads to \"user issues\":https://dev.etlegacy.com/boards/2/topics/3541?r=3549#message-3549.\r\nWe don't track where the game is installed in the win registry, but we should at least ensure the selected directory doesn't exist or is empty.",
+    "start_date": "2019-01-24",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Windows"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-01-24T09:41:30Z",
+    "updated_on": "2019-02-14T10:41:07Z"
+}

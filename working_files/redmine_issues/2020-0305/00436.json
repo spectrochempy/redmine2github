@@ -1,0 +1,140 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "8f3665a7e4d751ef1e19491e10e59162afcfcbd6",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: added weapon slot 8 in controls menu, refs #436",
+            "committed_on": "2014-01-02T19:18:51Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2555,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Of course there are at least 8 weaponslots because engineer has landmines on the weaponslot 7. But the thing is that, why weaponslot 8 isn't in the \"controls\" menu then? Since there are officially 8 weaponslots in use. Weaponslot 8 is for binoculars but nobody ever uses them because you can use them fast by pressing \"B\".\r\n\r\n-*S",
+            "created_on": "2013-12-26T13:10:35Z",
+            "details": []
+        },
+        {
+            "id": 2565,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2013-12-26T15:22:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "12"
+                }
+            ]
+        },
+        {
+            "id": 2631,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2013-12-30T09:42:18Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "12",
+                    "new_value": "16"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 2722,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I added weapon slot 8 in the control config UI. Weapon banks 9 and 0 (=10) are empty, but I don't really see a valid reason to remove them completely. Could be handy for future derived mods based on legacy.\r\n\r\nClosing this issue now.",
+            "created_on": "2014-01-02T19:26:34Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 436,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "Weaponslots in etconfig.cfg and in-game",
+    "description": "It seems that etconfig.cfg creates weaponslots from 1 to 10 when there are only 7 possible weaponslots. And other bug is also occuring. Binoculars exist on the weaponslot 8 instead of weaponslot 7 which is for Special 3.\r\n\r\n-*S",
+    "start_date": "2013-12-26",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-12-26T04:13:40Z",
+    "updated_on": "2014-01-02T19:26:34Z",
+    "closed_on": "2014-01-02T19:26:34Z"
+}

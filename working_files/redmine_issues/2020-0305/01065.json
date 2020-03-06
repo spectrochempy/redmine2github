@@ -1,0 +1,114 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "cf74f7d5c3ff9958e79b04546162ad0bab6e79fb",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "game/cgame: fix scope weapon reticle not cleared on prone moving and fix animation break when prone moving refs #1065",
+            "committed_on": "2017-12-06T12:30:21Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7002,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "The part of code which cause this behaviour is in bg_pmove PM_Weapon() function :\r\n\r\n<pre><code class=\"c\">\t// can't shoot while prone and moving\r\n\tif ((pm->ps->eFlags & EF_PRONE_MOVING) && !delayedFire)\r\n\t{\r\n\t\tPM_ContinueWeaponAnim(GetWeaponTableData(pm->ps->weapon)->idleAnim);\r\n\t\treturn;\r\n\t}\r\n</code></pre>\r\n\r\nBy commenting these line, everything work fine ... but are able to shoot while prone moving.\r\n\r\nThis need more check about weaponstate like WEAPON_DROPPING, WEAPON_RELOADING ...\r\n",
+            "created_on": "2017-12-05T23:21:42Z",
+            "details": []
+        },
+        {
+            "id": 7033,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "",
+            "created_on": "2018-01-25T15:27:41Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 7036,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "",
+            "created_on": "2018-01-25T15:28:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1065,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": " Weapon animations break when moving forward then going prone and altweap/reload simultaneously",
+    "description": "How to reproduce:\r\n\r\n1. Spawn as engineer with rifle, soldier with MG, covert op with sniper\r\n2. Hold W to go forward and then press X and MOUSE2 simultaneously (W + R/MOUSE2 + X) or (W + X + MOUSE2)\r\n\r\nThe animation will be cancelled. You don't have to be fast pressing the buttons but you can't be too slow either.",
+    "start_date": "2017-12-05",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-12-05T22:53:08Z",
+    "updated_on": "2018-01-25T15:28:20Z",
+    "closed_on": "2018-01-25T15:27:41Z"
+}

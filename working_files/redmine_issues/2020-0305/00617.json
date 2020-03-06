@@ -1,0 +1,115 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "e0eb13ae65d7f52af55ce07240406a50bed1f396",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: use better logo icons, refs #611",
+            "committed_on": "2014-11-09T21:23:06Z"
+        },
+        {
+            "revision": "db3f0e851677bbe19ba76bfd4c736856bacedb06",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: updated hardcoded icon, refs #617",
+            "committed_on": "2014-11-09T22:23:45Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3672,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I slightly reduced the size of the logo and centered it a bit more, also added a black background so it feels less off center.\r\nI tried to make some pixel art with the legacy logo in the server browser, but the overall result is not as good as I hoped...",
+            "created_on": "2014-11-09T23:00:58Z",
+            "details": []
+        },
+        {
+            "id": 3808,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Not sure what I can do more, tbh.\r\nClosing.",
+            "created_on": "2014-11-22T00:13:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 617,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Use bitmap for small ET:L icons",
+    "description": "Since we've changed our logo in #340, the icons used as window icon or mod icon in the server browser is badly rendered.\r\nThis happens because it is directly derived from the vectorized svg logo file. We need to replace these small icons with a bitmap version for better rendering at low resolution.\r\n\r\nNote that illwieckz did \"something similar for XQF\":http://dev.etlegacy.com/boards/1/topics/1246, although I'd suggest to keep the current logo look'n'feel.\r\n\r\n",
+    "start_date": "2014-11-09",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-09T14:38:55Z",
+    "updated_on": "2014-11-22T00:13:17Z",
+    "closed_on": "2014-11-22T00:13:17Z"
+}

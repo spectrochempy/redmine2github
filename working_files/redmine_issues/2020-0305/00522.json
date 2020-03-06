@@ -1,0 +1,193 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 3075,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2014-02-22T20:29:30Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "21"
+                }
+            ]
+        },
+        {
+            "id": 4479,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I cannot reproduce. Does this bug still exist?",
+            "created_on": "2015-01-21T14:27:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 4482,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Yes. I think the sound is played but origin of sound is outdated.",
+            "created_on": "2015-01-21T14:59:32Z",
+            "details": []
+        },
+        {
+            "id": 4483,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "It does exist. Just try it out on Oasis. Spectate an Allied player during the warmup and you can't even here \"FIGHT!\".\r\n\r\n-*S",
+            "created_on": "2015-01-21T16:05:29Z",
+            "details": []
+        },
+        {
+            "id": 4484,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-01-21T17:30:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "7",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 5864,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-04-01T08:10:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 6595,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-03-20T14:45:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 6766,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "this isnt much a bug I'd say\r\n\r\n<pre><code class=\"c\">// Announce game in progress if we are really playing\r\n\tif (old_gs != GS_PLAYING && cgs.gamestate == GS_PLAYING)\r\n\t{\r\n\t\ttrap_S_StartLocalSound(cgs.media.countFight, CHAN_ANNOUNCER);\r\n\r\n\t\tPri(\"^1FIGHT!\\n\");\r\n\t\tCPri(CG_TranslateString(\"^1FIGHT!\\n\"));\r\n\t}</code></pre>\r\n\r\n*Announce game in progress if we are really playing*\r\nprob says it all",
+            "created_on": "2017-06-10T17:31:04Z",
+            "details": []
+        },
+        {
+            "id": 6803,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-07-02T10:05:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 522,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 8,
+        "name": "Confirmed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "\"FIGHT!\" sound doesn't necessarily play when you spectate somebody",
+    "description": "There is this little addition to the specification to the actual bug.\r\nWhen you start a map, you will have a starting location as a spectator. When you spectate somebody during the warmup and then the map starts and the player you spectated is far away from the spectators' starting location, the \"FIGHT!\" sound can't be heard. It all depends how far the spectated player is away from the spectators' starting location. The sound will gain more volume the closer it gets to the starting location.",
+    "start_date": "2014-02-22",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-02-22T20:25:08Z",
+    "updated_on": "2017-07-02T10:05:31Z"
+}

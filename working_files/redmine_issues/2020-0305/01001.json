@@ -1,0 +1,314 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 311,
+            "issue_id": 1001,
+            "issue_to_id": 403,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "b6c3879c28e650701fb62aae142baa73415171de",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed /statsdump not always displayed at end of match, refs #403 #1001",
+            "committed_on": "2019-11-30T19:38:22Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 6422,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-02-16T10:25:37Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "403"
+                }
+            ]
+        },
+        {
+            "id": 6425,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "{TODO}\r\n* move  the pretty print of G_printMatchInfo() on the client side.",
+            "created_on": "2017-02-16T19:55:52Z",
+            "details": []
+        },
+        {
+            "id": 6716,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "My current observation are as follow :\r\n\r\nThe \"ws\" command is sent properly.\r\nAnd indeed, cgs.dumpStatsTime variable (CG_ServerCommand in cg_servercmds.c) prevents it to be displayed.\r\n\r\ncgs.dumpStatsTime never change. It's all the times set to 0. \r\n\r\nThe only way to update is in CG_dumpStats_f which is call from CG_DrawIntermission : \r\n\r\n\t\t\tif (cg_autoAction.integer & AA_STATSDUMP)\r\n\t\t\t{\r\n\t\t\t\tCG_dumpStats_f();\r\n\t\t\t}\r\n\r\nBy defaut, cg_autoAction is set to 0. In the case the value is set to 4, it work properly (AA_STATSDUMP = 0x04).\r\n\r\nEDIT : \r\nAs IR4T4 said : \r\ncg_autoAction cvars controls several options for the user\r\none option is: print endgame - or not",
+            "created_on": "2017-05-10T12:04:00Z",
+            "details": []
+        },
+        {
+            "id": 6717,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-05-10T13:12:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "8"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 6718,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I'll close this.\r\n\r\nSpyhawk, adjust the default value if there is a real need for this. But I think most players are focussing the 2D stats in intermission so it's fine as it is.",
+            "created_on": "2017-05-10T15:30:16Z",
+            "details": []
+        },
+        {
+            "id": 6719,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-05-10T15:30:38Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 6720,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "IR4T4 wrote:\r\n> But I think most players are focussing the 2D stats in intermission.\r\n\r\nSeriously?\r\n\r\n",
+            "created_on": "2017-05-10T15:57:47Z",
+            "details": []
+        },
+        {
+            "id": 6721,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "This is a real bug. This has nothing to do with cg_autoAction.",
+            "created_on": "2017-05-11T09:19:15Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "6",
+                    "new_value": "8"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "0"
+                }
+            ]
+        },
+        {
+            "id": 6804,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-07-02T10:05:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "3",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 7118,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "Does this cover the empty stats in the intermission window as well, or only in the console?",
+            "created_on": "2018-02-24T18:04:27Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "801",
+                    "new_value": "etlegacyclassesmenu.jpg"
+                }
+            ]
+        },
+        {
+            "id": 7120,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Console. I don't remember having seen empty stats in the intermission window...",
+            "created_on": "2018-02-24T21:03:44Z",
+            "details": []
+        },
+        {
+            "id": 7123,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2018-02-24T22:54:11Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "802",
+                    "new_value": "nostatintermission.jpg"
+                }
+            ]
+        },
+        {
+            "id": 7124,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2018-02-24T22:54:15Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "801",
+                    "old_value": "etlegacyclassesmenu.jpg"
+                }
+            ]
+        },
+        {
+            "id": 7125,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Ah, that. This was a bug that was quickly solved after the 2.75 release. From changelog:\r\n\r\n> Fixed main debriefing stats not displayed when skill rating is disabled (also causing intermission chat issues)",
+            "created_on": "2018-02-24T23:15:40Z",
+            "details": []
+        },
+        {
+            "id": 7274,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-09-10T10:46:53Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 1001,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 8,
+        "name": "Confirmed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "End of game stats not always displayed in console",
+    "description": "The end of game stats is not always displayed in client console.\r\n\r\nEither the \"ws\" command is not sent for some reason (see Cmd_WeaponStat_f in g_cmds.c) or the cgs.dumpStatsTime variable (CG_ServerCommand in cg_servercmds.c) prevents it to be displayed.\r\nInvestigate and fix.",
+    "start_date": "2017-02-16",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-02-16T10:25:29Z",
+    "updated_on": "2018-09-10T10:46:53Z",
+    "closed_on": "2017-05-10T15:30:38Z"
+}

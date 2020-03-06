@@ -1,0 +1,219 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 14,
+            "issue_id": 67,
+            "issue_to_id": 4,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "73d47cbf8450806449d46367f2ae4e38b0c8f15d",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "changed default com_XXXmegs values, fixes #4",
+            "committed_on": "2012-03-24T21:08:07Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 18,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "",
+            "created_on": "2012-03-05T23:23:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 25,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "",
+            "created_on": "2012-03-05T23:28:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 30,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "",
+            "created_on": "2012-03-05T23:37:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 36,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Solution proposed my Morsik:\r\n\r\n??maybe count that by user ram?\r\n18:32 <+morsik> if user has <1024M, then use 20% of ram\r\n18:32 <+morsik> if >1024M then use 256M for sounds\r\n18:32 <+morsik> something like that\r\n18:32 <+morsik> (20% and 256M here are just examples)??\r\n",
+            "created_on": "2012-03-10T19:01:36Z",
+            "details": []
+        },
+        {
+            "id": 37,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "160 MB will fit all - see /s_list client cmd\r\n\r\nBtw you should add some system requirement infos somewhere because of updated memory defaults ...\r\n\r\nFinally I don't think the ET client needs more than 72MB com_hunkmegs, 160 MB com_soundmegs and 24MB com_zonemegs. Higher values don't make sense or grant any advantages. A default value of 128 MB com_hunkmegs is just a good value to run a listen server w/o any issues.\r\n\r\n\r\n",
+            "created_on": "2012-03-11T10:00:17Z",
+            "details": []
+        },
+        {
+            "id": 38,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "Doesn't noquarter needs 128M for client? There was some mod that needs. Maybe i'm in mistake - if not mod - then map. There was some maps that needs more hunkmegs (128 or even 192). One of i remember is some version of Fueldump (some desert version afaik).",
+            "created_on": "2012-03-11T13:18:47Z",
+            "details": []
+        },
+        {
+            "id": 39,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "NQ doesn't require 128MB - this is nonsens. Hunkemgs are used for all models used in game and because of this it differs from map to map and mod to mod. Because of some weapon models NQ uses some more megs ... \r\n\r\n/meminfo of NQ and fueldump (with 60 MB com_hunkmegs setting):\r\n\r\n    62914560 bytes ( 60.00 MB) total hunk\r\n    25165824 bytes ( 24.00 MB) total zone\r\n\r\n        1474560 bytes ( 1.41 MB) low mark\r\n\r\n    43944576 bytes ( 41.91 MB) low permanent\r\n    17232768 bytes ( 16.43 MB) low tempHighwater\r\n\r\n        8635552 bytes ( 8.24 MB) high mark\r\n\r\n    12230848 bytes ( 11.66 MB) high permanent\r\n    12313088 bytes ( 11.74 MB) high temp\r\n    29644216 bytes ( 28.27 MB) high tempHighwater\r\n\r\n    *56175424 bytes ( 53.57 MB) total hunk in use*\r\n    17413368 bytes ( 16.61 MB) unused highwater\r\n\r\n        1735744 bytes ( 1.66 MB) in 3105 zone blocks\r\n\r\n            68 bytes ( 0.00 MB) in dynamic botlib\r\n\r\n        1450236 bytes ( 1.38 MB) in dynamic renderer\r\n\r\n            285440 bytes ( 0.27 MB) in dynamic other\r\n\r\n                97260 bytes ( 0.09 MB) in small Zone memory\r\n\r\n------------------------------------------------------------\r\n\r\nIt seems there is some overhead - a setting of com_hunkmges 56 MB doesn't work here. Beside fueldump I know of some other very old maps causing issues but as I do remember they don't use more than 10 MB additionally. Finally a value of 128 MB is a big waste in the eyes of computer pioneers. If a system starts to swap you'll have a negative effect in game for sure. And this can also happen on computers with huge amount of RAM ;) Well in other words sometimes less is more ... don't overpay. 72MB is a good value for now ... if useres report issues it's easy to change again.",
+            "created_on": "2012-03-11T14:26:13Z",
+            "details": []
+        },
+        {
+            "id": 41,
+            "user": {
+                "id": 6,
+                "name": "jaro"
+            },
+            "notes": "com_soundmegs and com_zonemegs uses MBs defined in com_hunkmegs AFAIK so sound/zone cannot be higher than hunk lol",
+            "created_on": "2012-03-14T16:17:45Z",
+            "details": []
+        },
+        {
+            "id": 42,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "true for zone ... false for sound (which I'm talking about) ... open your eyes and watch SND_setup() ",
+            "created_on": "2012-03-14T17:38:58Z",
+            "details": []
+        },
+        {
+            "id": 62,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Default values are set to:\r\n<pre>\r\n#define DEF_COMSOUNDMEGS \"160\"\r\n#define DEF_COMHUNKMEGS  128\r\n#define DEF_COMZONEMEGS  24\r\n</pre>\r\n",
+            "created_on": "2012-03-25T09:48:25Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 4,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "assigned_to": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 1,
+        "name": "2.70rc1"
+    },
+    "subject": "Increase com_soundmegs default value",
+    "description": "24mb for the soundcache is more than poor ... a value > 160mb will cache all sounds ... see cmd slist",
+    "start_date": "2012-03-02",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-03-02T10:36:05Z",
+    "updated_on": "2012-03-25T09:48:25Z",
+    "closed_on": "2012-03-25T09:48:25Z"
+}

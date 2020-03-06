@@ -1,0 +1,135 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "6c4299ed5de66c571860a5af58946f6de1fb7ceb",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "client: rcon didn't recognise connected status, fixes #64",
+            "committed_on": "2012-07-07T08:00:58Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 149,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "!rcon_doesnt_work.png!\r\n!rcon_doesnt_work2.png!\r\n",
+            "created_on": "2012-07-05T10:43:38Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "21",
+                    "new_value": "rcon_doesnt_work.png"
+                },
+                {
+                    "property": "attachment",
+                    "name": "22",
+                    "new_value": "rcon_doesnt_work2.png"
+                },
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 151,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Should be fixed now. Somebody better explain to me the difference between @clientConnection_t@ and @clientStatic_t@ or I'll introduce thousands of bugs like this one.",
+            "created_on": "2012-07-07T08:13:22Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 64,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 35,
+        "name": "Dragonji"
+    },
+    "assigned_to": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 1,
+        "name": "2.70rc1"
+    },
+    "subject": "rcon doesn't work",
+    "description": "[img]http://obrazki.elektroda.net/48_1341477980.png[/img] [img]http://obrazki.elektroda.net/18_1341478069.png[/img]",
+    "start_date": "2012-07-05",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-07-05T08:55:32Z",
+    "updated_on": "2012-07-07T08:13:22Z",
+    "closed_on": "2012-07-07T08:13:22Z"
+}

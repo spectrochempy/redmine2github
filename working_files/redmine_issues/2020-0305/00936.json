@@ -1,0 +1,409 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 288,
+            "issue_id": 936,
+            "issue_to_id": 825,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 446,
+            "issue_id": 1347,
+            "issue_to_id": 936,
+            "relation_type": "duplicates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 6009,
+            "user": {
+                "id": 106,
+                "name": "Odal"
+            },
+            "notes": "It crashes with the downloaded version (2.75 \"official\") and also with the git/compiled version.",
+            "created_on": "2016-09-13T07:38:43Z",
+            "details": []
+        },
+        {
+            "id": 6010,
+            "user": {
+                "id": 106,
+                "name": "Odal"
+            },
+            "notes": "",
+            "created_on": "2016-09-13T07:39:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 6011,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2016-09-13T07:43:06Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "825"
+                }
+            ]
+        },
+        {
+            "id": 6013,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "See https://dev.etlegacy.com/projects/etlegacy/wiki/Compatible_Mods.\r\n\r\nSupport of third party mods on Mac OS X is somewhat erratic.",
+            "created_on": "2016-09-13T07:44:15Z",
+            "details": []
+        },
+        {
+            "id": 6014,
+            "user": {
+                "id": 106,
+                "name": "Odal"
+            },
+            "notes": "I tried to connect to a server with MOD \"etlegacy\" and it worked!\r\n\r\nSo, for now *it does NOT work with NQ 1.2.9 mod*",
+            "created_on": "2016-09-13T07:47:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "etl crashes  on OSX",
+                    "new_value": "etl crashes  on OSX with mod NQ1.2.9"
+                }
+            ]
+        },
+        {
+            "id": 6015,
+            "user": {
+                "id": 106,
+                "name": "Odal"
+            },
+            "notes": "I am sorry.\r\nNow I understand.\r\nThanks for your work.\r\n\r\nv55",
+            "created_on": "2016-09-13T07:48:16Z",
+            "details": []
+        },
+        {
+            "id": 6020,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Alright. I did expect issues with OSX see #825 #848 #883 (there are more - do a ticket search for 'osx') But this is the first time we are loading the mod libs for real. \r\n\r\n\"SecTaskLoadEntitlements failed error=22\" is an apple specific error we should examine. \r\n\r\n",
+            "created_on": "2016-09-13T12:32:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "etl crashes  on OSX with mod NQ1.2.9",
+                    "new_value": "ETL 2.75 crashes  on OSX with other mods (NQ1.2.9)"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 6073,
+            "user": {
+                "id": 106,
+                "name": "Odal"
+            },
+            "notes": "Today, after compiling, I re-tried and ... it works!\r\n\r\nI usually connect to [UJE] Clan - Teamplay server (37.120.174.14) with etlegacy server 2.71rc1 1  and NQ 1.29.\r\nSo, NQ 1.29  works with EtLegacy on OSX.\r\n\r\nOSX 10.12 Sierra.",
+            "created_on": "2016-09-26T12:02:48Z",
+            "details": []
+        },
+        {
+            "id": 6074,
+            "user": {
+                "id": 106,
+                "name": "Odal"
+            },
+            "notes": "Also with ElCapitan works (10.11.6) :-)",
+            "created_on": "2016-09-26T12:13:19Z",
+            "details": []
+        },
+        {
+            "id": 6075,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Well, I really don't get that Mac OS X stuff..",
+            "created_on": "2016-09-26T13:26:11Z",
+            "details": []
+        },
+        {
+            "id": 6076,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I've heard the NQ guys did pay you for this post :) ... Great news!",
+            "created_on": "2016-09-26T16:21:50Z",
+            "details": []
+        },
+        {
+            "id": 6078,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Could you also try some silEnT mod server?\r\n\r\nhttp://www.gametracker.com/search/et/?search_by=server_variable&search_by2=mod_url&query=http%3A%2F%2Fmygamingtalk.com%2F&searchipp=25#search",
+            "created_on": "2016-09-27T20:37:04Z",
+            "details": []
+        },
+        {
+            "id": 6207,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-01-12T16:10:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 6208,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Is there any related commit(s)?",
+            "created_on": "2017-01-12T16:12:35Z",
+            "details": []
+        },
+        {
+            "id": 6210,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "No. This is why this mac issue is so fun to debug! :P",
+            "created_on": "2017-01-12T19:29:58Z",
+            "details": []
+        },
+        {
+            "id": 6211,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "There are related commits ... see #825. We no longer load the default mod and some fixes were done in the zip code ...\r\n\r\n\r\n",
+            "created_on": "2017-01-13T10:53:16Z",
+            "details": []
+        },
+        {
+            "id": 6640,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-03-29T14:24:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 7020,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "From the forums https://dev.etlegacy.com/boards/2/topics/3276\r\n\r\nfs_basepath\r\n<pre>\r\nSys_LoadGameDll > FS_CL_ExtractFromPakFile(/Users/Loic/Library/Application Support/etlegacy, silent, ui_mac)\r\nSys_LoadDll \u2192 Sys_TryLibraryLoad(/Users/Loic/Library/Application Support/etlegacy, silent, ui_mac)...\r\n- Trying zipped .bundle... failed. (Not a valid zip).\r\n\u2013 Trying extension-less dylib... failed: \"Failed loading /Users/Loic/Library/Application Support/etlegacy/silent/ui_mac: dlopen(/Users/Loic/Library/Application Support/etlegacy/silent/ui_mac, 6): image not found\"\r\n\u2013 Trying dylib with extension... failed: \"Failed loading /Users/Loic/Library/Application Support/etlegacy/silent/ui_mac.dylib: dlopen(/Users/Loic/Library/Application Support/etlegacy/silent/ui_mac.dylib, 6): image not found\"\r\nSys_LoadDll > Sys_TryLibraryLoad(/Applications/ET Legacy, silent, ui_mac)...\r\n</pre>\r\n\r\nfs_homepath\r\n<pre>\r\n- Trying zipped .bundle... failed. (Not a valid zip).\r\n\u2013 Trying extension-less dylib... failed: \"Failed loading /Applications/ET Legacy/silent/ui_mac: dlopen(/Applications/ET Legacy/silent/ui_mac, 6): image not found\"\r\n\u2013 Trying dylib with extension... failed: \"Failed loading /Users/Loic/Library/Application Support/etlegacy/silent/ui_mac.dylib: dlopen(/Users/Loic/Library/Application Support/etlegacy/silent/ui_mac.dylib, 6): image not found\"\r\nSys_LoadDll(silent/ui) failed to load library\r\n</pre>\r\n\r\n{FIXME}\r\nIt looks like there is something terrible wrong with the search paths at least for the fs_homepath search. The extension-less dylib is missing the real path prefix? See https://github.com/etlegacy/etlegacy/blob/master/src/sys/sys_main.c#L593\r\nSys_TryLibraryLoad is called twice (for fs_basepath and fs_homepath)\r\n\r\nClarify (from our wiki): fs_basepath and fs_homepath are same path on OS X?! I do assume this won't work because of apple priviledges?\r\n\r\n",
+            "created_on": "2018-01-18T10:49:40Z",
+            "details": []
+        },
+        {
+            "id": 7021,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-01-18T10:50:01Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 7360,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-12-21T13:10:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 7514,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-01-06T08:20:21Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 7788,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-02-14T10:46:09Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "22",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 8478,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-09-13T12:07:47Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "duplicated",
+                    "new_value": "1347"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        },
+        {
+            "id": 106,
+            "name": "Odal"
+        }
+    ],
+    "time_entries": null,
+    "id": 936,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 4,
+        "name": "Feedback"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 106,
+        "name": "Odal"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "ETL 2.75 crashes  on OSX with other mods (NQ1.2.9)",
+    "description": "Everything works until entering the game. Then complete exiting with following console message (I don't know which message are related to this problem):\r\n13/09/16 09:20:16,442 launchservicesd[95]: SecTaskLoadEntitlements failed error=22\r\n13/09/16 09:20:16,478 com.apple.xpc.launchd[1]: (com.etlegacy.etl.908192[41186]) Service exited with abnormal code: 2\r\n13/09/16 09:20:16,478 WindowServer[186]: CGXGetConnectionProperty: Invalid connection 148235\r\n13/09/16 09:20:16,479 WindowServer[186]: CGXGetConnectionProperty: Invalid connection 148235\r\n13/09/16 09:20:16,479 WindowServer[186]: CGXGetConnectionProperty: Invalid connection 148235\r\n13/09/16 09:20:16,479 WindowServer[186]: CGXGetConnectionProperty: Invalid connection 148235\r\n13/09/16 09:20:16,479 WindowServer[186]: CGXGetConnectionProperty: Invalid connection 148235\r\n13/09/16 09:20:16,507 WindowServer[186]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x0b40caf2 device: 0x7fa77040a8c0  isBackBuffered: 1 numComp: 3 numDisp: 3\r\n13/09/16 09:20:16,549 identityservicesd[503]: <IMMacNotificationCenterManager: 0x7f876c93fea0>: notification observer: com.apple.iChat   notification: __CFNotification 0x7f876ca4dcd0 {name = _NSDoNotDisturbDisabledNotification}\r\n13/09/16 09:20:16,567 identityservicesd[503]: <IMMacNotificationCenterManager: 0x7f876c93fea0>:    NC Disabled: NO\r\n13/09/16 09:20:16,575 identityservicesd[503]: <IMMacNotificationCenterManager: 0x7f876c93fea0>:   DND Enabled: NO\r\n13/09/16 09:20:16,575 identityservicesd[503]: <IMMacNotificationCenterManager: 0x7f876c93fea0>: Updating enabled: YES   (Topics: (\r\n    \"com.apple.private.alloy.icloudpairing\",\r\n    \"com.apple.private.alloy.continuity.encryption\",\r\n    \"com.apple.private.alloy.continuity.activity\",\r\n    \"com.apple.private.ids\",\r\n    \"com.apple.private.alloy.phonecontinuity\",\r\n    \"com.apple.private.alloy.phone.auth\",\r\n    \"com.apple.private.alloy.keychainsync\",\r\n    \"com.apple.private.alloy.fmf\",\r\n    \"com.apple.private.alloy.screensharing\",\r\n    \"com.apple.private.alloy.maps\",\r\n    \"com.apple.private.alloy.thumper.keys\",\r\n    \"com.apple.private.alloy.continuity.tethering\"\r\n))\r\n\r\n\r\nI tried on a MacMini (late 2012) and a MacBookPro (13\", mid 2012) both updated to ElCapitan (10.11.6)",
+    "start_date": "2016-09-13",
+    "done_ratio": 80,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "OS X"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2016-09-13T07:34:26Z",
+    "updated_on": "2019-02-14T10:46:09Z",
+    "closed_on": "2017-03-29T14:24:28Z"
+}

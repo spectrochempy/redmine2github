@@ -1,0 +1,188 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "9e58a92d12f4ddb0842bd24749e77c721041308c",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "cgame: fix bullet tracers appearing at wrong positions, refs #1286\n\nSometimes, players position will be invalid due to unsync snapshot. In this case, instead of using old players position to compute the starting point of the tracers we just skip it.",
+            "committed_on": "2019-12-18T22:26:12Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 8172,
+            "user": {
+                "id": 421,
+                "name": "kimi"
+            },
+            "notes": "",
+            "created_on": "2019-05-11T20:39:51Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "1102",
+                    "new_value": "2019-04-29-190836-pirates.dm_84"
+                }
+            ]
+        },
+        {
+            "id": 8173,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-05-11T21:08:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "21"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8174,
+            "user": {
+                "id": 421,
+                "name": "kimi"
+            },
+            "notes": "",
+            "created_on": "2019-05-12T16:46:32Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "1103",
+                    "new_value": "2019-05-12-181331-pirates.dm_84"
+                }
+            ]
+        },
+        {
+            "id": 8614,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "Applied in changeset commit:9e58a92d12f4ddb0842bd24749e77c721041308c ",
+            "created_on": "2019-12-18T22:27:51Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "251"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 8625,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-12-27T22:18:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "21",
+                    "new_value": "16"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1286,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 421,
+        "name": "kimi"
+    },
+    "assigned_to": {
+        "id": 251,
+        "name": "Aranud"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "entities appearing at wrong positions",
+    "description": "playing on teammuppet server, it happens a lot that i see tracers appearing out of nowhere",
+    "start_date": "2019-05-11",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-05-11T20:38:53Z",
+    "updated_on": "2019-12-27T22:18:06Z",
+    "closed_on": "2019-12-27T22:18:06Z"
+}

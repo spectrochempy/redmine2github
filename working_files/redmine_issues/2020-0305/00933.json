@@ -1,0 +1,157 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "078d014d71af6c994cbf9c6e30237547aaa596a5",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed mine ID displayed with g_misc 0, refs #933",
+            "committed_on": "2016-09-07T13:05:01Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 5994,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2016-09-07T12:07:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Crosshair info ",
+                    "new_value": "Mine and dyna crosshair info does't work properly "
+                }
+            ]
+        },
+        {
+            "id": 5995,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2016-09-07T12:14:25Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "!https://files.gitter.im/etlegacy/kOEp/2016-09-07-135542-goldrush.jpg(mineid)!\r\n\r\nThe crosshair mine ID text is buggy (see screenshot). The ID is also wrong (on screenshot, this is my own mine, not the bot's).\r\nDynamite crosshair info is also implemented, but it doesn't seem to work.\r\n\r\nRelevant commits:\r\n* https://github.com/etlegacy/etlegacy/commit/1675b29155b419d9a7541c298a14b262eb9c8d4c\r\n* https://github.com/etlegacy/etlegacy/commit/b7586da8e21e200d39aa389ad1279bad6106fed1",
+                    "new_value": "!https://files.gitter.im/etlegacy/kOEp/2016-09-07-135542-goldrush.jpg(mineid)!\r\n\r\nThe crosshair mine ID text is buggy (see screenshot). The ID is also wrong (on screenshot, this is my own mine, not the bot's).\r\nDynamite crosshair info is also implemented, but it doesn't seem to work.\r\n\r\nInterestingly, g_misc is set to 0. Dyna and mine ID should only be enabled when the g_misc bitflag 8 and 16 are set.\r\n\r\nRelevant commits:\r\n* https://github.com/etlegacy/etlegacy/commit/1675b29155b419d9a7541c298a14b262eb9c8d4c\r\n* https://github.com/etlegacy/etlegacy/commit/b7586da8e21e200d39aa389ad1279bad6106fed1\r\n"
+                }
+            ]
+        },
+        {
+            "id": 5996,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2016-09-07T13:28:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 5997,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2016-09-07T14:23:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Mine and dyna crosshair info does't work properly ",
+                    "new_value": "Mine crosshair does't work properly "
+                },
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "!https://files.gitter.im/etlegacy/kOEp/2016-09-07-135542-goldrush.jpg(mineid)!\r\n\r\nThe crosshair mine ID text is buggy (see screenshot). The ID is also wrong (on screenshot, this is my own mine, not the bot's).\r\nDynamite crosshair info is also implemented, but it doesn't seem to work.\r\n\r\nInterestingly, g_misc is set to 0. Dyna and mine ID should only be enabled when the g_misc bitflag 8 and 16 are set.\r\n\r\nRelevant commits:\r\n* https://github.com/etlegacy/etlegacy/commit/1675b29155b419d9a7541c298a14b262eb9c8d4c\r\n* https://github.com/etlegacy/etlegacy/commit/b7586da8e21e200d39aa389ad1279bad6106fed1\r\n",
+                    "new_value": "!https://files.gitter.im/etlegacy/kOEp/2016-09-07-135542-goldrush.jpg(mineid)!\r\n\r\nThe crosshair mine ID text is buggy (see screenshot). The ID is also wrong (on screenshot, this is my own mine, not the bot's).\r\n\r\nInterestingly, g_misc is set to 0. Dyna and mine ID should only be enabled when the g_misc bitflag 8 and 16 are set.\r\n\r\nRelevant commits:\r\n* https://github.com/etlegacy/etlegacy/commit/1675b29155b419d9a7541c298a14b262eb9c8d4c\r\n* https://github.com/etlegacy/etlegacy/commit/b7586da8e21e200d39aa389ad1279bad6106fed1\r\n"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 933,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 7,
+        "name": "Immediate"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "Mine crosshair does't work properly ",
+    "description": "!https://files.gitter.im/etlegacy/kOEp/2016-09-07-135542-goldrush.jpg(mineid)!\r\n\r\nThe crosshair mine ID text is buggy (see screenshot). The ID is also wrong (on screenshot, this is my own mine, not the bot's).\r\n\r\nInterestingly, g_misc is set to 0. Dyna and mine ID should only be enabled when the g_misc bitflag 8 and 16 are set.\r\n\r\nRelevant commits:\r\n* https://github.com/etlegacy/etlegacy/commit/1675b29155b419d9a7541c298a14b262eb9c8d4c\r\n* https://github.com/etlegacy/etlegacy/commit/b7586da8e21e200d39aa389ad1279bad6106fed1\r\n",
+    "start_date": "2016-09-07",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2016-09-07T12:07:23Z",
+    "updated_on": "2016-09-07T14:23:13Z",
+    "closed_on": "2016-09-07T13:28:07Z"
+}

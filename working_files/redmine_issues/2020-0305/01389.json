@@ -1,0 +1,96 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "818318be697f2b395d6727bb1d327a9073e586f8",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "client: dirty fix for buflen bufferoverflow, refs #1389\n\nI did failed why some #define macro could lost his assigned value thus causing more issue with Q_strncpy() in LAN_GetServerInfo() and LAN_GetServerAddressString() is affected too.",
+            "committed_on": "2020-01-15T17:30:02Z"
+        },
+        {
+            "revision": "5cad58f1d0a8d867ed4ed1afd182950ab3d0f883",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "renderer2: fix compiler warning, refs #1389",
+            "committed_on": "2020-01-15T17:59:10Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 8682,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2020-01-11T11:43:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1389,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 13,
+        "name": "RaFaL"
+    },
+    "assigned_to": {
+        "id": 13,
+        "name": "RaFaL"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Windows 64bit Support for ETL",
+    "description": "Let add 64bit support for Windows and there is a reason and prove for make it happen.\r\n\r\nWhenever i do devmap some maps with our HD textures installed like goldrush, dinkershing by kemon I am starting to get errors due too some limitations.\r\nNot sure if everyone experienced that one.\r\n\r\nPS: And of course R2 is used.",
+    "start_date": "2020-01-10",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Windows"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": "64-bit"
+        }
+    ],
+    "created_on": "2020-01-10T21:30:21Z",
+    "updated_on": "2020-01-11T11:43:13Z"
+}

@@ -1,0 +1,662 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "70d52bc3951566110be9d64b97a05575b6e6c994",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "game: fixed 'exceeded MAX_MULTI_SPAWNTARGETS' error, patch by flms and ETPub project, fixes #208",
+            "committed_on": "2013-02-12T22:15:33Z"
+        },
+        {
+            "revision": "fa691316ed00809a5bd3917d979000d057d3f4c4",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: reset the remappedShaders data structure on map start refs #208",
+            "committed_on": "2013-02-24T16:46:25Z"
+        },
+        {
+            "revision": "ad9db31af78394f5c0ef048b512bd7f29e0a9d0c",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: reset the remappedShaders data structure on map start refs #208",
+            "committed_on": "2013-02-25T19:52:01Z"
+        },
+        {
+            "revision": "630f70b3da42cee1ce076ede39a8c85d86a8e7a7",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: better debug info for info_limbo_camera_setup refs #208",
+            "committed_on": "2013-11-24T14:30:48Z"
+        },
+        {
+            "revision": "c40fce1f807c390814abf616fb4798fa280c1704",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: debug info refs #208 refs #405",
+            "committed_on": "2013-11-26T15:43:56Z"
+        },
+        {
+            "revision": "2968b38afabc1caefb003cd1fd43028874c5710a",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: don't drop invalid weapons refs #208",
+            "committed_on": "2013-11-28T06:02:16Z"
+        },
+        {
+            "revision": "1595920f80138ce954b58feeda1baaaa5bb2ffe9",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: exclude WP_NONE from weapon stats refs #208",
+            "committed_on": "2013-11-28T06:32:17Z"
+        },
+        {
+            "revision": "ca1b57792ac2322dcfa1a537666f086b0dab4c1d",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: don't start to reload invalid weapons (there is no item for) refs\n#208, don't cool WP_NONE",
+            "committed_on": "2013-11-28T06:36:28Z"
+        },
+        {
+            "revision": "7a62c835564251dca6411b5b766d312ef3920954",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: better debug info for info_limbo_camera_setup refs #208",
+            "committed_on": "2013-12-11T20:42:25Z"
+        },
+        {
+            "revision": "f7f5cfd2fefd3782a3dac515a09116e154b9170d",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: debug info refs #208 refs #405",
+            "committed_on": "2013-12-11T20:42:25Z"
+        },
+        {
+            "revision": "a82c65614a85e0f7f439c9f560b44fa998cef6b2",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: don't drop invalid weapons refs #208",
+            "committed_on": "2013-12-11T20:42:26Z"
+        },
+        {
+            "revision": "d18da5863e760e1f2724f975c179acf2c5b20f1d",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: exclude WP_NONE from weapon stats refs #208",
+            "committed_on": "2013-12-11T20:42:26Z"
+        },
+        {
+            "revision": "80ca51d84639538e30c910bbbe8994c6c61fe2ce",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: don't start to reload invalid weapons (there is no item for) refs\n#208, don't cool WP_NONE",
+            "committed_on": "2013-12-11T20:42:26Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1153,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "That's odd ... the test server we have had some games on is up for more than 48h ... did you run stock maps ?",
+            "created_on": "2013-02-12T05:26:39Z",
+            "details": []
+        },
+        {
+            "id": 1154,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "It happened several times on Goldrush, but I suspect it is related to omnibot (10 bots running), because crash follows immediately after \"Omnibot inicialization is complete\" log message. I cannot upload server log, because it gets misformatted after some time of running - another new issue. Now I am trying to run empty server and see if it crashes or not.\r\n\r\n_EDIT:_ no, happens even with @omnibot_enable = 0@",
+            "created_on": "2013-02-12T10:56:34Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "<pre>ERROR: SP_team_WOLF_objective: exceeded MAX_MULTI_SPAWNTARGETS (16)</pre>",
+                    "new_value": "<pre>ERROR: SP_team_WOLF_objective: exceeded MAX_MULTI_SPAWNTARGETS (16)</pre>\r\n\r\nMAX_MULTI_SPAWNTARGETS was not changed in ET:L"
+                }
+            ]
+        },
+        {
+            "id": 1155,
+            "user": {
+                "id": 30,
+                "name": "crapshoot"
+            },
+            "notes": "ETPub has a fix for this. see https://www.assembla.com/code/etpub/subversion/commit/404\r\n",
+            "created_on": "2013-02-12T20:18:35Z",
+            "details": []
+        },
+        {
+            "id": 1156,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "crapshoot wrote:\r\n> ETPub has a fix for this. see https://www.assembla.com/code/etpub/subversion/commit/404\r\n\r\nThank you, user:crapshoot! This bug was driving me crazy.",
+            "created_on": "2013-02-12T20:27:53Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "10"
+                }
+            ]
+        },
+        {
+            "id": 1157,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-02-12T21:28:14Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "5",
+                    "new_value": "17"
+                }
+            ]
+        },
+        {
+            "id": 1159,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Applied in changeset commit:70d52bc3951566110be9d64b97a05575b6e6c994.",
+            "created_on": "2013-02-12T22:24:40Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "10",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 1164,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Here we go again, I suspect this error is similar to the first one:\r\n(I don't have complete log, but I will update this post when this crash happens again)\r\n\r\n<pre>\r\n-----------------------------------\r\nSetting MOTD...\r\nGame Initialization completed in 0.14 seconds.\r\nOmni-bot: Looking for /home/etlegacy/etlserver/mods/legacy/omni-bot/omnibot_et.so, \r\nOmni-bot: Found Omni-bot: /home/etlegacy/etlserver/mods/legacy/omni-bot/omnibot_et.so, Attempting to Initialize\r\nOmni-bot: Omni-bot Loaded Successfully\r\nET autoexec script executed. \r\nLoaded Waypoints.\r\nBot Initialized in 0.10 seconds.\r\nOmni-Bot Initialization completed in 0.10 seconds.\r\n********************\r\nERROR: info_limbo_camera cannot find target\r\n\r\n********************\r\n----- Server Shutdown -----\r\nSending heartbeat to etmaster.idsoftware.com\r\n==== ShutdownGame (0)====\r\n-- Script System Info --\r\nCurrent Memory Usage 1.85218 MB\r\nSoft Memory Usage 1.8 MB\r\nHard Memory Limit 2 MB\r\nSystem Memory Usage 1.82929 MB\r\nFull Collects 0\r\nInc Collects 0\r\nGC Warnings 0\r\nThreads: 0, 0 Running, 0 Blocked, 0 Sleeping\r\nShutdownOmniBot\r\n---------------------------\r\nWARNING: watchdog will trigger in 4 seconds\r\nIdle Server with no map - triggering watchdog\r\n</pre>",
+            "created_on": "2013-02-13T11:24:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 1178,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-02-15T11:49:33Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "<pre>ERROR: SP_team_WOLF_objective: exceeded MAX_MULTI_SPAWNTARGETS (16)</pre>\r\n\r\nMAX_MULTI_SPAWNTARGETS was not changed in ET:L",
+                    "new_value": "Dedicated server crashes after several hours of uptime with this error:\r\n<pre>\r\n********************\r\nERROR: info_limbo_camera cannot find target\r\n\r\n********************\r\n</pre>\r\n\r\nETPub code of @info_limbo_camera@ and @G_FindByTargetname@ functions is the same as in ET:L.\r\n\r\n<pre>\r\n------------------------------------------------------------\r\nInitGame: \\g_heavyWeaponRestriction\\100\\mod_url\\www.etlegacy.com\\omnibot_playing\\14\\P\\-2-1212121212222\\g_maxlivesRespawnPenalty\\0\\voteFlags\\63979\\g_balancedteams\\1\\g_maxGameClients\\0\\g_covertopsChargeTime\\30000\\g_soldierChargeTime\\20000\\g_LTChargeTime\\40000\\g_engineerChargeTime\\30000\\g_medicChargeTime\\45000\\g_bluelimbotime\\20000\\g_redlimbotime\\30000\\gamename\\legacy\\g_axismaxlives\\0\\g_alliedmaxlives\\0\\g_gametype\\6\\g_antilag\\1\\g_voteFlags\\0\\g_minGameClients\\2\\g_needpass\\0\\g_maxlives\\0\\g_friendlyFire\\1\\sv_allowAnonymous\\0\\sv_floodProtect\\0\\sv_maxPing\\0\\sv_minPing\\0\\sv_maxRate\\25000\\sv_maxclients\\32\\sv_hostname\\ET: Legacy Test Server\\sv_privateClients\\2\\mapname\\fueldump\\protocol\\84\\timelimit\\30\\version\\ET 2.60b linux-i386 May  8 2006\r\nEnable spawning!\r\nDisable spawning!\r\n0 teams with 0 entities\r\n-----------------------------------\r\nSetting MOTD...\r\nGame Initialization completed in 0.13 seconds.\r\nOmni-bot: Looking for /home/etlegacy/etlserver/mods/legacy/omni-bot/omnibot_et.so, \r\nOmni-bot: Found Omni-bot: /home/etlegacy/etlserver/mods/legacy/omni-bot/omnibot_et.so, Attempting to Initialize\r\nOmni-bot: Omni-bot Loaded Successfully\r\nET autoexec script executed. \r\nLoaded Waypoints.\r\nBot Initialized in 0.09 seconds.\r\nOmni-Bot Initialization completed in 0.10 seconds.\r\n********************\r\nERROR: info_limbo_camera cannot find target\r\n\r\n********************\r\n----- Server Shutdown -----\r\nSending heartbeat to etmaster.idsoftware.com\r\n==== ShutdownGame (0)====\r\n-- Script System Info --\r\nCurrent Memory Usage 1.85348 MB\r\nSoft Memory Usage 1.8 MB\r\nHard Memory Limit 2 MB\r\nSystem Memory Usage 1.82984 MB\r\nFull Collects 0\r\nInc Collects 0\r\nGC Warnings 0\r\nThreads: 0, 0 Running, 0 Blocked, 0 Sleeping\r\nShutdownOmniBot\r\nShutdownGame:\r\n------------------------------------------------------------\r\n---------------------------\r\nWARNING: watchdog will trigger in 4 seconds\r\nIdle Server with no map - triggering watchdog\r\n</pre>\r\n\r\n-----\r\n\r\nFollowing bug was fixed thanks to crapshoot and ETPub: \r\n\r\n<pre>ERROR: SP_team_WOLF_objective: exceeded MAX_MULTI_SPAWNTARGETS (16)</pre>\r\n\r\nMAX_MULTI_SPAWNTARGETS was not changed in ET:L"
+                }
+            ]
+        },
+        {
+            "id": 1179,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-02-15T12:29:37Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Server crashes after a few maps",
+                    "new_value": "Server crashes after a few maps with \"ERROR: info_limbo_camera cannot find target\""
+                }
+            ]
+        },
+        {
+            "id": 1180,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-02-16T10:40:55Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Dedicated server crashes after several hours of uptime with this error:\r\n<pre>\r\n********************\r\nERROR: info_limbo_camera cannot find target\r\n\r\n********************\r\n</pre>\r\n\r\nETPub code of @info_limbo_camera@ and @G_FindByTargetname@ functions is the same as in ET:L.\r\n\r\n<pre>\r\n------------------------------------------------------------\r\nInitGame: \\g_heavyWeaponRestriction\\100\\mod_url\\www.etlegacy.com\\omnibot_playing\\14\\P\\-2-1212121212222\\g_maxlivesRespawnPenalty\\0\\voteFlags\\63979\\g_balancedteams\\1\\g_maxGameClients\\0\\g_covertopsChargeTime\\30000\\g_soldierChargeTime\\20000\\g_LTChargeTime\\40000\\g_engineerChargeTime\\30000\\g_medicChargeTime\\45000\\g_bluelimbotime\\20000\\g_redlimbotime\\30000\\gamename\\legacy\\g_axismaxlives\\0\\g_alliedmaxlives\\0\\g_gametype\\6\\g_antilag\\1\\g_voteFlags\\0\\g_minGameClients\\2\\g_needpass\\0\\g_maxlives\\0\\g_friendlyFire\\1\\sv_allowAnonymous\\0\\sv_floodProtect\\0\\sv_maxPing\\0\\sv_minPing\\0\\sv_maxRate\\25000\\sv_maxclients\\32\\sv_hostname\\ET: Legacy Test Server\\sv_privateClients\\2\\mapname\\fueldump\\protocol\\84\\timelimit\\30\\version\\ET 2.60b linux-i386 May  8 2006\r\nEnable spawning!\r\nDisable spawning!\r\n0 teams with 0 entities\r\n-----------------------------------\r\nSetting MOTD...\r\nGame Initialization completed in 0.13 seconds.\r\nOmni-bot: Looking for /home/etlegacy/etlserver/mods/legacy/omni-bot/omnibot_et.so, \r\nOmni-bot: Found Omni-bot: /home/etlegacy/etlserver/mods/legacy/omni-bot/omnibot_et.so, Attempting to Initialize\r\nOmni-bot: Omni-bot Loaded Successfully\r\nET autoexec script executed. \r\nLoaded Waypoints.\r\nBot Initialized in 0.09 seconds.\r\nOmni-Bot Initialization completed in 0.10 seconds.\r\n********************\r\nERROR: info_limbo_camera cannot find target\r\n\r\n********************\r\n----- Server Shutdown -----\r\nSending heartbeat to etmaster.idsoftware.com\r\n==== ShutdownGame (0)====\r\n-- Script System Info --\r\nCurrent Memory Usage 1.85348 MB\r\nSoft Memory Usage 1.8 MB\r\nHard Memory Limit 2 MB\r\nSystem Memory Usage 1.82984 MB\r\nFull Collects 0\r\nInc Collects 0\r\nGC Warnings 0\r\nThreads: 0, 0 Running, 0 Blocked, 0 Sleeping\r\nShutdownOmniBot\r\nShutdownGame:\r\n------------------------------------------------------------\r\n---------------------------\r\nWARNING: watchdog will trigger in 4 seconds\r\nIdle Server with no map - triggering watchdog\r\n</pre>\r\n\r\n-----\r\n\r\nFollowing bug was fixed thanks to crapshoot and ETPub: \r\n\r\n<pre>ERROR: SP_team_WOLF_objective: exceeded MAX_MULTI_SPAWNTARGETS (16)</pre>\r\n\r\nMAX_MULTI_SPAWNTARGETS was not changed in ET:L",
+                    "new_value": "Dedicated server crashes after several hours of uptime with this error:\r\n<pre>\r\n********************\r\nERROR: info_limbo_camera cannot find target\r\n\r\n********************\r\n</pre>\r\n\r\nETPub code of @info_limbo_camera@ and @G_FindByTargetname@ functions is the same as in ET:L.\r\n\r\n<pre>\r\n------------------------------------------------------------\r\nInitGame: \\g_heavyWeaponRestriction\\100\\mod_url\\www.etlegacy.com\\omnibot_playing\\14\\P\\-2-1212121212222\\g_maxlivesRespawnPenalty\\0\\voteFlags\\63979\\g_balancedteams\\1\\g_maxGameClients\\0\\g_covertopsChargeTime\\30000\\g_soldierChargeTime\\20000\\g_LTChargeTime\\40000\\g_engineerChargeTime\\30000\\g_medicChargeTime\\45000\\g_bluelimbotime\\20000\\g_redlimbotime\\30000\\gamename\\legacy\\g_axismaxlives\\0\\g_alliedmaxlives\\0\\g_gametype\\6\\g_antilag\\1\\g_voteFlags\\0\\g_minGameClients\\2\\g_needpass\\0\\g_maxlives\\0\\g_friendlyFire\\1\\sv_allowAnonymous\\0\\sv_floodProtect\\0\\sv_maxPing\\0\\sv_minPing\\0\\sv_maxRate\\25000\\sv_maxclients\\32\\sv_hostname\\ET: Legacy Test Server\\sv_privateClients\\2\\mapname\\fueldump\\protocol\\84\\timelimit\\30\\version\\ET 2.60b linux-i386 May  8 2006\r\nEnable spawning!\r\nDisable spawning!\r\n0 teams with 0 entities\r\n-----------------------------------\r\nSetting MOTD...\r\nGame Initialization completed in 0.13 seconds.\r\nOmni-bot: Looking for /home/etlegacy/etlserver/mods/legacy/omni-bot/omnibot_et.so, \r\nOmni-bot: Found Omni-bot: /home/etlegacy/etlserver/mods/legacy/omni-bot/omnibot_et.so, Attempting to Initialize\r\nOmni-bot: Omni-bot Loaded Successfully\r\nET autoexec script executed. \r\nLoaded Waypoints.\r\nBot Initialized in 0.09 seconds.\r\nOmni-Bot Initialization completed in 0.10 seconds.\r\n********************\r\nERROR: info_limbo_camera cannot find target\r\n\r\n********************\r\n----- Server Shutdown -----\r\nSending heartbeat to etmaster.idsoftware.com\r\n==== ShutdownGame (0)====\r\n-- Script System Info --\r\nCurrent Memory Usage 1.85348 MB\r\nSoft Memory Usage 1.8 MB\r\nHard Memory Limit 2 MB\r\nSystem Memory Usage 1.82984 MB\r\nFull Collects 0\r\nInc Collects 0\r\nGC Warnings 0\r\nThreads: 0, 0 Running, 0 Blocked, 0 Sleeping\r\nShutdownOmniBot\r\nShutdownGame:\r\n------------------------------------------------------------\r\n---------------------------\r\nWARNING: watchdog will trigger in 4 seconds\r\nIdle Server with no map - triggering watchdog\r\n</pre>\r\n\r\n{UPDATE} After starting server under gdb with @+set developer 1@ there is a new error:\r\n\r\n<pre>\r\nCvar_Set2: com_errorMessage G_FindConfigstringIndex: overflow\r\n\r\n********************\r\nERROR: G_FindConfigstringIndex: overflow\r\n\r\n********************\r\n----- Server Shutdown -----\r\nSending heartbeat to etmaster.idsoftware.com\r\n==== ShutdownGame (0)====\r\nShutdownOmniBot\r\nShutdownGame:\r\n------------------------------------------------------------\r\nCvar_Set2: session 6 0 v2_factory\r\nCvar_Set2: fireteam0 \\id\\-1\r\nCvar_Set2: fireteam1 \\id\\-1\r\nCvar_Set2: fireteam2 \\id\\-1\r\nCvar_Set2: fireteam3 \\id\\-1\r\nCvar_Set2: fireteam4 \\id\\-1\r\nCvar_Set2: fireteam5 \\id\\-1\r\nCvar_Set2: fireteam6 \\id\\-1\r\nCvar_Set2: fireteam7 \\id\\-1\r\nCvar_Set2: fireteam8 \\id\\-1\r\nCvar_Set2: fireteam9 \\id\\-1\r\nCvar_Set2: fireteam10 \\id\\-1\r\nCvar_Set2: fireteam11 \\id\\-1\r\nCvar_Set2: sv_running 0\r\n---------------------------\r\nCvar_Set2: nextmap map_restart 0\r\nWARNING: watchdog will trigger in 4 seconds\r\nIdle Server with no map - triggering watchdog\r\n[Inferior 1 (process 19367) exited normally]\r\n</pre>\r\n\r\n-----\r\n\r\nFollowing bug was fixed thanks to crapshoot and ETPub: \r\n\r\n<pre>ERROR: SP_team_WOLF_objective: exceeded MAX_MULTI_SPAWNTARGETS (16)</pre>\r\n\r\nMAX_MULTI_SPAWNTARGETS was not changed in ET:L"
+                }
+            ]
+        },
+        {
+            "id": 1183,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Bug report updated with further details provided by @+set developer 1@. These errors look interesting:\r\n\r\n<pre>\r\nG_PickTarget: target allied_spawn not found\r\nG_PickTarget: target axis_spawn not found\r\n</pre>\r\n\r\n_EDIT:_ no, these errors happen even when golddays map loads fine",
+            "created_on": "2013-02-17T13:36:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Dedicated server crashes after several hours of uptime with this error:\r\n<pre>\r\n********************\r\nERROR: info_limbo_camera cannot find target\r\n\r\n********************\r\n</pre>\r\n\r\nETPub code of @info_limbo_camera@ and @G_FindByTargetname@ functions is the same as in ET:L.\r\n\r\n<pre>\r\n------------------------------------------------------------\r\nInitGame: \\g_heavyWeaponRestriction\\100\\mod_url\\www.etlegacy.com\\omnibot_playing\\14\\P\\-2-1212121212222\\g_maxlivesRespawnPenalty\\0\\voteFlags\\63979\\g_balancedteams\\1\\g_maxGameClients\\0\\g_covertopsChargeTime\\30000\\g_soldierChargeTime\\20000\\g_LTChargeTime\\40000\\g_engineerChargeTime\\30000\\g_medicChargeTime\\45000\\g_bluelimbotime\\20000\\g_redlimbotime\\30000\\gamename\\legacy\\g_axismaxlives\\0\\g_alliedmaxlives\\0\\g_gametype\\6\\g_antilag\\1\\g_voteFlags\\0\\g_minGameClients\\2\\g_needpass\\0\\g_maxlives\\0\\g_friendlyFire\\1\\sv_allowAnonymous\\0\\sv_floodProtect\\0\\sv_maxPing\\0\\sv_minPing\\0\\sv_maxRate\\25000\\sv_maxclients\\32\\sv_hostname\\ET: Legacy Test Server\\sv_privateClients\\2\\mapname\\fueldump\\protocol\\84\\timelimit\\30\\version\\ET 2.60b linux-i386 May  8 2006\r\nEnable spawning!\r\nDisable spawning!\r\n0 teams with 0 entities\r\n-----------------------------------\r\nSetting MOTD...\r\nGame Initialization completed in 0.13 seconds.\r\nOmni-bot: Looking for /home/etlegacy/etlserver/mods/legacy/omni-bot/omnibot_et.so, \r\nOmni-bot: Found Omni-bot: /home/etlegacy/etlserver/mods/legacy/omni-bot/omnibot_et.so, Attempting to Initialize\r\nOmni-bot: Omni-bot Loaded Successfully\r\nET autoexec script executed. \r\nLoaded Waypoints.\r\nBot Initialized in 0.09 seconds.\r\nOmni-Bot Initialization completed in 0.10 seconds.\r\n********************\r\nERROR: info_limbo_camera cannot find target\r\n\r\n********************\r\n----- Server Shutdown -----\r\nSending heartbeat to etmaster.idsoftware.com\r\n==== ShutdownGame (0)====\r\n-- Script System Info --\r\nCurrent Memory Usage 1.85348 MB\r\nSoft Memory Usage 1.8 MB\r\nHard Memory Limit 2 MB\r\nSystem Memory Usage 1.82984 MB\r\nFull Collects 0\r\nInc Collects 0\r\nGC Warnings 0\r\nThreads: 0, 0 Running, 0 Blocked, 0 Sleeping\r\nShutdownOmniBot\r\nShutdownGame:\r\n------------------------------------------------------------\r\n---------------------------\r\nWARNING: watchdog will trigger in 4 seconds\r\nIdle Server with no map - triggering watchdog\r\n</pre>\r\n\r\n{UPDATE} After starting server under gdb with @+set developer 1@ there is a new error:\r\n\r\n<pre>\r\nCvar_Set2: com_errorMessage G_FindConfigstringIndex: overflow\r\n\r\n********************\r\nERROR: G_FindConfigstringIndex: overflow\r\n\r\n********************\r\n----- Server Shutdown -----\r\nSending heartbeat to etmaster.idsoftware.com\r\n==== ShutdownGame (0)====\r\nShutdownOmniBot\r\nShutdownGame:\r\n------------------------------------------------------------\r\nCvar_Set2: session 6 0 v2_factory\r\nCvar_Set2: fireteam0 \\id\\-1\r\nCvar_Set2: fireteam1 \\id\\-1\r\nCvar_Set2: fireteam2 \\id\\-1\r\nCvar_Set2: fireteam3 \\id\\-1\r\nCvar_Set2: fireteam4 \\id\\-1\r\nCvar_Set2: fireteam5 \\id\\-1\r\nCvar_Set2: fireteam6 \\id\\-1\r\nCvar_Set2: fireteam7 \\id\\-1\r\nCvar_Set2: fireteam8 \\id\\-1\r\nCvar_Set2: fireteam9 \\id\\-1\r\nCvar_Set2: fireteam10 \\id\\-1\r\nCvar_Set2: fireteam11 \\id\\-1\r\nCvar_Set2: sv_running 0\r\n---------------------------\r\nCvar_Set2: nextmap map_restart 0\r\nWARNING: watchdog will trigger in 4 seconds\r\nIdle Server with no map - triggering watchdog\r\n[Inferior 1 (process 19367) exited normally]\r\n</pre>\r\n\r\n-----\r\n\r\nFollowing bug was fixed thanks to crapshoot and ETPub: \r\n\r\n<pre>ERROR: SP_team_WOLF_objective: exceeded MAX_MULTI_SPAWNTARGETS (16)</pre>\r\n\r\nMAX_MULTI_SPAWNTARGETS was not changed in ET:L",
+                    "new_value": "Dedicated server crashes after several hours of uptime with this error:\r\n<pre>\r\n********************\r\nERROR: info_limbo_camera cannot find target\r\n\r\n********************\r\n</pre>\r\n\r\nETPub code of @info_limbo_camera@ and @G_FindByTargetname@ functions is the same as in ET:L.\r\n\r\n<pre>\r\n------------------------------------------------------------\r\nInitGame: \\g_heavyWeaponRestriction\\100\\mod_url\\www.etlegacy.com\\omnibot_playing\\0\\P\\-121212121212\\g_maxlivesRespawnPenalty\\0\\voteFlags\\63979\\g_balancedteams\\1\\g_maxGameClients\\0\\g_covertopsChargeTime\\30000\\g_soldierChargeTime\\20000\\g_LTChargeTime\\40000\\g_engineerChargeTime\\30000\\g_medicChargeTime\\45000\\g_bluelimbotime\\20000\\g_redlimbotime\\30000\\gamename\\legacy\\g_axismaxlives\\0\\g_alliedmaxlives\\0\\g_gametype\\6\\g_antilag\\1\\g_voteFlags\\0\\g_minGameClients\\2\\g_needpass\\0\\g_maxlives\\0\\g_friendlyFire\\1\\sv_allowAnonymous\\0\\sv_floodProtect\\0\\sv_maxPing\\0\\sv_minPing\\0\\sv_maxRate\\25000\\sv_maxclients\\32\\sv_hostname\\ET: Legacy Test Server\\sv_privateClients\\2\\mapname\\golddays_v4\\protocol\\84\\timelimit\\20\\version\\ET 2.60b linux-i386 May  8 2006\r\nMap changed, clearing player stats.\r\nCvar_Set2: g_scriptName\r\nEnable spawning!\r\nCvar_Set2: g_gravity 800\r\nG_PickTarget: target allied_spawn not found\r\nG_PickTarget: target axis_spawn not found\r\nCvar_Set2: g_redlimbotime 15000 \r\nCvar_Set2: g_bluelimbotime 30000\r\nCvar_Set2: timelimit 20\r\nG_PickTarget: target axis_spawn not found\r\nERROR: Can't find models/mapobjects/goldbox_sd/goldbox.tag\r\nERROR: Can't find models/mapobjects/goldbox_sd/goldbox_trans_red.tag\r\nG_SetEntState: entity 112 already in desired state [0]\r\nERROR: Can't find models/mapobjects/goldbox_sd/goldbox_trans_red.tag\r\nG_SetEntState: entity 113 already in desired state [0]\r\nERROR: Can't find models/mapobjects/goldbox_sd/goldbox.tag\r\nERROR: Can't find models/mapobjects/goldbox_sd/goldbox_trans_red.tag\r\nG_SetEntState: entity 115 already in desired state [0]\r\nERROR: Can't find models/mapobjects/goldbox_sd/goldbox.tag\r\nERROR: Can't find models/mapobjects/cmarker/cmarker_crates.tag\r\nERROR: Can't find models/mapobjects/cmarker/cmarker_flag.tag\r\nERROR: Can't find models/mapobjects/miltary_trim/sandbag1_45.tag\r\nERROR: Can't find models/mapobjects/cmarker/cmarker_flag.tag\r\nERROR: Can't find models/mapobjects/cmarker/cmarker_crates.tag\r\nERROR: Can't find models/mapobjects/radios_sd/compostalliedopened.tag\r\nERROR: Can't find models/mapobjects/radios_sd/compostaxisopened.tag\r\nERROR: Can't find models/mapobjects/radios_sd/compostneutralclosed.tag\r\nERROR: Can't find models/mapobjects/pump_sd/pump_base.tag\r\nERROR: Can't find models/mapobjects/pump_sd/pump_animated.tag\r\nERROR: Can't find models/mapobjects/cmarker/cmarker_flag.tag\r\nERROR: Can't find models/mapobjects/cmarker/cmarker_crates.tag\r\nERROR: Can't find models/mapobjects/cmarker/cmarker_flag.tag\r\nERROR: Can't find models/mapobjects/cmarker/cmarker_crates.tag\r\nERROR: Can't find models/mapobjects/cmarker/cmarker_flag.tag\r\nERROR: Can't find models/mapobjects/cmarker/cmarker_crates.tag\r\nDisable spawning!\r\nERROR: Can't find sound/maps/golddays_v4.sps\r\n0 teams with 0 entities\r\n-----------------------------------\r\nSetting MOTD...\r\nGame Initialization completed in 0.03 seconds.\r\nOmni-bot: Looking for /home/etlegacy/etlserver/mods/legacy/omni-bot/omnibot_et.so, \r\nOmni-bot: Found Omni-bot: /home/etlegacy/etlserver/mods/legacy/omni-bot/omnibot_et.so, Attempting to Initialize\r\nOmni-bot: Omni-bot Loaded Successfully\r\nET autoexec script executed. \r\nERROR Loading Waypoints.\r\nBot Initialized in 0.09 seconds.\r\nOmni-Bot Initialization completed in 0.10 seconds.\r\nCvar_Set2: gamestate 1\r\nG_SetEntState: entity 199 already in desired state [0]\r\nG_SetEntState: entity 200 already in desired state [0]\r\nG_SetEntState: entity 197 already in desired state [0]\r\nG_SetEntState: entity 195 already in desired state [0]\r\nG_SetEntState: entity 203 already in desired state [0]\r\nCvar_Set2: com_errorMessage info_limbo_camera cannot find target\r\n\r\n********************\r\nERROR: info_limbo_camera cannot find target\r\n\r\n********************\r\n----- Server Shutdown -----\r\nSending heartbeat to etmaster.idsoftware.com\r\n==== ShutdownGame (0)====\r\n-- Script System Info --\r\nCurrent Memory Usage 1.85209 MB\r\nSoft Memory Usage 1.8 MB\r\nHard Memory Limit 2 MB\r\nSystem Memory Usage 1.82929 MB\r\nFull Collects 0\r\nInc Collects 0\r\nGC Warnings 0\r\nThreads: 0, 0 Running, 0 Blocked, 0 Sleeping\r\nShutdownOmniBot\r\nShutdownGame:\r\n------------------------------------------------------------\r\nCvar_Set2: session 6 0 golddays_v4\r\nCvar_Set2: fireteam0 \\id\\-1\r\nCvar_Set2: fireteam1 \\id\\-1\r\nCvar_Set2: fireteam2 \\id\\-1\r\nCvar_Set2: fireteam3 \\id\\-1\r\nCvar_Set2: fireteam4 \\id\\-1\r\nCvar_Set2: fireteam5 \\id\\-1\r\nCvar_Set2: fireteam6 \\id\\-1\r\nCvar_Set2: fireteam7 \\id\\-1\r\nCvar_Set2: fireteam8 \\id\\-1\r\nCvar_Set2: fireteam9 \\id\\-1\r\nCvar_Set2: fireteam10 \\id\\-1\r\nCvar_Set2: fireteam11 \\id\\-1\r\nCvar_Set2: sv_running 0\r\n---------------------------\r\nCvar_Set2: nextmap map_restart 0\r\nWARNING: watchdog will trigger in 4 seconds\r\nIdle Server with no map - triggering watchdog\r\n</pre>\r\n\r\n{UPDATE} After starting server under gdb with @+set developer 1@ there is a new error:\r\n\r\n<pre>\r\nCvar_Set2: com_errorMessage G_FindConfigstringIndex: overflow\r\n\r\n********************\r\nERROR: G_FindConfigstringIndex: overflow\r\n\r\n********************\r\n----- Server Shutdown -----\r\nSending heartbeat to etmaster.idsoftware.com\r\n==== ShutdownGame (0)====\r\nShutdownOmniBot\r\nShutdownGame:\r\n------------------------------------------------------------\r\nCvar_Set2: session 6 0 v2_factory\r\nCvar_Set2: fireteam0 \\id\\-1\r\nCvar_Set2: fireteam1 \\id\\-1\r\nCvar_Set2: fireteam2 \\id\\-1\r\nCvar_Set2: fireteam3 \\id\\-1\r\nCvar_Set2: fireteam4 \\id\\-1\r\nCvar_Set2: fireteam5 \\id\\-1\r\nCvar_Set2: fireteam6 \\id\\-1\r\nCvar_Set2: fireteam7 \\id\\-1\r\nCvar_Set2: fireteam8 \\id\\-1\r\nCvar_Set2: fireteam9 \\id\\-1\r\nCvar_Set2: fireteam10 \\id\\-1\r\nCvar_Set2: fireteam11 \\id\\-1\r\nCvar_Set2: sv_running 0\r\n---------------------------\r\nCvar_Set2: nextmap map_restart 0\r\nWARNING: watchdog will trigger in 4 seconds\r\nIdle Server with no map - triggering watchdog\r\n[Inferior 1 (process 19367) exited normally]\r\n</pre>\r\n\r\n-----\r\n\r\nFollowing bug was fixed thanks to crapshoot and ETPub: \r\n\r\n<pre>ERROR: SP_team_WOLF_objective: exceeded MAX_MULTI_SPAWNTARGETS (16)</pre>\r\n\r\nMAX_MULTI_SPAWNTARGETS was not changed in ET:L"
+                }
+            ]
+        },
+        {
+            "id": 1184,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "I did few map <mapname>\r\nI think 1 of maps may be corrupted somehow ",
+            "created_on": "2013-02-17T20:03:33Z",
+            "details": []
+        },
+        {
+            "id": 1185,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "It doesn't seem to be map related - it happened so far on goldrush, golddays_v4 and fueldump.",
+            "created_on": "2013-02-17T21:12:48Z",
+            "details": []
+        },
+        {
+            "id": 1191,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "user:IR4T4 added more verbosity to the error message:\r\n\r\n<pre>ERROR: G_FindConfigstringIndex: overflow 'textures/cptnt_baseracebeta3/flag_Allied_spawn1' (576 608) max: 32</pre>\r\n\r\nServer was running fine all night, but when I joined it the next day and voted for baserace desert map this error was thrown upon map change.",
+            "created_on": "2013-02-18T13:50:19Z",
+            "details": []
+        },
+        {
+            "id": 1193,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "It seems the configstring is not populated properly from time to time OR the holding buffer/getter function has issues. \r\nWhen you enter the 'configstrings' cmd several times it also occures it's not fully printed:\r\n\r\n<pre>\r\n 347: axis_hq_compost_construct\r\n 348: oasis_allies_city_capture\r\n 349: oasis_allies_pumps_repair\r\n 350: allies_hq_compost_construct\r\nUserinfo: \\name\\[BOT]Kaolin\\rate\\25000\\snaps\\20\\ip\\localhost\\cl_guid\\OMNIBOT1200000000000000000000000\r\nUserinfo: \\name\\[BOT]Kaolin\\rate\\25000\\snaps\\20\\ip\\localhost\\cl_guid\\OMNIBOT1200000000000000000000000\r\nUserinfo: \\name\\[BOT]Kaolin\\rate\\25000\\snaps\\20\\ip\\localhost\\cl_guid\\OMNIBOT1200000000000000000000000\r\n</pre>",
+            "created_on": "2013-02-18T20:21:59Z",
+            "details": []
+        },
+        {
+            "id": 1194,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Baserace: configstrings command executed .. (full output is attached)\r\n\r\n1st call\r\n<pre>\r\n...\r\n 577: textures/baserace_desert/cm_red_box.tga\r\n 578: textures/baserace_desert/cm_nobox.tga\r\n 579: textures/cptnt_baseracebeta3/flag_axis_spawn1\r\n 580: textures/cptnt_baseracebeta3/flag_allied_spawn1\r\n 581: gfx/2d/compass\r\n 582: gfx/2d/compass_al0ax0\r\n 583: gfx/2d/compass_al0ax6\r\n 584: gfx/2d/compass_al0ax5\r\n 585: gfx/2d/compass_al0ax4\r\n 586: gfx/2d/compass_al0ax3\r\n 587: gfx/2d/compass_al0ax2\r\n 588: gfx/2d/compass_al0ax1\r\n 589: gfx/2d/compass_al6ax0\r\n 590: gfx/2d/compass_al5ax0\r\n 591: gfx/2d/compass_al4ax0\r\n 592: gfx/2d/compass_al3ax0\r\n 593: gfx/2d/compass_al2ax0\r\n 594: gfx/2d/compass_al1ax0\r\n...\r\n</pre>\r\n\r\n2nd call:\r\n<pre>\r\n...\r\n577: textures/baserace_desert/cm_red_box.tga\r\n 578: textures/baserace_desert/cm_nobox.tga\r\n 579: textures/cptnt_baseracebeta3/flag_axis_spawn1\r\n 580: textures/cptnt_baseracebeta3/flag_allied_spaw 782: Allied Construction Materials\r\n 787: \\e\\72\\o\\8\\cix\\1\\cia\\2\\s\\3\\n\\axis Materials\\x\\-864\\y\\3472\\z\\68\r\n 788: \\e\\119\\o\\0\\s\\1\\n\\Tower Rocketgun\\x\\1112\\y\\-2464\\z\\360\r\n...\r\n</pre>",
+            "created_on": "2013-02-18T23:45:09Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "106",
+                    "new_value": "log.txt"
+                }
+            ]
+        },
+        {
+            "id": 1205,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I was able to 'reproduce' the crash on the testserver: \r\n\r\n- start a map and wait until warmup is over\r\n- timelimit 0.1\r\n- vote map \r\n\r\nJust do that several times ...\r\n\r\n\r\n--------------\r\n\r\nThe configstring command has similar behaviour as our 'crash' cause: The area we are interested in is dropped a lot!\r\n<pre>\r\n363: sound/movers/doors/door2_endcq 704: n\\[BOT]Nohope\\t\\1\\c\\4\\r\\0\\m\\0000000\\s\\0000000\\dn\\\\dr\\0\\w\\10\\lw\\10\\sw\\14\\mu\\0\\ref\\1\r\n</pre>\r\n",
+            "created_on": "2013-02-21T22:44:46Z",
+            "details": []
+        },
+        {
+            "id": 1207,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-02-24T17:04:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 1229,
+            "user": {
+                "id": 5,
+                "name": "acqu"
+            },
+            "notes": "EDIT: hm weird, i first thought that by downgrading my gcc i would be able to circumvent all these fixes, but it seems this is not the case. Basically i have the same problem with an independent source, it messes up the configstring at numspawntargets and reaches MAX_MULTISPAWN_TARGETS after a certain amount of maps.\r\n\r\nAnybody has an explanation what is happening here ? I have no problems with the same source on windows. Also it is worth noting that the downgrading of my gcc from v4.6 to 4.4 was working at first. But now it seems something has changed on my system. I only ran a makefile of another build in between :< Did test thouroughly yesterday and today morning and there all worked with v.4.4. So yea, anybody a deeper explanation ? Also: this only happens if i conditionally compile Omnibot into my build. If i exclude it all is fine. Maybe something gets messed up in the linking ? Some functions may not work ? Are there problems when compiling with a really low gcc version, e.g. 3.3 ?",
+            "created_on": "2013-02-26T13:17:07Z",
+            "details": []
+        },
+        {
+            "id": 2297,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Here we go again. Server running stock maps and 8 omnibots errors out with this @info_limbo_camera@ error after a day or two of uptime.\r\n\r\nServer log: http://pastebin.com/QMh27zrM",
+            "created_on": "2013-11-24T14:03:01Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "5",
+                    "new_value": "11"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "0"
+                }
+            ]
+        },
+        {
+            "id": 2298,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Our version:2.71rc3 server with custom maps seems to be running without any problems, so I removed the custom maps and restarted the server, because that is the only thing, besides @xpsave.lua@ script and highres flags, that is different between these servers.\r\n\r\n*Server 1* (version:2.71rc3, Omni-bot, dynamite.lua, original maps):\r\n\r\n    * @etlegacy.com:27960@     \r\n\r\n*Server 2* (git version, Omni-bot, dynamite.lua, xpsave.lua, original maps):\r\n\r\n    * @etlegacy.com:27961@ ",
+            "created_on": "2013-11-24T14:13:39Z",
+            "details": []
+        },
+        {
+            "id": 2299,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I did notice same issue with rc3 but I don't know how to reproduce :/ It happens after days ...",
+            "created_on": "2013-11-24T14:35:34Z",
+            "details": []
+        },
+        {
+            "id": 2306,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Server number 2 was down again and I had to restart it.\r\n\r\n<pre>\r\nKill: 5 7 26: [BOT]Fullthrottle killed [BOT]Brad by MOD_ARTY\r\nKill: 4 5 9: [BOT]Kaolin killed [BOT]Fullthrottle by MOD_THOMPSON\r\nKill: 1 4 41: [BOT]Sean killed [BOT]Kaolin by MOD_LANDMINE\r\nKill: 1 2 41: [BOT]Sean killed [BOT]Gali by MOD_LANDMINE\r\nItem: 6 item_health\r\nMedic_Revive: 3 7\r\n********************\r\nERROR: Couldn't find item for weapon 0\r\n********************\r\n</pre>\r\n\r\nI will recompile it tomorrow, so it includes the recent commits with more debug info and I will add a debug lua script to @lua_modules@ as well.",
+            "created_on": "2013-11-27T19:28:08Z",
+            "details": []
+        },
+        {
+            "id": 2307,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "This ticket is about 3 errors now :-O\r\n\r\nIn fact WP_NONE has no item - this should be fixed with latest commits.\r\n\r\nRadegast, let the Lua script also call svcmd 'game_memory' - I would like to know if there are game memory issues\r\n\r\n{FIXME}ERROR: info_limbo_camera cannot find target\r\n\r\n\r\n\r\n",
+            "created_on": "2013-11-28T07:00:23Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Server crashes after a few maps with \"ERROR: info_limbo_camera cannot find target\"",
+                    "new_value": "Server error after a few maps with \"ERROR: info_limbo_camera cannot find target\""
+                }
+            ]
+        },
+        {
+            "id": 2685,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-01-02T09:00:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 2703,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-01-02T11:36:42Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 3009,
+            "user": {
+                "id": 5,
+                "name": "acqu"
+            },
+            "notes": "I think i have the same problem as you guys with my codebase. Are there any news on this?",
+            "created_on": "2014-02-15T18:10:06Z",
+            "details": []
+        },
+        {
+            "id": 3145,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Can't reproduce 'info_limbo_camera cannot find target' for sh*t :/",
+            "created_on": "2014-04-03T16:00:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 3204,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-05-30T18:54:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 3483,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-09-27T05:34:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 208,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 7,
+        "name": "Immediate"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Server error after a few maps with \"ERROR: info_limbo_camera cannot find target\"",
+    "description": "Dedicated server crashes after several hours of uptime with this error:\r\n<pre>\r\n********************\r\nERROR: info_limbo_camera cannot find target\r\n\r\n********************\r\n</pre>\r\n\r\nETPub code of @info_limbo_camera@ and @G_FindByTargetname@ functions is the same as in ET:L.\r\n\r\n<pre>\r\n------------------------------------------------------------\r\nInitGame: \\g_heavyWeaponRestriction\\100\\mod_url\\www.etlegacy.com\\omnibot_playing\\0\\P\\-121212121212\\g_maxlivesRespawnPenalty\\0\\voteFlags\\63979\\g_balancedteams\\1\\g_maxGameClients\\0\\g_covertopsChargeTime\\30000\\g_soldierChargeTime\\20000\\g_LTChargeTime\\40000\\g_engineerChargeTime\\30000\\g_medicChargeTime\\45000\\g_bluelimbotime\\20000\\g_redlimbotime\\30000\\gamename\\legacy\\g_axismaxlives\\0\\g_alliedmaxlives\\0\\g_gametype\\6\\g_antilag\\1\\g_voteFlags\\0\\g_minGameClients\\2\\g_needpass\\0\\g_maxlives\\0\\g_friendlyFire\\1\\sv_allowAnonymous\\0\\sv_floodProtect\\0\\sv_maxPing\\0\\sv_minPing\\0\\sv_maxRate\\25000\\sv_maxclients\\32\\sv_hostname\\ET: Legacy Test Server\\sv_privateClients\\2\\mapname\\golddays_v4\\protocol\\84\\timelimit\\20\\version\\ET 2.60b linux-i386 May  8 2006\r\nMap changed, clearing player stats.\r\nCvar_Set2: g_scriptName\r\nEnable spawning!\r\nCvar_Set2: g_gravity 800\r\nG_PickTarget: target allied_spawn not found\r\nG_PickTarget: target axis_spawn not found\r\nCvar_Set2: g_redlimbotime 15000 \r\nCvar_Set2: g_bluelimbotime 30000\r\nCvar_Set2: timelimit 20\r\nG_PickTarget: target axis_spawn not found\r\nERROR: Can't find models/mapobjects/goldbox_sd/goldbox.tag\r\nERROR: Can't find models/mapobjects/goldbox_sd/goldbox_trans_red.tag\r\nG_SetEntState: entity 112 already in desired state [0]\r\nERROR: Can't find models/mapobjects/goldbox_sd/goldbox_trans_red.tag\r\nG_SetEntState: entity 113 already in desired state [0]\r\nERROR: Can't find models/mapobjects/goldbox_sd/goldbox.tag\r\nERROR: Can't find models/mapobjects/goldbox_sd/goldbox_trans_red.tag\r\nG_SetEntState: entity 115 already in desired state [0]\r\nERROR: Can't find models/mapobjects/goldbox_sd/goldbox.tag\r\nERROR: Can't find models/mapobjects/cmarker/cmarker_crates.tag\r\nERROR: Can't find models/mapobjects/cmarker/cmarker_flag.tag\r\nERROR: Can't find models/mapobjects/miltary_trim/sandbag1_45.tag\r\nERROR: Can't find models/mapobjects/cmarker/cmarker_flag.tag\r\nERROR: Can't find models/mapobjects/cmarker/cmarker_crates.tag\r\nERROR: Can't find models/mapobjects/radios_sd/compostalliedopened.tag\r\nERROR: Can't find models/mapobjects/radios_sd/compostaxisopened.tag\r\nERROR: Can't find models/mapobjects/radios_sd/compostneutralclosed.tag\r\nERROR: Can't find models/mapobjects/pump_sd/pump_base.tag\r\nERROR: Can't find models/mapobjects/pump_sd/pump_animated.tag\r\nERROR: Can't find models/mapobjects/cmarker/cmarker_flag.tag\r\nERROR: Can't find models/mapobjects/cmarker/cmarker_crates.tag\r\nERROR: Can't find models/mapobjects/cmarker/cmarker_flag.tag\r\nERROR: Can't find models/mapobjects/cmarker/cmarker_crates.tag\r\nERROR: Can't find models/mapobjects/cmarker/cmarker_flag.tag\r\nERROR: Can't find models/mapobjects/cmarker/cmarker_crates.tag\r\nDisable spawning!\r\nERROR: Can't find sound/maps/golddays_v4.sps\r\n0 teams with 0 entities\r\n-----------------------------------\r\nSetting MOTD...\r\nGame Initialization completed in 0.03 seconds.\r\nOmni-bot: Looking for /home/etlegacy/etlserver/mods/legacy/omni-bot/omnibot_et.so, \r\nOmni-bot: Found Omni-bot: /home/etlegacy/etlserver/mods/legacy/omni-bot/omnibot_et.so, Attempting to Initialize\r\nOmni-bot: Omni-bot Loaded Successfully\r\nET autoexec script executed. \r\nERROR Loading Waypoints.\r\nBot Initialized in 0.09 seconds.\r\nOmni-Bot Initialization completed in 0.10 seconds.\r\nCvar_Set2: gamestate 1\r\nG_SetEntState: entity 199 already in desired state [0]\r\nG_SetEntState: entity 200 already in desired state [0]\r\nG_SetEntState: entity 197 already in desired state [0]\r\nG_SetEntState: entity 195 already in desired state [0]\r\nG_SetEntState: entity 203 already in desired state [0]\r\nCvar_Set2: com_errorMessage info_limbo_camera cannot find target\r\n\r\n********************\r\nERROR: info_limbo_camera cannot find target\r\n\r\n********************\r\n----- Server Shutdown -----\r\nSending heartbeat to etmaster.idsoftware.com\r\n==== ShutdownGame (0)====\r\n-- Script System Info --\r\nCurrent Memory Usage 1.85209 MB\r\nSoft Memory Usage 1.8 MB\r\nHard Memory Limit 2 MB\r\nSystem Memory Usage 1.82929 MB\r\nFull Collects 0\r\nInc Collects 0\r\nGC Warnings 0\r\nThreads: 0, 0 Running, 0 Blocked, 0 Sleeping\r\nShutdownOmniBot\r\nShutdownGame:\r\n------------------------------------------------------------\r\nCvar_Set2: session 6 0 golddays_v4\r\nCvar_Set2: fireteam0 \\id\\-1\r\nCvar_Set2: fireteam1 \\id\\-1\r\nCvar_Set2: fireteam2 \\id\\-1\r\nCvar_Set2: fireteam3 \\id\\-1\r\nCvar_Set2: fireteam4 \\id\\-1\r\nCvar_Set2: fireteam5 \\id\\-1\r\nCvar_Set2: fireteam6 \\id\\-1\r\nCvar_Set2: fireteam7 \\id\\-1\r\nCvar_Set2: fireteam8 \\id\\-1\r\nCvar_Set2: fireteam9 \\id\\-1\r\nCvar_Set2: fireteam10 \\id\\-1\r\nCvar_Set2: fireteam11 \\id\\-1\r\nCvar_Set2: sv_running 0\r\n---------------------------\r\nCvar_Set2: nextmap map_restart 0\r\nWARNING: watchdog will trigger in 4 seconds\r\nIdle Server with no map - triggering watchdog\r\n</pre>\r\n\r\n{UPDATE} After starting server under gdb with @+set developer 1@ there is a new error:\r\n\r\n<pre>\r\nCvar_Set2: com_errorMessage G_FindConfigstringIndex: overflow\r\n\r\n********************\r\nERROR: G_FindConfigstringIndex: overflow\r\n\r\n********************\r\n----- Server Shutdown -----\r\nSending heartbeat to etmaster.idsoftware.com\r\n==== ShutdownGame (0)====\r\nShutdownOmniBot\r\nShutdownGame:\r\n------------------------------------------------------------\r\nCvar_Set2: session 6 0 v2_factory\r\nCvar_Set2: fireteam0 \\id\\-1\r\nCvar_Set2: fireteam1 \\id\\-1\r\nCvar_Set2: fireteam2 \\id\\-1\r\nCvar_Set2: fireteam3 \\id\\-1\r\nCvar_Set2: fireteam4 \\id\\-1\r\nCvar_Set2: fireteam5 \\id\\-1\r\nCvar_Set2: fireteam6 \\id\\-1\r\nCvar_Set2: fireteam7 \\id\\-1\r\nCvar_Set2: fireteam8 \\id\\-1\r\nCvar_Set2: fireteam9 \\id\\-1\r\nCvar_Set2: fireteam10 \\id\\-1\r\nCvar_Set2: fireteam11 \\id\\-1\r\nCvar_Set2: sv_running 0\r\n---------------------------\r\nCvar_Set2: nextmap map_restart 0\r\nWARNING: watchdog will trigger in 4 seconds\r\nIdle Server with no map - triggering watchdog\r\n[Inferior 1 (process 19367) exited normally]\r\n</pre>\r\n\r\n-----\r\n\r\nFollowing bug was fixed thanks to crapshoot and ETPub: \r\n\r\n<pre>ERROR: SP_team_WOLF_objective: exceeded MAX_MULTI_SPAWNTARGETS (16)</pre>\r\n\r\nMAX_MULTI_SPAWNTARGETS was not changed in ET:L",
+    "start_date": "2013-02-12",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-02-11T23:09:03Z",
+    "updated_on": "2014-09-27T05:34:00Z",
+    "closed_on": "2014-09-27T05:34:00Z"
+}

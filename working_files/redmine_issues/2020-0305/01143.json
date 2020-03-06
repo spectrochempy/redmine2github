@@ -1,0 +1,90 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7382,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-12-23T23:20:12Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 7445,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-12-28T01:05:19Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1143,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 110,
+        "name": "Harlekin"
+    },
+    "category": {
+        "id": 5,
+        "name": "Server"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "floodMaxCommands",
+    "description": "b_floodMaxCommands\tControls the client only being able to send the specified number of rate-limited commands per 30 seconds, to protect the server from flooding, default 6.\r\n\r\n  set b_floodMaxcommands 6\r\n  setl b_floodKickRate 10\r\n  setl b_floodKickBurst 15\r\n  setl b_floodKickTime 0",
+    "start_date": "2018-12-23",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2018-12-23T22:38:03Z",
+    "updated_on": "2018-12-28T01:05:19Z"
+}

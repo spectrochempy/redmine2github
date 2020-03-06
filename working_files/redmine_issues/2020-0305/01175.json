@@ -1,0 +1,188 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 386,
+            "issue_id": 1175,
+            "issue_to_id": 470,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "d25ad0c6efaa941a1f7c85b71f30171c4bc0eb4e",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: adjusted cg_fov range check in configs, refs #1175",
+            "committed_on": "2019-01-18T23:25:09Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7598,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-01-18T20:55:58Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "1014",
+                    "new_value": "m120.jpg"
+                }
+            ]
+        },
+        {
+            "id": 7599,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-01-18T21:49:29Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "470"
+                }
+            ]
+        },
+        {
+            "id": 7601,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "To be noted: some players use some \"zoom\" script to temporarily reduce the field of view but ease aiming on target (spread will still be the same).\r\n\r\nFunnily enough, that wasn't possible in the 4/3 era, but when 16:9 screen came on market, suddenly the [90, 106] range was zoomed.\r\nWith Legacy forcing the minimum at 90, we're more or less back to the original design.\r\n\r\nI'm not strictly against allowing a zoom here, just pointing it out - thought that was funny.",
+            "created_on": "2019-01-18T21:56:06Z",
+            "details": []
+        },
+        {
+            "id": 7603,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-01-18T23:27:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 7604,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Changed range check to [90, 105]. The upper bound is now the equivalent of 120 in other mods, while the lower bound stays at 90 preventing zoomed scripts (this is what binocs and covops are for).",
+            "created_on": "2019-01-18T23:35:42Z",
+            "details": []
+        },
+        {
+            "id": 7657,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-01-23T18:46:43Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 7667,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-01-24T13:14:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1175,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 14,
+        "name": "Mod pak3.pk3"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Adjust fov range check",
+    "description": "The field of view (fov) has been adjusted in Legacy so the default value is always \"natural\" by default, regardless of actual the resolution. This is done by using the \"horizontal FOV formula\":https://en.wikipedia.org/wiki/Field_of_view_in_video_games\r\n\r\nThere are still a few fov adjustment left to do in the code though. These value have been designed for the 4/3 screen era, and are not adequate when used with nowadays 16/9 screens.\r\nThe competition configs we ship have a range check from [90, 120]. The modern equivalent would be [73.74, 104.82]. Currently [90,120] on Legacy would be [106.26, 133.27] in other mods, so our values are\"shifted\" and need to be fixed.\r\n\r\nA few notes:\r\n* MGs and Tanks use a specific \"zoomed\" fov of 55 and 75, respectively, and are properly adjusted automatically too.\r\n* Maximum fov value is forced to 160, while  the minimum fov is forced to 90. We might want to lower this value to allow for quick zoom when shooting?\r\n\r\nIn attachment a few screenshots for fov comparison between Legacy and other mods. Legacy fov 90 is the equivalent of other mod fov 106.",
+    "start_date": "2019-01-18",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-01-18T20:55:29Z",
+    "updated_on": "2019-01-24T13:14:58Z",
+    "closed_on": "2019-01-23T18:46:43Z"
+}

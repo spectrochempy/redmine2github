@@ -1,0 +1,182 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "331bedf941bc4c1e9e84ab4905dbf95d9854c64f",
+            "user": {
+                "id": 102,
+                "name": "BSzili"
+            },
+            "comments": "qcommon: added com_altivec cvar, refs #375",
+            "committed_on": "2013-10-20T19:26:52Z"
+        },
+        {
+            "revision": "c30f757a2ae0710374a8e75bf7e155631d3ecb97",
+            "user": {
+                "id": 102,
+                "name": "BSzili"
+            },
+            "comments": "renderer: altivec LerpMeshVertexes, refs #375",
+            "committed_on": "2013-10-21T08:43:44Z"
+        },
+        {
+            "revision": "1d060fe4f2e7eafa73c20b402a8f91c78d08e3ae",
+            "user": {
+                "id": 102,
+                "name": "BSzili"
+            },
+            "comments": "renderer: altivec DynamicLightPass, refs #375",
+            "committed_on": "2013-10-21T18:05:42Z"
+        },
+        {
+            "revision": "6fb8352e4f6d233268aab4d38021dbfa4e720443",
+            "user": {
+                "id": 102,
+                "name": "BSzili"
+            },
+            "comments": "client: don't update com_altivec on non-ppc platforms, refs #375",
+            "committed_on": "2013-10-31T07:27:17Z"
+        },
+        {
+            "revision": "2cc375c9d37a3f3e125dc8d7119d2644c0e5f1e1",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "client: don't create com_altivec cvar if idppc macro isn't set refs #375",
+            "committed_on": "2014-01-17T12:33:45Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2126,
+            "user": {
+                "id": 102,
+                "name": "BSzili"
+            },
+            "notes": "",
+            "created_on": "2013-10-21T08:47:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "6",
+                    "new_value": "11"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "60"
+                }
+            ]
+        },
+        {
+            "id": 2647,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Currently cvar com_altivec cvar is kind of messed ... macros 'idppc_altivec',  'idppc' and 'USE_RENDERER_DLOPEN'  are used to deal with that var.  The var itself is always active - there is NO macro in common.c and common.h.  ",
+            "created_on": "2013-12-31T13:27:39Z",
+            "details": []
+        },
+        {
+            "id": 2851,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I would like to find a solution to close this ticket. Radegast mentioned we shouldn't add AltiVec optimizations/code anymore. BSzili, is there are real benefit for Pandora if we add this feature? ",
+            "created_on": "2014-01-17T12:37:23Z",
+            "details": []
+        },
+        {
+            "id": 2856,
+            "user": {
+                "id": 102,
+                "name": "BSzili"
+            },
+            "notes": "IR4T4 wrote:\r\n> I would like to find a solution to close this ticket. Radegast mentioned we shouldn't add AltiVec optimizations/code anymore.\r\n\r\nI originally added these optimizations, because there was already some AltiVec optimized code in the mixer, so I assumed it's OK to add them to the renderer too. Anyway I'm fine with removing them, because they only give a small boost in high resolutions.\r\n\r\n> BSzili, is there are real benefit for Pandora if we add this feature?\r\n\r\nThey are no use for Pandora, which has an ARM processor.\r\n",
+            "created_on": "2014-01-17T15:57:21Z",
+            "details": []
+        },
+        {
+            "id": 2903,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-01-24T17:50:04Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 102,
+            "name": "BSzili"
+        }
+    ],
+    "time_entries": null,
+    "id": 375,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 102,
+        "name": "BSzili"
+    },
+    "assigned_to": {
+        "id": 102,
+        "name": "BSzili"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Backport AltiVec optimizations from ioquake3",
+    "description": "ioquake3 has some AltiVec optimizations in the renderer, which could be useful now that MorphOS is supported. ",
+    "start_date": "2013-10-20",
+    "done_ratio": 60,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-10-20T19:00:45Z",
+    "updated_on": "2014-01-24T17:50:04Z"
+}

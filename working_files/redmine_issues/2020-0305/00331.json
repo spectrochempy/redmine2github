@@ -1,0 +1,228 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "54748536df215d8a84316bc8c1728cf0001ee140",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "client: fixed the ctrl and alt key behaviours. The number keys work correctly while any meta button is also down, refs #331",
+            "committed_on": "2013-08-19T05:38:29Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1814,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-08-16T05:36:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 1815,
+            "user": {
+                "id": 106,
+                "name": "Odal"
+            },
+            "notes": "The keys not working while CTRL pressed are exactly the numbers (not numeric keypad).\r\nSo, only the weapon switching is not working.",
+            "created_on": "2013-08-16T06:22:02Z",
+            "details": []
+        },
+        {
+            "id": 1816,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "The keyboard input has been a known issue for a while, will take a closer look.",
+            "created_on": "2013-08-16T08:04:02Z",
+            "details": []
+        },
+        {
+            "id": 1817,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Issue seems to be Windows only (with latest code). I did bind crouch to STRG. Walking, crouching & changing weapon at same time are fine.",
+            "created_on": "2013-08-18T00:28:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 1818,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Ok, i finally tracked down the issue and its a simple one. I just need to go thru the logs and revert my old fix for this issue and then commit the real one. Should be done  today (19th) but now i need to sleep.",
+            "created_on": "2013-08-18T21:44:22Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "due_date",
+                    "new_value": "2013-08-19"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "44"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1819,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "I think I fixed the issue, and at least i am able to use the number keys now on my own tests (like they worked in vanilla ET). If someone can confirm this i will close the bug.",
+            "created_on": "2013-08-19T05:42:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 1820,
+            "user": {
+                "id": 106,
+                "name": "Odal"
+            },
+            "notes": "It works ! (for me).\r\nI compiled (git pull etc etc) and I tryed few minutes ago. I can switch the weapons.\r\nThank you!",
+            "created_on": "2013-08-19T08:26:45Z",
+            "details": []
+        },
+        {
+            "id": 1822,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "",
+            "created_on": "2013-08-19T10:50:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 2435,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "created_on": "2013-12-14T17:58:50Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "new_value": "Windows"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 331,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 106,
+        "name": "Odal"
+    },
+    "assigned_to": {
+        "id": 44,
+        "name": "Jacker"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 7,
+        "name": "2.71rc2"
+    },
+    "subject": "CTRL key blocks some other key to work",
+    "description": "I use CTRL key as \"crouch\" (the standard is \"C\" key), I am a guitarist and I use all fingers, the last one is useful to move while in crouch position.\r\nWhen I am crouched in 2.60b I can switch weapons and do other things. I'm not sure if all keys are not working, surely the numbers (to switch weapons).\r\nIn 2.71rc1 it is not possible.\r\n\r\nI use Win7. I think the problem can be in the number of key that the OS allow to be read at the same time, or in the \"keyboard manager\", if any. 2.60b is executed in Administrator mode (because win7).\r\nBest regards,",
+    "start_date": "2013-08-15",
+    "due_date": "2013-08-19",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Windows"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-08-15T21:24:07Z",
+    "updated_on": "2013-12-14T17:58:50Z",
+    "closed_on": "2013-08-19T10:50:13Z"
+}

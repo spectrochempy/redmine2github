@@ -1,0 +1,137 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "ba2ce4604c5542d5beaf087dffcf1c1a91b9e9a2",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: colour chargebar if weapon is not ready, fixes #648",
+            "committed_on": "2015-01-22T22:36:20Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 4487,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Yes, please list all classes/weapons that require a charge bar color change.",
+            "created_on": "2015-01-22T11:23:18Z",
+            "details": []
+        },
+        {
+            "id": 4488,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "{TODO} Chargebar colour\r\n* Soldier:\r\n- Mortar\r\n- Panzerfaust/Bazooka\r\n* Medic:\r\n- Adrenaline\r\n- Medic packs (*%{color:#EF2929}This is totally optional%*)\r\n* Engineer:\r\n- Dynamite\r\n- Landmine\r\n- Riflegrenade\r\n* Field Op:\r\n- Airstrike canister\r\n- Artillery with binoculars\r\n- Ammo packs (*%{color:#EF2929}This is totally optional%*)\r\n* Covert Op:\r\n- Smokegrenade\r\n- Satchel Charge\r\n\r\n-*S",
+            "created_on": "2015-01-22T13:09:08Z",
+            "details": []
+        },
+        {
+            "id": 4490,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:ba2ce4604c5542d5beaf087dffcf1c1a91b9e9a2.",
+            "created_on": "2015-01-22T22:45:10Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 4491,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-01-22T22:49:35Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "17"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 648,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "Items that use chargebar should change chargebar colour when not enough filled chargebar",
+    "description": "Ok so what I'm thinking is that for example when you are a soldier, Panzer requires chargebar and when you shoot it, your chargebars go empty. And why it's getting filled again the chargebar should show red as a sign that the chargebar isn't enough charge for taking a the next shot. There are also other classes and other cases too. So if you need a list of them, I can put it all here.\r\n\r\n-*S",
+    "start_date": "2014-11-20",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-20T15:35:20Z",
+    "updated_on": "2015-01-22T22:49:35Z",
+    "closed_on": "2015-01-22T22:45:10Z"
+}

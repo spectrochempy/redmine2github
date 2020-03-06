@@ -1,0 +1,145 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 431,
+            "issue_id": 443,
+            "issue_to_id": 1292,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 2568,
+            "user": {
+                "id": 293,
+                "name": "gaoesa"
+            },
+            "notes": "Spyhawk wrote:\r\n> Spectators don't see any players (in free fly mode), and they see only the current followed player, instead of the team of the player.\r\n> Note that the command map displays players/team members and spotted enemies positions correctly while playing.\r\n> \r\n> There's the following comment in the buggy part of the code:\r\n> \r\n>     // FIXME: make a severside change so it also sends player compass info\r\n> // when spectating and remove this hack.\r\n> \r\n> This bug is also present in etpub and noquarter, but has been fixed in Jaymod.\r\n\r\nJaymod has another bug related to this. In Jaymod you can actually see the enemy players in compass while playing without covert ops spotting them.\r\n\r\nThis also includes the possibility for an exploit as players could easily join spectators briefly to see where the opponents are. Maybe this could be limited to shoutcasters. Regular players still can rotate through the other team members to see where they are, but that way they would have to spend more time and it is harder to get a whole picture at once.",
+            "created_on": "2013-12-26T16:32:15Z",
+            "details": []
+        },
+        {
+            "id": 2569,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Thx  gaoesa, this is most probably the reason the various mod have never been \"fixed\". I don't think there is a reason to handle shoutcasters differently from normal spectators (at least for now), so I'll close this issue as 'Invalid'.",
+            "created_on": "2013-12-26T18:00:54Z",
+            "details": []
+        },
+        {
+            "id": 2571,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2013-12-26T18:27:25Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                }
+            ]
+        },
+        {
+            "id": 2572,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2013-12-26T18:54:11Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 8187,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-05-16T19:51:12Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1292"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 443,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "Spectators don't see all players on command map.",
+    "description": "Spectators don't see any players (in free fly mode), and they see only the current followed player, instead of the team of the player.\r\nNote that the command map displays players/team members and spotted enemies positions correctly while playing.\r\n\r\nThere's the following comment in the buggy part of the code:\r\n\r\n    // FIXME: make a severside change so it also sends player compass info\r\n// when spectating and remove this hack.\r\n\r\nThis bug is also present in etpub and noquarter, but has been fixed in Jaymod.",
+    "start_date": "2013-12-26",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-12-26T16:14:51Z",
+    "updated_on": "2013-12-26T18:54:11Z",
+    "closed_on": "2013-12-26T18:54:11Z"
+}

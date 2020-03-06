@@ -1,0 +1,162 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 135,
+            "issue_id": 549,
+            "issue_to_id": 434,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 3277,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-06-28T16:11:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "It would be great if whoever can do it could upload the more recent 0.83/0.831 version of OB on the mirror (http://mirror.etlegacy.com/omnibot/).\r\nThe Windows and Linux installers require these files, and this issue is also blocking the 2.71rc4 *nix packaging work (among other stuff..).",
+                    "new_value": "It would be great if whoever can do it could upload the more recent 0.83/0.831 version of OB on the mirror (http://mirror.etlegacy.com/omnibot/).\r\nThe Windows and Linux installers require these files, and this issue is also blocking the 2.71rc4 *nix packaging work (among other stuff..).\r\n\r\nNote: The -latest symlinks should also point to the new versions."
+                }
+            ]
+        },
+        {
+            "id": 3278,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "The binaries in the download section already contain Omni-bot 0.83 and I am in the process of making it work with wget etc.",
+            "created_on": "2014-06-28T16:12:06Z",
+            "details": []
+        },
+        {
+            "id": 3279,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Radegast wrote:\r\n> The binaries in the download section already contain Omni-bot 0.83 and I am in the process of making it work with wget etc.\r\n\r\nJust to clarify: Both the current Windows and Linux installer available in etlegacy-tools download the OB binaries from the servers (omnibot-windows-latest.zip and omnibot-linux-latest.tar.gz). I'm not sure what you are referring to with \"making it work with wget\". Did I miss something here?\r\n\r\n",
+            "created_on": "2014-06-28T16:18:33Z",
+            "details": []
+        },
+        {
+            "id": 3281,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-07-02T15:20:49Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "434"
+                }
+            ]
+        },
+        {
+            "id": 3285,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2014-07-04T20:41:14Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3286,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2014-07-04T20:41:41Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "1"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 549,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "update OmniBot files on ETL mirror",
+    "description": "It would be great if whoever can do it could upload the more recent 0.83/0.831 version of OB on the mirror (http://mirror.etlegacy.com/omnibot/).\r\nThe Windows and Linux installers require these files, and this issue is also blocking the 2.71rc4 *nix packaging work (among other stuff..).\r\n\r\nNote: The -latest symlinks should also point to the new versions.",
+    "start_date": "2014-06-28",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-06-28T16:08:32Z",
+    "updated_on": "2014-07-04T20:41:41Z",
+    "closed_on": "2014-07-04T20:41:14Z"
+}

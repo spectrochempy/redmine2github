@@ -1,0 +1,346 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 160,
+            "issue_id": 632,
+            "issue_to_id": 400,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "997d460112d62b4a7e6e3e6d0e76f38d738c3361",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: disguiseName replaced by disguisedClientNum in clientInfo_t/player\nconfigstring refs #400\n\nThis is the first step to get info about uniform owner is in fireteam of\nvictim @client-side.\nImportant: disguisedClientNum itself can't be 0 (because of slot 0)!\nand isn't always up2date because game doesn't call\nClientUserinfoChanged() each time covert ops looses disguise (see\nPW_OPS_DISGUISED = 0). This shouldn't be an issue - we only use\ndisguisedClientNum when PW_OPS_DISGUISED is 1.",
+            "committed_on": "2015-10-10T10:52:12Z"
+        },
+        {
+            "revision": "92d4b5e3f14a1a843672f5cd7222a4e5b72cdbbe",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: reset disguiseClientNum in ClientConnect, uncrustify",
+            "committed_on": "2015-10-11T06:42:01Z"
+        },
+        {
+            "revision": "d64d40b5837ff172c5d841150f269843ef7565d2",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: fix issues with enemy fireteam icon",
+            "committed_on": "2015-10-12T18:54:31Z"
+        },
+        {
+            "revision": "f2b9ee04a9c0d32222af2de8152de2059a0192cb",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: fix firteam issues",
+            "committed_on": "2015-10-16T12:23:22Z"
+        },
+        {
+            "revision": "00efaf08eb6c64c0ee9d8e26844ee2234906764d",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: reverted view of disguised fire team icon, show some useful icons\nto spectators",
+            "committed_on": "2015-10-25T10:29:16Z"
+        },
+        {
+            "revision": "5dca660eb1d175c3f4b6cdd53dc5c0ad6bc6f3ba",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: unused SelectBuddyFlag enums removed",
+            "committed_on": "2015-10-25T10:30:02Z"
+        },
+        {
+            "revision": "662fad6544be48f2b41690d6a36875e003486a52",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: enable disguised fireteam icon again refs #400",
+            "committed_on": "2015-11-28T17:03:29Z"
+        },
+        {
+            "revision": "ff08e9a5cc12e360b49c8539306c5b46347b328f",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed disguised covops entity references, fixes #400",
+            "committed_on": "2015-12-02T21:10:47Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2308,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "This isn't a bug and the fireteam icons are working properly. They appear when the FT member is selected (keys 1-6 on the numpad). I got confused because that is actually NoQuarter that is buggy - in that mod, FT members are always selected and can't be deselected at all, so the icons are displayed at all time.\r\n\r\nThis issue should be closed as 'Invalid' (sorry, can't do that with my account.. anyone?).",
+            "created_on": "2013-11-29T15:38:52Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 2309,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-11-29T16:25:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 2313,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "side note: enabled fireteam icons make it easier to recognize disguised enemies ... a player with stolen uniform of ft member hasn't got the icon\r\n\r\nNQ just works differently and I don't see the described behaviour as a bug. There is no need to deselect when ft icons are always displayed. I'm not 100% sure about but I think this is same behaviour as ETPro.\r\n\r\n \r\n",
+            "created_on": "2013-11-30T18:50:00Z",
+            "details": []
+        },
+        {
+            "id": 2314,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "It sounds to me that both of these behaviours are bugged. It should display fireteam icon of the selected FT member even if he is a disguised enemy soldier.",
+            "created_on": "2013-11-30T20:40:30Z",
+            "details": []
+        },
+        {
+            "id": 2315,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Right. But it's not related to both styles of implementations - view by default or view by selection.\r\n\r\nTo fix this you have to get the slot via disguiseNetname, check if slot is in ft X and get the correct icon from ft",
+            "created_on": "2013-11-30T21:19:14Z",
+            "details": []
+        },
+        {
+            "id": 2316,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-11-30T21:45:21Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Fireteam icons aren't displayed",
+                    "new_value": "Display disguised enemy with fireteam icon from uniform owner (if owner is in ft + selected)"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "6",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 3038,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-02-16T11:06:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 3945,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-11-30T12:23:04Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "632"
+                }
+            ]
+        },
+        {
+            "id": 5312,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-10-10T11:52:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 5321,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Not fixed yet. Friendly fireteam icon doesn't show up for the enemy disguised covop.",
+            "created_on": "2015-10-12T09:40:22Z",
+            "details": []
+        },
+        {
+            "id": 5480,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-11-27T05:19:22Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 5546,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:ff08e9a5cc12e360b49c8539306c5b46347b328f.",
+            "created_on": "2015-12-02T21:24:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 400,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "Display disguised enemy with fireteam icon from uniform owner (if owner is in ft + selected)",
+    "description": "Fireteam icons aren't displayed above players' head. This is useful to quickly identify fireteam members in your field of view.",
+    "start_date": "2013-11-14",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-11-14T11:48:47Z",
+    "updated_on": "2015-12-02T21:24:20Z",
+    "closed_on": "2015-12-02T21:24:20Z"
+}

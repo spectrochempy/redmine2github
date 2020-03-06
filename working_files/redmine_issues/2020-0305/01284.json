@@ -1,0 +1,118 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 428,
+            "issue_id": 1284,
+            "issue_to_id": 734,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 8161,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-05-09T19:58:05Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "734"
+                }
+            ]
+        },
+        {
+            "id": 8240,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Just a reminder, if you set for example g_alliedMaxLives \"1\", it means that you have that one single life. The hat indicates the number of deployments left. But indeed, it only shows the wrong number of lives.\r\n\r\n-*S",
+            "created_on": "2019-05-24T20:52:23Z",
+            "details": []
+        },
+        {
+            "id": 8256,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "What I investigated now is that when you are originally spectator and join either team (Axis/Allies), it will show 5 respawns. But when you are already in a team it will show 4 respawns which is correct when g_maxlives is set to \"5\".\r\n\r\n-*S",
+            "created_on": "2019-05-27T10:17:24Z",
+            "details": []
+        },
+        {
+            "id": 8261,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "{TODO}\r\n* Ensure that g_alliedmaxlives and g_axismaxlives work as well\r\n* Check joining during a match\r\n\r\nI did a little local testing and was able to 'fix' this. But at least the cases stated above needs to be investigated.\r\n\r\n-*S",
+            "created_on": "2019-05-29T05:58:23Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "\"Max Lives\" counts warmup as one life",
+                    "new_value": "Wrong number of max lives shown during warmup"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1284,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Wrong number of max lives shown during warmup",
+    "description": "If you specify *g_alliedMaxLives* (presumably also the axis equivalent) it displays the specified value during warmup and upon match start you immediately lose a life once you spawn.",
+    "start_date": "2019-05-09",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-05-09T16:01:50Z",
+    "updated_on": "2019-05-29T05:58:23Z"
+}

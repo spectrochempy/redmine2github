@@ -1,0 +1,81 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 8044,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "This actually works already, but you have to pass secondary weapon as extra parameter: `/class s 4 2` (0=colt, 1=dual pistol, 2=smg)",
+            "created_on": "2019-04-25T18:12:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1256,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "/class s 4 won't pick smg as secondary weapon",
+    "description": "In https://github.com/etlegacy/etlegacy/blob/922894084b9c87650bf12d46bc9d56e3a93817f8/src/cgame/cg_consolecmds.c#L1253, cgs.ccSelectedPrimaryWeapon isnt updated so /class s 4 (soldier with Panzerfaust/Bazooka) won't pick smg as secondary weapon.",
+    "start_date": "2019-04-20",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-04-20T12:53:13Z",
+    "updated_on": "2019-04-25T18:12:44Z",
+    "closed_on": "2019-04-25T18:12:44Z"
+}

@@ -1,0 +1,378 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 399,
+            "issue_id": 1208,
+            "issue_to_id": 1115,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 467,
+            "issue_id": 1208,
+            "issue_to_id": 503,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 448,
+            "issue_id": 1360,
+            "issue_to_id": 1208,
+            "relation_type": "duplicates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "8c5b0c59036abde79acc41ab56771e48dbadfe2d",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "game: prevent rotation while proning if head go solid, refs #1208",
+            "committed_on": "2020-02-05T16:46:36Z"
+        },
+        {
+            "revision": "991c32d9c522d4e64c0d68455418f7cb10dad567",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "game: add g_debugPlayerHitboxes 4 to display hitboxes head collision , refs #1208",
+            "committed_on": "2020-02-05T16:47:15Z"
+        },
+        {
+            "revision": "683e7e735a0fa23f25c72b6ea48673f0abc57953",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "cgame: forward view origin when prone to match head position, refs #1208",
+            "committed_on": "2020-02-07T20:14:04Z"
+        },
+        {
+            "revision": "b2b08a5af1bc2aacd413ae6069d69f82a656bbab",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "cgame: don't play prone transition view when crouching, refs #1208",
+            "committed_on": "2020-02-07T20:45:50Z"
+        },
+        {
+            "revision": "a4ab1a39612188e7e906144631e5bb9f28bb7ae5",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "game: improve debug players hitboxes collision, refs #1208",
+            "committed_on": "2020-02-07T21:29:11Z"
+        },
+        {
+            "revision": "8f306555761055b64f95c69224895f726d527282",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "game: adjust collision detection on prone, refs #1208",
+            "committed_on": "2020-02-08T21:36:12Z"
+        },
+        {
+            "revision": "b22f27eb31d8f8c475da514df1c00d67b087eb6d",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "game: adjust Z hitbox collision on prone, refs #1208",
+            "committed_on": "2020-02-09T14:23:54Z"
+        },
+        {
+            "revision": "164b964c3682c0098363470e4c279d6dceff4d7b",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: removed unused variable",
+            "committed_on": "2020-02-09T15:16:34Z"
+        },
+        {
+            "revision": "3083f98b53cd8123e89df2cc486007ccfbf1b30c",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "mod: fix head/legs collision on steppable elements, refs #1208",
+            "committed_on": "2020-02-18T21:24:24Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7806,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2019-02-21T14:24:04Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1115"
+                }
+            ]
+        },
+        {
+            "id": 7876,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "-I can reproduce as far as 2.72. This is much likely due to the readhead code, which was introduced in 2.71.- Can also reproduce on 2.71rc3, the issue might be even older.\r\n\r\nAnd the current behaviour is correct, the player shouldn't be allowed to crawl too far... because the model then crawl inside the wall/objects.\r\nIt is however possible to crawl \"from the side\" (since the headbot doesn't interfere) and then rotate the body. See screenshot below.\r\n\r\nMight be a good idea to prevent that rotation somehow.",
+            "created_on": "2019-03-16T14:44:23Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "1063",
+                    "new_value": "2019-03-16-153341-oasis.jpg"
+                },
+                {
+                    "property": "attachment",
+                    "name": "1064",
+                    "new_value": "2019-03-16-153504-oasis.jpg"
+                },
+                {
+                    "property": "attachment",
+                    "name": "1068",
+                    "new_value": "2019-03-16-153420-oasis.jpg"
+                },
+                {
+                    "property": "attachment",
+                    "name": "1069",
+                    "new_value": "2019-03-16-153430-oasis.jpg"
+                }
+            ]
+        },
+        {
+            "id": 7877,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-03-16T14:45:10Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "1064",
+                    "old_value": "2019-03-16-153504-oasis.jpg"
+                }
+            ]
+        },
+        {
+            "id": 7878,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-03-16T14:45:45Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "1070",
+                    "new_value": "2019-03-16-153504-oasis.jpg"
+                }
+            ]
+        },
+        {
+            "id": 7879,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-03-16T15:16:41Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "22",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 8538,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-11-13T13:32:49Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "duplicated",
+                    "new_value": "1360"
+                }
+            ]
+        },
+        {
+            "id": 8539,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "It feels like the head point of view is not at the correct place when crawling. You can see the headbox in front of you, basically. The coordinate of player pov might be adjusted vertically only, but not horizontally.",
+            "created_on": "2019-11-13T13:38:23Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8670,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2020-01-05T14:22:30Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "It's not possible to crawl close to objects or walls, unlike vanilla. It is still possible to get close by crawling sideways, after which crawling forward directly towards the wall will push the player backward.\r\nThis *might* be related to fixed realHead box (very wild guess).",
+                    "new_value": "It's not possible to crawl close to objects or walls, unlike vanilla. It is still possible to get close by crawling sideways, after which crawling forward directly towards the wall will push the player backward.\r\nThis *might* be related to fixed realHead box (very wild guess).\r\n\r\nCan reproduce in 2.71rc4. The issue might be even older."
+                }
+            ]
+        },
+        {
+            "id": 8671,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2020-01-05T14:33:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "It's not possible to crawl close to objects or walls, unlike vanilla. It is still possible to get close by crawling sideways, after which crawling forward directly towards the wall will push the player backward.\r\nThis *might* be related to fixed realHead box (very wild guess).\r\n\r\nCan reproduce in 2.71rc4. The issue might be even older.",
+                    "new_value": "It's not possible to crawl close to objects or walls, unlike vanilla. It is still possible to get close by crawling sideways, after which crawling forward directly towards the wall will push the player backward.\r\nThis *might* be related to fixed realHead box (very wild guess)."
+                }
+            ]
+        },
+        {
+            "id": 8713,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "{TODO} Could be related to theses changes. Investigate :\r\n\r\n* https://github.com/etlegacy/etlegacy/blob/83141e0a3e28f5760964e94254641134f8b6489b/src/game/bg_slidemove.c#L400-L410 \r\n* https://github.com/id-Software/Enemy-Territory/blob/40342a9e3690cb5b627a433d4d5cbf30e3c57698/src/game/bg_slidemove.c#L359 \r\n* https://github.com/etlegacy/etlegacy/commit/8e9685f6851dd4c2db0abafda5f2c60edeb45246#diff-4941aec0b764cd0c85a6cd3e03ab42cb \r\n* https://dev.etlegacy.com/issues/164",
+            "created_on": "2020-02-04T23:40:22Z",
+            "details": []
+        },
+        {
+            "id": 8723,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2020-02-11T12:02:30Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "503"
+                }
+            ]
+        },
+        {
+            "id": 8740,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2020-02-22T14:21:47Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "70"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 1208,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 4,
+        "name": "Feedback"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Not possible to crawl close to wall and objects",
+    "description": "It's not possible to crawl close to objects or walls, unlike vanilla. It is still possible to get close by crawling sideways, after which crawling forward directly towards the wall will push the player backward.\r\nThis *might* be related to fixed realHead box (very wild guess).",
+    "start_date": "2019-02-21",
+    "done_ratio": 70,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-02-21T12:26:47Z",
+    "updated_on": "2020-02-22T14:21:47Z"
+}

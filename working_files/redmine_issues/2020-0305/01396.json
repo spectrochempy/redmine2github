@@ -1,0 +1,108 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 8717,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2020-02-08T11:25:15Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "It's been a while ET:Legacy (engine) and Legacy (the mod) have been mixed up and confusing everyone, despite being two different things.\r\n\"Legacy\" also has a \"double meaning\":https://dictionary.cambridge.org/dictionary/english/legacy, one being positive (cultural legacy) while the other is not (obsolete).\r\nTo clarify, rename the Legacy mod to \"League\". \r\n\r\nAdvantages are:\r\n* Clarify what the mod part is, and what the engine part is.\r\n* Gives a clear signal to the etpro community that the mod is a viable alternative\r\n* Bypass the pakisolation transition issue from 2.76 to 2.77 (#1161) by \"forcing\" to download in a new mod directory\r\n\r\nThis is more than a simple string change.\r\n* Default subdirectory has to be changed\r\n* Server browser has to be adapted\r\n* References to \"Legacy\" in the mod code need to be adjusted\r\n* Requires a new logo (engine logo and mod logo?) for UI and splashscreen\r\n\r\nDo this last before release, only once all competitive features are included.",
+                    "new_value": "It's been a while ET:Legacy (engine) and Legacy (the mod) have been mixed up and confusing everyone, despite being two different things.\r\n\"Legacy\" also has a \"double meaning\":https://dictionary.cambridge.org/dictionary/english/legacy, one being positive (cultural legacy) while the other is not (obsolete).\r\nTo clarify, rename the Legacy mod to \"League\". \r\n\r\nAdvantages are:\r\n* Clarify what the mod part is, and what the engine part is.\r\n* Give a clear signal to the etpro community that the mod is a viable alternative\r\n* Bypass the pakisolation transition issue from 2.76 to 2.77 (#1161) by \"forcing\" to download in a new mod directory\r\n\r\nThis is more than a simple string change.\r\n* Default subdirectory has to be changed\r\n* Server browser has to be adapted\r\n* References to \"Legacy\" in the mod code need to be adjusted\r\n* Requires to adjust the string in the logo (engine logo and mod logo?) for UI (Legacy) and splashscreen (ET:Legacy). The \"L\" itself is fine to have in both.\r\n\r\nDo this last before release, only once all competitive features are included."
+                }
+            ]
+        },
+        {
+            "id": 8718,
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "notes": "",
+            "created_on": "2020-02-08T11:43:18Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "It's been a while ET:Legacy (engine) and Legacy (the mod) have been mixed up and confusing everyone, despite being two different things.\r\n\"Legacy\" also has a \"double meaning\":https://dictionary.cambridge.org/dictionary/english/legacy, one being positive (cultural legacy) while the other is not (obsolete).\r\nTo clarify, rename the Legacy mod to \"League\". \r\n\r\nAdvantages are:\r\n* Clarify what the mod part is, and what the engine part is.\r\n* Give a clear signal to the etpro community that the mod is a viable alternative\r\n* Bypass the pakisolation transition issue from 2.76 to 2.77 (#1161) by \"forcing\" to download in a new mod directory\r\n\r\nThis is more than a simple string change.\r\n* Default subdirectory has to be changed\r\n* Server browser has to be adapted\r\n* References to \"Legacy\" in the mod code need to be adjusted\r\n* Requires to adjust the string in the logo (engine logo and mod logo?) for UI (Legacy) and splashscreen (ET:Legacy). The \"L\" itself is fine to have in both.\r\n\r\nDo this last before release, only once all competitive features are included.",
+                    "new_value": "It's been a while ET:Legacy (engine) and Legacy (the mod) have been mixed up and confusing everyone, despite being two different things.\r\n\"Legacy\" also has a \"double meaning\":https://dictionary.cambridge.org/dictionary/english/legacy, one being positive (cultural legacy) while the other is not (obsolete).\r\nTo clarify, rename the Legacy mod to \"League\". \r\n\r\nAdvantages are:\r\n* Clarify what the mod part is, and what the engine part is.\r\n* Give a clear signal to the etpro community that the mod is a viable alternative\r\n* Bypass the pakisolation transition issue from 2.76 to 2.77 (#1161) by \"forcing\" to download in a new mod directory\r\n\r\nThis is more than a simple string change.\r\n* Default subdirectory has to be changed\r\n* Server browser has to be adapted\r\n* References to \"Legacy\" in the mod code need to be adjusted\r\n* Requires to adjust the string in the logo (engine logo and mod logo?) for UI (Legacy) and splashscreen (ET:Legacy). The \"L\" itself is fine to have in both\r\n* Remove remaining LEGACY mod defines from the engine.\r\n\r\nDo this last before release, only once all competitive features are included."
+                }
+            ]
+        },
+        {
+            "id": 8719,
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "notes": "",
+            "created_on": "2020-02-08T11:47:52Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "It's been a while ET:Legacy (engine) and Legacy (the mod) have been mixed up and confusing everyone, despite being two different things.\r\n\"Legacy\" also has a \"double meaning\":https://dictionary.cambridge.org/dictionary/english/legacy, one being positive (cultural legacy) while the other is not (obsolete).\r\nTo clarify, rename the Legacy mod to \"League\". \r\n\r\nAdvantages are:\r\n* Clarify what the mod part is, and what the engine part is.\r\n* Give a clear signal to the etpro community that the mod is a viable alternative\r\n* Bypass the pakisolation transition issue from 2.76 to 2.77 (#1161) by \"forcing\" to download in a new mod directory\r\n\r\nThis is more than a simple string change.\r\n* Default subdirectory has to be changed\r\n* Server browser has to be adapted\r\n* References to \"Legacy\" in the mod code need to be adjusted\r\n* Requires to adjust the string in the logo (engine logo and mod logo?) for UI (Legacy) and splashscreen (ET:Legacy). The \"L\" itself is fine to have in both\r\n* Remove remaining LEGACY mod defines from the engine.\r\n\r\nDo this last before release, only once all competitive features are included.",
+                    "new_value": "It's been a while ET:Legacy (engine) and Legacy (the mod) have been mixed up and confusing everyone, despite being two different things.\r\n\"Legacy\" also has a \"double meaning\":https://dictionary.cambridge.org/dictionary/english/legacy, one being positive (cultural legacy) while the other is not (obsolete).\r\nTo clarify, rename the Legacy mod to \"League\". \r\n\r\nAdvantages are:\r\n* Clarify what the mod part is, and what the engine part is.\r\n* Give a clear signal to the etpro community that the mod is a viable alternative\r\n* Bypass the pakisolation transition issue from 2.76 to 2.77 (#1161) by \"forcing\" to download in a new mod directory\r\n\r\nThis is more than a simple string change.\r\n* Default subdirectory has to be changed\r\n* Server browser has to be adapted\r\n* References to \"Legacy\" in the mod code need to be adjusted\r\n* Requires to adjust the string in the logo (engine logo and mod logo?) for UI (Legacy) and splashscreen (ET:Legacy). The \"L\" itself is fine to have in both\r\n* Remove remaining LEGACY mod defines from the engine\r\n* Combine both assets and binary paks into single one.\r\n\r\nDo this last before release, only once all competitive features are included."
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1396,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Rename Legacy mod to League",
+    "description": "It's been a while ET:Legacy (engine) and Legacy (the mod) have been mixed up and confusing everyone, despite being two different things.\r\n\"Legacy\" also has a \"double meaning\":https://dictionary.cambridge.org/dictionary/english/legacy, one being positive (cultural legacy) while the other is not (obsolete).\r\nTo clarify, rename the Legacy mod to \"League\". \r\n\r\nAdvantages are:\r\n* Clarify what the mod part is, and what the engine part is.\r\n* Give a clear signal to the etpro community that the mod is a viable alternative\r\n* Bypass the pakisolation transition issue from 2.76 to 2.77 (#1161) by \"forcing\" to download in a new mod directory\r\n\r\nThis is more than a simple string change.\r\n* Default subdirectory has to be changed\r\n* Server browser has to be adapted\r\n* References to \"Legacy\" in the mod code need to be adjusted\r\n* Requires to adjust the string in the logo (engine logo and mod logo?) for UI (Legacy) and splashscreen (ET:Legacy). The \"L\" itself is fine to have in both\r\n* Remove remaining LEGACY mod defines from the engine\r\n* Combine both assets and binary paks into single one.\r\n\r\nDo this last before release, only once all competitive features are included.",
+    "start_date": "2020-02-08",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2020-02-08T11:01:02Z",
+    "updated_on": "2020-02-08T11:47:52Z"
+}

@@ -1,0 +1,237 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "55c0df1b719048f39631c89239d61a84d924dda8",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed snap transition effect when using binocular, fixes #237",
+            "committed_on": "2013-11-11T22:46:58Z"
+        },
+        {
+            "revision": "4eefd8f8c775b8f78da4c8fd3291b52fc6e8b7cc",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed binoculars zoomin effect and removed workaround, refs#237",
+            "committed_on": "2013-11-15T11:52:07Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1775,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-07-26T07:11:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Reported by Odal http://www.etlegacy.com/boards/3/topics/302\r\n\r\n\"when using binocular, it seems that first the screen is \"vignetted\" (with the binocular shape) and after is zoomed. It\u2019s very fast, may be there are some msec between the two view but it\u2019s true.\"",
+                    "new_value": "Reported by Odal http://www.dev.etlegacy.com/boards/3/topics/302\r\n\r\n\"when using binocular, it seems that first the screen is \"vignetted\" (with the binocular shape) and after is zoomed. It\u2019s very fast, may be there are some msec between the two view but it\u2019s true.\""
+                }
+            ]
+        },
+        {
+            "id": 1791,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-07-31T09:13:01Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "7",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 1916,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-09-05T21:06:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "9"
+                }
+            ]
+        },
+        {
+            "id": 2037,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-10-05T16:16:11Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "9",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 2239,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:55c0df1b719048f39631c89239d61a84d924dda8.",
+            "created_on": "2013-11-12T07:17:14Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 2240,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Just to comment a bit about the fix I applied above:\r\n\r\nThe \"vignette effect\" is visible only when using binoculars, although the code used is the very same as scoped weapons. I'm not entirely sure why this happens, but my best guess would be that the binocular code runs faster since it is simpler: There is no need to check for which scoped weapon is currently used, etc. The fix is kinda hackish, since it slows down the binoc code (adding an intermediary black screen for 150 msec), but it seems to work. Now the binoc and scoped weapons fade effect seems to happen at the same speed, and the transition snap is no more visible when using binoc.",
+            "created_on": "2013-11-12T11:03:48Z",
+            "details": []
+        },
+        {
+            "id": 2259,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "What I did miss here is that this is not a snap transition issue, but the problem is related to the \"zoom in\" effect that is entirely missing.\r\n\r\nThis bug seems to have been introduced in https://github.com/etlegacy/etlegacy/commit/654c548e532442927291bd8f88ab0fbed2c6a5f8. Let's fix that properly...",
+            "created_on": "2013-11-15T10:49:39Z",
+            "details": []
+        },
+        {
+            "id": 2260,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-11-15T11:43:19Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 2261,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Now properly fixed in https://github.com/etlegacy/etlegacy/commit/4eefd8f8c775b8f78da4c8fd3291b52fc6e8b7cc.\r\n\r\nThe issue was a float/int conversion. ",
+            "created_on": "2013-11-15T11:56:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 106,
+            "name": "Odal"
+        }
+    ],
+    "time_entries": null,
+    "id": 237,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "Fix binocular flash/\"vignetted\" effect",
+    "description": "Reported by Odal http://www.dev.etlegacy.com/boards/3/topics/302\r\n\r\n\"when using binocular, it seems that first the screen is \"vignetted\" (with the binocular shape) and after is zoomed. It\u2019s very fast, may be there are some msec between the two view but it\u2019s true.\"",
+    "start_date": "2013-03-06",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-03-06T16:43:44Z",
+    "updated_on": "2013-11-15T11:56:44Z",
+    "closed_on": "2013-11-15T11:56:44Z"
+}

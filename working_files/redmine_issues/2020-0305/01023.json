@@ -1,0 +1,293 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 325,
+            "issue_id": 1023,
+            "issue_to_id": 266,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "06352580b8ef61ebaa09785cfdbdcc0d05071ce0",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "ui: fix switching profiles refs #1023",
+            "committed_on": "2017-03-21T21:16:53Z"
+        },
+        {
+            "revision": "667249cb48f00972069b994adf97e8256c0ad0f7",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: fixed various menu space errors and cleanup, refs #1023",
+            "committed_on": "2017-03-21T21:42:51Z"
+        },
+        {
+            "revision": "9636c176369289967b6ad1eb5d3548758e736832",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "qcommon: do no longer register (CVAR_ROM | CVAR_ARCHIVE) flagged cvars",
+            "committed_on": "2017-03-23T15:54:16Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 6605,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-03-20T22:32:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 6606,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-03-20T22:32:51Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "266"
+                }
+            ]
+        },
+        {
+            "id": 6608,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-03-20T22:33:55Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Profile loading behaviour",
+                    "new_value": "Loading profile overwrites cvars"
+                }
+            ]
+        },
+        {
+            "id": 6612,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Looks more like the profile can't be switched. After creating a new profile with ETL, I cannot switch back to the old profile (through the menu):\r\n\r\nbq. Warning: Unknown UI script: clearPID;\r\nWarning: Unknown UI script: applyProfile;\r\nWarning: Unknown UI script: loadCachedServers;\r\n\r\n",
+            "created_on": "2017-03-21T19:38:38Z",
+            "details": []
+        },
+        {
+            "id": 6613,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I've just fixed the switch profile bug. Kind of interesting:  there is a need for a space between script command call and the separator.",
+            "created_on": "2017-03-21T21:18:30Z",
+            "details": []
+        },
+        {
+            "id": 6614,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Thx! In addition, I checked all menu files and fixed a few similar errors here and there.",
+            "created_on": "2017-03-21T21:44:28Z",
+            "details": []
+        },
+        {
+            "id": 6615,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Thank you guys o/",
+            "created_on": "2017-03-21T23:15:45Z",
+            "details": []
+        },
+        {
+            "id": 6618,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-03-22T14:16:12Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "9"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 6621,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "+set cl_profile via start parameter doesn't work properly:\r\n\r\n----------------------------------------------------------------------------------------------------------------------\r\nET:L crashed last time it was running. Do you want to reset settings to default values?\r\n\r\nNote:\r\nIf you are running several client instances ensure a different value\r\nof CVAR fs_homepath is set for each client.\r\nOtherwise the same profile path is used which may cause other side effects.\r\n----------------------------------------------------------------------------------------------------------------------\r\n\r\nWe still have an issue with the pid file when profile is switched via the menu. The pid file is kept when we close ETL?!\r\nWhile playing around with this the profile name of 1 was used in profile 2 which might be related to the answer of above reset to default question.\r\nI stumbled also into the menu to create the profile again although is does exist.\r\n",
+            "created_on": "2017-03-22T14:44:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "40"
+                }
+            ]
+        },
+        {
+            "id": 6622,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-03-22T14:44:39Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "9"
+                }
+            ]
+        },
+        {
+            "id": 6627,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "The game isn't designed to set cvars with ROM flag via console or as start param.\r\n\r\nsee q_shared.c\r\n<code>\r\n#define CVAR_ROM                    64           ///< display only, cannot be set by user at all\r\n</code>\r\n\r\nand ui_main.c\r\n<code>\r\n\t{ &cl_profile, \"cl_profile\", \"\", CVAR_ROM },\r\n</code>\r\n\r\n{FIXME}\r\n1. Fix Com_StartupVariable and exclude  CVAR_ROM flagged cvars to be set.\r\n2. Deny CVAR_ROM flagged cvars to be set via console\r\n",
+            "created_on": "2017-03-23T15:36:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Loading profile overwrites cvars",
+                    "new_value": "Loading profile overwrites cvars / fix CVAR_ROM flagged cvars behaviour"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 7144,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-02-26T12:36:46Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 1023,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 2,
+        "name": "In Progress"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 9,
+        "name": "Mateos"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Loading profile overwrites cvars / fix CVAR_ROM flagged cvars behaviour",
+    "description": "If you load a different profile than the default one through a parameter given to the executable, or ingame within the menu load a profile, the one loaded will get its cvars overwritten, especially the *name* one, which isn't a correct behaviour, at least different from vanilla.",
+    "start_date": "2017-03-20",
+    "done_ratio": 40,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-03-20T22:22:03Z",
+    "updated_on": "2018-02-26T12:36:46Z"
+}

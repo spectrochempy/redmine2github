@@ -1,0 +1,236 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "2aeb509dc533781d34ec06167b2f7b422eea92ab",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "Merge pull request #94 from ensiform/hotfix/userinfo_fixes\n\ngeneric: some fixes with userinfo in engine, fixes #450",
+            "committed_on": "2014-09-18T20:27:30Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2662,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-01-01T16:00:37Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 3464,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Applied in changeset commit:2aeb509dc533781d34ec06167b2f7b422eea92ab.",
+            "created_on": "2014-09-18T20:35:47Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3465,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2014-09-18T20:36:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 5073,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-08-08T16:21:52Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "17"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 5215,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "This message still seems to appear in console.\r\n\r\n-*S",
+            "created_on": "2015-08-24T11:59:30Z",
+            "details": []
+        },
+        {
+            "id": 5216,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-08-24T17:46:18Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "17",
+                    "new_value": "8"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 5217,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Is this listen server or online game server issue?\r\n\r\nSaukko, please add a screeny again or tell us the exact message. ",
+            "created_on": "2015-08-25T06:06:39Z",
+            "details": []
+        },
+        {
+            "id": 5218,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "I attached a screenshot. This happens at least in local hosted games. Trying to find out does it happen somewhere else.\r\n\r\nEDIT: Doesn't seem to happen in online game servers.\r\n\r\n-*S",
+            "created_on": "2015-08-25T14:33:50Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "584",
+                    "new_value": "suerinf.jpg"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 450,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "unknown cmd userinfo",
+    "description": "This message comes each time you load any map. This message also appears in vanilla ET.\r\n\r\n-*S",
+    "start_date": "2013-12-29",
+    "done_ratio": 50,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-12-29T16:25:31Z",
+    "updated_on": "2015-08-25T14:33:50Z",
+    "closed_on": "2015-08-08T16:21:52Z"
+}

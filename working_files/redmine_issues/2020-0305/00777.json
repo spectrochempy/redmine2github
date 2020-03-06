@@ -1,0 +1,195 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "0f8daacc0c4e2809ad3302e5727724c3fe5dcdcf",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "server: removed CL_GetTag call form SV_GetTag to fix crash in 64bit Omni-bot, refs #777",
+            "committed_on": "2015-01-15T12:44:33Z"
+        },
+        {
+            "revision": "4f87825793be5ac085613814133c3d1c00d62384",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "server: load 64bit omni-bot library on a 64bit host, fixes #777",
+            "committed_on": "2015-01-15T12:54:52Z"
+        },
+        {
+            "revision": "922d2ae5c656f57dc854265d28a578261eb8e686",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: set head & leg entity classname so we can differ in\nclassname string comparisons and create hash values of\nclassnames",
+            "committed_on": "2015-01-15T17:00:27Z"
+        },
+        {
+            "revision": "04050acdbd15026d6f7b2da2a5b06c593dfe912c",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: classnames added",
+            "committed_on": "2015-01-15T17:13:57Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 4375,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Applied in changeset commit:4f87825793be5ac085613814133c3d1c00d62384.",
+            "created_on": "2015-01-15T13:10:18Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 4376,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "In the last commit I tried to combine diff from upstream Omni-bot repository with our changes. It was quite a large diff, so it's possible I missed something even though I checked multiple times. We should ask user:palota to merge at least our compiler warning fixes and LEGACY define.",
+            "created_on": "2015-01-15T13:12:25Z",
+            "details": []
+        },
+        {
+            "id": 4390,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Using last OB archive provided on etl mirror, I've got issue loading OB in 64bit:\r\n\r\n<pre>\r\nGame Initialization completed in 0.11 seconds.\r\nOmni-bot: Looking for /usr/lib/etlegacy/legacy/omni-bot/omnibot_et.x86_64.so, found.\r\nOmni-bot: Found Omni-bot: /usr/lib/etlegacy/legacy/omni-bot/omnibot_et.x86_64.so, Attempting to Initialize\r\nlocale::facet::_S_create_c_locale name not valid\r\nlocale::facet::_S_create_c_locale name not valid\r\nlocale::facet::_S_create_c_locale name not valid\r\nOmni-bot: Omni-bot Failed with Error: Error Initializing File System\r\nUnable to Initialize Omni-Bot.\r\nOmni-Bot Initialization completed in 0.22 seconds.\r\nSetting Axis autospawn to Tank Depot\r\nSetting Allied autospawn to Allied Spawn\r\n-----------------------------------\r\nOmni-bot not loaded.\r\n</pre>",
+            "created_on": "2015-01-16T11:18:47Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 4439,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-01-18T21:22:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "17"
+                }
+            ]
+        },
+        {
+            "id": 4561,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "And the error suddenly went away. Don't ask me why, but that's great!",
+            "created_on": "2015-02-09T21:50:10Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 777,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "assigned_to": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "Loading 64-bit Omni-bot",
+    "description": "Omni-bot is now being developed for 64-bit arch, so we need to:\r\n\r\n* load the right library for the current arch (omnibot_et.x86_64.so)\r\n* provide both 32-bit and 64-bit release for download",
+    "start_date": "2015-01-12",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": "64-bit"
+        }
+    ],
+    "created_on": "2015-01-12T10:15:47Z",
+    "updated_on": "2015-02-09T21:50:10Z",
+    "closed_on": "2015-02-09T21:50:10Z"
+}

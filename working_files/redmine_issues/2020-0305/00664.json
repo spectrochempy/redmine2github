@@ -1,0 +1,197 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 155,
+            "issue_id": 664,
+            "issue_to_id": 271,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 156,
+            "issue_id": 664,
+            "issue_to_id": 606,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "97defc00250496b4fa08b972ca3a20d081c21d39",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: fixed ETL server detection for humans and bots count, fixes #664",
+            "committed_on": "2014-11-23T21:00:25Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3854,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-23T11:26:55Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "There are some online Legacy servers using recent -git snapshots (see screenshot). The x86_64 server uses pre.sdl2.570 while the red server uses 573, which is the most recent version as I type this bug report.\r\n\r\nThe humans/bots count is missing.\r\n\r\nThat feature has been introduced in \"1d0dad82a07c6f94dd5c9d68617a077d28f70d5e\":https://github.com/etlegacy/etlegacy/commit/1d0dad82a07c6f94dd5c9d68617a077d28f70d5e, amongst other commits.",
+                    "new_value": "There are some online Legacy servers using recent -git snapshots (see screenshot). The x86_64 server uses pre.sdl2.570 while the red server uses 573, which is the most recent version as I type this bug report.\r\n\r\nThe humans/bots count is missing.\r\n\r\nThat feature has been introduced in \r\n\"d09e28c7cf662414717bee46d5634adcb756cd53\":https://github.com/etlegacy/etlegacy/commit/d09e28c7cf662414717bee46d5634adcb756cd53\r\nand \r\n\"1d0dad82a07c6f94dd5c9d68617a077d28f70d5e\":https://github.com/etlegacy/etlegacy/commit/1d0dad82a07c6f94dd5c9d68617a077d28f70d5e."
+                }
+            ]
+        },
+        {
+            "id": 3855,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I can reproduce locally.",
+            "created_on": "2014-11-23T11:51:51Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 3856,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-23T11:59:57Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "271"
+                }
+            ]
+        },
+        {
+            "id": 3858,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "-I tried to use \"041eeaf1\":https://github.com/etlegacy/etlegacy/commit/041eeaf1, which is the last commit about the bots counter feature. The issue is the same, so that issue is not a regression. It seems the bot counter simply never worked with... git build? debug build? 64bit build?-\r\n\r\nDisregard the above. The responsible commit is \"7a49775\":https://github.com/etlegacy/etlegacy/commit/7a497759dac4448969a2e01950801e6900a189bb.  The ET_VERSION identifier has been changed in #606, so there is no way to make the difference between 2.60b and ET:L server anymore.",
+            "created_on": "2014-11-23T13:38:16Z",
+            "details": []
+        },
+        {
+            "id": 3861,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-23T14:28:06Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "606"
+                }
+            ]
+        },
+        {
+            "id": 3863,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Spyhawk wrote:\r\n> so there is no way to make the difference between 2.60b and ET:L server anymore.\r\nVersion string is still different, no?",
+            "created_on": "2014-11-23T14:32:58Z",
+            "details": []
+        },
+        {
+            "id": 3878,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:97defc00250496b4fa08b972ca3a20d081c21d39.",
+            "created_on": "2014-11-23T21:54:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 664,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 15,
+        "name": "Mod UI"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Recent snaphshot of ETL servers don't send the humans/bots count",
+    "description": "There are some online Legacy servers using recent -git snapshots (see screenshot). The x86_64 server uses pre.sdl2.570 while the red server uses 573, which is the most recent version as I type this bug report.\r\n\r\nThe humans/bots count is missing.\r\n\r\nThat feature has been introduced in \r\n\"d09e28c7cf662414717bee46d5634adcb756cd53\":https://github.com/etlegacy/etlegacy/commit/d09e28c7cf662414717bee46d5634adcb756cd53\r\nand \r\n\"1d0dad82a07c6f94dd5c9d68617a077d28f70d5e\":https://github.com/etlegacy/etlegacy/commit/1d0dad82a07c6f94dd5c9d68617a077d28f70d5e.",
+    "start_date": "2014-11-23",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-23T11:22:17Z",
+    "updated_on": "2014-11-23T21:54:17Z",
+    "closed_on": "2014-11-23T21:54:17Z"
+}

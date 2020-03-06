@@ -1,0 +1,307 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 60,
+            "issue_id": 197,
+            "issue_to_id": 80,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 255,
+            "issue_id": 814,
+            "issue_to_id": 80,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 286,
+            "issue_id": 884,
+            "issue_to_id": 80,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 41,
+            "issue_id": 166,
+            "issue_to_id": 80,
+            "relation_type": "duplicates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "ce0410b01e13591707b676727a6e8c4245477fa2",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "general: added a hack for (bugged?) modlib loading, refs #80",
+            "committed_on": "2012-09-14T20:37:17Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 310,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I don't get this ... bug doesn't occure with vanilla and ETL ... so why do we fix closed GPL forks? This isn't an ETL issue ...",
+            "created_on": "2012-09-16T09:08:28Z",
+            "details": []
+        },
+        {
+            "id": 312,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Would't it occur on every single ET 3.00 server if it was an ET 3.00 specific issue?",
+            "created_on": "2012-09-16T14:28:28Z",
+            "details": []
+        },
+        {
+            "id": 313,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Dragon wrote:\r\n> Would't it occur on every single ET 3.00 server if it was an ET 3.00 specific issue?\r\nMaybe, maybe not. We will never know, because those thieves won't release the source code and we can't see what they changed.\r\n\r\nIR4T4 wrote:\r\n> I don't get this ... bug doesn't occure with vanilla and ETL ... so why do we fix closed GPL forks? This isn't an ETL issue ...\r\nMaybe it is ET:L issue. I'll test it some more. However, I changed my mind about the patch commit:ce0410b0. When I look at it now I see it's not really a hack and it just might be useful. It is simply a fail-safe check.\r\n",
+            "created_on": "2012-09-16T19:18:36Z",
+            "details": []
+        },
+        {
+            "id": 329,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Things to add:\r\n\r\n# if trying to load qagame dll and it's not there return right away to the main menu and complain\r\n# if everything fails go back to main menu instead of quitting",
+            "created_on": "2012-10-01T21:06:57Z",
+            "details": []
+        },
+        {
+            "id": 458,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-11-04T22:04:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 915,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "There is also a log attached in #166. The connected server of log file spreads some strange named pk3s in etmain. However this looks like a bug caused by server configurations.",
+            "created_on": "2013-01-07T13:11:27Z",
+            "details": []
+        },
+        {
+            "id": 920,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Now we know this is not ET300 specific, because user:muessli confirmed that this happens even when connecting to ETENG servers (ET ENG 0.72 linux-i386 Jan 6 2013)",
+            "created_on": "2013-01-07T14:54:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Loading ui.mp.i386 from mod dir (ET300 specific?)",
+                    "new_value": "Loading ui.mp.i386 from mod dir prematurely"
+                }
+            ]
+        },
+        {
+            "id": 921,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Are the binaries copied to fs_homepath/MOD when the issue occures?\r\n\r\n<pre>\r\n... ui.mp.i386.so: cannot open shared object file: No such file or directory\"\r\n</pre>",
+            "created_on": "2013-01-07T15:01:38Z",
+            "details": []
+        },
+        {
+            "id": 4793,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-03-16T21:48:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 5088,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-08-08T18:48:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 5334,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "",
+            "created_on": "2015-10-16T18:26:52Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "814"
+                }
+            ]
+        },
+        {
+            "id": 5927,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-08-26T05:21:15Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 5929,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-08-26T05:21:48Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "884"
+                }
+            ]
+        },
+        {
+            "id": 5986,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Hack causing more trouble than help has been removed.",
+            "created_on": "2016-09-04T10:29:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "30",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 80,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "Loading ui.mp.i386 from mod dir prematurely",
+    "description": "Game crashes when connecting to some servers (so far I saw this only with ET300 servers, but not all, e.g. 78.46.59.14:27980 and 216.155.146.19:27960) because it tries to load ui.mp.i386.so from the mod directory where it doesn't (yet) exist.\r\n\r\n<pre>\r\nSys_LoadDll(./silent/ui.mp.i386.so)... \r\nSys_LoadDll(./silent/ui.mp.i386.so) failed:\r\n\"Failed loading ./silent/ui.mp.i386.so: ./silent/ui.mp.i386.so: cannot open shared object file: No such file or directory\"\r\nSys_LoadDll(./silent/ui.mp.i386.so)... \r\nSys_LoadDll(./silent/ui.mp.i386.so) failed:\r\n\"Failed loading ./silent/ui.mp.i386.so: ./silent/ui.mp.i386.so: cannot open shared object file: No such file or directory\"\r\nSys_LoadDll(ui) failed to load library\r\n</pre>",
+    "start_date": "2012-09-14",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2012-09-14T20:37:41Z",
+    "updated_on": "2016-09-04T10:29:54Z",
+    "closed_on": "2016-09-04T10:29:54Z"
+}

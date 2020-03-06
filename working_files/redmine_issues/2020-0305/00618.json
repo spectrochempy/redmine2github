@@ -1,0 +1,165 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 3653,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2014-11-09T15:08:26Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "381",
+                    "new_value": "tr_glslsources.c"
+                }
+            ]
+        },
+        {
+            "id": 3674,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Any more information? Which shader fails the compilation? Can you paste the console output.. The output should tell you quite a bit of information when some shader fails to compile (besides that message).",
+            "created_on": "2014-11-10T09:44:26Z",
+            "details": []
+        },
+        {
+            "id": 3675,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2014-11-10T12:31:12Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "382",
+                    "new_value": "crashlog.txt"
+                }
+            ]
+        },
+        {
+            "id": 3850,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-11-23T11:07:26Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "6",
+                    "new_value": "15"
+                }
+            ]
+        },
+        {
+            "id": 5021,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "",
+            "created_on": "2015-07-24T10:15:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 5304,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-09-22T21:24:32Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "596",
+                    "new_value": "etlr2.txt"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 618,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "assigned_to": {
+        "id": 44,
+        "name": "Jacker"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 15,
+        "name": "renderer2"
+    },
+    "subject": "Renderer2 fails compiling glsl shader",
+    "description": "%{color:red}compile log:\r\n0:210(13): error: no function with name 'DeformPosition2'%\r\n\r\nGenerated file @tr_glslsources.c@ contains the DeformPosition() but it is used before it is declared.\r\n",
+    "start_date": "2014-11-09",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-09T15:07:25Z",
+    "updated_on": "2015-09-22T21:24:32Z",
+    "closed_on": "2015-07-24T10:15:36Z"
+}

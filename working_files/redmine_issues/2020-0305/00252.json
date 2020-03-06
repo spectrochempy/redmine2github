@@ -1,0 +1,268 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "d4f91bd7b0588ffaffe72f79975ecdf42e7966ba",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: sound issues fixed fixes #186 refs #252",
+            "committed_on": "2013-05-03T14:33:55Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1345,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-03-18T09:59:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "16"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1506,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2013-04-07T18:20:43Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Commander sounds",
+                    "new_value": "Commander sounds volume uneven"
+                }
+            ]
+        },
+        {
+            "id": 1552,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Harle, please provide us some info about your sound settings (OS, used sound system ...)\r\n\r\nOpenAL is definately affected.",
+            "created_on": "2013-04-19T10:48:08Z",
+            "details": []
+        },
+        {
+            "id": 1570,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-04-26T06:51:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "110"
+                }
+            ]
+        },
+        {
+            "id": 1638,
+            "user": {
+                "id": 110,
+                "name": "Harlekin"
+            },
+            "notes": "OS: Ubuntu 12.04.2 LTS 64bit\r\nSound: \"Intel Audio device\"\r\nCPU: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz\r\n\r\nhwinfo --sound \r\n> hal.1: read hal dataprocess 7359: arguments to dbus_move_error() were incorrect, assertion \"(dest) == NULL || !dbus_error_is_set ((dest))\" failed in file ../../dbus/dbus-errors.c line 282.\r\nThis is normally a bug in some application using the D-Bus library.\r\nlibhal.c 3483 : Error unsubscribing to signals, error=The name org.freedesktop.Hal was not provided by any .service files\r\n11: PCI 1b.0: 0403 Audio device                                 \r\n  [Created at pci.318]\r\n  Unique ID: u1Nb.jk7Z+MpBAAD\r\n  SysFS ID: /devices/pci0000:00/0000:00:1b.0\r\n  SysFS BusID: 0000:00:1b.0\r\n  Hardware Class: sound\r\n  Model: \"Intel Audio device\"\r\n  Vendor: pci 0x8086 \"Intel Corporation\"\r\n  Device: pci 0x1c20 \r\n  SubVendor: pci 0x1849 \"ASRock Incorporation\"\r\n  SubDevice: pci 0x0892 \r\n  Revision: 0x05\r\n  Driver: \"snd_hda_intel\"\r\n  Driver Modules: \"snd_hda_intel\"\r\n  Memory Range: 0xf7f00000-0xf7f03fff (rw,non-prefetchable)\r\n  IRQ: 48 (488 events)\r\n  Module Alias: \"pci:v00008086d00001C20sv00001849sd00000892bc04sc03i00\"\r\n  Driver Info #0:\r\n    Driver Status: snd_hda_intel is active\r\n    Driver Activation Cmd: \"modprobe snd_hda_intel\"\r\n  Config Status: cfg=new, avail=yes, need=no, active=unknown\r\n",
+            "created_on": "2013-04-30T16:47:29Z",
+            "details": []
+        },
+        {
+            "id": 1850,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-08-20T18:40:33Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 1871,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Harlekin, can you still reproduce this issue?",
+            "created_on": "2013-09-01T09:13:24Z",
+            "details": []
+        },
+        {
+            "id": 1887,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-09-02T16:41:42Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "7",
+                    "new_value": "9"
+                }
+            ]
+        },
+        {
+            "id": 1983,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-09-21T20:08:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 2103,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-10-18T15:00:59Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "9",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 2674,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "This isn't reported by any other user after the rc3 release -> closed",
+            "created_on": "2014-01-02T08:36:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                },
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "new_value": "Linux"
+                },
+                {
+                    "property": "cf",
+                    "name": "2",
+                    "new_value": "64-bit"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 110,
+            "name": "Harlekin"
+        }
+    ],
+    "time_entries": null,
+    "id": 252,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 110,
+        "name": "Harlekin"
+    },
+    "assigned_to": {
+        "id": 110,
+        "name": "Harlekin"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "Commander sounds volume uneven",
+    "description": "Example Oasis\r\n\r\nThe sounds for \"Dynamite planted\" is like someone whispers it on axis side, but allies hear it normal.\r\n\"dynamite defused\" was loud for axis and whispered for allied.\r\n\r\n",
+    "start_date": "2013-03-17",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": "64-bit"
+        }
+    ],
+    "created_on": "2013-03-17T21:04:22Z",
+    "updated_on": "2014-01-02T08:36:29Z",
+    "closed_on": "2014-01-02T08:36:29Z"
+}

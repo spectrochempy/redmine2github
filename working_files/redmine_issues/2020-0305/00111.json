@@ -1,0 +1,349 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 40,
+            "issue_id": 165,
+            "issue_to_id": 111,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 86,
+            "issue_id": 111,
+            "issue_to_id": 317,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "a4dca01a50632d40c5e9b5b2ad5519d27e2b24c3",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "client: special handling for numbers of numeric keypad & NUM pressed\nrefs #165 refs #111",
+            "committed_on": "2013-02-10T09:28:48Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 483,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-11-11T22:33:47Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 511,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-11-12T15:09:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Numeric pad not properly recognized",
+                    "new_value": "Numeric pad not properly recognized / AZERTY keyboard issues"
+                }
+            ]
+        },
+        {
+            "id": 521,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "This problem is deeply SDL related. google keywords: \"sdl AZERTY\" ",
+            "created_on": "2012-11-13T23:10:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 1127,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Fix committed. Give it a try ...",
+            "created_on": "2013-02-10T09:42:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 1128,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-02-10T11:55:22Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 1172,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Tested just in menu, I get a token error because it finds a Tripmine thingy in a player animation script...\r\n(Git from yesterday, replaced etl.exe, etled.exe, lib.dll, SDL.dll, and the 3 DLLs inside legacy subfolder)\r\n(Edit: Done so in My Docs, @ menu the background is zoomed and ET is smaller now)\r\n\r\nNumbers seem to work as intended: when it is enabled, it prints numbers, when not it does something else I guess ^^'\r\n\r\nBut the other characters, /*-+, don't work :/",
+            "created_on": "2013-02-14T17:38:49Z",
+            "details": []
+        },
+        {
+            "id": 1173,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Mateos wrote:\r\n> Tested just in menu, I get a token error because it finds a Tripmine thingy in a player animation script...\r\nThis is because you don't have pak3_v2.70rc1.pk3 in your path.\r\n",
+            "created_on": "2013-02-14T18:19:44Z",
+            "details": []
+        },
+        {
+            "id": 1174,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Thank you!\r\n\r\nPacked the legacy subbolder into PK3, works.\r\n\r\nSo same problem while a map is loaded, /*-+ not recognized at all on numeric panel :/\r\n\r\nBut enabling/disabling it works well on numbers (Enable -> Numbers, Disabled -> Directions, like 8 is previous command executed...)",
+            "created_on": "2013-02-14T19:01:35Z",
+            "details": []
+        },
+        {
+            "id": 1181,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Mateos does the numpad enter key work? \r\n\r\n{TODO}\r\nWindows: Inspect numpad math operations keys",
+            "created_on": "2013-02-16T17:30:55Z",
+            "details": []
+        },
+        {
+            "id": 1182,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Numpad Enter key works as expected, with the Numpad enabled or not :) I can manage the Fireteam.",
+            "created_on": "2013-02-16T21:39:27Z",
+            "details": []
+        },
+        {
+            "id": 1217,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-02-25T22:02:35Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "5",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1656,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Mateos wrote:\r\n> Numpad Enter key works as expected, with the Numpad enabled or not :) I can manage the Fireteam.\r\n\r\n",
+            "created_on": "2013-05-02T10:21:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 1659,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Mateos wrote:\r\n> Thank you!\r\n> \r\n> So same problem while a map is loaded, /*-+ not recognized at all on numeric panel :/\r\n> \r\n> But enabling/disabling it works well on numbers (Enable -> Numbers, Disabled -> Directions, like 8 is previous command executed...)\r\n\r\nBtw I tried to recompile (Quite some time since last), and it doesn't work with the command I kept and used to work...\r\n\r\ncmake -G \"NMake Makefiles\" -DCMAKE_BUILD_TYPE=Release -DBUNDLED_SDL=YES -DBUNDLED_JPEG=YES -DBUNDLED_LUA=YES -DBUNDLED_CURL=YES -DBUNDLED_OGG_VORBIS=YES -DBUILD_PAK3_PK3=YES .. && nmake\r\n\r\nWhile in build subfolder.\r\n\r\n",
+            "created_on": "2013-05-02T11:34:02Z",
+            "details": []
+        },
+        {
+            "id": 1664,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Mateos wrote:\r\n> Btw I tried to recompile (Quite some time since last), and it doesn't work with the command I kept and used to work...\r\n> \r\n> cmake -G \"NMake Makefiles\" -DCMAKE_BUILD_TYPE=Release -DBUNDLED_SDL=YES -DBUNDLED_JPEG=YES -DBUNDLED_LUA=YES -DBUNDLED_CURL=YES -DBUNDLED_OGG_VORBIS=YES -DBUILD_PAK3_PK3=YES .. && nmake\r\n> \r\n> While in build subfolder.\r\n\r\nTry:\r\n> cmake -G \"NMake Makefiles\" -DBUNDLED_LIBS=YES -DCMAKE_BUILD_TYPE=Release .. && nmake",
+            "created_on": "2013-05-02T13:46:49Z",
+            "details": []
+        },
+        {
+            "id": 1665,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Thank you, it is compiling :)\r\n\r\nI will check for the /*-+ keys of the Numeric Pad and let you know if they still don't work in ETL.\r\n\r\nEdit: Fatal error @ 45%, returned 0x2\r\n\r\nSee -> http://www2.picturepush.com/photo/a/12833790/1024/Screenshots-for-Forums/ETL-Compile-02-05-2013.png\r\n\r\nEdit 2: After a git submodule init then a git submodule update, I've been able to compile and install the new files. The /*-+ keys of the Numeric Pad still do not work.\r\n\r\n(Sidenote: the menu background isn't properly displayed, a kind of zoom of the top-left part)",
+            "created_on": "2013-05-02T14:38:11Z",
+            "details": []
+        },
+        {
+            "id": 1666,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-05-02T20:28:33Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 1829,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Is this still valid as i cannot reproduce it anymore?",
+            "created_on": "2013-08-19T13:20:42Z",
+            "details": []
+        },
+        {
+            "id": 1833,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "",
+            "created_on": "2013-08-19T14:26:35Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 111,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 9,
+        "name": "Mateos"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 7,
+        "name": "2.71rc2"
+    },
+    "subject": "Numeric pad not properly recognized / AZERTY keyboard issues",
+    "description": "Good evening,\r\n\r\nIt doesn\u2019t recognize my numeric pad; It is well recognized only for Fireteam. I mean, when I type a command usually, I use the / from the numeric pad; It does only clear the line, and the 0 behave like Insert key.\r\n\r\nI have a French AZERTY keyboard, might be the problem, like with GtkRadiant (1.4.0 recognize it well, 1.5.0/1.6.x don't) :/",
+    "start_date": "2012-11-11",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-11-11T21:48:47Z",
+    "updated_on": "2013-08-19T14:26:35Z",
+    "closed_on": "2013-08-19T14:26:35Z"
+}

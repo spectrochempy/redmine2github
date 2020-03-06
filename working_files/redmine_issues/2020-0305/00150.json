@@ -1,0 +1,168 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "ab08f3bcc2f58e656fdaf534881e25013de8d5fe",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "client: receive MOTD from motd.etlegacy.com, refs #150",
+            "committed_on": "2012-12-16T20:16:52Z"
+        },
+        {
+            "revision": "bbf4caff3bf2457220c2a92f1a3833bafffb2f04",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "client: send getmotd in Q3 format and with real ET:L version, fixes #150",
+            "committed_on": "2012-12-17T13:59:47Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 806,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-12-15T11:47:35Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "5",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 827,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Client now receives MOTD from the motd.etlegacy.com server. The MOTD server is dumb and only displays a static string, but it can be extended, e.g. to show the latest news headline from etlegacy.com or notify about scheduled games or updates..\r\n\r\nThe only remaining thing is to patch the server to support motd request in the Quake 3 format with a trailing space like it was before.",
+            "created_on": "2012-12-16T21:16:26Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "10",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 828,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-12-16T21:58:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "7",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 832,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Applied in changeset commit:bbf4caff3bf2457220c2a92f1a3833bafffb2f04.",
+            "created_on": "2012-12-17T14:12:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 1237,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "cgame has got a not fully implemented cg.motdWindow - do we want to use that ?",
+            "created_on": "2013-02-28T09:57:13Z",
+            "details": []
+        }
+    ],
+    "watchers": [
+        {
+            "id": 1,
+            "name": "Radegast"
+        }
+    ],
+    "time_entries": null,
+    "id": 150,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "assigned_to": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 5,
+        "name": "2.71rc1"
+    },
+    "subject": "Fix MOTD",
+    "description": "ID Software's MOTD server doesn't work anymore and creating our own is quite easy.",
+    "start_date": "2012-12-15",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-12-15T10:59:28Z",
+    "updated_on": "2013-02-28T09:57:13Z",
+    "closed_on": "2012-12-17T14:12:58Z"
+}

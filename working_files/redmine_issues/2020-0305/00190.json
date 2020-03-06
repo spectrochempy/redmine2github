@@ -1,0 +1,216 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 78,
+            "issue_id": 187,
+            "issue_to_id": 190,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 1082,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-02-02T19:49:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1096,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "FYI: easybuild script supports parallel build.\r\nJust run it with:\r\n\r\n MAKEOPTS=\"-j2\" ./easybuild.sh\r\n\r\n(-;",
+            "created_on": "2013-02-04T14:13:57Z",
+            "details": []
+        },
+        {
+            "id": 1099,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "morsik wrote:\r\n> FYI: easybuild script supports parallel build.\r\nNope, it doesn't. It fails the same way. Try it with a clean libs directory.",
+            "created_on": "2013-02-04T17:04:38Z",
+            "details": []
+        },
+        {
+            "id": 1169,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-02-14T14:26:34Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "12"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "7",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 1204,
+            "user": {
+                "id": 53,
+                "name": "ponce"
+            },
+            "notes": "building with -DBUNDLED_OGG_VORBIS=0 and -DFEATURE_OGG_VORBIS=0 solves this, so it's probably related to #214",
+            "created_on": "2013-02-21T21:49:54Z",
+            "details": []
+        },
+        {
+            "id": 1671,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Is this bug still present?  ",
+            "created_on": "2013-05-04T09:40:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1672,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "yes, it is",
+            "created_on": "2013-05-04T13:30:09Z",
+            "details": []
+        },
+        {
+            "id": 1809,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-08-13T17:54:34Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "7",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 5015,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Beside many things have chenged we don't have the extra time to fix parallel building. Let us know If there is a real need for this.\r\n",
+            "created_on": "2015-07-24T09:22:33Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "17"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        },
+        {
+            "id": 53,
+            "name": "ponce"
+        }
+    ],
+    "time_entries": null,
+    "id": 190,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 53,
+        "name": "ponce"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "parallel building breaks (probably related to bundled vorbis)",
+    "description": "slackware-14.0 (32bit)\r\n\r\nParallel building works fine here (usually build using the system libraries): it breaks if using the bundled libraries, seems related to vorbis.\r\nBuilding with\r\n\r\nmkdir build\r\ncd build\r\n  cmake \\\r\n    -DCMAKE_C_FLAGS:STRING=\"-O2 -fPIC -march=i686 -mtune=core2\" \\\r\n    -DCMAKE_INSTALL_PREFIX=\"/usr\" \\\r\n    -DINSTALL_DEFAULT_BINDIR=\"bin\" \\\r\n    -DINSTALL_DEFAULT_MODDIR=\"share/etlegacy\" \\\r\n    -DINSTALL_DEFAULT_BASEDIR=\"/usr/share/etlegacy\" \\\r\n    -DBUILD_CLIENT=1 \\\r\n    -DBUILD_SERVER=1 \\\r\n    -DBUILD_MOD=1 \\\r\n    -DBUILD_MOD_PK3=1 \\\r\n    -DBUILD_PAK3_PK3=1 \\\r\n    -DFEATURE_ANTICHEAT=1 \\\r\n    -DFEATURE_CURL=1 \\\r\n    -DFEATURE_LUA=1 \\\r\n    -DFEATURE_TRACKBASE=1 \\\r\n    -DFEATURE_OMNIBOT=1 \\\r\n    -DINSTALL_OMNIBOT=1 \\\r\n    -DFEATURE_MULTIVIEW=1 \\\r\n    -DFEATURE_CURSES=0 \\\r\n    -DCROSS_COMPILE32=0 \\\r\n    -DFEATURE_OGG_VORBIS=1 \\\r\n    -DFEATURE_FREETYPE=0 \\\r\n    -DFEATURE_OPENAL=0 \\\r\n    -DBUILD_WITH_CSTDIO_INCLUDED=1 \\\r\n    -DBUNDLED_OGG_VORBIS=1 \\\r\n    -DCMAKE_BUILD_TYPE=Release ..\r\n\r\n  make -j2",
+    "start_date": "2013-02-02",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-02-02T13:39:25Z",
+    "updated_on": "2015-07-24T09:22:33Z",
+    "closed_on": "2015-07-24T09:22:33Z"
+}

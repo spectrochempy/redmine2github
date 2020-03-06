@@ -1,0 +1,243 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 283,
+            "issue_id": 428,
+            "issue_to_id": 503,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 432,
+            "issue_id": 428,
+            "issue_to_id": 1120,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 433,
+            "issue_id": 1174,
+            "issue_to_id": 428,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 2683,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-01-02T08:52:56Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 2946,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-02-02T11:00:10Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "fix G_DebugHitBoxes (g_debugBullets 3)",
+                    "new_value": "Rework/fix G_DebugHitBoxes (g_debugBullets 3)"
+                },
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "We don't free head and leg entities spawned with \r\n\r\n<pre>\r\n\t\tG_DrawEntityBox(G_BuildHead(&g_entities[i]), qtrue);\r\n\t\tG_DrawEntityBox(G_BuildLeg(&g_entities[i]), qtrue);\r\n</pre>\r\n\r\nsee G_FreeEntity when G_BuildHead & G_BuildLeg is used in other locations of the code.",
+                    "new_value": "1.) We don't free head and leg entities spawned with \r\n\r\n<pre>\r\n\t\tG_DrawEntityBox(G_BuildHead(&g_entities[i]), qtrue);\r\n\t\tG_DrawEntityBox(G_BuildLeg(&g_entities[i]), qtrue);\r\n</pre>\r\n\r\nsee G_FreeEntity when G_BuildHead & G_BuildLeg is used in other locations of the code.\r\n\r\n2.) g_debugBullets 3 doesn't show our real used hitboxes, we don't adjust Z (see ClientHitboxMaxZ()) "
+                }
+            ]
+        },
+        {
+            "id": 3252,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "We have a bug with the dead player hitbox. Throw a nade exactly on dead players and it 'flies' over the player. g_debughitboxes shows the wrong but desired hitbox. uncomment maxs[2] = ClientHitboxMaxZ(traceEnt); in g_debughitbox code and it'll show the actual status.",
+            "created_on": "2014-06-09T09:48:39Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "3",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 3553,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-10-19T08:42:21Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "6",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 5855,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-03-27T00:32:38Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 5856,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-03-27T00:33:57Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "503"
+                }
+            ]
+        },
+        {
+            "id": 8202,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-05-17T20:43:41Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1120"
+                }
+            ]
+        },
+        {
+            "id": 8205,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-05-17T20:56:15Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1174"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 428,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "Rework/fix G_DebugHitBoxes (g_debugBullets 3)",
+    "description": "1.) We don't free head and leg entities spawned with \r\n\r\n<pre>\r\n\t\tG_DrawEntityBox(G_BuildHead(&g_entities[i]), qtrue);\r\n\t\tG_DrawEntityBox(G_BuildLeg(&g_entities[i]), qtrue);\r\n</pre>\r\n\r\nsee G_FreeEntity when G_BuildHead & G_BuildLeg is used in other locations of the code.\r\n\r\n2.) g_debugBullets 3 doesn't show our real used hitboxes, we don't adjust Z (see ClientHitboxMaxZ()) ",
+    "start_date": "2013-12-22",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-12-22T17:31:45Z",
+    "updated_on": "2016-03-27T00:32:38Z",
+    "closed_on": "2016-03-27T00:32:38Z"
+}

@@ -1,0 +1,116 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 153,
+            "issue_id": 651,
+            "issue_to_id": 406,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 3788,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Only NQ does this atm afaik?",
+            "created_on": "2014-11-21T15:31:02Z",
+            "details": []
+        },
+        {
+            "id": 3789,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "No, this was tested in etl mod.\r\n\r\n-*S",
+            "created_on": "2014-11-21T15:34:37Z",
+            "details": []
+        },
+        {
+            "id": 3792,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "I meant this behavior is only in NQ afaik, the fact the game checks for dynamic items locations, to not be floating like in Minecraft :P",
+            "created_on": "2014-11-21T16:05:01Z",
+            "details": []
+        },
+        {
+            "id": 3841,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-11-23T10:39:48Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "406"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 651,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "An item set on top of another won't go lower when the one below it disappears",
+    "description": "The next demo which I will show you is a very good example how this bug occurs. There are several other cases like this. Maybe one of the best is when you put a satchel charge on top of a corpse, the corpse disappears and the satchel charge keeps floating.\r\n\r\n-*S",
+    "start_date": "2014-11-20",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-20T16:28:31Z",
+    "updated_on": "2014-11-21T16:05:01Z"
+}

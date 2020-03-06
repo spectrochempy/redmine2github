@@ -1,0 +1,287 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "a1b96e92cbd1687f04640b0c15c8a094427d9df2",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: fixed dedicated say & chat refs #878",
+            "committed_on": "2015-12-21T15:37:59Z"
+        },
+        {
+            "revision": "794a85fd25e1d68d0f1f94b4d93a1e5930774503",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: removed unnecessary new line in chat console, refs #878",
+            "committed_on": "2015-12-22T16:37:21Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 5249,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-08-31T18:37:27Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "17",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "8"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 5444,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-11-24T16:45:56Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 5667,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "{TODO}\r\nCheck if this issue is related to the cleaning of the CG_AddToNotify code:\r\n* http://dev.etlegacy.com/projects/etlegacy/repository/revisions/168a66033fce6d961a436c65d752c6666c63e744/diff/\r\n* http://dev.etlegacy.com/projects/etlegacy/repository/revisions/b98d4806abb7d8a38f5bfb38d4a738c28d37fb21/diff/",
+            "created_on": "2015-12-13T09:30:27Z",
+            "details": []
+        },
+        {
+            "id": 5668,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Might be related to SV_AddOperatorCommands(void) registering the command for dedicated servers only.\r\n<pre>\r\n\tif (com_dedicated->integer)\r\n\t{\r\n\t\tCmd_AddCommand(\"say\", SV_ConSay_f);\r\n\t}\r\n</pre>",
+            "created_on": "2015-12-13T11:12:05Z",
+            "details": []
+        },
+        {
+            "id": 5707,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "In general this issue is fixed. We should add an icon to the team chat for the console. ",
+            "created_on": "2015-12-21T15:42:33Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "5",
+                    "new_value": "21"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 5708,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-12-21T15:49:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "5",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 5711,
+            "user": {
+                "id": 177,
+                "name": "Zelly"
+            },
+            "notes": "Both /rcon say test\r\nand lua SendServerCommand chat \r\nStill only display in console and not in chat, when I tested it.",
+            "created_on": "2015-12-21T23:02:14Z",
+            "details": []
+        },
+        {
+            "id": 5712,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Zelly wrote:\r\n> Both /rcon say test\r\n> and lua SendServerCommand chat \r\n> Still only display in console and not in chat, when I tested it.\r\n\r\nDid you actually test the latest master? The change done by IR4T4 fixed the issue for me.\r\n\r\n",
+            "created_on": "2015-12-22T16:37:56Z",
+            "details": []
+        },
+        {
+            "id": 5713,
+            "user": {
+                "id": 177,
+                "name": "Zelly"
+            },
+            "notes": "Correction it did work for me now.\r\nI guess it was my bad, when I cloned yesterday apparently that commit wasn't in master yet? Not sure what went wrong.\r\nSure enough I just pulled it today and there it was.\r\n<pre>\r\nUpdating a1b96e9..794a85f\r\nFast-forward\r\n etmain/locale/etlegacy_mod.pot | 60 ------------------------------------------\r\n src/game/g_svcmds.c            |  2 +-\r\n 2 files changed, 1 insertion(+), 61 deletions(-)</pre>\r\nEDIT: NVM that was just spyhawks fix lol, I guess my client probably didn't have right cgame loaded.\r\nDoes it not overwrite existing ever?",
+            "created_on": "2015-12-22T17:07:14Z",
+            "details": []
+        },
+        {
+            "id": 5714,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Zelly wrote:\r\n> Does it not overwrite existing ever?\r\nDepends on the way you're building your stuff. To be sure, you should always do a clean build and remove old pk3 in homepath. Pretty sure client simply copied the pk3 from fs_basepath, and you never removed it.",
+            "created_on": "2015-12-22T17:29:40Z",
+            "details": []
+        },
+        {
+            "id": 5715,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Remove old pk3s AND bins from homepath ;) !",
+            "created_on": "2015-12-22T17:58:42Z",
+            "details": []
+        },
+        {
+            "id": 5716,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-12-22T18:01:25Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 5717,
+            "user": {
+                "id": 177,
+                "name": "Zelly"
+            },
+            "notes": "Sorry it just doesn't make sense to me, due to the fact one has to download the packs from the server before he have the pk3s.\r\nSo either you have to manually do it before hand or join server and download the paks disconnect and then re-sort your pk3s make sure right one is extracted then rejoin.",
+            "created_on": "2015-12-22T18:02:39Z",
+            "details": []
+        },
+        {
+            "id": 5718,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I was talking about the client for local testing  :)\r\n",
+            "created_on": "2015-12-22T18:05:13Z",
+            "details": []
+        }
+    ],
+    "watchers": [
+        {
+            "id": 177,
+            "name": "Zelly"
+        }
+    ],
+    "time_entries": null,
+    "id": 878,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 177,
+        "name": "Zelly"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "SendServerCommand chat only displays in console",
+    "description": "The \"chat\" command does not seem to output to chat, only to the console.\r\n\r\nAffects lua and /rcon say message\r\n\r\nReproduce: /rcon say Test message\r\nShould print: \"console: Test message\" to console and chat\r\n\r\nBut it only prints to console.",
+    "start_date": "2015-08-30",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-08-30T20:29:31Z",
+    "updated_on": "2015-12-22T18:05:13Z",
+    "closed_on": "2015-12-22T18:01:25Z"
+}

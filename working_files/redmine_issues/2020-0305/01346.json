@@ -1,0 +1,74 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 8710,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2020-02-04T12:28:35Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Since PB was responsible for giving unique ID and check for collision (dropping players with non unique ID), it's removal from the open source code led to adding an etkey generator in the client.\r\n\r\nHowever, 2.60b clients that have no GUID can still possibly connect to any mod. In Legacy mod, we \"added a check\":https://github.com/etlegacy/etlegacy/commit/73f57387ee5a1d170cdde9924bec2eebc75f042d to prevent players with no guid to connect (due to issue with Skill Rating, see #1344, and obviously invalid guid make administration harder). It might be wise to prevent this server side too.\r\n\r\n* Add GUID check for validity (empty, \"unknown\", \"NO_GUID\", wrong format)\r\n* Add check for duplicate GUID on server\r\n* Drop clients with invalid GUID with a nice message (\"Go get ET:L client, or use etkey.org\")\r\n* If the check is done server side, the relevant mod code could be removed (Legacy mod is not designed to run on the vanilla server, and Skill Rating depends on database code added to ETLegacy).\r\n* Maybe move some other part of the UserInfo string to server check? (f.e. empty name).",
+                    "new_value": "Since PB was responsible for giving unique ID and check for collision (dropping players with non unique ID), it's removal from the open source code led to adding an etkey generator in the client.\r\n\r\nHowever, 2.60b clients that have no GUID can still possibly connect to any mod. In Legacy mod, we \"added a check\":https://github.com/etlegacy/etlegacy/commit/73f57387ee5a1d170cdde9924bec2eebc75f042d to prevent players with no guid to connect (due to issue with Skill Rating, see #1344, and obviously invalid guid make administration harder). It might be wise to prevent this server side too.\r\n\r\n* Add GUID check for validity (empty, \"unknown\", \"NO_GUID\", wrong format)\r\n* Add check for duplicate GUID on server (beware of multiple clients use for dev mode though!)\r\n* Drop clients with invalid GUID with a nice message (\"Go get ET:L client, or use etkey.org\")\r\n* If the check is done server side, the relevant mod code could be removed (Legacy mod is not designed to run on the vanilla server, and Skill Rating depends on database code added to ETLegacy).\r\n* Maybe move some other part of the UserInfo string to server check? (f.e. empty name)."
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1346,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 5,
+        "name": "Server"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Add GUID collision check",
+    "description": "Since PB was responsible for giving unique ID and check for collision (dropping players with non unique ID), it's removal from the open source code led to adding an etkey generator in the client.\r\n\r\nHowever, 2.60b clients that have no GUID can still possibly connect to any mod. In Legacy mod, we \"added a check\":https://github.com/etlegacy/etlegacy/commit/73f57387ee5a1d170cdde9924bec2eebc75f042d to prevent players with no guid to connect (due to issue with Skill Rating, see #1344, and obviously invalid guid make administration harder). It might be wise to prevent this server side too.\r\n\r\n* Add GUID check for validity (empty, \"unknown\", \"NO_GUID\", wrong format)\r\n* Add check for duplicate GUID on server (beware of multiple clients use for dev mode though!)\r\n* Drop clients with invalid GUID with a nice message (\"Go get ET:L client, or use etkey.org\")\r\n* If the check is done server side, the relevant mod code could be removed (Legacy mod is not designed to run on the vanilla server, and Skill Rating depends on database code added to ETLegacy).\r\n* Maybe move some other part of the UserInfo string to server check? (f.e. empty name).",
+    "start_date": "2019-09-08",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-09-08T07:27:12Z",
+    "updated_on": "2020-02-04T12:28:35Z"
+}

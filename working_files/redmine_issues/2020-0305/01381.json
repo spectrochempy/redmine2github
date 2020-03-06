@@ -1,0 +1,188 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 459,
+            "issue_id": 1381,
+            "issue_to_id": 1344,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "c08dc2a86f4a177a4b0455beb15c3bd4df57ce5a",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed played_time value of slow connecters, refs #1381 #1344",
+            "committed_on": "2019-12-30T20:52:14Z"
+        },
+        {
+            "revision": "6600d972739b37aecf7ba137d3e97db36ce896e9",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: disabled SR calculation for stopwatch and lms gametypes, refs #403 #1381\n\nThe SR scoreboard is disabled for these game types  already.",
+            "committed_on": "2020-01-07T11:22:27Z"
+        },
+        {
+            "revision": "fd755973899e8ec525e4e1f1ff2eefe8de7dd1ec",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed time played stats reset in 2nd round of stopwatch, fixes #1381",
+            "committed_on": "2020-01-07T11:22:43Z"
+        },
+        {
+            "revision": "f81b5e96e0b0ea96fbfcf94d63209618c6d3e10f",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: removed unecessary game type check, refs #1381\n\n* SW round 2 always happens on the same map, so slow connection never\nhappens in this case.\n* sess.time_* are not forcefully reset anymore by SR code in SW mode,\nso this condition will not trigger anyway",
+            "committed_on": "2020-01-09T18:10:47Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 8643,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-12-30T18:08:59Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1344"
+                }
+            ]
+        },
+        {
+            "id": 8645,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-12-30T18:09:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Time played stat is buggy and SW mode",
+                    "new_value": "Time played stat is sometimes buggy in end of game and also SW mode"
+                }
+            ]
+        },
+        {
+            "id": 8648,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-12-30T21:51:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "21",
+                    "new_value": "17"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 8678,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:fd755973899e8ec525e4e1f1ff2eefe8de7dd1ec.\r\n\r\nPrevious commit commit:6600d972 fixes the sess.time_<team> variables being reset by `G_SkillRatingGetClientRating()` in  SR code, which isn't being used in SW mode.",
+            "created_on": "2020-01-07T11:25:55Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1381,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Time played stat is sometimes buggy in end of game and also SW mode",
+    "description": "Following fixes in #1344, the time \"efficiency\" in in-game stats window and end of game stats is buggy. This happens because the time_played variable should always been shorter than time played in axis + time played in allies teams, but it is not always reset correctly (unlike both time_axis and time_allies) for slow connecters, resulting in percentage bigger than 100%.\r\n\r\nThis is also visible in SW mode, second round (g_currentRound = 1) as stats are not reset between round (apart from XPs).\r\n\r\n",
+    "start_date": "2019-12-30",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-12-30T18:08:49Z",
+    "updated_on": "2020-01-07T11:25:55Z",
+    "closed_on": "2020-01-07T11:25:55Z"
+}

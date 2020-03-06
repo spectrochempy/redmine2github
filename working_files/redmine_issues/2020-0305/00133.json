@@ -1,0 +1,146 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "e7f1eca20346d4ef95ca88914c3cd4404cc44d06",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "client: play intro movie only once, fixes #133",
+            "committed_on": "2012-11-26T22:32:20Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 643,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-11-26T12:22:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "tracker_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 660,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Applied in changeset commit:e7f1eca20346d4ef95ca88914c3cd4404cc44d06.",
+            "created_on": "2012-11-26T22:50:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 661,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2012-11-26T22:50:42Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 668,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Is the intro played only once (in total) now? com_introPlayed 1 should be default (see resetDefaults). Let's add com_introPlayed to the menus and let the user decide.",
+            "created_on": "2012-11-27T08:10:59Z",
+            "details": []
+        },
+        {
+            "id": 670,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Yes, intro is now played only once. @com_introplayed@ is reset to zero when the options are reset to defaults. I think that makes sense. I wouldn't add it to the options menu because this is something that most users don't care about at all. It will just add to the clutter.\n",
+            "created_on": "2012-11-27T10:55:54Z",
+            "details": []
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 133,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "assigned_to": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 5,
+        "name": "2.71rc1"
+    },
+    "subject": "Fix com_introPlayed",
+    "description": "\"com_introPlayed;    // Unused. TODO: do we want to enable it?\"\r\n\r\nWe should activate this cvar. The intro is part of the game but it's also nice to disable it :D",
+    "start_date": "2012-11-26",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-11-26T12:21:52Z",
+    "updated_on": "2012-11-27T10:55:54Z",
+    "closed_on": "2012-11-26T22:50:08Z"
+}

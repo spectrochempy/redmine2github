@@ -1,0 +1,132 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 456,
+            "issue_id": 1373,
+            "issue_to_id": 1263,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "98bbe12cf5316883ca5890cee9ce1bcd128c5ef8",
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "comments": "game: allow spectators to send team messages to each other\n\ncloses #1373",
+            "committed_on": "2019-12-28T14:41:47Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 8627,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-12-27T23:52:05Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1263"
+                }
+            ]
+        },
+        {
+            "id": 8629,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "This is due to a workaround implemented as part of #1263. Find a better fix for that cg_teamChatsOnly issue.",
+            "created_on": "2019-12-27T23:54:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "10"
+                }
+            ]
+        },
+        {
+            "id": 8635,
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "notes": "Applied in changeset commit:98bbe12cf5316883ca5890cee9ce1bcd128c5ef8.",
+            "created_on": "2019-12-28T15:00:11Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "10",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1373,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 505,
+        "name": "ryven"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Allow spectators to send team chat messages",
+    "description": "Seems to be disabled for some reason (etmain restriction), but it's allowed in etpro and probably other mods. No reason to restrict it.",
+    "start_date": "2019-12-14",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-12-14T14:48:13Z",
+    "updated_on": "2019-12-28T15:00:11Z",
+    "closed_on": "2019-12-28T15:00:11Z"
+}

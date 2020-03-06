@@ -1,0 +1,140 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 142,
+            "issue_id": 564,
+            "issue_to_id": 563,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "1b95452f8f6c239c8d5ba37c8a8a3a8f578b875f",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "misc: better default values for team_airstrikeTime & team_artyTime refs\n#563",
+            "committed_on": "2014-10-22T19:20:04Z"
+        },
+        {
+            "revision": "3c59c3022a41b6c84c854de9e87e7fa79d698be4",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: make arty calls chargebar dependant fixes 563",
+            "committed_on": "2014-10-22T19:48:22Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3565,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Confirmed.",
+            "created_on": "2014-10-22T07:02:26Z",
+            "details": []
+        },
+        {
+            "id": 3570,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Fixed.",
+            "created_on": "2014-10-22T19:16:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3576,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-10-23T17:52:02Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "564"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 563,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Possibility to spam artillery",
+    "description": "When as field ops, you are able to spam artillery even the charge bar isn't fully filled. It always requires that at least at level 0 field ops. When you hold your binoculars, you can just spam artillery whenever you have a tiny amount of charge bar filled. Definitely not intended as far as I know. You can only spam it when you have any weapon in your hand except ammopacks or airstrike canister.\r\n\r\n-*S",
+    "start_date": "2014-08-15",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-08-15T10:39:14Z",
+    "updated_on": "2014-10-22T19:16:05Z",
+    "closed_on": "2014-10-22T19:16:05Z"
+}

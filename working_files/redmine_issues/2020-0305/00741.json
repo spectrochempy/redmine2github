@@ -1,0 +1,158 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "aaa5e56f8e6838842068d4dcc6f84dd192e300ee",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed killed teammates by push considered as enemies, fixes #741",
+            "committed_on": "2014-12-21T11:41:01Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 4179,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I'm not sure about this. Saukko please read:\r\nhttp://wolfenstein.wikia.com/wiki/Battle_Sense\r\n\r\nYou gain 2 XP every 30 seconds ... ",
+            "created_on": "2014-12-19T14:42:45Z",
+            "details": []
+        },
+        {
+            "id": 4182,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Wolfenstein Enemy Terriotry manual wrote:\r\n> Players gain ZERO points for each 30 seconds survived while 'Cold' i.e. not actively engaged in combat. You'll earn 2XP per 30 seconds while 'Warm' (you inflicted damage), 5XP per 30 seconds while 'Hot' (dealing AND receiving damage) and 8XP if 'Super-Hot' (killing and receiving damage).\r\n\r\nWhy would you get 2 XP per 30 seconds when you push your teammate to death? Ammm... makes no sense to me at least. :p And what I have checked, you don't gain any XP when teambleeding normally. I can put more facts to the table to ensure you that this one is a bug. I can give out every detail to confirm this.\r\n\r\n-*S",
+            "created_on": "2014-12-19T17:59:15Z",
+            "details": []
+        },
+        {
+            "id": 4185,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Alright. It seems the combat state isn't cold when it should be.",
+            "created_on": "2014-12-20T03:19:48Z",
+            "details": []
+        },
+        {
+            "id": 4186,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Precisely. Normally without any enemies, you won't get any xp for battle sense. And inflicting damage which means in this case is dealing damage should be done to an enemy. Well, there's no enemy so there's no damage to inflict. But for some reason it counts pushing teammates to death as dealing damage to an enemy. I haven't yet tried do you gain xp when the fall damage isn't lethal. That's something which remains to be tested.\r\n\r\n-*S",
+            "created_on": "2014-12-20T03:35:10Z",
+            "details": []
+        },
+        {
+            "id": 4187,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "COMBATSTATE is correctly set. However, the dieFromSameTeam check in player_die (g_combat) fails and that part of the code believes the killed teammate is an enemy.\r\n\r\nEdit: should now be fixed. Teammates killed by push aren't considered as enemies anymore, and the complain popup should also work as expected now. ",
+            "created_on": "2014-12-21T11:11:56Z",
+            "details": []
+        },
+        {
+            "id": 4188,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:aaa5e56f8e6838842068d4dcc6f84dd192e300ee.",
+            "created_on": "2014-12-21T11:52:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 4189,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-12-21T11:54:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 741,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Pushing to death as a teammate awards you battle sense xp",
+    "description": "As the title says. And see the screenshot attached for the proof.\r\n\r\n-*S",
+    "start_date": "2014-12-18",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-12-18T11:27:16Z",
+    "updated_on": "2014-12-21T11:54:32Z",
+    "closed_on": "2014-12-21T11:52:20Z"
+}

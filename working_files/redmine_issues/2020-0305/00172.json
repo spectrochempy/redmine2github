@@ -1,0 +1,856 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 43,
+            "issue_id": 171,
+            "issue_to_id": 172,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 44,
+            "issue_id": 88,
+            "issue_to_id": 172,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 82,
+            "issue_id": 168,
+            "issue_to_id": 172,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "0c8cb9759ce477e8649f07c0099d4fb42dcd6a6e",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "client: system language detection, refs #172",
+            "committed_on": "2013-03-27T22:28:52Z"
+        },
+        {
+            "revision": "532923bae5bb5691217459f5af31f0118750b408",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "client: enabled translation using tinygettext, refs #172",
+            "committed_on": "2013-04-01T10:37:03Z"
+        },
+        {
+            "revision": "fb109e2109bd4e2405fa74945f240af1d622a311",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "mod: enabled menu translation, refs #172",
+            "committed_on": "2013-04-01T15:35:58Z"
+        },
+        {
+            "revision": "e4a7ca4b02eff31c8e0034a2dd14f4cbd20f7c4c",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "client: removed obsolete localization code and files, refs #172",
+            "committed_on": "2013-04-01T15:46:08Z"
+        },
+        {
+            "revision": "3222ca6f1c164c35945e698de63d2b7c86ad1027",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "client: workaround for the default language, refs #172",
+            "committed_on": "2013-04-01T18:41:00Z"
+        },
+        {
+            "revision": "4ed1c3a02cb5dcda2c538a20260e3558472f166d",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "general: added a script for extraction of translatable strings, refs #172",
+            "committed_on": "2013-04-01T21:48:39Z"
+        },
+        {
+            "revision": "a97c600b7dbee49137158337441c5ca7fc608c0a",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "misc: tinygettext sources are located in a submodule, refs #172",
+            "committed_on": "2013-04-02T13:39:03Z"
+        },
+        {
+            "revision": "f9545d78abbf275b53e7a2f822c0097d74338032",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "general: allow language change after the game start, refs #172",
+            "committed_on": "2013-04-04T17:11:52Z"
+        },
+        {
+            "revision": "7e347842351f5eb17ed55830878fb7e39218f8a2",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "ui: removed language specific menus, refs #172",
+            "committed_on": "2013-04-04T18:24:58Z"
+        },
+        {
+            "revision": "24dea043718691fe9fad949a5de052ed1afe816a",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "client: first step in separation of mod and client translations, refs #172",
+            "committed_on": "2013-04-05T15:58:29Z"
+        },
+        {
+            "revision": "3f2ad5373e47220d15bda92ac638ae7914a10d15",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "client: override tinygettext log functions to reduce spam, refs #172",
+            "committed_on": "2013-04-05T21:19:26Z"
+        },
+        {
+            "revision": "49e1b655cad4305fabd712da79c543fe7bcac439",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "client: fixed FEATURE_GETTEXT compilation, refs #172",
+            "committed_on": "2013-04-05T22:05:56Z"
+        },
+        {
+            "revision": "251cd18e838208ac0626fc102d193ae97f727c23",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "client: translations are loaded from pk3 files. Patch by Unvanquished, refs #172",
+            "committed_on": "2013-04-07T20:56:53Z"
+        },
+        {
+            "revision": "ddef33a6abde537167ab234ccdd76f6476bc5103",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "client: updated POT catalogue and Czech translation, refs #172",
+            "committed_on": "2013-04-07T21:47:33Z"
+        },
+        {
+            "revision": "4f8e847bfeb8ad059d7427dae3f037598d1af1e2",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "misc: moved translation files to pak3.pk3, refs #172",
+            "committed_on": "2013-04-08T07:45:10Z"
+        },
+        {
+            "revision": "65a9af3be7c628cdaefad411bcc8e5aab295baef",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "misc: updated Czech translation, refs #172",
+            "committed_on": "2013-04-08T10:17:58Z"
+        },
+        {
+            "revision": "f03406bfb4b33cc67c93ea8ce846fddfb1125f2d",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "client: further compilation fix on Windows, refs #172",
+            "committed_on": "2013-04-09T14:42:00Z"
+        },
+        {
+            "revision": "ba135f9cb146d73f342f1043c97fc4a199bdd6aa",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "misc: compile only required tinygettext sources, refs #172",
+            "committed_on": "2013-04-09T15:58:28Z"
+        },
+        {
+            "revision": "e7acb39f63d63c28230ff0e16ae2dd3c767751ae",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "misc: polish translation refs #172",
+            "committed_on": "2013-04-11T11:43:13Z"
+        },
+        {
+            "revision": "a1a6c48be5ca857657268f73b688fd2bc325fd69",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "misc: updated polish translation, refs #172",
+            "committed_on": "2013-04-11T11:53:25Z"
+        },
+        {
+            "revision": "5e35ee8e4f3fddd1f7eb7dde6210492ccc09209b",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "misc: next update for pl, refs #172",
+            "committed_on": "2013-04-11T22:59:43Z"
+        },
+        {
+            "revision": "898b03d8fc83557bbdd48c86f3ac0b3f3b9a4870",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "misc: update voice chat for pl, refs #172",
+            "committed_on": "2013-04-12T15:53:12Z"
+        },
+        {
+            "revision": "5476313174f2dab7492488bedd34f20516c40c17",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "misc: big update for example pot, refs #172",
+            "committed_on": "2013-04-13T21:35:30Z"
+        },
+        {
+            "revision": "8e43c66c7b408e77cb28cef98177197ee1d8b814",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "misc: update for translation refs #172",
+            "committed_on": "2013-04-17T17:46:52Z"
+        },
+        {
+            "revision": "9fd7a23f910884ce7b05b809d3171e5651131a4f",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "misc: more translations refs #172",
+            "committed_on": "2013-04-18T10:38:19Z"
+        },
+        {
+            "revision": "1cb7d5919ba355084682ad693fac1fef6e0cd118",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "misc: added prepare to fight, refs #172",
+            "committed_on": "2013-04-18T18:44:12Z"
+        },
+        {
+            "revision": "f776e8c21491f652b19f6390d8648fc8b71dce9a",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "misc: added fight, refs #172",
+            "committed_on": "2013-04-19T12:09:59Z"
+        },
+        {
+            "revision": "dd293b0789588e0fef2a09292536ac40c6723427",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "misc: update, refs #172",
+            "committed_on": "2013-04-21T08:51:43Z"
+        },
+        {
+            "revision": "d1c2fc4cce685e80f568a2659ee6b8050968dbf8",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "misc: small fix, refs #172",
+            "committed_on": "2013-04-21T10:33:17Z"
+        },
+        {
+            "revision": "421cd84af0e988ce0cb63286b2b3e5ae4b698b32",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "misc: update, refs #172",
+            "committed_on": "2013-04-21T18:22:17Z"
+        },
+        {
+            "revision": "f84ac6da5e2d91daa87c82f094dacb14d9aa5fe2",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "misc: more missing translations, refs #172",
+            "committed_on": "2013-04-22T22:48:56Z"
+        },
+        {
+            "revision": "ec760f4690681e763ffbd5a85d29d398f4eacd36",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "misc: update, refs #172",
+            "committed_on": "2013-04-23T19:56:06Z"
+        },
+        {
+            "revision": "5f07cfa0ec87f4e490f1b144ee9760ee07f24ada",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "misc: update for translation, refs #172",
+            "committed_on": "2013-04-24T12:11:46Z"
+        },
+        {
+            "revision": "9333ba0fd1bfc93cfd3036c4a0668366ca0a8bb7",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "misc; update, refs #172",
+            "committed_on": "2013-04-28T14:41:29Z"
+        },
+        {
+            "revision": "7077800733ddc7303e66b45636126a6a093d8596",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "misc: small update, refs #172",
+            "committed_on": "2013-05-05T23:09:52Z"
+        },
+        {
+            "revision": "b31d762cf1033b7ca96eae76ebc237859a46d919",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "misc: removed duplicate language debug cvar, refs #172",
+            "committed_on": "2013-06-05T12:57:12Z"
+        },
+        {
+            "revision": "7f34626ae7e389965d1aa57f28a2302d136e55cd",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "misc: update for few sentences, refs #172",
+            "committed_on": "2013-06-27T18:43:46Z"
+        },
+        {
+            "revision": "144004046aed16cfcb276d5a5c6f4560c5cbfa46",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "misc: update for translation, refs #172",
+            "committed_on": "2013-07-06T18:24:13Z"
+        },
+        {
+            "revision": "164cfd6c9acf8f99bd076283a9f2d29b9a85e1ad",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "misc: update for etlegacy_mod.pot and pl.po, refs #172",
+            "committed_on": "2013-07-06T21:15:27Z"
+        },
+        {
+            "revision": "85f91da5c720fc8fecf655e9f7c4f47474b0dfff",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "misc: small update, refs #172",
+            "committed_on": "2013-07-06T22:44:06Z"
+        },
+        {
+            "revision": "e1323f8e228c6c9589ed1649ffe262453b19ca0f",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "misc: update for etlegacy_mod.pot and pl.po, refs #172",
+            "committed_on": "2013-07-08T10:07:16Z"
+        },
+        {
+            "revision": "278f6591e1c5845d7753a061042270ee07e510aa",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "misc: missing translations for vanilla maps, refs #172",
+            "committed_on": "2013-07-08T19:00:13Z"
+        },
+        {
+            "revision": "a3781efc19c0a2b5652a494fd8e1e5296d9da005",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "cgame: allow to translate popup windows, refs #172",
+            "committed_on": "2013-07-09T13:21:50Z"
+        },
+        {
+            "revision": "f50c8939122fc9c299dfa42be19db9c079a2f82e",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "misc: updated cs.po and de.po, refs #172",
+            "committed_on": "2013-07-09T13:24:55Z"
+        },
+        {
+            "revision": "bffbe8bcefcb71310e5f126ac984224efe2e5ef8",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "misc: fast fix, refs #172",
+            "committed_on": "2013-07-09T15:21:59Z"
+        },
+        {
+            "revision": "1ac9891857cf3be6516d2fd8277d6b2f66b55147",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "misc: small update, refs #172",
+            "committed_on": "2013-07-10T15:49:26Z"
+        },
+        {
+            "revision": "3756cfa6b47b764b39128bb90bfa360c4fc582fa",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "misc: allow to translate You will spawn as... , refs #172",
+            "committed_on": "2013-07-10T19:40:23Z"
+        },
+        {
+            "revision": "f50019b24f47cc6e910feef1110879060f59aac2",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "misc: small update, refs #172",
+            "committed_on": "2013-07-16T11:36:38Z"
+        },
+        {
+            "revision": "d3d6191ed3d96e6e1539999b22ec4f6988e8550b",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "misc: small update, refs #172",
+            "committed_on": "2013-07-18T21:23:29Z"
+        },
+        {
+            "revision": "4658a195d7eec084c8c9cdaee1671ddd69f0ce52",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "misc: started finnish translations, refs #172",
+            "committed_on": "2013-07-23T17:27:39Z"
+        },
+        {
+            "revision": "0c5f408cea2837a0599c25925c05d421aa848ef0",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "misc: fin updates, refs #172",
+            "committed_on": "2013-07-23T18:40:34Z"
+        },
+        {
+            "revision": "b0bc754487c70c673e95155ad7cfe2d0a0fcef85",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "misc: german server browser review refs #172",
+            "committed_on": "2013-07-23T23:06:33Z"
+        },
+        {
+            "revision": "388083cf8208bd580bffd5d3083a19343dbcb161",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "misc: fi additions, refs #172",
+            "committed_on": "2013-07-24T08:49:58Z"
+        },
+        {
+            "revision": "2a0fc113a3fe836c8818d278147f94d42e49f0fb",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "client: translation updates refs #172",
+            "committed_on": "2013-07-31T06:30:11Z"
+        },
+        {
+            "revision": "e3ef3e0f43fcb8990e239f5890c442caf666f4cd",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "client: translations - use both client and mod dictionary separately for\nreal refs #172, start of translations for keys (see\nui->options->controls).",
+            "committed_on": "2014-09-02T22:37:43Z"
+        },
+        {
+            "revision": "db79784e6dfc21da833494c419aba53213dced5b",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "client: cvar cl_language/debug renamed to cl_lang/debug so we don't\ninterfere with mods using int based cvar refs #172",
+            "committed_on": "2014-09-02T23:29:21Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 958,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-01-12T15:24:56Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Current localisation system is horrible. Every ui file gets duplicated as many times as there are supported languages. Gettext would store translations in one place, it is a de facto standard for localisation of multi platform open source software, it is flexible, ... and it has a few thousand other advantages compared to the current system we have.\r\n\r\nPlus there are several easy to use editors for the PO format:\r\n\r\n!http://www.poedit.net/screenshots/osx.png!\r\n\r\nOr more complicated ones with tons of features like \"Lokalize\":http://userbase.kde.org/Lokalize",
+                    "new_value": "Current localisation system is horrible. Every ui file gets duplicated as many times as there are supported languages. Gettext would store translations in one place, it is a de facto standard for localisation of multi platform open source software, it is flexible, ... and it has a few thousand other advantages compared to the current system we have.\r\n\r\nPlus there are several easy to use editors for the PO format:\r\n\r\n!http://www.poedit.net/screenshots/osx.png!\r\n\r\nOr more complicated ones with tons of features like \"Lokalize\":http://userbase.kde.org/Lokalize\r\n\r\nWe could also add notes to localisation strings, so translators would know the context in which the string is used and it would make it easier to translate."
+                }
+            ]
+        },
+        {
+            "id": 1171,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-02-14T14:31:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 1358,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-03-18T12:15:51Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1467,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-04-01T15:36:52Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "4",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "30"
+                }
+            ]
+        },
+        {
+            "id": 1468,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-04-01T15:37:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "tracker_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 1508,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "This feature is not yet complete, but it should be usable enough to be merged into master. Could someone test the 'translation' branch on Windows? Don't forget to run @git submodule update@, enable @FEATURE_GETTEXT@ in CMake and then run @./etl +set cl_language cs@\r\n\r\nh3. Missing features\r\n\r\nh4. Plural forms\r\n\r\n<pre>\r\nmsgid \"Jan drank %s beer.\"\r\nmsgid_plural \"Jan drank %s beers.\"\r\nmsgstr[0] \"Jan vypil %s pivo.\"\r\nmsgstr[1] \"Jan vypil %s piva.\"\r\nmsgstr[2] \"Jan vypil %s piv.\" \r\n</pre>\r\n\r\nWould be nice, but we would have to add another trap for this which would break compatibility with older mods.\r\n\r\nh4. Gender forms\r\n\r\nIt is possible to do, but it would make things a bit more complicated. Maybe in the future.\r\n\r\nh4. Unicode\r\n\r\n... worth a separate ticket. We could implement it for the console, Legacy mod and any newer mods which would decide to support it. It would be disabled for older mods because of compatibility.\r\n",
+            "created_on": "2013-04-08T07:30:22Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "30",
+                    "new_value": "60"
+                }
+            ]
+        },
+        {
+            "id": 1509,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "{TODO}\r\n\r\n* -client and mod translations are now fully separated.- Make a use of it.\r\n* there are some untranslatable strings such as peoples' names and other names which will be added to the missing_translations.txt and pollute PO files. I don't think anything can be done about it except replace them with DO-NOT-TRANSLATE string which would be omitted from @MissingTranslation()@",
+            "created_on": "2013-04-08T11:11:59Z",
+            "details": []
+        },
+        {
+            "id": 1723,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "{FIXME} \r\n* german 'Umlaute' are not shown properly - fix encoding issues\r\n* -there is a hidden '.svn' folder in libs/tinygettext which shouldn't be there?-\r\n* -Adjust menu files - they are still using old cvar values of cl_language (1...n)-\r\n* -cvar cl_language 2.60 compatibility, common mods use int not short locales-\r\n* -remove invalid chars from tinygettext (f.e. see dictionary.cpp line 23)-\r\n\r\n\f\f\f\f\r\n\f\f",
+            "created_on": "2013-06-03T10:44:31Z",
+            "details": []
+        },
+        {
+            "id": 1886,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-09-02T16:37:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "7",
+                    "new_value": "9"
+                }
+            ]
+        },
+        {
+            "id": 2064,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-10-12T11:20:22Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "195",
+                    "new_value": "translation.cfg"
+                }
+            ]
+        },
+        {
+            "id": 2100,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-10-18T14:59:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "9",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 2681,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-01-02T08:51:30Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 3423,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Closed. See related issues. ",
+            "created_on": "2014-09-02T20:38:20Z",
+            "details": []
+        },
+        {
+            "id": 3426,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-09-02T21:27:34Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "60",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3427,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2014-09-02T22:46:22Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 1,
+            "name": "Radegast"
+        },
+        {
+            "id": 9,
+            "name": "Mateos"
+        },
+        {
+            "id": 4,
+            "name": "morsik"
+        },
+        {
+            "id": 110,
+            "name": "Harlekin"
+        }
+    ],
+    "time_entries": null,
+    "id": 172,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "assigned_to": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Backport Gettext (Tinygettext) support from Unvanquished",
+    "description": "Current localisation system is horrible. Every ui file gets duplicated as many times as there are supported languages. Gettext would store translations in one place, it is a de facto standard for localisation of multi platform open source software, it is flexible, ... and it has a few thousand other advantages compared to the current system we have.\r\n\r\nPlus there are several easy to use editors for the PO format:\r\n\r\n!http://www.poedit.net/screenshots/osx.png!\r\n\r\nOr more complicated ones with tons of features like \"Lokalize\":http://userbase.kde.org/Lokalize\r\n\r\nWe could also add notes to localisation strings, so translators would know the context in which the string is used and it would make it easier to translate.",
+    "start_date": "2013-01-12",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-01-12T15:22:10Z",
+    "updated_on": "2014-09-02T22:46:22Z",
+    "closed_on": "2014-09-02T22:46:22Z"
+}

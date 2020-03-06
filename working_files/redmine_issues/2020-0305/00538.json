@@ -1,0 +1,235 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 139,
+            "issue_id": 588,
+            "issue_to_id": 538,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 147,
+            "issue_id": 638,
+            "issue_to_id": 538,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 148,
+            "issue_id": 604,
+            "issue_to_id": 538,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "53bf1e8f878424cff2018e8e14f7e48f59bb2e87",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "server: warn admins when total CS is near limit refs #538",
+            "committed_on": "2014-09-28T22:01:12Z"
+        },
+        {
+            "revision": "18a370f49c273892727f101cc855b22cd3a31ed7",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "server: fix CS warning (test commited), separate warning for oversized\nsysteminfo CS refs #538",
+            "committed_on": "2014-09-29T18:51:31Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3462,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "I'd go for Option A, localhost crash happens with not that many PK3s, but when you have even more it can crash the client on a map load...\r\n\r\nSee:\r\nhttp://forums.warchest.com/showthread.php/39844-Broken-ETPub-based-mods\r\n\r\nBasically \"couldn't reopen <insert main game or mod PK3 file>\".\r\n\r\nRegarding option B, I don't think it's a good idea, but exclude any file without a BSP or SCRIPT file?",
+            "created_on": "2014-09-18T12:08:04Z",
+            "details": []
+        },
+        {
+            "id": 3463,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-09-18T17:33:04Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "I've had a crash when I did start a listen server by the menu. This happens when game pathes are populated with tons of pk3 files. \r\nActually there is a direct known limit: the size of CS1 (1024) \r\nCS1 stores all the pk3 information and when this info size is over 1024 chars we are in trouble. I my case the pk3 including our campaigns wasn't loaded. Since we don't know in which order all the pk3 info is put into CS1 and any other pk3 might be affected too - this error is flexible. For example: A missing shader data pk3 info will cause gfx glitches.\r\n\r\nOption A:\r\nPrint a warning/don't start the game when the real used size of CS1 is reaching our limit\r\n\r\nOption B:\r\nAdd an additional CS when CS1 is overloaded ... This increases the configstring in general :/  (network!) and might break 2.60 compatibility. ",
+                    "new_value": "I've had a crash when I did start a listen server by the menu. This happens when game pathes are populated with tons of pk3 files. \r\nActually there is a direct known limit: the size of CS1 (8192) \r\nCS1 stores all the pk3 information and when this info size is over 8192 chars we are in trouble. I my case the pk3 including our campaigns wasn't loaded. Since we don't know in which order all the pk3 info is put into CS1 and any other pk3 might be affected too - this error is flexible. For example: A missing shader data pk3 info will cause gfx glitches.\r\n\r\nOption A:\r\nPrint a warning/don't start the game when the real used size of CS1 is reaching our limit\r\n\r\nOption B:\r\nAdd an additional CS when CS1 is overloaded ... This increases the configstring in general :/  (network!) and might break 2.60 compatibility. "
+                }
+            ]
+        },
+        {
+            "id": 3474,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-09-20T16:32:58Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "588"
+                }
+            ]
+        },
+        {
+            "id": 3767,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-20T16:29:23Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "638"
+                }
+            ]
+        },
+        {
+            "id": 3770,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-20T16:35:21Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "604"
+                }
+            ]
+        },
+        {
+            "id": 7026,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-01-24T10:50:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Too many pk3s in path cause trouble",
+                    "new_value": "Too many pk3s in path cause trouble/server crash"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 7027,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-01-24T10:52:33Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "I've had a crash when I did start a listen server by the menu. This happens when game pathes are populated with tons of pk3 files. \r\nActually there is a direct known limit: the size of CS1 (8192) \r\nCS1 stores all the pk3 information and when this info size is over 8192 chars we are in trouble. I my case the pk3 including our campaigns wasn't loaded. Since we don't know in which order all the pk3 info is put into CS1 and any other pk3 might be affected too - this error is flexible. For example: A missing shader data pk3 info will cause gfx glitches.\r\n\r\nOption A:\r\nPrint a warning/don't start the game when the real used size of CS1 is reaching our limit\r\n\r\nOption B:\r\nAdd an additional CS when CS1 is overloaded ... This increases the configstring in general :/  (network!) and might break 2.60 compatibility. ",
+                    "new_value": "*Update: This file is kept as reminder - we can't fix this*\r\n\r\n*You should get a warning at start when pk3 limit is reached.*\r\n\r\nI've had a crash when I did start a listen server by the menu. This happens when game pathes are populated with tons of pk3 files. \r\nActually there is a direct known limit: the size of CS1 (8192) \r\nCS1 stores all the pk3 information and when this info size is over 8192 chars we are in trouble. I my case the pk3 including our campaigns wasn't loaded. Since we don't know in which order all the pk3 info is put into CS1 and any other pk3 might be affected too - this error is flexible. For example: A missing shader data pk3 info will cause gfx glitches.\r\n\r\nOption A:\r\nPrint a warning/don't start the game when the real used size of CS1 is reaching our limit\r\n\r\nOption B:\r\nAdd an additional CS when CS1 is overloaded ... This increases the configstring in general :/  (network!) and might break 2.60 compatibility. "
+                }
+            ]
+        },
+        {
+            "id": 7691,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-01-26T15:41:12Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Too many pk3s in path cause trouble/server crash",
+                    "new_value": "*Reminder* Too many pk3s in path cause trouble/server crash"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 538,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 5,
+        "name": "Server"
+    },
+    "fixed_version": {
+        "id": 4,
+        "name": "ALL"
+    },
+    "subject": "*Reminder* Too many pk3s in path cause trouble/server crash",
+    "description": "*Update: This file is kept as reminder - we can't fix this*\r\n\r\n*You should get a warning at start when pk3 limit is reached.*\r\n\r\nI've had a crash when I did start a listen server by the menu. This happens when game pathes are populated with tons of pk3 files. \r\nActually there is a direct known limit: the size of CS1 (8192) \r\nCS1 stores all the pk3 information and when this info size is over 8192 chars we are in trouble. I my case the pk3 including our campaigns wasn't loaded. Since we don't know in which order all the pk3 info is put into CS1 and any other pk3 might be affected too - this error is flexible. For example: A missing shader data pk3 info will cause gfx glitches.\r\n\r\nOption A:\r\nPrint a warning/don't start the game when the real used size of CS1 is reaching our limit\r\n\r\nOption B:\r\nAdd an additional CS when CS1 is overloaded ... This increases the configstring in general :/  (network!) and might break 2.60 compatibility. ",
+    "start_date": "2014-05-08",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-05-08T16:28:43Z",
+    "updated_on": "2019-01-26T15:41:12Z"
+}

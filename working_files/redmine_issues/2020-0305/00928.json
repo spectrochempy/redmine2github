@@ -1,0 +1,119 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 5949,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2016-08-30T11:02:19Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "21",
+                    "new_value": "17"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 5952,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Have you had a look at et.trap_GetConfigstring(tonumber(et.CS_FIRETEAMS ) + ft_nr) \r\n\r\nYou should find all the fireteam info inside these configstrings - see csinfo cmd.",
+            "created_on": "2016-08-30T12:56:02Z",
+            "details": []
+        },
+        {
+            "id": 5957,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-08-31T13:56:35Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 928,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 392,
+        "name": "Timothy"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "Add Lua function to retrieve fireteam info",
+    "description": "Currently it is not possible to retrieve a player's fireteam status through Lua functions. However, to mimic !listplayers (for example) this could be helpful.",
+    "start_date": "2016-08-30",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2016-08-30T10:57:03Z",
+    "updated_on": "2016-08-31T13:56:35Z",
+    "closed_on": "2016-08-31T13:56:35Z"
+}

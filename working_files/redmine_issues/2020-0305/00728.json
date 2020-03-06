@@ -1,0 +1,227 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 181,
+            "issue_id": 728,
+            "issue_to_id": 541,
+            "relation_type": "duplicates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 4107,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "",
+            "created_on": "2014-12-15T18:33:19Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "duplicated",
+                    "new_value": "707"
+                }
+            ]
+        },
+        {
+            "id": 4109,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "",
+            "created_on": "2014-12-15T18:34:18Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "duplicated",
+                    "old_value": "707"
+                }
+            ]
+        },
+        {
+            "id": 4111,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "",
+            "created_on": "2014-12-15T18:34:31Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "707"
+                }
+            ]
+        },
+        {
+            "id": 4113,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-12-15T19:27:17Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "old_value": "707"
+                }
+            ]
+        },
+        {
+            "id": 4116,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Can't reproduce. Possibly Windows 7 related issue again?\r\n\r\n-*S",
+            "created_on": "2014-12-16T13:46:41Z",
+            "details": []
+        },
+        {
+            "id": 4121,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Cannot reproduce either on Win7.",
+            "created_on": "2014-12-16T19:16:29Z",
+            "details": []
+        },
+        {
+            "id": 4122,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Toggling both ways at runtime might cause side effects. sv_protect should be latched,",
+            "created_on": "2014-12-16T20:07:01Z",
+            "details": []
+        },
+        {
+            "id": 4132,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "Attack on my router caused it",
+            "created_on": "2014-12-17T16:25:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 4133,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2014-12-17T16:33:07Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "duplicates",
+                    "new_value": "541"
+                }
+            ]
+        },
+        {
+            "id": 4135,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "sv_protect is indeed broken. See #541",
+            "created_on": "2014-12-17T16:34:01Z",
+            "details": []
+        },
+        {
+            "id": 4136,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "In this case sv_protect did a good job. See affected port.",
+            "created_on": "2014-12-17T16:39:39Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "6"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 728,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 13,
+        "name": "RaFaL"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Issue with sv_protect [1/2] on Windows 7",
+    "description": "It keep spamming server console or normal one depends which way you are hosting a server with this\r\n\r\n/sv_protect 1\r\nSVC_Status: rate limit from 178.32.41.213:2980 exceeded, dropping request\r\nSVC_Status: rate limit from 178.32.41.213:2980 exceeded, dropping request\r\nSVC_Status: rate limit from 178.32.41.213:2980 exceeded, dropping request\r\nSVC_Status: rate limit from 178.32.41.213:2980 exceeded, dropping request\r\nSVC_Status: rate limit from 178.32.41.213:2980 exceeded, dropping request\r\nSVC_Status: rate limit from 178.32.41.213:2980 exceeded, dropping request\r\nSVC_Status: rate limit from 178.32.41.213:2980 exceeded, dropping request\r\n....\r\n]\\sv_protect 2\r\nPossible DRDoS attack to address 178.32.41.213:2980, ignoring getinfo/getstatus connectionless packet\r\nPossible DRDoS attack to address 178.32.41.213:2980, ignoring getinfo/getstatus connectionless packet\r\nPossible DRDoS attack to address 178.32.41.213:2980, ignoring getinfo/getstatus connectionless packet\r\nPossible DRDoS attack to address 178.32.41.213:2980, ignoring getinfo/getstatus connectionless packet\r\nPossible DRDoS attack to address 178.32.41.213:2980, ignoring getinfo/getstatus connectionless packet\r\n...",
+    "start_date": "2014-12-15",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Windows"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-12-15T18:31:41Z",
+    "updated_on": "2014-12-17T16:39:39Z",
+    "closed_on": "2014-12-17T16:25:00Z"
+}

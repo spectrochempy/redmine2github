@@ -1,0 +1,123 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "4c1f9b37097ada6c1f216ac9cd5d99de4eaa90ba",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed disconnected icon and never show in demo, fixes #474",
+            "committed_on": "2014-01-05T08:39:30Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2750,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-01-05T08:02:48Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "21",
+                    "new_value": "16"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 2751,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Thx Saukko. Both the size of the icon and the fact that it shouldn't ever display in demo are fixed now.",
+            "created_on": "2014-01-05T08:41:14Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 474,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "Issue with 0,1 timescale when watching a demo",
+    "description": "See the picture to see what happens when you set timescale to 0,1 while watching a demo.\r\n\r\n-*S",
+    "start_date": "2014-01-05",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-01-05T03:38:46Z",
+    "updated_on": "2014-01-05T08:41:14Z",
+    "closed_on": "2014-01-05T08:41:14Z"
+}

@@ -1,0 +1,131 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 4638,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Can't see point of this. Lua is widely used in ET world. And if you know basics of any language, you should easily learn Lua.",
+            "created_on": "2015-02-18T21:30:11Z",
+            "details": []
+        },
+        {
+            "id": 4639,
+            "user": {
+                "id": 15,
+                "name": "muessli"
+            },
+            "notes": "How can i get access ETL via Lua?\r\nIs there any Docu for Beginners?",
+            "created_on": "2015-02-18T21:59:16Z",
+            "details": []
+        },
+        {
+            "id": 4640,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "http://wolfwiki.anime.net/index.php/ETPro:Lua_Mod_API\r\nhttp://mygamingtalk.com/wiki/Silent_Lua\r\nhttp://lua.gts-stolberg.de/en/?uml=1\r\nhttp://www.lua.org/pil/contents.html\r\n\r\nRegarding client side implementation: http://dev.etlegacy.com/boards/1/topics/1513?r=1514#message-1514",
+            "created_on": "2015-02-18T22:02:25Z",
+            "details": []
+        },
+        {
+            "id": 4641,
+            "user": {
+                "id": 15,
+                "name": "muessli"
+            },
+            "notes": "thx :-)",
+            "created_on": "2015-02-18T22:13:55Z",
+            "details": []
+        },
+        {
+            "id": 4642,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "There is a python 2 scripting implementation available at https://github.com/Ododo/Pyet2 by Ododo. It should be possible to use it with Legacy mod (see readme of Pyet2).\r\n\r\nThere are no plan to integrate python to et:l codebase as of now - if we do, we'd probably prefer to deal with Python3 instead.",
+            "created_on": "2015-02-18T22:31:35Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "21"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "17"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 815,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 15,
+        "name": "muessli"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "Client Side Python",
+    "description": "Is there any Plan to intergrate Python such as Lua?\r\n(I am just learning Python)\r\nmuessli",
+    "start_date": "2015-02-18",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-02-18T21:19:48Z",
+    "updated_on": "2015-02-18T22:31:35Z",
+    "closed_on": "2015-02-18T22:31:35Z"
+}

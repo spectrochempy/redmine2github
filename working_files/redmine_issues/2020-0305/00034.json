@@ -1,0 +1,244 @@
+{
+    "children": [
+        {
+            "id": 40,
+            "tracker": {
+                "id": 2,
+                "name": "Feature"
+            },
+            "subject": "Backport AVI recording from ET-Xreal"
+        }
+    ],
+    "attachments": null,
+    "relations": [
+        {
+            "id": 29,
+            "issue_id": 115,
+            "issue_to_id": 34,
+            "relation_type": "blocks",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "0596e048fa96b5aff6db4b02da2e26edbfaece93",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "premake: added option to use OGG Vorbis codec (--with-ogg), refs #34",
+            "committed_on": "2012-04-28T12:31:51Z"
+        },
+        {
+            "revision": "26af6eca2f8223e38ea61eed8dd322fc8ad528cc",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: playsound command from ETPub/NQ refs #34",
+            "committed_on": "2012-11-12T16:20:43Z"
+        },
+        {
+            "revision": "fad21543cbdbdb68f7a27c58e844eb1704d2bd59",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "client: merged and modified S_Play_f function based on\nioquke3/Ensiform's patch refs #34 NOTE: we no longer correct files w/o\nextension (forced to wav) - if there are issues with map/custom sounds\nlet us know!",
+            "committed_on": "2012-11-24T13:06:54Z"
+        },
+        {
+            "revision": "13f10307164b299d04fbb0c9cd8d917c2c7ad9c6",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: ET sounds are not compressed refs #34",
+            "committed_on": "2012-12-05T22:58:45Z"
+        },
+        {
+            "revision": "09acb257103ea7e2b0f7b1e0fda2379d04663b72",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "ui: ET sounds are not compressed refs #34",
+            "committed_on": "2013-01-15T08:42:22Z"
+        },
+        {
+            "revision": "cbad2b5bfe5e58b7ca96572755b15d90198952ad",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame/ui: pass the compressed param for register sound syscalls refs #34",
+            "committed_on": "2013-01-16T01:42:42Z"
+        },
+        {
+            "revision": "139b5afe5e68a4b6494a5a2458697a1160ad8348",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "misc: removed readline support from Lua, added OGG libraries for Windows, fixes #115, refs #34",
+            "committed_on": "2013-01-24T16:36:16Z"
+        },
+        {
+            "revision": "9af53da02ece22ebe67497e1d8b5a654e9d904c3",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "client: ogg vorbis is armed now refs #34",
+            "committed_on": "2013-01-31T14:39:05Z"
+        },
+        {
+            "revision": "ef1570734d1da1acc330efd69a1a3e475a97b090",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "misc: FEATURE OGG VORBIS enabled by default refs #34",
+            "committed_on": "2013-01-31T17:50:16Z"
+        },
+        {
+            "revision": "e3d315b56e32db9b35a19ed42ab195f2333f2fb0",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: added a warning for non wav sounds refs #34",
+            "committed_on": "2013-02-18T22:07:39Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 517,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "There are MP3 decoders licensed under GPL:\n\nhttp://www.underbit.com/products/mad/\n\nhttp://www.gamedev.net/topic/328904-mp3-decoder/",
+            "created_on": "2012-11-13T15:54:00Z",
+            "details": []
+        },
+        {
+            "id": 519,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "",
+            "created_on": "2012-11-13T16:06:52Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Adding support of compressed file formats ?",
+                    "new_value": "Adding support of compressed file formats?"
+                }
+            ]
+        },
+        {
+            "id": 971,
+            "user": {
+                "id": 7,
+                "name": "TheDushan"
+            },
+            "notes": "OGG Vorbis is already supported inside ET:Legacy, there is no need to add another dependence library file inside project.\r\n\r\nMy two cents :)",
+            "created_on": "2013-01-14T22:22:16Z",
+            "details": []
+        },
+        {
+            "id": 975,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "{TODO}\r\n* Test OGG vorbis\r\n\r\n<pre>\r\nsfxHandle_t trap_S_RegisterSound(const char *sample, qboolean compressed)\r\n{\r\n\tCG_DrawInformation(qtrue);\r\n\treturn syscall(CG_S_REGISTERSOUND, sample, qfalse /* compressed */);\r\n}\r\n</pre>\r\n\r\n\r\n* Find a way to use it (Legacy clients only - not 2.60 genuine)\r\nWe can't change the wav sounds from maps, voice chats etc. But we may use ogg vorbis sounds in combination with the playsound cmd.\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+            "created_on": "2013-01-15T07:54:28Z",
+            "details": []
+        },
+        {
+            "id": 1071,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Playsound itself has some issues see #186 - but ogg vorbis sounds are available via the /playsound command now. ",
+            "created_on": "2013-01-31T15:26:21Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 34,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 5,
+        "name": "2.71rc1"
+    },
+    "subject": "Adding support of compressed file formats?",
+    "description": "wav files are huuuuge ... implement support of Ogg/Vorbis, Matroska or other free formats ... mp3 might cause trouble because of licence issues. ",
+    "start_date": "2012-04-30",
+    "due_date": "2013-02-10",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-04-24T12:37:23Z",
+    "updated_on": "2013-02-10T12:45:58Z",
+    "closed_on": "2013-01-31T15:26:21Z"
+}

@@ -1,0 +1,126 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "83cd97a91db20af4579157481dc99df8605b6776",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "client: embed our new icon into the binary, fixes #221",
+            "committed_on": "2013-03-18T17:24:59Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1247,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "",
+            "created_on": "2013-03-01T14:14:51Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Ensiform: it's the WoET one not ET:L",
+                    "new_value": "Ensiform: it's the Wolf: ET one not ET:L's."
+                }
+            ]
+        },
+        {
+            "id": 1362,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-03-18T17:24:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 1363,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Applied in changeset commit:83cd97a91db20af4579157481dc99df8605b6776.",
+            "created_on": "2013-03-18T17:45:47Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 221,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "assigned_to": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 7,
+        "name": "2.71rc2"
+    },
+    "subject": "The sdl_icon.h doesn't match the actual embeded resource",
+    "description": "Ensiform: it's the Wolf: ET one not ET:L's.",
+    "start_date": "2013-02-28",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-02-28T21:15:50Z",
+    "updated_on": "2013-03-18T17:45:47Z",
+    "closed_on": "2013-03-18T17:45:47Z"
+}

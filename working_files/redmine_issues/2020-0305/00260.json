@@ -1,0 +1,239 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "eccad328788b078d40767075a3240cf4671c1cac",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "client: Fixed the issue on windows alt+* keycombinations causing an error message sound, refs #260",
+            "committed_on": "2013-08-19T10:43:24Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1380,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-03-21T10:38:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "From Ragnar http://www.etlegacy.com/boards/3/topics/343\r\n\r\n\"Alt key in combination with any other key causes the Critical Stop sound, and sometimes show the windows mouse cursor. I use this key for crouching. Splash for walking. For example, if I press Alt+W to crouch forward, it comes to this problem.\"",
+                    "new_value": "From Ragnar http://www.etlegacy.com/boards/3/topics/343\r\n\r\n\"Alt key in combination with any other key causes the Critical Stop sound, and sometimes show the windows mouse cursor. I use this key for crouching. Splash for walking. For example, if I press Alt+W to crouch forward, it comes to this problem.\r\n\r\n...this only happens when the game is in windowed mode. In the original ET this problem has not occurred.\r\n\""
+                }
+            ]
+        },
+        {
+            "id": 1440,
+            "user": {
+                "id": 145,
+                "name": "100zherBG"
+            },
+            "notes": "Remark: Some like this happen on the Linux client (not only on the Legacy mod) if my shortcut for keyboard language change is a Alt+Shift. If I press this combination in game my keboard swap to cyrrilyc and game engine repeat last valid pressed key (for example W). Other critical shortcuts for windowed mode is a shortcuts for window menu etc... Currently I use Ctrl for crouching and C for medic needle.",
+            "created_on": "2013-03-28T12:32:58Z",
+            "details": []
+        },
+        {
+            "id": 1793,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-08-01T20:47:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "From Ragnar http://www.etlegacy.com/boards/3/topics/343\r\n\r\n\"Alt key in combination with any other key causes the Critical Stop sound, and sometimes show the windows mouse cursor. I use this key for crouching. Splash for walking. For example, if I press Alt+W to crouch forward, it comes to this problem.\r\n\r\n...this only happens when the game is in windowed mode. In the original ET this problem has not occurred.\r\n\"",
+                    "new_value": "From Ragnar http://www.dev.etlegacy.com/boards/3/topics/343\r\n\r\n\"Alt key in combination with any other key causes the Critical Stop sound, and sometimes show the windows mouse cursor. I use this key for crouching. Splash for walking. For example, if I press Alt+W to crouch forward, it comes to this problem.\r\n\r\n...this only happens when the game is in windowed mode. In the original ET this problem has not occurred.\r\n\""
+                }
+            ]
+        },
+        {
+            "id": 1794,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Can't reproduce this with current code on my linux PC ... ALT is bound to crouch and ETL is started in windowed mode. No issues. Actually most OS have their own shortcuts and these are active when the game runs in a window and not full screen - the system doesn't know we don't want the OS shortcut function executed #-). This is a thingy we can't fix but a user can. Try to disable OS shortcuts and let us know if the issue still occures.\r\n",
+            "created_on": "2013-08-01T21:13:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "10"
+                }
+            ]
+        },
+        {
+            "id": 1795,
+            "user": {
+                "id": 132,
+                "name": "Ragnar"
+            },
+            "notes": "Were you actually able to reproduce this bug on Windows in the meantime?\r\n\r\n",
+            "created_on": "2013-08-01T23:11:49Z",
+            "details": []
+        },
+        {
+            "id": 1796,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-08-02T06:57:11Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 1798,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "I'll try this out today, lets see if i find the issue.",
+            "created_on": "2013-08-02T09:53:46Z",
+            "details": []
+        },
+        {
+            "id": 1821,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "This should be fixed now, at least i cannot reproduce it anymore after my last commit. Please test it out and if all is OK I will close the bug ticket.",
+            "created_on": "2013-08-19T10:49:48Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "44"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "10",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 1823,
+            "user": {
+                "id": 132,
+                "name": "Ragnar"
+            },
+            "notes": "Seems to work, thanks.",
+            "created_on": "2013-08-19T12:08:41Z",
+            "details": []
+        },
+        {
+            "id": 1828,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "",
+            "created_on": "2013-08-19T13:01:35Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 2433,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "created_on": "2013-12-14T17:58:49Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "new_value": "Windows"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 260,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "assigned_to": {
+        "id": 44,
+        "name": "Jacker"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 7,
+        "name": "2.71rc2"
+    },
+    "subject": "Alt key in combination with any other key causes the Critical Stop sound",
+    "description": "From Ragnar http://www.dev.etlegacy.com/boards/3/topics/343\r\n\r\n\"Alt key in combination with any other key causes the Critical Stop sound, and sometimes show the windows mouse cursor. I use this key for crouching. Splash for walking. For example, if I press Alt+W to crouch forward, it comes to this problem.\r\n\r\n...this only happens when the game is in windowed mode. In the original ET this problem has not occurred.\r\n\"",
+    "start_date": "2013-03-18",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Windows"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-03-18T10:31:41Z",
+    "updated_on": "2013-12-14T17:58:49Z",
+    "closed_on": "2013-08-19T13:01:35Z"
+}

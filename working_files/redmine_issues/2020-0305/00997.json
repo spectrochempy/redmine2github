@@ -1,0 +1,175 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "a5022f15e2e7df317f32317bc63e4eb2919f5be8",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: hide HUD when displaying ingame-ui, fixes #997",
+            "committed_on": "2017-02-10T09:32:46Z"
+        },
+        {
+            "revision": "317481d71f94dcdf73fd93a47dc7558b0b07b864",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: reverted hide HUD when displaying ingame-ui, refs #997\n\nThis reverts commit a5022f15e2e7df317f32317bc63e4eb2919f5be8.",
+            "committed_on": "2017-02-10T16:09:01Z"
+        },
+        {
+            "revision": "6e25c644216a1851211998643e9d9e71e79fba5f",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: reduced ingame UI windows transparency, fixes #997",
+            "committed_on": "2017-04-02T15:38:01Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 6371,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:a5022f15e2e7df317f32317bc63e4eb2919f5be8.",
+            "created_on": "2017-02-10T09:36:15Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 6381,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "{TODO}\r\n* don't hide HUD when sending message/quick message.\r\n\r\n\r\nEdit: reverted for now. This brings more issues that it solves.",
+            "created_on": "2017-02-10T13:05:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 6437,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "We could simply lessen the transparency window to improve readability.\r\n\r\nOne benefit to display the HUD along the menu is that player can see in real time when get's turned on/modified when HUD options are modified. ",
+            "created_on": "2017-02-18T15:22:16Z",
+            "details": []
+        },
+        {
+            "id": 6439,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "Yes, I think that's a good solution for now.",
+            "created_on": "2017-02-18T16:26:27Z",
+            "details": []
+        },
+        {
+            "id": 6648,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:6e25c644216a1851211998643e9d9e71e79fba5f.",
+            "created_on": "2017-04-02T15:40:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 997,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "category": {
+        "id": 15,
+        "name": "Mod UI"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "HUD text overlays with UI",
+    "description": "When you are spectator or are in limbo/respawn queue, then there is text on the left.\r\nIf you then open the menu or scoreboard, they overlay with the HUD text.\r\nIn my opinion the HUD should be removed (temporarily set /cg_draw2d to 0) when opening any UI display.\r\n\r\nI remember it also happened with the scoreboard when playing with Timo on the Legacy server some days ago, but I can't reproduce that right now.\r\nWill keep my eyes open for it.\r\n\r\nScreenshot attached.",
+    "start_date": "2017-02-09",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-02-09T21:14:55Z",
+    "updated_on": "2017-04-02T15:40:24Z",
+    "closed_on": "2017-04-02T15:40:24Z"
+}

@@ -1,0 +1,162 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 128,
+            "issue_id": 183,
+            "issue_to_id": 533,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "280bb6e31613dd59478aef55434659192cbfb90c",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "omnibot: map_restart crash fix fixes #533",
+            "committed_on": "2014-04-18T10:22:13Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3153,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-04-10T15:45:09Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "As the title says ... listen and dedicated server are affected. This might be fixed by changing the CVAR_NORESTART flag of omnibot_enable to CVAR_LATCH but we need to know why NORESTART flag is set. Finally OB lib has to be loaded/unloaded which requires a restart.\r\n\r\n",
+                    "new_value": "As the title says ... listen and dedicated servers are affected. This might be fixed by changing the CVAR_NORESTART flag of omnibot_enable to CVAR_LATCH but we need to know why NORESTART flag is set. Finally OB lib has to be loaded/unloaded which requires a restart.\r\n\r\n"
+                }
+            ]
+        },
+        {
+            "id": 3155,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-04-10T15:49:46Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "183"
+                }
+            ]
+        },
+        {
+            "id": 3160,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "In my case on my pc\r\nTested on listen server and nothing happened everything works perfectly exept difficulty option\r\nDedicated server - nothing work but no crash\r\n\"unkown command bot\"",
+            "created_on": "2014-04-15T14:14:26Z",
+            "details": []
+        },
+        {
+            "id": 3161,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Line ent->think(ent); in g_main.c/G_RunThink causes the crash on my system. I can imagine a different behaviour on different OS when a library (omnibot) is unloaded. \r\nCan anyone lese can reproduce this with current code? ",
+            "created_on": "2014-04-16T15:36:53Z",
+            "details": []
+        },
+        {
+            "id": 3163,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Applied in changeset commit:280bb6e31613dd59478aef55434659192cbfb90c.",
+            "created_on": "2014-04-18T08:51:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3164,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Note: \r\nWhen omnibot_enable 0 is set and map_restart is called bots don't leave the game self-controlled.  This avoids bot zombies:\r\n\r\n<pre>\r\nbot minbots -1; bot maxbots -1;bot kickall;set omnibot_enable 0; map_restart\r\n</pre>",
+            "created_on": "2014-04-18T09:05:39Z",
+            "details": []
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 533,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "Map_restart after omnibot_enable 0 crashes the server",
+    "description": "As the title says ... listen and dedicated servers are affected. This might be fixed by changing the CVAR_NORESTART flag of omnibot_enable to CVAR_LATCH but we need to know why NORESTART flag is set. Finally OB lib has to be loaded/unloaded which requires a restart.\r\n\r\n",
+    "start_date": "2014-04-10",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-04-10T15:44:27Z",
+    "updated_on": "2014-04-18T09:05:39Z",
+    "closed_on": "2014-04-18T08:51:05Z"
+}

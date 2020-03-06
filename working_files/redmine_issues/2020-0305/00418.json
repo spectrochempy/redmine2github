@@ -1,0 +1,150 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "a901529364ba12794e0338fda8dd0ac896650cdb",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed fireteam window size with objective or undercover icon",
+            "committed_on": "2013-11-13T23:59:58Z"
+        },
+        {
+            "revision": "bd79b79edf223ec7b75c8ce9215ee9b1b3d03b5e",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed fireteam window alignment",
+            "committed_on": "2013-11-29T18:39:28Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2356,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I fixed this bug in master branch a while ago.\r\n\r\nIf you add people/bots in the fireteam, you'll also see a totally buggy alignment: this has also been fixed in master.\r\nTicket should be closed as 'Invalid', anyone? (can't do with my account)",
+            "created_on": "2013-12-10T09:59:07Z",
+            "details": []
+        },
+        {
+            "id": 2357,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "I personally didn't see any changes to this anywhere. But if this is the case, then this ticket should be closed as 'Invalid'.\r\n\r\n-*S",
+            "created_on": "2013-12-10T11:09:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 2358,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "https://github.com/etlegacy/etlegacy/commit/bd79b79edf223ec7b75c8ce9215ee9b1b3d03b5e\r\nhttps://github.com/etlegacy/etlegacy/commit/a901529364ba12794e0338fda8dd0ac896650cdb\r\n\r\nAnd \"various smaller adjustments\" in changelog :)",
+            "created_on": "2013-12-10T11:20:22Z",
+            "details": []
+        },
+        {
+            "id": 2360,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "You can manually assign commits to a bug report if there is no \"fixes #418\" keyword in the commit message. Makes it easier to track and reference bugs.",
+            "created_on": "2013-12-10T15:10:19Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "12",
+                    "new_value": "16"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "11"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 418,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "Location text doesn't fit in the fireteam window",
+    "description": "It works normally as intended, increasing/decreasing the fireteam window according how long the location text is. But when you take an enemy uniform as a covert op, the text doesn't fill anymore due to the suit icon that appears when you got an enemy uniform.\r\n\r\n-*S",
+    "start_date": "2013-12-10",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-12-10T02:55:24Z",
+    "updated_on": "2013-12-10T15:10:19Z",
+    "closed_on": "2013-12-10T11:09:06Z"
+}

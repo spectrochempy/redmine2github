@@ -1,0 +1,196 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 5862,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-04-01T08:07:21Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 5886,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Fixed: https://github.com/etlegacy/etlegacy/commit/6f56679c185da2cf7248ffd9328747b9fbebf017",
+            "created_on": "2016-08-12T16:16:41Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "17"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 5955,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Still occures with localhost clients.",
+            "created_on": "2016-08-30T17:57:10Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "19"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 6661,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-04-10T14:41:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 6789,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-06-29T18:20:35Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 8255,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "This happens only when g_enforcemaxlives is set to \"1\" and of course when max lives are enabled.\r\n\r\nUPDATE: It indicates that it has something to do with AddMaxLivesBan function in g_client, which then calls AddIP.\r\n\r\nIn the end the warning comes from calling the function StringToFilter.\r\n\r\n-*S",
+            "created_on": "2019-05-27T05:59:22Z",
+            "details": []
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 729,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 2,
+        "name": "In Progress"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Bad filter address: localhost when Max Lives enabled",
+    "description": "As the title says. It says this around 3 times at the map start.\r\nAlso it says it when switching teams.\r\n\r\n-*S",
+    "start_date": "2014-12-17",
+    "done_ratio": 90,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-12-17T15:33:28Z",
+    "updated_on": "2019-05-27T05:59:22Z",
+    "closed_on": "2016-08-12T16:16:41Z"
+}

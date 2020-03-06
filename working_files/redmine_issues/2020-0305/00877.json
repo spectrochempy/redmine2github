@@ -1,0 +1,162 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 251,
+            "issue_id": 877,
+            "issue_to_id": 223,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "de0f0beadb72f4450a61e71930d23f5ab09de331",
+            "comments": "general: adjusted ioapi for build on FreeBSD, fixes #877",
+            "committed_on": "2015-08-27T12:26:49Z"
+        },
+        {
+            "revision": "962ccbbe047df9a582380e8a6c6f7e5038da88d1",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "general: removed wrongly committed patch, refs #877",
+            "committed_on": "2015-08-27T12:33:53Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 5239,
+            "user": {
+                "id": 2,
+                "name": "Anonymous"
+            },
+            "notes": "Applied in changeset commit:de0f0beadb72f4450a61e71930d23f5ab09de331.",
+            "created_on": "2015-08-27T12:30:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 5240,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied, thx!",
+            "created_on": "2015-08-27T12:31:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "497"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 5242,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-08-27T15:39:46Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "223"
+                }
+            ]
+        },
+        {
+            "id": 5427,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-11-23T21:51:18Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "2"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 877,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 497,
+        "name": "shu"
+    },
+    "assigned_to": {
+        "id": 497,
+        "name": "shu"
+    },
+    "category": {
+        "id": 5,
+        "name": "Server"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "Serverbuild on FreeBSD",
+    "description": "I am building the etl server on FreeBSD 10.1 where the fopen64, ftell64 and fseek64 functions do not exist, which breaks the build.\r\n\r\nWith a small addition to minizip/ioapi.h as seen in the attached patch I am able to finish the build.\r\n\r\nNow I have no idea if it is a god idea to do it like this as I have not much experience with either FreeBSD or C.",
+    "start_date": "2015-08-27",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "*BSD"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": "64-bit"
+        }
+    ],
+    "created_on": "2015-08-27T11:40:00Z",
+    "updated_on": "2015-11-23T21:51:18Z",
+    "closed_on": "2015-08-27T12:30:03Z"
+}

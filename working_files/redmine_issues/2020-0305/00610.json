@@ -1,0 +1,224 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 241,
+            "issue_id": 610,
+            "issue_to_id": 55,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "bdd295ab4ae0fa4101a80480ef32cd733a6c75aa",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "ui: started proper Doxygen documentation, refs #610",
+            "committed_on": "2014-11-06T21:03:42Z"
+        },
+        {
+            "revision": "451b398950eecffa5635343f2b6d27b886b0fc1b",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "generic: started proper Doxygen documentation, refs #610",
+            "committed_on": "2014-11-06T21:04:57Z"
+        },
+        {
+            "revision": "9d360409e0ee57c5c6059127841467870d6a4765",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "server: started proper Doxygen documentation, refs #610",
+            "committed_on": "2014-11-06T21:05:33Z"
+        },
+        {
+            "revision": "b54d30847151563d62cc080845c8771fe56716ec",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "client: started proper Doxygen documentation, refs #610",
+            "committed_on": "2014-11-06T21:06:02Z"
+        },
+        {
+            "revision": "e61c540babf0884913860ce2cf1dfe58b4054917",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "renderer: started proper Doxygen documentation, refs #610",
+            "committed_on": "2014-11-06T21:22:37Z"
+        },
+        {
+            "revision": "db35f043618d4b4f9c4628f46f6275a2d9f9841c",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "generic: started proper Doxygen documentation, refs #610",
+            "committed_on": "2014-11-06T21:22:46Z"
+        },
+        {
+            "revision": "e97cc692f42bf1d3d9749c2c63fa850c8827ac7d",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "game: started proper Doxygen documentation, refs #610",
+            "committed_on": "2014-11-06T21:22:52Z"
+        },
+        {
+            "revision": "50b81076a048a687570db2b633b0f152f289d23b",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "client: started proper Doxygen documentation, refs #610",
+            "committed_on": "2014-11-06T21:22:53Z"
+        },
+        {
+            "revision": "8b0bfa3751ef14a5a1efa123e8aa03fce9be623d",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "cgame: started proper Doxygen documentation, refs #610",
+            "committed_on": "2014-11-06T21:22:53Z"
+        },
+        {
+            "revision": "010de537d39e628399dafe87d3e42985b95e001a",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "misc: updated Doxygen configuration, refs #610",
+            "committed_on": "2014-11-06T21:23:00Z"
+        },
+        {
+            "revision": "0d94927c25cdbca6044d121cc65945971b6c98e3",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "misc: started documenting the lua api, refs #610",
+            "committed_on": "2014-11-18T09:32:55Z"
+        },
+        {
+            "revision": "8f91a439f1264a5738b39f461b78bd74839a2035",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: doxygen documentation and cleanup, refs #610",
+            "committed_on": "2015-02-12T21:50:05Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 5110,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Duplicate #55.",
+            "created_on": "2015-08-08T19:11:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "0"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "10",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 5111,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-08-08T19:11:46Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "55"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 610,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 13,
+        "name": "Documentation/Wiki"
+    },
+    "fixed_version": {
+        "id": 10,
+        "name": "N/A"
+    },
+    "subject": "Improve source code documentation",
+    "description": "Incorporate doxygen into the ET:L website and make it update upon each new commit.\r\n\r\nMove info from the Redmine wiki and create separate sections for:\r\n\r\n* Console commands\r\n* CVARS\r\n* Lua API\r\n* ...",
+    "start_date": "2014-11-06",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-06T21:06:48Z",
+    "updated_on": "2015-08-08T19:11:36Z",
+    "closed_on": "2015-08-08T19:11:36Z"
+}

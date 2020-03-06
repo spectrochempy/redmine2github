@@ -1,0 +1,172 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "c2f206a4777f86d28840018bfebc46c0092ef17b",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: notes refs #108",
+            "committed_on": "2012-11-10T15:35:08Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 477,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-11-10T15:40:52Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "cgs.eventHandling is of type qboolean but assign and used as full int.",
+                    "new_value": "cgs.eventHandling is of type qboolean but assigned and used as full int."
+                }
+            ]
+        },
+        {
+            "id": 695,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "See http://www.etlegacy.com/projects/etlegacy/repository/revisions/8b46af9032c716189458ee0f2414abfba8a705c0",
+            "created_on": "2012-11-30T12:35:18Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "68"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 696,
+            "user": {
+                "id": 68,
+                "name": "boutetnico"
+            },
+            "notes": "I made some research about the type change I made in this commit http://www.etlegacy.com/projects/etlegacy/repository/revisions/8b46af9032c716189458ee0f2414abfba8a705c0\r\n\r\n+What was changed+:  @cgs.eventHandling@ was of type @qboolean@, this was changed to @int@.\r\n\r\n+Question+: *Is it a problem?*\r\n\r\n\r\nThe only place in src/ where @cgs.eventHandling@ gets changed seems to be in:\r\n\r\n@ void CG_EventHandling(int type, qboolean fForced)@ (in cg_newDraw.c)\r\n\r\nby this line of code:\r\n\r\n@cgs.eventHandling = type;@\r\n\r\nHowever, @type@ is an integer, so changing the type of @cgs.eventHandling@ to @int@ is not a problem IMHO.",
+            "created_on": "2012-11-30T14:55:55Z",
+            "details": []
+        },
+        {
+            "id": 697,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I don't know if this is a problem ... I wasn't just sure about the switch in CG_EventHandling ... before we have had case 0/1 as input for that switch so the case of CGAME_EVENT_DEMO (f.e.) was never managed ...\n\nUpdate: There are also some if statements (line 950++) in that function which never got executed before ???\n\n-Update2: CG_EventHandling is mostly called with enum int but there is another case we have to check:-\n\n<pre>\n \tcase CG_EVENT_HANDLING:\n\t\tCG_EventHandling(arg0, qtrue);\n</pre>\n\n\n... let's discuss this on IRC ...",
+            "created_on": "2012-11-30T15:38:28Z",
+            "details": []
+        },
+        {
+            "id": 698,
+            "user": {
+                "id": 68,
+                "name": "boutetnico"
+            },
+            "notes": "I run a little test to check if a qboolean can have a value out of his range (> 1/0) :\r\n\r\n<pre>\r\n$ cat enum_test.c \r\n#include <stdio.h>\r\n\r\ntypedef enum { qtrue, qfalse} qboolean;\r\n\r\nint main() {\r\n\r\n\tqboolean b;\r\n\r\n\tb = 5;\r\n\r\n\tprintf(\"%d\\n\", b);\r\n\r\n\treturn 0;\r\n}\r\n$ gcc enum_test.c -o enum_test\r\n$ ./enum_test \r\n5\r\n</pre>\r\n\r\nSo a qboolean can have a value higher than 0/1.\r\n\r\nImho, this bug wasn't a bug. And my commit had no effect except fixing a clang warning. What do you think?",
+            "created_on": "2012-11-30T18:03:20Z",
+            "details": []
+        },
+        {
+            "id": 700,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Good to know that! ^^ Let's close this issue. Have you seen this usage of -CGAME_EVENT_SPEAKEREDITOR? That's dirty :D ",
+            "created_on": "2012-12-01T02:32:41Z",
+            "details": []
+        },
+        {
+            "id": 701,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-12-01T02:32:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 108,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "assigned_to": {
+        "id": 68,
+        "name": "boutetnico"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 5,
+        "name": "2.71rc1"
+    },
+    "subject": "Fix cgs.eventHandling",
+    "description": "cgs.eventHandling is of type qboolean but assigned and used as full int.",
+    "start_date": "2012-11-10",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-11-10T15:38:47Z",
+    "updated_on": "2012-12-01T02:32:58Z",
+    "closed_on": "2012-12-01T02:32:58Z"
+}

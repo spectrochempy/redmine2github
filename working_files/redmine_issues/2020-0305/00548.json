@@ -1,0 +1,112 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 3276,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "You should really learn to use makepkg... And behave yourself man, your attitude on the aur page is quite pitiful.\r\nYes, there's some issue since the package has been  split a few weeks ago - uninstall the old non split version first.",
+            "created_on": "2014-06-28T14:24:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "tracker_id",
+                    "old_value": "1",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "6",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3280,
+            "user": {
+                "id": 320,
+                "name": "Storm"
+            },
+            "notes": "I don't see why you had to bring that up here. I apologized already... I got too frustrated. I wanted to edit it later but there was no edit option so I couldn't. Now I noticed there is delete, so I deleted them altogether.",
+            "created_on": "2014-06-29T11:12:03Z",
+            "details": []
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 548,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 320,
+        "name": "Storm"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Arch Linux Git package: etlegacy-git and etlegacy-mod-git mutually depending on each other",
+    "description": "I was trying to upgrade from older \"etlegacy-git\", but upgrade kept failing because of dependency to \"etlegacy-mod-git\", which in turn failed to install for conflicting with \"etlegacy-git\".\r\n\r\nI removed my version of \"etlegacy-git\", and installing fresh, only to find out that I cannot install either \"etlegacy-git\" or \"etlegacy-mod-git\" because they mutually depend on each other. Dependency is listed at the install phase in PKGBUILD (my understanding of it is very minimal), it is not listed for \"makedepends\" so it only fails after compiling is done.",
+    "start_date": "2014-06-28",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-06-28T11:23:42Z",
+    "updated_on": "2014-06-29T11:12:03Z",
+    "closed_on": "2014-06-28T14:24:32Z"
+}

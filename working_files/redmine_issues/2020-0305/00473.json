@@ -1,0 +1,312 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "997d460112d62b4a7e6e3e6d0e76f38d738c3361",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: disguiseName replaced by disguisedClientNum in clientInfo_t/player\nconfigstring refs #400\n\nThis is the first step to get info about uniform owner is in fireteam of\nvictim @client-side.\nImportant: disguisedClientNum itself can't be 0 (because of slot 0)!\nand isn't always up2date because game doesn't call\nClientUserinfoChanged() each time covert ops looses disguise (see\nPW_OPS_DISGUISED = 0). This shouldn't be an issue - we only use\ndisguisedClientNum when PW_OPS_DISGUISED is 1.",
+            "committed_on": "2015-10-10T10:52:12Z"
+        },
+        {
+            "revision": "92d4b5e3f14a1a843672f5cd7222a4e5b72cdbbe",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: reset disguiseClientNum in ClientConnect, uncrustify",
+            "committed_on": "2015-10-11T06:42:01Z"
+        },
+        {
+            "revision": "dc8cf03aca5778bf6f93befe76983629be6a26e1",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: update disguised clients when uniform donator disconnects refs\n#473",
+            "committed_on": "2015-12-03T16:59:08Z"
+        },
+        {
+            "revision": "6c12e16d1fcb7c875024c55974d198e57a380372",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: better message for blew cover, refs #473",
+            "committed_on": "2015-12-03T17:42:52Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2743,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-01-04T19:06:25Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "16",
+                    "new_value": "21"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 2832,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Unlike NQ, disguised coverops can't ask for medpack/ammo to the enemy team. Unless I've missed something here, example 1 isn't an issue (in NQ, this is covops skill lvl8, \"Enemy Communications\").\r\n\r\nNote: I can't reproduce the disguised coverops talking in the enemy team chat either. As I can see it, this is working correctly in legacy.\r\n\r\nExample 2 can be fixed by updating the disguise name when the victim change his name.",
+            "created_on": "2014-01-13T10:18:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Wrong name displayed when an enemy is calling for ammo/medic",
+                    "new_value": "Update disguise name when victim change name"
+                }
+            ]
+        },
+        {
+            "id": 3035,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-02-16T11:04:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 3737,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Ok... I might have explained this horribly last time, but this is how it works.\r\n\r\nThere are three clients: Player A, Player B and Player X\r\n- Player A is an Axis covert op\r\n- Player B is an Axis medic\r\n- Player X is an Allied covert op\r\n\r\nWhen Player X has taken Player A's suit and you do v21 \"I need a medic!\" it will show Player X's location to all enemy players. So in this case Player A and Player B will hear \"I need medic!\" in Allies voice and will also see the location of the enemy covert op who has taken the suit.\r\n\r\nThe screenshot that has been attached is taken from Player B's point of view.\r\n\r\n-*S",
+            "created_on": "2014-11-19T16:03:22Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "394",
+                    "new_value": "medicneeded.jpg"
+                }
+            ]
+        },
+        {
+            "id": 5400,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I did change the code so covert ops name should be updated.",
+            "created_on": "2015-11-22T21:57:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 5441,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Confirmed. This is now working.",
+            "created_on": "2015-11-24T10:43:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 5507,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Name is lost (and not replaced) when the client the player stole the uniform from has disconnected. In this situation, we should try to keep the name instead of updating it to an empty value. ",
+            "created_on": "2015-11-28T13:17:53Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 5529,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Spyhawk wrote:\r\n>... In this situation, we should try to keep the name instead of updating it to an empty value.\r\nWhen the client is disconnected the data structure incl. name is no longer available to the other clients. We might solve this by storing disguised names in the configstring. Is it worth it? In many games you'll notice when players disconnect and the uniform gets worthless.\r\n\r\nThere is an option: In case of the uniform owner disconnects the covert ops player gets a warning like \"Your uniform is identified\" and the name is shown as \"Disguised Enemy!\" (same as for signals >= 4 ....). The uniform is still valid to open doors but known by players. Let's keep it simple.",
+            "created_on": "2015-12-01T18:13:53Z",
+            "details": []
+        },
+        {
+            "id": 5530,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "IR4T4 wrote:\r\n> Is it worth it? In many games you'll notice when players disconnect and the uniform gets worthless.\r\n\r\nNo, it isn't worth it. \r\n\r\n> There is an option: In case of the uniform owner disconnects the covert ops player gets a warning like \"Your uniform is identified\" and the name is shown as \"Disguised Enemy!\" (same as for signals >= 4 ....). The uniform is still valid to open doors but known by players. Let's keep it simple.\r\n\r\nI was actually thinking to change the name of the covops to his own player name. The other player might have disconnected, but we shouldn't explicitly reveal the disguised cover ops either. I really like the warning idea though: the covops will know he should change disguise asap.",
+            "created_on": "2015-12-01T19:03:01Z",
+            "details": []
+        },
+        {
+            "id": 5548,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "With the last commit real player name and rank should be displayed for covert ops when uniform donator is disconnected.",
+            "created_on": "2015-12-03T17:06:25Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 5549,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-12-03T17:44:10Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 473,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "Update disguise name when victim change name",
+    "description": "There are two bugs regarding with the names when it comes to the disguised enemies.\r\n\r\nIn 'Example 1' as you can see, I was Covert op as Allies and took a suit. I said \"I need a medic.\" and then I noticed with 2 other clients that it showed wrong name in the chat. Also can confirm that there's no medic icon when an enemy in disguise is asking for medic unlike if a teammate would ask medic. So there are 2 issues here.\r\n\r\nIn 'Example 2' you can see that I took a suit with \"Saukko\" and it showed my name as \"Poika\" to the enemies. This is correct. But when I changed my colours with \"Poika\" it still shows the old colours in disguise to the other players.\r\n\r\n-*S",
+    "start_date": "2014-01-04",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-01-04T18:55:14Z",
+    "updated_on": "2015-12-03T17:44:10Z",
+    "closed_on": "2015-12-03T17:44:10Z"
+}

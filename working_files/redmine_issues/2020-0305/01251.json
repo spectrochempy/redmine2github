@@ -1,0 +1,169 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "d9aeef01e6b361b6fcb806e5a5edc356f26dd62f",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed objective indicator display with low picmip, refs #536 #1251",
+            "committed_on": "2019-04-18T16:55:49Z"
+        },
+        {
+            "revision": "b9d8a9c958d25dd876a3285e53ae77a89f2057bf",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed blur on some obitiaries icon with low picmip, refs #1251",
+            "committed_on": "2019-05-03T18:24:51Z"
+        },
+        {
+            "revision": "871fa50fd87b645a60f76909d2ba0085c4667be7",
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "comments": "cgame: fix impact sound loading\n\n* impact sound loading was falining on sdl backend\n* obituaries and ft weapon icons were picmiped",
+            "committed_on": "2019-05-28T12:12:51Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7974,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-18T08:39:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "16"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 7977,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "{FIXME}\r\nLet's use this ticket to track all icons that are problematic:\r\n* -objective indicator icons (new icons only)- (fixed)\r\n* some rank icons (scoreboard)\r\n* -some obituaries icons (weapons, ..)- (fixed)\r\n* rank icons on helmets\r\n* ...",
+            "created_on": "2019-04-18T15:27:22Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Blurred and pixelated objective icons with low picmip",
+                    "new_value": "Blurred and pixelated hud icons with low picmip"
+                }
+            ]
+        },
+        {
+            "id": 7983,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "The new objective indicator icons should now be displayed correctly. I'm still unsure why the main objective icon is displayed correctly using the default `trap_R_RegisterShader()` function, or why all ranks aren't displayed correctly despite being registered with the `trap_R_RegisterShaderNoMip()` function. This doesn't make sense to me.",
+            "created_on": "2019-04-18T18:07:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "8"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 8316,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Guess we fixed what we could. Delaying to 2.78 for the rest of the issue.",
+            "created_on": "2019-06-23T11:00:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "22",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1251,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 8,
+        "name": "Confirmed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 821,
+        "name": "Bystry"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Blurred and pixelated hud icons with low picmip",
+    "description": "Same issue as previously with rank icons, this time with new objective icons. ",
+    "start_date": "2019-04-18",
+    "done_ratio": 50,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-04-18T00:53:11Z",
+    "updated_on": "2019-06-23T11:00:02Z"
+}

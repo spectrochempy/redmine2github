@@ -1,0 +1,213 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "b1c7613c8ef4ae154f096a45a3f0eaa1d66e8121",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: Lua functions G_ShaderRemap and G_ResetRemappedShaders added",
+            "committed_on": "2016-02-15T17:36:19Z"
+        },
+        {
+            "revision": "2d908b2f5ba5f8fa387f51e191c467c050397ac5",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: Lua G_ShaderRemapFlush",
+            "committed_on": "2016-02-15T17:48:52Z"
+        },
+        {
+            "revision": "4499da15379e53a11f6f0b8f4ed212799cdc63f5",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: spawning an entity in Lua refs #607",
+            "committed_on": "2016-02-15T19:12:45Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 5554,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "There is G_Spawn available in Lua. Basically there is an option to spawn ents. \r\n\r\nZelly, did you have a look at that? Sry for the late reply here ...",
+            "created_on": "2015-12-05T13:47:39Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "0"
+                }
+            ]
+        },
+        {
+            "id": 5565,
+            "user": {
+                "id": 177,
+                "name": "Zelly"
+            },
+            "notes": "It has indeed been a while since I have messed with this. I will see what I remember.\r\nI could basically only \"copy\" an entity like a med pack or even a person (stuck in a certain animation).\r\nHowever, if I remember correctly, after its spawned I wasn't able to change its origin. Also couldn't ever figure out how to make the medpack heal either.\r\nAlso I think there was a bug with either setting getting a string value from a entity fieldname (\"classname\") where it would cut the first letter(I believe it was first, might be last) I don't recall if that was still present in the legacy mod though.\r\n\r\nA lot of my issue I believe was everything I tried was trial and error, I have only a general knowledge of the actual gamecode to create an entity and what each field should be set to.\r\n\r\nhttps://bitbucket.org/zelly/lua-enhanced-server-mod/src/90f823a4ad32057e6639eacbee5c6948724a5420/LESM/EntityHandler.lua?at=quickrefactor&fileviewer=file-view-default#EntityHandler.lua-529\r\nIs basically where I was at. I was trying lots of stuff.",
+            "created_on": "2015-12-05T18:54:45Z",
+            "details": []
+        },
+        {
+            "id": 5575,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Idd ... you did a lot :) ... Do you know any info about this last char eaten bug? This seems more important to fix. Does it also happen if the et.gentity_set call is done w/o the Lua pcall?",
+            "created_on": "2015-12-06T19:16:37Z",
+            "details": []
+        },
+        {
+            "id": 5586,
+            "user": {
+                "id": 177,
+                "name": "Zelly"
+            },
+            "notes": "I would have to test to be sure it does happen on latest legacy. Would need to set it back up.\r\n\r\nAlso how would I know if it is just gentity_get or if it affects set as well? (Because the only way I know to read what I set would be to use gentity_get) is there a command in core et legacy that I could list of a string fieldname?",
+            "created_on": "2015-12-06T22:49:27Z",
+            "details": []
+        },
+        {
+            "id": 5837,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Code has been changed to spawn a proper entity - use \r\n\r\n* G_CreateEntity \r\n\r\nI did also add:\r\n\r\n* G_DeleteEntity\r\n* G_ShaderRemap\r\n* G_ResetRemappedShaders\r\n* G_ShaderRemapFlush\r\n\r\nWe should test this.",
+            "created_on": "2016-02-15T19:16:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 5838,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-02-15T21:28:04Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 5839,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-02-17T19:24:21Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        },
+        {
+            "id": 177,
+            "name": "Zelly"
+        }
+    ],
+    "time_entries": null,
+    "id": 607,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "Spawning an entity in Lua",
+    "description": "user:Zelly suggested adding a new function to Lua which would allow spawning custom entities on maps.\r\n\r\nI tested spawning items such as ammo, medpacks and weapons by adapting the code from @Drop_Item()@ function, but user:IR4T4 had a better idea of reusing the @G_ScriptAction_Create()@ aka \"create\" map scriptiping function from ETPro which already does the stuff we need.\r\n\r\n* G_ScriptAction_Create docs: http://wolfwiki.anime.net/index.php/Map_scripting\r\n* thread on \"SplashDamage forums\":http://forums.warchest.com/showthread.php/29510-LUA-spawn-a-entity\r\n",
+    "start_date": "2014-11-02",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-02T09:23:50Z",
+    "updated_on": "2016-02-17T19:24:21Z",
+    "closed_on": "2016-02-17T19:24:21Z"
+}

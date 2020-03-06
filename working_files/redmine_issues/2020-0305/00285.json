@@ -1,0 +1,200 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 213,
+            "issue_id": 285,
+            "issue_to_id": 735,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "48e592773599ebb5ee5c24995c588c703bfe71ce",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "changed the frametime value to be calculated based on sv_fps, refs #198",
+            "committed_on": "2014-12-17T13:20:32Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1502,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2013-04-07T14:58:40Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 1503,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2013-04-07T15:02:22Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 1505,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "",
+            "created_on": "2013-04-07T17:29:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "tracker_id",
+                    "old_value": "2",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "make sv_fps independent from the code.",
+                    "new_value": "Make sv_fps independent from the code"
+                },
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "According to SD, the sv_fps value is hardcoded and set to 20.\r\nIf posible, make this variable independent from the code.\r\n\r\n> IF this will be fixed in the near future it shouldn\u2019t break compatibility in any way shape or form, but as already pointed out to the 50ms delay is hardcoded to the engine in many places in the ET version of the tech and this causes a problem: We will need to look thru the server code with a microscope to find the problem points, and that takes (a lot of)time.\r\n\r\nForum discussion link: http://www.etlegacy.com/boards/3/topics/348?",
+                    "new_value": "According to SD, the ET engine is \"designed\" to run at sv_fps value of 20.\r\nIf posible, make this variable independent from the code.\r\n\r\n> IF this will be fixed in the near future it shouldn\u2019t break compatibility in any way shape or form, but as already pointed out to the 50ms delay is hardcoded to the engine in many places in the ET version of the tech and this causes a problem: We will need to look thru the server code with a microscope to find the problem points, and that takes (a lot of)time.\r\n\r\nForum discussion link: http://www.etlegacy.com/boards/3/topics/348"
+                }
+            ]
+        },
+        {
+            "id": 1538,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "http://www.ra.is/unlagged/faq.html#ISFPSHT20SR\r\n\r\n> *Is setting sv_fps higher than 20 still recommended?*\r\n>\r\n> It's a somewhat common practice to raise the server framerate to 30 or 40 to make the gameplay \u201csmoother.\u201d What \u201csmoother\u201d means in this case is that Quake 3's built-in 50ms lag becomes 33ms or 25ms, and everyone sees things a bit more like how they happen on the server.\r\n>\r\n> Those are really the only two reasons to do it. Now, when Unlagged is running, full compensation or not, the built-in lag is taken care of completely. There goes one reason. It also does every hit test based on what players _see_ rather than what's actually _happening_, so the second reason isn't any longer valid either.\r\n>\r\n> It does have some detrimental effects:\r\n>\r\n> - More incoming bandwidth is required of players\r\n> - cl_timenudge can't extrapolate as much, meaning it's less effective (this becomes an issue when sv_fps is over 33)\r\n> - Higher pings (it seems the client engine holds onto snapshots a little longer)\r\n> - Other players may be \u201cjerkier\u201d since more samples mean less smoothing in general\r\n> - The new skip correction becomes less effective\r\n> \r\n> So no, I wouldn't advise higher server framerates. There aren't any advantages anymore, and there are plenty of disadvantages.\r\n\r\nMaybe legacy mod just needs \"Unlagged\" so the whole thing with sv_fps would be invalid?",
+            "created_on": "2013-04-12T20:53:15Z",
+            "details": []
+        },
+        {
+            "id": 4209,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "",
+            "created_on": "2014-12-22T00:58:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "According to SD, the ET engine is \"designed\" to run at sv_fps value of 20.\r\nIf posible, make this variable independent from the code.\r\n\r\n> IF this will be fixed in the near future it shouldn\u2019t break compatibility in any way shape or form, but as already pointed out to the 50ms delay is hardcoded to the engine in many places in the ET version of the tech and this causes a problem: We will need to look thru the server code with a microscope to find the problem points, and that takes (a lot of)time.\r\n\r\nForum discussion link: http://www.etlegacy.com/boards/3/topics/348",
+                    "new_value": "According to SD, the ET engine is \"designed\" to run at sv_fps value of 20.\r\nIf posible, make this variable independent from the code.\r\n\r\n> IF this will be fixed in the near future it shouldn\u2019t break compatibility in any way shape or form, but as already pointed out to the 50ms delay is hardcoded to the engine in many places in the ET version of the tech and this causes a problem: We will need to look thru the server code with a microscope to find the problem points, and that takes (a lot of)time.\r\n\r\nForum discussion link: http://dev.etlegacy.com/boards/3/topics/348"
+                }
+            ]
+        },
+        {
+            "id": 4210,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "As far as things rely on sv_fps 20 I suggest to block its value for release builds so admins can't \"break\" the game.",
+            "created_on": "2014-12-22T01:05:09Z",
+            "details": []
+        },
+        {
+            "id": 4477,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-01-21T10:58:04Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "735"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 285,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 5,
+        "name": "Server"
+    },
+    "fixed_version": {
+        "id": 4,
+        "name": "ALL"
+    },
+    "subject": "Make sv_fps independent from the code",
+    "description": "According to SD, the ET engine is \"designed\" to run at sv_fps value of 20.\r\nIf posible, make this variable independent from the code.\r\n\r\n> IF this will be fixed in the near future it shouldn\u2019t break compatibility in any way shape or form, but as already pointed out to the 50ms delay is hardcoded to the engine in many places in the ET version of the tech and this causes a problem: We will need to look thru the server code with a microscope to find the problem points, and that takes (a lot of)time.\r\n\r\nForum discussion link: http://dev.etlegacy.com/boards/3/topics/348",
+    "start_date": "2013-04-07",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-04-07T14:58:06Z",
+    "updated_on": "2014-12-22T01:05:09Z"
+}

@@ -1,0 +1,208 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 40,
+            "issue_id": 165,
+            "issue_to_id": 111,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "d4c65744382b5017fbc61be25b23734d1d80aa15",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "client: fixed the numpad number output when console is open, refs #165",
+            "committed_on": "2013-02-09T20:47:14Z"
+        },
+        {
+            "revision": "a4dca01a50632d40c5e9b5b2ad5519d27e2b24c3",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "client: special handling for numbers of numeric keypad & NUM pressed\nrefs #165 refs #111",
+            "committed_on": "2013-02-10T09:28:48Z"
+        },
+        {
+            "revision": "b8b5e1f4cad5f746d06dba7974cde4ab87396462",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "client: handling of the numpad keys on windows fixed, refs #165",
+            "committed_on": "2013-02-10T11:25:02Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 913,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "To me it looks like the non NUM active keys are still active when NUM is pressed.",
+            "created_on": "2013-01-07T12:54:40Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Numeric Keypad cant be used",
+                    "new_value": "Numeric Keypad cant be fully used / qwertz keyboard issues"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 969,
+            "user": {
+                "id": 7,
+                "name": "TheDushan"
+            },
+            "notes": "IR4T4 wrote:\r\n> To me it looks like the non NUM active keys are still active when NUM is pressed.\r\n\r\nDepends on what OS :-)\r\nCan you share little more information's so we can confirm is this a bug or not.",
+            "created_on": "2013-01-14T22:08:59Z",
+            "details": []
+        },
+        {
+            "id": 973,
+            "user": {
+                "id": 84,
+                "name": "letter"
+            },
+            "notes": "TheDushan wrote:\r\n> Can you share little more information's so we can confirm is this a bug or not.\r\n\r\nGo there: http://91.239.67.75/\r\nAt the beginning I try to enter numbers with numeric keypad (right side of keyboard) then with these buttons over the letters.",
+            "created_on": "2013-01-14T23:58:56Z",
+            "details": []
+        },
+        {
+            "id": 974,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "TheDushan wrote:\r\n> Depends on what OS :-)\r\n> Can you share little more information's so we can confirm is this a bug or not.\r\nIt's not OS dependant. I can reproduced it on Linux, rest of reporter are on Windows.\r\n\r\nUse connect to IP button in the browser menu. When Num is on and you press 4 it prints 4 *and* cursor moves left. So if you enter 555 and 4 it results in 5545.\r\nLeft arrow (non Num key) is still active when it shouldn't.",
+            "created_on": "2013-01-15T07:33:02Z",
+            "details": []
+        },
+        {
+            "id": 984,
+            "user": {
+                "id": 7,
+                "name": "TheDushan"
+            },
+            "notes": "I don't believe that I had that kind of problem with Windows build.",
+            "created_on": "2013-01-16T21:18:37Z",
+            "details": []
+        },
+        {
+            "id": 1126,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-02-10T09:40:39Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "44"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 2427,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "created_on": "2013-12-14T17:58:46Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "new_value": "Windows"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 165,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 15,
+        "name": "muessli"
+    },
+    "assigned_to": {
+        "id": 44,
+        "name": "Jacker"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 5,
+        "name": "2.71rc1"
+    },
+    "subject": "Numeric Keypad cant be fully used / qwertz keyboard issues",
+    "description": "if i want to use the Function \"CONNECT TO IP\", i cant use the numeric Keypad in the Popup to enter a Server IP.\r\nOnly the Keyboard-Numbers on the left side are working!\r\nmfg muessli",
+    "start_date": "2013-01-06",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Windows"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-01-06T21:48:28Z",
+    "updated_on": "2013-12-14T17:58:46Z",
+    "closed_on": "2013-02-10T09:40:39Z"
+}

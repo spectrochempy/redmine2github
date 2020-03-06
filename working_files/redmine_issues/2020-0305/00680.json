@@ -1,0 +1,171 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 192,
+            "issue_id": 773,
+            "issue_to_id": 680,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "7504c75a25676c58ef9a2797d9d708bdcd2b15cf",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "sdl: removed obsolete KMOD_NUM hack, refs #558 #680",
+            "committed_on": "2016-09-16T09:42:17Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3929,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "Not sure about that but I am think its intended this way",
+            "created_on": "2014-11-29T14:51:09Z",
+            "details": []
+        },
+        {
+            "id": 3930,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "I think it's a bad intention then because basically all other windows work in a different way except this fireteam admin panel. Why would I want to stop moving just to create a fireteam? I want to move the same way as I would shout v57 all over the place.\r\n\r\n-*S",
+            "created_on": "2014-11-29T15:10:42Z",
+            "details": []
+        },
+        {
+            "id": 4354,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2015-01-11T04:31:05Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "773"
+                }
+            ]
+        },
+        {
+            "id": 6041,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2016-09-16T09:42:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 6043,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2016-09-16T09:52:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 680,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Opening fireteam panel stops your movement",
+    "description": "Ok, so unlike mp_quickmessage, mp_fireteamadmin stop your movement when opened.\r\nNormal binds for these are V for mp_quickmessage and KP_ENTER for mp_fireteamadmin. When I press V, my movement doesn't stop. But when I press to open fireteam admin panel with ENTER on the keypad, my movement will stop.\r\n\r\n-*S",
+    "start_date": "2014-11-29",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-29T14:42:20Z",
+    "updated_on": "2016-09-16T09:52:36Z",
+    "closed_on": "2016-09-16T09:52:36Z"
+}

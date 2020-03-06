@@ -1,0 +1,887 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 27,
+            "issue_id": 100,
+            "issue_to_id": 51,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "6c31c73e807a5bc6d38b92581566a68c45a2166d",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "some clean up - refs #51",
+            "committed_on": "2012-10-07T08:30:30Z"
+        },
+        {
+            "revision": "b9c643d30488dec311041aa5c1606348d61a9c6a",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "trap_PbStat removal refs #51",
+            "committed_on": "2012-10-13T12:01:17Z"
+        },
+        {
+            "revision": "70bb7315a32a8dcb111f9d818bf86fdeddb9b873",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "clean up refs #51",
+            "committed_on": "2012-10-14T08:42:25Z"
+        },
+        {
+            "revision": "7cf7f8922336bdcb297c35de8ee2db1ee3c36faf",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "refs #51",
+            "committed_on": "2012-10-14T10:57:45Z"
+        },
+        {
+            "revision": "92bcea295460fec080c6ff79435a96ddad4b7ddc",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "tripmine removal refs #51",
+            "committed_on": "2012-10-15T09:43:46Z"
+        },
+        {
+            "revision": "5f70a0235209d0918185c76c90872fb57117f441",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "tripmine removal refs #51",
+            "committed_on": "2012-10-15T11:08:26Z"
+        },
+        {
+            "revision": "05142e7a2060e91a7ee818f8d82b34ab25e7ae19",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "refs #51",
+            "committed_on": "2012-10-21T10:36:55Z"
+        },
+        {
+            "revision": "28ce85a1a2064a6e5d4b4e00b8f9ae8335baf719",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "refs #51",
+            "committed_on": "2012-10-21T10:38:08Z"
+        },
+        {
+            "revision": "8f736c01968f716dcde1e28fa60e6f3e9f76103d",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: unused Cmd_TicketTape_f function removed refs #51, fixed\n'where' cmd thx ensiform @\nhttp://www.lucasforums.com/showthread.php?t=140104",
+            "committed_on": "2012-10-24T09:23:07Z"
+        },
+        {
+            "revision": "e76f3f7c50f7fb978bfba2cd10e7201ddb4b732f",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: duplicate COM_StripExtension removed refs #51",
+            "committed_on": "2012-10-24T11:19:12Z"
+        },
+        {
+            "revision": "a8d7efdf8a21a2d395ec310f30658296ba4f4977",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: useless header files removal refs #51",
+            "committed_on": "2012-10-24T12:34:20Z"
+        },
+        {
+            "revision": "bb19b50fecbe1a67eed90c6ff09162876f7af81a",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "Mod QAGAME: empty G_StartPlayerAppropriateSound() removed refs #51",
+            "committed_on": "2012-10-30T14:52:44Z"
+        },
+        {
+            "revision": "0d98246a82d1f34bf181b492d7448bf229c03949",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: BG_IsSinglePlayerGame() removed, some unused code removed refs #28,\nrefs #51, refs #52",
+            "committed_on": "2012-11-03T09:22:42Z"
+        },
+        {
+            "revision": "013e8079fe652bfd6b254fc74afa9d390289d27f",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: clean up of bg_pmove.c refs #51",
+            "committed_on": "2012-11-03T13:35:26Z"
+        },
+        {
+            "revision": "6f733af360a56896fb3d2bb69f7f1d30a6311e06",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: some useless code removed refs #51",
+            "committed_on": "2012-11-03T15:52:39Z"
+        },
+        {
+            "revision": "d8620794a09d93b6168b597721674d801e51feb5",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: unused Team_CheckHurtCarrier() function removed - refs #51",
+            "committed_on": "2012-11-07T09:41:36Z"
+        },
+        {
+            "revision": "1e0f5b87a7f696016b39bfab456cac091db154fb",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: unused and empty events removed / clean up - refs #51, refs #52",
+            "committed_on": "2012-11-07T21:23:17Z"
+        },
+        {
+            "revision": "ea62822f73e31665a6363ea0950cf6033683dfab",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: single player code removal refs #51",
+            "committed_on": "2012-11-09T19:29:55Z"
+        },
+        {
+            "revision": "74270f3c49cf2c521150b643fab9081d635b55cb",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: clean up refs #51",
+            "committed_on": "2012-11-09T19:52:52Z"
+        },
+        {
+            "revision": "56b7f85ea0383bc99d6a6ccc9dcdda56cb0387ee",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: venom related snipplets removed refs #51, refs #52",
+            "committed_on": "2012-11-11T09:41:21Z"
+        },
+        {
+            "revision": "16fd331d85250a7445f58d357bb8ee59d171dae9",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: 19 unused/useless vars removed from gentity_s refs #51",
+            "committed_on": "2012-11-11T11:05:18Z"
+        },
+        {
+            "revision": "c29c9c7beaa53f0ccfe3a31b49faaeb877ba6317",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: clean up refs #51",
+            "committed_on": "2012-11-12T16:30:21Z"
+        },
+        {
+            "revision": "4ed2302845961907af98cf4faf46507beff161b6",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: g_footstepAudibleRange is unused refs #51",
+            "committed_on": "2012-11-13T07:05:18Z"
+        },
+        {
+            "revision": "ec8b382988bb3d516605447f9a8c210ea962c88e",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: engine bot code removal refs #86, refs #51",
+            "committed_on": "2012-11-14T10:24:43Z"
+        },
+        {
+            "revision": "d09d985ea3dc45fa7bf9022c1144a2c0750a7673",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: clean up of bg_public.h refs #51",
+            "committed_on": "2012-11-15T23:56:29Z"
+        },
+        {
+            "revision": "ee04dd000bfae064cf7a55177a560d39b10a5a53",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "general: removed support for ancient Macs, refs #50, refs #51, refs #52, refs #74",
+            "committed_on": "2012-11-16T20:24:00Z"
+        },
+        {
+            "revision": "da7b8829d55b306f4a2b41f4c5b9cf476d82e31f",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: g_letterbox removed refs #51, g_protect introduced - additional\nuserinfo string checks in ClientUserinfoChanged from Dens/ETPub refs\n#128",
+            "committed_on": "2012-11-21T15:33:16Z"
+        },
+        {
+            "revision": "f7d9705b972c7bc18e89326d47c6ae14d4db6dec",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: SVF_POW is unused refs #51",
+            "committed_on": "2012-11-21T21:00:15Z"
+        },
+        {
+            "revision": "befc8825b5f72d608e36f23ce10e16d914c7b95e",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: SVF_POW is unused refs #51",
+            "committed_on": "2012-11-21T21:02:50Z"
+        },
+        {
+            "revision": "97aef334e50e38d0289b4b643c837aa4d0413d7b",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game SVF_POS is unused refs #51",
+            "committed_on": "2012-11-21T21:03:32Z"
+        },
+        {
+            "revision": "1151ec17d55dfb48a87af8a8a35fcd1d52182676",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "game: removed unused variables, refs #51",
+            "committed_on": "2012-11-22T17:24:59Z"
+        },
+        {
+            "revision": "0d0a889cc2cc185c580d791a5d62b9c8acc29b14",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "game: removed declarations of inexisting functions and unused defines, refs #51",
+            "committed_on": "2012-11-24T21:04:54Z"
+        },
+        {
+            "revision": "9c66a2bd2631c7e1e638ad4a7b51329b0c519e34",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: clean up refs #51",
+            "committed_on": "2012-11-25T17:55:26Z"
+        },
+        {
+            "revision": "3255b1658331fe5898abc2c30ff5902e8fbcfb6b",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: unused cvars removal refs #51",
+            "committed_on": "2012-11-29T11:55:15Z"
+        },
+        {
+            "revision": "bff4dfd5d064ed46f5dc1364864dc21b536963b4",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: cvars removal refs #51",
+            "committed_on": "2012-11-29T12:02:13Z"
+        },
+        {
+            "revision": "2e53167f7444d8bb297597ffcb161da96de0362b",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: cvars removed refs #51",
+            "committed_on": "2012-11-29T13:59:41Z"
+        },
+        {
+            "revision": "a1fe4a47d4f41f7f392d5e3ea4e595e7890aa177",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: pb calls removed refs #51",
+            "committed_on": "2012-11-29T14:08:21Z"
+        },
+        {
+            "revision": "5642fbefac39d1e0f3cf1243eb019acd4564c6f2",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: unused functions of g_team.c removed refs #51",
+            "committed_on": "2012-11-30T00:34:08Z"
+        },
+        {
+            "revision": "10cad20bc6f84e9f75fd386b1c3c994c9ba2e96d",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: g_showHeadshotRatio cvar removed / clean up refs #51",
+            "committed_on": "2012-11-30T09:53:13Z"
+        },
+        {
+            "revision": "5c602c0303898a6889453624119093ff45e97596",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: some clean up/optimizations refs #50, refs #51, refs #52",
+            "committed_on": "2012-12-03T10:23:24Z"
+        },
+        {
+            "revision": "d37ca03c57291c319fe921b6221466767c718187",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: removed obsolete code / code clean up refs #51",
+            "committed_on": "2012-12-05T00:40:09Z"
+        },
+        {
+            "revision": "2d569c8065e169b9f87e248767ea0a252c3f8a12",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: xp overflow patch from redeye, slight improvements, clean up,\nunused vars removal refs #51 refs #52",
+            "committed_on": "2012-12-07T13:03:45Z"
+        },
+        {
+            "revision": "c0eff247334d9d2f225025244e51e5de88bd2ef9",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: code style var scope, unused code removal, clean up refs #51",
+            "committed_on": "2012-12-10T12:24:45Z"
+        },
+        {
+            "revision": "fe698bd18082ec7a2c14cc9d1d1e054547a412ff",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "client: unused cvars/code removed refs #50 refs #51",
+            "committed_on": "2012-12-12T00:00:41Z"
+        },
+        {
+            "revision": "a1651bd5b1d3537fb4ba7e835ff1cbe04f0b19fb",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: old botlib traps removed refs #51",
+            "committed_on": "2012-12-12T02:07:31Z"
+        },
+        {
+            "revision": "dfaa77286d8adc7175307d2c94747ee0a2457334",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: unused vars removed from playerTeamState_t refs #51",
+            "committed_on": "2012-12-16T09:24:54Z"
+        },
+        {
+            "revision": "2ed4ec0852c62213c222ec6aa3b0ac77dfb67ede",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: 'melee' is unused refs #51",
+            "committed_on": "2012-12-16T09:31:05Z"
+        },
+        {
+            "revision": "f4e293eaa724bb7e4658021d31b174cf4bb6aed8",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: RubbleFlagCheck() is client side refs #51",
+            "committed_on": "2012-12-19T11:47:36Z"
+        },
+        {
+            "revision": "05a83cfaa6016af43f063165c468904db025fe38",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: useless code/comments removal refs #51",
+            "committed_on": "2012-12-19T16:30:39Z"
+        },
+        {
+            "revision": "c01e0623127594ba183debe6ecf8658a524791c5",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: check for fire in PM_Weapon() didn't work as intended -\nWBUTTON_ATTCK2 is pm->cmd.wbutton not pm->cmd.button, unused code\nremoval refs #51 refs #52",
+            "committed_on": "2013-01-01T16:54:51Z"
+        },
+        {
+            "revision": "fa1b53bee3685168513fae35027a202e6859f235",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: cosmetics in bg_pmove, general clean up & formattings refs #51",
+            "committed_on": "2013-01-02T11:28:45Z"
+        },
+        {
+            "revision": "3780fd598d1cdf3bedf2c4cf006fee94f4d69579",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: unused g_serverEntity_s removed refs #51",
+            "committed_on": "2013-01-06T00:53:02Z"
+        },
+        {
+            "revision": "8107c6724051535740d19a2f7c68bb4259d3ea5f",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: clean up, cosmetics, formattings ... refs #51 refs #52",
+            "committed_on": "2013-01-06T01:14:25Z"
+        },
+        {
+            "revision": "f02ed22db64b96711c1f1a2d08e4567ae28c6db9",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: PM_UpdateLean updated, unused cvar g_smoothClients & statIndex_t\nenums removed refs #51",
+            "committed_on": "2013-01-30T19:04:33Z"
+        },
+        {
+            "revision": "19f09b4ae438d55cb68b2a165a7b46a891474e92",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: removal of q3 custom sound relics and related events see\nCG_CustomSounds refs #51 refs #52",
+            "committed_on": "2013-02-13T19:56:30Z"
+        },
+        {
+            "revision": "1926998cac7d2dc87cc7676e54e7f44a7de9ce1e",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: grabber code removal refs #51",
+            "committed_on": "2013-02-15T17:12:14Z"
+        },
+        {
+            "revision": "b116417939fbcf5f80f9cec5320dd109eb7f52f1",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: unused var removal refs #51 refs #52",
+            "committed_on": "2013-02-16T10:12:01Z"
+        },
+        {
+            "revision": "7b1c2bd77bde926616c08acf769f1c3e1b8c92db",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: event EV_ITEM_POP removed refs #51 refs #52",
+            "committed_on": "2013-02-17T09:02:13Z"
+        },
+        {
+            "revision": "02921ff9c0f3fee20c8af97df1dac2f12489b7a8",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: formattings/clean up/unused define removal refs #51, refs #52",
+            "committed_on": "2013-02-20T07:39:48Z"
+        },
+        {
+            "revision": "c0eced0de10f8a18ccd82ac50dc209278ce6c3e7",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: G_RemapTeamShaders function removed refs #51",
+            "committed_on": "2013-03-03T19:23:08Z"
+        },
+        {
+            "revision": "4abb65ca45d1ccc47fff4f057c3faaa8d78c761d",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: unused vars removed (teamShader) refs #51",
+            "committed_on": "2013-03-04T18:20:52Z"
+        },
+        {
+            "revision": "486c8ba3050937554cbfdc028bbd050c868bead1",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: obsolete spawn function removed refs #51",
+            "committed_on": "2013-03-16T12:11:47Z"
+        },
+        {
+            "revision": "99e72492ac9639c7bd3a9184b9fd2b5d60b33151",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: G_weapStatIndex_MOD() optimized, unused 'MOD_SNOOPERSCOPE' removed\nrefs #51",
+            "committed_on": "2013-04-23T15:52:43Z"
+        },
+        {
+            "revision": "5421370cb30e7c7bede32282f0ef17dd360059ae",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: some clean up refs #51",
+            "committed_on": "2013-08-01T20:17:22Z"
+        },
+        {
+            "revision": "4b5b3f17f8930a7dc77550f712737e0d657a57bd",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: code style & some clean up refs #51",
+            "committed_on": "2013-09-08T11:32:37Z"
+        },
+        {
+            "revision": "c079e4eaadd3d7d103619a175844887e0e20f064",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: switches & clean up refs #51",
+            "committed_on": "2013-10-20T03:13:17Z"
+        },
+        {
+            "revision": "8a660b2f508d6d441446c25fa04e1e592862ce44",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: unused and fubar item 'precaching' removed refs #51 refs #52",
+            "committed_on": "2013-10-27T09:37:01Z"
+        },
+        {
+            "revision": "acb55ff46b3fb900c41793b89a4fc9df9dceb92a",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: unused code removal refs #51 refs #52",
+            "committed_on": "2013-11-26T15:23:06Z"
+        },
+        {
+            "revision": "2790b2da6a79bbcc1464442a2212d6a5f8116546",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: unused events removed (EV_FLAKGUN*) refs #51 refs #52",
+            "committed_on": "2013-11-29T04:57:10Z"
+        },
+        {
+            "revision": "b9ca3f7d6c9b423eb40ea761666c671f82656a4e",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: unused code removal refs #51 refs #52",
+            "committed_on": "2013-12-10T18:10:40Z"
+        },
+        {
+            "revision": "fb87ec67c144a906d57d3999a3aa0d0092716fa0",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: unused code removal refs #51 refs #52",
+            "committed_on": "2013-12-11T20:42:25Z"
+        },
+        {
+            "revision": "344b3f9592877e9244cf2b611b3893ff5e2b55de",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: unused events removed (EV_FLAKGUN*) refs #51 refs #52",
+            "committed_on": "2013-12-11T20:42:26Z"
+        },
+        {
+            "revision": "8d5173c700683624c6fed4c3badd6fa748d38542",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: unused code removal refs #51 refs #52",
+            "committed_on": "2013-12-11T20:42:29Z"
+        },
+        {
+            "revision": "c82501f1f04d89381dacc538434acf9f4bd2bd3f",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: BG_ValidStatWeapon() removed refs #51 refs #52",
+            "committed_on": "2014-01-05T06:33:41Z"
+        },
+        {
+            "revision": "3e02a77f64f9120bb7f7801b3b6e5db3da82412a",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: BG_DuplicateWeapon() removed refs #51 refs #52",
+            "committed_on": "2014-01-05T09:25:12Z"
+        },
+        {
+            "revision": "30e12acf98592a981b26f8353a35e5bdcc97bf96",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: clean up refs #51",
+            "committed_on": "2014-02-15T20:58:53Z"
+        },
+        {
+            "revision": "2cca1cb210d7fc10c7da1f01e1ba735bb75b68fd",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: never used and working spawns team_ctf_*player removed refs #527\nrefs #51",
+            "committed_on": "2014-03-14T13:11:37Z"
+        },
+        {
+            "revision": "5f9d69826f1c5c8c81fc12d576544abb1684ebcc",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: unused vtosf function removed refs #51",
+            "committed_on": "2014-09-28T09:07:51Z"
+        },
+        {
+            "revision": "03ca298f71ef2a6a6f47139775d6f1e815e59266",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: clean up refs #51",
+            "committed_on": "2014-10-17T23:36:48Z"
+        },
+        {
+            "revision": "e0e22c0bd5494a67f411f90165067f278024663f",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: g_warmupLatch is unused refs #51",
+            "committed_on": "2014-11-14T14:41:27Z"
+        },
+        {
+            "revision": "2813e51320a20fe09d565268bd261685c8aa944f",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: unused camera & spotlight related code removed refs #51 #52",
+            "committed_on": "2014-12-06T10:33:08Z"
+        },
+        {
+            "revision": "0f99be303d4e84e73c22caf8cf9747a5843bb889",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: removed unused realhead code variables, refs #51",
+            "committed_on": "2015-03-21T12:51:00Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 199,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "created_on": "2012-07-30T10:34:41Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 361,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-10-11T21:06:35Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "12",
+                    "new_value": "16"
+                }
+            ]
+        },
+        {
+            "id": 362,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-10-11T21:06:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "16",
+                    "new_value": "17"
+                }
+            ]
+        },
+        {
+            "id": 5521,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-11-29T18:00:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 51,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "parent": {
+        "id": 31
+    },
+    "subject": "Remove unused GAME code",
+    "description": "Remove useless code\r\nSee #31 - reference for GAME",
+    "start_date": "2012-05-16",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2012-05-16T18:17:24Z",
+    "updated_on": "2015-11-29T18:00:00Z",
+    "closed_on": "2015-11-29T18:00:00Z"
+}

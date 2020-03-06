@@ -1,0 +1,201 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 169,
+            "issue_id": 714,
+            "issue_to_id": 455,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "ba21969603354f74ca153d946478f972d539c6a8",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: do not display flame shader on respawn, refs #455",
+            "committed_on": "2015-01-25T20:26:07Z"
+        },
+        {
+            "revision": "27e34ed6c837c6561fe403806c5a112abaf4ca03",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: do not display smoke on respawn, fixes #455",
+            "committed_on": "2017-03-05T11:58:18Z"
+        },
+        {
+            "revision": "aec68a592fb26a23c72b5dd0fd1befec40513404",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed overheat time typo, refs #455",
+            "committed_on": "2017-03-05T12:08:41Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3019,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-02-15T22:19:04Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 3034,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-02-16T11:03:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 3051,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "A similar issue exists with sten's smoke.",
+            "created_on": "2014-02-16T14:52:12Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Flamethrower shader visible on respawn",
+                    "new_value": "Flamethrower shader/sten smoke visible on respawn"
+                }
+            ]
+        },
+        {
+            "id": 4057,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2014-12-13T16:50:00Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "714"
+                }
+            ]
+        },
+        {
+            "id": 6494,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-03-03T12:24:34Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 6511,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:27e34ed6c837c6561fe403806c5a112abaf4ca03.",
+            "created_on": "2017-03-05T12:07:27Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 455,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Flamethrower shader/sten smoke visible on respawn",
+    "description": "When a player is killed by the flamethrower, the model is set on fire. If the player goes to limbo right away and respawn immediately, the flame are still visible on the player model for a second or two.\r\n\r\n",
+    "start_date": "2013-12-31",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-12-31T09:36:06Z",
+    "updated_on": "2017-03-05T12:07:27Z",
+    "closed_on": "2017-03-05T12:07:27Z"
+}

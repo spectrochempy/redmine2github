@@ -1,0 +1,103 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "1e19e966166206f97a62e492cedbce5e0720eef9",
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "comments": "missing cgame error improved, fixes #13",
+            "committed_on": "2012-03-12T08:12:40Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "",
+            "created_on": "2012-03-04T13:18:43Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 5099,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-08-08T18:55:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "17"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 13,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "Improve error message of sv_init.c SV_TouchCGameDLL()",
+    "description": "\"Failed to locate cgame DLL for pure server mode\"\r\n\r\nMessage isn't OS dependant ... not sure if the filename should be included in the error message ...",
+    "start_date": "2012-03-02",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2012-03-02T14:02:21Z",
+    "updated_on": "2015-08-08T18:55:58Z",
+    "closed_on": "2012-03-04T13:18:43Z"
+}

@@ -1,0 +1,166 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 450,
+            "issue_id": 1365,
+            "issue_to_id": 1111,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7278,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "I already added this a few years ago, but it was removed as it caused issues with vanilla clients which connected to legacy servers.",
+            "created_on": "2018-09-21T11:44:55Z",
+            "details": []
+        },
+        {
+            "id": 7279,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-09-21T12:28:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "20"
+                }
+            ]
+        },
+        {
+            "id": 7280,
+            "user": {
+                "id": 733,
+                "name": "N3rwitZ"
+            },
+            "notes": "Jacker wrote:\r\n> I already added this a few years ago, but it was removed as it caused issues with vanilla clients which connected to legacy servers.\r\n\r\nMeaning chances for implementing it back are, at most... none? That would make console logging with selected different language a brutal mess, given console plays major role in game (also chat history besides server cvar control).\r\n",
+            "created_on": "2018-09-21T13:09:59Z",
+            "details": []
+        },
+        {
+            "id": 7281,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "In the end it's more a thingy about how we deal with messages we can't send to vanilla clients. \r\n\r\n@Jacker What about a server mode which auto supports this improved console when there are no vanilla clients connected? Thinking about LAN games and reasons to install ETL it's a nice benefit :)\r\n",
+            "created_on": "2018-09-22T11:08:11Z",
+            "details": []
+        },
+        {
+            "id": 7282,
+            "user": {
+                "id": 733,
+                "name": "N3rwitZ"
+            },
+            "notes": "IR4T4 wrote:\r\n> In the end it's more a thingy about how we deal with messages we can't send to vanilla clients. \r\n\r\nTrue so, given the situation. Jacker, what was with vanilla clients at first place? Have had errors of sorts? I can imagine they were crashing on console open for the differences in client game code.",
+            "created_on": "2018-09-22T14:55:16Z",
+            "details": []
+        },
+        {
+            "id": 8589,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-12-05T16:30:53Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "15",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "20",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8591,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-12-05T16:31:25Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1365"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 733,
+            "name": "N3rwitZ"
+        }
+    ],
+    "time_entries": null,
+    "id": 1111,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 733,
+        "name": "N3rwitZ"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Improve console language support",
+    "description": "Console can't print game messages in anything but English; whenever one is logged in there in different language, it looks like random gibberish, letters mixed with numbers and symbools (\"D03/5!00:4N\"). Thus as more languages are added to the game, players won't know what's the console saying after it prints some important events during the match (death messages, announcements) - these are translatable.\r\n\r\nTested: Legacy 2.76 compiled September 20, 2018 (thanks to ryven)",
+    "start_date": "2018-09-21",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2018-09-21T10:35:47Z",
+    "updated_on": "2019-12-05T16:30:53Z"
+}

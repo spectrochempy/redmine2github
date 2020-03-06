@@ -1,0 +1,159 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 150,
+            "issue_id": 659,
+            "issue_to_id": 660,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "08f312d7c3e35b8008b438c118c775085ba70a31",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: don't show browning icon for stationary MGs fixes #660",
+            "committed_on": "2014-11-21T20:22:45Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3799,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Tested also in Venice, same problem.\r\n\r\n-*S",
+            "created_on": "2014-11-21T18:05:26Z",
+            "details": []
+        },
+        {
+            "id": 3800,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-11-21T19:26:14Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 3801,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Applied in changeset commit:08f312d7c3e35b8008b438c118c775085ba70a31.",
+            "created_on": "2014-11-21T19:41:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3802,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-11-21T19:44:25Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "21",
+                    "new_value": "16"
+                }
+            ]
+        },
+        {
+            "id": 3805,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-21T20:26:04Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "659"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 660,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "After using Browning on tank will change all the MG icons in the map",
+    "description": "How to reproduce:\r\nDo this in Fueldump to see what's happening and play as Allies.\r\n1. Check the MG at Allies first spawn, you see normal MG icon\r\n2. Jump into the tank, it has Browning icon\r\n3. Go back to the MG you tried first, now it will have the Browning icon\r\n\r\nYou can also check the demo if it shows there. Or then the screenshot...\r\n\r\n-*S",
+    "start_date": "2014-11-21",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-21T17:03:53Z",
+    "updated_on": "2014-11-21T19:44:25Z",
+    "closed_on": "2014-11-21T19:41:44Z"
+}

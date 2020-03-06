@@ -1,0 +1,287 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "eb5fa0e76b641deeeb437490d587a3486e3840c0",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "renderer2: fix specular glitch refs #1015",
+            "committed_on": "2017-12-09T17:44:15Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 6547,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "okey, more wierdness.. I comented out spec texture on camo mesh used on Radar, but it's still specular silver see image.",
+            "created_on": "2017-03-09T17:59:17Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "739",
+                    "new_value": "etlegacy-2017-03-09-185615-radar.jpg"
+                }
+            ]
+        },
+        {
+            "id": 6562,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "more info on this subject:\r\n\r\nit seems there is some link to our spec problems connected with transperancy if that may help out..\r\n",
+            "created_on": "2017-03-16T17:30:56Z",
+            "details": []
+        },
+        {
+            "id": 6633,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "this might help:\r\nhttps://www.opengl.org/discussion_boards/showthread.php/162199-Combining-texture-and-light",
+            "created_on": "2017-03-25T20:07:52Z",
+            "details": []
+        },
+        {
+            "id": 6682,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "or this\r\n\r\nhttps://www.opengl.org/sdk/docs/tutorials/ClockworkCoders/lighting.php",
+            "created_on": "2017-04-12T17:49:01Z",
+            "details": []
+        },
+        {
+            "id": 6684,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "Been swirling around in there and it seems that this issue is on certain brushes, and most time it is textures without shaders WHEN the map was compiled. now we have shaders on everything because of normal and specmaps.\r\nEven if I try with other shader or no shader the result is still the same it seems.\r\nSo it is something with the worldbrushes.\r\nAlso it seems that some models are too bright, but that may be my textures.\r\nI dont know if the \"construction crates\" have something that does them brighter ingame to easier find them or something..\r\nfor me R2 is just a big mess really..\r\nBut I will drag in all info I can along the way so that someone with knowledge maybe can fix it.\r\n",
+            "created_on": "2017-04-17T10:53:09Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "44"
+                }
+            ]
+        },
+        {
+            "id": 6694,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "good news, it seems I am able to fix this with a bit more advanced shaders",
+            "created_on": "2017-05-07T10:32:41Z",
+            "details": []
+        },
+        {
+            "id": 6695,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "",
+            "created_on": "2017-05-07T10:33:04Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "281"
+                }
+            ]
+        },
+        {
+            "id": 6696,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "shader issue",
+            "created_on": "2017-05-07T11:10:29Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "752",
+                    "new_value": "etlegacy-2017-05-07-130731-battery.jpg"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 6727,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-05-21T08:27:18Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 6754,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "@IR4T4  are you able to add light in generic shader then this is solved\r\nthis doesnt happend to new compiled maps whit new shaders..",
+            "created_on": "2017-05-29T19:19:10Z",
+            "details": []
+        },
+        {
+            "id": 6761,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "no, I withdraw that Irata.. it isnt right\r\n",
+            "created_on": "2017-05-30T18:06:58Z",
+            "details": []
+        },
+        {
+            "id": 6996,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I can't reproduce this anymore (with r_materialscan 1,2 & 3).\r\n\r\nSo even if the game is using old shader definitions (r_materialscan 1) the issue is gone.",
+            "created_on": "2017-11-24T14:27:14Z",
+            "details": []
+        },
+        {
+            "id": 7004,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-12-09T17:45:04Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 7067,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-02-05T22:08:14Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "5",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1015,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 281,
+        "name": "thunder"
+    },
+    "assigned_to": {
+        "id": 281,
+        "name": "thunder"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 15,
+        "name": "renderer2"
+    },
+    "subject": "Something is wrong in code regarding specular renderer2",
+    "description": "specular is fine at some angles but not with other angles, and seems worse when you are 90' to a texture...\r\nalso lot of models seems too spec even tho the spec is that \"white\"..\r\n\r\n",
+    "start_date": "2017-03-03",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-03-03T20:47:17Z",
+    "updated_on": "2018-02-05T22:08:14Z",
+    "closed_on": "2018-02-05T22:08:14Z"
+}

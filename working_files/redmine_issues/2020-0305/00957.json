@@ -1,0 +1,240 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "b24181abf5b3059678b54fd105886f0e48212a62",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "Merge pull request #278 from chris3k/957_ctrl_split\n\nclient: seperate left and right Ctrl keys refs #957",
+            "committed_on": "2017-08-26T10:41:39Z"
+        },
+        {
+            "revision": "6bb1fcc5710f5af4e9f3c2dd6a55c561d8758c79",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: fix fKeyPressed array size refs #957",
+            "committed_on": "2017-08-27T09:53:29Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 6142,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2016-11-09T09:18:33Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Separate left and right Shift",
+                    "new_value": "Separate left and right Shift/Ctrl keys"
+                },
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "As the title says. The point here would be to separate left and right Shift keys as different key buttons and not as a one.\r\n\r\nBecause its current behaviour is by default that both shifts are used for +sprint. Which actually has a tiny issue.\r\n\r\nThe bug that exist and how to reproduce it:\r\n\r\n1. Hold left Shift and run any direction you want then press right Shift and stop holding left Shift\r\n2. It stops running (using stamina)\r\n\r\n-*S",
+                    "new_value": "As the title says. The point here would be to separate left and right Shift keys as different key buttons and not as a one.\r\n\r\nBecause its current behaviour is by default that both shifts are used for +sprint. Which actually has a tiny issue.\r\n\r\nThe bug that exist and how to reproduce it:\r\n\r\n1. Hold left Shift and run any direction you want then press right Shift and stop holding left Shift\r\n2. It stops running (using stamina)\r\n\r\nEDIT: This same could be done also with left and right Ctrl keys.\r\n\r\n-*S"
+                }
+            ]
+        },
+        {
+            "id": 6145,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-11-09T13:01:55Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 6883,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-08-26T09:15:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "709"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 6884,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Both pull request are merged. I had to fix some conflicts with the last one (github pr278). Let's do some testing ... ",
+            "created_on": "2017-08-26T10:47:02Z",
+            "details": []
+        },
+        {
+            "id": 6885,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Key binding (via gui) doesn't work for me ...\r\n\r\nEdit: I did start the game with new fs_homepath and it seems to work. So my first impression is - the  the old config doesn't seem to be compatible which we have to fix.  ",
+            "created_on": "2017-08-26T11:19:59Z",
+            "details": []
+        },
+        {
+            "id": 6886,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Fix added: https://github.com/etlegacy/etlegacy/commit/77529aca2c02e87c74b1026b68f6135b94d413a2  - thx Zack!",
+            "created_on": "2017-08-27T04:07:34Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 6887,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-08-27T04:07:53Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Separate left and right Shift/Ctrl keys",
+                    "new_value": "Separate left and right Alt/Shift/Ctrl keys"
+                }
+            ]
+        },
+        {
+            "id": 7029,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-01-24T23:22:38Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 709,
+            "name": "chris3k"
+        },
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 957,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 709,
+        "name": "chris3k"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Separate left and right Alt/Shift/Ctrl keys",
+    "description": "As the title says. The point here would be to separate left and right Shift keys as different key buttons and not as a one.\r\n\r\nBecause its current behaviour is by default that both shifts are used for +sprint. Which actually has a tiny issue.\r\n\r\nThe bug that exist and how to reproduce it:\r\n\r\n1. Hold left Shift and run any direction you want then press right Shift and stop holding left Shift\r\n2. It stops running (using stamina)\r\n\r\nEDIT: This same could be done also with left and right Ctrl keys.\r\n\r\n-*S",
+    "start_date": "2016-11-08",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2016-11-08T21:51:31Z",
+    "updated_on": "2018-01-24T23:22:38Z",
+    "closed_on": "2018-01-24T23:22:38Z"
+}

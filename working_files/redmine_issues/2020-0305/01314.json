@@ -1,0 +1,63 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 8501,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "tried to raise com_hunkmegs?",
+            "created_on": "2019-10-16T13:50:51Z",
+            "details": []
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1314,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Hunk_Alloc fails if RENDERER_DYNAMIC is set off",
+    "description": "So basically how to set this up:\r\n\r\n# Set RENDERER_DYNAMIC 'OFF' in CMakeLists.txt and leave FEATURE_RENDERER2 'ON'\r\n# Compile with MSVC with these parameters: cmake -G \"NMake Makefiles\" -DBUNDLED_LIBS=YES .. && nmake\r\n# Start ET: L\r\n# Open console and /devmap any of the maps\r\n\r\nThis will lead into Hunk alloc fails, see attached screenshots.\r\n\r\n-*S",
+    "start_date": "2019-06-26",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-06-26T11:17:26Z",
+    "updated_on": "2019-10-16T13:50:51Z"
+}

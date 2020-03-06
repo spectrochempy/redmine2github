@@ -1,0 +1,56 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1392,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Remove follow1-2",
+    "description": "Remove follow1-2 if it's not used by the internals. This is a q3 feature used to automatically spec follow the highest fragger in each team, but this is of little meaning in ET.\r\nWe briefly discussed a way to use it  shoutcaster purpose (automatically follow where relevant action happens), but concluded this would lead to overcomplexity just for the sake of keeping that feature in the code.\r\n\r\nInspect, and remove if there are no clear downside.",
+    "start_date": "2020-01-22",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2020-01-22T10:25:40Z",
+    "updated_on": "2020-01-22T10:25:40Z"
+}

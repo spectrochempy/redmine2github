@@ -1,0 +1,267 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 278,
+            "issue_id": 721,
+            "issue_to_id": 843,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 277,
+            "issue_id": 918,
+            "issue_to_id": 843,
+            "relation_type": "duplicates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "bb571f717909f5483059bd284155f2ea1cc51337",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: added missing new line when recording video, refs #843",
+            "committed_on": "2016-01-22T16:28:18Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 4941,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "Just wanted to make it right when you are starting to record a demo it fastforward to the end of demo and ends there\r\n\r\nI used cl_avidemotype 2\r\nand pressed F5\r\n\r\nWARNING: cl_avidemo is not a divisor of the audio rate, suggest 21",
+            "created_on": "2015-06-11T22:01:48Z",
+            "details": []
+        },
+        {
+            "id": 5028,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-07-24T11:00:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 5779,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2016-01-19T12:37:30Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "duplicated",
+                    "new_value": "918"
+                }
+            ]
+        },
+        {
+            "id": 5782,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2016-01-19T12:38:51Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "721"
+                }
+            ]
+        },
+        {
+            "id": 5790,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "",
+            "created_on": "2016-01-19T23:06:30Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 5792,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "",
+            "created_on": "2016-01-19T23:08:53Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 5803,
+            "user": {
+                "id": 255,
+                "name": "Maverick"
+            },
+            "notes": "I tested out the fix that was committed, however now etl crashes, rather than outputting anything to AVI.  I tried replaying this demo: http://www.igmdb.org/?page=render&download_demo_id=7854 and the crash appears to occur right before demo replay begins.\r\n",
+            "created_on": "2016-01-22T03:21:59Z",
+            "details": []
+        },
+        {
+            "id": 5804,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2016-01-22T12:27:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "50"
+                },
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "old_value": "Windows",
+                    "new_value": ""
+                }
+            ]
+        },
+        {
+            "id": 5805,
+            "user": {
+                "id": 255,
+                "name": "Maverick"
+            },
+            "notes": "Spyhawk and I tried to reproduce some of this, and this bug only occurs when starting the avi recording via command line:\r\n\r\netl.exe +set com_hunkmegs 256 +set net_enabled 0 +set com_ignorecrash 1 +set fs_game legacy +set r_fullscreen 0 +set r_mode -1 +set r_customwidth 960 +set r_customheight 720 +set s_useOpenAL 0 +set cl_forceavidemo 1 +set cl_avimotionjpeg 1 +set r_screenshotJpegQuality 100 +demo demo0001 +video demo0001 30",
+            "created_on": "2016-01-22T17:15:58Z",
+            "details": []
+        },
+        {
+            "id": 5810,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I tried again on Linux and now the output is correct. I probably botched the version I tested somehow the other day, but this bug is fixed.",
+            "created_on": "2016-01-23T20:14:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 421,
+            "name": "kimi"
+        },
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 843,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 255,
+        "name": "Maverick"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "Outputting to avi no longer works",
+    "description": "When using the 'video' command to output to an avi the resulting video is only about a second.  This doesn't appear to be mod-related.  It worked previously in 2.71, but no longer in 2.72.\r\n\r\nhttps://www.youtube.com/watch?v=zE0ZlJUiFC4",
+    "start_date": "2015-06-11",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-06-11T21:23:11Z",
+    "updated_on": "2016-01-23T20:14:00Z",
+    "closed_on": "2016-01-23T20:14:00Z"
+}

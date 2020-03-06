@@ -1,0 +1,136 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 436,
+            "issue_id": 1305,
+            "issue_to_id": 1304,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 8258,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "",
+            "created_on": "2019-05-28T12:18:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "SDL doesn't deal with file without extension when registering sound, which limit the usage unlike OpenAl where codec extension are done.\r\n",
+                    "new_value": "SDL doesn't deal with file without extension when registering sound, which limit the usage unlike OpenAl where codec extension are done (see S_FindCodecForFile in snd_codec).\r\n"
+                }
+            ]
+        },
+        {
+            "id": 8260,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-05-29T03:20:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8264,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-05-29T16:02:09Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1304"
+                }
+            ]
+        },
+        {
+            "id": 8531,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "",
+            "created_on": "2019-11-13T12:57:04Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "22",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1305,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 251,
+        "name": "Aranud"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "SDL: Extend Codec selection",
+    "description": "SDL doesn't deal with file without extension when registering sound, which limit the usage unlike OpenAl where codec extension are done (see S_FindCodecForFile in snd_codec).\r\n",
+    "start_date": "2019-05-28",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-05-28T12:14:57Z",
+    "updated_on": "2019-11-13T12:57:04Z"
+}

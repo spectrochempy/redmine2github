@@ -1,0 +1,122 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 194,
+            "issue_id": 776,
+            "issue_to_id": 254,
+            "relation_type": "duplicates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 4364,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-01-11T22:52:05Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "duplicates",
+                    "new_value": "254"
+                }
+            ]
+        },
+        {
+            "id": 4366,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I personally hate this feature, but whatever...\r\n(closing as duplicate)",
+            "created_on": "2015-01-11T22:52:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 4447,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2015-01-19T09:13:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "17"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 776,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 177,
+        "name": "Zelly"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "Allow custom voicechats",
+    "description": "Was surprised this wasn't already in. (Could possibly just be a bug, I could not get it working on 2.7.2 or 2.7.1)\r\n\r\n<pre>/vsay Hi testing</pre> Should do voice hi and print testing\r\n<pre>/bind k \"vsay Hi Hello I am Zelly\"</pre> Should do voice hi and print Hello I am zelly\r\n<pre>/set HelloChat \"vsay HelloChat I have arrived!\"\r\n/bind k vstr HelloChat</pre> should do voice hi and print I have arrived\r\n",
+    "start_date": "2015-01-11",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-01-11T22:37:56Z",
+    "updated_on": "2015-01-19T09:13:44Z",
+    "closed_on": "2015-01-11T22:52:50Z"
+}

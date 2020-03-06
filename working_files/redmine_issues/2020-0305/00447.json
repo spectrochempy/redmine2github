@@ -1,0 +1,253 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "fedcc285c4ecafa38da189580ecf6fdd7c7b6d5d",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: cap prone moving speed while reloading, fixes #447",
+            "committed_on": "2014-01-03T15:13:55Z"
+        },
+        {
+            "revision": "2470232a9cc547d895e68bcd411292cd0462d761",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: fixed 3rd person prone animation transition when reloading, refs #447",
+            "committed_on": "2014-01-03T16:05:42Z"
+        },
+        {
+            "revision": "f987dd5f334f0096890226c971090ad63f01ab80",
+            "user": {
+                "id": 424,
+                "name": "Zecklar"
+            },
+            "comments": "cgame: fixed MG shake & stuck bug, refs #529 #447",
+            "committed_on": "2015-03-03T11:19:48Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2585,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2013-12-27T12:20:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "21"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "8"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 2586,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "It seems this happens because the reloading animation is done while you are prone and moving forward, but the game actually compute the reloading stuff after the prone animation is done.\r\n\r\nI'm not sure what would be the fix here: delaying the reloading animation when proning forward (most logical imho), or fixing the reloading timing.",
+            "created_on": "2013-12-27T12:27:22Z",
+            "details": []
+        },
+        {
+            "id": 2739,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Since it is possible to reload when proning at a slow speed (on a steep slope for example), the fix I implemented simply limit the maximum speed when you are prone and moving while reloading. This fixes both the reload timing and the weird animation.",
+            "created_on": "2014-01-03T15:18:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3123,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "This bug still exist, see the demo.\r\n\r\n-*S",
+            "created_on": "2014-03-16T15:33:13Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "312",
+                    "new_value": "demo0002.dm_84"
+                }
+            ]
+        },
+        {
+            "id": 3124,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Right. This bug still appears when you start reloading in stand up position. Only the case when you reload in prone position is fixed (or I might have fixed another, unrelated bug).",
+            "created_on": "2014-03-16T15:43:27Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "8"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "8"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 4706,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-03-03T12:27:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "21",
+                    "new_value": "16"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "17"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 4708,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-03-03T22:47:12Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "424"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 447,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 424,
+        "name": "Zecklar"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "Reloading and proning forward gets the gun stuck",
+    "description": "So how to reproduce this: Go proning, stay put, shoot your magazine empty so you have to reload, move forward while reloading and stand up. After you have done all this the gun gets stuck for 1 second and shows you have 0 bullets in the magazine. After that the gun works normally and will have 30 bullets again.\r\n\r\n-*S",
+    "start_date": "2013-12-26",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-12-26T22:46:22Z",
+    "updated_on": "2015-03-03T22:47:12Z",
+    "closed_on": "2015-03-03T12:27:06Z"
+}

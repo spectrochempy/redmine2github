@@ -1,0 +1,124 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "983c6bb6054adace77c2db4d92c64d954bc39d5c",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "sdl: silence imput initialization messages fixes #958 , unused cvar\navailableJoysticks removed, new command joystickInfo introduced",
+            "committed_on": "2017-05-21T08:26:30Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 6151,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2016-11-09T14:29:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 6726,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-05-21T08:21:33Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 6728,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Applied in changeset commit:983c6bb6054adace77c2db4d92c64d954bc39d5c.",
+            "created_on": "2017-05-21T09:28:39Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 958,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Changing key bindings gives input initialization message",
+    "description": "This didn't happen when you change key bindings by for example, \\bind MOUSE1 \"\" or \"+attack\".\r\nBut when you bind it through controls menu, this initialization message come everytime you change key binding or set the same key for some function.\r\n\r\nHow to reproduce:\r\n\r\n1. Go to 'Controls' menu in-game or in main menu\r\n2. Press LMB (Mouse 1) to edit any key binding\r\n3. Give the function any key binding of your choosing\r\n4. And the message is triggered (see shot0000.jpg)\r\n\r\n-*S",
+    "start_date": "2016-11-08",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2016-11-08T22:12:17Z",
+    "updated_on": "2017-05-21T09:28:39Z",
+    "closed_on": "2017-05-21T09:28:39Z"
+}

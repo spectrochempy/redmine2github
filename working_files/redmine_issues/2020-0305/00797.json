@@ -1,0 +1,134 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 4500,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Wiki pages should be completed, so we can use them for in-game documentation:\r\n\r\n* http://dev.etlegacy.com/projects/etlegacy/wiki/List_of_commands\r\n* http://dev.etlegacy.com/projects/etlegacy/wiki/List_of_Cvars",
+            "created_on": "2015-01-24T11:35:34Z",
+            "details": []
+        },
+        {
+            "id": 7301,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-10-15T18:44:46Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "12"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 7527,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Command descriptions have been added.",
+            "created_on": "2019-01-06T08:37:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 7756,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-02-14T10:21:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "22",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 797,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Add in-game description for commands and CVARs",
+    "description": "This task will be more than huge. But the task would be to add description to every command (give\\(un)freeze\\burn\\...) and every CVAR (cg_;r_;...).\r\nAnd how would this work? Basically when you for example type only the CVAR into console for example cg_drawGun. It would give you a description of that specific CVAR, telling what the CVAR does. In this case it would tell in console \"Draws your gun in the HUD\". Or something like that.\r\n\r\nAnd pretty much the same with the commands but it would hand out more information of the command. For example give command:\r\nIt would give all the information to the player what it does. Things like which functions are able to be done with the \"give\" command, values for the commands.\r\n\r\nAt least a description for commands would be more than good. Because currently \"give\" command is bugged and the command is a bit of a mystery when it comes to its functions.\r\n\r\n-*S",
+    "start_date": "2015-01-23",
+    "done_ratio": 50,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-01-23T04:34:00Z",
+    "updated_on": "2019-02-14T10:21:50Z"
+}

@@ -1,0 +1,305 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 274,
+            "issue_id": 914,
+            "issue_to_id": 500,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "65b6562c8c502f103aa63b26570f356e46bb0765",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "tinygettext: updated to latest upstream tinygettext",
+            "committed_on": "2016-01-09T17:14:49Z"
+        },
+        {
+            "revision": "b6d529f687efa25da72c27e8d0d6f02cb0e92593",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "tinygettext: changed tinygettext structure for easier upstream update",
+            "committed_on": "2016-01-09T17:17:10Z"
+        },
+        {
+            "revision": "5832d1d6dc6497a5c01b02da56c92165503b3ff9",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "tinygettext: removed upstream c++11 features\n\nBecause GCC4 does not support c++11 standard and CentOS might not like it.\nThis could be reapplied once GCC5 becomes mainstream.",
+            "committed_on": "2016-01-09T17:20:05Z"
+        },
+        {
+            "revision": "eba8373d95a9ddbe89f5faf8da5a24679e92a6e3",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: cmake adjustment for tinygettext",
+            "committed_on": "2016-01-09T18:45:14Z"
+        },
+        {
+            "revision": "670d0eee54ec34c18d265001c505062605dcdf60",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: fixed tinygettext build with msvc",
+            "committed_on": "2016-01-09T20:26:45Z"
+        },
+        {
+            "revision": "68106ad2fd7f87446bc97634bfe5282280930adf",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "tinygettext: added compatibility with MSVC, refs #914",
+            "committed_on": "2016-01-09T21:56:34Z"
+        },
+        {
+            "revision": "0507b3edbbe7e1f7668399d13d2dd6084dae35ce",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "tinygettext: fixed build on win, refs #914",
+            "committed_on": "2016-01-09T23:16:01Z"
+        },
+        {
+            "revision": "faa310a3db00363a7f037f154b17f66be9f36ebf",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "tinygettext: sync with latest upstream, refs #914\n\nAdds\n* tinygettext/commit/e182927ccae0fb3f93567eb8577f4198dbf3608b\n* tinygettext/commit/bf66a570a01d0251c90f4ee40f979ad6aca7eb1a",
+            "committed_on": "2016-08-20T17:07:52Z"
+        },
+        {
+            "revision": "1f9df4577e21fa7876fbd64a0db75d6990ea7f99",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "tinygettext: sync with upstream and fix c++11 warnings\n\nThis reverts commit 5832d1d6dc6497a5c01b02da56c92165503b3ff9.\nThis partially reverts commit 3e6c0dc7c6360fd92583c2581c3f738296eb2a31\n(i18n_main.cpp)",
+            "committed_on": "2016-08-28T10:32:07Z"
+        },
+        {
+            "revision": "1d5d083c48a37e08c8f5d66a9796d1cb1d9565f9",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "tinygettext: fixed c++11 issue on windows, refs #914",
+            "committed_on": "2016-08-28T11:20:25Z"
+        },
+        {
+            "revision": "39e7333d0b2c227a84fb155cd5566eb04052948a",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "tinygettext: reverted c++11 warning fixes, refs #914\"\n\nBecause Travis.\n\nThis reverts commit 1d5d083c48a37e08c8f5d66a9796d1cb1d9565f9.\nThis reverts commit 1f9df4577e21fa7876fbd64a0db75d6990ea7f99.",
+            "committed_on": "2016-08-28T12:46:12Z"
+        },
+        {
+            "revision": "d97f2f73f251b4ee9c19e89dc1f0c8237461b223",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "tinygettext: sync with upstream and c++11 warning fixes, refs #914\n\nThis reverts commit 39e7333d0b2c227a84fb155cd5566eb04052948a.",
+            "committed_on": "2016-09-10T23:49:59Z"
+        },
+        {
+            "revision": "2b8526b3af530d9d009acc860176edb8eb4e10e4",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "tinygettext: sync with upstream and c++11 warning fixes, refs #914\n\nThis reverts commit 39e7333d0b2c227a84fb155cd5566eb04052948a.",
+            "committed_on": "2016-09-16T18:30:28Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 5748,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2016-01-09T21:26:58Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "500"
+                }
+            ]
+        },
+        {
+            "id": 5754,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-01-11T20:56:15Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 5768,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Need to work with upstream to get the necessary patches in the main branch, see \"here\":https://github.com/tinygettext/tinygettext/pull/15 for details.",
+            "created_on": "2016-01-13T17:42:34Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                }
+            ]
+        },
+        {
+            "id": 5811,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2016-01-23T20:15:26Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 5975,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Not worth it. We use static compil of latest git code. Closing.",
+            "created_on": "2016-09-02T10:04:46Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 5985,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-09-04T10:21:53Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "2"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 914,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "Move tinygettext to cmake system",
+    "description": "As of today, et:l only uses tinygettext as an internal dependency, all other have been moved to the /libs subdirectory and can be dynamically compiled if present on the system (unix).\r\nThe reason tinygettext is handled internally is mostly because the upstream project wasn't active for quite some time, and tinygettext isn't available as lib on unix platform. In the meantime, it had been patched with various enhancement from a few external projects (SuperTuxKart and 0ad), which means our tinygettext implementation was a patchwork of upstream + 3rd party patches - C++11 features (which aren't handled on old gcc compilers such as the one provided by CentOS).\r\n\r\nHowever, the tinygettext upstream project is now active again, with the project moved to https://github.com/tinygettext/tinygettext. Some of the 3rd party patches have been integrated, and our tinygettext version has now been updated to the latest version (minus the C++11 features). A CMakeFile.txt is provided and we should think about using it directly.\r\n\r\nNotes:\r\n* we should keep tinygettext in the main repo, as tinygettext is, as of today, not available on most unix platform. It has no recent stable release either.\r\n* we should stay away from c++11 feature for the above reasons (for now).\r\n* windows MSVC misses a \"dirent.h implementation\":http://stackoverflow.com/questions/5530933/dirent-h-in-visual-studio-2010-or-2008. but this might actually comes from an \"upstream pull request\":https://github.com/tinygettext/tinygettext/pull/15. We can use one of the existing dirent implementation and/or help to integrate proper support upstream.",
+    "start_date": "2016-01-09",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2016-01-09T21:26:45Z",
+    "updated_on": "2016-09-04T10:21:53Z",
+    "closed_on": "2016-09-02T10:04:46Z"
+}

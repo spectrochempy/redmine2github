@@ -1,0 +1,195 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 422,
+            "issue_id": 1270,
+            "issue_to_id": 986,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 8080,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2019-04-30T12:02:28Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "986"
+                }
+            ]
+        },
+        {
+            "id": 8082,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "Do you have a crashlog for us so we can investigate what the issue might be?\r\n\r\nTo get one start your game with \"/logfile 2\" and then reproduce the steps leading to your crash.\r\nYou should now find a crashlog in your \"homepath\":https://dev.etlegacy.com/projects/etlegacy/wiki/Path_and_File_Structure#fs_homepath-content",
+            "created_on": "2019-04-30T12:02:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "12",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "3",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 8083,
+            "user": {
+                "id": 899,
+                "name": "Patronza"
+            },
+            "notes": "keMoN wrote:\r\n> Do you have a crashlog for us so we can investigate what the issue might be?\r\n> \r\n> To get one start your game with \"/logfile 2\" and then reproduce the steps leading to your crash.\r\n> You should now find a crashlog in your \"homepath\":https://dev.etlegacy.com/projects/etlegacy/wiki/Path_and_File_Structure#fs_homepath-content\r\n\r\nSorry, but I do not know what \"/logfile 2\" is? I tried using the console and entering that as a command, but nothing happened, and there is nothing that looks like a log in the main ET Legacy directory.\r\nThere is a file called logs.lua located in: C:\\Program Files (x86)\\Enemy Territory - Legacy\\legacy\\luascripts\\wolfadmin\\util\r\n\r\nCheers,\r\nPatrick\r\n",
+            "created_on": "2019-04-30T12:33:51Z",
+            "details": []
+        },
+        {
+            "id": 8084,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "It is indeed a console cmd.\r\n\r\n1. Open console [SHIFT]+[ESC]\r\n2. Enter \"/logifle 2\"\r\n3. Confirm it worked and initiate log with \"/logfile\" (it should return that it is currently 2 and that it started a logfile\r\n4. Reproduce your steps\r\n5. Find the crashlog.txt in fs_homepath",
+            "created_on": "2019-04-30T12:49:36Z",
+            "details": []
+        },
+        {
+            "id": 8085,
+            "user": {
+                "id": 899,
+                "name": "Patronza"
+            },
+            "notes": "Ah rightio, legacy has a different console. I just used the \"~\" console. I'll do that tomorrow when I'm back on my computer. I looked in the wiki about logs, but there wasn't any wiki topic there that I could see.\r\n\r\nCheers,\r\nPatrick",
+            "created_on": "2019-04-30T12:54:10Z",
+            "details": []
+        },
+        {
+            "id": 8088,
+            "user": {
+                "id": 899,
+                "name": "Patronza"
+            },
+            "notes": "I tried your steps, but no longfile is produced anywhere I can find. I've even got windows to search all of C:/program files x86 for crashlog.txt.\r\n\r\nSo here I will upload a video of my steps... Just to show you I've generated a crashlog I use the filelog 2 command. Normally it confirms the command but then will say straight away that command not recognised (which it didn't this time).",
+            "created_on": "2019-05-01T02:38:21Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "1084",
+                    "new_value": "20190501_122931_1.mp4"
+                }
+            ]
+        },
+        {
+            "id": 8089,
+            "user": {
+                "id": 899,
+                "name": "Patronza"
+            },
+            "notes": "The weird thing is that when I used OBS Studio to try and screen capture, Legacy did not crash and minimised normally.",
+            "created_on": "2019-05-01T02:40:43Z",
+            "details": []
+        },
+        {
+            "id": 8090,
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "notes": "Depending on which mod you are using, you will find the log file and/or crashlog in *Documents/ETLegacy/legacy* path (where *legacy* can be the name of the other mod that is crashing while you are playing ).",
+            "created_on": "2019-05-01T08:20:27Z",
+            "details": []
+        },
+        {
+            "id": 8092,
+            "user": {
+                "id": 899,
+                "name": "Patronza"
+            },
+            "notes": "ryven wrote:\r\n> Depending on which mod you are using, you will find the log file and/or crashlog in *Documents/ETLegacy/legacy* path (where *legacy* can be the name of the other mod that is crashing while you are playing ).\r\n\r\nIve looked EVERYWHERE for this log file, I even did a full search of C drive (I only have 1 HDD). I can only conclude that ET:L is not creating a log file. As I have previously mentioned some of the time the console will confirm a log was created, then follow immediately with a command not recognised error.",
+            "created_on": "2019-05-02T02:25:57Z",
+            "details": []
+        },
+        {
+            "id": 8093,
+            "user": {
+                "id": 899,
+                "name": "Patronza"
+            },
+            "notes": "Patronza wrote:\r\n> ryven wrote:\r\n> > Depending on which mod you are using, you will find the log file and/or crashlog in *Documents/ETLegacy/legacy* path (where *legacy* can be the name of the other mod that is crashing while you are playing ).\r\n> \r\n> Ive looked EVERYWHERE for this log file, I even did a full search of C drive (I only have 1 HDD). I can only conclude that ET:L is not creating a log file. As I have previously mentioned some of the time the console will confirm a log was created, then follow immediately with a command not recognised error.\r\n\r\nI found a log within the file called \"etconsole.txt\". it states the following. (I alt + tab after getting the logfile is 2 confirmation):\r\n\r\nlogfile opened on Thu May  2 12:32:21 2019\r\n\r\n]/logfile 2\r\n]/logfile\r\n\"logfile\" is: \"2^7\" default:\"0^7\"\r\n----- CL_Shutdown -----\r\nClosing SDL audio device...\r\nSDL audio device shut down.\r\nRE_Shutdown( 1 )\r\nSDL input devices shut down.\r\n-----------------------\r\nPID file removed.\r\nNetwork shutdown.\r\n\r\nAlso note that I am not using any mods. just base legacy. I start the game and do alt +tab or Win +D, and can replicate issue 100% of the time at any point, whether playing a hosted game or joined game, or just in the main menu\r\n",
+            "created_on": "2019-05-02T02:34:57Z",
+            "details": []
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1270,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 899,
+        "name": "Patronza"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "ET Legacy crashes everytime its minimised",
+    "description": "Hi folks,\r\n\r\nI've been enjoying ET Legacy heaps. Unfortunately every time I use ALT + TAB, or WIN + D, Legacy crashes completely once the desktop appears.\r\n\r\nRunning: Windows 10 Pro 64bit, ET Legacy 2.76.\r\n\r\nHope you guys can fix it sometime. Cheers!\r\n",
+    "start_date": "2019-04-30",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Windows"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-04-30T11:10:52Z",
+    "updated_on": "2019-05-02T02:34:57Z"
+}

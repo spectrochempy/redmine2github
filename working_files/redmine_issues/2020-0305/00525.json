@@ -1,0 +1,176 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 267,
+            "issue_id": 566,
+            "issue_to_id": 525,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 3086,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-03-01T17:06:40Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 5611,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-12-07T11:01:39Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "566"
+                }
+            ]
+        },
+        {
+            "id": 5981,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-09-04T10:15:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 6016,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2016-09-13T10:33:38Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 6049,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "See ANIM_ET_DEATH in the code.",
+            "created_on": "2016-09-17T02:03:12Z",
+            "details": []
+        },
+        {
+            "id": 6050,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "ANIM_ET_DEATH isn't related. This is the animation of falling to ground - see new debug server cmd 'ae'.\r\n",
+            "created_on": "2016-09-17T20:27:36Z",
+            "details": []
+        },
+        {
+            "id": 6155,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "We can't fix this. Animations can only be played from start in a sequence/scene. It's same same for all other animations which are much shorter so you don't notice they are all played from start. When you are following a new player a new camera perspective is created - all animations are started. ",
+            "created_on": "2016-11-09T17:50:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 525,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Dead animation bug while spectating",
+    "description": "The title doesn't necessarily light up what the issue is but the way how this can be reproduced is next:\r\n\r\n1. Spectate somebody and after a while he dies\r\n2. Switch the player you spectate\r\n3. Switch back to the player who died\r\n4. Done.\r\n\r\nSo the result after this, you see each time you switch back and forth to the player who died, you will see the dead animation all over again.\r\n\r\n-*S",
+    "start_date": "2014-03-01",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-03-01T16:50:09Z",
+    "updated_on": "2016-11-09T17:50:54Z",
+    "closed_on": "2016-11-09T17:50:54Z"
+}

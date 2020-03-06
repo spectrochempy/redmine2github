@@ -1,0 +1,298 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 1517,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Saukko wrote:\r\n> So the meaning would be to replace the .wav files with less space requiring .mp3 files.\r\n\r\nOr better: switch to .ogg format. Libvorbis is already made available in the code, is a free and open format, and usually Ogg Vorbis sound quality is much better than MP3 at very low bitrates (current max quality in ET is 44khz).\r\n\r\n",
+            "created_on": "2013-04-11T10:13:02Z",
+            "details": []
+        },
+        {
+            "id": 1518,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2013-04-11T10:18:27Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "12"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 1519,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-04-11T10:28:46Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Replace .wav files with .mp3 files",
+                    "new_value": "Replace .wav files with .ogg files"
+                }
+            ]
+        },
+        {
+            "id": 1521,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "If it is just converting job that needs to be done, I could do that. But if it has something to do also with the game code, I would leave the job for you guys to do. Converting from .wav to .ogg is possible. I have the required software to do that.\r\n\r\n-*S",
+            "created_on": "2013-04-11T11:02:39Z",
+            "details": []
+        },
+        {
+            "id": 1522,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "There are also several questions that arise (in my mind at least):\r\n- which .wav files should be converted? The original assets pak (pak0.pk3) provide several hundreds of .wav files.\r\n- what about backward compatibility? Would the other mod able to use the .ogg files?\r\n\r\n",
+            "created_on": "2013-04-11T12:03:29Z",
+            "details": []
+        },
+        {
+            "id": 1523,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "We could do it the same way as texture loading currently works (see @R_LoadImage()@ in source:src/renderer/tr_image.c). The original extension would be trimmed from the filename and the engine would check if the file exists with the .ogg extension. If not, original .wav file would be used. This would preserve compatibility.\r\n\r\nHowever, it is not as simple as converting wav files to ogg files. We cannot use the original assets, so we would have to recreate those sounds or use already available free sounds. Fortunately, there are free sound effects available at \"OpenGameArt.org\":http://www.opengameart.org and the main theme music could probably be found at \"Jamendo.org\":http://www.jamendo.org. I also remember user:Jacker telling me that he or his friend has some experience with sound mixing, so that could be of help.",
+            "created_on": "2013-04-11T14:38:48Z",
+            "details": []
+        },
+        {
+            "id": 1524,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Additionally, after six months of accepting donations we have raised 8 $. Maybe if we wait a couple more decades we will be able to afford a freelance music composer who would create a new main menu music for us.",
+            "created_on": "2013-04-11T14:52:27Z",
+            "details": []
+        },
+        {
+            "id": 1525,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Why would you convert original sounds to another format? I can't see any rational argument for this... pak0.pk3 is only about 215 MB big. Saving space is invalid argument for nowadays standards.",
+            "created_on": "2013-04-11T14:53:47Z",
+            "details": []
+        },
+        {
+            "id": 1526,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Dragonji wrote:\r\n> Why would you convert original sounds to another format? I can't see any rational argument for this... pak0.pk3 is only about 215 MB big. Saving space is invalid argument for nowadays standards.\r\n\r\nYou are totally right. I see this feature more as a \"replace original assets\" request to obtain a 100% free and open source game.\r\n",
+            "created_on": "2013-04-11T15:03:50Z",
+            "details": []
+        },
+        {
+            "id": 1531,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Changing the sounds isn't a good idea in my eyes - it would destroy the atmosphere as we know ET.",
+            "created_on": "2013-04-12T06:29:20Z",
+            "details": []
+        },
+        {
+            "id": 1548,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Radegast wrote:\r\n> ... We cannot use the original assets ...\r\n-> closed\r\n\r\n",
+            "created_on": "2013-04-19T10:35:39Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 1553,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Yes, we should create a new ticket for the asset replacement. I agree ET:L will have a different atmosphere if we replace the original sounds and other assets, but since we can't use the original ones, we have no choice.",
+            "created_on": "2013-04-19T13:51:27Z",
+            "details": []
+        },
+        {
+            "id": 1646,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-04-30T18:16:41Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1711,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Spyhawk wrote:\r\n> You are totally right. I see this feature more as a \"replace original assets\" request to obtain a 100% free and open source game.\r\n\r\nRadegast wrote:\r\n> I agree ET:L will have a different atmosphere if we replace the original sounds and other assets, but since we can't use the original ones, we have no choice.\r\nYou can't get rid of pak0 anyway (original maps for example) so there's no point in replacing sounds.",
+            "created_on": "2013-06-02T22:58:53Z",
+            "details": []
+        },
+        {
+            "id": 1712,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Dragonji wrote:\r\n> You can't get rid of pak0 anyway (original maps for example) so there's no point in replacing sounds.\r\n\r\nAt the very least we have to replace main menu assets to become standalone.",
+            "created_on": "2013-06-02T23:22:59Z",
+            "details": []
+        },
+        {
+            "id": 1713,
+            "user": {
+                "id": 154,
+                "name": "michelangelo"
+            },
+            "notes": "Excuse me but I don't understand this discussion. I mean, I thought that ET:Legacy is about to keep and maintain compatibility with vanilla ET assets/mods.\r\nWhy do you all suddenly want to replace all the assets with new ones?\r\n\r\nWouldn't everything else then come close to something like a successor of vanilla ET? Then you can also break compatiblity with mods and so on.",
+            "created_on": "2013-06-03T08:45:35Z",
+            "details": []
+        },
+        {
+            "id": 1717,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Updating assets would in not way brake the comptatibility, it would only allow even the older mods to look better (especially when the new renderer works 100%). If the mods require some custom assets they have to ship that them self already so no harm done. Getting rid of the requirement for vanilla assets just removes the currently needed hassle of a vanilla ET installation.",
+            "created_on": "2013-06-03T09:46:06Z",
+            "details": []
+        },
+        {
+            "id": 1724,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "But how about vanilla maps .bsp's?",
+            "created_on": "2013-06-04T06:14:18Z",
+            "details": []
+        },
+        {
+            "id": 1725,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "We'll see what will be done about the vanilla maps issue.",
+            "created_on": "2013-06-04T07:00:14Z",
+            "details": []
+        },
+        {
+            "id": 1726,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Voice chat is even a bigger problem in my eyes. Are you going to not attach new vchat sounds at all or record new ones?\r\n\r\nI'm not a fan of changing everything... Yeah, new textures and models can be cool but sounds? Cannot you just make an installer (Windows) which downloads ET 2.55, then silently installs it, removes useless trash (shortcuts) and at the end installs ET:L with shortcuts linking to its executables?",
+            "created_on": "2013-06-04T13:48:48Z",
+            "details": []
+        },
+        {
+            "id": 1729,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "We will see what will be done about the voice acting. The issue is still way early to judge as there has not been any work for it. Vanilla assets are old and we dont own the licenses and by that fact alone i do see that some time in the future we will create our own asset tree. People can use the vanilla assets if they want but that is their busines.",
+            "created_on": "2013-06-05T07:10:18Z",
+            "details": []
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 290,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 7,
+        "name": "2.71rc2"
+    },
+    "subject": "Replace .wav files with .ogg files",
+    "description": "So the meaning would be to replace the .wav files with less space requiring .mp3 files.",
+    "start_date": "2013-04-11",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-04-11T09:46:07Z",
+    "updated_on": "2013-06-05T07:10:18Z",
+    "closed_on": "2013-04-19T10:35:39Z"
+}

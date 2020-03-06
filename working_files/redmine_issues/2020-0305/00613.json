@@ -1,0 +1,206 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "97d34d9544b7f764d8da3e9b7a3b6558fff50722",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: switch to knife if completely out of ammo, fixes #613",
+            "committed_on": "2014-12-06T00:26:11Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3668,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "see #614",
+            "created_on": "2014-11-09T20:14:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3670,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Reopening (see #614).\r\n\r\nI actually don't think this is a bug. I personally prefer to have nades ready in case I'm out of ammo. To me, the knife is the weapon of last resort - when you *really* don't have any other weapon left.",
+            "created_on": "2014-11-09T21:57:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "6",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 3673,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Yeah it's not a bug but there is certainly something wrong that it doesn't make you switch to knife after all your ammo is out of everything, primary, secondary, grenades. As long as I know, pliers can't kill. :p\r\n\r\n-*S",
+            "created_on": "2014-11-10T02:10:31Z",
+            "details": []
+        },
+        {
+            "id": 3707,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2014-11-14T17:06:15Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "0"
+                }
+            ]
+        },
+        {
+            "id": 3732,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "So far it goes as described in the description.\r\nFor soldier it goes as Primary -> Secondary -> Grenades -> Knife\r\nFor medic it goes as Primary -> Secondary -> Grenades -> Syringe (obviously syringe doesn't kill anybody so why not knife after it?)\r\nFor engineer it goes as Primary -> Secondary -> Grenades -> Pliers (another silly joke here :D, I would rather set knife)\r\nFor field ops it goes as Primary -> Secondary -> Grenades -> Airstrike canister (I don't know about this but I would rather take knife out even in this situation?)\r\nFor covert ops it goes as Primary -> Secondary -> Grenades -> Smoke grenade (Knife would be more logical than Satchel charge?)\r\n\r\nMy personal opinion into this is: Primary -> Secondary -> Grenades -> Knife OR Primary -> Secondary -> Knife -> ...\r\n\r\nI would like to hear other people's opinion on this.\r\n\r\n-*S",
+            "created_on": "2014-11-15T22:56:27Z",
+            "details": []
+        },
+        {
+            "id": 3809,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-22T00:37:42Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "6",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 3999,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Changed to Primary \u2192 Secondary \u2192 Grenades \u2192 Knife for all classes. No more fight with pliers!",
+            "created_on": "2014-12-06T09:04:35Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 613,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Weapon prioritizing when out of ammo",
+    "description": "I don't know should this be bug or a feature ticket but here's what I'm after. This is at the moment how ET:L prioritizes the weapons after you are out of ammo:\r\n\r\nPrimary -> Secondary -> Grenades -> Weaponslot 5 (syringe as medic, pliers as engineer...)\r\n\r\nThere's something totally wrong there. If you are out of ammo from primary and secondary it should switch to knife. So the weapon order would be like this:\r\n\r\nPrimary -> Secondary -> Knife\r\n\r\nIf it's kept as original, it should switch to knife after you are out of grenades also.\r\n\r\n-*S",
+    "start_date": "2014-11-08",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-08T22:58:39Z",
+    "updated_on": "2014-12-06T09:04:35Z",
+    "closed_on": "2014-12-06T09:04:35Z"
+}

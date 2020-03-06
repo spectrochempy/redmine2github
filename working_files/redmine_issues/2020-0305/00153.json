@@ -1,0 +1,235 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 38,
+            "issue_id": 126,
+            "issue_to_id": 153,
+            "relation_type": "duplicates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 824,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2012-12-15T23:41:34Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "76",
+                    "new_value": "font-pixelated.png"
+                },
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Thinkpad X230 on openSUSE 12.2 with vanilla kernel 3.6.0\r\n\r\n!http://paste.opensuse.org/images/19462053.png!\r\n\r\n<pre>\r\nET Legacy 2.70 linux-i386 Dec 15 2012\r\nZone megs: 24\r\n^2Info: fs_game is set to 'legacy' mod. Start ET:L with param '+set etmain' for adoring history.\r\n----- FS_Startup -----\r\nCurrent search path:\r\n    /home/matthias/.etlwolf/legacy\r\n    /usr/lib/enemy-territory/legacy/pak3.pk3 (90 files)\r\n    /usr/lib/enemy-territory/legacy/etl_bin.pk3 (2 files)\r\n    /usr/lib/enemy-territory/legacy\r\n    /home/matthias/.etlwolf/etmain/sp_delivery_te.pk3 (51 files)\r\n    /home/matthias/.etlwolf/etmain/reactor_final.pk3 (115 files)\r\n    /home/matthias/.etlwolf/etmain/italyfp2.pk3 (325 files)\r\n    /home/matthias/.etlwolf/etmain\r\n    /usr/lib/enemy-territory/etmain/pak2.pk3 (22 files)\r\n    /usr/lib/enemy-territory/etmain/pak1.pk3 (10 files)\r\n    /usr/lib/enemy-territory/etmain/pak0.pk3 (3725 files)\r\n    /usr/lib/enemy-territory/etmain/mp_bin.pk3 (6 files)\r\n    /usr/lib/enemy-territory/etmain\r\n\r\n----------------------\r\n4346 files in pk3 files\r\nexecing default.cfg\r\nexecing profiles/Matt/etconfig.cfg\r\ncouldn't exec autoexec.cfg\r\nHunk_Clear: reset the hunk ok\r\nTrackbase: Server communication disabled by sv_advert.\r\n----- Client Initialization -----\r\n----- Initializing Renderer ----\r\n-------------------------------\r\nETKEY found.\r\nLoaded 62 translation strings from scripts/translation.cfg\r\n----- Client Initialization Complete -----\r\n----- R_Init -----\r\nSDL using driver \"x11\"\r\nInitializing OpenGL display\r\nEstimated display aspect: 3.043\r\n...setting mode 12:\r\n 1360 768\r\nUsing 8/8/8 Color bits, 24 depth, 0 stencil display.\r\nAvailable modes: '3286x1080 1366x768 640x480 800x600 1024x768'\r\nGL_RENDERER: Mesa DRI Intel(R) Ivybridge Mobile x86/MMX/SSE2\r\nInitializing OpenGL extensions\r\n...using GL_EXT_texture_compression_s3tc\r\n...using GL_EXT_texture_env_add\r\n...using GL_ARB_multitexture\r\n...using GL_EXT_compiled_vertex_array\r\n...using GL_EXT_texture_filter_anisotropic (max: 16)\r\n\r\nGL_VENDOR: Tungsten Graphics, Inc\r\nGL_RENDERER: Mesa DRI Intel(R) Ivybridge Mobile x86/MMX/SSE2\r\nGL_VERSION: 3.0 Mesa 8.0.4\r\nGL_EXTENSIONS: 3.0 Mesa 8.0.4GL_ARB_multisample GL_EXT_abgr GL_EXT_bgra GL_EXT_blend_color GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_copy_texture GL_EXT_polygon_offset GL_EXT_subtexture GL_EXT_texture_object GL_EXT_vertex_array GL_EXT_compiled_vertex_array GL_EXT_texture GL_EXT_texture3D GL_IBM_rasterpos_clip GL_ARB_point_parameters GL_EXT_draw_range_elements GL_EXT_packed_pixels GL_EXT_point_parameters GL_EXT_rescale_normal GL_EXT_separate_specular_color GL_EXT_texture_edge_clamp GL_SGIS_generate_mipmap GL_SGIS_texture_border_clamp GL_SGIS_texture_edge_clamp GL_SGIS_texture_lod GL_ARB_framebuffer_sRGB GL_ARB_multitexture GL_EXT_framebuffer_sRGB GL_IBM_multimode_draw_arrays GL_IBM_texture_mirrored_repeat GL_3DFX_texture_compression_FXT1 GL_ARB_texture_cube_map GL_ARB_texture_env_add GL_ARB_transpose_matrix GL_EXT_blend_func_separate GL_EXT_fog_coord GL_EXT_multi_draw_arrays GL_EXT_secondary_color GL_EXT_texture_env_add GL_EXT_texture_filter_anisotropic GL_EXT_texture_lod_bias GL_INGR_blend_func_separate GL_NV_blend_square GL_NV_light_max_exponent GL_NV_texgen_reflection GL_NV_texture_env_combine4 GL_S3_s3tc GL_SUN_multi_draw_arrays GL_ARB_texture_border_clamp GL_ARB_texture_compression GL_EXT_framebuffer_object GL_EXT_texture_compression_s3tc GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_MESA_window_pos GL_NV_packed_depth_stencil GL_NV_texture_rectangle GL_NV_vertex_program GL_ARB_depth_texture GL_ARB_occlusion_query GL_ARB_shadow GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_mirrored_repeat GL_ARB_window_pos GL_ATI_envmap_bumpmap GL_EXT_stencil_two_side GL_EXT_texture_cube_map GL_NV_depth_clamp GL_NV_vertex_program1_1 GL_APPLE_packed_pixels GL_APPLE_vertex_array_object GL_ARB_draw_buffers GL_ARB_fragment_program GL_ARB_fragment_shader GL_ARB_shader_objects GL_ARB_vertex_program GL_ARB_vertex_shader GL_ATI_draw_buffers GL_ATI_texture_env_combine3 GL_ATI_texture_float GL_EXT_shadow_funcs GL_EXT_stencil_wrap GL_MESA_pack_invert GL_MESA_ycbcr_texture GL_ARB_depth_clamp GL_ARB_fragment_program_shadow GL_ARB_half_float_pixel GL_ARB_point_sprite GL_ARB_shading_language_100 GL_ARB_sync GL_ARB_texture_non_power_of_two GL_ARB_vertex_buffer_object GL_ATI_blend_equation_separate GL_EXT_blend_equation_separate GL_OES_read_format GL_ARB_color_buffer_float GL_ARB_pixel_buffer_object GL_ARB_texture_compression_rgtc GL_ARB_texture_float GL_ARB_texture_rectangle GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_rectangle GL_EXT_texture_sRGB GL_EXT_texture_shared_exponent GL_ARB_framebuffer_object GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_packed_depth_stencil GL_APPLE_object_purgeable GL_ARB_vertex_array_object GL_ATI_separate_stencil GL_EXT_draw_buffers2 GL_EXT_gpu_program_parameters GL_EXT_texture_array GL_EXT_texture_integer GL_EXT_texture_sRGB_decode GL_EXT_timer_query GL_OES_EGL_image GL_MESA_texture_array GL_ARB_copy_buffer GL_ARB_depth_buffer_float GL_ARB_half_float_vertex GL_ARB_map_buffer_range GL_ARB_texture_rg GL_ARB_texture_swizzle GL_ARB_vertex_array_bgra GL_EXT_separate_shader_objects GL_EXT_texture_swizzle GL_EXT_vertex_array_bgra GL_NV_conditional_render GL_ARB_ES2_compatibility GL_ARB_draw_elements_base_vertex GL_ARB_explicit_attrib_location GL_ARB_fragment_coord_conventions GL_ARB_provoking_vertex GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_shader_texture_lod GL_EXT_provoking_vertex GL_EXT_texture_snorm GL_MESA_texture_signed_rgba GL_ARB_robustness GL_EXT_transform_feedback \r\nGL_MAX_TEXTURE_SIZE: 8192\r\nGL_MAX_ACTIVE_TEXTURES_ARB: 8\r\nPIXELFORMAT: color(24-bits) Z(24-bit) stencil(0-bits)\r\nMODE: 12, 1360 x 768 windowed hz:N/A\r\nGAMMA: hardware w/ 0 overbright bits\r\nrendering primitives: single glDrawElements\r\ntexturemode: GL_LINEAR_MIPMAP_LINEAR\r\npicmip: 0\r\ntexture bits: 32\r\nmultitexture: enabled\r\ncompiled vertex arrays: enabled\r\ntexenv add: enabled\r\ncompressed textures: enabled\r\nInitializing Shaders\r\n----- finished R_Init -----\r\n------ Initializing Sound ------\r\nSDL_Init( SDL_INIT_AUDIO )... OK\r\nSDL audio driver is \"pulse\".\r\nSDL_AudioSpec:\r\n  Format:   AUDIO_S16LSB\r\n  Freq:     44100\r\n  Samples:  512\r\n  Channels: 2\r\n  Silence:  0\r\n  Size:     2048\r\nStarting SDL audio callback...\r\nSDL audio initialized.\r\n----- Sound Info -----\r\n    1 stereo\r\n16384 samples\r\n   16 samplebits\r\n    1 submission_chunk\r\n44100 speed\r\n0xae92ff0 dma buffer\r\nNo background file.\r\n----------------------\r\nSound initialization successful.\r\n--------------------------------\r\nSound memory manager started\r\nSys_LoadDll(/home/matthias/.etlwolf/legacy/ui.mp.i386.so)... \r\nSys_LoadDll(/home/matthias/.etlwolf/legacy/ui.mp.i386.so): succeeded ...\r\nSys_LoadDll(ui) found vmMain function at 0x86fc2f40\r\n--- Common Initialization Complete ---\r\nIP: 127.0.0.1\r\nIP: 192.168.178.43\r\nIP6: ::1\r\nIP6: fe80::6267:20ff:fe42:fbdc%wlan0\r\nOpening IP6 socket: [::]:27960\r\nOpening IP socket: 0.0.0.0:27960\r\nMOTD: resolving etmaster.idsoftware.com\r\nMOTD: etmaster.idsoftware.com resolved to 192.246.40.60:27951\r\n----- CL_Shutdown -----\r\nClosing SDL audio device...\r\nSDL audio device shut down.\r\nRE_Shutdown( 1 )\r\n-----------------------\r\n</pre>\r\n\r\nStarted around ~2.70rc1",
+                    "new_value": "Thinkpad X230 on openSUSE 12.2 with vanilla kernel 3.6.0\r\n\r\n!font_pixelated.png!\r\n\r\n<pre>\r\nET Legacy 2.70 linux-i386 Dec 15 2012\r\nZone megs: 24\r\n^2Info: fs_game is set to 'legacy' mod. Start ET:L with param '+set etmain' for adoring history.\r\n----- FS_Startup -----\r\nCurrent search path:\r\n    /home/matthias/.etlwolf/legacy\r\n    /usr/lib/enemy-territory/legacy/pak3.pk3 (90 files)\r\n    /usr/lib/enemy-territory/legacy/etl_bin.pk3 (2 files)\r\n    /usr/lib/enemy-territory/legacy\r\n    /home/matthias/.etlwolf/etmain/sp_delivery_te.pk3 (51 files)\r\n    /home/matthias/.etlwolf/etmain/reactor_final.pk3 (115 files)\r\n    /home/matthias/.etlwolf/etmain/italyfp2.pk3 (325 files)\r\n    /home/matthias/.etlwolf/etmain\r\n    /usr/lib/enemy-territory/etmain/pak2.pk3 (22 files)\r\n    /usr/lib/enemy-territory/etmain/pak1.pk3 (10 files)\r\n    /usr/lib/enemy-territory/etmain/pak0.pk3 (3725 files)\r\n    /usr/lib/enemy-territory/etmain/mp_bin.pk3 (6 files)\r\n    /usr/lib/enemy-territory/etmain\r\n\r\n----------------------\r\n4346 files in pk3 files\r\nexecing default.cfg\r\nexecing profiles/Matt/etconfig.cfg\r\ncouldn't exec autoexec.cfg\r\nHunk_Clear: reset the hunk ok\r\nTrackbase: Server communication disabled by sv_advert.\r\n----- Client Initialization -----\r\n----- Initializing Renderer ----\r\n-------------------------------\r\nETKEY found.\r\nLoaded 62 translation strings from scripts/translation.cfg\r\n----- Client Initialization Complete -----\r\n----- R_Init -----\r\nSDL using driver \"x11\"\r\nInitializing OpenGL display\r\nEstimated display aspect: 3.043\r\n...setting mode 12:\r\n 1360 768\r\nUsing 8/8/8 Color bits, 24 depth, 0 stencil display.\r\nAvailable modes: '3286x1080 1366x768 640x480 800x600 1024x768'\r\nGL_RENDERER: Mesa DRI Intel(R) Ivybridge Mobile x86/MMX/SSE2\r\nInitializing OpenGL extensions\r\n...using GL_EXT_texture_compression_s3tc\r\n...using GL_EXT_texture_env_add\r\n...using GL_ARB_multitexture\r\n...using GL_EXT_compiled_vertex_array\r\n...using GL_EXT_texture_filter_anisotropic (max: 16)\r\n\r\nGL_VENDOR: Tungsten Graphics, Inc\r\nGL_RENDERER: Mesa DRI Intel(R) Ivybridge Mobile x86/MMX/SSE2\r\nGL_VERSION: 3.0 Mesa 8.0.4\r\nGL_EXTENSIONS: 3.0 Mesa 8.0.4GL_ARB_multisample GL_EXT_abgr GL_EXT_bgra GL_EXT_blend_color GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_copy_texture GL_EXT_polygon_offset GL_EXT_subtexture GL_EXT_texture_object GL_EXT_vertex_array GL_EXT_compiled_vertex_array GL_EXT_texture GL_EXT_texture3D GL_IBM_rasterpos_clip GL_ARB_point_parameters GL_EXT_draw_range_elements GL_EXT_packed_pixels GL_EXT_point_parameters GL_EXT_rescale_normal GL_EXT_separate_specular_color GL_EXT_texture_edge_clamp GL_SGIS_generate_mipmap GL_SGIS_texture_border_clamp GL_SGIS_texture_edge_clamp GL_SGIS_texture_lod GL_ARB_framebuffer_sRGB GL_ARB_multitexture GL_EXT_framebuffer_sRGB GL_IBM_multimode_draw_arrays GL_IBM_texture_mirrored_repeat GL_3DFX_texture_compression_FXT1 GL_ARB_texture_cube_map GL_ARB_texture_env_add GL_ARB_transpose_matrix GL_EXT_blend_func_separate GL_EXT_fog_coord GL_EXT_multi_draw_arrays GL_EXT_secondary_color GL_EXT_texture_env_add GL_EXT_texture_filter_anisotropic GL_EXT_texture_lod_bias GL_INGR_blend_func_separate GL_NV_blend_square GL_NV_light_max_exponent GL_NV_texgen_reflection GL_NV_texture_env_combine4 GL_S3_s3tc GL_SUN_multi_draw_arrays GL_ARB_texture_border_clamp GL_ARB_texture_compression GL_EXT_framebuffer_object GL_EXT_texture_compression_s3tc GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_MESA_window_pos GL_NV_packed_depth_stencil GL_NV_texture_rectangle GL_NV_vertex_program GL_ARB_depth_texture GL_ARB_occlusion_query GL_ARB_shadow GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_mirrored_repeat GL_ARB_window_pos GL_ATI_envmap_bumpmap GL_EXT_stencil_two_side GL_EXT_texture_cube_map GL_NV_depth_clamp GL_NV_vertex_program1_1 GL_APPLE_packed_pixels GL_APPLE_vertex_array_object GL_ARB_draw_buffers GL_ARB_fragment_program GL_ARB_fragment_shader GL_ARB_shader_objects GL_ARB_vertex_program GL_ARB_vertex_shader GL_ATI_draw_buffers GL_ATI_texture_env_combine3 GL_ATI_texture_float GL_EXT_shadow_funcs GL_EXT_stencil_wrap GL_MESA_pack_invert GL_MESA_ycbcr_texture GL_ARB_depth_clamp GL_ARB_fragment_program_shadow GL_ARB_half_float_pixel GL_ARB_point_sprite GL_ARB_shading_language_100 GL_ARB_sync GL_ARB_texture_non_power_of_two GL_ARB_vertex_buffer_object GL_ATI_blend_equation_separate GL_EXT_blend_equation_separate GL_OES_read_format GL_ARB_color_buffer_float GL_ARB_pixel_buffer_object GL_ARB_texture_compression_rgtc GL_ARB_texture_float GL_ARB_texture_rectangle GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_rectangle GL_EXT_texture_sRGB GL_EXT_texture_shared_exponent GL_ARB_framebuffer_object GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_packed_depth_stencil GL_APPLE_object_purgeable GL_ARB_vertex_array_object GL_ATI_separate_stencil GL_EXT_draw_buffers2 GL_EXT_gpu_program_parameters GL_EXT_texture_array GL_EXT_texture_integer GL_EXT_texture_sRGB_decode GL_EXT_timer_query GL_OES_EGL_image GL_MESA_texture_array GL_ARB_copy_buffer GL_ARB_depth_buffer_float GL_ARB_half_float_vertex GL_ARB_map_buffer_range GL_ARB_texture_rg GL_ARB_texture_swizzle GL_ARB_vertex_array_bgra GL_EXT_separate_shader_objects GL_EXT_texture_swizzle GL_EXT_vertex_array_bgra GL_NV_conditional_render GL_ARB_ES2_compatibility GL_ARB_draw_elements_base_vertex GL_ARB_explicit_attrib_location GL_ARB_fragment_coord_conventions GL_ARB_provoking_vertex GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_shader_texture_lod GL_EXT_provoking_vertex GL_EXT_texture_snorm GL_MESA_texture_signed_rgba GL_ARB_robustness GL_EXT_transform_feedback \r\nGL_MAX_TEXTURE_SIZE: 8192\r\nGL_MAX_ACTIVE_TEXTURES_ARB: 8\r\nPIXELFORMAT: color(24-bits) Z(24-bit) stencil(0-bits)\r\nMODE: 12, 1360 x 768 windowed hz:N/A\r\nGAMMA: hardware w/ 0 overbright bits\r\nrendering primitives: single glDrawElements\r\ntexturemode: GL_LINEAR_MIPMAP_LINEAR\r\npicmip: 0\r\ntexture bits: 32\r\nmultitexture: enabled\r\ncompiled vertex arrays: enabled\r\ntexenv add: enabled\r\ncompressed textures: enabled\r\nInitializing Shaders\r\n----- finished R_Init -----\r\n------ Initializing Sound ------\r\nSDL_Init( SDL_INIT_AUDIO )... OK\r\nSDL audio driver is \"pulse\".\r\nSDL_AudioSpec:\r\n  Format:   AUDIO_S16LSB\r\n  Freq:     44100\r\n  Samples:  512\r\n  Channels: 2\r\n  Silence:  0\r\n  Size:     2048\r\nStarting SDL audio callback...\r\nSDL audio initialized.\r\n----- Sound Info -----\r\n    1 stereo\r\n16384 samples\r\n   16 samplebits\r\n    1 submission_chunk\r\n44100 speed\r\n0xae92ff0 dma buffer\r\nNo background file.\r\n----------------------\r\nSound initialization successful.\r\n--------------------------------\r\nSound memory manager started\r\nSys_LoadDll(/home/matthias/.etlwolf/legacy/ui.mp.i386.so)... \r\nSys_LoadDll(/home/matthias/.etlwolf/legacy/ui.mp.i386.so): succeeded ...\r\nSys_LoadDll(ui) found vmMain function at 0x86fc2f40\r\n--- Common Initialization Complete ---\r\nIP: 127.0.0.1\r\nIP: 192.168.178.43\r\nIP6: ::1\r\nIP6: fe80::6267:20ff:fe42:fbdc%wlan0\r\nOpening IP6 socket: [::]:27960\r\nOpening IP socket: 0.0.0.0:27960\r\nMOTD: resolving etmaster.idsoftware.com\r\nMOTD: etmaster.idsoftware.com resolved to 192.246.40.60:27951\r\n----- CL_Shutdown -----\r\nClosing SDL audio device...\r\nSDL audio device shut down.\r\nRE_Shutdown( 1 )\r\n-----------------------\r\n</pre>\r\n\r\nStarted around ~2.70rc1"
+                }
+            ]
+        },
+        {
+            "id": 825,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2012-12-15T23:42:23Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Thinkpad X230 on openSUSE 12.2 with vanilla kernel 3.6.0\r\n\r\n!font_pixelated.png!\r\n\r\n<pre>\r\nET Legacy 2.70 linux-i386 Dec 15 2012\r\nZone megs: 24\r\n^2Info: fs_game is set to 'legacy' mod. Start ET:L with param '+set etmain' for adoring history.\r\n----- FS_Startup -----\r\nCurrent search path:\r\n    /home/matthias/.etlwolf/legacy\r\n    /usr/lib/enemy-territory/legacy/pak3.pk3 (90 files)\r\n    /usr/lib/enemy-territory/legacy/etl_bin.pk3 (2 files)\r\n    /usr/lib/enemy-territory/legacy\r\n    /home/matthias/.etlwolf/etmain/sp_delivery_te.pk3 (51 files)\r\n    /home/matthias/.etlwolf/etmain/reactor_final.pk3 (115 files)\r\n    /home/matthias/.etlwolf/etmain/italyfp2.pk3 (325 files)\r\n    /home/matthias/.etlwolf/etmain\r\n    /usr/lib/enemy-territory/etmain/pak2.pk3 (22 files)\r\n    /usr/lib/enemy-territory/etmain/pak1.pk3 (10 files)\r\n    /usr/lib/enemy-territory/etmain/pak0.pk3 (3725 files)\r\n    /usr/lib/enemy-territory/etmain/mp_bin.pk3 (6 files)\r\n    /usr/lib/enemy-territory/etmain\r\n\r\n----------------------\r\n4346 files in pk3 files\r\nexecing default.cfg\r\nexecing profiles/Matt/etconfig.cfg\r\ncouldn't exec autoexec.cfg\r\nHunk_Clear: reset the hunk ok\r\nTrackbase: Server communication disabled by sv_advert.\r\n----- Client Initialization -----\r\n----- Initializing Renderer ----\r\n-------------------------------\r\nETKEY found.\r\nLoaded 62 translation strings from scripts/translation.cfg\r\n----- Client Initialization Complete -----\r\n----- R_Init -----\r\nSDL using driver \"x11\"\r\nInitializing OpenGL display\r\nEstimated display aspect: 3.043\r\n...setting mode 12:\r\n 1360 768\r\nUsing 8/8/8 Color bits, 24 depth, 0 stencil display.\r\nAvailable modes: '3286x1080 1366x768 640x480 800x600 1024x768'\r\nGL_RENDERER: Mesa DRI Intel(R) Ivybridge Mobile x86/MMX/SSE2\r\nInitializing OpenGL extensions\r\n...using GL_EXT_texture_compression_s3tc\r\n...using GL_EXT_texture_env_add\r\n...using GL_ARB_multitexture\r\n...using GL_EXT_compiled_vertex_array\r\n...using GL_EXT_texture_filter_anisotropic (max: 16)\r\n\r\nGL_VENDOR: Tungsten Graphics, Inc\r\nGL_RENDERER: Mesa DRI Intel(R) Ivybridge Mobile x86/MMX/SSE2\r\nGL_VERSION: 3.0 Mesa 8.0.4\r\nGL_EXTENSIONS: 3.0 Mesa 8.0.4GL_ARB_multisample GL_EXT_abgr GL_EXT_bgra GL_EXT_blend_color GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_copy_texture GL_EXT_polygon_offset GL_EXT_subtexture GL_EXT_texture_object GL_EXT_vertex_array GL_EXT_compiled_vertex_array GL_EXT_texture GL_EXT_texture3D GL_IBM_rasterpos_clip GL_ARB_point_parameters GL_EXT_draw_range_elements GL_EXT_packed_pixels GL_EXT_point_parameters GL_EXT_rescale_normal GL_EXT_separate_specular_color GL_EXT_texture_edge_clamp GL_SGIS_generate_mipmap GL_SGIS_texture_border_clamp GL_SGIS_texture_edge_clamp GL_SGIS_texture_lod GL_ARB_framebuffer_sRGB GL_ARB_multitexture GL_EXT_framebuffer_sRGB GL_IBM_multimode_draw_arrays GL_IBM_texture_mirrored_repeat GL_3DFX_texture_compression_FXT1 GL_ARB_texture_cube_map GL_ARB_texture_env_add GL_ARB_transpose_matrix GL_EXT_blend_func_separate GL_EXT_fog_coord GL_EXT_multi_draw_arrays GL_EXT_secondary_color GL_EXT_texture_env_add GL_EXT_texture_filter_anisotropic GL_EXT_texture_lod_bias GL_INGR_blend_func_separate GL_NV_blend_square GL_NV_light_max_exponent GL_NV_texgen_reflection GL_NV_texture_env_combine4 GL_S3_s3tc GL_SUN_multi_draw_arrays GL_ARB_texture_border_clamp GL_ARB_texture_compression GL_EXT_framebuffer_object GL_EXT_texture_compression_s3tc GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_MESA_window_pos GL_NV_packed_depth_stencil GL_NV_texture_rectangle GL_NV_vertex_program GL_ARB_depth_texture GL_ARB_occlusion_query GL_ARB_shadow GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_mirrored_repeat GL_ARB_window_pos GL_ATI_envmap_bumpmap GL_EXT_stencil_two_side GL_EXT_texture_cube_map GL_NV_depth_clamp GL_NV_vertex_program1_1 GL_APPLE_packed_pixels GL_APPLE_vertex_array_object GL_ARB_draw_buffers GL_ARB_fragment_program GL_ARB_fragment_shader GL_ARB_shader_objects GL_ARB_vertex_program GL_ARB_vertex_shader GL_ATI_draw_buffers GL_ATI_texture_env_combine3 GL_ATI_texture_float GL_EXT_shadow_funcs GL_EXT_stencil_wrap GL_MESA_pack_invert GL_MESA_ycbcr_texture GL_ARB_depth_clamp GL_ARB_fragment_program_shadow GL_ARB_half_float_pixel GL_ARB_point_sprite GL_ARB_shading_language_100 GL_ARB_sync GL_ARB_texture_non_power_of_two GL_ARB_vertex_buffer_object GL_ATI_blend_equation_separate GL_EXT_blend_equation_separate GL_OES_read_format GL_ARB_color_buffer_float GL_ARB_pixel_buffer_object GL_ARB_texture_compression_rgtc GL_ARB_texture_float GL_ARB_texture_rectangle GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_rectangle GL_EXT_texture_sRGB GL_EXT_texture_shared_exponent GL_ARB_framebuffer_object GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_packed_depth_stencil GL_APPLE_object_purgeable GL_ARB_vertex_array_object GL_ATI_separate_stencil GL_EXT_draw_buffers2 GL_EXT_gpu_program_parameters GL_EXT_texture_array GL_EXT_texture_integer GL_EXT_texture_sRGB_decode GL_EXT_timer_query GL_OES_EGL_image GL_MESA_texture_array GL_ARB_copy_buffer GL_ARB_depth_buffer_float GL_ARB_half_float_vertex GL_ARB_map_buffer_range GL_ARB_texture_rg GL_ARB_texture_swizzle GL_ARB_vertex_array_bgra GL_EXT_separate_shader_objects GL_EXT_texture_swizzle GL_EXT_vertex_array_bgra GL_NV_conditional_render GL_ARB_ES2_compatibility GL_ARB_draw_elements_base_vertex GL_ARB_explicit_attrib_location GL_ARB_fragment_coord_conventions GL_ARB_provoking_vertex GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_shader_texture_lod GL_EXT_provoking_vertex GL_EXT_texture_snorm GL_MESA_texture_signed_rgba GL_ARB_robustness GL_EXT_transform_feedback \r\nGL_MAX_TEXTURE_SIZE: 8192\r\nGL_MAX_ACTIVE_TEXTURES_ARB: 8\r\nPIXELFORMAT: color(24-bits) Z(24-bit) stencil(0-bits)\r\nMODE: 12, 1360 x 768 windowed hz:N/A\r\nGAMMA: hardware w/ 0 overbright bits\r\nrendering primitives: single glDrawElements\r\ntexturemode: GL_LINEAR_MIPMAP_LINEAR\r\npicmip: 0\r\ntexture bits: 32\r\nmultitexture: enabled\r\ncompiled vertex arrays: enabled\r\ntexenv add: enabled\r\ncompressed textures: enabled\r\nInitializing Shaders\r\n----- finished R_Init -----\r\n------ Initializing Sound ------\r\nSDL_Init( SDL_INIT_AUDIO )... OK\r\nSDL audio driver is \"pulse\".\r\nSDL_AudioSpec:\r\n  Format:   AUDIO_S16LSB\r\n  Freq:     44100\r\n  Samples:  512\r\n  Channels: 2\r\n  Silence:  0\r\n  Size:     2048\r\nStarting SDL audio callback...\r\nSDL audio initialized.\r\n----- Sound Info -----\r\n    1 stereo\r\n16384 samples\r\n   16 samplebits\r\n    1 submission_chunk\r\n44100 speed\r\n0xae92ff0 dma buffer\r\nNo background file.\r\n----------------------\r\nSound initialization successful.\r\n--------------------------------\r\nSound memory manager started\r\nSys_LoadDll(/home/matthias/.etlwolf/legacy/ui.mp.i386.so)... \r\nSys_LoadDll(/home/matthias/.etlwolf/legacy/ui.mp.i386.so): succeeded ...\r\nSys_LoadDll(ui) found vmMain function at 0x86fc2f40\r\n--- Common Initialization Complete ---\r\nIP: 127.0.0.1\r\nIP: 192.168.178.43\r\nIP6: ::1\r\nIP6: fe80::6267:20ff:fe42:fbdc%wlan0\r\nOpening IP6 socket: [::]:27960\r\nOpening IP socket: 0.0.0.0:27960\r\nMOTD: resolving etmaster.idsoftware.com\r\nMOTD: etmaster.idsoftware.com resolved to 192.246.40.60:27951\r\n----- CL_Shutdown -----\r\nClosing SDL audio device...\r\nSDL audio device shut down.\r\nRE_Shutdown( 1 )\r\n-----------------------\r\n</pre>\r\n\r\nStarted around ~2.70rc1",
+                    "new_value": "Thinkpad X230 on openSUSE 12.2 with vanilla kernel 3.6.0\r\n\r\n!font-pixelated.png!\r\n\r\n<pre>\r\nET Legacy 2.70 linux-i386 Dec 15 2012\r\nZone megs: 24\r\n^2Info: fs_game is set to 'legacy' mod. Start ET:L with param '+set etmain' for adoring history.\r\n----- FS_Startup -----\r\nCurrent search path:\r\n    /home/matthias/.etlwolf/legacy\r\n    /usr/lib/enemy-territory/legacy/pak3.pk3 (90 files)\r\n    /usr/lib/enemy-territory/legacy/etl_bin.pk3 (2 files)\r\n    /usr/lib/enemy-territory/legacy\r\n    /home/matthias/.etlwolf/etmain/sp_delivery_te.pk3 (51 files)\r\n    /home/matthias/.etlwolf/etmain/reactor_final.pk3 (115 files)\r\n    /home/matthias/.etlwolf/etmain/italyfp2.pk3 (325 files)\r\n    /home/matthias/.etlwolf/etmain\r\n    /usr/lib/enemy-territory/etmain/pak2.pk3 (22 files)\r\n    /usr/lib/enemy-territory/etmain/pak1.pk3 (10 files)\r\n    /usr/lib/enemy-territory/etmain/pak0.pk3 (3725 files)\r\n    /usr/lib/enemy-territory/etmain/mp_bin.pk3 (6 files)\r\n    /usr/lib/enemy-territory/etmain\r\n\r\n----------------------\r\n4346 files in pk3 files\r\nexecing default.cfg\r\nexecing profiles/Matt/etconfig.cfg\r\ncouldn't exec autoexec.cfg\r\nHunk_Clear: reset the hunk ok\r\nTrackbase: Server communication disabled by sv_advert.\r\n----- Client Initialization -----\r\n----- Initializing Renderer ----\r\n-------------------------------\r\nETKEY found.\r\nLoaded 62 translation strings from scripts/translation.cfg\r\n----- Client Initialization Complete -----\r\n----- R_Init -----\r\nSDL using driver \"x11\"\r\nInitializing OpenGL display\r\nEstimated display aspect: 3.043\r\n...setting mode 12:\r\n 1360 768\r\nUsing 8/8/8 Color bits, 24 depth, 0 stencil display.\r\nAvailable modes: '3286x1080 1366x768 640x480 800x600 1024x768'\r\nGL_RENDERER: Mesa DRI Intel(R) Ivybridge Mobile x86/MMX/SSE2\r\nInitializing OpenGL extensions\r\n...using GL_EXT_texture_compression_s3tc\r\n...using GL_EXT_texture_env_add\r\n...using GL_ARB_multitexture\r\n...using GL_EXT_compiled_vertex_array\r\n...using GL_EXT_texture_filter_anisotropic (max: 16)\r\n\r\nGL_VENDOR: Tungsten Graphics, Inc\r\nGL_RENDERER: Mesa DRI Intel(R) Ivybridge Mobile x86/MMX/SSE2\r\nGL_VERSION: 3.0 Mesa 8.0.4\r\nGL_EXTENSIONS: 3.0 Mesa 8.0.4GL_ARB_multisample GL_EXT_abgr GL_EXT_bgra GL_EXT_blend_color GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_copy_texture GL_EXT_polygon_offset GL_EXT_subtexture GL_EXT_texture_object GL_EXT_vertex_array GL_EXT_compiled_vertex_array GL_EXT_texture GL_EXT_texture3D GL_IBM_rasterpos_clip GL_ARB_point_parameters GL_EXT_draw_range_elements GL_EXT_packed_pixels GL_EXT_point_parameters GL_EXT_rescale_normal GL_EXT_separate_specular_color GL_EXT_texture_edge_clamp GL_SGIS_generate_mipmap GL_SGIS_texture_border_clamp GL_SGIS_texture_edge_clamp GL_SGIS_texture_lod GL_ARB_framebuffer_sRGB GL_ARB_multitexture GL_EXT_framebuffer_sRGB GL_IBM_multimode_draw_arrays GL_IBM_texture_mirrored_repeat GL_3DFX_texture_compression_FXT1 GL_ARB_texture_cube_map GL_ARB_texture_env_add GL_ARB_transpose_matrix GL_EXT_blend_func_separate GL_EXT_fog_coord GL_EXT_multi_draw_arrays GL_EXT_secondary_color GL_EXT_texture_env_add GL_EXT_texture_filter_anisotropic GL_EXT_texture_lod_bias GL_INGR_blend_func_separate GL_NV_blend_square GL_NV_light_max_exponent GL_NV_texgen_reflection GL_NV_texture_env_combine4 GL_S3_s3tc GL_SUN_multi_draw_arrays GL_ARB_texture_border_clamp GL_ARB_texture_compression GL_EXT_framebuffer_object GL_EXT_texture_compression_s3tc GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_MESA_window_pos GL_NV_packed_depth_stencil GL_NV_texture_rectangle GL_NV_vertex_program GL_ARB_depth_texture GL_ARB_occlusion_query GL_ARB_shadow GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_mirrored_repeat GL_ARB_window_pos GL_ATI_envmap_bumpmap GL_EXT_stencil_two_side GL_EXT_texture_cube_map GL_NV_depth_clamp GL_NV_vertex_program1_1 GL_APPLE_packed_pixels GL_APPLE_vertex_array_object GL_ARB_draw_buffers GL_ARB_fragment_program GL_ARB_fragment_shader GL_ARB_shader_objects GL_ARB_vertex_program GL_ARB_vertex_shader GL_ATI_draw_buffers GL_ATI_texture_env_combine3 GL_ATI_texture_float GL_EXT_shadow_funcs GL_EXT_stencil_wrap GL_MESA_pack_invert GL_MESA_ycbcr_texture GL_ARB_depth_clamp GL_ARB_fragment_program_shadow GL_ARB_half_float_pixel GL_ARB_point_sprite GL_ARB_shading_language_100 GL_ARB_sync GL_ARB_texture_non_power_of_two GL_ARB_vertex_buffer_object GL_ATI_blend_equation_separate GL_EXT_blend_equation_separate GL_OES_read_format GL_ARB_color_buffer_float GL_ARB_pixel_buffer_object GL_ARB_texture_compression_rgtc GL_ARB_texture_float GL_ARB_texture_rectangle GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_rectangle GL_EXT_texture_sRGB GL_EXT_texture_shared_exponent GL_ARB_framebuffer_object GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_packed_depth_stencil GL_APPLE_object_purgeable GL_ARB_vertex_array_object GL_ATI_separate_stencil GL_EXT_draw_buffers2 GL_EXT_gpu_program_parameters GL_EXT_texture_array GL_EXT_texture_integer GL_EXT_texture_sRGB_decode GL_EXT_timer_query GL_OES_EGL_image GL_MESA_texture_array GL_ARB_copy_buffer GL_ARB_depth_buffer_float GL_ARB_half_float_vertex GL_ARB_map_buffer_range GL_ARB_texture_rg GL_ARB_texture_swizzle GL_ARB_vertex_array_bgra GL_EXT_separate_shader_objects GL_EXT_texture_swizzle GL_EXT_vertex_array_bgra GL_NV_conditional_render GL_ARB_ES2_compatibility GL_ARB_draw_elements_base_vertex GL_ARB_explicit_attrib_location GL_ARB_fragment_coord_conventions GL_ARB_provoking_vertex GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_shader_texture_lod GL_EXT_provoking_vertex GL_EXT_texture_snorm GL_MESA_texture_signed_rgba GL_ARB_robustness GL_EXT_transform_feedback \r\nGL_MAX_TEXTURE_SIZE: 8192\r\nGL_MAX_ACTIVE_TEXTURES_ARB: 8\r\nPIXELFORMAT: color(24-bits) Z(24-bit) stencil(0-bits)\r\nMODE: 12, 1360 x 768 windowed hz:N/A\r\nGAMMA: hardware w/ 0 overbright bits\r\nrendering primitives: single glDrawElements\r\ntexturemode: GL_LINEAR_MIPMAP_LINEAR\r\npicmip: 0\r\ntexture bits: 32\r\nmultitexture: enabled\r\ncompiled vertex arrays: enabled\r\ntexenv add: enabled\r\ncompressed textures: enabled\r\nInitializing Shaders\r\n----- finished R_Init -----\r\n------ Initializing Sound ------\r\nSDL_Init( SDL_INIT_AUDIO )... OK\r\nSDL audio driver is \"pulse\".\r\nSDL_AudioSpec:\r\n  Format:   AUDIO_S16LSB\r\n  Freq:     44100\r\n  Samples:  512\r\n  Channels: 2\r\n  Silence:  0\r\n  Size:     2048\r\nStarting SDL audio callback...\r\nSDL audio initialized.\r\n----- Sound Info -----\r\n    1 stereo\r\n16384 samples\r\n   16 samplebits\r\n    1 submission_chunk\r\n44100 speed\r\n0xae92ff0 dma buffer\r\nNo background file.\r\n----------------------\r\nSound initialization successful.\r\n--------------------------------\r\nSound memory manager started\r\nSys_LoadDll(/home/matthias/.etlwolf/legacy/ui.mp.i386.so)... \r\nSys_LoadDll(/home/matthias/.etlwolf/legacy/ui.mp.i386.so): succeeded ...\r\nSys_LoadDll(ui) found vmMain function at 0x86fc2f40\r\n--- Common Initialization Complete ---\r\nIP: 127.0.0.1\r\nIP: 192.168.178.43\r\nIP6: ::1\r\nIP6: fe80::6267:20ff:fe42:fbdc%wlan0\r\nOpening IP6 socket: [::]:27960\r\nOpening IP socket: 0.0.0.0:27960\r\nMOTD: resolving etmaster.idsoftware.com\r\nMOTD: etmaster.idsoftware.com resolved to 192.246.40.60:27951\r\n----- CL_Shutdown -----\r\nClosing SDL audio device...\r\nSDL audio device shut down.\r\nRE_Shutdown( 1 )\r\n-----------------------\r\n</pre>\r\n\r\nStarted around ~2.70rc1"
+                }
+            ]
+        },
+        {
+            "id": 833,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "I tested it Opensuse with rc1 and font look fine ",
+            "created_on": "2012-12-17T20:21:01Z",
+            "details": []
+        },
+        {
+            "id": 835,
+            "user": {
+                "id": 58,
+                "name": "Matt"
+            },
+            "notes": "Es lag an https://build.opensuse.org/package/show?project=home%3Apontostroy%3AX11&package=libtxc_dxtn die ich f\u00fcr Team Fortress 2 installiert habe, dass auf GL_EXT_texture_compression_s3tc besteht. Dort habe ich sogar noch schlimmere Darstellungsprobleme. Deinstallation behob das Problem.",
+            "created_on": "2012-12-18T09:37:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 837,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-12-18T11:26:18Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 839,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Matt wrote:\r\n> Es lag an https://build.opensuse.org/package/show?project=home%3Apontostroy%3AX11&package=libtxc_dxtn die ich f\u00fcr Team Fortress 2 installiert habe, dass auf GL_EXT_texture_compression_s3tc besteht. Dort habe ich sogar noch schlimmere Darstellungsprobleme. Deinstallation behob das Problem.\r\n\r\nThis is strange. When I was on Gentoo I had libtxc_dxtn installed and I didn't experience this bug. I reopened this issue just so I will remember to test it when I use Gentoo again (in a few weeks time).\r\n\r\n_EDIT:_ btw, it would be nice if you added a note to the [[FAQ]] about this.",
+            "created_on": "2012-12-18T21:40:33Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "5",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 1243,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-02-28T11:07:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1302,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-03-12T12:12:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 2416,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "created_on": "2013-12-14T17:55:47Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "new_value": "Linux"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 153,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 58,
+        "name": "Matt"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 7,
+        "name": "2.71rc2"
+    },
+    "subject": "font rendering problems",
+    "description": "Thinkpad X230 on openSUSE 12.2 with vanilla kernel 3.6.0\r\n\r\n!font-pixelated.png!\r\n\r\n<pre>\r\nET Legacy 2.70 linux-i386 Dec 15 2012\r\nZone megs: 24\r\n^2Info: fs_game is set to 'legacy' mod. Start ET:L with param '+set etmain' for adoring history.\r\n----- FS_Startup -----\r\nCurrent search path:\r\n    /home/matthias/.etlwolf/legacy\r\n    /usr/lib/enemy-territory/legacy/pak3.pk3 (90 files)\r\n    /usr/lib/enemy-territory/legacy/etl_bin.pk3 (2 files)\r\n    /usr/lib/enemy-territory/legacy\r\n    /home/matthias/.etlwolf/etmain/sp_delivery_te.pk3 (51 files)\r\n    /home/matthias/.etlwolf/etmain/reactor_final.pk3 (115 files)\r\n    /home/matthias/.etlwolf/etmain/italyfp2.pk3 (325 files)\r\n    /home/matthias/.etlwolf/etmain\r\n    /usr/lib/enemy-territory/etmain/pak2.pk3 (22 files)\r\n    /usr/lib/enemy-territory/etmain/pak1.pk3 (10 files)\r\n    /usr/lib/enemy-territory/etmain/pak0.pk3 (3725 files)\r\n    /usr/lib/enemy-territory/etmain/mp_bin.pk3 (6 files)\r\n    /usr/lib/enemy-territory/etmain\r\n\r\n----------------------\r\n4346 files in pk3 files\r\nexecing default.cfg\r\nexecing profiles/Matt/etconfig.cfg\r\ncouldn't exec autoexec.cfg\r\nHunk_Clear: reset the hunk ok\r\nTrackbase: Server communication disabled by sv_advert.\r\n----- Client Initialization -----\r\n----- Initializing Renderer ----\r\n-------------------------------\r\nETKEY found.\r\nLoaded 62 translation strings from scripts/translation.cfg\r\n----- Client Initialization Complete -----\r\n----- R_Init -----\r\nSDL using driver \"x11\"\r\nInitializing OpenGL display\r\nEstimated display aspect: 3.043\r\n...setting mode 12:\r\n 1360 768\r\nUsing 8/8/8 Color bits, 24 depth, 0 stencil display.\r\nAvailable modes: '3286x1080 1366x768 640x480 800x600 1024x768'\r\nGL_RENDERER: Mesa DRI Intel(R) Ivybridge Mobile x86/MMX/SSE2\r\nInitializing OpenGL extensions\r\n...using GL_EXT_texture_compression_s3tc\r\n...using GL_EXT_texture_env_add\r\n...using GL_ARB_multitexture\r\n...using GL_EXT_compiled_vertex_array\r\n...using GL_EXT_texture_filter_anisotropic (max: 16)\r\n\r\nGL_VENDOR: Tungsten Graphics, Inc\r\nGL_RENDERER: Mesa DRI Intel(R) Ivybridge Mobile x86/MMX/SSE2\r\nGL_VERSION: 3.0 Mesa 8.0.4\r\nGL_EXTENSIONS: 3.0 Mesa 8.0.4GL_ARB_multisample GL_EXT_abgr GL_EXT_bgra GL_EXT_blend_color GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_copy_texture GL_EXT_polygon_offset GL_EXT_subtexture GL_EXT_texture_object GL_EXT_vertex_array GL_EXT_compiled_vertex_array GL_EXT_texture GL_EXT_texture3D GL_IBM_rasterpos_clip GL_ARB_point_parameters GL_EXT_draw_range_elements GL_EXT_packed_pixels GL_EXT_point_parameters GL_EXT_rescale_normal GL_EXT_separate_specular_color GL_EXT_texture_edge_clamp GL_SGIS_generate_mipmap GL_SGIS_texture_border_clamp GL_SGIS_texture_edge_clamp GL_SGIS_texture_lod GL_ARB_framebuffer_sRGB GL_ARB_multitexture GL_EXT_framebuffer_sRGB GL_IBM_multimode_draw_arrays GL_IBM_texture_mirrored_repeat GL_3DFX_texture_compression_FXT1 GL_ARB_texture_cube_map GL_ARB_texture_env_add GL_ARB_transpose_matrix GL_EXT_blend_func_separate GL_EXT_fog_coord GL_EXT_multi_draw_arrays GL_EXT_secondary_color GL_EXT_texture_env_add GL_EXT_texture_filter_anisotropic GL_EXT_texture_lod_bias GL_INGR_blend_func_separate GL_NV_blend_square GL_NV_light_max_exponent GL_NV_texgen_reflection GL_NV_texture_env_combine4 GL_S3_s3tc GL_SUN_multi_draw_arrays GL_ARB_texture_border_clamp GL_ARB_texture_compression GL_EXT_framebuffer_object GL_EXT_texture_compression_s3tc GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_MESA_window_pos GL_NV_packed_depth_stencil GL_NV_texture_rectangle GL_NV_vertex_program GL_ARB_depth_texture GL_ARB_occlusion_query GL_ARB_shadow GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_mirrored_repeat GL_ARB_window_pos GL_ATI_envmap_bumpmap GL_EXT_stencil_two_side GL_EXT_texture_cube_map GL_NV_depth_clamp GL_NV_vertex_program1_1 GL_APPLE_packed_pixels GL_APPLE_vertex_array_object GL_ARB_draw_buffers GL_ARB_fragment_program GL_ARB_fragment_shader GL_ARB_shader_objects GL_ARB_vertex_program GL_ARB_vertex_shader GL_ATI_draw_buffers GL_ATI_texture_env_combine3 GL_ATI_texture_float GL_EXT_shadow_funcs GL_EXT_stencil_wrap GL_MESA_pack_invert GL_MESA_ycbcr_texture GL_ARB_depth_clamp GL_ARB_fragment_program_shadow GL_ARB_half_float_pixel GL_ARB_point_sprite GL_ARB_shading_language_100 GL_ARB_sync GL_ARB_texture_non_power_of_two GL_ARB_vertex_buffer_object GL_ATI_blend_equation_separate GL_EXT_blend_equation_separate GL_OES_read_format GL_ARB_color_buffer_float GL_ARB_pixel_buffer_object GL_ARB_texture_compression_rgtc GL_ARB_texture_float GL_ARB_texture_rectangle GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_rectangle GL_EXT_texture_sRGB GL_EXT_texture_shared_exponent GL_ARB_framebuffer_object GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_packed_depth_stencil GL_APPLE_object_purgeable GL_ARB_vertex_array_object GL_ATI_separate_stencil GL_EXT_draw_buffers2 GL_EXT_gpu_program_parameters GL_EXT_texture_array GL_EXT_texture_integer GL_EXT_texture_sRGB_decode GL_EXT_timer_query GL_OES_EGL_image GL_MESA_texture_array GL_ARB_copy_buffer GL_ARB_depth_buffer_float GL_ARB_half_float_vertex GL_ARB_map_buffer_range GL_ARB_texture_rg GL_ARB_texture_swizzle GL_ARB_vertex_array_bgra GL_EXT_separate_shader_objects GL_EXT_texture_swizzle GL_EXT_vertex_array_bgra GL_NV_conditional_render GL_ARB_ES2_compatibility GL_ARB_draw_elements_base_vertex GL_ARB_explicit_attrib_location GL_ARB_fragment_coord_conventions GL_ARB_provoking_vertex GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_shader_texture_lod GL_EXT_provoking_vertex GL_EXT_texture_snorm GL_MESA_texture_signed_rgba GL_ARB_robustness GL_EXT_transform_feedback \r\nGL_MAX_TEXTURE_SIZE: 8192\r\nGL_MAX_ACTIVE_TEXTURES_ARB: 8\r\nPIXELFORMAT: color(24-bits) Z(24-bit) stencil(0-bits)\r\nMODE: 12, 1360 x 768 windowed hz:N/A\r\nGAMMA: hardware w/ 0 overbright bits\r\nrendering primitives: single glDrawElements\r\ntexturemode: GL_LINEAR_MIPMAP_LINEAR\r\npicmip: 0\r\ntexture bits: 32\r\nmultitexture: enabled\r\ncompiled vertex arrays: enabled\r\ntexenv add: enabled\r\ncompressed textures: enabled\r\nInitializing Shaders\r\n----- finished R_Init -----\r\n------ Initializing Sound ------\r\nSDL_Init( SDL_INIT_AUDIO )... OK\r\nSDL audio driver is \"pulse\".\r\nSDL_AudioSpec:\r\n  Format:   AUDIO_S16LSB\r\n  Freq:     44100\r\n  Samples:  512\r\n  Channels: 2\r\n  Silence:  0\r\n  Size:     2048\r\nStarting SDL audio callback...\r\nSDL audio initialized.\r\n----- Sound Info -----\r\n    1 stereo\r\n16384 samples\r\n   16 samplebits\r\n    1 submission_chunk\r\n44100 speed\r\n0xae92ff0 dma buffer\r\nNo background file.\r\n----------------------\r\nSound initialization successful.\r\n--------------------------------\r\nSound memory manager started\r\nSys_LoadDll(/home/matthias/.etlwolf/legacy/ui.mp.i386.so)... \r\nSys_LoadDll(/home/matthias/.etlwolf/legacy/ui.mp.i386.so): succeeded ...\r\nSys_LoadDll(ui) found vmMain function at 0x86fc2f40\r\n--- Common Initialization Complete ---\r\nIP: 127.0.0.1\r\nIP: 192.168.178.43\r\nIP6: ::1\r\nIP6: fe80::6267:20ff:fe42:fbdc%wlan0\r\nOpening IP6 socket: [::]:27960\r\nOpening IP socket: 0.0.0.0:27960\r\nMOTD: resolving etmaster.idsoftware.com\r\nMOTD: etmaster.idsoftware.com resolved to 192.246.40.60:27951\r\n----- CL_Shutdown -----\r\nClosing SDL audio device...\r\nSDL audio device shut down.\r\nRE_Shutdown( 1 )\r\n-----------------------\r\n</pre>\r\n\r\nStarted around ~2.70rc1",
+    "start_date": "2012-12-15",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-12-15T20:24:58Z",
+    "updated_on": "2013-12-14T17:55:47Z",
+    "closed_on": "2013-03-12T12:12:08Z"
+}

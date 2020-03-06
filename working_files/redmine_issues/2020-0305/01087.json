@@ -1,0 +1,165 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "ff123818ef2496e7bc577c6ef8026e675adfd1a8",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "renderer2: fix oasis terrain refs #1087",
+            "committed_on": "2018-05-28T18:10:25Z"
+        },
+        {
+            "revision": "9e0d7aec64887f1397aae194e44bc9f98bd2b775",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "renderer2: fix radar terrain refs #1087",
+            "committed_on": "2018-05-28T19:58:58Z"
+        },
+        {
+            "revision": "e8a8d5f7a8d6a029bcf0dbb505fc0e21299892ea",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "renderer2: fix fueldump terrain refs #1087",
+            "committed_on": "2018-05-28T20:18:11Z"
+        },
+        {
+            "revision": "0a259a9565cc4cb189349d667b6806efffcbc1ac",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "renderer2: fix goldrush terrain refs #1087",
+            "committed_on": "2018-05-28T20:52:47Z"
+        },
+        {
+            "revision": "ddea3a77146208365797edb9e02236f796c091bc",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "renderer2: fix railgun and battery terrain fixes #1087",
+            "committed_on": "2018-05-29T11:19:54Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7170,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-03-13T09:20:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "15"
+                }
+            ]
+        },
+        {
+            "id": 7175,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "this seem to be something related to real-time lightning just affects lightmaps",
+            "created_on": "2018-03-17T12:29:59Z",
+            "details": []
+        },
+        {
+            "id": 7224,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-05-28T15:19:49Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "907",
+                    "new_value": "mp_siwa.shader"
+                }
+            ]
+        },
+        {
+            "id": 7225,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Applied in changeset commit:ddea3a77146208365797edb9e02236f796c091bc.",
+            "created_on": "2018-05-29T11:42:43Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1087,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "fixed_version": {
+        "id": 15,
+        "name": "renderer2"
+    },
+    "subject": "renderer2: Fix terrain texture reflection + light",
+    "description": "See images, other maps are affected too (oasis).",
+    "start_date": "2018-03-13",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2018-03-13T09:19:54Z",
+    "updated_on": "2018-05-29T11:42:43Z",
+    "closed_on": "2018-05-29T11:42:43Z"
+}

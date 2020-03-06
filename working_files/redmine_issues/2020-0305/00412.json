@@ -1,0 +1,464 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 119,
+            "issue_id": 412,
+            "issue_to_id": 502,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "b550a1febe91e693d04323cc540f1b223d3137a2",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "general: fixed inaccurate Q_IsColorString(), fixes #412\n\nThanks to swillits",
+            "committed_on": "2014-01-13T09:53:44Z"
+        },
+        {
+            "revision": "8be99042e965642603ec03a657543bb0aaf31c19",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: fixed console color codes input, refs #412, refs #502",
+            "committed_on": "2014-02-15T19:52:49Z"
+        },
+        {
+            "revision": "0e4504a80289a26fbf1dd2e6c9eb188ea7bccd48",
+            "user": {
+                "id": 300,
+                "name": "swillits"
+            },
+            "comments": "client: fixes color code issues introduced recently, refs #412, #502",
+            "committed_on": "2014-03-16T21:22:46Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2328,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2013-12-08T04:26:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 2367,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2013-12-11T10:36:26Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 2561,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "^ symbol works as intended in the intermission chat, you get one ^ and press \"S\" for example to get yellow colour. The ^ symbol fades away and the you can see is empty chat line where you can start typing with yellow colour.\r\n\r\nIn chat box (default \"T\") ^ symbol doesn't work as intended. Instead of ^ just fading away when you have pressed one, it stays. And when you start typing after the ^ symbol it would look like this for example: ^objective but in the end when you press Enter to submit the text, it will end up as \"bjective\" with the colour that \"O\" button gives.\r\n\r\nSo to make things work like supposed to, the chat box should be fixed to work like in the intermission chat when it comes to colours.\r\n\r\nWith Finnish keyboard style the ^ symbol is inconsistent and it has been confirmed. In vanilla ET it works differently since you have to press Shift+\u00a8 twice to get two ^ symbols because once is not enough. So in other words it's a so called \"dead key\". But still it works correctly in the vanilla ET without any kind of malfunctions. ET:L in the other hand makes it work differently. When you press Shift+\u00a8 once it gives one ^. Which is how it supposed to work. But it is inconsistent as mentioned.\r\n\r\n-*S",
+            "created_on": "2013-12-26T14:54:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "^ symbol console issues",
+                    "new_value": "^ symbol issues"
+                }
+            ]
+        },
+        {
+            "id": 2566,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-12-26T15:41:15Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Ok there are several issues that \"^\" symbol creates:\r\n\r\n- When you type ^ once, it won't show anything in console. (see the 1st line on the picture)\r\n- When you type ^ once gain, it won't show anything in console and will put the text on the same line instead of a different line. (1st line)\r\n- When you type ^^, it will show only one ^ in console. (2nd line)\r\n- When you type ^^ another time it will only show it like this \"^]^\" (2nd line)\r\n- When you type for example \"^sau\" in console, the text will turn yellow and will in the end show au in yellow colour (Works as intended?)\r\n- When you type for example \"^^sau\" in console, it will be the same as the one example above but puts green ^ symbol infront of the text.\r\n\r\nWhen you type in chat (T), then it will work way differently.\r\n\r\n-*S",
+                    "new_value": "Ok there are several issues that \"&#94;\" symbol creates:\r\n\r\n- When you type &#94; once, it won't show anything in console. (see the 1st line on the picture)\r\n- When you type &#94; once gain, it won't show anything in console and will put the text on the same line instead of a different line. (1st line)\r\n- When you type &#94;&#94;, it will show only one &#94; in console. (2nd line)\r\n- When you type &#94;&#94; another time it will only show it like this \"&#94;]&#94;\" (2nd line)\r\n- When you type for example \"&#94;sau\" in console, the text will turn yellow and will in the end show au in yellow colour (Works as intended?)\r\n- When you type for example \"&#94;&#94;sau\" in console, it will be the same as the one example above but puts green &#94; symbol infront of the text.\r\n\r\nWhen you type in chat (T), then it will work way differently.\r\n\r\n-*S"
+                }
+            ]
+        },
+        {
+            "id": 2826,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Fixed by user:swillits in \"this pull request\":https://github.com/etlegacy/etlegacy/pull/75. Pending review by Ensiform.",
+            "created_on": "2014-01-13T02:07:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "300"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 2830,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Sorry, I commited the change before I saw that Ensi should review it first. Changing to \"feedback\".",
+            "created_on": "2014-01-13T10:02:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 2831,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:b550a1febe91e693d04323cc540f1b223d3137a2.",
+            "created_on": "2014-01-13T10:15:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 2833,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-01-13T10:34:38Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 2834,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "No problem. He already did.",
+            "created_on": "2014-01-13T16:29:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 2934,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-02-01T13:11:22Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "502"
+                }
+            ]
+        },
+        {
+            "id": 3111,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "This thing isn't over yet. There are two things that are faulty now:\r\n\r\n1. First are the two pictures showing how ^ creates a bug. The first picture shows the faulty text in the console and the second picture shows how the name should really be.\r\n\r\n2. When you do ^^ in the console, it shows it as darkblue, and that is the reason why that makes it buggy.\r\n\r\nFixed to New?\r\n\r\n-*S",
+            "created_on": "2014-03-14T22:17:03Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "309",
+                    "new_value": "colourbug.jpg"
+                },
+                {
+                    "property": "attachment",
+                    "name": "310",
+                    "new_value": "therightone.jpg"
+                }
+            ]
+        },
+        {
+            "id": 3112,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Lets check this out (again)",
+            "created_on": "2014-03-14T22:20:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 3113,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Dark blue is the correct behavior, since this is the intended color code of '^' (only enabled after a first '^' obviously).",
+            "created_on": "2014-03-14T22:25:57Z",
+            "details": []
+        },
+        {
+            "id": 3114,
+            "user": {
+                "id": 300,
+                "name": "swillits"
+            },
+            "notes": "In a sane world, \"^x\" (where x is not \"^\") would be a color code, and \"^^\" would simply escape to a single literal \"^\" without any color change. This would be consistent with nearly every formatter and escaper syntax on the planet, but for reasons beyond me, it simply doesn't work that way. The code is trivially simpler by working the way it does, but the behavior is wacky. (And for backwards-compatability reasons, it can't change.) ",
+            "created_on": "2014-03-15T16:49:15Z",
+            "details": []
+        },
+        {
+            "id": 3115,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "swillits wrote:\r\n> In a sane world, \"^x\" (where x is not \"^\") would be a color code, and \"^^\" would simply escape to a single literal \"^\" without any color change. This would be consistent with nearly every formatter and escaper syntax on the planet, but for reasons beyond me, it simply doesn't work that way. The code is trivially simpler by working the way it does, but the behavior is wacky. (And for backwards-compatability reasons, it can't change.)\r\n\r\nBut isn't this exactly the way it works in the vanilla engine, and this is the way it should work atleast in my eyes. I need to fire up vanilla ET on my windows machine to test this but i am pretty sure that this is the way..\r\n",
+            "created_on": "2014-03-15T17:56:23Z",
+            "details": []
+        },
+        {
+            "id": 3122,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Jacker wrote:\r\n> But isn't this exactly the way it works in the vanilla engine, and this is the way it should work atleast in my eyes. I need to fire up vanilla ET on my windows machine to test this but i am pretty sure that this is the way..\r\n\r\nJust checked it, and it seems to work that way in vanilla ET. I thought my last change gave a similar behavior, but we're still far from it. The worst thing is that I don't know why the original behavior was changed in the first place (or was it to fix the newline character that was eaten?).\r\n\r\nSubsequently, we added code to solve new bugs that were introduced by the new changes (possibility to show color in the uncolored string, then looping in the uncolored name as a workaround, then we had different characters displayed in the color and uncolored string, then we applied a ^^ that disable itself to fix this new issue...).\r\n\r\nIn a nutshell, all the fixes applied so far still result in an messy situation. Here's my suggestion: let's revert back everything to the original code (including the buggy new line), and try to fix this bug for real in 2.72.\r\n\r\n",
+            "created_on": "2014-03-16T15:22:33Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 3125,
+            "user": {
+                "id": 300,
+                "name": "swillits"
+            },
+            "notes": "There's nothing to fix \"for real.\" There were obvious bugs which caused multiple lines to render on one, and I fixed that. \r\n\r\nThe color codes now work exactly as intended, without any bugs like \"^\\n\" causing crazy issues.\r\n\r\nThe intended behavior is still weird, but that's just the way it is, and it can't be changed because it'd break many nicknames relying on the behavior that already exists. There's no point in changing that.\r\n\r\n\r\nThe only change list above other than the one I made, is commit:8be99042; I haven't studied it, but it doesn't look 'messy' to me. So I'm not sure what issue you're seeing with the current state?",
+            "created_on": "2014-03-16T15:59:38Z",
+            "details": []
+        },
+        {
+            "id": 3126,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Keep in mind the changes done in #502 too.\r\n\r\nAlso, vanilla ET doesn't work exactly as your \"sane world\" situation above, but allows to use '^' as a displayed character nonetheless (ie, @^1Spy^7^^7hawk@ would display @Spy^hawk@ with the 3 first letters red, then white letters). Unfortunately, the current code doesn't allow to use '^' as a displayed character (as reported by Saukko) and thus breaks nickname :(\r\n\r\nIt also seems that vanilla ET behavior has been broken way before swilits introduced the fix for the new line character bug. I'm actually unsure what is the change that broke it, and the reason of that change.\r\n\r\nTo summarize, the ideal color code behavior:\r\n- should color strings exactly the same way as in vanilla ET,\r\n- should display the same way in-game and in console,\r\n- shouldn't break newline character in console,\r\n- shouldn't allow in-game uncolored strings to display color (ie, @some^^78text@ should display @some^8text@ in white),\r\n- should display colored and uncolored strings with the exact same characters (no difference, apart from the color),\r\n- should display entered color codes in console (unlike vanilla ET) if possible.\r\n\r\nCurrent code doesn't comply with first point (but comply with the others).\r\nLast point is nice to have, but is the least important imho.",
+            "created_on": "2014-03-16T17:39:49Z",
+            "details": []
+        },
+        {
+            "id": 3127,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-03-16T17:49:10Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 3128,
+            "user": {
+                "id": 300,
+                "name": "swillits"
+            },
+            "notes": "> Unfortunately, the current code doesn't allow to use '^' as a displayed character (as reported by Saukko) and thus breaks nickname :(\r\n\r\nIt certainly does when I try it. Looking at his screenshots he never said what the original \"input\" text exactly was, so there's an assumption of what his original text was.\r\n\r\nHowever to match the appearance of \"therightone.jpg\", the text should be \"^^7V^0alk^7Y^0r^1!^0a\" and if I plug that it into etlegacy right now, it works fine. I see it exactly as I expected, and exactly as it's shown in therightone.jpg. So, if there is a bug, I still don't know what it is. \r\n\r\nI just found this color code generator:\r\nhttp://www.teammuppet.eu/home/index.php?/page/color-name-generator#%5E%5E7V%5E0alk%5E7Y%5E0r%5E1!%5E0a\r\n\r\nIt confirms the behavior I'm seeing.",
+            "created_on": "2014-03-16T17:58:17Z",
+            "details": []
+        },
+        {
+            "id": 3129,
+            "user": {
+                "id": 300,
+                "name": "swillits"
+            },
+            "notes": "Ok, ignore my previous message. I had an old build without spyhawk's recent changes ref'd by 502.\r\n\r\nI've reverted some of spyhawk's changes which caused the issues to pop back up, and more accurately fixed the display of names at the crosshairs, which was what he was after to begin with. \r\n\r\ncommit:0e4504a80289a26fbf1dd2e6c9eb188ea7bccd48",
+            "created_on": "2014-03-16T21:33:42Z",
+            "details": []
+        },
+        {
+            "id": 3133,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Thx swillits. I haven't had time to test the changes yet, but looking closer at the code, I'm wondering now why we don't force color using CG_Text_Paint_Ext() a bit below instead of rewriting an entire new function Q_ColorizeString()?\r\n\r\nMight require some adjustment, but it is probably the cleanest way to do it, isn't it?\r\n\r\nEdit: After an IRC talk with swillits, it seems this isn't possible easily nor would this be desirable. The old drawing code (blurry fonts) had an extra parameter to do this, but we probably don't want to bring it back.",
+            "created_on": "2014-03-18T18:28:25Z",
+            "details": []
+        },
+        {
+            "id": 3136,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-03-23T14:35:59Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 412,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 6,
+        "name": "Urgent"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 300,
+        "name": "swillits"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "^ symbol issues",
+    "description": "Ok there are several issues that \"&#94;\" symbol creates:\r\n\r\n- When you type &#94; once, it won't show anything in console. (see the 1st line on the picture)\r\n- When you type &#94; once gain, it won't show anything in console and will put the text on the same line instead of a different line. (1st line)\r\n- When you type &#94;&#94;, it will show only one &#94; in console. (2nd line)\r\n- When you type &#94;&#94; another time it will only show it like this \"&#94;]&#94;\" (2nd line)\r\n- When you type for example \"&#94;sau\" in console, the text will turn yellow and will in the end show au in yellow colour (Works as intended?)\r\n- When you type for example \"&#94;&#94;sau\" in console, it will be the same as the one example above but puts green &#94; symbol infront of the text.\r\n\r\nWhen you type in chat (T), then it will work way differently.\r\n\r\n-*S",
+    "start_date": "2013-12-08",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-12-08T04:26:13Z",
+    "updated_on": "2014-03-23T14:35:59Z",
+    "closed_on": "2014-03-23T14:35:59Z"
+}

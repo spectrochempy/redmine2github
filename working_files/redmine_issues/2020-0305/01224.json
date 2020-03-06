@@ -1,0 +1,152 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 412,
+            "issue_id": 1224,
+            "issue_to_id": 981,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "0d66e08d39bedfdfa8907cb6d56c2b7b5e20e4bd",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: fixed allowed chat length longer than server side, refs #1224",
+            "committed_on": "2019-04-18T16:55:48Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7886,
+            "user": {
+                "id": 392,
+                "name": "Timothy"
+            },
+            "notes": "",
+            "created_on": "2019-03-21T10:11:39Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Chat aera allows too long string",
+                    "new_value": "Chat area allows too long string"
+                }
+            ]
+        },
+        {
+            "id": 7970,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "See MAX_SAY_TEXT, limited to 150 chars server side, and CG_MessageSend_f() with messageText limited to 256 chars client side.\r\n\r\n{FIXME}\r\n* check semi-colon characters (;) when passed in string (sanitize).",
+            "created_on": "2019-04-17T20:54:02Z",
+            "details": []
+        },
+        {
+            "id": 7971,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-17T21:23:05Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "981"
+                }
+            ]
+        },
+        {
+            "id": 7980,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "This is tricky to fix perfectly, since the allowed string length depends on a number of parameters (player name, color codes, location option, etc.) in addition to the old, inflexible UI code, but the commited change should make the client side limit quite close to the server side limit.",
+            "created_on": "2019-04-18T18:02:51Z",
+            "details": []
+        },
+        {
+            "id": 7981,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-18T18:03:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1224,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Chat area allows too long string",
+    "description": "It is possible to enter more characters than what would be displayed on the chat aera (even though it splits long input on muliple lines).\r\nRetricts the input length or make it prints everything (might be better to have a definied limit though).",
+    "start_date": "2019-03-20",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-03-20T19:58:04Z",
+    "updated_on": "2019-04-18T18:03:00Z",
+    "closed_on": "2019-04-18T18:03:00Z"
+}

@@ -1,0 +1,103 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7169,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-03-13T09:17:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Fix glitch on oasis wall",
+                    "new_value": "renderer2: Fix glitch on oasis wall"
+                }
+            ]
+        },
+        {
+            "id": 7172,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Caused by non default r_subdivisions cvar setting.",
+            "created_on": "2018-03-13T17:20:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1086,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 15,
+        "name": "renderer2"
+    },
+    "subject": "renderer2: Fix glitch on oasis wall",
+    "description": "See image.",
+    "start_date": "2018-03-13",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2018-03-13T07:55:43Z",
+    "updated_on": "2018-03-13T17:20:58Z",
+    "closed_on": "2018-03-13T17:20:58Z"
+}

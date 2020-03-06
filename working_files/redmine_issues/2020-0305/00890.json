@@ -1,0 +1,307 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 365,
+            "issue_id": 1089,
+            "issue_to_id": 890,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "0045b1164ecbb52d58bca94e42563fe3d009bd26",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: updated omnibot to 0.85, refs #890",
+            "committed_on": "2016-01-19T00:36:54Z"
+        },
+        {
+            "revision": "6fe16c61a8af521734b0e781deeb2f504bf0e710",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: omnibot local adjustments, refs #890",
+            "committed_on": "2016-01-19T00:36:54Z"
+        },
+        {
+            "revision": "649b658d6aaaa9ee3588fa159eb529165b1aafa4",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: updated omnibot interface for Legacy mod, refs #890",
+            "committed_on": "2016-01-19T12:26:18Z"
+        },
+        {
+            "revision": "25267e48e133e699f4eded66b7ad56fe0ed27fe8",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed null pointer dereference, refs #890",
+            "committed_on": "2016-01-20T16:15:18Z"
+        },
+        {
+            "revision": "ea2761f4cff374c121d8116d198dbe66281e4229",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: adjusted omnibot interface for symmetric bazooka and panzer, refs #890",
+            "committed_on": "2016-01-21T10:56:29Z"
+        },
+        {
+            "revision": "621396b40b66ab73fe3d8f6f1ed4fe87980f5f1d",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: define omnibot URL in cmake file only, refs #890",
+            "committed_on": "2016-09-10T08:33:31Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 5638,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "We'll likely need to ask upstream to provide an additional OB lib compiled against the new C++ ABI (C++11), or OB will stop working once Linux distribution gradually move to the new libstdc++.\r\n\r\nEdit: The first distribution to move to GCC5 with C++11 ABI still provides libstdc++ with the old C++98 ABI (dual ABI compiled in). This shouldn't be an issue... for now. ",
+            "created_on": "2015-12-10T14:12:20Z",
+            "details": []
+        },
+        {
+            "id": 5773,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "We still use omnibot game interface 0.83 internally... we need to sync with latest stable upstream (0.85) and upstream everything we can to the OB repo.",
+            "created_on": "2016-01-16T16:20:12Z",
+            "details": []
+        },
+        {
+            "id": 5775,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Tracking some discussion with upstream \"here\":http://omni-bot.invisionzone.com/index.php?/topic/3442-legacy-mod-update-and-ob-patches/\r\n\r\n{FIXME}\r\n* -Update omnibot to version 0.85- (done)\r\n* -Push Legacy mod specific code upstream- (done, see \"upstream commit\":https://github.com/jswigart/omni-bot/commit/3557eb80d7d5a78f56169a4195c761feb4c70467, additional \"null pointer fix\":https://github.com/jswigart/omni-bot/commit/8f41ab5ec645b9a0114fcabb9a4c0558a7162aed and \"bazooka fix\":https://github.com/jswigart/omni-bot/commit/44a8994aa9236fa57c7da63a87a0b3e489e1ebe6)\r\n* Check gm scripts for the modname \"Legacy\" (-> use same properties for bazooka and panzer, unlike NQ)\r\n* Update gm scripts for g_misc and g_shove options\r\n* -Check if _chooseSecWeap applies to Legacy- (it doesn't)\r\n\r\nIn the future, we'll only have to update our local game interface according to this \"commit\":https://github.com/etlegacy/etlegacy/commit/6fe16c61a8af521734b0e781deeb2f504bf0e710. All other necessary code is now upstream.",
+            "created_on": "2016-01-17T18:34:21Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                }
+            ]
+        },
+        {
+            "id": 5788,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Quick gm script fix for legacy mod attached (fixes bazooka not working anymore as we use \"legacy\" as mod name now).\r\nA better way to deal with that issue would be to link bazooka directly to panzer in OB lib/interface.",
+            "created_on": "2016-01-19T17:27:28Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "620",
+                    "new_value": "legacy.diff"
+                }
+            ]
+        },
+        {
+            "id": 5794,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2016-01-20T13:59:03Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "620",
+                    "old_value": "legacy.diff"
+                }
+            ]
+        },
+        {
+            "id": 5795,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "New gm script for omnibot update: take into account the bazooka/panzer and g_misc 2.",
+            "created_on": "2016-01-20T14:00:24Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "621",
+                    "new_value": "legacy.diff"
+                }
+            ]
+        },
+        {
+            "id": 5799,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2016-01-21T11:08:34Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "621",
+                    "old_value": "legacy.diff"
+                }
+            ]
+        },
+        {
+            "id": 5800,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2016-01-21T11:09:02Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "622",
+                    "new_value": "legacy.diff"
+                }
+            ]
+        },
+        {
+            "id": 5977,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "At the current time, the last gm patch is still not upstream (see \"thread\":http://omni-bot.invisionzone.com/index.php?/topic/3442-legacy-mod-update-and-ob-patches/).\r\n\r\nIn the meantime and for the release, we can patch the update-omnibot.sh script (after svn update):\r\n\r\n   cd omni-bot\r\npatch -p0 < ../legacy.diff\r\ncd ..\r\n\r\nEdit: actually not needed for release.",
+            "created_on": "2016-09-02T10:15:11Z",
+            "details": []
+        },
+        {
+            "id": 5978,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "We don't need that patch for omnibot. It just cuts compatibilty with older legacy mod versions.",
+            "created_on": "2016-09-02T12:12:39Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "20"
+                }
+            ]
+        },
+        {
+            "id": 5998,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-09-09T14:27:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "20",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 7183,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-03-22T12:02:44Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1089"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 890,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "Update to Omni-Bot 0.85",
+    "description": "",
+    "start_date": "2015-11-24",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-11-24T19:43:43Z",
+    "updated_on": "2016-09-09T14:27:32Z",
+    "closed_on": "2016-09-09T14:27:32Z"
+}

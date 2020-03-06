@@ -1,0 +1,128 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7310,
+            "user": {
+                "id": 733,
+                "name": "N3rwitZ"
+            },
+            "notes": "IR4T4 wrote:\r\n> I've noticed models/skins have issues on UJE server with ETL while vanilla seems fine.\r\n\r\nLike what? Missing bits on textures? I didn't notice no problems.\r\n\r\n",
+            "created_on": "2018-10-17T09:44:20Z",
+            "details": []
+        },
+        {
+            "id": 7311,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-10-17T12:51:29Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "938",
+                    "new_value": "2018-10-17-144849-UJE_trainstation.jpg"
+                },
+                {
+                    "property": "attachment",
+                    "name": "941",
+                    "new_value": "2018-10-17-144849-UJE_trainstation.jpg"
+                }
+            ]
+        },
+        {
+            "id": 7312,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-10-17T12:51:46Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "941",
+                    "old_value": "2018-10-17-144849-UJE_trainstation.jpg"
+                }
+            ]
+        },
+        {
+            "id": 7351,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Caused by buggy files on server.",
+            "created_on": "2018-12-21T13:00:14Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1119,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Skin/model issues on mods using custom material",
+    "description": "I've noticed models/skins have issues on UJE server with ETL while vanilla seems fine.\r\n\r\n",
+    "start_date": "2018-10-17",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2018-10-17T08:43:40Z",
+    "updated_on": "2018-12-21T13:00:14Z",
+    "closed_on": "2018-12-21T13:00:14Z"
+}

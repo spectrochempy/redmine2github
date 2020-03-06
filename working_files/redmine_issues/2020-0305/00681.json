@@ -1,0 +1,174 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 159,
+            "issue_id": 681,
+            "issue_to_id": 683,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "0767b401da0a40dc9afa5764775512bc8e9de7a1",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "cleaned up the mapdata code and possibly fixed covert ops bug, refs #681",
+            "committed_on": "2014-12-18T13:31:05Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3939,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-11-30T11:03:30Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "683"
+                }
+            ]
+        },
+        {
+            "id": 4016,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Does the visible when spawning issue happen after you killed the enemy as a covi?\r\n\r\n(Btw, shouldn't the CM window be on the upper-right of the screen and not totally in the middle?)",
+            "created_on": "2014-12-09T18:27:03Z",
+            "details": []
+        },
+        {
+            "id": 4141,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "",
+            "created_on": "2014-12-18T09:40:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 4153,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "This should now work, it takes a while for the enemy player to appear on the map (which is ok since its not meant to be realtime).",
+            "created_on": "2014-12-18T13:52:47Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 4168,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Works enough well for now. At least the main problem is gone. Fixed?\r\n\r\n-*S",
+            "created_on": "2014-12-18T22:53:31Z",
+            "details": []
+        },
+        {
+            "id": 4178,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Feel free to reopen for exact bugs.",
+            "created_on": "2014-12-19T14:37:37Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 681,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Command map issues",
+    "description": "This thing needs a total overhaul. You can randomly see the enemy player on the command map even he doesn't do anything. I don't know is that a covert op's feature to see the other one from own spawn in his own spawn. But I took plenty of screenshots. I wanted to see is this map specific. I have no slightest idea how command map supposed to work. But currently it's bugged, somehow. See the screenshots.\r\n\r\nThere are also those other issue tickets I have posted here, I will try to link those to this.\r\n\r\n-*S",
+    "start_date": "2014-11-29",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-29T16:41:47Z",
+    "updated_on": "2014-12-19T14:37:37Z",
+    "closed_on": "2014-12-19T14:37:37Z"
+}

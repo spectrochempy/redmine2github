@@ -1,0 +1,216 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 2233,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "This feature is still undergoing discussion, but I moved it to version:2.72, because we should only commit minor tweaks and bugfixes before our first stable release.",
+            "created_on": "2013-11-10T13:14:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "21"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 2653,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2013-12-31T16:30:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "ADD: weapon configs [NQ like] ",
+                    "new_value": "//WITHDRAWN: ADD: weapon configs [NQ like] "
+                },
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "As I already stated I'm in favor of increasing the modification/personalization possiblities in ET.\r\nWeapon configs in which the server admin can configure the weapon handling (damage/firerate/clip size, etc) would be a very important step in that direction as he can already pretty much create a (whole) different environment by changing textures/skins and such.\r\n\r\n\r\n//I was told to target it to rc4, please feel free to change that, as I don't know the whole work-amount you guys are facing.",
+                    "new_value": "*Mod-specific feature, shouldn\u2019t be implemented by the engine. Sorry for the inconvenience*\r\n\r\n\r\nAs I already stated I'm in favor of increasing the modification/personalization possiblities in ET.\r\nWeapon configs in which the server admin can configure the weapon handling (damage/firerate/clip size, etc) would be a very important step in that direction as he can already pretty much create a (whole) different environment by changing textures/skins and such.\r\n\r\n\r\n//I was told to target it to rc4, please feel free to change that, as I don't know the whole work-amount you guys are facing."
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 2655,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2013-12-31T16:40:42Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "//WITHDRAWN: ADD: weapon configs [NQ like] ",
+                    "new_value": "//REOPENED: ADD: weapon configs [NQ like] "
+                },
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "*Mod-specific feature, shouldn\u2019t be implemented by the engine. Sorry for the inconvenience*\r\n\r\n\r\nAs I already stated I'm in favor of increasing the modification/personalization possiblities in ET.\r\nWeapon configs in which the server admin can configure the weapon handling (damage/firerate/clip size, etc) would be a very important step in that direction as he can already pretty much create a (whole) different environment by changing textures/skins and such.\r\n\r\n\r\n//I was told to target it to rc4, please feel free to change that, as I don't know the whole work-amount you guys are facing.",
+                    "new_value": "As I already stated I'm in favor of increasing the modification/personalization possiblities in ET.\r\nWeapon configs in which the server admin can configure the weapon handling (damage/firerate/clip size, etc) would be a very important step in that direction as he can already pretty much create a (whole) different environment by changing textures/skins and such.\r\n\r\n\r\n//I was told to target it to rc4, please feel free to change that, as I don't know the whole work-amount you guys are facing."
+                }
+            ]
+        },
+        {
+            "id": 2657,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "I'm personally against this idea (my PoV can be found on forums).\r\n\r\nkeMoN wrote:\r\n> Weapon configs in which the server admin can configure the weapon handling (damage/firerate/clip size, etc) would be a very important step in that direction as *he can already pretty much create a (whole) different environment by changing textures/skins and such*.\r\nThis part bothers me most. The mod shouldn't be called the same as original one in case it's completely different.",
+            "created_on": "2013-12-31T16:59:31Z",
+            "details": []
+        },
+        {
+            "id": 2665,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I'm strongly against this feature - I've seen too many misconfigurated servers where it's possible to change weapon values. And tbh ... is there a need for such a manuipulation? When people connect to a legacy mod server they shouldn't experience surprises. Thinking of competetive games and global ranks it's a no go. ",
+            "created_on": "2014-01-01T16:16:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 2666,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Since we were waiting on user:IR4T4 's opinion and he is against this as well, we won't be implementing this feature.",
+            "created_on": "2014-01-01T16:30:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 2668,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-01-01T18:50:37Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "//REOPENED: ADD: weapon configs [NQ like] ",
+                    "new_value": "Add weapon configs [NQ like] "
+                }
+            ]
+        },
+        {
+            "id": 2730,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-01-03T07:28:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "11"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 392,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "Add weapon configs [NQ like] ",
+    "description": "As I already stated I'm in favor of increasing the modification/personalization possiblities in ET.\r\nWeapon configs in which the server admin can configure the weapon handling (damage/firerate/clip size, etc) would be a very important step in that direction as he can already pretty much create a (whole) different environment by changing textures/skins and such.\r\n\r\n\r\n//I was told to target it to rc4, please feel free to change that, as I don't know the whole work-amount you guys are facing.",
+    "start_date": "2013-11-10",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-11-10T13:05:57Z",
+    "updated_on": "2014-01-03T07:28:16Z",
+    "closed_on": "2014-01-01T16:30:31Z"
+}

@@ -1,0 +1,123 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 415,
+            "issue_id": 1252,
+            "issue_to_id": 871,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 5202,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-08-23T09:45:18Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 5207,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-08-23T10:02:48Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "21"
+                }
+            ]
+        },
+        {
+            "id": 5208,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "This is also implemented by \"silent mod\":http://mygamingtalk.com/wiki/Silent_FAQ#Team_Death_Match.",
+            "created_on": "2015-08-23T10:09:13Z",
+            "details": []
+        },
+        {
+            "id": 8012,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-21T10:02:56Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1252"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 871,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "(Team-) Deathmatch gametype",
+    "description": "For the same reasons specified in \"number 4\":http://forums.warchest.com/showthread.php/45664-Top-5?p=535895&viewfull=1#post535895 I think it would be nice to have an additional (Team-)Deathmatch gametype.\r\n\r\nFor starters this would \"only\" require:\r\n\u2022 ability to collect weapons - not restricted to 1 primary and 1 secondary anymore\r\n\u2022 re-implement health/ammo power-ups from rtcw (MP40/Kar clips, grenades, flak jacket, etc.)",
+    "start_date": "2015-08-23",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-08-23T08:05:28Z",
+    "updated_on": "2015-08-23T10:09:13Z"
+}

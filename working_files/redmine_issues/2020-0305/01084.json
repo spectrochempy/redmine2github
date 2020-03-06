@@ -1,0 +1,115 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 364,
+            "issue_id": 1084,
+            "issue_to_id": 1083,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7162,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-03-11T15:26:44Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1083"
+                }
+            ]
+        },
+        {
+            "id": 7361,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-12-21T14:07:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "15"
+                }
+            ]
+        },
+        {
+            "id": 7362,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-12-21T14:07:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Add light control",
+                    "new_value": "renderer2: Add light control"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1084,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 15,
+        "name": "renderer2"
+    },
+    "subject": "renderer2: Add light control",
+    "description": "For renderer2 there is a need for ambient light to have more light control.\r\n\r\nSee https://github.com/zturtleman/spearmint/wiki/Research:refEntity_t-Lighting-Control",
+    "start_date": "2018-03-11",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2018-03-11T15:24:22Z",
+    "updated_on": "2018-12-21T14:07:20Z"
+}

@@ -1,0 +1,221 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 387,
+            "issue_id": 1179,
+            "issue_to_id": 477,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "88939a960aa517119ba533cc7c2a8fd1a781d503",
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "comments": "qagame: add geoip privacy option\n\n* clients can now toggle geolocation sharing using cg_allowGeoIP\nrefs #1179",
+            "committed_on": "2019-01-20T19:34:34Z"
+        },
+        {
+            "revision": "ad8cdc4a87dccd730474536f26a8eeee70139b55",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: added GeoIP privacy option, refs #1179",
+            "committed_on": "2019-01-24T12:48:56Z"
+        },
+        {
+            "revision": "e0144d1bdb1dff66a77886d8fa013f3c90630673",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed no flag displayed when cg_allowGeoIP is not set, refs #1179\n\nSee cg_allowGeoIp which defaults to 1.",
+            "committed_on": "2019-03-09T15:41:34Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7618,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-01-20T18:08:07Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "477"
+                }
+            ]
+        },
+        {
+            "id": 7620,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-01-20T18:13:56Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "GeoIP allows to display country flags on servers. While fun and intersting, this option is server side controlled and is subject to some privacy issue.\r\nAdd a client side option to prevent the server to display the country of the client if it is disallowed. Keep it simple and use a generic flag instead (UN flag).\r\n\r\nThis likely requires to extend the clientinfo string.",
+                    "new_value": "GeoIP allows to display country flags on servers. Clients have the ability to display flags on their own scoreboard, but the option itself is server side controlled only and thus subject to some privacy issue. \r\nAdd a client side option to prevent the server to display the country of the client if it is disallowed. Keep it simple and use a generic flag instead (UN flag).\r\n\r\nThis likely requires to extend the clientinfo string (maybe extend cg_uinfo)."
+                }
+            ]
+        },
+        {
+            "id": 7665,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-01-24T13:13:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 7666,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-01-24T13:14:23Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                }
+            ]
+        },
+        {
+            "id": 7839,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Doesn't seem to be working as expected. Reopening.",
+            "created_on": "2019-03-04T19:52:39Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 7841,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Did some more testing tonight (connecting with 2 clients) and the implementation seems good.\r\n\r\nThere seem however to be an issue with clients that connect from the 2.76 UI. I guess the cg_allowGeoIP isn't set client side when connecting, so they appear as \"UN\" flag (latest `else` catched it, so client->sess.uci = 246;). After a reconnect, everything should be in order. Maybe there is a way to correctly handle this use case, but this would be a temporary issue, and should be gone once players upgrade to the newer release.",
+            "created_on": "2019-03-05T21:03:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 7858,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-03-09T17:23:11Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1179,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Add GeoIP privacy option",
+    "description": "GeoIP allows to display country flags on servers. Clients have the ability to display flags on their own scoreboard, but the option itself is server side controlled only and thus subject to some privacy issue. \r\nAdd a client side option to prevent the server to display the country of the client if it is disallowed. Keep it simple and use a generic flag instead (UN flag).\r\n\r\nThis likely requires to extend the clientinfo string (maybe extend cg_uinfo).",
+    "start_date": "2019-01-20",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-01-20T18:07:41Z",
+    "updated_on": "2019-03-09T17:23:11Z",
+    "closed_on": "2019-03-09T17:23:11Z"
+}

@@ -1,0 +1,115 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 436,
+            "issue_id": 1305,
+            "issue_to_id": 1304,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "871fa50fd87b645a60f76909d2ba0085c4667be7",
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "comments": "cgame: fix impact sound loading\n\n* impact sound loading was falining on sdl backend\n* obituaries and ft weapon icons were picmiped",
+            "committed_on": "2019-05-28T12:12:51Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 8259,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-05-28T16:21:43Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 8265,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-05-29T16:02:09Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1305"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1304,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 6,
+        "name": "Urgent"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Impact sounds aren't working",
+    "description": "Impact sounds (artillery, airtrikes) don't seem to happen.",
+    "start_date": "2019-05-26",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-05-26T16:32:45Z",
+    "updated_on": "2019-05-28T16:21:43Z",
+    "closed_on": "2019-05-28T16:21:43Z"
+}

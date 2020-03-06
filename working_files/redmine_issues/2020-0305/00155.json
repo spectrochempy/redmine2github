@@ -1,0 +1,89 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "97d24feaf4e9352eb498162527b00ad45ed1136f",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "server: rcon attack log rework fixes #155",
+            "committed_on": "2012-12-22T21:09:37Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 844,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Applied in changeset commit:97d24feaf4e9352eb498162527b00ad45ed1136f.",
+            "created_on": "2012-12-22T21:55:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 155,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 5,
+        "name": "Server"
+    },
+    "fixed_version": {
+        "id": 5,
+        "name": "2.71rc1"
+    },
+    "subject": "Record rcon access/trials in sv attack log",
+    "description": "",
+    "start_date": "2012-12-22",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-12-22T16:35:54Z",
+    "updated_on": "2012-12-22T21:55:54Z",
+    "closed_on": "2012-12-22T21:55:54Z"
+}

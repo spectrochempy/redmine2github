@@ -1,0 +1,223 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 718,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Lol .. that's weired .. I have had the same 'bug' on screen on first compile ... make sure the you have cleaned the build path before and run a 'clean' build procedure.\r\nAlso clean fs_homepath binaries.",
+            "created_on": "2012-12-03T21:18:59Z",
+            "details": []
+        },
+        {
+            "id": 728,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Please try again :) ",
+            "created_on": "2012-12-04T03:30:50Z",
+            "details": []
+        },
+        {
+            "id": 729,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "improvement",
+            "created_on": "2012-12-04T10:53:24Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "70",
+                    "new_value": "ui_wrong_position_better.jpg"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "30"
+                }
+            ]
+        },
+        {
+            "id": 731,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Compass is fixed.\n\n{FIXME}\n* -Limbo - total size-\n* team pins on loading screen\n* -bar on right side next to weapon-",
+            "created_on": "2012-12-04T16:16:37Z",
+            "details": []
+        },
+        {
+            "id": 732,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "more improvement\r\n\r\nWhat else I've noticed so far:\r\n\r\n# there is some offset on buttons. I have to click some distance to the left of the button to activate it.\r\n# endgame credits screen which appears when you exit the game is shifted to the left and not in the centre\r\n# ESC ingame menu is few pixels shorter than it should be, so that the Exit Game button is not fully inside it",
+            "created_on": "2012-12-04T16:20:09Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "30",
+                    "new_value": "40"
+                }
+            ]
+        },
+        {
+            "id": 735,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "limbo and bar should be fixed after last commit. http://www.etlegacy.com/projects/etlegacy/repository/revisions/162ac39f47eb759c81aec19d67623070215683b0\n\nPins are left. Please check if there are any ingame issues left.\n",
+            "created_on": "2012-12-04T17:40:34Z",
+            "details": []
+        },
+        {
+            "id": 745,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Current know issues:\n\n- -when pressing news in limbo cinematic isn't fully in position-\n- -position of pins on loading screen-\n- -offsets in buttons-\n- -endgame credits position\n-\n\nSo far all ingame issues are fixed (intermission/scores etc). The button offset seems to be biggest issue now. It's kind of strange ...  a button itself is drawn correctly while focus x-dimension (or mouse position ?!) doesn't work properly.\n\nI've noticed there is also a focus issue when you use default ratio 4:3. When you move the mouse from right to left on buttons action focus is not in sync.\n\n",
+            "created_on": "2012-12-06T11:14:23Z",
+            "details": []
+        },
+        {
+            "id": 752,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "\n\n720\t450\t1,6\n840\t525\t1,6\n960\t600\t1,6\n1440\t900\t1,6\n1680\t1050\t1,6\n680\t384\t1,7708333333\n1360\t768\t1,7708333333\n960\t540\t1,7777777778\n320\t240\t1,3333333333\n400\t300\t1,3333333333\n512\t384\t1,3333333333\n640\t480 \t1,3333333333\n700\t525\t1,3333333333\n800\t600 \t1,3333333333\n832\t624 \t1,3333333333\n1024\t768\t1,3333333333\n1152\t864\t1,3333333333\n1280\t960\t1,3333333333\n1400\t1050\t1,3333333333\n1280\t1024\t1,25\n\n\n-1280 * 1024 is currently not of best calculation. It's < 4:3 ratio while we are calculating additional offsets for bigger ratio screens (> 4:3  - 1,3333).- fixed",
+            "created_on": "2012-12-07T23:14:49Z",
+            "details": []
+        },
+        {
+            "id": 753,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "-All issues are fixed (from my point of view) accept the pins on loading screen ...-",
+            "created_on": "2012-12-08T12:51:20Z",
+            "details": []
+        },
+        {
+            "id": 754,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Feel free to open this issue again if we miss any adjustments.",
+            "created_on": "2012-12-08T13:18:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "20",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "40",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 755,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "When you press \"Exit game\" and you see that black credits table, you cannot move mouse pointer to the rightmost edge of the screen. This, of course, is not an issue. I am just mentioning it here in case it happens in some other places too.",
+            "created_on": "2012-12-08T13:47:43Z",
+            "details": []
+        }
+    ],
+    "watchers": [
+        {
+            "id": 3,
+            "name": "IR4T4"
+        },
+        {
+            "id": 1,
+            "name": "Radegast"
+        }
+    ],
+    "time_entries": null,
+    "id": 138,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 5,
+        "name": "2.71rc1"
+    },
+    "subject": "Wrongly positioned ingame UI elements",
+    "description": "Commit commit:5c602c0303898a6889453624119093ff45e97596 caused ingame UI to go nuts. See attached screenshot.",
+    "start_date": "2012-12-03",
+    "done_ratio": 100,
+    "is_private": true,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-12-03T18:55:07Z",
+    "updated_on": "2012-12-08T13:47:43Z",
+    "closed_on": "2012-12-08T13:18:36Z"
+}

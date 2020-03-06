@@ -1,0 +1,152 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 284,
+            "issue_id": 241,
+            "issue_to_id": 922,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 1287,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "The console speed is tied to the timescale, and when the demo is slowed down the console is also slowed down.. This is actually how it works on vanilla ET. Ill check the sync though.",
+            "created_on": "2013-03-07T16:22:47Z",
+            "details": []
+        },
+        {
+            "id": 1290,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Jacker wrote:\r\n> The console speed is tied to the timescale, and when the demo is slowed down the console is also slowed down.. This is actually how it works on vanilla ET. Ill check the sync though.\r\n\r\nIs it possible to untie the slowing console, because when we go to enough slow timescale, it takes forever for the console to come down?",
+            "created_on": "2013-03-07T18:44:05Z",
+            "details": []
+        },
+        {
+            "id": 1291,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Well i need to check this out but i believe that to \"untie\" console from the effects of the timescale would be a large overhaul of the client source, but ill check what i can do.",
+            "created_on": "2013-03-08T12:09:37Z",
+            "details": []
+        },
+        {
+            "id": 1312,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-03-13T08:56:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1800,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-08-02T10:18:40Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "7",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 5897,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-08-24T17:49:57Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "922"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 241,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Sound and video not matching in demo when timescale is other than 1",
+    "description": "So as the title says, when you for example slowdown the demo under 1 timescale, then the video and sound won't be synced. I have a test demo which I just used to lower the timescale under 1. Slowing down the demo will also result in that the console will come down slower than used to.",
+    "start_date": "2013-03-07",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-03-07T14:57:23Z",
+    "updated_on": "2013-08-02T10:18:40Z"
+}

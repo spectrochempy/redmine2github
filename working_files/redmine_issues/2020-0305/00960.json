@@ -1,0 +1,183 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 370,
+            "issue_id": 1152,
+            "issue_to_id": 960,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "25d38aeb8538157a91700a1f343df126543a28ce",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "ui: added option to change limit frames, refs #960",
+            "committed_on": "2016-11-09T23:03:07Z"
+        },
+        {
+            "revision": "a23f9adcee2608296fe2d0f6a46234d5089eae7b",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "ui: allow custom max. fps menu values fixes #960",
+            "committed_on": "2016-11-11T15:18:45Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 6144,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "RaFaL, can you add com_maxfps anywhere in the menus?\r\n",
+            "created_on": "2016-11-09T13:00:43Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "1",
+                    "new_value": "15"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "13"
+                }
+            ]
+        },
+        {
+            "id": 6157,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "",
+            "created_on": "2016-11-09T23:08:55Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 6158,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-11-11T15:13:37Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 6159,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Applied in changeset commit:a23f9adcee2608296fe2d0f6a46234d5089eae7b.",
+            "created_on": "2016-11-11T15:15:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 7414,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-12-26T15:56:51Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1152"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 960,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 13,
+        "name": "RaFaL"
+    },
+    "category": {
+        "id": 15,
+        "name": "Mod UI"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Add possibility to change fps through options menu",
+    "description": "This is quite remarkable deficiency. Most of the new games at least have the possibility to change the value of fps, or even set it uncapped.\r\nIn my opinion the best way to create this feature would be to be able to set the fps by oneself or probably add some standard values like 60/90/120/300 or something like that.\r\n\r\n-*S",
+    "start_date": "2016-11-09",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2016-11-08T23:18:45Z",
+    "updated_on": "2016-11-11T15:15:16Z",
+    "closed_on": "2016-11-11T15:15:16Z"
+}

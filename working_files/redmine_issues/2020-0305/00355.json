@@ -1,0 +1,179 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 101,
+            "issue_id": 355,
+            "issue_to_id": 74,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "feb65729d5eb67ba12c3a659fcbfa2d3307701d4",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "mac: fix for the sed issue, refs #355",
+            "committed_on": "2013-09-30T21:19:30Z"
+        },
+        {
+            "revision": "59e6acd24bb9ba872e565be45a7fad95ec40d2cd",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "misc: use GNU version of sed on all platforms, fixes #355",
+            "committed_on": "2013-09-30T22:56:45Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1992,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Please check it now, it should have been fixed on my last commit. Also the link you posted was not related to this as sed: 16 means that the line 16 on the script was at fault.",
+            "created_on": "2013-09-30T21:22:11Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "9"
+                }
+            ]
+        },
+        {
+            "id": 1993,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Applied in changeset commit:59e6acd24bb9ba872e565be45a7fad95ec40d2cd.",
+            "created_on": "2013-09-30T23:00:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 1994,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Jacker wrote:\r\n> Also the link you posted was not related to this as sed: 16 means that the line 16 on the script was at fault.\r\nYes, I know. I should have copied what I was after from that post - that the GNU and BSD versions of sed are somehow different.\r\n\r\nThat last change didn't fix the problem, but I found out that @gsed@ is available on *BSD systems and Mac OS X.",
+            "created_on": "2013-09-30T23:00:52Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 2184,
+            "user": {
+                "id": 273,
+                "name": "otty"
+            },
+            "notes": "Radegast wrote:\r\n> Jacker wrote:\r\n> > Also the link you posted was not related to this as sed: 16 means that the line 16 on the script was at fault.\r\n> Yes, I know. I should have copied what I was after from that post - that the GNU and BSD versions of sed are somehow different.\r\n> \r\n> That last change didn't fix the problem, but I found out that @gsed@ is available on *BSD systems and Mac OS X.\r\n\r\nIt would be nice to mention this in the Compile Guide:\r\n\r\nOn MacOSX, use gsed instead of sed, since sed on Mac works slightly different (Ref.: http://stackoverflow.com/questions/2320564/variations-of-sed-between-osx-and-gnu-linux). \r\n\r\nTo install with homebrew:\r\n\r\n    brew install gnu-sed\r\n\r\nand change sed path to new location of gnu-sed ( default: /usr/local/bin/gsed ).\r\n\r\nMaybe it's nice to check for gnu-sed on Mac by default?",
+            "created_on": "2013-11-01T09:41:07Z",
+            "details": []
+        },
+        {
+            "id": 2190,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "otty wrote:\r\n> and change sed path to new location of gnu-sed ( default: /usr/local/bin/gsed ).\r\n\r\nCMake should already be doing that.\r\n\r\n<pre>\r\n# Find GNU sed executable, BSD variant does not work with our script\r\nif(UNIX AND NOT CMAKE_SYSTEM_NAME MATCHES \"Linux\")\r\n\tfind_program(SED_EXECUTABLE gsed)\r\nelse()\r\n\tfind_program(SED_EXECUTABLE sed)\r\nendif()\r\n</pre>\r\n",
+            "created_on": "2013-11-01T13:11:04Z",
+            "details": []
+        },
+        {
+            "id": 2444,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "created_on": "2013-12-14T18:02:57Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "new_value": "OS X"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 355,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "assigned_to": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 9,
+        "name": "2.71rc3"
+    },
+    "subject": "glsl2c.sed script for processing glsl files is broken on Mac OS X",
+    "description": "http://stackoverflow.com/questions/4247068/sed-command-failing-on-mac-but-works-on-linux\r\n\r\n<pre>sed: 16: etlegacy/glsl2c.sed: command a expects \\ followed by text</pre>",
+    "start_date": "2013-09-30",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "OS X"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-09-30T14:26:42Z",
+    "updated_on": "2013-12-14T18:02:57Z",
+    "closed_on": "2013-09-30T23:00:13Z"
+}

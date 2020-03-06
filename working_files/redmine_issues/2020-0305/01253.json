@@ -1,0 +1,123 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 8004,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-20T09:36:11Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "1078",
+                    "new_value": "1.jpg"
+                }
+            ]
+        },
+        {
+            "id": 8300,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-06-14T11:19:04Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8301,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-06-14T11:20:05Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "1116",
+                    "new_value": "jeu-167.jpg"
+                }
+            ]
+        },
+        {
+            "id": 8315,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-06-23T10:40:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "22",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1253,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Add semi-randomized player faces",
+    "description": "ET has 5 classes in each team, each having an uniform clearly designed to be easily recognizable during battle.\r\nIt would however be great to introduce more cosmetic variation, with semi-randomized faces for each player. If not random, they could be selected from a bigger pool of available faces.\r\n\r\nSee \"ET-HQ\":https://github.com/acqu/wet-headquarters from acqu. which implements a complete character customization system - though I doubt we should go to that extreme.\r\n\r\nIf you've ever dreamed of playing as a medic while proudly harboring a mustache, this is for you!",
+    "start_date": "2019-04-18",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-04-18T21:37:26Z",
+    "updated_on": "2019-06-23T10:40:29Z"
+}

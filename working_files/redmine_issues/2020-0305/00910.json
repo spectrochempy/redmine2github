@@ -1,0 +1,169 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "970436139d0e28936d50114f37a8aa6266794575",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "ui: added missing votes, refs #910",
+            "committed_on": "2015-12-23T20:56:04Z"
+        },
+        {
+            "revision": "012a97e67d4089d2f38ce7f1aa54a756c4a06447",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "ui: added missing votes, refs #910",
+            "committed_on": "2015-12-27T22:27:18Z"
+        },
+        {
+            "revision": "3dfe2107835152c2d510830a69d8ea15904b132c",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "ui: clean up",
+            "committed_on": "2015-12-29T11:50:46Z"
+        },
+        {
+            "revision": "13147cf21ab84b4fda60f54862c0d3bdc4136a92",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: fixed string overlap and missing parameters, refs #910",
+            "committed_on": "2015-12-31T12:14:34Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 5720,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "",
+            "created_on": "2015-12-23T20:59:01Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 5721,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-12-24T13:17:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 5726,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "",
+            "created_on": "2015-12-27T22:29:59Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 5764,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "",
+            "created_on": "2016-01-12T17:54:25Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 910,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "Add missing vote_allow cvars to menu files / extend in game menu files",
+    "description": "1.) At least vote_allow_surrender & vote_allow_poll aren't available  in the menus. Add these and other missing vote_allow cvars to the menu.\r\n2.) Some polls are not available to the GUI (in game). Free polls for example.\r\n- see hostgame_advanced.menu\r\n- see ingame_vote menus\r\n",
+    "start_date": "2015-12-23",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-12-23T15:51:39Z",
+    "updated_on": "2016-01-12T17:54:25Z",
+    "closed_on": "2016-01-12T17:54:25Z"
+}

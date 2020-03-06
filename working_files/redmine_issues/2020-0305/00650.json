@@ -1,0 +1,255 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 3768,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-11-20T16:29:30Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "tracker_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 3865,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Disguise is lost only when  you are in sight of an enemy AND you start to attack (fire weapon). In fact the range doesn't matter but this is intended so it's equal for all map sizes. \r\n\r\n",
+            "created_on": "2014-11-23T14:42:20Z",
+            "details": []
+        },
+        {
+            "id": 3866,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "But the most ridiculous thing here is that even you face up against a wall with a knife in your hand and stab the wall a million miles away from the enemy, you will lose your disguise. :D\r\n\r\n-*S",
+            "created_on": "2014-11-23T15:11:37Z",
+            "details": []
+        },
+        {
+            "id": 3867,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "So we'll stab players in future and not walls ....",
+            "created_on": "2014-11-23T15:18:01Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3870,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Why was this bug report closed? If you lose disguise when not even attacking another player it really is a bug.",
+            "created_on": "2014-11-23T16:48:27Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "6",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "0"
+                }
+            ]
+        },
+        {
+            "id": 3871,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I don't think this is a bug either. Losing your disguise when attacking (even if you miss) and being viewed by an enemy player is the intended behavior.\r\n\r\nThe only parameter here is distance, but it's hard to fix (map dependent, what if a sniper see you from long range?, etc.) and I'm not sure it should be fixed either. To me, covops is all about being discreet.\r\n\r\nEdit: What we could do, however, is implementing a new (optional) feature like NQ where the disguise isn't lost right away, but is lost only when a threshold is reached.",
+            "created_on": "2014-11-23T16:52:47Z",
+            "details": []
+        },
+        {
+            "id": 3872,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I did close this because there is no bug.  As spyhawk mentioned - it's the intended behavior. Covert ops should act sneaky.",
+            "created_on": "2014-11-23T17:50:31Z",
+            "details": []
+        },
+        {
+            "id": 3873,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Spyhawk wrote:\r\n> Edit: What we could do, however, is implementing a new (optional) feature like NQ where the disguise isn't lost right away, but is lost only when a threshold is reached.\r\nThis sounds actually a good idea. But still I think that this can't be left as it is. I'm all for the sneakyness too but losing your disguise just for nothing? Sounds pretty uncool to me. ;)\r\n\r\n-*S",
+            "created_on": "2014-11-23T18:52:53Z",
+            "details": []
+        },
+        {
+            "id": 3874,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "All right, I can imagine the first issue would be hard to fix and even if we did fix it it would result in other bugs as usual. However, when you accidentally swing  a knife without hitting anybody and lose your disguise because of that is a bug and not intended behaviour no matter how I look at it. It's not like CovtOps is an overpowered class that needs to be restricted any more.\r\n\r\nSpyhawk wrote:\r\n> What we could do, however, is implementing a new (optional) feature like NQ where the disguise isn't lost right away, but is lost only when a threshold is reached.\r\nI don't know how it works in NQ, but I will try it out.",
+            "created_on": "2014-11-23T18:57:20Z",
+            "details": []
+        },
+        {
+            "id": 3875,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Would not like to implement some behav, which is directly from a pub mod. Unless there's really is a valid reason for it. Plus there are a lot more pressing issues.",
+            "created_on": "2014-11-23T19:22:35Z",
+            "details": []
+        },
+        {
+            "id": 3882,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "I see this battle is lost. Closing the issue.\r\n\r\nWe should start having dev team matches in ET:L and you'll realise that playing CovtOps is not that easy and these little annoyances (talking about accidental knife swing) don't help it.",
+            "created_on": "2014-11-24T09:07:21Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3883,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Radegast wrote:\r\n> We should start having dev team matches in ET:L and you'll realise that playing CovtOps is not that easy and these little annoyances (talking about accidental knife swing) don't help it.\r\n\r\nAccidental attack swing? I believe that's more of a mouse issue, to be honest. \r\n\r\nFor what it's worth, I do agree that covops needs some rework in a lot of area (I mean, just look at all the opened tickets about covops class). I just don't see this particular issue as a bug.",
+            "created_on": "2014-11-24T10:17:09Z",
+            "details": []
+        },
+        {
+            "id": 3884,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "That was just an example. For the record, I wanted to make Legacy the successor of ETPro right from the start but in this case I just don't see the logic behind losing disguise in these situations.",
+            "created_on": "2014-11-24T10:42:32Z",
+            "details": []
+        },
+        {
+            "id": 3886,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "The code isn't written in stone.\r\n\r\nRadegast wrote:\r\n> We should start having dev team matches in ET:L and you'll realise that playing CovtOps is not that easy and these little annoyances (talking about accidental knife swing) don't help it.\r\nI totally agree\r\n",
+            "created_on": "2014-11-24T22:38:05Z",
+            "details": []
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 650,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "\"Attacking\" from a distance will make you lose your disguise",
+    "description": "Ok I found this rather absurd issue with a disguise. So you lose your disguise if you are on the sight of an enemy. But there is no maximum range for that and it doesn't matter are you faced to the enemy or not. Or which weapon are you using. I have this most extreme case recorded to a demo, see it yourself.\r\n\r\n-*S",
+    "start_date": "2014-11-20",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-20T16:10:12Z",
+    "updated_on": "2014-11-24T22:38:05Z",
+    "closed_on": "2014-11-24T09:07:21Z"
+}

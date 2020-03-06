@@ -1,0 +1,427 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "fc962cea3f838fa99ff37778388ce1be5eb0c3a0",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: client side g_multiview (cg.mvAllowed) refs #394",
+            "committed_on": "2016-01-17T06:42:52Z"
+        },
+        {
+            "revision": "0b35ba4ee8395f0d4e69dab31252cd1cc56a107c",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: tiny multiview adjustments refs #394",
+            "committed_on": "2016-01-17T12:23:42Z"
+        },
+        {
+            "revision": "47573255628597a0f6d7805cf9643a292eda4dbe",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed multiview widescreen support, refs #394",
+            "committed_on": "2016-01-23T21:15:39Z"
+        },
+        {
+            "revision": "17b3cb3b56010e53ffd508ee59a5a66306a2ce49",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: added default binds for multiview, refs #394",
+            "committed_on": "2016-01-23T21:57:55Z"
+        },
+        {
+            "revision": "2e9e3223c3836814a0b201f772a5e64e9f68c629",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: improved multiview visual consistency, refs #394",
+            "committed_on": "2016-01-24T07:57:16Z"
+        },
+        {
+            "revision": "52fed65907806f0359b43b3942d195d61e642f70",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: multiview sidebar visual enhancements, refs #394",
+            "committed_on": "2016-01-25T16:07:46Z"
+        },
+        {
+            "revision": "9be0040b9cad2368523fe412d266fe32c9eea3ac",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: display multiview selection on two columns, refs #394",
+            "committed_on": "2016-01-31T22:56:05Z"
+        },
+        {
+            "revision": "f82d2962e7b1941c9472127e1bbea3eadc31f196",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: multiview selection color adjustment, refs #394",
+            "committed_on": "2016-01-31T23:14:53Z"
+        },
+        {
+            "revision": "bb91d54115b87e5fc6e95544b1bb39f500c8f3d7",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed multiview overlay position and icon colors, refs #394",
+            "committed_on": "2016-02-02T21:57:00Z"
+        },
+        {
+            "revision": "f9c22ee31e3f195c6b9606157f3edf8f73b60e1b",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: multiview fontscale adjustments, refs #394",
+            "committed_on": "2016-02-03T17:07:00Z"
+        },
+        {
+            "revision": "876bd562cc8b25ee7f3a7ce6f7d77c97e9b971d8",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: optimized POWERUPS code in ClientEndFrame\n- some docu\n- PW_MVCLIENTLIST fixed for MV (this isn't level time dependant and will\nno longer call MV client list updates each transition snapshot)",
+            "committed_on": "2016-09-19T16:34:26Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2234,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "user:TheDushan fixed multiview in OpenWolf. It looked really nice and it's one of those feature that could bring people to use ET:L in my opinion. Even if just for making match vids :-)",
+            "created_on": "2013-11-10T15:38:33Z",
+            "details": []
+        },
+        {
+            "id": 2236,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Let's fix the multiview feature of etl then :)",
+            "created_on": "2013-11-11T12:57:39Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Remove multiview feature",
+                    "new_value": "Fix multiview feature"
+                }
+            ]
+        },
+        {
+            "id": 5279,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-09-12T17:18:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 5771,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-01-16T07:56:52Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 5772,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-01-16T08:05:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "The multiview feature is currently broken, and apparently not really necessary. It's theorically a nice feature, but in practice it is not currently used for various reason, such as a severe bandwidth increase.\r\n\r\nDrop the code altogether. If some use for it is found in the future, it will still be easy to readd it, thanks to git history.\r\n\r\n ",
+                    "new_value": "-The multiview feature is currently broken, and apparently not really necessary. It's theorically a nice feature, but in practice it is not currently used for various reason, such as a severe bandwidth increase.-\r\n\r\n-Drop the code altogether. If some use for it is found in the future, it will still be easy to readd it, thanks to git history.-\r\n\r\nMultiview feature has been enabled in default builds - let's fix issues ...\r\n\r\nEnsure we have no overhead when multiview is disabled. g_multiview cvar is latched to ensure we have no mixed situation when a match is started.\r\n\r\nClient and server code need inspection.  "
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "20"
+                }
+            ]
+        },
+        {
+            "id": 5774,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "CVAR g_multiview has been implemented (client & server side).",
+            "created_on": "2016-01-17T06:42:34Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "tracker_id",
+                    "old_value": "3",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "20",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 5809,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-01-23T16:23:09Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 5812,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "This feature is still very buggy. It's unusable in the current state (unless I missed something?).\r\n\r\n{FIXME}\r\n* -Default key \"m\" doesn't seem to be set in the default config-\r\n* -Missing widescreen support-\r\n* -fix ui overlay position/size/color, check help window color too-\r\n* Max Lives icon is visible\r\n* crouch/prone/dead/jump(?) don't update the pov height\r\n* multiview clients don't know when they are in Limbo (health indicator always as \"waiting for medic\")\r\n* fix MAX_MVCLIENTS vs MULTIVIEW_MAXVIEWS  (with MAX_CLIENTS = 64)\r\n\r\n* check fixme in G_SendScore_Add()\r\n* -rework cursor hints (see switch w/o break)-\r\n* ...",
+            "created_on": "2016-01-23T20:21:46Z",
+            "details": []
+        },
+        {
+            "id": 5813,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2016-01-23T20:25:19Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 5814,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2016-01-23T20:28:25Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "623",
+                    "new_value": "shot0000.jpg"
+                }
+            ]
+        },
+        {
+            "id": 5815,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Let's fix that properly for 2.75...",
+            "created_on": "2016-01-23T21:07:18Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 5828,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "The most visible issues have been fixed. Stil a lot to do, but at least multiview is usable now.",
+            "created_on": "2016-02-03T17:23:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "8"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "70"
+                }
+            ]
+        },
+        {
+            "id": 6017,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2016-09-13T10:38:15Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 6799,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-07-02T09:59:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "tracker_id",
+                    "old_value": "2",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "3",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "8"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "70",
+                    "new_value": "50"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 394,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 2,
+        "name": "In Progress"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Fix multiview feature",
+    "description": "-The multiview feature is currently broken, and apparently not really necessary. It's theorically a nice feature, but in practice it is not currently used for various reason, such as a severe bandwidth increase.-\r\n\r\n-Drop the code altogether. If some use for it is found in the future, it will still be easy to readd it, thanks to git history.-\r\n\r\nMultiview feature has been enabled in default builds - let's fix issues ...\r\n\r\nEnsure we have no overhead when multiview is disabled. g_multiview cvar is latched to ensure we have no mixed situation when a match is started.\r\n\r\nClient and server code need inspection.  ",
+    "start_date": "2013-11-10",
+    "done_ratio": 50,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-11-10T15:35:58Z",
+    "updated_on": "2017-07-02T09:59:03Z"
+}

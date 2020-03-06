@@ -1,0 +1,183 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "5f30e00d00d4c1f2701b125e9f020259d9129ffb",
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "comments": "r2: dont return what we dont have fixes #1052",
+            "committed_on": "2019-11-23T10:59:13Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 6834,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Just to clarify this is the new renderer?",
+            "created_on": "2017-07-22T17:28:06Z",
+            "details": []
+        },
+        {
+            "id": 6839,
+            "user": {
+                "id": 697,
+                "name": "artium"
+            },
+            "notes": "IR4T4 wrote:\r\n> Just to clarify this is the new renderer?\r\n\r\nI do not know, I downloaded the Linux installer from the website.",
+            "created_on": "2017-07-22T18:02:11Z",
+            "details": []
+        },
+        {
+            "id": 6844,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "I decompiled and attached the .bsp to have a look at the map setup. Most entities are lost during decompilation, but the culprit is a brush with *common/lightblock* \r\nFrom \"this\":https://enemyterritory-stuff.net/files/file/684-shader_blocking-light/ prefab (\"screenshot\":https://enemyterritory-stuff.net/uploads/monthly_2015_10/shader_blocking-light.JPG.ffb11a2bf46d55ed6789631784b45505.JPG)\r\n\r\nShader for common/lightblock:\r\n<pre><code class=\"c\">textures/common/lightblock\r\n{\r\n\tqer_editorimage textures/lightblock/lightblock.tga\r\n\tqer_trans 0.5\r\n\tsurfaceparm nonsolid\r\n\tsurfaceparm nomarks\r\n\t{\r\n\t\tmap $whiteimage\r\n\t\talphaFunc GT0\r\n\t\talphaGen const 0\r\n\t}\r\n}</code></pre>",
+            "created_on": "2017-07-24T09:56:07Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "765",
+                    "new_value": "erdenberg_b2_converted.map"
+                }
+            ]
+        },
+        {
+            "id": 6845,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2017-07-24T09:56:22Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Door texture problem on Edenberg_b2 map",
+                    "new_value": "Door texture problem on Erdenberg_b2 map"
+                }
+            ]
+        },
+        {
+            "id": 6846,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "It's only bugged in renderer2, can confirm.",
+            "created_on": "2017-07-24T11:33:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "15"
+                }
+            ]
+        },
+        {
+            "id": 7171,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Please tell me the position where this texture issue occures.",
+            "created_on": "2018-03-13T09:23:27Z",
+            "details": []
+        },
+        {
+            "id": 8511,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "can confirm this, the brush is totally white\r\ngonna investigate this..just wonder what keyword is missing in R2 wich R1 has to drop this one...",
+            "created_on": "2019-10-27T19:25:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "3",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 8546,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "fixed With this:\r\nhttps://github.com/etlegacy/etlegacy/commit/5f30e00d00d4c1f2701b125e9f020259d9129ffb",
+            "created_on": "2019-11-23T11:01:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1052,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 697,
+        "name": "artium"
+    },
+    "fixed_version": {
+        "id": 15,
+        "name": "renderer2"
+    },
+    "subject": "Door texture problem on Erdenberg_b2 map",
+    "description": "The door is flashing in white color and completely white when open. My guess that it is somehow related to lights.\r\n\r\nUsed ET:Legacy renderer on etpub mod.",
+    "start_date": "2017-07-22",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-07-22T16:21:27Z",
+    "updated_on": "2019-11-23T11:01:05Z",
+    "closed_on": "2019-11-23T11:01:05Z"
+}

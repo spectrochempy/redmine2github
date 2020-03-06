@@ -1,0 +1,141 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "cffbc373ea475229306d89cb5f4bdca4530d18ca",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "ui: fix opening non existing menus fixes #959",
+            "committed_on": "2016-11-09T15:02:42Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 6147,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-11-09T13:10:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "1",
+                    "new_value": "15"
+                }
+            ]
+        },
+        {
+            "id": 6148,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-11-09T13:10:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 6152,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "To me it was faulty in many ways.  Some menu open commands did point to non existing menus ... fixed & tu. ",
+            "created_on": "2016-11-09T14:57:37Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 6153,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Applied in changeset commit:cffbc373ea475229306d89cb5f4bdca4530d18ca.",
+            "created_on": "2016-11-09T15:08:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 959,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 15,
+        "name": "Mod UI"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "System setting window closes to in-game when changed settings aren't applied",
+    "description": "So the issue here is when not applying the settings in 'System' menu, it closes the whole window straight to game.\r\nIts assumed way of working is that it just closes 'System' window and goes back to 'Options' window.\r\nThis actually isn't faulty in main menu but only in-game\r\n\r\nHow to reproduce:\r\n\r\n1. Go in-game\r\n2. Go to 'System' menu (ESC -> Options -> System)\r\n3. Change for example the value of 'Texture Filter'\r\n4. Press 'Apply'\r\n5. Press 'NO'\r\n\r\nThis should just close the 'System' window instead of closing the whole window back to game.\r\n\r\n-*S",
+    "start_date": "2016-11-08",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2016-11-08T22:31:14Z",
+    "updated_on": "2016-11-09T15:08:07Z",
+    "closed_on": "2016-11-09T15:08:07Z"
+}

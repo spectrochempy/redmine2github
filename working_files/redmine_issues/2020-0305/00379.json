@@ -1,0 +1,383 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "565f0028c4afda7e2d44bbbdc8fbad7a50107706",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "misc: documentation and style changes, refs #379",
+            "committed_on": "2013-11-13T23:38:29Z"
+        },
+        {
+            "revision": "8f5c39ede92b7a34baa55cd18d1d41764061f304",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "cgame: added higher resolution flags for ET:L clients, refs #379",
+            "committed_on": "2013-11-15T13:27:04Z"
+        },
+        {
+            "revision": "8e451ef1583229dc67fc5116d9c5932e851b7617",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "cgame: added higher resolution flags for ET:L clients, refs #379",
+            "committed_on": "2013-11-18T14:59:21Z"
+        },
+        {
+            "revision": "e9e98549ef74a067286455fe332aa58aeb41df3b",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "cgame: use same flag grid for both ET:L and 2.60b clients, fixes #379",
+            "committed_on": "2013-11-18T14:59:21Z"
+        },
+        {
+            "revision": "d5feb8b90301794e3a3765aed22c61463e62d17d",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "cgame: use same flag grid for both ET:L and 2.60b clients, fixes #379",
+            "committed_on": "2013-12-11T20:42:24Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2243,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "I have started making a new image with high resolution flags, but now there is a problem with size.\r\n\r\nOld flags take up 1 MB of space because they are stored in a targa image. New flags will take up only a few hundred kilobytes if they are stored in a -jpeg- png image. However, 2.60b clients don't support -jpeg- png images and converting the new flags to targa would take up several megabytes.\r\n\r\nSo I think we should keep old flags for 2.60b clients and use high resolution flags for ET:L clients.\r\n",
+            "created_on": "2013-11-13T22:27:40Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Higher resolution country flags",
+                    "new_value": "High resolution country flags"
+                }
+            ]
+        },
+        {
+            "id": 2244,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-11-13T23:52:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "30"
+                }
+            ]
+        },
+        {
+            "id": 2246,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "*Missing:*\r\n\r\n* -0: N/A-\r\n* 1: Asia/Pacific Region\r\n* 244: Anonymous Proxy\r\n* 245: Satellite Provider\r\n* 246: Other\r\n* -254: South Sudan-\r\n\r\nSome islands have flags of their governing countries and Commonwealth islands have the Commonwealth flag.",
+            "created_on": "2013-11-14T12:50:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "30",
+                    "new_value": "40"
+                }
+            ]
+        },
+        {
+            "id": 2247,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-11-14T13:18:16Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "210",
+                    "new_value": "flags.tar.gz"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "40",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 2248,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-11-14T13:24:52Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "210",
+                    "old_value": "flags.tar.gz"
+                }
+            ]
+        },
+        {
+            "id": 2249,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Bash script to stitch flags together:\r\n\r\n<pre><code class=\"bash\">#!/bin/sh\r\n\r\nitems=0\r\ncurrent_row=\"\"\r\ntotal_rows=0\r\n\r\nfor ((i=0;i<255;i++));\r\ndo\r\n    items=$((items+1))\r\n    current_row+=\"${i}.png \"\r\n\r\n    if [ $(( ${items} % 16 )) -eq 0 ] || [ ${items} -eq 255 ]; then\r\n\tprintf \"Stitching items on row ${total_rows}: ${current_row}\\n\"\r\n\ttotal_rows=$((total_rows+1))\r\n\tconvert ${current_row} +append row${total_rows}.png\r\n\tcurrent_row=\"\"\r\n    fi\r\ndone\r\n\r\nrows=\"\"\r\n\r\nfor ((i=1;i<=${total_rows};i++));\r\ndo\r\n    rows+=\"row${i}.png \"\r\ndone\r\n\r\nprintf \"Stitching rows: ${rows}\\n\"\r\nconvert ${rows} -append flags.png\r\n</code></pre>\r\n\r\nFlags were made by www.gosquared.com and are released under the MIT license.",
+            "created_on": "2013-11-14T14:24:32Z",
+            "details": []
+        },
+        {
+            "id": 2250,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-11-14T14:28:13Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "211",
+                    "new_value": "flags.tar.gz"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "70"
+                }
+            ]
+        },
+        {
+            "id": 2251,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Radegast wrote:\r\n> However, 2.60b clients don't support jpeg images\r\nWait... What?",
+            "created_on": "2013-11-14T18:41:36Z",
+            "details": []
+        },
+        {
+            "id": 2252,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "I meant PNG. As you can see the new flag map is stored in PNG format. Jpeg doesn't support transparency.",
+            "created_on": "2013-11-14T19:57:09Z",
+            "details": []
+        },
+        {
+            "id": 2253,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": " Do you really need transparency support? Apart from those ~3 non-squared flags, this wouldn't make any difference.",
+            "created_on": "2013-11-14T20:33:14Z",
+            "details": []
+        },
+        {
+            "id": 2254,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Maybe you are right. They are actually all non-square, because each flag casts a small shadow and the rest is just transparent pixels to fit 48x48 square. If we cropped those shadows then we could use the jpeg format. It's just more work.",
+            "created_on": "2013-11-14T21:24:04Z",
+            "details": []
+        },
+        {
+            "id": 2256,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-11-14T23:08:00Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "211",
+                    "old_value": "flags.tar.gz"
+                }
+            ]
+        },
+        {
+            "id": 2257,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Updated country flags are now located in the \"etlegacy-assets repository\":https://github.com/etlegacy/etlegacy-assets",
+            "created_on": "2013-11-14T23:09:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "70",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 2258,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "I didn't realize that flags will further lose quality because of rescaling, so the result is not as good as I expected, but it still is an improvement.\r\n\r\nHere is new flag grid:\r\n\r\n!world_flags_legacy.png!\r\n\r\nAnd here is an example of how it looks in the game:\r\n\r\n!new_flags.png!",
+            "created_on": "2013-11-15T01:19:33Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "212",
+                    "new_value": "world_flags_legacy.png"
+                },
+                {
+                    "property": "attachment",
+                    "name": "213",
+                    "new_value": "new_flags.png"
+                }
+            ]
+        },
+        {
+            "id": 2263,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Turns out converting that png to targa produced a 1 MB big image, which is the same size as the old flags, but in a higher resolution. So I think we will keep that instead of having a different image for 2.60b clients and a different one for ET:L clients. At least until more people start using ET:L..",
+            "created_on": "2013-11-15T16:54:40Z",
+            "details": []
+        },
+        {
+            "id": 2268,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "The flags look much better now!\r\n",
+            "created_on": "2013-11-16T07:35:09Z",
+            "details": []
+        },
+        {
+            "id": 2290,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Applied in changeset commit:e9e98549ef74a067286455fe332aa58aeb41df3b.",
+            "created_on": "2013-11-22T19:00:48Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 2544,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-12-26T07:28:47Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "11"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 379,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "assigned_to": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "High resolution country flags",
+    "description": "Our current country flags are way too pixelated.",
+    "start_date": "2013-10-23",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-10-23T12:06:59Z",
+    "updated_on": "2013-12-26T07:28:47Z",
+    "closed_on": "2013-11-22T19:00:48Z"
+}

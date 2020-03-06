@@ -1,0 +1,375 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 20,
+            "issue_id": 72,
+            "issue_to_id": 39,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 26,
+            "issue_id": 39,
+            "issue_to_id": 92,
+            "relation_type": "blocks",
+            "delay": null
+        },
+        {
+            "id": 11,
+            "issue_id": 58,
+            "issue_to_id": 39,
+            "relation_type": "precedes",
+            "delay": 0
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "5cf8cf0baafb49430df85e9dd769fab2b9c8cb07",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "misc: separated CPack configuration from CMake, refs #39, refs #58\n* using symlinks again instead of bash scripts on linux\n* BUILD_SERVER = ON by default (to make it easier to use with the OpenSuse build service)",
+            "committed_on": "2012-06-17T18:59:22Z"
+        },
+        {
+            "revision": "818e04756e4ce4ff1a5270b49d896367a0474c34",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "general: better error message in case of missing files refs #39",
+            "committed_on": "2012-10-23T14:19:09Z"
+        },
+        {
+            "revision": "cdb21b08a55f0bfde3c221fe67f551414a446667",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "general: install adds (rotation files), general linux: sh start scripts\nset omnis per default refs #39",
+            "committed_on": "2012-10-24T14:02:35Z"
+        },
+        {
+            "revision": "0b4ec89e89bcce8c8437180b9255ab9855047f47",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "general: legacy mod is started per default when fs_game isn't set via\nparam refs #72, refs #39, refs #82",
+            "committed_on": "2012-10-27T09:06:15Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 115,
+            "user": {
+                "id": 15,
+                "name": "muessli"
+            },
+            "notes": "Hi IR4T4,\r\n\r\nwhat kind of Installer would you prefer?\r\n\r\nmfg m\u0946\u0905\u0906\u0946\u0905",
+            "created_on": "2012-05-17T23:06:03Z",
+            "details": []
+        },
+        {
+            "id": 116,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "*Windows:* We will eventually support CMake as our build system and CMake has a module for the \"NSIS installer\":http://nsis.sourceforge.net/Main_Page, so it would be 90% automatic job. I don't know if there is anything better (and most importantly free) than NSIS (?)\r\n\r\n*Mac:* see above. CMake is able to create Mac bundles.\r\n\r\n*Linux:* I think there are only two options: either \"MojoSetup\":http://icculus.org/mojosetup/ or bash script with the binary inside it ...and we will have native packages for 6 most popular linux distributions (automatically generated through \"Open Build Service\":http://www.open-build-service.org/) as well.\r\n\r\nThere is a cross-platform installer packed with features called \"BitRock\":http://installbuilder.bitrock.com, but unfortunately I don't have spare 1000$ to buy a license for it at the moment. If you have experience with creating installers for any of the mentioned platforms then we will be glad for your help or advice.",
+            "created_on": "2012-05-18T00:45:31Z",
+            "details": []
+        },
+        {
+            "id": 117,
+            "user": {
+                "id": 15,
+                "name": "muessli"
+            },
+            "notes": "Hi Radegast,\r\n\r\nthat looks/sounds very good!!\r\nAFAIK NSIS had a \"nsi-File\"!? So everyone could adapt the ETL-Setup!?\r\nFor Linux, i would prefer native Packages (deb/rpm).\r\n\r\nthx, m\u0946\u0905\u0906\u0946\u0905",
+            "created_on": "2012-05-18T10:55:49Z",
+            "details": []
+        },
+        {
+            "id": 160,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-07-20T11:39:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "5",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 229,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-08-06T08:54:33Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "30"
+                }
+            ]
+        },
+        {
+            "id": 252,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Basic NSIS installer is finished: https://github.com/etlegacy/etlegacy-tools/blob/master/etl.nsis\n\n{TODO}\n# either *check for W:ET installation* and copy the required files from there\n# *DONE*: or *download* pak0.pk3, pak1.pk3, pak2.pk3 and mp_bin.pk3 from the internet (because of legal reasons we cannot ship them inside our installer)\n# let the user select *fs_homepath* - see user:Jacker 's \"solution\":http://www.etlegacy.com/issues/59#note-9 - and create a shortcut to it\n# (optional) migrate user's @etkey@",
+            "created_on": "2012-08-10T12:21:33Z",
+            "details": []
+        },
+        {
+            "id": 260,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "{UPDATE} Installer has an option to download required pk3 files (pak*.pk3 and mp_bin.pk3) and creates desktop/start menu shortcuts\n\nEdit: the new installer is https://github.com/etlegacy/etlegacy-tools/blob/master/etl-installer.nsi",
+            "created_on": "2012-08-12T15:44:01Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "30",
+                    "new_value": "40"
+                }
+            ]
+        },
+        {
+            "id": 375,
+            "user": {
+                "id": 15,
+                "name": "muessli"
+            },
+            "notes": "Hi Radegast,\r\nis there any ZIP-File, that contains all the Stuff, to compile the etl-installer.nsi\r\nwithout any **File: *.* -> no files found**-ErrorMessages?\r\n(for Example: wolfet.ico, COPYING.txt, libfreetype-6.dll and so one...)\r\nI dont mean *.pk3-Files!\r\nmfg muessli",
+            "created_on": "2012-10-15T20:28:08Z",
+            "details": []
+        },
+        {
+            "id": 401,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-10-22T08:41:46Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 409,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "muessli, \nfor editing installer features you don't have to have the real files. Just create some dummy txt files and rename them. Currently there is no zip or path created.\n\nI do suggest to we'll add 2 pathes in misc folder: 'win' & 'linux' for those files.\n\n{UPDATE} installer is updated to create new ET:L structure.\n\n{TODO}\n\nadd etlded to windows menu\n\nrename this \"ET: L\" in installer options to ET: Legacy v2.70\n\nadd +set fs_game legacy to etl and etlded\n\nadd option to set fs_hompath\n\nadd options to complete install (missing genuine files)\n- do a search for installed W:ET and get the files from\n-- search by key\n-- search by user input path\n--- if install is found\n---- add option to use key\n---- copy mp_bin.pk3, pa0.pk3, pak1.pk3, pak2.pk3 to etmain\n-- ask to download and install genuine files\n--- run installer again\n--- worst case points to http://www.etlegacy.com/projects/etlegacy/wiki/Windows\n\nadd omnibot files to installer options (default: true)",
+            "created_on": "2012-10-26T09:11:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "40",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 410,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-10-26T09:12:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Create an installer for the final 2.70 release",
+                    "new_value": "Create a windows installer for the final 2.70 release"
+                },
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "12",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 416,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "I created a new installer based on the Inno Setup. It lets user to either select etmain directory of an existing W:ET installation and then it copies the required files or downloads them from our website. Game path could be extracted from the registry, however, I wasn't able to find the correct regkey. As discussed on the IRC, W:ET data files are distributed in Debian and OpenSuse repositories and the distribution by downloading from the internet is not against W:ET's license (bundling is). \r\n\r\n{TODO}\r\n* fixme: missing file icons (add ader10's new icons)\r\n* fixme: windows text is scribbled on the Download page\r\n* (option) import etkey from W:ET 2.60b installation\r\n* (option) install omnibot files",
+            "created_on": "2012-11-02T11:46:17Z",
+            "details": []
+        },
+        {
+            "id": 417,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2012-11-02T11:46:37Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "70"
+                }
+            ]
+        },
+        {
+            "id": 418,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Try this regkey to find ET install path: HKLM \"Software\\Activision\\Wolfenstein - Enemy Territory\"",
+            "created_on": "2012-11-02T13:06:11Z",
+            "details": []
+        },
+        {
+            "id": 421,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "IR4T4 wrote:\r\n> Try this regkey to find ET install path: HKLM \"Software\\Activision\\Wolfenstein - Enemy Territory\"\r\n\r\nFound it, thanks. I have 64 bit Windows, so the key is HKLM \"Wow6432Node\\Software\\Activision\\Wolfenstein - Enemy Territory\"",
+            "created_on": "2012-11-02T14:07:23Z",
+            "details": []
+        },
+        {
+            "id": 476,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Installer is created.",
+            "created_on": "2012-11-10T14:13:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "70",
+                    "new_value": "100"
+                },
+                {
+                    "property": "attr",
+                    "name": "estimated_hours",
+                    "new_value": "10.0"
+                }
+            ]
+        },
+        {
+            "id": 2449,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "created_on": "2013-12-14T18:05:54Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "new_value": "Windows"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 39,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 7,
+        "name": "Immediate"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "assigned_to": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 1,
+        "name": "2.70rc1"
+    },
+    "subject": "Create a windows installer for the final 2.70 release",
+    "description": "",
+    "start_date": "2012-05-31",
+    "due_date": "2012-05-31",
+    "done_ratio": 100,
+    "estimated_hours": 10.0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Windows"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-04-26T03:11:27Z",
+    "updated_on": "2013-12-14T18:05:54Z",
+    "closed_on": "2012-11-10T14:13:13Z"
+}

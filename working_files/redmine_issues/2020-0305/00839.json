@@ -1,0 +1,115 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 235,
+            "issue_id": 839,
+            "issue_to_id": 825,
+            "relation_type": "duplicates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 4923,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-05-10T14:53:55Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "duplicates",
+                    "new_value": "825"
+                }
+            ]
+        },
+        {
+            "id": 4925,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Duplicate, closing.",
+            "created_on": "2015-05-10T14:54:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "17"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 453,
+            "name": "alerossi"
+        }
+    ],
+    "time_entries": null,
+    "id": 839,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 6,
+        "name": "Urgent"
+    },
+    "author": {
+        "id": 453,
+        "name": "alerossi"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "Crashing Game with latest update MACOSX",
+    "description": "Hello,\r\ni was playing ET on ETPUB server without problems. Yesterday i updated my Mac with new version of yosemite (10.10.3) and i have crashing game problem.\r\n\r\nI have no error, just enter the server..play few seconds then the game suddenly close. This happens too with others version. How can i solve this? :( tried to reistall all from scratch without success :(",
+    "start_date": "2015-05-10",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "OS X"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-05-10T13:56:16Z",
+    "updated_on": "2015-05-10T14:54:29Z",
+    "closed_on": "2015-05-10T14:54:29Z"
+}

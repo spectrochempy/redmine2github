@@ -1,0 +1,109 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "a1e7d60882b3169d89a02ab765d98979fa07f999",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: allied tank generates browning stats, fixes #430",
+            "committed_on": "2014-01-04T08:08:21Z"
+        },
+        {
+            "revision": "330b06fa1d756f6cf0f279486668909f55bbdb76",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: cleanup, refs #430",
+            "committed_on": "2014-01-04T16:43:56Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2740,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-01-04T08:23:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 430,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "Allied tank's browning MG stats are registered as MG42 shots.",
+    "description": "Stats for the fixed browining MG on tank (ie, Chruchill tank on Venice map) are registered as \"MG42 Gun\" shots.\r\n\r\nHalf of the fix (hits/kill stats) can be done by changing the MOD_BROWNING stats link from WS_MG42 to WS_BROWNING. The other half (shots fired stats) of the fix stills need to be found (currently assigned to WP_MOBILE_MG42, somewhere in the code).",
+    "start_date": "2013-12-23",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-12-23T09:39:34Z",
+    "updated_on": "2014-01-04T08:23:45Z",
+    "closed_on": "2014-01-04T08:23:45Z"
+}

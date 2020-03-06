@@ -1,0 +1,104 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 146,
+            "issue_id": 626,
+            "issue_to_id": 561,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 3364,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Confirmed.",
+            "created_on": "2014-08-16T05:52:48Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 3372,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I had a look at this issue a while ago. It seems the position of vehicles and players is accurate only if the player if close enough, otherwise they are placed approximately on a \"grid\". You can also observe the tank/truck/players moving step by step if you are far away.\r\n\r\nI guess the original reason for this behavior is to save some computing power, or it _might_ be possibly linked to the anti-wallhack code (positions of objects are accurate only if in range of the client).",
+            "created_on": "2014-08-18T12:07:10Z",
+            "details": []
+        },
+        {
+            "id": 3717,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-14T22:30:31Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "626"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 561,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Objective's position bug",
+    "description": "I have two screenshots to point out the issue. In these two screenshots the position of the truck is changing when I switch the limbo cameras around, on the 6th camer as Allies the truck's position seems to be different. Also you can spot this bug when you roam around the map as spectator while hacing your commandmap open. The position of the truck just changes. See two other screenshots of that.\r\n\r\nAs far as I remember Goldrush isn't the only map facing this problem. There might be another maps too but for now, the best example that came up to my mind is Goldrush.\r\n\r\n-*S",
+    "start_date": "2014-08-15",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-08-15T01:57:15Z",
+    "updated_on": "2014-08-18T12:07:10Z"
+}

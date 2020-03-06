@@ -1,0 +1,233 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "e1ae387761550187fb72a1d0b2d2482fb656c053",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "game: fix overwriting of ammo count instead of add at spawning\n\nAnd make generic misc weapon add on upgrade skill",
+            "committed_on": "2019-02-12T22:10:35Z"
+        },
+        {
+            "revision": "7cf651b7c79ae98631c2424500044089b796d442",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "game: fix throwing nade when leaning",
+            "committed_on": "2019-02-12T22:11:27Z"
+        },
+        {
+            "revision": "dea351a640070c71c522ce5b2159ab3129f3cb59",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "cgame: fix weapon alt reloads was deleted by accident ...",
+            "committed_on": "2019-02-16T17:56:24Z"
+        },
+        {
+            "revision": "b0ec96d096b51f021b7f5db22ecefadaba497afd",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "mod: simplify satchel ammo usage",
+            "committed_on": "2019-02-28T23:49:21Z"
+        },
+        {
+            "revision": "0c6526c975afc57a6182ac669fcdfbc60124992a",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "cgame: possible fix random switching of weapons, refs #1203",
+            "committed_on": "2019-03-26T13:05:00Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7749,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-02-12T19:04:48Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "804"
+                }
+            ]
+        },
+        {
+            "id": 7828,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-03-01T14:12:33Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 7847,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "The issue doesn't seem to appear again on the dev server running latest master. Some minor changes were done, maybe they fixed the issue.",
+            "created_on": "2019-03-07T11:56:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 7851,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "We should restrict weapons and have real players on the server to test this issue. The behaviour when bots are connected is different related to weapon restrictions. There is a line in the code where bots are able to select a weapon even when this is restricted (to avoid an endless loop).",
+            "created_on": "2019-03-08T13:26:14Z",
+            "details": []
+        },
+        {
+            "id": 7899,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Throwing nade while leaned seem to still have some issues:\r\n\r\n_Bystry: throwing grenades while leaning is still bugged\r\nBystry: nope, sometimes you can't start timing a nade while leaned\r\nBystry: sometimes it works though\r\nBystry: sometimes when i try to start timing a nade while leaned it switches back to smg_",
+            "created_on": "2019-03-23T13:25:27Z",
+            "details": []
+        },
+        {
+            "id": 7969,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-17T19:21:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "251"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 8058,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-26T22:34:34Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "old_value": "804"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 1203,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 6,
+        "name": "Urgent"
+    },
+    "author": {
+        "id": 392,
+        "name": "Timothy"
+    },
+    "assigned_to": {
+        "id": 251,
+        "name": "Aranud"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Random switching of weapons",
+    "description": "When a player picks up ammo or a gun, sometimes the weapon is switched without the intention to do so. Haven't been able to figure out the exact conditions for this to happen.",
+    "start_date": "2019-02-12",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-02-12T17:37:35Z",
+    "updated_on": "2019-04-17T19:21:13Z",
+    "closed_on": "2019-04-17T19:21:13Z"
+}

@@ -1,0 +1,342 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "2fca91c597c8434e0d77c7633f9e495c377a4540",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: reworked airstrike and artillery restriction, refs #1254\n\n* Implement arty/aistrike limitation as per etpro\n* Changed team_airstrikeTime/artyTime cvars to team_maxAirtrike\n  and team_maxArtillery to override default computed value per minutes\n* Get rid of g_misc 4 G_MISC_ARTY_STRIKE_COMBINE",
+            "committed_on": "2019-05-04T21:47:29Z"
+        },
+        {
+            "revision": "a9eaf8e7a84cded39a5a986e028fcdf62f5fae9d",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: adjusted configs, refs #1254",
+            "committed_on": "2019-05-04T22:48:18Z"
+        },
+        {
+            "revision": "6705b56a71cbaeadf55b3ef16f1afdba3c2f786a",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: allow partial minute values for team airstrike/artillery, refs #1254",
+            "committed_on": "2019-11-09T12:32:48Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7998,
+            "user": {
+                "id": 821,
+                "name": "Bystry"
+            },
+            "notes": "",
+            "created_on": "2019-04-19T16:48:11Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Figure out how g_heavyweaponrestriction (etpro) cvar works regarding artillery and airstrikes limitations. It seems it sets an arty and airstrike per-minute limit based on field ops and total team players count.\r\n\r\n\r\nbq. g_heavyWeaponRestriction\r\n\r\nbq. 100 is default. As i understand it, for soldier weapons it refers to the percentage of the team that can select EACH heavy weapon. e.g., if you set it to 20, and in the game there are 10 players on a team, bq. each side could then have up to two panzerfausts, two flamers, two mg42\u2019s and two mortars. If the team has no flamers, this does not allow them to take any additional Panzers.\r\nbq. The Field Ops use of Artillery is also restricted, but is on a per-minuite basis and takes into account the number of Field Ops. The is calculation is something like the following:\r\n\r\nbq. n(g_heavyweaponrestriction * teamsize)\r\nbq. = max number of artillery per team per minuite\r\n\r\nbq. where n = number of field ops, but minimum is 2 and max is six (doesnt actually restrict how many field ops you can have, just the number for the formula).\r\n\r\nbq. so: if g_heavyweaponrestriction is 20, there are 10 on the team, and there are 2 field ops, between them they can set off\r\nbq. 2(0.2*10)= 4 artillery per min?",
+                    "new_value": "Figure out how g_heavyweaponrestriction (etpro) cvar works regarding artillery and airstrikes limitations. It seems it sets an arty and airstrike per-minute limit based on field ops and total team players count.\r\n\r\n\r\nbq. g_heavyWeaponRestriction\r\n\r\nbq. 100 is default. As i understand it, for soldier weapons it refers to the percentage of the team that can select EACH heavy weapon. e.g., if you set it to 20, and in the game there are 10 players on a team, bq. each side could then have up to two panzerfausts, two flamers, two mg42\u2019s and two mortars. If the team has no flamers, this does not allow them to take any additional Panzers.\r\nThe Field Ops use of Artillery is also restricted, but is on a per-minuite basis and takes into account the number of Field Ops. The is calculation is something like the following:\r\n\r\nbq. n(g_heavyweaponrestriction * teamsize)\r\n= max number of artillery per team per minuite\r\n\r\nbq. where n = number of field ops, but minimum is 2 and max is six \r\n(doesnt actually restrict how many field ops you can have, just the number for the formula).\r\n\r\nbq. so: if g_heavyweaponrestriction is 20, there are 10 on the team, and there are 2 field ops, between them they can set off\r\n 2(0.2*10)= 4 artillery per min?"
+                }
+            ]
+        },
+        {
+            "id": 7999,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-19T16:48:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "tracker_id",
+                    "old_value": "3",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "21"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8000,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-19T16:54:18Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Figure out how g_heavyweaponrestriction (etpro) cvar works regarding artillery and airstrikes limitations. It seems it sets an arty and airstrike per-minute limit based on field ops and total team players count.\r\n\r\n\r\nbq. g_heavyWeaponRestriction\r\n\r\nbq. 100 is default. As i understand it, for soldier weapons it refers to the percentage of the team that can select EACH heavy weapon. e.g., if you set it to 20, and in the game there are 10 players on a team, bq. each side could then have up to two panzerfausts, two flamers, two mg42\u2019s and two mortars. If the team has no flamers, this does not allow them to take any additional Panzers.\r\nThe Field Ops use of Artillery is also restricted, but is on a per-minuite basis and takes into account the number of Field Ops. The is calculation is something like the following:\r\n\r\nbq. n(g_heavyweaponrestriction * teamsize)\r\n= max number of artillery per team per minuite\r\n\r\nbq. where n = number of field ops, but minimum is 2 and max is six \r\n(doesnt actually restrict how many field ops you can have, just the number for the formula).\r\n\r\nbq. so: if g_heavyweaponrestriction is 20, there are 10 on the team, and there are 2 field ops, between them they can set off\r\n 2(0.2*10)= 4 artillery per min?",
+                    "new_value": "Figure out how g_heavyweaponrestriction (etpro) cvar works regarding artillery and airstrikes limitations. It seems it sets an arty and airstrike per-minute limit based on field ops and total team players count.\r\n\r\n\r\nbq. g_heavyWeaponRestriction\r\n\r\nbq. 100 is default. As i understand it, for soldier weapons it refers to the percentage of the team that can select EACH heavy weapon. e.g., if you set it to 20, and in the game there are 10 players on a team, bq. each side could then have up to two panzerfausts, two flamers, two mg42\u2019s and two mortars. If the team has no flamers, this does not allow them to take any additional Panzers.\r\nThe Field Ops use of Artillery is also restricted, but is on a per-minuite basis and takes into account the number of Field Ops. The is calculation is something like the following:\r\n\r\nbq. n(g_heavyweaponrestriction * teamsize)\r\n= max number of artillery per team per minuite\r\n\r\nbq. where n = number of field ops, but minimum is 2 and max is six \r\n(doesnt actually restrict how many field ops you can have, just the number for the formula).\r\n\r\nbq. so: if g_heavyweaponrestriction is 20, there are 10 on the team, and there are 2 field ops, between them they can set off\r\n 2(0.2*10)= 4 artillery per min?\r\n\r\nbq. So we\u2019ve worked out how many artillery can be set up per minuite, which is all most people need to know. If you\u2019re wondering how this \u201cminuite\u201d is calculated (think about it), read the next paragraph.\r\nbq. The counter starts at 0, and there are 6000msec in a minuite. Every time a player sets off an artillery, 6000/m is added to the counter, and the counter will start counting back down to 0. Once the counter reaches 6000, no more artillery can be fired until it has counted down to under 6000. Since of course the counter never goes below 0, this means in any given minuite there cant be more than m artillery set off, but note fractions do apply - an m of 2.5 will be rounded UP to 3 in the first minuite, but since the leftover msec is carried over, there will be only 2 allowed in the next minuite. Hence on average there can only be 2.5 artillery every minuite. It also means that once the counter has exceeded the cap, you dont have to wait a full minuite for it to count down, in order to fire artillery again.\r\n\r\nSee: https://forums.splashdamage.com/t/heavy-weapons-restrictions-on-rtcw-et-servers-please-help/110465/2"
+                }
+            ]
+        },
+        {
+            "id": 8001,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-19T16:58:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Figure out how g_heavyweaponrestriction (etpro) cvar works regarding artillery and airstrikes limitations. It seems it sets an arty and airstrike per-minute limit based on field ops and total team players count.\r\n\r\n\r\nbq. g_heavyWeaponRestriction\r\n\r\nbq. 100 is default. As i understand it, for soldier weapons it refers to the percentage of the team that can select EACH heavy weapon. e.g., if you set it to 20, and in the game there are 10 players on a team, bq. each side could then have up to two panzerfausts, two flamers, two mg42\u2019s and two mortars. If the team has no flamers, this does not allow them to take any additional Panzers.\r\nThe Field Ops use of Artillery is also restricted, but is on a per-minuite basis and takes into account the number of Field Ops. The is calculation is something like the following:\r\n\r\nbq. n(g_heavyweaponrestriction * teamsize)\r\n= max number of artillery per team per minuite\r\n\r\nbq. where n = number of field ops, but minimum is 2 and max is six \r\n(doesnt actually restrict how many field ops you can have, just the number for the formula).\r\n\r\nbq. so: if g_heavyweaponrestriction is 20, there are 10 on the team, and there are 2 field ops, between them they can set off\r\n 2(0.2*10)= 4 artillery per min?\r\n\r\nbq. So we\u2019ve worked out how many artillery can be set up per minuite, which is all most people need to know. If you\u2019re wondering how this \u201cminuite\u201d is calculated (think about it), read the next paragraph.\r\nbq. The counter starts at 0, and there are 6000msec in a minuite. Every time a player sets off an artillery, 6000/m is added to the counter, and the counter will start counting back down to 0. Once the counter reaches 6000, no more artillery can be fired until it has counted down to under 6000. Since of course the counter never goes below 0, this means in any given minuite there cant be more than m artillery set off, but note fractions do apply - an m of 2.5 will be rounded UP to 3 in the first minuite, but since the leftover msec is carried over, there will be only 2 allowed in the next minuite. Hence on average there can only be 2.5 artillery every minuite. It also means that once the counter has exceeded the cap, you dont have to wait a full minuite for it to count down, in order to fire artillery again.\r\n\r\nSee: https://forums.splashdamage.com/t/heavy-weapons-restrictions-on-rtcw-et-servers-please-help/110465/2",
+                    "new_value": "Figure out how g_heavyweaponrestriction (etpro) cvar works regarding artillery and airstrikes limitations. It seems it sets an arty and airstrike per-minute limit based on field ops and total team players count.\r\n\r\n\r\nbq. g_heavyWeaponRestriction\r\n\r\nbq. 100 is default. As i understand it, for soldier weapons it refers to the percentage of the team that can select EACH heavy weapon. e.g., if you set it to 20, and in the game there are 10 players on a team, bq. each side could then have up to two panzerfausts, two flamers, two mg42\u2019s and two mortars. If the team has no flamers, this does not allow them to take any additional Panzers.\r\nThe Field Ops use of Artillery is also restricted, but is on a per-minuite basis and takes into account the number of Field Ops. The is calculation is something like the following:\r\n\r\nbq. n(g_heavyweaponrestriction * teamsize)\r\n= max number of artillery per team per minuite\r\n\r\nbq. where n = number of field ops, but minimum is 2 and max is six \r\n(doesnt actually restrict how many field ops you can have, just the number for the formula).\r\n\r\nbq. so: if g_heavyweaponrestriction is 20, there are 10 on the team, and there are 2 field ops, between them they can set off\r\n 2(0.2*10)= 4 artillery per min?\r\n\r\nbq. So we\u2019ve worked out how many artillery can be set up per minuite, which is all most people need to know. If you\u2019re wondering how this \u201cminuite\u201d is calculated (think about it), read the next paragraph.\r\n\r\nbq. The counter starts at 0, and there are 6000msec in a minuite. Every time a player sets off an artillery, 6000/m is added to the counter, and the counter will start counting back down to 0. Once the counter reaches 6000, no more artillery can be fired until it has counted down to under 6000. Since of course the counter never goes below 0, this means in any given minuite there cant be more than m artillery set off, but note fractions do apply - an m of 2.5 will be rounded UP to 3 in the first minuite, but since the leftover msec is carried over, there will be only 2 allowed in the next minuite. Hence on average there can only be 2.5 artillery every minuite. It also means that once the counter has exceeded the cap, you dont have to wait a full minuite for it to count down, in order to fire artillery again.\r\n\r\nSee:\r\n* http://bani.anime.net/banimod/forums/viewtopic.php?p=22308\r\n* https://forums.splashdamage.com/t/heavy-weapons-restrictions-on-rtcw-et-servers-please-help/110465/2"
+                }
+            ]
+        },
+        {
+            "id": 8035,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-22T17:11:09Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Figure out how g_heavyweaponrestriction (etpro) cvar works regarding artillery and airstrikes limitations. It seems it sets an arty and airstrike per-minute limit based on field ops and total team players count.\r\n\r\n\r\nbq. g_heavyWeaponRestriction\r\n\r\nbq. 100 is default. As i understand it, for soldier weapons it refers to the percentage of the team that can select EACH heavy weapon. e.g., if you set it to 20, and in the game there are 10 players on a team, bq. each side could then have up to two panzerfausts, two flamers, two mg42\u2019s and two mortars. If the team has no flamers, this does not allow them to take any additional Panzers.\r\nThe Field Ops use of Artillery is also restricted, but is on a per-minuite basis and takes into account the number of Field Ops. The is calculation is something like the following:\r\n\r\nbq. n(g_heavyweaponrestriction * teamsize)\r\n= max number of artillery per team per minuite\r\n\r\nbq. where n = number of field ops, but minimum is 2 and max is six \r\n(doesnt actually restrict how many field ops you can have, just the number for the formula).\r\n\r\nbq. so: if g_heavyweaponrestriction is 20, there are 10 on the team, and there are 2 field ops, between them they can set off\r\n 2(0.2*10)= 4 artillery per min?\r\n\r\nbq. So we\u2019ve worked out how many artillery can be set up per minuite, which is all most people need to know. If you\u2019re wondering how this \u201cminuite\u201d is calculated (think about it), read the next paragraph.\r\n\r\nbq. The counter starts at 0, and there are 6000msec in a minuite. Every time a player sets off an artillery, 6000/m is added to the counter, and the counter will start counting back down to 0. Once the counter reaches 6000, no more artillery can be fired until it has counted down to under 6000. Since of course the counter never goes below 0, this means in any given minuite there cant be more than m artillery set off, but note fractions do apply - an m of 2.5 will be rounded UP to 3 in the first minuite, but since the leftover msec is carried over, there will be only 2 allowed in the next minuite. Hence on average there can only be 2.5 artillery every minuite. It also means that once the counter has exceeded the cap, you dont have to wait a full minuite for it to count down, in order to fire artillery again.\r\n\r\nSee:\r\n* http://bani.anime.net/banimod/forums/viewtopic.php?p=22308\r\n* https://forums.splashdamage.com/t/heavy-weapons-restrictions-on-rtcw-et-servers-please-help/110465/2",
+                    "new_value": "Figure out how g_heavyweaponrestriction (etpro) cvar works regarding artillery and airstrikes limitations. It seems it sets an arty and airstrike per-minute limit based on field ops and total team players count.\r\n\r\n\r\nbq. g_heavyWeaponRestriction\r\n\r\nbq. 100 is default. As i understand it, for soldier weapons it refers to the percentage of the team that can select EACH heavy weapon. e.g., if you set it to 20, and in the game there are 10 players on a team, bq. each side could then have up to two panzerfausts, two flamers, two mg42\u2019s and two mortars. If the team has no flamers, this does not allow them to take any additional Panzers.\r\nThe Field Ops use of Artillery is also restricted, but is on a per-minuite basis and takes into account the number of Field Ops. The is calculation is something like the following:\r\n\r\nbq. n(g_heavyweaponrestriction * teamsize)\r\n= max number of artillery per team per minuite\r\n\r\nbq. where n = number of field ops, but minimum is 2 and max is six \r\n(doesnt actually restrict how many field ops you can have, just the number for the formula).\r\n\r\nbq. so: if g_heavyweaponrestriction is 20, there are 10 on the team, and there are 2 field ops, between them they can set off\r\n 2(0.2*10)= 4 artillery per min?\r\n\r\nbq. So we\u2019ve worked out how many artillery can be set up per minuite, which is all most people need to know. If you\u2019re wondering how this \u201cminuite\u201d is calculated (think about it), read the next paragraph.\r\n\r\nbq. The counter starts at 0, and there are 6000msec in a minuite. Every time a player sets off an artillery, 6000/m is added to the counter, and the counter will start counting back down to 0. Once the counter reaches 6000, no more artillery can be fired until it has counted down to under 6000. Since of course the counter never goes below 0, this means in any given minuite there cant be more than m artillery set off, but note fractions do apply - an m of 2.5 will be rounded UP to 3 in the first minuite, but since the leftover msec is carried over, there will be only 2 allowed in the next minuite. Hence on average there can only be 2.5 artillery every minuite. It also means that once the counter has exceeded the cap, you dont have to wait a full minuite for it to count down, in order to fire artillery again.\r\n\r\nbq. btw Q for bani etc, in etpro does team_max~ overrule g_heavyweaponrestriction or vice versa, or be determined by whichever comes last?\r\n\r\nbq. Rain: g_heavyweaponsrestriction only controls airstrike/arty fire right now. We should probably move that into a team_* cvar as well, since to say the current usage of heavyweaponsrestriction with regards to airstrike/arty is not well understood would be an understatement.\r\n\r\nSee:\r\n* http://bani.anime.net/banimod/forums/viewtopic.php?p=22308\r\n* https://forums.splashdamage.com/t/heavy-weapons-restrictions-on-rtcw-et-servers-please-help/110465/2"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 8122,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "This is now implemented, as per etpro description above.\r\n\r\nIn addition,\r\n* the team_airstrikeTime and team_artyTime cvars to have been renommed team_maxAirstrike and team_maxArtillery. They can be used to override the default computed value per minutes from g_heavyWeaponRestriction. This is thus consistent with other team_* cvars (only active when >0, disabled by default).\r\n* the g_misc option 4 G_MISC_ARTY_STRIKE_COMBINE has been removed. I don't think this is relevant nor useful anymore.",
+            "created_on": "2019-05-04T22:13:35Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "21",
+                    "new_value": "17"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 8180,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-05-13T16:42:11Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 8306,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Looks like the default scaling algorithm (used by etpro, and by Legacy with default team_maxAirtrike and team_maxArtillery values) might be quite spammy with FieldsOps lvl 2. Check if that can be tweaked, and/or used better default for public settings (and keep auto scaling for comp only).\r\n\r\n{TODO}\r\n* -Add  g_heavyweaponrestriction in config- (it's in etlserver.cfg already)\r\n* Change g_heavyweaponrestriction  to team_heavyweaponrestriction?",
+            "created_on": "2019-06-18T19:16:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 8329,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Reported on TM forums:\r\n\r\nbq. it looks like that there is still a bug in airstrike/artillery settings - c\ufeffvar is set to once per minute but i noticed on caen that was almost impossible to move tank because of so many airstrikes/artillery ... Need to look on that agai\ufeffn ...\r\n\r\nbq. And indeed something with the artillery. Sometimes there even appear to be two at the same time.\r\n\r\nInvestigate and fix. EDIT: TM actually made in typo in their config file. The cvar was thus not used, and the default value was used instead - which means the autoscaling code was in effect (and well, it scale a bit much with 30+ players ^^').",
+            "created_on": "2019-06-26T17:13:14Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 8341,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I'm really not sure how to adjust etpro's autoscaling so it works okay on small and big populated server at the same time. I guess the best move is to let pub servers use our team_maxAirstrikes/maxArtillery cvars so they can set their preference manually. I'll thus consider this feature done.",
+            "created_on": "2019-06-27T18:18:35Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 8518,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "{TODO}\r\n* -Change team_maxAirstrikes/maxArtillery cvars from integer to float, to allow for partial minutes values (ie, 0.5 for 1 strike each 2 minutes in average). Adjust the default values in config files too.- (done)",
+            "created_on": "2019-11-09T10:38:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 8520,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-11-09T12:35:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1254,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 821,
+        "name": "Bystry"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Airstrike and artillery per-minute limitations",
+    "description": "Figure out how g_heavyweaponrestriction (etpro) cvar works regarding artillery and airstrikes limitations. It seems it sets an arty and airstrike per-minute limit based on field ops and total team players count.\r\n\r\n\r\nbq. g_heavyWeaponRestriction\r\n\r\nbq. 100 is default. As i understand it, for soldier weapons it refers to the percentage of the team that can select EACH heavy weapon. e.g., if you set it to 20, and in the game there are 10 players on a team, bq. each side could then have up to two panzerfausts, two flamers, two mg42\u2019s and two mortars. If the team has no flamers, this does not allow them to take any additional Panzers.\r\nThe Field Ops use of Artillery is also restricted, but is on a per-minuite basis and takes into account the number of Field Ops. The is calculation is something like the following:\r\n\r\nbq. n(g_heavyweaponrestriction * teamsize)\r\n= max number of artillery per team per minuite\r\n\r\nbq. where n = number of field ops, but minimum is 2 and max is six \r\n(doesnt actually restrict how many field ops you can have, just the number for the formula).\r\n\r\nbq. so: if g_heavyweaponrestriction is 20, there are 10 on the team, and there are 2 field ops, between them they can set off\r\n 2(0.2*10)= 4 artillery per min?\r\n\r\nbq. So we\u2019ve worked out how many artillery can be set up per minuite, which is all most people need to know. If you\u2019re wondering how this \u201cminuite\u201d is calculated (think about it), read the next paragraph.\r\n\r\nbq. The counter starts at 0, and there are 6000msec in a minuite. Every time a player sets off an artillery, 6000/m is added to the counter, and the counter will start counting back down to 0. Once the counter reaches 6000, no more artillery can be fired until it has counted down to under 6000. Since of course the counter never goes below 0, this means in any given minuite there cant be more than m artillery set off, but note fractions do apply - an m of 2.5 will be rounded UP to 3 in the first minuite, but since the leftover msec is carried over, there will be only 2 allowed in the next minuite. Hence on average there can only be 2.5 artillery every minuite. It also means that once the counter has exceeded the cap, you dont have to wait a full minuite for it to count down, in order to fire artillery again.\r\n\r\nbq. btw Q for bani etc, in etpro does team_max~ overrule g_heavyweaponrestriction or vice versa, or be determined by whichever comes last?\r\n\r\nbq. Rain: g_heavyweaponsrestriction only controls airstrike/arty fire right now. We should probably move that into a team_* cvar as well, since to say the current usage of heavyweaponsrestriction with regards to airstrike/arty is not well understood would be an understatement.\r\n\r\nSee:\r\n* http://bani.anime.net/banimod/forums/viewtopic.php?p=22308\r\n* https://forums.splashdamage.com/t/heavy-weapons-restrictions-on-rtcw-et-servers-please-help/110465/2",
+    "start_date": "2019-04-19",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-04-19T16:44:50Z",
+    "updated_on": "2019-11-09T12:35:57Z",
+    "closed_on": "2019-11-09T12:35:57Z"
+}

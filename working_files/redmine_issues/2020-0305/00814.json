@@ -1,0 +1,451 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 221,
+            "issue_id": 824,
+            "issue_to_id": 814,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 222,
+            "issue_id": 825,
+            "issue_to_id": 814,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 226,
+            "issue_id": 814,
+            "issue_to_id": 826,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 254,
+            "issue_id": 814,
+            "issue_to_id": 166,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 255,
+            "issue_id": 814,
+            "issue_to_id": 80,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 239,
+            "issue_id": 851,
+            "issue_to_id": 814,
+            "relation_type": "duplicates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "4de9c1969f3bc602459d959f7527ae37aaf695a9",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "refactored the mod lib extraction and added the default lib extraction, refs #814",
+            "committed_on": "2015-02-18T15:16:21Z"
+        },
+        {
+            "revision": "9a8bf7e5db029b83ff9c82541e2ef1f7e64b12fb",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "fixed the extraction code having wrong output filename due to static array flipping, refs #814",
+            "committed_on": "2015-03-17T21:46:20Z"
+        },
+        {
+            "revision": "c1334ff82be0d52129a66811950a5323b97e13d4",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "reset the package restrictions when connecting/reconnecting, refs #814",
+            "committed_on": "2015-03-17T22:48:52Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 4602,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "",
+            "created_on": "2015-02-16T12:56:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Windows installer does not unpack @ui_mp_x86.dll@ and @cgame_mp_x86.dll@ into @fs_basepath@ which causes @VM_Create on UI failed@ error when trying to connect to a server running a mod other than Legacy (during downloading pk3s). Unpacking the files on my own fixes the problem. ET:L zip package (http://mirror.etlegacy.com/release/etlegacy-v2.72-win32.zip) seems to be affected as well.",
+                    "new_value": "Windows installer does not unpack @ui_mp_x86.dll@ and @cgame_mp_x86.dll@ into @fs_basepath@ which causes @VM_Create on UI failed@ error when trying to connect to a server running a mod other than Legacy (during downloading pk3s). Unpacking the files on my own fixes the problem. ET:L zip package (http://mirror.etlegacy.com/release/etlegacy-v2.72-win32.zip) seems to be affected as well.\r\n\r\nET:L 2.71a installer correctly places these files into basepath and this issue is not present on 2.71a."
+                }
+            ]
+        },
+        {
+            "id": 4603,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "",
+            "created_on": "2015-02-16T13:01:15Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Windows installer does not unpack @ui_mp_x86.dll@ and @cgame_mp_x86.dll@ into @fs_basepath@ which causes @VM_Create on UI failed@ error when trying to connect to a server running a mod other than Legacy (during downloading pk3s). Unpacking the files on my own fixes the problem. ET:L zip package (http://mirror.etlegacy.com/release/etlegacy-v2.72-win32.zip) seems to be affected as well.\r\n\r\nET:L 2.71a installer correctly places these files into basepath and this issue is not present on 2.71a.",
+                    "new_value": "Windows installer does not unpack @ui_mp_x86.dll@ and @cgame_mp_x86.dll@ into @fs_basepath@ which causes @VM_Create on UI failed@ error when trying to connect to a server running a mod other than Legacy (during downloading pk3s). Unpacking the files on my own fixes the problem. ET:L zip package (http://mirror.etlegacy.com/release/etlegacy-v2.72-win32.zip) seems to be affected as well."
+                }
+            ]
+        },
+        {
+            "id": 4604,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "",
+            "created_on": "2015-02-16T13:06:53Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Windows installer does not unpack @ui_mp_x86.dll@ and @cgame_mp_x86.dll@ into @fs_basepath@ which causes @VM_Create on UI failed@ error when trying to connect to a server running a mod other than Legacy (during downloading pk3s). Unpacking the files on my own fixes the problem. ET:L zip package (http://mirror.etlegacy.com/release/etlegacy-v2.72-win32.zip) seems to be affected as well.",
+                    "new_value": "Windows installer does not unpack @ui_mp_x86.dll@ and @cgame_mp_x86.dll@ into @fs_basepath@ which causes @VM_Create on UI failed@ error when trying to connect to a server running a mod other than Legacy (during downloading pk3s). Unpacking the files on my own fixes the problem. ET:L zip package (http://mirror.etlegacy.com/release/etlegacy-v2.72-win32.zip) seems to be affected as well.\r\n\r\nHow to reproduce:\r\n1. Install ET:L using official installer.\r\n2. Start the game.\r\n3. Connect to any server running mod other than Legacy."
+                }
+            ]
+        },
+        {
+            "id": 4605,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "",
+            "created_on": "2015-02-16T13:23:43Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Windows installer does not unpack @ui_mp_x86.dll@ and @cgame_mp_x86.dll@ into @fs_basepath@ which causes @VM_Create on UI failed@ error when trying to connect to a server running a mod other than Legacy (during downloading pk3s). Unpacking the files on my own fixes the problem. ET:L zip package (http://mirror.etlegacy.com/release/etlegacy-v2.72-win32.zip) seems to be affected as well.\r\n\r\nHow to reproduce:\r\n1. Install ET:L using official installer.\r\n2. Start the game.\r\n3. Connect to any server running mod other than Legacy.",
+                    "new_value": "Windows installer does not unpack @ui_mp_x86.dll@ and @cgame_mp_x86.dll@ into @fs_basepath@ which seems to cause @VM_Create on UI failed@ error when trying to connect to a server running a mod other than Legacy (during downloading pk3s). Unpacking the files on my own fixes the problem. ET:L zip package (http://mirror.etlegacy.com/release/etlegacy-v2.72-win32.zip) seems to be affected as well.\r\n\r\nHow to reproduce:\r\n1. Install ET:L using official installer.\r\n2. Start the game.\r\n3. Connect to any server running mod other than Legacy."
+                }
+            ]
+        },
+        {
+            "id": 4612,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Linux installer is affected too. I do remember the files were extracted in one of our first installers and then somebody did remove them because it did work without.\r\nHowever in vanilla installs the 2 bins are extracted next to qagame and we should do same.",
+            "created_on": "2015-02-16T14:52:49Z",
+            "details": []
+        },
+        {
+            "id": 4613,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-02-16T14:53:01Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "old_value": "Windows",
+                    "new_value": ""
+                }
+            ]
+        },
+        {
+            "id": 4619,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "I was touching this issue before our 1st release looks like noone was listening to me :P\r\nThat there was no ui and cgame dll's",
+            "created_on": "2015-02-16T22:53:09Z",
+            "details": []
+        },
+        {
+            "id": 4626,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "We should not have the mod bind in the basepath.. The game should extract them to the homepath, if this is not the case then we need to fix that. Lets not pollute the basepath.",
+            "created_on": "2015-02-17T23:18:32Z",
+            "details": []
+        },
+        {
+            "id": 4627,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "I get this error even if cgame/ui dlls are in @fs_homepath/legacy@. They have to be in @fs_basepath/legacy@ otherwise I won't be able to download any other mod in-game.",
+            "created_on": "2015-02-18T00:53:09Z",
+            "details": []
+        },
+        {
+            "id": 4628,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Dragonji wrote:\r\n> I get this error even if cgame/ui dlls are in @fs_homepath/legacy@. They have to be in @fs_basepath/legacy@ otherwise I won't be able to download any other mod in-game.\r\n\r\nThe original WolfET code extract them in homepath - see @FS_ExtractFromPakFile()@ in @Sys_LoadDll()@. Dynamically extracting the cgame/ui dlls in fs_basepath doesn't make sense, permission wise. What are we missing here?",
+            "created_on": "2015-02-18T10:36:11Z",
+            "details": []
+        },
+        {
+            "id": 4629,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "etmain dlls are installed into @fs_basepath@ as far as I know.\r\n\r\nThe log when I try to connect to a silEnT mod server (and I don't have silEnT mod installed yet so it looks for legacy dlls to load).\r\n<pre>\r\nClient download subsystem initialized\r\nSys_LoadGameDll -> FS_CL_ExtractFromPakFile(D:\\Gry\\Enemy Territory\\HOMEPATH, silent, ui_mp_x86.dll)\r\nSys_LoadDll(D:\\Gry\\Enemy Territory\\HOMEPATH\\silent\\ui_mp_x86.dll)... failed: \"Failed loading D:\\Gry\\Enemy Territory\\HOMEPATH\\silent\\ui_mp_x86.dll: The specified module could not be found.\r\n\r\n\"\r\nSys_LoadDll(D:\\Gry\\Enemy Territory\\silent\\ui_mp_x86.dll)... failed: \"Failed loading D:\\Gry\\Enemy Territory\\silent\\ui_mp_x86.dll: The specified module could not be found.\r\n\r\n\"\r\nSys_LoadDll: failed to load the mod library. Trying to revert to the default one.\r\nSys_LoadDll(D:\\Gry\\Enemy Territory\\legacy\\ui_mp_x86.dll)... failed: \"Failed loading D:\\Gry\\Enemy Territory\\legacy\\ui_mp_x86.dll: The specified module could not be found.\r\n\r\n\"\r\nSys_LoadDll(ui) failed to load library\r\n</pre>\r\n\r\nThen @VM_Create on UI failed@ occurs. As you can see the game does not even look for legacy's dlls to @fs_homepath@.",
+            "created_on": "2015-02-18T11:15:03Z",
+            "details": []
+        },
+        {
+            "id": 4630,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "You're right. I've just checked the WolfET nix install and the cgame/ui so files are indeed installed in basepath.\r\n\r\nWe shouldn't do any dynamic extraction at all, but simply install the legacy cgame and ui .so/.dll files already extracted next the the bin.pk3 in the installers.",
+            "created_on": "2015-02-18T12:00:25Z",
+            "details": []
+        },
+        {
+            "id": 4631,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Actually this is a simple fix on the code. We should not have the files in the basepath (except qagame) because this way the folder is clean and gives less issues on updating. There is just a piece of code missing from the library loading that exctracts the default mod bins if the other mods bins do not exist.",
+            "created_on": "2015-02-18T13:27:01Z",
+            "details": []
+        },
+        {
+            "id": 4633,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Refactored the mod lib code doesn't work for me. Connecting to the test server crashes in cgame and the game doesn't work properly after restart. It's showing our background w/o menus (just an orange rectangle).",
+            "created_on": "2015-02-18T20:22:26Z",
+            "details": []
+        },
+        {
+            "id": 4672,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "",
+            "created_on": "2015-02-27T00:32:41Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "824"
+                }
+            ]
+        },
+        {
+            "id": 4685,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-02-27T21:28:25Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "825"
+                }
+            ]
+        },
+        {
+            "id": 4737,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-03-08T23:53:57Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "826"
+                }
+            ]
+        },
+        {
+            "id": 4739,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "IR4T4 wrote:\r\n> Refactored the mod lib code doesn't work for me. Connecting to the test server crashes in cgame and the game doesn't work properly after restart. It's showing our background w/o menus (just an orange rectangle).\r\n\r\nThis is another issue (see #826), but I can still reproduce the problem here too.\r\n",
+            "created_on": "2015-03-08T23:54:40Z",
+            "details": []
+        },
+        {
+            "id": 4799,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-03-18T07:32:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "44"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 5041,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-08-01T18:20:53Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "duplicated",
+                    "new_value": "851"
+                }
+            ]
+        },
+        {
+            "id": 5331,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "",
+            "created_on": "2015-10-16T18:26:17Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "166"
+                }
+            ]
+        },
+        {
+            "id": 5333,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "",
+            "created_on": "2015-10-16T18:26:52Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "80"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 44,
+            "name": "Jacker"
+        },
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 814,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 7,
+        "name": "Immediate"
+    },
+    "author": {
+        "id": 35,
+        "name": "Dragonji"
+    },
+    "assigned_to": {
+        "id": 44,
+        "name": "Jacker"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "VM_Create on UI failed, ET:L 2.72",
+    "description": "Windows installer does not unpack @ui_mp_x86.dll@ and @cgame_mp_x86.dll@ into @fs_basepath@ which seems to cause @VM_Create on UI failed@ error when trying to connect to a server running a mod other than Legacy (during downloading pk3s). Unpacking the files on my own fixes the problem. ET:L zip package (http://mirror.etlegacy.com/release/etlegacy-v2.72-win32.zip) seems to be affected as well.\r\n\r\nHow to reproduce:\r\n1. Install ET:L using official installer.\r\n2. Start the game.\r\n3. Connect to any server running mod other than Legacy.",
+    "start_date": "2015-02-16",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-02-16T12:55:01Z",
+    "updated_on": "2015-03-18T07:32:58Z",
+    "closed_on": "2015-03-18T07:32:58Z"
+}

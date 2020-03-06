@@ -1,0 +1,122 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "410271f236d5d2d8b3d15a24477aa0db89284663",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: fixed hostgame extended menu default reset, fixes #968",
+            "committed_on": "2016-12-07T12:09:59Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 6194,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2016-12-07T11:37:46Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Click *Host Game* in the main menu. Then go to *Advanced* and then click *Extended*.\r\nNow click *Default* and on the pop-up where it asks you whether you really want to restore the server settings to default, click *No*.\r\nNow you will have the extended host game menu always on screen.",
+                    "new_value": "Click *Host Game* in the main menu. Then go to *Advanced* and then click *Extended*.\r\nNow click *Default* and in the pop-up where it asks you whether you really want to restore the server settings to default, click *No*.\r\nNow you will have the extended host game menu always on screen."
+                }
+            ]
+        },
+        {
+            "id": 6195,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Good catch.",
+            "created_on": "2016-12-07T12:12:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "19"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 968,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 15,
+        "name": "Mod UI"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "[Menu] Extended Host Game screen gets stuck",
+    "description": "Click *Host Game* in the main menu. Then go to *Advanced* and then click *Extended*.\r\nNow click *Default* and in the pop-up where it asks you whether you really want to restore the server settings to default, click *No*.\r\nNow you will have the extended host game menu always on screen.",
+    "start_date": "2016-12-07",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2016-12-07T11:36:32Z",
+    "updated_on": "2016-12-07T12:12:50Z",
+    "closed_on": "2016-12-07T12:12:50Z"
+}

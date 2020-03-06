@@ -1,0 +1,87 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7909,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "I would also propose to recompute the value range, because a value of 0.002 doesn't feel intuitive.\r\nWould it be possible to internally recompute it so a cvar value of 0.5 internally corresponds to the current default of 0.002.\r\nAnd then allow a range of 0 to 1, with the current default being a medium value.",
+            "created_on": "2019-03-31T09:24:29Z",
+            "details": []
+        },
+        {
+            "id": 7912,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I'd go one step further and make that single cvar an on/off option.\r\nDefault values are good, and people tend to just disable them entirely, rather than setting custom values.",
+            "created_on": "2019-03-31T11:58:26Z",
+            "details": []
+        },
+        {
+            "id": 7913,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "Absolutely fine with me.\r\nI tried setting other values, everything above the default makes me actually quite dizzy :D\r\nI don't understand how people play with that in Apex Legends. There the bobbing is insane.\r\n\r\nBystry, Kimi and zing proposed disabling it by default\r\n",
+            "created_on": "2019-03-31T14:14:52Z",
+            "details": []
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1235,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Bundle all /cg_bob* cvars in one",
+    "description": "There are 4 cvars in ET for a bobbing effect:\r\n\r\n/cg_bobpitch simulates a head 'bobbing\u2019 effect when moving, by giving the camera a forwards/backwards movement similar to nodding. \r\n/cg_bobroll simulates a head 'bobbing\u2019 effect when moving, by giving the camera a left/right movement similar to \"sideways-nodding\". \r\n/cg_bobup simulates a vertical body 'bobbing\u2019 effect when taking a step by giving the camera a vertical jerk. Feels inconsistent!\r\n/cg_bobyaw likely was intended to simulate a sideways body 'bobbing\u2019 effect when taking a step by turning the camera left and right.  \r\n\r\n/cg_bobyaw was already commented in \"original ET source\":https://github.com/id-Software/Enemy-Territory/blob/40342a9e3690cb5b627a433d4d5cbf30e3c57698/src/cgame/cg_view.c#L697 and has been removed in ET: Legacy.\r\n\r\n/cg_bobpitch and /cg_bobroll have the same default of \"0.002\" and /cg_bobup has a very similar default of \"0.005\".\r\n\r\n\r\nI propose to remove the remaining 3 cvars as well and simply bundle them in one cvar: /cg_bobbing.\r\nI tried 0.002 on all three of them and camera movement still feels very normal, so no real computation to derive cg_bobup from the base value would be necessary.",
+    "start_date": "2019-03-30",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-03-30T22:53:51Z",
+    "updated_on": "2019-03-31T14:14:52Z"
+}

@@ -1,0 +1,130 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 5531,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-12-02T09:47:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "/video command crashes",
+                    "new_value": "/video command doesn't work as expected"
+                },
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "The /video command is useful to convert a demo to an .avi file. It should be used when replaying a demo.\r\nHowever, this command actually results in a client crash, with only the a few frames compiled into the .avi file (and the speed seems to be sped up too).",
+                    "new_value": "The /video command is useful to convert a demo to an .avi file. It should be used when replaying a demo.\r\nHowever, this command actually returns to main menu, with only the a few frames compiled into the .avi file (and the speed seems to be sped up too).\r\n\r\nInfo in console:\r\n\r\n<pre>\r\nWrote 10:11 frames to videos/0001.avi\r\nSys_LoadGameDll -> FS_CL_ExtractFromPakFile(/home/user/.etlegacy, legacy, ui.mp.i386.so)\r\nSys_LoadDll(./legacy/ui.mp.i386.so)... failed: \"Failed loading ./legacy/ui.mp.i386.so: ./legacy/ui.mp.i386.so: cannot open shared object file: No such file or directory\"\r\nSys_LoadDll(/home/user/.etlegacy/legacy/ui.mp.i386.so)... succeeded\r\nSys_LoadDll(ui) found vmMain function at 0x88ee3d71\r\nInitializing Legacy ui v2.74-346-ge17180b\r\n152 UI cvars in use.\r\nTotal favourite servers restored: 0\r\nexecing etlegacy.cfg\r\n</pre>\r\n"
+                }
+            ]
+        },
+        {
+            "id": 5533,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "I don't know but does this: #721 have something to do with it too?\r\nAvidemo function seems to be all broken.\r\n\r\n-*S",
+            "created_on": "2015-12-02T12:38:20Z",
+            "details": []
+        },
+        {
+            "id": 5537,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Duplicate? See #843",
+            "created_on": "2015-12-02T15:41:03Z",
+            "details": []
+        },
+        {
+            "id": 5539,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Yep, haven't seen that one. Closing now.",
+            "created_on": "2015-12-02T15:48:27Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 893,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "/video command doesn't work as expected",
+    "description": "The /video command is useful to convert a demo to an .avi file. It should be used when replaying a demo.\r\nHowever, this command actually returns to main menu, with only the a few frames compiled into the .avi file (and the speed seems to be sped up too).\r\n\r\nInfo in console:\r\n\r\n<pre>\r\nWrote 10:11 frames to videos/0001.avi\r\nSys_LoadGameDll -> FS_CL_ExtractFromPakFile(/home/user/.etlegacy, legacy, ui.mp.i386.so)\r\nSys_LoadDll(./legacy/ui.mp.i386.so)... failed: \"Failed loading ./legacy/ui.mp.i386.so: ./legacy/ui.mp.i386.so: cannot open shared object file: No such file or directory\"\r\nSys_LoadDll(/home/user/.etlegacy/legacy/ui.mp.i386.so)... succeeded\r\nSys_LoadDll(ui) found vmMain function at 0x88ee3d71\r\nInitializing Legacy ui v2.74-346-ge17180b\r\n152 UI cvars in use.\r\nTotal favourite servers restored: 0\r\nexecing etlegacy.cfg\r\n</pre>\r\n",
+    "start_date": "2015-12-02",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-12-02T09:26:51Z",
+    "updated_on": "2015-12-02T15:48:27Z",
+    "closed_on": "2015-12-02T15:48:27Z"
+}

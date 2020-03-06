@@ -1,0 +1,355 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 64,
+            "issue_id": 217,
+            "issue_to_id": 53,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 290,
+            "issue_id": 183,
+            "issue_to_id": 217,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "66a51121e2978310580cc2794b7e47a6c2bfbb57",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "linux: set unique file permissions for the bot install refs #217",
+            "committed_on": "2013-08-30T10:33:52Z"
+        },
+        {
+            "revision": "eca1452087f8fd59fd5977289cf114492c636e60",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cmake: fix omnibot path permissions refs #217",
+            "committed_on": "2018-02-05T14:11:15Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1448,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "I will remove Omnibot installation from CMake and add it to the update server instead. There should be a UI form where users will be able to chose which components they want to update and if it should be done automatically or manually.",
+            "created_on": "2013-03-29T15:01:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "7",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 1449,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Make sure to take care of user-altered files (Config, difficulty, names), like the SVN repo :)",
+            "created_on": "2013-03-29T18:19:00Z",
+            "details": []
+        },
+        {
+            "id": 1454,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Are there any files that could be altered by users in the @legacy/omni-bot@ directory? Any files that should not be updated to a newer version? If there are, it would make it a tad more difficult for me.",
+            "created_on": "2013-03-30T11:32:49Z",
+            "details": []
+        },
+        {
+            "id": 1455,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Admins can tweak few files to match their taste, but these files are rarely altered by OB dev team :)\r\n\r\nI was thinking about :\r\n- et/user/omni-bot.cfg\r\n- et/scripts/et_botnames.gm / et/scripts/et_botnames_ext.gm\r\n\r\nLocally I've added a 7th difficulty level, but can't locate the related file...",
+            "created_on": "2013-03-30T15:26:10Z",
+            "details": []
+        },
+        {
+            "id": 1727,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-06-04T21:37:12Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1868,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I've added some lines to CmakeList.txt to ensure we have unique permissions in the bot linux install set. Windows install wasn't affected. Bot commands & config changes are now persistent (SaveConfigChanges is set to 1 by default).\r\n\r\nI'm moving this issue to next milestone. Our issue is solved and OB auto update feature is not active. I'll ask the OB team about the status ... ",
+            "created_on": "2013-08-30T10:35:25Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "7",
+                    "new_value": "8"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "20"
+                }
+            ]
+        },
+        {
+            "id": 1909,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-09-05T20:56:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "9"
+                }
+            ]
+        },
+        {
+            "id": 2036,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "On hold until omnibots enables auto updater.",
+            "created_on": "2013-10-05T16:15:47Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "9",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 3611,
+            "user": {
+                "id": 359,
+                "name": "s1l3nce"
+            },
+            "notes": "Any update on the Mac version?\r\nSomeone should try if the linux version will compile fully with Xcode installed on newer versions of Mac - that is sure to provide more options. ",
+            "created_on": "2014-11-03T16:40:27Z",
+            "details": []
+        },
+        {
+            "id": 5987,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "{TODO}\r\n\r\nFinally I don't think we should put the omnibot install to fs_homepath:\r\n\r\n1. It is part of the install and no user data - gm files shouldn't be touched for real unless the user knows what to do\r\n\r\n2. When there are 2 users on the computer 2nd user is w/o OB install (might be fixed but it's just crappy to check each time for files and copy it from where?)\r\n\r\nWe should ask the OB team to change their code and read the OB config file from fs_homepath first. If there is no file in fs_homepath the fs_basepath file is failback case.\r\n",
+            "created_on": "2016-09-04T10:50:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Move omnibot install path for clients to fs_homepath ",
+                    "new_value": "Move omnibot install path for clients to fs_homepath / FIX omnibot.cfg access"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 5988,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-09-04T10:50:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "When running a listen server with bots the user requires write permission to update the omnibot.cfg and other OB files. Nav files might be updated by OB download system as well which is another good reason to move from fs_basepath to fs_homepath.\r\n\r\n{TODO}\r\n- adjust installers",
+                    "new_value": "When running a listen server with bots the user requires write permission to update the omnibot.cfg and other OB files. Nav files might be updated by OB download system as well which is another good reason to move from fs_basepath to fs_homepath.\r\n\r\n{TODO}\r\n-adjust installers-"
+                }
+            ]
+        },
+        {
+            "id": 5989,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-09-04T10:51:41Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Move omnibot install path for clients to fs_homepath / FIX omnibot.cfg access",
+                    "new_value": "FIX omnibot.cfg access for listen servers"
+                }
+            ]
+        },
+        {
+            "id": 6100,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-10-11T17:13:17Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "183"
+                }
+            ]
+        },
+        {
+            "id": 6246,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "IR4T4 wrote:\r\n> We should ask the OB team to change their code and read the OB config file from fs_homepath first. If there is no file in fs_homepath the fs_basepath file is failback case.\r\n\r\nThere is a similar issue with WolfAdmin. We should ensure it takes fs_basepath as fallback (for config files, maybe database too).",
+            "created_on": "2017-01-19T10:12:50Z",
+            "details": []
+        },
+        {
+            "id": 7032,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-01-24T23:26:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 7065,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Linux should be fine now.",
+            "created_on": "2018-02-05T15:42:29Z",
+            "details": []
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        },
+        {
+            "id": 348,
+            "name": "palota"
+        },
+        {
+            "id": 140,
+            "name": "Spyhawk"
+        }
+    ],
+    "time_entries": null,
+    "id": 217,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "FIX omnibot.cfg access for listen servers",
+    "description": "When running a listen server with bots the user requires write permission to update the omnibot.cfg and other OB files. Nav files might be updated by OB download system as well which is another good reason to move from fs_basepath to fs_homepath.\r\n\r\n{TODO}\r\n-adjust installers-",
+    "start_date": "2013-02-26",
+    "done_ratio": 20,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-02-26T10:31:18Z",
+    "updated_on": "2018-02-05T15:43:06Z"
+}

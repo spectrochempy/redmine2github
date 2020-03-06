@@ -1,0 +1,236 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 248,
+            "issue_id": 794,
+            "issue_to_id": 508,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 307,
+            "issue_id": 996,
+            "issue_to_id": 508,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "6af2532cdad96c56a0aeffed785e83b321b4bb1a",
+            "user": {
+                "id": 424,
+                "name": "Zecklar"
+            },
+            "comments": "game: Prevent picking up another gun while previous one is overheated, refs #508",
+            "committed_on": "2015-08-27T18:04:58Z"
+        },
+        {
+            "revision": "b63e0837c2b6d58392d2070abb70ae4076268a71",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: prevent picking up while reloading or overheating, fixes #794 #508",
+            "committed_on": "2017-03-04T22:50:34Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3033,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-02-16T10:59:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 3048,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "-I would also like to mention that the overheated gun doesn't cooldown while it's on the ground. This has been fixed in other mods, at least in NQ.-\r\n\r\n-*S",
+            "created_on": "2014-02-16T12:44:37Z",
+            "details": []
+        },
+        {
+            "id": 3050,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Saukko wrote:\r\n> I would also like to mention that the overheated gun doesn't cooldown while it's on the ground. This has been fixed in other mods, at least in NQ.\r\n\r\nI cannot reproduce this specific issue. As far as I can see, weapons on ground are also cooled down.",
+            "created_on": "2014-02-16T14:44:02Z",
+            "details": []
+        },
+        {
+            "id": 3333,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Ok it has been a while ago I tried this out but I can still reproduce this and here are the steps to do it:\r\n\r\n1. Shoot with Sten until it overheats\r\n2. Pick up a new weapon from the ground\r\n\r\nSo this causes that you can't shoot with your new weapon instantly, it shows like it's overheated. And the other bug it also causes that if you pick the Sten back up even after 10 seconds, it still haven't cooled down.\r\n\r\n-*S",
+            "created_on": "2014-08-06T01:34:13Z",
+            "details": []
+        },
+        {
+            "id": 5223,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2015-08-26T07:41:23Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "794"
+                }
+            ]
+        },
+        {
+            "id": 5247,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Current fix seems to do a bit too much. Keep in mind the \"heat\" of the weapon is actually stored on the player, not the weapon. One way to fix that is to check the weapon used and the \"heat\" status before shooting.",
+            "created_on": "2015-08-29T14:31:38Z",
+            "details": []
+        },
+        {
+            "id": 6364,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2017-02-09T20:58:28Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "996"
+                }
+            ]
+        },
+        {
+            "id": 6495,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-03-03T12:26:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 6507,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Reverted to the original fix proposed by Zecklar. Overheating is part of the counterbalance of the covops ability, so he's to handle it and cannot pick up a new weapon until the sten is cold again. ",
+            "created_on": "2017-03-04T22:56:27Z",
+            "details": []
+        },
+        {
+            "id": 6509,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:b63e0837c2b6d58392d2070abb70ae4076268a71.",
+            "created_on": "2017-03-04T22:56:30Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 508,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Can't shoot picked up gun while your previous gun is overheated",
+    "description": "As title says. For example you shoot with your Sten until it overheats and you pick up a new gun, you can't shoot with it straight away since it appears to be \"overheated\".\r\nThere's a demo to show the issue clearly.\r\n\r\n-*S",
+    "start_date": "2014-02-14",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-02-14T20:17:12Z",
+    "updated_on": "2017-03-04T22:56:30Z",
+    "closed_on": "2017-03-04T22:56:30Z"
+}

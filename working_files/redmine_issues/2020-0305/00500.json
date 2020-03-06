@@ -1,0 +1,173 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 118,
+            "issue_id": 480,
+            "issue_to_id": 500,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 274,
+            "issue_id": 914,
+            "issue_to_id": 500,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "661f23408e01227bf3959b65000cd8145f7709b3",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: moved tinygettext dependency internally, fixes #500",
+            "committed_on": "2014-01-31T23:40:53Z"
+        },
+        {
+            "revision": "0556331eaed24caff6a022bec7284c0116e96768",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: moved tinygettext files, refs #500",
+            "committed_on": "2014-01-31T23:50:24Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2922,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-01-30T10:16:52Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "480"
+                }
+            ]
+        },
+        {
+            "id": 2930,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:661f23408e01227bf3959b65000cd8145f7709b3.",
+            "created_on": "2014-02-01T02:33:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 2931,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-02-01T11:05:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "tracker_id",
+                    "old_value": "3",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                }
+            ]
+        },
+        {
+            "id": 5749,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2016-01-09T21:26:59Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "914"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 500,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "No tinygettext support when using dynamic compilation ",
+    "description": "Using BUNDLED_LIBS=0 does not compile tinygettext support, even if FEATURE_GETTEXT is enabled.\r\n\r\nWe should either add a cmake file that looks for tinygettext on the user system, or moving tinygettext internally (like zlib and unzip). Tinygettext isn't a very active project and is available on svn only, so finding pre-compiled rpm or deb packages might be an issue. Moving the lib internally might be the best solution here. \r\n\r\nNote: get rid of the .svn folder in the tinygettext directory.",
+    "start_date": "2014-01-30",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-01-30T10:15:22Z",
+    "updated_on": "2014-02-01T11:05:24Z",
+    "closed_on": "2014-02-01T02:33:28Z"
+}

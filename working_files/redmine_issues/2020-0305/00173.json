@@ -1,0 +1,154 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 1002,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "I wrote an email to J\u00e9r\u00f4me Bressoud, the author of CamTrace3D, about the possibility of releasing CT3D as open-source. He kindly replied to me that CamTrace was written in Visual Basic 6, so we wouldn't be able to reuse it. However, he is willing to share the algorithm which generates camera path movement from the camera coordinates. This means we could implement this in the mod code without relying on a 3rd party tool.",
+            "created_on": "2013-01-23T01:53:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 1011,
+            "user": {
+                "id": 5,
+                "name": "acqu"
+            },
+            "notes": "Sounds really good to me.\r\n\r\nI try to assist, since this is beyond my current skill-level. I would suggest to reuse most parts of the ingame speakereditor. I believe this can be very handy to visualize/edit camera positions/properties ingame. To see the speakereditor open up ET, devmap <map>, open console and type \"editspeakers\". Then you should see several rendered speakerboxes right inside the game. So if you want to reproduce most of the functionality of Camtrace right ingame (if i understood correct), then this code might be reused. Most of it seems to be located in cg_sound (CG_SpeakerEditor_(...) functions).\r\n\r\nEDIT here a link: http://www.planetwolfenstein.com/tramdesign/tutorials/etdocs/speakereditor.html Type \"modifySpeaker\" to see how you can edit the speakers positions in real-time. But not only can you edit positions, i can also imagine to add viewangles, splines, ..",
+            "created_on": "2013-01-24T03:24:51Z",
+            "details": []
+        },
+        {
+            "id": 5082,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-08-08T18:45:55Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "3",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 5105,
+            "user": {
+                "id": 421,
+                "name": "kimi"
+            },
+            "notes": "You can use WolfCamQL as inspiration \r\nhttps://www.youtube.com/watch?v=vtmZmg4yJR8\r\nhttps://github.com/brugal/wolfcamql",
+            "created_on": "2015-08-08T19:00:39Z",
+            "details": []
+        },
+        {
+            "id": 5108,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "kimi wrote:\r\n> You can use WolfCamQL as inspiration \r\n> https://www.youtube.com/watch?v=vtmZmg4yJR8\r\n> https://github.com/brugal/wolfcamql\r\n\r\nI have been looking into building an UI for the camera path creation for a while, but it will have to wait until i have rewritten the UI system to some extent. Building the UI with the current tools available is hard and even harder to extend.",
+            "created_on": "2015-08-08T19:08:51Z",
+            "details": []
+        },
+        {
+            "id": 8581,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Check Warsow code. They seem to have built-in camtrace-like support.",
+            "created_on": "2019-12-03T19:25:52Z",
+            "details": []
+        },
+        {
+            "id": 8613,
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "notes": "The camtrace support should actually already be in btw, thanks to extended demo support by fretn.",
+            "created_on": "2019-12-17T23:23:07Z",
+            "details": []
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        },
+        {
+            "id": 421,
+            "name": "kimi"
+        }
+    ],
+    "time_entries": null,
+    "id": 173,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 5,
+        "name": "acqu"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 4,
+        "name": "ALL"
+    },
+    "subject": "CamTrace3D Support",
+    "description": "HP: http://ct3d.twen.name/\r\n\r\nBasically you create camera positions in ET via 0 key, then you input that into camtrace, edit it and output a script, which in turn can be executed during replay mode to create something which looks like this: http://www.youtube.com/watch?v=w1Wz0SppXDM\r\n\r\nIt just needs support from the mod code. Below is a diff which adds basic camtrace support to mod code. It is a diff to etmain (not etlegacy), but it should be readable. With this implemented into the mod code you can execute camtrace scripts. You also have a basic freecam during replay mode. What this diff is lacking is 1) probably quality (that is why i post here) 2) a perfect freecam with nice and smooth camera movement 3) possibility to output camera positions via '0' key and 4) several other annoying stuff like e.g. you can still hear first person footstep sound while in freecam mode.\r\n\r\nSearching for a better way to implement this feature, so i decided to get more eyes on it to create a really good implementation.\r\n\r\nCredits for the code mainly go to hannes, although i only used forum posts and google to put that together. Would be cool to see this in ET:Legacy.\r\n\r\nHere is a basic tutorial for set up on etpro: http://www.youtube.com/watch?v=97ITEydb4eg&NR=1&feature=endscreen",
+    "start_date": "2013-01-14",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-01-14T11:13:53Z",
+    "updated_on": "2019-12-17T23:23:07Z"
+}

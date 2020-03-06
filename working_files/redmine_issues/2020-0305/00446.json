@@ -1,0 +1,280 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 129,
+            "issue_id": 534,
+            "issue_to_id": 446,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "de78a3b02bc909474a78ca83d8899cfc850172fe",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: fixed silenced pistols weapon bank, cleanup, refs #446",
+            "committed_on": "2013-12-27T11:35:59Z"
+        },
+        {
+            "revision": "deba79596c931e6bee02ac5f98ed5dca21234b1e",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed grenade launcher weapon bank, refs #446",
+            "committed_on": "2013-12-30T23:36:31Z"
+        },
+        {
+            "revision": "ccf2bd425dc52cc293b75b6ac84191cc6401f501",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed weapon cycles, fixes #446",
+            "committed_on": "2014-02-15T23:16:18Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2577,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "There's no reason that the alternative weapon (w/o silencer) should be accessible on weapon slot 2 (it's also half working). Let's remove this.",
+            "created_on": "2013-12-27T09:16:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 2580,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I would rather fix the weapon slot ... ;)",
+            "created_on": "2013-12-27T10:34:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 2582,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Yes. I just realized that this is also way easier to fix this way (we'd need a specific weapon table for coverops otherwise). Will fix asap.",
+            "created_on": "2013-12-27T10:50:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                }
+            ]
+        },
+        {
+            "id": 2583,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2013-12-27T11:36:26Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 2999,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "I made a little discovery about one tiny issue regarding to this ticket still. When you have \"weapnext\" bound anywhere, and you try to use that bound key to get the next gun after your silenced pistol, it gives an issue. Normally it would just get your next weapon, Sten or whatever. But in this case it makes the sound that it would take the silencer off but it doesn't even take it off.\r\n\r\nEDIT: When you throw a smokescreen while you had silencer pistol on your hand before. And then you start pressing \"2\" continously for the pistol, it starts making the sound that you would take the silencer off and put it back all the time. So the sound repeats itself each time you press \"2\".\r\n\r\n-*S",
+            "created_on": "2014-02-14T20:23:57Z",
+            "details": []
+        },
+        {
+            "id": 3000,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-02-14T20:53:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 3011,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I can confirm  Saukko's report. Switching weapons via mouse wheel stuck at silencer too.",
+            "created_on": "2014-02-15T19:44:49Z",
+            "details": []
+        },
+        {
+            "id": 3020,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-02-15T22:19:39Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "3",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 3022,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Also happens with the riflenade when the nade is set. This is directly related to the weapon bank changes I made previously in this ticket.",
+            "created_on": "2014-02-15T22:22:18Z",
+            "details": []
+        },
+        {
+            "id": 3023,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:ccf2bd425dc52cc293b75b6ac84191cc6401f501.",
+            "created_on": "2014-02-16T02:46:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3171,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-04-23T11:54:11Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "534"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 446,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "Pistol and the silencer",
+    "description": "There is this when you press MOUSE2, it will take the silencer away first time. When you press it again, it will put it back on. Ok everything works normal. You can keep doing that for ever.\r\nBut when pressing weaponslot 2, you are also able to the silencer away. But when you press it again you aren't able to get the silencer back on. But if you press weaponslot 2 two times fast enough, it will put the silencer back on when it's off. The sounds are also getting bugged when you press weaponslot 2 fast enough twice.\r\n\r\n-*S",
+    "start_date": "2013-12-26",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-12-26T22:42:35Z",
+    "updated_on": "2014-02-16T02:46:06Z",
+    "closed_on": "2014-02-16T02:46:06Z"
+}

@@ -1,0 +1,332 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "79def2775442a77d2afe04594293fad73ed9b251",
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "comments": "Rename tracker functions, refs #148",
+            "committed_on": "2013-02-25T22:49:27Z"
+        },
+        {
+            "revision": "9a01ddc4b0661f4a66439e65df4d6411d205ad87",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "server: added sv_tracker cvar, refs #148",
+            "committed_on": "2015-11-30T17:38:26Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 757,
+            "user": {
+                "id": 5,
+                "name": "acqu"
+            },
+            "notes": "Agree to this.\r\n\r\nWhat about sending out the guids ? As far as i remember shrub-like admin system such as those in Jaymod are taking this as a basis to execute commands. Assuming the receiver side is an attacker, this can get critical ?",
+            "created_on": "2012-12-08T15:33:02Z",
+            "details": []
+        },
+        {
+            "id": 758,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "From my point of view guids shouldn't leave the game server ...\r\n\r\n--\r\nI don't know if there are still external tracker sites which are interested in ET game data ... and as long we do no global ETL ranking stats this tracker function is kind of useless. Correct me if I'm wrong. The only thing I can imagine atm is an interface for admins so they can transfer game data to their web pages.\r\n\r\nLua can do! ... exporting game data is pretty easy with Lua. Write XML based game data documents at end of match or just write it into a SQL database (see NOQ - http://dev.kernwaffe.de/projects/noq )\r\n\r\n",
+            "created_on": "2012-12-08T15:56:35Z",
+            "details": []
+        },
+        {
+            "id": 759,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "SplatterLadder may be interested as well tbh.",
+            "created_on": "2012-12-09T13:26:23Z",
+            "details": []
+        },
+        {
+            "id": 763,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "SL are ignoring us so far tbh ... they didn't even write a news about RC1 which is sad but true :/",
+            "created_on": "2012-12-09T13:59:41Z",
+            "details": []
+        },
+        {
+            "id": 770,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "1. Change name - sure.\r\n\r\n2. GUIDs are interesting, because we can see when player changes his nick, but it's the same player. But IR4T4 is right - it's not safe, so maybe better to hash them second time so tracker admins won't know real guids of players?\r\n\r\n3. I want to integrate this tracker sender with my page (i hope :D). But firstly i need to rewrite it again, because it's badly designed...",
+            "created_on": "2012-12-12T08:42:08Z",
+            "details": []
+        },
+        {
+            "id": 773,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "",
+            "created_on": "2012-12-12T09:11:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "tracker_id",
+                    "old_value": "1",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 776,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "IR4T4 wrote:\n> SL are ignoring us so far tbh ... they didn't even write a news about RC1 which is sad but true :/\nAlmost nobody did AFAIK :(\n\nBTW, no news on SL doesn't mean they're ignoring ET:L, SL AFAIK only re-posts news from wolffiles and rtcwmap.de.",
+            "created_on": "2012-12-12T15:12:58Z",
+            "details": []
+        },
+        {
+            "id": 779,
+            "user": {
+                "id": 5,
+                "name": "acqu"
+            },
+            "notes": "morsik wrote:\n> 2. GUIDs are interesting, because we can see when player changes his nick, but it's the same player. But IR4T4 is right - it's not safe, so maybe better to hash them second time so tracker admins won't know real guids of players?\n\nIt was exactly my point that sending out the guids is unsafe (?). A hash calculation on each player ? I do not know, maybe still too unsafe, since the hash is easily crackable.\n\nIR4T4 wrote:\n> Lua can do! ... exporting game data is pretty easy with Lua. Write XML based game data documents at end of match or just write it into a SQL database (see NOQ - http://dev.kernwaffe.de/projects/noq )\n\nLua is interesting, but not from engine point of view. In my opinion this is a problem, since Lua currently sits in mod code and not all mods have Lua support or want to put the ET: Legacy mod on their servers.\n\n",
+            "created_on": "2012-12-12T16:16:54Z",
+            "details": []
+        },
+        {
+            "id": 781,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "I checked WolfFiles, no news about Legacy, so nothing on SL; And no matches searching in News items on TB :/\r\n\r\nAlso, guids can be shared, like a guy having \"troubles\" to get a key (aka not understanding how to use etkey.org after been told to go there).\r\n\r\nNick tracking system isn't perfect, but seems to work fine :)",
+            "created_on": "2012-12-12T16:57:22Z",
+            "details": []
+        },
+        {
+            "id": 783,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "acqu wrote:\r\n> morsik wrote:\r\n> > 2. GUIDs are interesting, because we can see when player changes his nick, but it's the same player. But IR4T4 is right - it's not safe, so maybe better to hash them second time so tracker admins won't know real guids of players?\r\n> \r\n> It was exactly my point that sending out the guids is unsafe (?). A hash calculation on each player ? I do not know, maybe still too unsafe, since the hash is easily crackable.\r\n\r\nThis is not what i really meant.\r\n\r\nGUIDs are MD5 from etkey file. Sending them is not too safe, BUT, we can hash _guids_ again.\r\n\r\nlike:\r\n\r\netkey \u2192 guid=md5(etkey) \u2192 userid=sha2(guid) which equals to userid=sha2(md5(etkey))\r\n\r\nit's hard to crack because guid is 32chars (well, only [0-9A-F] chars...) long that contains some characters... and we can use some salt method to make it harder",
+            "created_on": "2012-12-13T08:38:36Z",
+            "details": []
+        },
+        {
+            "id": 789,
+            "user": {
+                "id": 5,
+                "name": "acqu"
+            },
+            "notes": "morsik wrote:\n> This is not what i really meant.\n\nI think i understood you at first place. I thought it would be relatively easy to brute-force this, and if you are lucky, you can actually do it quick. But ok, i underestimated sha-2. Maybe there will be really smart cracking algs in the future.\n\nAnother thing: let's say i connect and reconnect many times a sec. Will this cause hash calculations by the server on every time i (re)connect ? Because as i saw, you send the guids directly on clientconnect. So this is another layer of complexity ? Is this really worth it ?",
+            "created_on": "2012-12-13T18:25:54Z",
+            "details": []
+        },
+        {
+            "id": 790,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "Yes, guid is sent in cl_guid variable to server in normal text (cl_guid is md5(etkey)).\r\nSo hashing it again into sha2 will hide original guid to tracker sites. It'll be possible to differ players, but not steal their GUIDs.",
+            "created_on": "2012-12-13T20:20:04Z",
+            "details": []
+        },
+        {
+            "id": 882,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-01-02T18:36:51Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "5",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1412,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-03-26T23:08:09Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "7",
+                    "new_value": "8"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "10"
+                }
+            ]
+        },
+        {
+            "id": 5523,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-11-30T14:30:19Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "10",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 5524,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-11-30T17:50:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 5563,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-12-05T17:35:09Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 4,
+            "name": "morsik"
+        },
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 148,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 5,
+        "name": "Server"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "Replace Trackbase statistics with universal non-site specific code",
+    "description": "# Create cvar containing a list of addresses where to send extended statistics to instead of hardcoded @TRACKBASE_ADDR@\r\n# Rename TB_ functions to Tracker_ or similar",
+    "start_date": "2012-12-08",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2012-12-08T15:21:00Z",
+    "updated_on": "2015-12-05T17:35:09Z",
+    "closed_on": "2015-12-05T17:35:09Z"
+}

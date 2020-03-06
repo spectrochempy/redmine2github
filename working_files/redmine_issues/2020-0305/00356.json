@@ -1,0 +1,148 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 2005,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-10-02T14:03:15Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 2008,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Thank you I'll add it.",
+            "created_on": "2013-10-02T17:25:00Z",
+            "details": []
+        },
+        {
+            "id": 2215,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Done.\r\n\r\nRadegast, please add the installer to http://www.etlegacy.com/index.php?r=etlcontrol/release/download\r\n\r\nhttp://dev.etlegacy.com/attachments/download/205/etlegacy-linux-2.71rc3-full-installer.sh",
+            "created_on": "2013-11-05T04:28:18Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 2216,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-11-05T11:37:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 2474,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "created_on": "2013-12-14T18:07:49Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "new_value": "Linux"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 356,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 254,
+        "name": "mavit"
+    },
+    "assigned_to": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Installer runs untrusted files",
+    "description": "The automated installer for Linux (http://www.dev.etlegacy.com/attachments/114/etlegacy-linux-2.71rc1-full-installer.sh) downloads the et-linux shar archive from a mirror over HTTP.  It would be safer to checksum this file before execing it, to be sure that we have the correct file.\r\n\r\nA patch is attached.",
+    "start_date": "2013-10-02",
+    "done_ratio": 100,
+    "estimated_hours": 1.0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-10-02T13:59:45Z",
+    "updated_on": "2013-12-14T18:07:49Z",
+    "closed_on": "2013-11-05T11:37:54Z"
+}

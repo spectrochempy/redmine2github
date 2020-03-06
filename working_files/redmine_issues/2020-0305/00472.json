@@ -1,0 +1,210 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "993984626f1eb5192828162af1b6ca7bb5190253",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed powerup pickup globally broadcasted, fixes #472",
+            "committed_on": "2014-01-05T16:10:16Z"
+        },
+        {
+            "revision": "f1f568a76ed92e545c4ba1935c6c79ac4261c2e7",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: fixed objective messages no more broadcasted, refs #472",
+            "committed_on": "2014-01-05T20:07:39Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2742,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "The voice is ok, but the \"click\" should definitely not be heard by everyone.",
+            "created_on": "2014-01-04T18:48:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "8"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 2755,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-01-05T15:21:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "16",
+                    "new_value": "21"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                }
+            ]
+        },
+        {
+            "id": 2759,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Note that this behavior seems intended by the original developers. I disabled the global broadcast of the pickup sound, but another possible  way to deal with it would be to change the default sound with something better.\r\n\r\nI'm not sure exactly how ETPub and derived mods fixed  this issue, but the fix I applied is probably better (global broadcast code  is still present in ETPub...).",
+            "created_on": "2014-01-05T16:16:10Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 2760,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Spyhawk, if you don't fire the EV_GLOBAL_ITEM_PICKUP event cgame diesn't update/show icon and name on status bar anymore - see CG_EntityEvent",
+            "created_on": "2014-01-05T16:29:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 2761,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "... if you want to disable the sound do it on client side.",
+            "created_on": "2014-01-05T16:30:03Z",
+            "details": []
+        },
+        {
+            "id": 2763,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Should now be fixed. Thx again IR4.",
+            "created_on": "2014-01-05T20:44:53Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 2782,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-01-07T20:13:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 472,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "\"Objective taken\" - sound bug",
+    "description": "So when somebody else than you takes an objective, you can hear it as an enemy or as a teammate that you would have actually taken the objective. By this I mean that it sounds like you are the one grabbing the objective even it's not so. Could be as intended but to me it sounds weird since for all these years I have heard that only the one who picks the objective will hear this tiny grabbing sound.\r\n\r\n-*S",
+    "start_date": "2014-01-04",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-01-04T18:39:15Z",
+    "updated_on": "2014-01-07T20:13:44Z",
+    "closed_on": "2014-01-07T20:13:44Z"
+}

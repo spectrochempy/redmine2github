@@ -1,0 +1,97 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 4062,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Also there should be possibility to sort the demos by time they were taken, map name, demo name.\r\n\r\n-*S",
+            "created_on": "2014-12-13T17:23:15Z",
+            "details": []
+        },
+        {
+            "id": 5526,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Actually, the /record command is the engine client command that record the demo, with the desired name. /autoRecord is the mod client (cgame) counter part that sets up the name then passes it to the client command. As the default shortcut (F12) launches autorecord, it does already everything that is desired. Length of the demo can't be put in name as the name needs to be defined before the record starts.\r\n\r\nImplementing rename in UI is also not needed, as you can always use /record name is needed. Closing as Invalid.",
+            "created_on": "2015-12-01T15:41:11Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 717,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 15,
+        "name": "Mod UI"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "Add more information for demos",
+    "description": "Currently there are two ways to record a demo: \\record and \\autoRecord.\r\nUsage of \\record: \\record (demo name) But using only \\record gives the demo a name like demo0000 and so on.\r\nAnd \\autoRecord just puts the time of the recording plus the map name into the demo name.\r\nAlright, main functioning has been described. But the main problem relies in the \"Replay\" menu, where it shows only the name of the demo. Does it give out much information? Not really.\r\n\r\nIn my opinion it should show these information in some way:\r\n- Time when demo was taken [day, month, year, clock time] (this is very useful when you give the name for the demos by yourself)\r\n- The length of the demo\r\n- Possibility to rename demos\r\n- Show the map where demo was taken\r\n\r\n-*S",
+    "start_date": "2014-12-13",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-12-13T17:07:01Z",
+    "updated_on": "2015-12-01T15:41:11Z",
+    "closed_on": "2015-12-01T15:41:11Z"
+}

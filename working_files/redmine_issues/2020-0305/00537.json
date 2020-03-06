@@ -1,0 +1,142 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "ca9c6308e3618bb6c01e23e8ca192cd9ee3d715e",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "rendere2: cleanup of tr_bsp, fixes #537",
+            "committed_on": "2014-04-26T12:06:33Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3172,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-04-23T13:18:14Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Inspect VertexCoordGenerateHash()",
+                    "new_value": "renderer2: Inspect VertexCoordGenerateHash()"
+                }
+            ]
+        },
+        {
+            "id": 3173,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Applied in changeset commit:ca9c6308e3618bb6c01e23e8ca192cd9ee3d715e.",
+            "created_on": "2014-04-26T16:21:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3174,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-04-26T18:37:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 3321,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-08-03T21:18:11Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "15"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 537,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 15,
+        "name": "renderer2"
+    },
+    "subject": "renderer2: Inspect VertexCoordGenerateHash()",
+    "description": "Found by cppcheck: [src/renderer2/tr_bsp.c:8477]: (error) Array 'xyz[3]' index 3 out of bounds\r\n\r\nxyz is vec3_t !",
+    "start_date": "2014-04-23",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-04-23T13:18:00Z",
+    "updated_on": "2014-08-03T21:18:11Z",
+    "closed_on": "2014-04-26T16:21:20Z"
+}

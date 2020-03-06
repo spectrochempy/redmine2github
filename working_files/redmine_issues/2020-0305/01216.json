@@ -1,0 +1,134 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7838,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "This is implemented under `g_misc` bitflag 32: players loose spawn shield when weapons are fired.",
+            "created_on": "2019-03-04T17:37:25Z",
+            "details": []
+        },
+        {
+            "id": 7844,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Since the feature is actually implemented already, the only question before closing here is \"do we need a more visible cvar\"?",
+            "created_on": "2019-03-07T11:38:56Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 7846,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-03-07T11:45:30Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 7852,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "If there is no need to set the time (and I don't think there is) we can close this.",
+            "created_on": "2019-03-08T13:28:00Z",
+            "details": []
+        },
+        {
+            "id": 7869,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "No response, closing.",
+            "created_on": "2019-03-14T10:47:37Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1216,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 392,
+        "name": "Timothy"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Add setting to disable invulnerability",
+    "description": "Currently I do not find any settings that allow server admins to disable the spawn invulnerability. Some mods allowed server admins to specify @g_spawnInvul@ which increases or decreases the default time that a player cannot be damaged after spawning. I believe some mods also (allowed server admins to) disable(d) the spawn invulnerability when players started shooting (which makes capturing flags on busy servers slightly easier).",
+    "start_date": "2019-03-03",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-03-03T21:28:33Z",
+    "updated_on": "2019-03-14T10:47:37Z",
+    "closed_on": "2019-03-14T10:47:37Z"
+}

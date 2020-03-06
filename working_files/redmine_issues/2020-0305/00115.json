@@ -1,0 +1,192 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 29,
+            "issue_id": 115,
+            "issue_to_id": 34,
+            "relation_type": "blocks",
+            "delay": null
+        },
+        {
+            "id": 31,
+            "issue_id": 115,
+            "issue_to_id": 87,
+            "relation_type": "blocks",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "139b5afe5e68a4b6494a5a2458697a1160ad8348",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "misc: removed readline support from Lua, added OGG libraries for Windows, fixes #115, refs #34",
+            "committed_on": "2013-01-24T16:36:16Z"
+        },
+        {
+            "revision": "8bda8f75b66992b44f5b7320888ca9f6a9592352",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "misc: build lua without readline and ncurses support, refs #115",
+            "committed_on": "2013-01-24T22:46:36Z"
+        },
+        {
+            "revision": "e861afd87ad4ab59b0d71713f9c54d00bf74235a",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "misc: fixed lua 32bit cross-compilation, refs #115",
+            "committed_on": "2013-01-24T23:10:29Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 529,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "- Lua\r\n- libvorbis",
+            "created_on": "2012-11-15T09:01:22Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Add libvorbis to lib path",
+                    "new_value": "Add missing libraries to project lib path"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 976,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-01-15T10:31:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 979,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "FEATURE_LUA 1 and BUNDLED_LUA fails on Linux:\r\n\r\n<pre>\r\nScanning dependencies of target bundled_lua\r\n[ 79%] Generating ../../libs/lua/src/liblua.a                                                                                                                                                                                                                                      \r\nIn file included from lua.h:16,                                                                                                                                                                      from lua.c:15:\r\nluaconf.h:275:31: error: readline/readline.h: file or path not found\r\nluaconf.h:276:30: error: readline/history.h: file or path not found\r\nlua.c: In function \u2018pushline\u2019:\r\nlua.c:182: warning: implicit declaration of function \u2018readline\u2019\r\nlua.c:182: warning: assignment makes pointer from integer without a cast\r\nlua.c: In function \u2018loadline\u2019:\r\nlua.c:210: warning: implicit declaration of function \u2018add_history\u2019\r\nmake[5]: *** [lua.o] error 1\r\nmake[4]: *** [linux32bit] error 2\r\nmake[3]: *** [linux32bit] error 2\r\nmake[2]: *** [../libs/lua/src/liblua.a] error 2\r\nmake[1]: *** [libs/CMakeFiles/bundled_lua.dir/all] error 2\r\nmake: *** [all] Fehler 2\r\n</pre>\r\n\r\nFor some reasons the \"Readline library\":http://cnswww.cns.cwru.edu/php/chet/readline/readline.html is required too - see luaconf.h line 36, 39 and 273\r\nI'm not sure about to add this lib: Comment out line 39 and it builds fine. Lua scripts are loaded (test.lua) and active without any issues.\r\nFinally we don't use readline/saveline functions - the command line interface.",
+            "created_on": "2013-01-15T13:08:42Z",
+            "details": []
+        },
+        {
+            "id": 1004,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-01-23T06:39:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "30"
+                }
+            ]
+        },
+        {
+            "id": 1024,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Applied in changeset commit:139b5afe5e68a4b6494a5a2458697a1160ad8348.",
+            "created_on": "2013-01-24T16:47:11Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "30",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 115,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "assigned_to": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 5,
+        "name": "2.71rc1"
+    },
+    "subject": "Add missing libraries to project lib path",
+    "description": "Solve dependancies and add libvorbis to etlegacy-libs",
+    "start_date": "2012-11-12",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-11-12T18:15:27Z",
+    "updated_on": "2013-01-24T16:47:11Z",
+    "closed_on": "2013-01-24T16:47:11Z"
+}

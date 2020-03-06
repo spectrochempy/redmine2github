@@ -1,0 +1,201 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 189,
+            "issue_id": 244,
+            "issue_to_id": 504,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "f0997cbc14f09d4c58bf1bd5da1a3666fd6248fe",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "ui: mark translatable strings, fixes #504, refs #244",
+            "committed_on": "2015-01-10T19:26:44Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3021,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-02-15T22:21:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "5",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 3024,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-02-16T08:59:11Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 4334,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2015-01-10T14:53:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 4336,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2015-01-10T14:57:06Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "244"
+                }
+            ]
+        },
+        {
+            "id": 4337,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "I just realized how to fix this without breaking compatiblity with 2.60b. Simply add this line to menumacros.h:\r\n\r\n<pre><code class=\"c\">#define _(x) x</code></pre>\r\n\r\nAnd then mark text that we want to translate with this, e.g.\r\n\r\n<pre><code class=\"c\">BUTTON( 6, 32, WINDOW_WIDTH-12, 18, _(\"PLAY ONLINE\"), .3, 14, close main ; uiScript UpdateFilter ; uiScript ServerSortDown 4 ; open playonline )</code></pre>\r\n\r\nxgettext will parse ui files as normal source files",
+            "created_on": "2015-01-10T14:58:52Z",
+            "details": []
+        },
+        {
+            "id": 4341,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Applied in changeset commit:f0997cbc14f09d4c58bf1bd5da1a3666fd6248fe.",
+            "created_on": "2015-01-10T20:25:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 4441,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-01-18T21:26:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "17"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 504,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 13,
+        "name": "RaFaL"
+    },
+    "assigned_to": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 15,
+        "name": "Mod UI"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "Allow to translate rest of menu files, hightlighted text",
+    "description": "Like in topic allow to translate rest of menu files and text in hightlighted area.\r\nWhen this will done it gonna make my translation be at 97% progress not including some \"cp \\ and cpm \\\" that I wasn't to translate either.",
+    "start_date": "2014-02-03",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-02-03T12:59:28Z",
+    "updated_on": "2015-01-18T21:26:03Z",
+    "closed_on": "2015-01-10T20:25:03Z"
+}

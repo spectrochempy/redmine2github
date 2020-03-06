@@ -1,0 +1,226 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "7861183cbc028b96afdf3d0777b8e66bcbc82244",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "client: fixed a bug on tab comletion, fixes #238",
+            "committed_on": "2013-09-14T16:23:18Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1288,
+            "user": {
+                "id": 110,
+                "name": "Harlekin"
+            },
+            "notes": "In what steps should it be then? +1 +0.1 +0.01 +0.001? To much coding work to prevent that someone has to write max 4 numbers into the console.",
+            "created_on": "2013-03-07T17:10:52Z",
+            "details": []
+        },
+        {
+            "id": 1289,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Harlekin wrote:\r\n> In what steps should it be then? +1 +0.1 +0.01 +0.001? To much coding work to prevent that someone has to write max 4 numbers into the console.\r\n\r\nI think you did not get the point here what I was going after. It is not about the value of the CVAR, it is the CVAR itself. In the picture is the result I pressed TAB, it just shows the possibilities with com_m and there are two of those: com_maxfps and com_minimized. In the original ET, at least in NQ mod, when you type com_m and press TAB after, it will scroll through the possibilities. First it types automatically com_minimized and when you press TAB again it will give you com_maxfps. Then when you hit space on the CVAR you want to use, you could just enter the value.",
+            "created_on": "2013-03-07T18:42:51Z",
+            "details": []
+        },
+        {
+            "id": 1313,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-03-13T08:57:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1429,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-03-27T16:02:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "7",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 1928,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "",
+            "created_on": "2013-09-06T18:12:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "44"
+                }
+            ]
+        },
+        {
+            "id": 1930,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "It now works if the there is only one command, for instance \"devmap t\" will not scroll thru maps wich start with 't', but hopefully i get it fixed soon.",
+            "created_on": "2013-09-08T13:14:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "7"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 1933,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Jacker wrote:\r\n> It now works if the there is only one command, for instance \"devmap t\" will not scroll thru maps wich start with 't', but hopefully i get it fixed soon.\r\nI guess this is not a bug as it works the same way in vanilla ET.",
+            "created_on": "2013-09-08T20:21:36Z",
+            "details": []
+        },
+        {
+            "id": 1934,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "It's not a bug but an improvement :)",
+            "created_on": "2013-09-09T16:14:55Z",
+            "details": []
+        },
+        {
+            "id": 1946,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "The extra functionality is not doable without a large scale rewrite of the completion code and there is no need for it. The completion works now as well as it should imho. Will close this now.",
+            "created_on": "2013-09-14T16:26:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 1947,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Applied in changeset commit:7861183cbc028b96afdf3d0777b8e66bcbc82244.",
+            "created_on": "2013-09-14T16:26:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 238,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 44,
+        "name": "Jacker"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 7,
+        "name": "2.71rc2"
+    },
+    "subject": "Pressing TAB to scroll through CVARs in console",
+    "description": "When pressing TAB it would scroll through the CVARs that you wouldn't need to type them yourself. For example you type com_m and then press TAB, it would first type automatically com_minimized and then com_maxfps.",
+    "start_date": "2013-03-06",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-03-06T22:44:22Z",
+    "updated_on": "2013-09-14T16:26:07Z",
+    "closed_on": "2013-09-14T16:26:07Z"
+}

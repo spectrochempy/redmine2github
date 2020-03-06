@@ -1,0 +1,72 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 8500,
+            "user": {
+                "id": 546,
+                "name": "mrmuppet"
+            },
+            "notes": "hellreturn wrote:\r\n> Server crashed with below reasons. Forgot to report earlier, my apologies. \r\n> \r\n> Sending 32769 bytes in gamestate to client: 14\r\n> SV_Netchan_Transmit: unsent fragments, stacked\r\n> ********************\r\n> ERROR: MSG_Copy: can't copy 32769 into a smaller 32768 msg_t buffer\r\n> ********************\r\n> ----- Server Shutdown -----\r\n\r\nSame here from tonight.\r\n\r\n******************** ERROR: Netchan_Transmit: length = 32769 ********************\r\n\r\n",
+            "created_on": "2019-10-15T21:28:45Z",
+            "details": []
+        }
+    ],
+    "watchers": [
+        {
+            "id": 911,
+            "name": "eagle_cz"
+        }
+    ],
+    "time_entries": null,
+    "id": 1353,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 40,
+        "name": "hellreturn"
+    },
+    "category": {
+        "id": 5,
+        "name": "Server"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Server crash",
+    "description": "Server crashed with below reasons. Forgot to report earlier, my apologies. \r\n\r\nSending 32769 bytes in gamestate to client: 14\r\nSV_Netchan_Transmit: unsent fragments, stacked\r\n********************\r\nERROR: MSG_Copy: can't copy 32769 into a smaller 32768 msg_t buffer\r\n********************\r\n----- Server Shutdown -----",
+    "start_date": "2019-10-05",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-10-05T19:22:14Z",
+    "updated_on": "2019-10-15T21:28:45Z"
+}

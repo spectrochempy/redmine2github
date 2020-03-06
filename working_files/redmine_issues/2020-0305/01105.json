@@ -1,0 +1,132 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 368,
+            "issue_id": 1105,
+            "issue_to_id": 948,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "475e985b73cc0003b4d63290a48464f8cf6fbd68",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: add team-specific activate stages for multi_trigger fixes #1105",
+            "committed_on": "2018-09-01T10:15:17Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7267,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2018-08-29T20:24:10Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "948"
+                }
+            ]
+        },
+        {
+            "id": 7271,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-09-01T10:20:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "20",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 7272,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Applied in changeset commit:475e985b73cc0003b4d63290a48464f8cf6fbd68.",
+            "created_on": "2018-09-01T10:41:59Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1105,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Team-specific activate stages for all triggers",
+    "description": "Currently only \"func_invsible_user\":http://games.chruker.dk/enemy_territory/entities.php?action=show_entity&entity_name=func_invisible_user support \"activate <axis|allies>\".\r\nWith this you can set different activation sequences per team for each trigger. This is quite a handy feature as it can save trigger blocks inside an entity which are limited to 196. (Sounds a lot, but for escortables are actually quite restrictive). It can also save the need for having one trigger (eg trigger_multiple) for either team.\r\n\r\nFor example the tug in Railgun. There are two trigger_multiples. One of which is axis_only and the other one is allies_only. They obviously do the same, but move the tug into opposite directions. This could be handled with one trigger easily.\r\n\r\nThat functionality is actually already listed (falsely) on Chruker's \"list\":http://games.chruker.dk/enemy_territory/scripting_reference.php#complete_list\r\n\r\nObviously, maps with that will break compatibility, but like with all of these requests, it's the responsibility of the mapper to decide. We should however, provide the functionality in my opinion.",
+    "start_date": "2018-08-29",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2018-08-29T20:23:45Z",
+    "updated_on": "2018-09-01T10:41:59Z",
+    "closed_on": "2018-09-01T10:41:59Z"
+}

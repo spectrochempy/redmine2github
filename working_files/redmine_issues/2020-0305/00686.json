@@ -1,0 +1,116 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7544,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-01-14T12:46:04Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 7628,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "This is already possible by setting _skill_medic \"20 50 90 -1\"_. In fact, any skill level can be disabled, but this is badly documented.",
+            "created_on": "2019-01-20T19:54:13Z",
+            "details": []
+        },
+        {
+            "id": 7635,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "{FIXME}\r\n\r\n- replace adrenaline skill with \"Revive without teamkill\" skill/ability when g_misc 2 bitflag  is set and adrenaline is disabled",
+            "created_on": "2019-01-21T09:00:00Z",
+            "details": []
+        },
+        {
+            "id": 7779,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-02-14T10:39:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "22",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 686,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Add on option to disable adrenaline",
+    "description": "Add on option to disable adrenaline on a server.\r\nRevive without teamkill  see #586 should replace 'Adrenaline Self' skill in that case.",
+    "start_date": "2014-11-30",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-30T12:20:05Z",
+    "updated_on": "2019-02-14T10:39:13Z"
+}

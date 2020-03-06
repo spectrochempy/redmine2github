@@ -1,0 +1,629 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "e242870e1f4ed0d7e354e2aca00658d056fd7a32",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: colour simple items based on class avaibility, refs #1290",
+            "committed_on": "2019-05-23T13:16:42Z"
+        },
+        {
+            "revision": "5ae569a61c0153b0ee43784f44adae1da07adcea",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: extended simple item display to objective, refs #1290",
+            "committed_on": "2019-05-23T20:15:09Z"
+        },
+        {
+            "revision": "b9c0012bc5ad270911e28c43b2a1e9dc63b76c3a",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: allow optional simple items but regular objective, refs #1290",
+            "committed_on": "2019-05-23T20:15:10Z"
+        },
+        {
+            "revision": "8030dd7e13f16e968748dabe54f2ab64ba0c2ef2",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: added bobing effect on objective simple item, refs #1290",
+            "committed_on": "2019-06-13T13:31:14Z"
+        },
+        {
+            "revision": "036e1fb5575cd139ab763d256ac2ae028635add4",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: do not colour simple items for spectators, refs #1290",
+            "committed_on": "2019-06-14T14:27:27Z"
+        },
+        {
+            "revision": "21730c3725a08667f30eb199e52c28c5092917c8",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed simple items coloration for ammo pack and opposite team weapons, refs #1290",
+            "committed_on": "2019-06-14T14:30:21Z"
+        },
+        {
+            "revision": "caec94253080da98aa1ea71c4705425f841e41e1",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed simple items colour when following, refs #1290",
+            "committed_on": "2019-06-15T13:02:25Z"
+        },
+        {
+            "revision": "cb7c9e8638c76a31080df3d7c2cadaae23821002",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: use better cg_simpleItems icons, refs #1290",
+            "committed_on": "2019-07-14T16:49:34Z"
+        },
+        {
+            "revision": "de504b13eab911b9f2c41f9a0f1f434832c2e58b",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: added cg_simpleItems in game options, fixes #1290",
+            "committed_on": "2019-07-14T16:49:34Z"
+        },
+        {
+            "revision": "eb7feb19374ae53fad7ffb518b2c22f984513f30",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: adjusted z-axis of simple item icons, refs #1290",
+            "committed_on": "2019-07-15T16:38:55Z"
+        },
+        {
+            "revision": "aa942a900144ed08e59d20d20266df5d15a70cd0",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: slightly decreased size of simple items icons, refs #1290",
+            "committed_on": "2019-07-18T13:40:10Z"
+        },
+        {
+            "revision": "c8f0c3f30e5e267630942538e762f806b8736abe",
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "comments": "cgame: support simple item icon scale, refs #1290\n\n* refactored simple items code and implemented own sprite drawing method\n* added simple items icon x and y scaling through weapon file, which\n  now allows proper drawing of rectangular icons",
+            "committed_on": "2019-07-20T17:39:52Z"
+        },
+        {
+            "revision": "6ae18e46d3b8f8b143d366d91a4a6261a0c46c28",
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "comments": "cgame: fix simple items ammo tinting, refs #1290",
+            "committed_on": "2019-07-20T19:34:48Z"
+        },
+        {
+            "revision": "c228ab1f1f4b999185ca3fd23adcee754103a89f",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: replaced colored simple icons by white icons, refs #1290",
+            "committed_on": "2019-07-20T19:42:33Z"
+        },
+        {
+            "revision": "2bc9bb81977267ac5c64eb428ddf428ffbaa1477",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: colorize all simple icons dynamically, refs #1290",
+            "committed_on": "2019-07-20T20:31:47Z"
+        },
+        {
+            "revision": "b2a9387d90d3ed45e336c08bb474acc50f5cda2b",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: added different colors for team objectives, refs #1290\n\nAlso adjusted color palette to be less distracting.",
+            "committed_on": "2019-07-21T13:15:48Z"
+        },
+        {
+            "revision": "89de1501e38314c1134ea9a2974ee4b1114abb04",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: adjusted color to better differentiate simple icons, refs #1290\n\n* Blue and red for objectives\n* Green and yellow for health and ammo\n* Black and grey for weapons avaibility",
+            "committed_on": "2019-08-02T22:20:19Z"
+        },
+        {
+            "revision": "beb42ad0c56d08ac3630fbc4e855ed9b56b50af1",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: add cg_simpleItems 2 option in UI, refs #1290",
+            "committed_on": "2019-08-02T22:20:19Z"
+        },
+        {
+            "revision": "49b34141874e427c0e83f0cd87262c8342991d55",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: fixed simple items icons aspect ratio, refs #1290",
+            "committed_on": "2019-08-03T13:29:31Z"
+        },
+        {
+            "revision": "c868e9d4c15893157400214b0423447d59fd8761",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: simplified simpleItems weapon icons, refs #1290",
+            "committed_on": "2019-11-29T15:53:15Z"
+        },
+        {
+            "revision": "108f3fe609c230f3e5b38df28130cb0b0c53c68d",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: coloured simple icon of currently held weapon, refs #1290",
+            "committed_on": "2019-11-29T18:51:27Z"
+        },
+        {
+            "revision": "9b19ef9e13882000744571174cb156e5adeedf8b",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed simpletem colour for soldier lvl 4 secondary weapon, refs #1290",
+            "committed_on": "2019-11-30T15:06:55Z"
+        },
+        {
+            "revision": "98e6f9abef1410e5cf2a9bf43a823bc4002246f7",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed userinfo not updated when picking up weapon, refs #1290",
+            "committed_on": "2019-12-27T20:43:56Z"
+        },
+        {
+            "revision": "faee9164ace0613b8489555b7fa054070c59f16d",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: swap weapon session info when shuffling, refs #1290",
+            "committed_on": "2020-01-06T21:36:55Z"
+        },
+        {
+            "revision": "c61203cd4c99766f499ab0df49f55557cf265d51",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: change simple item colour when item is sinking, refs #1290",
+            "committed_on": "2020-02-29T17:43:49Z"
+        },
+        {
+            "revision": "dd35fbf892a895933675007726abc4eaea0bdc52",
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "comments": "cgame: fix simpleitems weapon highlighting, refs #1290\n\nWasn't highlighting the primary weapon if switched to other weapon bank.",
+            "committed_on": "2020-03-01T10:07:08Z"
+        },
+        {
+            "revision": "a67dc24fff0d9a7bb8e6f034264df1de0b48a967",
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "comments": "cgame: add color transition for simpleitem sinking, refs #1290",
+            "committed_on": "2020-03-01T11:36:59Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 8176,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "To keep in mind: these (distorted) icons are used to improve usability. A possible visual improvement shouldn't have downside for players using cg_simpleItems.",
+            "created_on": "2019-05-12T17:37:03Z",
+            "details": []
+        },
+        {
+            "id": 8220,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "Is it possible to only display those items that the player can actually pick up?\r\nSo that a Medic doesn't see the FG42 icon or a Panzerfaust item for example.\r\nThat could improve visibility as well.",
+            "created_on": "2019-05-20T10:49:06Z",
+            "details": []
+        },
+        {
+            "id": 8221,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Should be, yes. That's a good suggestion.\r\n\r\nWe should however decide what to do with the non-relevant icons too:\r\n* display them as 3D models (as usual)\r\n* display all items as simplified icons, but use a dimmer icon (for example).\r\n* don't display them at all?\r\n\r\nSecond option might be preferable for players, would be more consistent (imho) and would also be a bit simpler to implement than first option.",
+            "created_on": "2019-05-20T15:12:37Z",
+            "details": []
+        },
+        {
+            "id": 8222,
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "notes": "I would go with 1st option perhaps, since the idea of simple items is not to save frames, but to improve visibility anyways.",
+            "created_on": "2019-05-20T16:39:08Z",
+            "details": []
+        },
+        {
+            "id": 8223,
+            "user": {
+                "id": 421,
+                "name": "kimi"
+            },
+            "notes": "seeing weapons u cant use, can still be usefull gameinfo in competition",
+            "created_on": "2019-05-21T18:44:52Z",
+            "details": []
+        },
+        {
+            "id": 8224,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "kimi wrote:\r\n> seeing weapons u cant use, can still be usefull gameinfo in competition\r\n\r\nCould you expand on this? Useful for switching class?\r\n\r\n",
+            "created_on": "2019-05-21T19:07:07Z",
+            "details": []
+        },
+        {
+            "id": 8227,
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "notes": "Probably useful to tell other teammates about it, i guess.",
+            "created_on": "2019-05-21T20:06:24Z",
+            "details": []
+        },
+        {
+            "id": 8228,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "Then option two is the best way I guess. A little of both worlds.",
+            "created_on": "2019-05-22T07:27:26Z",
+            "details": []
+        },
+        {
+            "id": 8230,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Non relevant items are now coloured in red.\r\nWould there be any interest in using simple items for objectives too? See attached screenshot (don't mind the buggy cut off, I quickly implement to have an idea).",
+            "created_on": "2019-05-23T13:57:20Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "1105",
+                    "new_value": "shot0001.jpg"
+                }
+            ]
+        },
+        {
+            "id": 8231,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "I'd say that's a very good idea!",
+            "created_on": "2019-05-23T15:56:37Z",
+            "details": []
+        },
+        {
+            "id": 8232,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-05-23T16:33:01Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "1106",
+                    "new_value": "shot0003.jpg"
+                },
+                {
+                    "property": "attachment",
+                    "name": "1107",
+                    "new_value": "shot0004.jpg"
+                }
+            ]
+        },
+        {
+            "id": 8298,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Something is wrong with weapon icons perspective. They are drawn above objects (in this case, the obj icon) rather than behind. See attached screenshot.",
+            "created_on": "2019-06-13T16:32:55Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "1114",
+                    "new_value": "shot0001.jpg"
+                },
+                {
+                    "property": "attachment",
+                    "name": "1115",
+                    "new_value": "shot0003.jpg"
+                }
+            ]
+        },
+        {
+            "id": 8302,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-06-14T13:31:19Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Replace current weapon icons",
+                    "new_value": "Replace current weapon icons for cg_simpleItems"
+                }
+            ]
+        },
+        {
+            "id": 8309,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "The stretch issue itself is hard to solve without deeper change in the code. We should probably add a new set of icons for use as simpleitem only. Keep the current icons for HUD only (since they are ok and well known), and use weapon files to define a new \"simpleItem\" icon.\r\n\r\n{TODO}\r\n* -check simple item color (ammo pack and opposite team weapons).- (done)\r\n* -keep icons really simple and recognizable, while still somewhat similar to existing icons- (done) - feel free to improve!\r\n* -use round icons for ammo/health (redish/yellowish color?), use another shape for weapons on ground (square, ..).- (done)\r\n* -add cg_simpleItems in UI- (done)",
+            "created_on": "2019-06-21T07:55:21Z",
+            "details": []
+        },
+        {
+            "id": 8406,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:de504b13eab911b9f2c41f9a0f1f434832c2e58b.",
+            "created_on": "2019-07-14T16:56:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 8415,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "{TODO}\r\n* -use white icons for health, ammo and obj and color them in the code (like items for weapons). This will give more flexibility if we need to adjust them.- (done)\r\n* -The color are a bit too neonish (indeed they're copy pasted from Warsow) and need to be adjusted.- (done)\r\n* -Keep green for the obj color, and use another for health (maybe purple)- (see below)\r\n* -objective icons should be able to be differentiated for each team (f.e. for baserace). See if adding a team flag over it, or using a different color would help.- (done, blue/red colors)\r\n* -use darker color for non pickable weapons, instead of the too distracting red- (done)\r\n* -use redish for health, instead of green- (done)\r\n* -adjust weapon icons to be wide.-\r\n* -Drop the square pattern, but use only weapon icons.- (done)",
+            "created_on": "2019-07-18T21:32:10Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 8422,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-08-03T13:33:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "256",
+                    "new_value": "140"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 8423,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Note: colors and aspect ration have been adjusted and icons should now be comfortable to use. Let's ship the next snapshot update with icons, and we'll see if better icons are needed.",
+            "created_on": "2019-08-03T13:39:53Z",
+            "details": []
+        },
+        {
+            "id": 8488,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Reopening.\r\n\r\nThe good:\r\n* weapon icons are easy to recognize even on long distance\r\n* color based on class availability is great\r\n\r\nThe less-good:\r\n* -weapon overlay too intrusive. Remove the white \"border\" but keep the translucent background (so we get a sense of where it touches the ground, which make it easier to pick up)- (done)\r\n* health, ammo and objective icon colors are less neonish that first try, but they still don't look fully integrated. Make them more wwish (see the shield icon, maybe use a similar white border with full background).\r\n\r\n-Consider also colouring the weapon icons similar to the player currently hold, so one would know which weapon should be \"pick up\" manually (to change weapon) or the one that would be quickly picked up for extra ammo.- (done)",
+            "created_on": "2019-09-18T19:56:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 8560,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-11-29T18:52:39Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 8715,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2020-02-07T10:46:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1290,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Replace current weapon icons for cg_simpleItems",
+    "description": "We are currently using the weapon icons from the HUD for \"cg_simpleItems 1\":https://dev.etlegacy.com/projects/etlegacy/wiki/List_of_Cvars_(new)#cg_simpleItems\r\nEspecially, weapons are horribly stretched in this use case so a new set of icons should be created which can be properly used in the HUD and for that cvar.",
+    "start_date": "2019-05-12",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-05-12T17:28:31Z",
+    "updated_on": "2020-02-07T10:46:03Z",
+    "closed_on": "2020-02-07T10:46:03Z"
+}

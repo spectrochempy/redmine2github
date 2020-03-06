@@ -1,0 +1,263 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "7b05e4e1301fba2f8ef091fd1febc3378c5cdbc4",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "Let admins know about server attacks - refs #83",
+            "committed_on": "2012-10-06T08:46:46Z"
+        },
+        {
+            "revision": "573a30f79e4a34786f4ee19dd76bd68ad3df0ebb",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "server: some clean up and small optimizations, start of attack server\nlog refs #83",
+            "committed_on": "2012-11-15T10:38:46Z"
+        },
+        {
+            "revision": "5449759a32c7ce056f77a75560038ad2e614552c",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "server: initial commit of sv_protectLog refs #83",
+            "committed_on": "2012-12-03T14:02:51Z"
+        },
+        {
+            "revision": "037bc2d86fb3ffe4eed8c9804335c481ce04fc02",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "server: sv_protectLog implemented fixes #83",
+            "committed_on": "2012-12-04T14:34:07Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 349,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-10-06T08:54:40Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "tracker_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 391,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-10-21T15:11:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 435,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "Generally adding something like fs_logpath to save logs to that directory would be very useful.",
+            "created_on": "2012-11-03T17:46:09Z",
+            "details": []
+        },
+        {
+            "id": 479,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-11-11T13:08:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 493,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2012-11-11T23:03:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "5",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 500,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "This isn't a big deal to do ... rc2 ?",
+            "created_on": "2012-11-11T23:58:32Z",
+            "details": []
+        },
+        {
+            "id": 503,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "IR4T4 wrote:\r\n> This isn't a big deal to do ... rc2 ?\r\n\r\nOh ok, if it\u2019s only a small thing and it\u2019s unlikely to bring any regressions, then it\u2019s good to go for version:2.70rc2",
+            "created_on": "2012-11-12T00:39:37Z",
+            "details": []
+        },
+        {
+            "id": 504,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2012-11-12T00:49:48Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "6",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 725,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-12-03T22:47:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "70"
+                }
+            ]
+        },
+        {
+            "id": 730,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Applied in changeset commit:037bc2d86fb3ffe4eed8c9804335c481ce04fc02.",
+            "created_on": "2012-12-04T14:50:52Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "70",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 83,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 5,
+        "name": "Server"
+    },
+    "fixed_version": {
+        "id": 5,
+        "name": "2.71rc1"
+    },
+    "subject": "Log server attacks to an own log file",
+    "description": "Printing attack info to console/log might be spammy and info about attacks are spread.\r\n\r\nCreate an own log file for server protection issues - see sv_protect",
+    "start_date": "2012-10-06",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-10-06T08:54:32Z",
+    "updated_on": "2012-12-04T14:50:52Z",
+    "closed_on": "2012-12-04T14:50:52Z"
+}

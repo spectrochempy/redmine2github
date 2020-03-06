@@ -1,0 +1,201 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 370,
+            "issue_id": 1152,
+            "issue_to_id": 960,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 375,
+            "issue_id": 1152,
+            "issue_to_id": 979,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "202907097cc44321f6e0beb1bdfbe005feaadc7a",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: revert com_maxfps to mutiaction with magic numbers, refs #1152",
+            "committed_on": "2018-12-26T18:32:05Z"
+        },
+        {
+            "revision": "fe06b6dda8b03ced5b80380844c33a3ec293f0d1",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: added intermediary value for cl_maxpackets, refs #1152",
+            "committed_on": "2019-01-01T13:05:17Z"
+        },
+        {
+            "revision": "2370efa8aa81a84bb7d2ade7ddb7a1174437145a",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: added com_maxfps hint, refs #1152",
+            "committed_on": "2019-01-01T13:32:49Z"
+        },
+        {
+            "revision": "728e636b5961a341929a18781709db05189b2431",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: display values for cl_maxpackets, refs #1152",
+            "committed_on": "2019-01-01T13:42:21Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7407,
+            "user": {
+                "id": 110,
+                "name": "Harlekin"
+            },
+            "notes": "or - keep the values at stable render rate - SERVER SETTIGNS MIGHT LIMIT POSSIBLE SETTINGS\" ",
+            "created_on": "2018-12-26T07:33:37Z",
+            "details": []
+        },
+        {
+            "id": 7409,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-12-26T09:58:25Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 7412,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Note: the code allow values between 20 and 333, so the UI is consistent here.\r\nHowever, the default configs force them to 40-125 (\"sv_cvar com_maxfps IN 40 125\").",
+            "created_on": "2018-12-26T15:12:06Z",
+            "details": []
+        },
+        {
+            "id": 7413,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-12-26T15:56:51Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "960"
+                }
+            ]
+        },
+        {
+            "id": 7448,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-12-28T12:25:38Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "979"
+                }
+            ]
+        },
+        {
+            "id": 7483,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "More importantly than any cl_maxpackets trick, the fps rate should be set to a stable value. This ensure regular packet transmission for a smooth ping.\r\nI'd consider this done, any extra black magic details can be added in the wiki.",
+            "created_on": "2019-01-01T13:44:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1152,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 110,
+        "name": "Harlekin"
+    },
+    "category": {
+        "id": 15,
+        "name": "Mod UI"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Tooltip hint com_maxfps",
+    "description": "The Tooltip tells to have com_maxfps from 20 to 333.\r\nI always used league settings for com_maxfps IN 40 125. The tooltip should be 40-125 or at least 40-333 \r\n\"Sets the limit of frames per second - keep the values between 40 and 333\"\r\nor - keep the values at stable render rate\"\r\nor - set to same or divisor of max packets\"\r\n\r\nUsed in the more options menu i made for ET: \"com_maxfps\", cvarFloatList { \"43 (very slow PC)\" 43 \"55 (slow PC)\" 55 \"76 (average PC)\" 76 \"85 (default)\" 85 \"125 (fast PC)\" 125 }, \"Cap frame-rate, improves jumping etc.\" )\r\n\r\nAlso added \"Max Packets:\", .2, 8, \"cl_maxpackets\", cvarFloatList { \"40\" 40 \"43\" 43 \"60\" 60 \"76\" 76 \"100\" 100 }, \"Packets To Send (Per Second) From Client To Server (set to same or divisor of Max FPS)\" )\r\n\r\nMaybe a hint to Max Packets inside the tooltip of max FPS could be usefull.\r\n\r\n",
+    "start_date": "2018-12-26",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2018-12-26T07:32:42Z",
+    "updated_on": "2019-01-01T13:44:57Z",
+    "closed_on": "2019-01-01T13:44:57Z"
+}

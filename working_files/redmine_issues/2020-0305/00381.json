@@ -1,0 +1,232 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 132,
+            "issue_id": 381,
+            "issue_to_id": 157,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 164,
+            "issue_id": 381,
+            "issue_to_id": 372,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 2154,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-10-24T04:27:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "As the title says ... to let all the other OS (Pandora, AROS etc) users play on servers we require the mod bins.\r\n\r\n\r\n\r\n\r\n\r\n",
+                    "new_value": "As the title says ... to let all the other OS (Pandora, AROS etc) users play on servers we require the mod bins. \r\n\r\nThese will be put into 'etl_binX_v2.71rc3.pk3' and will be also available to download.\r\n\r\n{TODO}\r\n- Pandora\r\n- AROS\r\n- OpenBSD?\r\n- ?\r\n\r\n\r\n"
+                }
+            ]
+        },
+        {
+            "id": 2168,
+            "user": {
+                "id": 102,
+                "name": "BSzili"
+            },
+            "notes": "In the case of AROS and MorphOS clients this wouldn't do much other than taking up some disk space, since they always reference the PK3s with the Windows DLLs.",
+            "created_on": "2013-10-26T20:09:59Z",
+            "details": []
+        },
+        {
+            "id": 2274,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "etl_bin_v2.71rc3_os1.pk3 has been created and put on our server. It contains the binaries for Pandora/ARM.",
+            "created_on": "2013-11-18T05:14:20Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "214",
+                    "new_value": "etl_bin_v2.71rc3_os1.pk3"
+                }
+            ]
+        },
+        {
+            "id": 3206,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-05-30T19:10:59Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "157"
+                }
+            ]
+        },
+        {
+            "id": 3208,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-05-30T19:12:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "As the title says ... to let all the other OS (Pandora, AROS etc) users play on servers we require the mod bins. \r\n\r\nThese will be put into 'etl_binX_v2.71rc3.pk3' and will be also available to download.\r\n\r\n{TODO}\r\n- Pandora\r\n- AROS\r\n- OpenBSD?\r\n- ?\r\n\r\n\r\n",
+                    "new_value": "As the title says ... to let all the other OS (Pandora, AROS etc) users play on servers we require the mod bins. \r\n\r\nThese will be put into 'etl_binX_v2.71rc3.pk3' and will be also available to download.\r\n\r\n{TODO}\r\n- Pandora\r\n- AROS\r\n- OpenBSD?\r\n- Linux 64b\r\n\r\n\r\n"
+                }
+            ]
+        },
+        {
+            "id": 3626,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-11-08T12:50:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "5",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 3889,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-26T16:35:42Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "tracker_id",
+                    "old_value": "2",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 4002,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-12-06T10:47:54Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "372"
+                }
+            ]
+        },
+        {
+            "id": 4200,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-12-21T21:14:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "6",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 204,
+            "name": "bar"
+        },
+        {
+            "id": 102,
+            "name": "BSzili"
+        },
+        {
+            "id": 248,
+            "name": "ptitSeb"
+        },
+        {
+            "id": 1,
+            "name": "Radegast"
+        }
+    ],
+    "time_entries": null,
+    "id": 381,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Create an addtional mod bin pk3 for 'non vanilla' operating systems",
+    "description": "As the title says ... to let all the other OS (Pandora, AROS etc) users play on servers we require the mod bins. \r\n\r\nThese will be put into 'etl_binX_v2.71rc3.pk3' and will be also available to download.\r\n\r\n{TODO}\r\n- Pandora\r\n- AROS\r\n- OpenBSD?\r\n- Linux 64b\r\n\r\n\r\n",
+    "start_date": "2013-10-24",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-10-24T04:22:11Z",
+    "updated_on": "2014-12-21T21:14:08Z"
+}

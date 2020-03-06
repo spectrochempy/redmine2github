@@ -1,0 +1,409 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 243,
+            "issue_id": 591,
+            "issue_to_id": 849,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 244,
+            "issue_id": 859,
+            "issue_to_id": 591,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 327,
+            "issue_id": 981,
+            "issue_to_id": 591,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "7bd261a4ec44619ee342d23f484d95c3b2f8b943",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "general: skip UTF8 on non Legacy mods, refs #591",
+            "committed_on": "2015-08-15T21:55:17Z"
+        },
+        {
+            "revision": "31c06df95c2bc1f1adfda700a1ca2212cef53863",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "general: fixed typo in conditional statement, refs #591",
+            "committed_on": "2015-08-15T23:28:51Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3496,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": ">  When you set yourself ready when the map has ended, the antilag icon used to show this fact is rotated by 180\u00b0.\r\n\r\nDo you mean the \"ready icon\":https://github.com/etlegacy/etlegacy/blob/master/etmain/sprites/ready.tga instead?\r\nIs it \"upside down\", or vertically reversed?\r\n\r\n> The kill messages have a strange issue: in the console they\u2019re fine, but in the game the \"by\" word has no space after it, and thus you have \"byPlayerName\" displayed instead of \"by PlayerName\".\r\n\r\nAre you referring to the popup message area? Or the Center printed message? (next time, a screenshot would be welcome)\r\n",
+            "created_on": "2014-10-03T17:56:04Z",
+            "details": []
+        },
+        {
+            "id": 3497,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Yeah, I forgot to precise I meant the antilag icon used to show the ready state; Upside down.\r\n\r\nI mean the area at the left of the screen; I can up a screen if needed.",
+            "created_on": "2014-10-03T18:21:46Z",
+            "details": []
+        },
+        {
+            "id": 3498,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Mateos wrote:\r\n> I mean the area at the left of the screen; I can up a screen if needed.\r\n\r\nYes please.\r\n\r\n",
+            "created_on": "2014-10-03T18:23:19Z",
+            "details": []
+        },
+        {
+            "id": 3499,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Here you go:\r\nhttps://www.dropbox.com/s/oezdu4k7ukz9ss6/shot0000.png?dl=0",
+            "created_on": "2014-10-03T18:29:38Z",
+            "details": []
+        },
+        {
+            "id": 3500,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "I can't confirm any of those bugs for me there was space between \"killed by PlayerName\"\r\nI didn't saw AntiLag Icon anywhere after map ended\r\nThe only thing I noticed it was a fucking massive FPS drop everywhere and evertime. I tested it on legacy server (debug one ) with ET 2.60b client",
+            "created_on": "2014-10-03T21:23:38Z",
+            "details": []
+        },
+        {
+            "id": 3501,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "RaFaL wrote:\r\n> I can't confirm any of those bugs for me there was space between \"killed by PlayerName\"\r\n> I didn't saw AntiLag Icon anywhere after map ended\r\n> The only thing I noticed it was a fucking massive FPS drop everywhere and evertime. I tested it on legacy server (debug one ) with ET 2.60b client\r\n\r\n1) OK :/\r\n2) Have you pressed ready so the icon appears?\r\n3) Don't have this issue :/\r\n\r\n",
+            "created_on": "2014-10-03T21:37:38Z",
+            "details": []
+        },
+        {
+            "id": 3502,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I'm somewhat unable to test 2.60b client right now, as I currently only have the 64bit tools chain installed.\r\nI've had a look at the code, which seems correct.\r\n\r\nIf that bug doesn't appear on etl client and only 2.60b client, then my best bet would be that is a color code issue, since that part is different from the etl and original client (engine). Mateos, could try with some other nickname (uncolored, plain white, various colors, etc.) and report the results here?",
+            "created_on": "2014-10-03T21:46:37Z",
+            "details": []
+        },
+        {
+            "id": 3503,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "Mateos wrote:\r\n> RaFaL wrote:\r\n> > I can't confirm any of those bugs for me there was space between \"killed by PlayerName\"\r\n> > I didn't saw AntiLag Icon anywhere after map ended\r\n> > The only thing I noticed it was a fucking massive FPS drop everywhere and evertime. I tested it on legacy server (debug one ) with ET 2.60b client\r\n> \r\n> 1) OK :/\r\n> 2) Have you pressed ready so the icon appears?\r\n> 3) Don't have this issue :/\r\n\r\n2) Yes I did",
+            "created_on": "2014-10-04T16:16:57Z",
+            "details": []
+        },
+        {
+            "id": 5031,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-07-24T11:01:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 5123,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-08-09T09:04:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "17"
+                }
+            ]
+        },
+        {
+            "id": 5124,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "{TODO}\r\n\r\n- test the vanilla client & legacy mod",
+            "created_on": "2015-08-09T09:06:37Z",
+            "details": []
+        },
+        {
+            "id": 5139,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Tested and cannot reproduce. Both issues are mod related anyway, using the vanilla client shouldn't make any difference here. ",
+            "created_on": "2015-08-10T20:49:59Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "21"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "7"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 5140,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-08-10T20:51:37Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "7",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 5147,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Reopened. \r\n\r\n{FIXME}\r\n\r\nEntering ( & sending by return) new unicode chars in intermission chat disconnect the client from 2.60 servers with error \"CL_ParseServerMessage: Illegible server message X\"\r\n\r\nI can reproduce this bug with german umlaute but I think other 'special' unicode chars of other languages have the same effect.  ",
+            "created_on": "2015-08-15T04:29:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "21",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "6",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 5148,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-08-15T04:39:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Legacy mod issues under 2.60b client",
+                    "new_value": "Legacy issues with vanilla 2.60"
+                }
+            ]
+        },
+        {
+            "id": 5150,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-08-15T22:01:47Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                }
+            ]
+        },
+        {
+            "id": 5151,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-08-16T04:40:32Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "849"
+                }
+            ]
+        },
+        {
+            "id": 5153,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-08-16T05:11:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 5159,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-08-16T09:37:08Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "859"
+                }
+            ]
+        },
+        {
+            "id": 6617,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-03-21T23:47:08Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "981"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 591,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 9,
+        "name": "Mateos"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "Legacy issues with vanilla 2.60",
+    "description": "Yesterday I played a LAN using ET 2.60b, and here are the issues I encountered under the Legacy mod:\r\n- When you set yourself ready when the map has ended, the antilag icon used to show this fact is rotated by 180\u00b0.\r\n- The kill messages have a strange issue: in the console they're fine, but in the game the \"by\" word has no space after it, and thus you have \"byPlayerName\" displayed instead of \"by PlayerName\".\r\n\r\nConfirmed by my friend, but we use the same binaries, compiled last Sunday morning.",
+    "start_date": "2014-10-03",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-10-03T17:23:47Z",
+    "updated_on": "2015-08-16T05:11:02Z",
+    "closed_on": "2015-08-16T05:11:02Z"
+}

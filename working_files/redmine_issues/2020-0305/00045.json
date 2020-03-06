@@ -1,0 +1,266 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "93c2a6fee975c4fba14a9994988a94353b024a1a",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "translation cfg file refs #45 - make sure character encoding is\nISO-8859-1",
+            "committed_on": "2012-08-09T09:36:58Z"
+        },
+        {
+            "revision": "f985e8c2839c79fb649ccadaf0ea31d535b5e54b",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "language support for polish, dutch, czech, russian & finnish refs #45",
+            "committed_on": "2012-08-09T10:22:44Z"
+        },
+        {
+            "revision": "789a30ed063e5982fd60d2d9c7bd8f3e8193c3e9",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "client: enabled additional languages, refs #45",
+            "committed_on": "2012-09-04T19:42:32Z"
+        },
+        {
+            "revision": "4b00f90902186e4e43bb77dbf04c9631eb372c5f",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "rest of german translations refs #45",
+            "committed_on": "2012-10-14T08:37:57Z"
+        },
+        {
+            "revision": "4da858e7dfd856110a7e987812b93d03c9ff378d",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "Mod pak3.pk3: option to set cl_language added to 'Game' menu refs\n#68, refs #45",
+            "committed_on": "2012-11-02T13:03:21Z"
+        },
+        {
+            "revision": "16f017851d35b387b45baebf54256b2c4c0cc63e",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "ui: translations for ui - LOCALIZATION_SUPPORT macro removed refs #45\nrefs #88",
+            "committed_on": "2012-12-12T00:53:17Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 109,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-05-12T13:11:46Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 244,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-08-09T16:42:58Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "31",
+                    "new_value": "shot0002.jpg"
+                }
+            ]
+        },
+        {
+            "id": 301,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "The original ET localization system is enabled. Porting it to use gettext will require some more work and that can wait until version version:2.80",
+            "created_on": "2012-09-06T10:53:21Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 303,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "@Radegast:\r\nI did notice translations don't work properly if they are additionally filled with params. Example:\r\n\"Deploying in %d seconds\". The current code can't deal that.",
+            "created_on": "2012-09-06T16:56:55Z",
+            "details": []
+        },
+        {
+            "id": 304,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "IR4T4 wrote:\r\n> \"Deploying in %d seconds\". The current code can't deal that.\r\nWhat is the problem exactly? Works for me: \r\n!translated_text_wparam_czech.jpg!\r\n",
+            "created_on": "2012-09-06T17:14:00Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "38",
+                    "new_value": "translated_text_wparam_czech.jpg"
+                }
+            ]
+        },
+        {
+            "id": 305,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "That's odd. Afaik it did not work as I did add the translation.cfg file. However I gonna test it again and will add some missing translations ;)\r\n\r\nBtw. translations are a good gimmick for for the 2.70 final release. Let's play the bush drums and get more people involved to finish the other languages :)\r\nWhy this ticket is closed :O ?",
+            "created_on": "2012-09-06T21:24:14Z",
+            "details": []
+        },
+        {
+            "id": 306,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-09-06T21:41:10Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 308,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "IR4T4 wrote:\r\n> That's odd. Afaik it did not work as I did add the translation.cfg file. However I gonna test it again and will add some missing translations ;)\r\nI just remembered what was wrong. Look at the changes in commit commit:066d1fe8\r\n\r\n> Btw. translations are a good gimmick for for the 2.70 final release. Let's play the bush drums and get more people involved to finish the other languages :)\r\nExactly!\r\n\r\n> Why this ticket is closed :O ?\r\nI added it to the \"pak3.pk3\":http://www.etlegacy.com/issues/68#note-6 ticket and changed version to version:ALL, because we will add/change/remove translation strings from time to time even after everything is translated.",
+            "created_on": "2012-09-07T08:15:53Z",
+            "details": []
+        },
+        {
+            "id": 2747,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Commenting this ticket's title I would suggest not to include translation support in 2.71 final release as it is still far from finished.",
+            "created_on": "2014-01-05T02:06:29Z",
+            "details": []
+        },
+        {
+            "id": 2752,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "This was a ticket for the old W:ET translation system. We now have gettext support and only thing that is missing is unicode support and 3rd party mod translations. The latter could be done easily (and should be done soon now that I think of it) and the former is a huge feature that will take a lot of time to implement. Overall gettext translations work as expected and there are no issues with it as far as I am aware.",
+            "created_on": "2014-01-05T10:16:32Z",
+            "details": []
+        }
+    ],
+    "watchers": [
+        {
+            "id": 1,
+            "name": "Radegast"
+        }
+    ],
+    "time_entries": null,
+    "id": 45,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 1,
+        "name": "2.70rc1"
+    },
+    "subject": "Enable translation support",
+    "description": "Adapt ET's localisation system to use \"gettext\":http://www.gnu.org/software/gettext/.",
+    "start_date": "2012-05-05",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2012-05-05T09:08:07Z",
+    "updated_on": "2014-01-05T10:16:32Z",
+    "closed_on": "2012-09-06T10:53:21Z"
+}

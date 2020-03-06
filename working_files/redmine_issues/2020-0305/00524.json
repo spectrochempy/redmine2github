@@ -1,0 +1,83 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 3080,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-02-24T11:05:53Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "21"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 524,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "new trigger function for setting dynamite/satchel radius",
+    "description": "In vanilla ET there is a hardcoded radius in which the player is able to plant dynamite/satchel. This results in various trickplant options, which might not be desired/intended by the mapper.\r\n(eg. goldrush 2nd tankbarrier dynamite on stairs; oasis guns outside)\r\n\r\nIntroducing a new trigger function (maybe *trigger_constructible*) would be handy for mappers. That trigger would specify the area in which an objective is affected by dynamite/satchel.\r\nIf I'm correct, \"this\":http://games.chruker.dk/enemy_territory/entities.php?action=show_entity&entity_name=func_constructible is the entity which is normally the center of the radius.\r\n\r\n",
+    "start_date": "2014-02-23",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-02-23T20:52:11Z",
+    "updated_on": "2014-02-24T11:05:53Z"
+}

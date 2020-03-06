@@ -1,0 +1,142 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 202,
+            "issue_id": 785,
+            "issue_to_id": 783,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 4398,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2015-01-16T16:39:15Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "785"
+                }
+            ]
+        },
+        {
+            "id": 7467,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "No more reproducible ",
+            "created_on": "2018-12-31T08:19:53Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "7"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "251"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 7468,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "",
+            "created_on": "2018-12-31T08:20:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "7",
+                    "new_value": "5"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 783,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 251,
+        "name": "Aranud"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "MG / Browning overheating issue",
+    "description": "You can't always hear or see the overheating. It doesn't happen frequently.\r\n\r\n-*S",
+    "start_date": "2015-01-16",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-01-16T16:35:10Z",
+    "updated_on": "2018-12-31T08:20:32Z",
+    "closed_on": "2018-12-31T08:20:32Z"
+}

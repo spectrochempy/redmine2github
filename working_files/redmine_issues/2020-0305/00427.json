@@ -1,0 +1,136 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 2504,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Had this issue myself a while back on ubuntu",
+            "created_on": "2013-12-22T08:26:28Z",
+            "details": []
+        },
+        {
+            "id": 2671,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-01-02T08:28:19Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "2",
+                    "old_value": "",
+                    "new_value": "64-bit"
+                }
+            ]
+        },
+        {
+            "id": 2700,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-01-02T11:32:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 7690,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "To avoid/fix this issue cmake requires to know about 32 bit this way:\r\n\r\nhttps://cmake.org/pipermail/cmake/2016-April/063312.html\r\n\r\nWe are doing this in easybuild.sh but in case of IDEs these might fail.",
+            "created_on": "2019-01-26T15:15:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "cmake findpackage() doesn't detect 32 bit OpenGL",
+                    "new_value": "*REMINDER* cmake findpackage() doesn't detect 32 bit OpenGL"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "8"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 427,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 8,
+        "name": "Confirmed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 4,
+        "name": "ALL"
+    },
+    "subject": "*REMINDER* cmake findpackage() doesn't detect 32 bit OpenGL",
+    "description": "On Linux 64 bit with multiarch \"find_package(OpenGL REQUIRED)\" might fail because it doesn't detect 32 bit libs properly\r\nThis seems to be a known cmake thingy but we don't deal with this in ETL as we do for other lib dependancies.\r\n\r\nWith 64 bit OpenGL installed the package is found but the build fails when linking the client (which isn't a surprise).\r\n\r\n",
+    "start_date": "2013-12-22",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": "64-bit"
+        }
+    ],
+    "created_on": "2013-12-22T00:54:56Z",
+    "updated_on": "2019-01-26T15:15:05Z"
+}

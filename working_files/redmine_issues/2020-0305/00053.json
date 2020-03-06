@@ -1,0 +1,1097 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 51,
+            "issue_id": 175,
+            "issue_to_id": 53,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 52,
+            "issue_id": 66,
+            "issue_to_id": 53,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 64,
+            "issue_id": 217,
+            "issue_to_id": 53,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 105,
+            "issue_id": 426,
+            "issue_to_id": 53,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "aaedf1265439582505f15028fe51ca92951ec7e3",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "client: added 'clean' command which removes files matching a given pattern from fs_homepath, refs #53",
+            "committed_on": "2013-03-28T19:40:15Z"
+        },
+        {
+            "revision": "016044049ac112e0a98f2956273921dae72fa751",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "client: added a hardcoded whitelist for the 'clean' command, refs #53",
+            "committed_on": "2013-03-28T23:58:08Z"
+        },
+        {
+            "revision": "94cc8766541d3d9d691581860ac5df4e9d85dc7e",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "general: renamed CL_CleanHomepath_f -> Cmd_CleanHomepath_f, refs #53",
+            "committed_on": "2013-03-29T11:13:32Z"
+        },
+        {
+            "revision": "5976614131c4f8acdfd421e73746f694badf9f87",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "general: cvar com_cleanWhitelist for the /clean cmd, fixes #53",
+            "committed_on": "2013-03-29T22:57:03Z"
+        },
+        {
+            "revision": "684907e0dfb846a88ee054277ab65c827df79b9c",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "ui: added clean command to menu files refs #53",
+            "committed_on": "2013-03-30T21:56:39Z"
+        },
+        {
+            "revision": "fb6b370e4ea9248eb498d45099c539d1cbf6f764",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "ui: Fixed clean up menu refs #53",
+            "committed_on": "2013-03-31T18:44:51Z"
+        },
+        {
+            "revision": "95c062db4376c6e3d6fe1f96c170a20c9473d5ff",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "ui: fix clean for polish menu, few adjustments refs #53",
+            "committed_on": "2013-03-31T20:11:49Z"
+        },
+        {
+            "revision": "2b265a2ff22b89d032d89d88bc48e03ba3cac869",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "ui: added 1 command more into cfg file refs #53",
+            "committed_on": "2013-04-01T14:03:55Z"
+        },
+        {
+            "revision": "06c7f38989efaaf88a2b256477cd2ab05ff54058",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "client: clean (clean_simple.cfg) works as desired on linux refs #53",
+            "committed_on": "2013-08-03T19:22:10Z"
+        },
+        {
+            "revision": "bf5ed521078218b5839ea1e318bc593be8f549ba",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "client: z_hdet is new default for com_cleanwhitelist refs #53",
+            "committed_on": "2013-08-03T20:55:35Z"
+        },
+        {
+            "revision": "028ecfeefe805e6b6a905b6dd9dad915cf27a3b3",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "client: Cmd_CleanHomepath_f adjusted refs #53",
+            "committed_on": "2013-08-05T15:26:04Z"
+        },
+        {
+            "revision": "7ef3ecec681bfd96d0967bebb96dbf1a133aebc0",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "misc: clean command beautified refs #53",
+            "committed_on": "2013-08-06T14:37:48Z"
+        },
+        {
+            "revision": "17e7c67059ce3611f1c2b73da1e61a0e7cc0441d",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "misc: clean cmd - lib files added back to whitelist refs #53",
+            "committed_on": "2013-08-07T17:48:44Z"
+        },
+        {
+            "revision": "197fe2b0729c0cd0fbc705e125a9a1988b4120b2",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "misc: com_cleanwhitelist flag changed to CVAR_PROTECTED refs #53",
+            "committed_on": "2013-08-23T16:33:41Z"
+        },
+        {
+            "revision": "4f959d4f8846e89f5058af715133d7c67eb220bf",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "qcommon: missing new line for usage output of clean cmd refs #53",
+            "committed_on": "2013-08-27T21:23:55Z"
+        },
+        {
+            "revision": "34a9ea291a143aee4d806a18884fe740cf4326b4",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "qcommon: don't clean when fs_homepath and fs_basepath are same\n(dedicated server) refs #53",
+            "committed_on": "2013-10-19T11:04:39Z"
+        },
+        {
+            "revision": "3c24e7f94360f30710dceed1348f19ae7ba04bb4",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "generic: added force and pretend arguments to the clean command, fixes #426, refs #53",
+            "committed_on": "2013-12-17T21:28:06Z"
+        },
+        {
+            "revision": "4fb95dd9d384a46d61aacd8f6806baa68e3048d5",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "generic: validate the path passed to the clean command, refs #53",
+            "committed_on": "2013-12-18T16:09:40Z"
+        },
+        {
+            "revision": "94f64119bf3115d8d300ca99025592703dd5df68",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "sys: don't add files containing bad ascii chars in file name to etl\nsearchpaths refs #53 (WIP)",
+            "committed_on": "2015-12-20T04:32:56Z"
+        },
+        {
+            "revision": "72637dc85aa122e7df2ef3bff8c16d2a08fb867b",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "sys: also check for other invalid ascii char, refs #53",
+            "committed_on": "2015-12-20T12:20:13Z"
+        },
+        {
+            "revision": "0598e7b6598a6c2eca47285e75547fb34815a524",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "sys: check for invalid char on etl server only, refs #53",
+            "committed_on": "2015-12-20T17:53:43Z"
+        },
+        {
+            "revision": "b1204c5d67718f59dc492efd07cabdbb396c0e49",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: expanded clean config file to remove 0x7b hidden char, refs #53",
+            "committed_on": "2015-12-20T17:54:06Z"
+        },
+        {
+            "revision": "b2cd7bb92de00749c049950e10cb4922c156c158",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "Revert \"sys: check for invalid char on etl server only, refs #53\"\n\nThis reverts commit 0598e7b6598a6c2eca47285e75547fb34815a524.",
+            "committed_on": "2018-02-05T14:44:10Z"
+        },
+        {
+            "revision": "3405c3b060904f189167e5f4115da9df77c5b5dc",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "sys: added red color to invalid char error, refs #53",
+            "committed_on": "2018-02-05T15:22:34Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 112,
+            "user": {
+                "id": 7,
+                "name": "TheDushan"
+            },
+            "notes": "You can do wonders with \"CURLOPT_RESUME_FROM\"\n\nhttp://linux.die.net/man/3/curl_easy_setopt\n\nProtocol option:\n\nCURLOPT_RESUME_FROM\n\nPass a long as parameter. It contains the offset in number of bytes that you want the transfer to start from. Set this option to 0 to make the transfer start from the beginning (effectively disabling resume). For FTP, set this option to -1 to make the transfer start from the end of the target file (useful to continue an interrupted upload). \n\n",
+            "created_on": "2012-05-16T21:30:17Z",
+            "details": []
+        },
+        {
+            "id": 439,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "",
+            "created_on": "2012-11-03T18:35:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "\r\n1 - delete all .tmp files (aborted DL - also in mod pathes!)\r\n\r\n2 - remove all files starting with z_ , zz or ~\r\n\r\n\r\n\r\nWe may run with 1 at start of ET:Legacy ... and/or add it somewhere to the menus.",
+                    "new_value": "\r\n1 - delete all .tmp files (aborted DL - also in mod pathes!)\r\n\r\n2 - remove all files starting with z_ , zz or ~\r\n\r\n\r\n\r\nWe may run with 1 at start of ET: Legacy ... and/or add it somewhere to the menus."
+                }
+            ]
+        },
+        {
+            "id": 536,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-11-15T19:31:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 671,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Since we can now use the Lua interpreter, we could add a lua script which would be executed by ET:L at the start. The script would have rules to search for these unwanted files and it would allow more experienced users to add their own whitelist or blacklist.",
+            "created_on": "2012-11-27T15:51:50Z",
+            "details": []
+        },
+        {
+            "id": 672,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Lua is GAME only which means you have to start a listen or dedicated server. ",
+            "created_on": "2012-11-27T16:12:43Z",
+            "details": []
+        },
+        {
+            "id": 673,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "I was talking about adding lua scripting to the client.",
+            "created_on": "2012-11-27T17:34:38Z",
+            "details": []
+        },
+        {
+            "id": 674,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Just a question about the description;\r\n\r\nCan ET:L analyze a .tmp and continue the download in case of disconnection/re-connection of the player on the same server in order to complete it instead of restarting it from 0?\r\n\r\nAnd maybe, since some server have a z_ thingy for buttons or custom stuff, have a cvar making it ignored on client side but used if the server on which the player goes have it, reachable through ingame menus? (Or totally block them? :P)\r\n\r\nJust questions, I think both are too much efforts for a really few cases in fact, so just questions ^^'",
+            "created_on": "2012-11-27T18:10:36Z",
+            "details": []
+        },
+        {
+            "id": 682,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Mateos wrote:\n> Can ET:L analyze a .tmp and continue the download in case of disconnection/re-connection of the player on the same server in order to complete it instead of restarting it from 0?\n> \n> And maybe, since some server have a z_ thingy for buttons or custom stuff, have a cvar making it ignored on client side but used if the server on which the player goes have it, reachable through ingame menus? (Or totally block them? :P)\n> \n> Just questions, I think both are too much efforts for a really few cases in fact, so just questions ^^'\n\nA. How should the client know the content of the file and which URL the file came from? We may track that but it's a huge effort   \n\nB. This would cause a conflict with sv_pure\n\n\nAbout the Lua client feature: I would like to discuss that on IRC ... there is at least one big minus not to do that.\n",
+            "created_on": "2012-11-29T12:57:35Z",
+            "details": []
+        },
+        {
+            "id": 689,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "A. All web browsers support a Pause feature; Could this be \"adapted\" to what I said, in case of connection lost?",
+            "created_on": "2012-11-29T16:32:51Z",
+            "details": []
+        },
+        {
+            "id": 1006,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-01-23T06:58:37Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "\r\n1 - delete all .tmp files (aborted DL - also in mod pathes!)\r\n\r\n2 - remove all files starting with z_ , zz or ~\r\n\r\n\r\n\r\nWe may run with 1 at start of ET: Legacy ... and/or add it somewhere to the menus.",
+                    "new_value": "\r\n1 - delete all .tmp files (aborted DL - also in mod pathes!)\r\n\r\n2 - remove all files starting with z_ , zz or ~\r\n\r\n3 - remove all files which are not part of a whitelist.cfg file (list of pk3 map files which shouldn't be removed)\r\nThis file should be stored and read from fs_basepath only! \r\n\r\nWe may run with 1 at start of ET: Legacy ... and/or add it somewhere to the menus."
+                }
+            ]
+        },
+        {
+            "id": 1008,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-01-23T07:02:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "6",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1120,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-02-09T07:42:12Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "\r\n1 - delete all .tmp files (aborted DL - also in mod pathes!)\r\n\r\n2 - remove all files starting with z_ , zz or ~\r\n\r\n3 - remove all files which are not part of a whitelist.cfg file (list of pk3 map files which shouldn't be removed)\r\nThis file should be stored and read from fs_basepath only! \r\n\r\nWe may run with 1 at start of ET: Legacy ... and/or add it somewhere to the menus.",
+                    "new_value": "Command: /clean <params>\r\n\r\nFor fs_homepath in etmain & mod pathes:\r\n\r\n* delete all .tmp files (aborted DL)\r\n* remove all pk3 files starting with z_ , zz or ~\r\n* remove all pk3 or remove files which are not part of a whitelist.cfg file (list of pk3 map files which shouldn't be removed. This file should be stored and read from fs_basepath only)\r\n\r\nWe may delete tmp files at start of ET: Legacy by default or add it somewhere else.\r\n\r\n* Add options to execute the command in the menus   \r\n"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "7",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 1214,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-02-25T22:01:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "5",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1443,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-03-28T18:16:41Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "7",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 1447,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "The @/clean@ command is almost finished. I will just add a check that the game is disconnected and no demos are playing as Jacker suggested and I will add a user editable whitelist through a cvar (@com_cleanWhitelist@ ?). Although there is a hardcoded whitelist for pak0,1,2 and cfg+dat files, this command is still very dangerous to be used by someone who doesn't understand how to write file matching patterns and should be used only by experienced users. Therefore, we should not add any UI for the clean command as it would just make it easier for inexperienced people to delete all their maps.\r\n\r\nHere is an example use of clean command in the @autoexec.cfg@ which deletes all incomplete downloads upon game start up:\r\n\r\n<pre>\r\necho ================================\r\necho Cleanliness is next to godliness\r\nclean all *.tmp\r\necho ================================\r\n</pre>",
+            "created_on": "2013-03-29T11:28:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "70"
+                }
+            ]
+        },
+        {
+            "id": 1450,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "When ET loads, does it check for BSP files?\r\n\r\nI mean, if so, your command could even remove any file without a BSP :)\r\n\r\nThere should be that kind of mechanism, when you do a /map with a non-existing BSP name the game quickly react, but I'm not advanced enough in coding to read myself the code  ^^'",
+            "created_on": "2013-03-29T18:22:09Z",
+            "details": []
+        },
+        {
+            "id": 1451,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Mateos wrote:\r\n> I mean, if so, your command could even remove any file without a BSP :)\r\nI really like how simple and efficient the current @/clean@ command is. We could improve it in the way you suggest and in many other ways, but I would like to keep the core functionality simple and let people extend it in any way they see fit using client side Lua scripts (provided we ever decide to implement client side Lua).\r\n\r\nI can already see the improved functionality using these self-explanatory keywords:\r\n\r\n<pre>\r\nclean bsp\r\nclean menu\r\nclean outdated\r\nclean unused-maps\r\n...\r\n</pre>",
+            "created_on": "2013-03-29T19:41:09Z",
+            "details": []
+        },
+        {
+            "id": 1452,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Applied in changeset commit:5976614131c4f8acdfd421e73746f694badf9f87.",
+            "created_on": "2013-03-29T23:02:51Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "70",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 1453,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Radegast, let's add an option to the menus to do a full clean - like a fresh install with profiles and config files kept.\r\n\r\n",
+            "created_on": "2013-03-30T10:46:14Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 1460,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-03-30T22:11:19Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "1",
+                    "new_value": "13"
+                }
+            ]
+        },
+        {
+            "id": 1461,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "<pre>/clean all *.tmp *z*.pk3 *~*.pk3</pre>\r\nThere is a mistake in this command. It deletes every .pk3 file with a \"z\" in the name.\r\n\r\nIf you want to delete everything except the configuration files, it should be:\r\n<pre>/clean all *</pre>\r\n\r\nBut I think the button should clean only dodgy files and not everything:\r\n\r\n<pre>/clean all *z_*.pk3 *zz*.pk3 *~*.pk3</pre>",
+            "created_on": "2013-03-31T00:54:04Z",
+            "details": []
+        },
+        {
+            "id": 1464,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "There may be a problem with the @/clean@ command on Windows.\r\n<pre>\r\n22:18 <RaFaL> when I press for example Full clean game deleting all maps custom stuff\r\n22:18 <RaFaL> in console\r\n22:19 <RaFaL> but after I quit a game\r\n22:19 <RaFaL> there are still maps there in WolfET/etmain\r\n22:19 <RaFaL> and custom stuff\r\n</pre>\r\nRafal, please post your console output.",
+            "created_on": "2013-04-01T08:30:09Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 1466,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "execing clean_simple.cfg\r\nFound 0 files matching the pattern \"*.tmp\" under C:\\Users\\Rafal\\Documents\\WolfETL\r\nFound 0 files matching the pattern \"z*.pk3\" under C:\\Users\\Rafal\\Documents\\WolfETL\r\nFound 0 files matching the pattern \"*~*.pk3\" under C:\\Users\\Rafal\\Documents\\WolfETL\r\nFound 0 files matching the pattern \"~*.pk3\" under C:\\Users\\Rafal\\Documents\\WolfETL\r\nFound 0 files matching the pattern \"*~.pk3\" under C:\\Users\\Rafal\\Documents\\WolfETL\r\nFound 1 files matching the pattern \"*z*.pk3\" under C:\\Users\\Rafal\\Documents\\WolfETL\r\n- removing legacy\\z_sound.pk3\r\nexecing clean_full.cfg\r\nFound 0 files matching the pattern \"*.tmp\" under C:\\Users\\Rafal\\Documents\\WolfETL\r\nFound 12 files matching the pattern \"*.pk3\" under C:\\Users\\Rafal\\Documents\\WolfETL\r\n- removing etmain\\axislab_final.pk3\r\n- removing etmain\\golddays_v4.pk3\r\n- removing etmain\\goldrush-ga.pk3\r\n- removing etmain\\library_b3.pk3\r\n- removing etmain\\mlb_d_day.pk3\r\n- removing etmain\\mlb_hotchkiss.pk3\r\n- removing etmain\\parisbastille_b3.pk3\r\n- removing etmain\\school.pk3\r\n- removing etmain\\SuperGoldrush_Final.pk3\r\n- removing etmain\\supplydepot2.pk3\r\n- removing etmain\\supply_pro.pk3\r\n- removing legacy\\z_sound.pk3",
+            "created_on": "2013-04-01T14:06:58Z",
+            "details": []
+        },
+        {
+            "id": 1642,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-04-30T18:13:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1674,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "{TODO} \r\n-Inspect etmain/delete*.cfg files-\r\n-Ensure bot files are not deleted see #217-\r\n-Create wiki docu-",
+            "created_on": "2013-05-10T11:04:35Z",
+            "details": []
+        },
+        {
+            "id": 1776,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "{FIXME}\r\n\r\n- ? Whitelist doesn't trigger when the file is in a sub path of mod path. In that case pFiles[j] contains the sub path and pure filename check fails.\r\n- We should think about removing the lib files of mods too (real clean up/might cause issues)\r\n- Move whitelist to cfg file or ensure admins can't force the CVAR ",
+            "created_on": "2013-07-26T13:45:14Z",
+            "details": []
+        },
+        {
+            "id": 1784,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "@Radegast: \r\n-Sys_ListFiles returns the full path of file and a filter like 'z*.pk3' doesn't catch a file 'legacy/z_banana.pk3'. I think it can be fixed in Cmd_CleanHomepath_f if we are getting the mod pathes first by FS_GetModList (note: returns also mods in fs_basepath) and calling Sys_ListFiles with last param wantssub=false for each mod path after. \r\nWe don't have to worry about sub pathes of mods - they are not used by the engine to load pk3s ...-\r\n\r\n-Fixing the filter of Sys_ListFiles is option B but this might cause unwanted side-effects.-",
+            "created_on": "2013-07-27T10:17:21Z",
+            "details": []
+        },
+        {
+            "id": 1786,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "IR4T4 wrote:\r\n> On the other hand 95% of custom pk3s start with a 'z\u2019. What we can do is to add z-maps to the whitelist.\r\n\r\n<pre>clean all *z*.pk3</pre>\r\n\r\nHow about this one? Removing everything with 'z' in the middle is not a good way to deal with cust. menus.\r\n\r\n\r\n!http://dev.etlegacy.com/attachments/download/186/xaxaxa.png!",
+            "created_on": "2013-07-27T12:56:37Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "186",
+                    "new_value": "xaxaxa.png"
+                }
+            ]
+        },
+        {
+            "id": 1788,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Also PK3s which start with ~ :)\r\n\r\nAnd maybe for the z, \"*z_*\" would be good?",
+            "created_on": "2013-07-29T10:02:03Z",
+            "details": []
+        },
+        {
+            "id": 1797,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Once the filter is working properly it's easy to add more and adjust the clean_*.cfg files in detail ('[*.pk3', ']*.pk3' etc). 'z' in the middle filter has been removed.",
+            "created_on": "2013-08-02T08:28:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "13"
+                }
+            ]
+        },
+        {
+            "id": 1802,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I've fixed a whitelist issue of sub pathes and edited the clean_simple.cfg file again. \r\n\r\nTest file names for clean_simple.cfg\r\n- z_hdet.pk3 (skipped)\r\n- z_mycustom.pk3 (deleted)\r\n- z_pak_directplay_01.pk3 (deleted)\r\n- ~~~~~~~~~~fl-2.pk3 (deleted)\r\n- ~~~~~~~~~~~etmain_menu_05_nolua.pk3 (deleted)\r\n\r\nPut these into mod folders and in root of fs_hompath, run /exec clean_simple.cfg.\r\n\r\nCurrently we have to add a prefix '*/' to the pattern if we are looking for first letter matches. See clean_simple.cfg for examples.\r\n\r\n",
+            "created_on": "2013-08-03T20:03:04Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 1848,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-08-20T17:44:10Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "7",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 1851,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "{FIXME}\r\n-Don't store the whitelist in a CVAR- now flagged as CVAR_PROTECT",
+            "created_on": "2013-08-23T09:05:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1853,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-08-23T09:58:46Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 1854,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "IR4T4 wrote:\r\n> {FIXME}\r\n> - Don't store the whitelist in a CVAR\r\nWhy not? Where else should it be stored?",
+            "created_on": "2013-08-23T10:21:58Z",
+            "details": []
+        },
+        {
+            "id": 1855,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Radegast wrote:\r\n> Why not? Where else should it be stored?\r\nThat's the q ... I'm still thinking about a solution. I just don't want to see admins forcing this var to their needs ....\r\n",
+            "created_on": "2013-08-23T10:32:19Z",
+            "details": []
+        },
+        {
+            "id": 1857,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Ok. issue is solved. CVAR_PROTECT flag does the trick. ",
+            "created_on": "2013-08-23T16:59:27Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "5",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 1958,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-09-18T18:41:11Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "7",
+                    "new_value": "9"
+                }
+            ]
+        },
+        {
+            "id": 2104,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-10-18T15:01:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "9",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 2480,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-12-15T21:25:59Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "426"
+                }
+            ]
+        },
+        {
+            "id": 2481,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "From source code comments:\r\n> - optimize - don't do this each loop! -> strtok modifies the input string, which is undefined behaviour on a literal char[], at least in C99\r\n\r\n<code class=\"C\">char whitelist[MAX_OSPATH];</code> is not a string literal, it is a char array that can be modified, so it can be used in @strtok@.",
+            "created_on": "2013-12-17T19:02:46Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 2682,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-01-02T08:52:09Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 2692,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "One last thing I wanted to do is to move the function to the files commands where it belongs and rename it to @rm@ (@clean@ would be aliased to @rm@ for the clients).",
+            "created_on": "2014-01-02T10:00:18Z",
+            "details": []
+        },
+        {
+            "id": 2694,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I know of a small bug which is related to the filename and we should also add an option to delete binaries.\r\nSince fs_homepath is the first location binaries are loaded from listen servers may not start with installed binaries from fs_basepath.",
+            "created_on": "2014-01-02T10:18:53Z",
+            "details": []
+        },
+        {
+            "id": 2708,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "But I already added this option in commit:3c24e7f9. If you pass @force@ argument to this command, then all binaries and configuration files that are hard-whitelisted can be deleted. Only those patterns/files that user specifically adds to @com_cleanWhitelist@ are skipped.",
+            "created_on": "2014-01-02T12:43:14Z",
+            "details": []
+        },
+        {
+            "id": 2709,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Radegast wrote:\r\n> But I already added this option in commit:3c24e7f9. If you pass @force@ argument to this command, then all binaries and configuration files that are hard-whitelisted can be deleted. Only those patterns/files that user specifically adds to @com_cleanWhitelist@ are skipped.\r\n\r\nWunderbar! So there is only one bug left ... let's talk about on IRC.",
+            "created_on": "2014-01-02T12:56:51Z",
+            "details": []
+        },
+        {
+            "id": 2733,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "@Radegast I think I know how to fix our bug. stat() doesn't work for filenames containing unicode characters as we know now. In int FS_OSStatFile(char *ospath) we should check ospath for non ASCI chars. If found try to read the file directly ... \r\n",
+            "created_on": "2014-01-03T08:28:12Z",
+            "details": []
+        },
+        {
+            "id": 2734,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "No, it was my mistake. The problem is in fact in the @MAX_OSPATH@ limit like you said. The simple solution I tried was to increase the limit in the affected functions which worked, but I am sure it would cause bugs in other parts of code. If the game relies on such path limit then we should probably make sure it is followed everywhere.\r\n",
+            "created_on": "2014-01-03T08:53:47Z",
+            "details": []
+        },
+        {
+            "id": 4791,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-03-16T21:47:19Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 5658,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-12-12T10:07:43Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 5669,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "{FIXME}\r\nRestrict pk3 filenames  to \"real\" ascii characters (0x20-0x7e). Some admins take advantage of the 7f characters to ensure it their menu loads last, but this make it also more difficult to remove it. This shouldn't be an issue for Legacy mod (that run on ET:L server). For other mods on 2.60b, this might prevent ET:L clients to correctly register these pak, and then probably fail to load the game entirely. But this is an annoying \"hack\" anyway - admin that do that will also lose potential players, to their own loss.\r\n\r\nNote: don't fail silently, add a warning in console when such pak can't be registered.",
+            "created_on": "2015-12-13T12:48:52Z",
+            "details": []
+        },
+        {
+            "id": 5674,
+            "user": {
+                "id": 110,
+                "name": "Harlekin"
+            },
+            "notes": "Why not ad a option to backup the files in a sub folder instead of only deleting them, that way users could copy some files back that they really wan't and whitelist them if the like. Also a text file \"how_to_whitelist_files.txt\" should be created after clean was used. Should be easy to put all moved/deleted filesnames into that file with the whitelist command. That way players could easy protect their wanted files from being erased next time.",
+            "created_on": "2015-12-13T20:09:07Z",
+            "details": []
+        },
+        {
+            "id": 5702,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Regarding latest commit, I'd change the message \"File name \\\"%s\\\" contains an invalid character for ET: L file structure.\\nSome admins take advantage of this to ensure their menu loads last.\\nThe file has been removed.\\n\" to a more generic variant, without the information about admins that abuse it. I'd say that information is irrelevant here.\r\n\r\nAlso, wouldn't it be possible to just change file extension so ET:L won't load it instead of completely removing the file?\r\n\r\nOne more thing is that the check lacks condition for characters lower than 0x20. Didin't check if they can be used in file names but if yes, I'd block using them just in case.",
+            "created_on": "2015-12-20T11:28:02Z",
+            "details": []
+        },
+        {
+            "id": 5703,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Agree with Dragon here.\r\n\r\nAlso, IR4T4 mentioned the possibility to remove the \"faulty\" files at the next startup, which would allow connection to servers without the drawback of keeping these annoying files on disk. This requires more work to implement, but that sounds like the best way to handle this issue here.",
+            "created_on": "2015-12-20T11:53:17Z",
+            "details": []
+        },
+        {
+            "id": 5706,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "We did find another solution to solve this issue. #53 is done.",
+            "created_on": "2015-12-20T18:26:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 53,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "Implement a command cleaning the homepath",
+    "description": "Command: /clean <params>\r\n\r\nFor fs_homepath in etmain & mod pathes:\r\n\r\n* delete all .tmp files (aborted DL)\r\n* remove all pk3 files starting with z_ , zz or ~\r\n* remove all pk3 or remove files which are not part of a whitelist.cfg file (list of pk3 map files which shouldn't be removed. This file should be stored and read from fs_basepath only)\r\n\r\nWe may delete tmp files at start of ET: Legacy by default or add it somewhere else.\r\n\r\n* Add options to execute the command in the menus   \r\n",
+    "start_date": "2012-05-16",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2012-05-16T19:12:52Z",
+    "updated_on": "2015-12-20T18:26:50Z",
+    "closed_on": "2015-12-20T18:26:50Z"
+}

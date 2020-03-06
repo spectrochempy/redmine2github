@@ -1,0 +1,184 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "16205d5950f4db77354196681c3d17840cd526ed",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "qcommon: set socket timeout explicitly (not active) refs #951 - this\nfixes the issue on my local system and I've had no side efects so far\nFIXME: WINDOWS:\nTimeout value is a DWORD in milliseconds, address passed to setsockopt()\nis const char *",
+            "committed_on": "2016-12-22T10:51:15Z"
+        },
+        {
+            "revision": "535088fa4ae380944d141115bf763f3472a4eff6",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "qcommon: set socket timeout explicitly, refs #951",
+            "committed_on": "2017-01-13T16:46:32Z"
+        },
+        {
+            "revision": "ffb896d9fb8894b523094e4f6f7e0c1d2afa0e95",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "qcommon: set tv_usec for our timeval",
+            "committed_on": "2017-01-14T23:58:58Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 6093,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-10-07T15:38:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 6096,
+            "user": {
+                "id": 2,
+                "name": "Anonymous"
+            },
+            "notes": "Update:\r\nWeird, when I plug in cable after the game freezes, ET Legacy will start up after a while! So I did the following: \r\n1. I started ET Legacy without being connected -> ET Legacy draws a black screen, as mentioned above.\r\n2. After a while I plugged in the LAN cable -> ET Legacy suddenly succeeded and finished loading into UI.\r\n3. I could bring down the console and did a condump command. Here is what the last line look like:\r\n\r\n...Network initialized.\r\nWorking directory: D:\\Spiele\\Wolfenstein - Enemy Territory\r\nMOTD: resolving motd.etlegacy.com... *couldn't resolve address*\r\nUpdater: resolving update.etlegacy.com... XXXXXXXXX*\r\n\r\n_(* this is the IP adress I changed it to XXXXXXXXX)_\r\n\r\nNow, I checked other idtech3 games (Ioquake3, IoRtcw, Spearmint, Tremulous, etc.) they don't show the last two lines, probably this is why those games start without problems, even when disconnected? Is there any cvar to test this without searching for MOTD address?\r\nEventually we can get rid of the *couldn't resolve address* problem?\r\n\r\n\r\n",
+            "created_on": "2016-10-07T21:41:41Z",
+            "details": []
+        },
+        {
+            "id": 6097,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I get the same issue when my wifi connection is pretty bad.\r\nSetting up the timeout to be shorter might greatly help here, although I have no idea what would be a good setting.",
+            "created_on": "2016-10-07T22:23:04Z",
+            "details": []
+        },
+        {
+            "id": 6156,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-11-09T18:04:15Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 6218,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-01-13T16:48:43Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 6290,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-02-01T09:13:47Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 951,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 2,
+        "name": "Anonymous"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Allways start ET Legacy even without internet connection.",
+    "description": "If I start ET Legacy without connecting my cable to my Router/Switch, ET Legacy starts but will only show a black screen and freezes. I have to quit ET Legacy by opening the Windows Task Manager and quit ETL from there. If I connect the LAN cable ET Legacy works without problems. I wonder if this is intentionnally or not. Most of the idtech3 based games/engines I knew will also work locally, without being connected (ioquake3/iortcw/Spearmint etc.). Probably there are poeple that want to play ET Legacy without Internet Connection (e.g.: playing against Omni-bots). Shouldn\u2019t ET Legacy run in this case also? Or is there any cvar to enable playing ET Legacy without Internet Connection? Even if it was intentionally made to prevent ET Legacy to run without Internet Connection, I think ET Legacy shouldn't freeze at least if there is no connection.\r\n\r\nSystem: Win 7 Home Premium SP 1 64-bit German\r\nNV Geforce GTX 770\r\n\r\nET Legacy: Compiled and downloaded from official dl place from ET Legacy site.\r\nVersion 2.75 (unmodified)\r\n",
+    "start_date": "2016-10-07",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2016-10-07T14:34:51Z",
+    "updated_on": "2017-02-01T09:13:47Z",
+    "closed_on": "2017-02-01T09:13:47Z"
+}

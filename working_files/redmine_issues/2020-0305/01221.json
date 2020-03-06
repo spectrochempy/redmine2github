@@ -1,0 +1,105 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 413,
+            "issue_id": 1221,
+            "issue_to_id": 1056,
+            "relation_type": "duplicates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7987,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-19T08:29:48Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "duplicates",
+                    "new_value": "1056"
+                }
+            ]
+        },
+        {
+            "id": 7991,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Duplicate. Closing this entry.",
+            "created_on": "2019-04-19T08:32:27Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1221,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 6,
+        "name": "Urgent"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Client doesn't like path with non-ASCII characters",
+    "description": "The client cannot load the mod files if there are non-ASCII characters in the path. Changing the path to ASCII characters only (ie, changing username) fixes the issue. Detected on windows, but might be an issue on all platforms.\r\n\r\nSee\r\n```\r\nSound memory manager started\r\nSys_LoadGameDll \u2192 FS_CL_ExtractFromPakFile(C:\\Users\\K\u00e4ytt\u00e4j\u00e4\\Documents\\ETLegacy, legacy, ui_mp_x86.dll)\r\nSys_LoadDll(C:\\Users\\K\u00e4ytt\u00e4j\u00e4\\Documents\\ETLegacy\\legacy\\ui_mp_x86.dll)... failed: \"Failed loading C:\\Users\\K\u00e4ytt\u00e4j\u00e4\\Documents\\ETLegacy\\legacy\\ui_mp_x86.dll: The specified module could not be found.\r\n\r\n\" \r\nSys_LoadDll(.\\legacy\\ui_mp_x86.dll)... failed: \"Failed loading .\\legacy\\ui_mp_x86.dll: The specified module could not be found.\r\n```\r\n\r\nSee https://dev.etlegacy.com/boards/2/topics/3590?r=3610#message-3610.",
+    "start_date": "2019-03-20",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-03-20T17:08:30Z",
+    "updated_on": "2019-04-19T08:32:27Z",
+    "closed_on": "2019-04-19T08:32:27Z"
+}

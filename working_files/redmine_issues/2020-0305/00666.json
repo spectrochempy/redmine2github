@@ -1,0 +1,193 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 177,
+            "issue_id": 666,
+            "issue_to_id": 32,
+            "relation_type": "blocks",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "3e52d5e65de823e17c6989ba6efaa9f8b29a97de",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "general: separated motd check from update check, refs #666\n\nand moved it to the playonline menu.",
+            "committed_on": "2014-12-04T15:36:43Z"
+        },
+        {
+            "revision": "46e62c484fdae4edec656620e6827223eab3f2a0",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "Revert \"general: separated motd check from update check, refs #666\"\n\nThis reverts commit 3e52d5e65de823e17c6989ba6efaa9f8b29a97de.",
+            "committed_on": "2014-12-04T15:58:43Z"
+        },
+        {
+            "revision": "68e019632c72eaa5209f2cfedab42acff6e2f218",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "the client will check for updates every 5 minutes, refs #32",
+            "committed_on": "2014-12-18T18:23:26Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3898,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-27T22:07:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "MOTD: resolving: motd.etlegacy.com...",
+                    "new_value": "Spamming requests to {motd,update}.etlegacy.com"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "3",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 4093,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-12-14T17:58:35Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "blocks",
+                    "new_value": "32"
+                }
+            ]
+        },
+        {
+            "id": 4140,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "While someone might consider this spam, to me it is not that. If the client does not check data from the master server often it can miss out on important information such as updates (this can happen while the user has the client open). Besides the data sent/received is very minuscule and does not really affect anything that much. ",
+            "created_on": "2014-12-18T08:42:01Z",
+            "details": []
+        },
+        {
+            "id": 4156,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Jacker wrote:\r\n> While someone might consider this spam, to me it is not that. If the client does not check data from the master server often it can miss out on important information such as updates (this can happen while the user has the client open). Besides the data sent/received is very minuscule and does not really affect anything that much.\r\n\r\nTrue. Vanilla client has been behaving this way for years. I however still believe it's overkill: update and motd are checked every time the player access the main menu.\r\n\r\nOn my previous commit, I tried to separate motd checks from update checks, by checking motd only when the player opens the \"Play online\" window. This didn't solve the \"check update every time\", but lessens the \"motd spam\". This has been reverted since vanilla client didn't really like that change (all menu strings disappearing).\r\n\r\nAs a very cheap workaround, we could hide the \"motd\" print in console for the time being.",
+            "created_on": "2014-12-18T14:47:49Z",
+            "details": []
+        },
+        {
+            "id": 4157,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Now that the update code works, I will just move the checks to be mandatory once per (5 mins?) and remove the UI dependency for that. That way it wont spam.",
+            "created_on": "2014-12-18T15:09:50Z",
+            "details": []
+        },
+        {
+            "id": 4165,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "I changed the way the code works, now it only checks for updates every 5 minutes.",
+            "created_on": "2014-12-18T18:51:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 666,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Spamming requests to {motd,update}.etlegacy.com",
+    "description": "Hello all, this is far from worth of being the ticket from Hell but this gets spammed in the console by following the next steps:\r\n1. Start etl.exe\r\n2. Start pressing ESC continously like 20 times f.e.\r\n3. Check console\r\n\r\nThis was just an example but this works also in a bit more of a normal way:\r\n1. Go to 'Options'\r\n2. Go back by pressing 'Back' or press ESC\r\n3. Check console\r\n\r\nThis message comes only once each time you go back to the main menu. So here's an example how you get the mssage three times for instance:\r\n1. Go to 'Play Online'\r\n2. Go back\r\n3. Go to 'Options'\r\n4. Go back\r\n5. Go to 'Mods'\r\n6. Go back\r\n\r\nIt's not a big of a deal but I think it's something to be considered.\r\n\r\n-*S",
+    "start_date": "2014-11-27",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-27T15:26:56Z",
+    "updated_on": "2014-12-18T18:51:45Z",
+    "closed_on": "2014-12-18T18:51:45Z"
+}

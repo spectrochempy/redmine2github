@@ -1,0 +1,327 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 314,
+            "issue_id": 983,
+            "issue_to_id": 634,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "5daaa13c3e0c0982a4abfda640bb95a9b9abf2bd",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: fix uninitialized pointer read, don't let covert ops name\ndisappear immediately fixes #634, var scope",
+            "committed_on": "2015-10-11T12:53:29Z"
+        },
+        {
+            "revision": "44ea9476126483fdeafbceb559b89d20c3b1ae75",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: do not fade enemy disguised name label at close range, fixes #634",
+            "committed_on": "2015-11-22T17:01:34Z"
+        },
+        {
+            "revision": "637cfa4c61f8382100fedee6341402ff4bcadb21",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: set distance to 0 and added comment, refs #634",
+            "committed_on": "2015-11-22T18:44:59Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3738,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2014-11-19T17:14:48Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Disguised enemy name is shown in consistently",
+                    "new_value": "Disguised enemy name is shown inconsistently"
+                }
+            ]
+        },
+        {
+            "id": 5259,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "This is actually done on purpose to help distinguish disguised coverops.\r\nThis said, I personally would like to improve  coverops gameplay a bit, and \"fix\" that issue.",
+            "created_on": "2015-09-04T15:57:29Z",
+            "details": []
+        },
+        {
+            "id": 5260,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-09-04T15:57:38Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "16"
+                }
+            ]
+        },
+        {
+            "id": 5309,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-09-30T17:12:53Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 5319,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Applied in changeset commit:5daaa13c3e0c0982a4abfda640bb95a9b9abf2bd.",
+            "created_on": "2015-10-12T06:21:42Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 5320,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Distance is still a factor to consider here. Now the name doesn't disappear right away on long distance (as it should), but currently on short distance the name doesn't show at all (as this is the way SD implemented it) but the name *appears* when you look away.\r\n\r\nHere we can either:\r\n1/ remove the short distance trick and make disguised name appears at all time. This will make it easier for covops to sneak undercover.\r\n2/ keep it as it is in vanilla. Disguised name doesn't appear at all on short distance.\r\n3/ keep it as it is. This would be a middle ground between making covopts too easy to spot and too difficult to spot.\r\n\r\nI'd favor the first option as I find covops way too easy to spot, but this is indeed a gameplay change.\r\n\r\nEdit: added option 3. ",
+            "created_on": "2015-10-12T09:33:10Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 5322,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "+1 for 1 ... give the covert ops more power!\r\n\r\nEdit: ... massive change in gameplay: there is still the weapon which doesn't fit in most cases and stealing a covert ops uniform is just the perfect way :D",
+            "created_on": "2015-10-12T18:41:31Z",
+            "details": []
+        },
+        {
+            "id": 5381,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-11-15T09:10:52Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 5382,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Issue still present at close range...",
+            "created_on": "2015-11-15T19:02:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 5398,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:44ea9476126483fdeafbceb559b89d20c3b1ae75.",
+            "created_on": "2015-11-22T17:06:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 5399,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Point 1/ above has been implemented and the covops should now have more power. In case this change is too invasive, it is possible to reduce the distance at which the label disappears (was 512 unit, now 0).",
+            "created_on": "2015-11-22T18:48:30Z",
+            "details": []
+        },
+        {
+            "id": 5422,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-11-23T21:50:09Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 6443,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-02-18T17:33:05Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "983"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 634,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "Disguised enemy name is shown inconsistently",
+    "description": "This has been a bothering issue since quite long time but now I managed to make a ticket about it. In the demo, the player on the left hand side is an enemy covert op and the player on the right side is your friend. When you move your mouse from right to left over the enemy in disguise, you will see how the name disappears very fast from the HUD. But when you move your mouse from left to right, it shows it like it would show on the friendly player, the name disappears normally.\r\n\r\nIn the demo you can also see another bug related to demo playback when you look at the fireteam on the top left corner.\r\n\r\nThere's an demo attached, watch and see.\r\n\r\n-*S",
+    "start_date": "2014-11-19",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-19T17:14:10Z",
+    "updated_on": "2015-11-23T21:50:09Z",
+    "closed_on": "2015-11-22T17:06:08Z"
+}

@@ -1,0 +1,249 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "b15d9813a814387c0baa3fecaed62c306861760b",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: print lost obituary messages to console refs #994",
+            "committed_on": "2017-02-08T15:01:54Z"
+        },
+        {
+            "revision": "e2bed086fc6097e40438657fe02ccd2f23451cb6",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: fix double team messages refs #994",
+            "committed_on": "2017-02-14T17:18:35Z"
+        },
+        {
+            "revision": "0edfca497981b9164bb43b72431d61037faf2a82",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: display team change for spectators in console, refs #994",
+            "committed_on": "2017-02-15T19:17:21Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 6345,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-02-08T14:21:53Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Some stuff aren't logged to console log:\r\n\r\n* objective/map-related info\r\n* player joins spectators\r\n* player connects\r\n* player disconnects\r\n* ammo/medpack pickups\r\n* custom cpm/echo commands aren't logged to console\r\n\r\nHowever, player joins axis/allies IS logged",
+                    "new_value": "Some stuff aren't logged to console log:\r\n\r\n* objective/map-related info\r\n* player joins spectators\r\n* player connects\r\n* player disconnects\r\n* ammo/medpack pickups\r\n* custom cpm/echo commands aren't logged to console\r\n\r\nHowever, player joins axis/allies IS logged\r\n\r\n\r\nAlso check the MOD messages.\r\nA trap_print was removed in https://github.com/etlegacy/etlegacy/commit/bf91fb97841a365986bf211c343717a4839a79ba#diff-b292d2a61ed52d7e17b568718574d7ae, not sure if that was really intended."
+                }
+            ]
+        },
+        {
+            "id": 6347,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-02-08T14:53:26Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "tracker_id",
+                    "old_value": "2",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "21",
+                    "new_value": "16"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 6410,
+            "user": {
+                "id": 392,
+                "name": "Timothy"
+            },
+            "notes": "commit:b15d9813a814387c0baa3fecaed62c306861760b introduces double messages for joining a team, e.g. \"x joined Axis/Allies\" is now printed both by IR4's (re)addition and by g_client.c (void ClientBegin). Other issues are fixed.",
+            "created_on": "2017-02-14T11:34:49Z",
+            "details": []
+        },
+        {
+            "id": 6411,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-02-14T15:47:10Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 6412,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-02-14T15:47:47Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 6413,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I did also exclude PM_TEAM from our console print.\r\n\r\n@spyhawk\r\nIn the description you are also missing 'player joins spectator'.  Are you sure this wasn't printed before our changes?",
+            "created_on": "2017-02-14T16:23:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 6414,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "IR4T4 wrote:\r\n> In the description you are also missing 'player joins spectator'.  Are you sure this wasn't printed before our changes?\r\n\r\nThe above description has been reported by Timo. I believe spectator team join was printed before. Edit: it's not, only \"joined Axis/Allies team\", but not for spectator team.\r\n\r\n",
+            "created_on": "2017-02-14T17:41:43Z",
+            "details": []
+        },
+        {
+            "id": 6416,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-02-15T20:49:22Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 6594,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-03-19T22:33:09Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 994,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Improve console log",
+    "description": "Some stuff aren't logged to console log:\r\n\r\n* objective/map-related info\r\n* player joins spectators\r\n* player connects\r\n* player disconnects\r\n* ammo/medpack pickups\r\n* custom cpm/echo commands aren't logged to console\r\n\r\nHowever, player joins axis/allies IS logged\r\n\r\n\r\nAlso check the MOD messages.\r\nA trap_print was removed in https://github.com/etlegacy/etlegacy/commit/bf91fb97841a365986bf211c343717a4839a79ba#diff-b292d2a61ed52d7e17b568718574d7ae, not sure if that was really intended.",
+    "start_date": "2017-02-08",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-02-08T14:17:37Z",
+    "updated_on": "2017-03-19T22:33:09Z",
+    "closed_on": "2017-03-19T22:33:09Z"
+}

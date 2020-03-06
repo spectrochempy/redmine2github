@@ -1,0 +1,155 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "a5ebff28adb9779fda018950817ad5c57fb4a297",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "cgame: on pickup weapon, ensure the select weapon is still same as server one, refs #1128",
+            "committed_on": "2018-12-22T23:10:24Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7366,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-12-22T21:10:56Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "hatcher:\r\n- my weapons were gone\r\n- music stuck after being disconnected\r\n- i ran out of ammo\r\n- picked up the enemie's weapon\r\n- picked up two ammo packs\r\n- i not only didn't have an smg but i couldn't switch to the pistol either\r\n\r\nAranud:\r\n\r\nI can reproduce it only if auto switch is not enable\r\nwith auto switch enable it work fine\r\nbut ... still a bug !\r\nyou should be able to switch to another weapon when you don't have one\r\nand it's not currently what happen",
+                    "new_value": "hatcher:\r\n- my weapons were gone\r\n- music stuck after being disconnected\r\n- i ran out of ammo\r\n- picked up the enemie's weapon\r\n- picked up two ammo packs\r\n- i not only didn't have an smg but i couldn't switch to the pistol either\r\n\r\nAranud:\r\nI can reproduce it only if auto switch is not enable\r\nwith auto switch enable it work fine\r\nbut ... still a bug !\r\nyou should be able to switch to another weapon when you don't have one\r\nand it's not currently what happen\r\n\r\nWuTangH:\r\nYes, I have it too with autoreload and switch OFF"
+                }
+            ]
+        },
+        {
+            "id": 7374,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "Feedback appreciate !",
+            "created_on": "2018-12-22T23:11:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 7389,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Not entirely fixed yet.\r\nWith default settings (cg_noAmmoAutoSwitch 1, cg_autoReload 1), I can pick up the enemy weapon but it isn't inserted in the slot correctly. No weapon are displayed (WP_NONE?), and I have to press '3' to get my new weapon.",
+            "created_on": "2018-12-24T12:07:23Z",
+            "details": []
+        },
+        {
+            "id": 7408,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "bq. With default settings (cg_noAmmoAutoSwitch 1, cg_autoReload 1), I can pick up the enemy weapon but it isn\u2019t inserted in the slot correctly. No weapon are displayed (WP_NONE?), and I have to press '3\u2019 to get my new weapon.\r\n\r\nIt is the wanted behaviour :) ",
+            "created_on": "2018-12-26T09:49:24Z",
+            "details": []
+        },
+        {
+            "id": 7415,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "You're right, my mistake. Tested with both cg_noAmmoAutoSwitch 1 and 0, the behavior is the very same as vanilla/2.75.",
+            "created_on": "2018-12-26T16:48:14Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1128,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 6,
+        "name": "Urgent"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 251,
+        "name": "Aranud"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Can't pick up weapon when auto switch is not enabled",
+    "description": "hatcher:\r\n- my weapons were gone\r\n- music stuck after being disconnected\r\n- i ran out of ammo\r\n- picked up the enemie's weapon\r\n- picked up two ammo packs\r\n- i not only didn't have an smg but i couldn't switch to the pistol either\r\n\r\nAranud:\r\nI can reproduce it only if auto switch is not enable\r\nwith auto switch enable it work fine\r\nbut ... still a bug !\r\nyou should be able to switch to another weapon when you don't have one\r\nand it's not currently what happen\r\n\r\nWuTangH:\r\nYes, I have it too with autoreload and switch OFF",
+    "start_date": "2018-12-22",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2018-12-22T21:05:43Z",
+    "updated_on": "2018-12-26T16:48:14Z",
+    "closed_on": "2018-12-26T16:48:14Z"
+}

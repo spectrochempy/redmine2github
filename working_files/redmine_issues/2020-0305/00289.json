@@ -1,0 +1,217 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "daba4deb4fdc499f1de03d78fceb2568684cf8f9",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "dynatimer: lua 5.2 compatibility added by Phenomenon, fixes #289",
+            "committed_on": "2014-02-01T22:42:16Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1515,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-04-10T19:22:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 1527,
+            "user": {
+                "id": 162,
+                "name": "Phenomenon"
+            },
+            "notes": "'table.foreach' was deprecated in Lua 5.1, so it's removed in Lua 5.2. You should use 'for key,value in pairs(table) do ... end' instead.\r\n\r\nI've attached a untested modified version of dynamite.lua. Please try it and give some feedback ...",
+            "created_on": "2013-04-11T20:55:26Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "167",
+                    "new_value": "dynamite.lua"
+                }
+            ]
+        },
+        {
+            "id": 1528,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Phenomenon wrote:\r\n> 'table.foreach' was deprecated in Lua 5.1, so it's removed in Lua 5.2. You should use 'for key,value in pairs(table) do ... end' instead.\r\n> \r\n> I've attached a untested modified version of dynamite.lua. Please try it and give some feedback ...\r\n\r\nThank a lot. benny_the_jet also sent me a modified version, but I haven't tested it yet.\r\n\r\n",
+            "created_on": "2013-04-11T21:33:35Z",
+            "details": []
+        },
+        {
+            "id": 1532,
+            "user": {
+                "id": 162,
+                "name": "Phenomenon"
+            },
+            "notes": "Spyhawk wrote:\r\n> Thank a lot. benny_the_jet also sent me a modified version, but I haven't tested it yet.\r\n\r\nThere's also a \"dc.lua\" script around the WWW. Created by Necromancer and adapted by IRATA for NoQuarter. This should work fine with Lua 5.2.",
+            "created_on": "2013-04-12T07:03:04Z",
+            "details": []
+        },
+        {
+            "id": 1537,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2013-04-12T18:59:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                }
+            ]
+        },
+        {
+            "id": 1582,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Why can't you use Lua 5.1?",
+            "created_on": "2013-04-27T10:41:29Z",
+            "details": []
+        },
+        {
+            "id": 1591,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Dragonji wrote:\r\n> Why can't you use Lua 5.1?\r\n\r\nSure I can, but that's not the point. Lua 5.2 has been released in December 2011. It breaks ABI, but is likely to be shipped as default on most Linux distribution once the major libraries are made compatible (5.2 is already the default on my distribution). On the medium term, we have to ensure that scripts in the repo work with both Lua 5.1 and 5.2, and we'll have to care only about 5.2 on the long term.",
+            "created_on": "2013-04-27T10:55:14Z",
+            "details": []
+        },
+        {
+            "id": 2939,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Applied in changeset etlegacy-lua|commit:daba4deb4fdc499f1de03d78fceb2568684cf8f9.",
+            "created_on": "2014-02-01T22:45:27Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 2940,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Phenomenon wrote:\r\n> I've attached a untested modified version of dynamite.lua. Please try it and give some feedback ...\r\n\r\nIt took a bit longer than you probably expected, but I tested and committed your script (I only had to change @b 8@ to @cpm@ and enabled dynatimer by default). Thank you!",
+            "created_on": "2014-02-01T22:48:19Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "0"
+                }
+            ]
+        },
+        {
+            "id": 2941,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2014-02-01T22:48:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 289,
+    "project": {
+        "id": 4,
+        "name": "Lua scripts for the Legacy mod"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 22,
+        "name": "Lua scripts"
+    },
+    "fixed_version": {
+        "id": 4,
+        "name": "ALL"
+    },
+    "subject": "dynamite.lua not compatible with Lua 5.2",
+    "description": "The current dynamite.lua isn't compatible with Lua 5.2.\r\n\r\nThe following looping error is displayed in console:\r\nLua API: et_RunFrame error running lua script: [string \"dynamite.lua\"]:139: attempt to call field 'foreach' (a nil value)\r\n\r\nSeems Lua 5.2 does not ignore empty field in loop anymore.",
+    "start_date": "2013-04-10",
+    "done_ratio": 100,
+    "created_on": "2013-04-10T18:20:17Z",
+    "updated_on": "2014-02-01T22:48:50Z",
+    "closed_on": "2014-02-01T22:48:50Z"
+}

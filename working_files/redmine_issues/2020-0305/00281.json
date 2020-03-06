@@ -1,0 +1,138 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "d83f9052a1187c56e6acbfb652a160edbcbf81fa",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "ui: removed g_<team>maxlives replaced by g_maxlives refs #281",
+            "committed_on": "2013-04-05T15:49:54Z"
+        },
+        {
+            "revision": "0a2dfcc9cb27724c702b735ed01cdb3acac742d5",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "Revert \"ui: removed g_<team>maxlives replaced by g_maxlives refs #281\"\n\nThis reverts commit d83f9052a1187c56e6acbfb652a160edbcbf81fa.\n\nThe g_<team>maxlives cvar are still present in the code. Not sure how I\nmissed that :/",
+            "committed_on": "2013-04-06T19:20:10Z"
+        },
+        {
+            "revision": "b3506cd3cee42268370b0163d99973adcdcf00f6",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "Merge pull request #43 from Spyhawk/mydev\n\nui: revert last commits, refs #281",
+            "committed_on": "2013-04-06T20:58:03Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1490,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "",
+            "created_on": "2013-04-05T15:53:18Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 1500,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Spyhawk wrote:\r\n> The g_axismaxlives and g_alliedmaxlives cvar have been removed from the server code (see #30). However, those are still present in the hostgame_advanced screen. Remove those cvar field, and replace by the g_maxlives if this is pertinent.\r\n\r\nI'm not sure how I missed that (typo in my search?), but the g_<team>maxlives are still present in the code. This commit must be reverted.\r\n\r\n",
+            "created_on": "2013-04-06T19:18:16Z",
+            "details": []
+        },
+        {
+            "id": 1501,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2013-04-06T19:36:48Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "0"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 281,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 15,
+        "name": "Mod UI"
+    },
+    "fixed_version": {
+        "id": 7,
+        "name": "2.71rc2"
+    },
+    "subject": "g_<team>maxlives should be removed/replaced in ui",
+    "description": "The g_axismaxlives and g_alliedmaxlives cvar have been removed from the server code (see #30). However, those are still present in the hostgame_advanced screen. Remove those cvar field, and replace by the g_maxlives if this is pertinent.",
+    "start_date": "2013-04-05",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-04-05T12:54:48Z",
+    "updated_on": "2013-04-06T19:36:48Z",
+    "closed_on": "2013-04-05T15:53:18Z"
+}

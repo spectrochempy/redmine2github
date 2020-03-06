@@ -1,0 +1,108 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 4495,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2015-01-24T00:54:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "16"
+                }
+            ]
+        },
+        {
+            "id": 7042,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "",
+            "created_on": "2018-01-25T15:29:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 694,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Dismounting mortar has unsynched sound after firing a shot",
+    "description": "Title tells something but the demo tells more. How to reproduce:\r\n1. Mount Mortar\r\n2. Shoot\r\n3. Try to dismount fast after the shot has been fired\r\nThis results the dismount sound being unsynched. It plays the sound before the actual animation ever happens. In some cases when you try to dismount fast by pressing MOUSE2 a couple of times, it might play the dismount sound even twice before the actual dismount animation ever happens.\r\n\r\n-*S",
+    "start_date": "2014-12-06",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-12-06T14:40:42Z",
+    "updated_on": "2018-01-25T15:29:57Z",
+    "closed_on": "2018-01-25T15:29:57Z"
+}

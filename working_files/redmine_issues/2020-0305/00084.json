@@ -1,0 +1,142 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 25,
+            "issue_id": 84,
+            "issue_to_id": 74,
+            "relation_type": "blocks",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "784cc7fad19d67b7bdaf83834f12b18605ddcb1b",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "general: clang/gcc-llvm build fixed by IR4T4 and /dev/hc, fixes #84",
+            "committed_on": "2012-10-09T13:49:23Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 353,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "*Confirmed* on Linux with clang version 3.1 (branches/release_31).\r\n\r\nThis is probably something about dynamic load vm...\r\n\r\n<pre>\r\nmmap2(0x4fcc5000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 126, 0x5e) = 0x4fcc5000\r\nmmap2(0x4fccb000, 3315872, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x4fccb000\r\nclose(126)                              = 0\r\nwrite(2, \"Sys_LoadDll(/home/morsik/.etwolf\"..., 69Sys_LoadDll(/home/morsik/.etwolf/etmain/ui.mp.i386.so): succeeded ...) = 69\r\nwrite(2, \"\\33[0m\\n\", 5\r\n)                 = 5\r\nwrite(2, \"Sys_LoadDll(ui) found vmMain fun\"..., 51Sys_LoadDll(ui) found vmMain function at 0x4fc8a086) = 51\r\nwrite(2, \"\\33[0m\\n\", 5\r\n)                 = 5\r\n--- {si_signo=SIGSEGV, si_code=SEGV_MAPERR, si_addr=0x41} (Segmentation fault) ---\r\n</pre>",
+            "created_on": "2012-10-07T16:41:08Z",
+            "details": []
+        },
+        {
+            "id": 354,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "gdb output:\r\n\r\n<pre>\r\nSys_LoadDll(/home/morsik/.etwolf/etmain/ui.mp.i386.so)... \r\nSys_LoadDll(/home/morsik/.etwolf/etmain/ui.mp.i386.so): succeeded ...\r\nSys_LoadDll(ui) found vmMain function at 0x504e0086\r\n\r\nProgram received signal SIGSEGV, Segmentation fault.\r\n0x0805b29f in CopyString (in=0x41 <Address 0x41 out of bounds>) at /home/morsik/Projects/etlegacy/src/qcommon/common.c:1337\r\n1337\t\tif (!in[0])\r\n(gdb) bt\r\n#0  0x0805b29f in CopyString (in=0x41 <Address 0x41 out of bounds>) at /home/morsik/Projects/etlegacy/src/qcommon/common.c:1337\r\n#1  0x0808da64 in Cvar_Get (var_name=0x50505c55 <trap_Cvar_Register+61> \"\\203\\304([\\303\", <incomplete sequence \\350>, \r\n    var_value=0x41 <Address 0x41 out of bounds>, flags=1350284384) at /home/morsik/Projects/etlegacy/src/qcommon/cvar.c:376\r\n#2  0x0808f368 in Cvar_Register (vmCvar=0x5050e261, varName=0x50505c55 <trap_Cvar_Register+61> \"\\203\\304([\\303\", <incomplete sequence \\350>, \r\n    defaultValue=0x41 <Address 0x41 out of bounds>, flags=1350284384) at /home/morsik/Projects/etlegacy/src/qcommon/cvar.c:1178\r\n#3  0x080bab3c in CL_UISystemCalls (args=0xffffcf14) at /home/morsik/Projects/etlegacy/src/client/cl_ui.c:908\r\n#4  0x080902be in VM_DllSyscall (arg=65) at /home/morsik/Projects/etlegacy/src/qcommon/vm.c:343\r\n#5  0x50505c55 in trap_Cvar_Register () from /home/morsik/.etwolf/etmain/ui.mp.i386.so\r\n#6  0x504de7f7 in _UI_Init () from /home/morsik/.etwolf/etmain/ui.mp.i386.so\r\n#7  0x504e01f6 in vmMain () from /home/morsik/.etwolf/etmain/ui.mp.i386.so\r\n#8  0x08090c5f in VM_Call (vm=0xa55eca8 <vmTable>, callnum=1) at /home/morsik/Projects/etlegacy/src/qcommon/vm.c:714\r\n#9  0x080be14a in CL_InitUI () at /home/morsik/Projects/etlegacy/src/client/cl_ui.c:1352\r\n#10 0x080c99ce in CL_StartHunkUsers () at /home/morsik/Projects/etlegacy/src/client/cl_main.c:3270\r\n#11 0x0805ea89 in Com_Init (commandLine=0xffffd24c \"\") at /home/morsik/Projects/etlegacy/src/qcommon/common.c:3112\r\n#12 0x080e483b in main (argc=1, argv=0xffffd704) at /home/morsik/Projects/etlegacy/src/sys/sys_main.c:715\r\n</pre>",
+            "created_on": "2012-10-07T16:55:43Z",
+            "details": []
+        },
+        {
+            "id": 355,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Applied in changeset commit:784cc7fad19d67b7bdaf83834f12b18605ddcb1b.",
+            "created_on": "2012-10-09T13:57:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 356,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2012-10-09T13:58:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 1,
+            "name": "Radegast"
+        }
+    ],
+    "time_entries": null,
+    "id": 84,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 1,
+        "name": "2.70rc1"
+    },
+    "subject": "ET:L compiled with Clang or gcc-llvm crashes",
+    "description": "<pre>\r\nSys_LoadDll(/tmp/ui_mac): succeeded ...\r\nSys_LoadDll(ui) found vmMain function at 0x1b90ca5c\r\n\r\nProgram received signal EXC_BAD_ACCESS, Could not access memory.\r\nReason: KERN_PROTECTION_FAILURE at address: 0x00000041\r\n0x0001ce85 in CopyString (in=0x41 <Address 0x41 out of bounds>) at /Users/jansimek/Development/etlegacy/src/qcommon/common.c:1337\r\n1337\t\tif (!in[0])\r\n</pre>\r\n\r\nFull backtrace is attached to this bug report.\r\n\r\nTo prevent users who don't know about this bug from compiling ET:L, clang build is disabled. To enable it, comment out this code in source:src/qcommon/q_platform.h:\r\n\r\n<pre><code class=\"C\">\r\n// FIXME: add llvm/clang support                                                                                                                                                                          \r\n#ifdef __llvm__\r\n#error Although ET:L can be compiled with gcc-llvm/clang, it will crash upon start up!\r\n#endif // __llvm__ \r\n</code></pre>",
+    "start_date": "2012-10-07",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-10-07T16:28:14Z",
+    "updated_on": "2012-10-09T13:58:13Z",
+    "closed_on": "2012-10-09T13:57:13Z"
+}

@@ -1,0 +1,165 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 4283,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "The issue described above is that in ET:L @r_wolffog@ is not a cheat protected cvar anymore. If this is intentional, please close this ticket.",
+            "created_on": "2015-01-05T03:06:43Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "16"
+                }
+            ]
+        },
+        {
+            "id": 4284,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "",
+            "created_on": "2015-01-05T03:10:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Forcecvar issue",
+                    "new_value": "r_wolffog is not cheat protected"
+                }
+            ]
+        },
+        {
+            "id": 4286,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-01-05T07:27:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 4287,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "This has been changed in this \"commit\":https://github.com/etlegacy/etlegacy/commit/8e27811085159ba6319f016cfea045a681e36762 (also check this value in src/rendererGLES/tr_init.c).",
+            "created_on": "2015-01-05T07:38:04Z",
+            "details": []
+        },
+        {
+            "id": 4288,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "I intentionally changed this, since the fog causes very negative framerates on some machines, and it is focred off on most mods anyway.",
+            "created_on": "2015-01-05T08:07:52Z",
+            "details": []
+        },
+        {
+            "id": 4389,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-01-16T11:14:11Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "44"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 587,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 7,
+        "name": "Immediate"
+    },
+    "author": {
+        "id": 35,
+        "name": "Dragonji"
+    },
+    "assigned_to": {
+        "id": 44,
+        "name": "Jacker"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 16,
+        "name": "2.72"
+    },
+    "subject": "r_wolffog is not cheat protected",
+    "description": "Posted by Aciz on silEnT mod forums:\r\n\r\n_I found this little bug on my server today: If a map-specific config has a forcecvar value that is not specified on the default config, after playing the map and switching to new map, clients who play with ET:Legacy are not forced to change that cvar back to default value. Here is an example that we encountered on our server today:_\r\n\r\n_On our server, radar.cfg has forcecvar r_wolffog \"0\" and r_drawfoliage \"0\". We played radar, and forcecvars worked normally. Then we switched to Baserace. For me, fog was automatically forced back to 1, like the default value in ET is. But my friend who played with ET:Legacy, still had it on 0 and could toggle it. Same bug happened on et_ufo after that. But when I modified default.cfg to have forcecvar r_wolffog \"1\" and r_drawfoliage \"1\" and changed map to battery, my friend with ET:Legacy was forced to have r_wolffog \"0\" and couldn't change it. I was able to reproduce the entire issue just few minutes ago, with the exception that I couldn't change  r_wolffog back to 1 after having forced it to 0 on radar._\r\n\r\n_My friend played on Linux with ET:L 2.71 RC3, and I tried this on Windows with ET:L 2.71 RC4. Server is running silEnT 0.8.2._\r\n\r\nLink to original thread: http://mygamingtalk.com/forums/topic/4087-forcecvar-bug/",
+    "start_date": "2014-09-19",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-09-19T12:48:37Z",
+    "updated_on": "2015-01-16T11:14:11Z",
+    "closed_on": "2015-01-16T11:14:11Z"
+}

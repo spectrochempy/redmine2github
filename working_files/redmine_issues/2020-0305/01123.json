@@ -1,0 +1,141 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7327,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-11-18T11:37:51Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "25"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "15"
+                }
+            ]
+        },
+        {
+            "id": 7328,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-11-18T11:40:12Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": ":D ... I can't see the thunder/lights in UI main menu.",
+                    "new_value": ":D ... I can't see the thunder/lightning in UI main menu."
+                }
+            ]
+        },
+        {
+            "id": 7329,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "if you get a Ren_drop ... I'm there for some reason ;)\r\n",
+            "created_on": "2018-11-18T19:20:58Z",
+            "details": []
+        },
+        {
+            "id": 7334,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "It is working (for me) after disconnecting from a listen server.",
+            "created_on": "2018-11-27T17:10:41Z",
+            "details": []
+        },
+        {
+            "id": 8451,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "the shader is called in etl.\r\n\r\nline 2489 in cl_main\r\ncls.consoleShader = re.RegisterShader(\"console-16bit\");",
+            "created_on": "2019-09-03T16:41:46Z",
+            "details": []
+        },
+        {
+            "id": 8493,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "shader is atleast registered\r\n",
+            "created_on": "2019-09-28T12:22:38Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "1145",
+                    "new_value": "registershader.png"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1123,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 25,
+        "name": "Renderer"
+    },
+    "fixed_version": {
+        "id": 15,
+        "name": "renderer2"
+    },
+    "subject": "renderer2: thunder is bugged",
+    "description": ":D ... I can't see the thunder/lightning in UI main menu.",
+    "start_date": "2018-11-18",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2018-11-18T11:36:58Z",
+    "updated_on": "2019-09-28T12:22:38Z"
+}

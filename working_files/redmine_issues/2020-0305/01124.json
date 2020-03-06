@@ -1,0 +1,79 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7333,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-11-27T15:37:51Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "12",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1124,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 733,
+        "name": "N3rwitZ"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "[UI] Disable use of cyrillic symbols in chat (for now)",
+    "description": "About to mention it on Discord but then I remembered we have a tracker! Okay so, simple idea like a temporary solution. When opening chat box in game, my keyboard often switches to Cyrillic first how I adjusted it, I often have to chat with pals and communicate with a lot of people on the internet, and I do it in my native language. However when I'm playing I often start typing something and we know cyrillic doesn't work at the moment both for chat and console, so I end up typing gibberish. I have to type it again, in English, for someone to understand me. It's time consuming, already being moved to spectators for 10 sec inactivity while I'm typing in the chat, ffs. Switching from cyrillic to english then typing the message again. Quite boring.\r\n\r\nHow it sounds if you restrict that until like... you figure out how to improve language support for communications? It isn't useful but confusing now.",
+    "start_date": "2018-11-27",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2018-11-27T13:46:04Z",
+    "updated_on": "2018-11-27T15:37:51Z"
+}

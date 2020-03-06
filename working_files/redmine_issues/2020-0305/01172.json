@@ -1,0 +1,211 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 385,
+            "issue_id": 1172,
+            "issue_to_id": 982,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7586,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-01-18T13:07:43Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "17"
+                }
+            ]
+        },
+        {
+            "id": 7592,
+            "user": {
+                "id": 392,
+                "name": "Timothy"
+            },
+            "notes": "",
+            "created_on": "2019-01-18T13:54:24Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "982"
+                }
+            ]
+        },
+        {
+            "id": 7594,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "See etpro_RadiusDamage (which isn't used for these kind of missiles).",
+            "created_on": "2019-01-18T14:31:19Z",
+            "details": []
+        },
+        {
+            "id": 7958,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "{FIXME}\r\n* -Check aistrike canister damage. It seems somewhat overpowered (note: smoke canister has been reduced from 400 to 140 to fix some refactorization issue, maybe there is something similar here?)- (it's done! See below).",
+            "created_on": "2019-04-14T19:36:00Z",
+            "details": []
+        },
+        {
+            "id": 7964,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "Spyhawk wrote:\r\n> {FIXME}\r\n> * Check aistrike canister damage. It seems somewhat overpowered (note: smoke canister has been reduced from 400 to 140 to fix some refactorization issue, maybe there is something similar here?).\r\n\r\nMy bad, the commit message is wrong ... The weapon affected is the airstrike canister (WP_SMOKE_MARKER). \r\n\r\nhttps://dev.etlegacy.com/projects/etlegacy/repository/revisions/d82d39cdb2bf56be819815aeead73300b792ade3/diff/\r\n\r\nThe last change should be available with the last dirty build : https://dev.etlegacy.com/projects/etlegacy/repository/revisions/40e1de0f1c08b81c35f1ea0f4a245948f894d6ef\r\n\r\nSo, the issue should be already fixed, for airstrike canister at least.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+            "created_on": "2019-04-15T15:52:30Z",
+            "details": []
+        },
+        {
+            "id": 7967,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I see, good to hear! The weapon name is definitively confusing haha.",
+            "created_on": "2019-04-15T17:38:11Z",
+            "details": []
+        },
+        {
+            "id": 8032,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "{TODO}:\r\n* -check etpro \"changelog\" (incomplete, but might have some hint about what they modified here)- (found nothing)\r\n* -check which weapons have reduced damage- (done)\r\n* -check if damage itself has been reduced, or if the splash radius has been modified (which is more likely imho)- (done)\r\n* -check if reduction applies to players only, or everything.- (done)\r\n* check knockback",
+            "created_on": "2019-04-22T11:16:17Z",
+            "details": []
+        },
+        {
+            "id": 8036,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-22T17:11:38Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 8071,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "So I've tried to test splash damage in the most controlled and reproductible way, since we can't implement anything based on \"feelings\" rather than numbers.\r\n\r\nI've used a new default config for both legacy and etpro, only changing the crosshair and cg_fov for etpro to get equivalent fov (90 on legacy and 106.27 on etpro).\r\n\r\nDamages from explosion in ET are characterised by a primary value at a central point, and a defined radius that linearily decrease given damage with distance from that central point.\r\nTo isolate and compare these values independently between legacy and etpro, I used the following methodology (long and tedious process):\r\n* using a victim, and an attacker (in case the attacker can't be the victim), so this means using 2 clients.\r\n* using a similar situation, with target and attacker at the same location. To get precise location, I tested each explosive weapon on the same map at the same location, and looked down at 90 degrees to get an accurate position. Target and attacker were always facing the same direction too.\r\n* measuring at least two different damage points in that radius, so we can check both the radius and the damage given at different distance of the central point.\r\n* reproducing all data points at least 3 times to ensure the above was precise, and variability due to imprecision is reduced to a minimum\r\n* test all of the above alternatively on legacy, then on etpro right away before moving to the next data point. So the process involves at lest 3 measures on legacy, then 3 on etpro, then a second data point with 3 measures on legacy, then 3 on etpro, for each weapon. \r\n* use engineer lvl 4 in some case, as the jacket gives a 50% damage reduction that can help to get precise damage values closer to the central point. (do not forget about respawning after getting skills!)\r\n* some weapon were a bit harder to test than others due to their variability (mortar, airstike, artillery, and riflenade), so more tests in various configuration were done.\r\n\r\nResults are the following:\r\n* I could reproduce similar effects (damage, radius) on many weapons with very little damages difference (2 or 3 HP, in some cases I got the same 0 HP difference). F.e, a weapon would give 70 damages on legacy, and etpro 68. (landmine, satchel, nade, dynamite, airstrike canister).\r\n* I could reproduce similar damages effects with other weapons that have a bit more variability (mortar, airstrike, artillery, rifle nade). Rifle nade is particularly tricky as it's bouncing and I needed to find a proper location I could orient the victim and attacker precisely, while still giving damage easily. I ended up with a somewhat bigger variability on legacy and etpro, but still very comparable damages (5~10 HP or so)\r\n* I found out that damage on legacy is actually slightly but consistently _lower_ when the explosion happens above the player head. This can be explained by the lower bodybox, as explosions don't have effect on the headbox (you can test this on oasis, on the obelix with bazooka f.e.)\r\n\r\nIn a nutshell, legacy and etpro have the _same_ splah damage values. There is no adjustment to be done here.\r\nI am not exactly sure why legacy gives the _feeling_ of having higher damages values, but I guess this can explained by a variety of factors (until recently, easier to send players in limbo, airtrike/artillery timer that are different from etpro at the moment, variabiliy of games themselves, restricted weapons settings, or maybe even usage of non equivalent cg_fov that would make it easier to see more players dying, etc.). However, when compared as independent variables, splash damage from explosive weapons are equivalent.\r\n\r\nI have however been unable to properly measure knockback, as I guess players have to jump when explosions occurs. I couldn't properly jump on a client while firing with the second. Knockback feeling was similar with weapon I could inflict self-damage (landmine, satchel, etc.).\r\n\r\nI'd suggest to start testing scrims with the now reduced limbo, while we continue to implement other competition features (artillery/airstrike timer in particular), then do another round of feedback.",
+            "created_on": "2019-04-27T14:43:40Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 8294,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Closing now - please reopen if additional work is required.",
+            "created_on": "2019-06-12T23:07:09Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1172,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 821,
+        "name": "Bystry"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Reduce damage and knock-back dealt by grenades/rifle grenades/explosives",
+    "description": "Discussion between players resulted in the conclusion that currently the damage and knock-back from explosives, even though it wasn't changed in relation to vanilla, is too big. This results in very frequent kills and multi kills (2-3 players) with grenades and rifle grenades in situations when they shouldn't happen and leads to a situation where grenades become very powerful and important weapon, whereas they should be only additional and supplementary to SMG, aiming skills and teamplay . Rifle grenades are too power as well (good example is the damage count after matches). Moreover, it increases spam and the dependance on it (too heavy spam from axis team while pushing before respawn). The knock-back from explosives is too big as well, as it often throws players off too far.\r\n\r\nIn ETPro probably the damage and knock-back was reduced at some point. I intentionally played some ETPro recently as well as I rely on the feedback given by regular ETPro players. \r\n\r\n",
+    "start_date": "2019-01-18",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-01-18T13:00:48Z",
+    "updated_on": "2019-06-12T23:07:09Z",
+    "closed_on": "2019-06-12T23:07:09Z"
+}

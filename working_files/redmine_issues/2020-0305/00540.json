@@ -1,0 +1,148 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 3183,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "This is strange. I have exactly the same system as you do with the same version of CMake (2.8.12.2) and cannot reproduce this error.",
+            "created_on": "2014-05-23T11:27:29Z",
+            "details": []
+        },
+        {
+            "id": 3184,
+            "user": {
+                "id": 326,
+                "name": "absolly"
+            },
+            "notes": "Radegast wrote:\r\n> This is strange. I have exactly the same system as you do with the same version of CMake (2.8.12.2) and cannot reproduce this error.\r\n\r\nhmm, any chance you can send me a build version, so i can at least play",
+            "created_on": "2014-05-23T14:50:40Z",
+            "details": []
+        },
+        {
+            "id": 3185,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I don't understand why the same cmake version can't parse our CMakeLists.txt:\r\n\r\n<pre>\r\nCMake Error: Error in cmake code at\r\n/Users/absolly/etlegacy/CMakeLists.txt:1206:\r\nParse error.  Function missing ending \")\".  End of file reached.\r\n-- Configuring incomplete, errors occurred!\r\n</pre>\r\n\r\n- We should verify if cmake versions are identically. How is cmake installed?\r\n- Does the parse error also occure with previous cmake releases ( f.e. 2.6.4)?\r\n- Are there any significant differences in the platforms (f.e. locale, environment vars ...)?\r\n\r\n ",
+            "created_on": "2014-05-24T05:49:16Z",
+            "details": []
+        },
+        {
+            "id": 3186,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "> - Does the parse error also occure with previous cmake releases ( f.e. 2.6.4)?\r\n\r\nYea, you should completely remove your CMake.app and install it again. I think this must be because of broken CMake installation. Those warnings about missing whitespace are completely bogus. \r\n\r\nabsolly wrote:\r\n> hmm, any chance you can send me a build version, so i can at least play\r\n\r\nWe are just about to make a new release. There will be an OS X version as well. Check the front page in a week or so!\r\n\r\n\r\n\r\n\r\n",
+            "created_on": "2014-05-24T11:53:24Z",
+            "details": []
+        },
+        {
+            "id": 3189,
+            "user": {
+                "id": 326,
+                "name": "absolly"
+            },
+            "notes": "Radegast wrote:\r\n> > - Does the parse error also occure with previous cmake releases ( f.e. 2.6.4)?\r\n> \r\n> Yea, you should completely remove your CMake.app and install it again. I think this must be because of broken CMake installation. Those warnings about missing whitespace are completely bogus. \r\n> \r\n> absolly wrote:\r\n> > hmm, any chance you can send me a build version, so i can at least play\r\n> \r\n> We are just about to make a new release. There will be an OS X version as well. Check the front page in a week or so!\r\ngreat thanks!\r\n",
+            "created_on": "2014-05-24T22:15:41Z",
+            "details": []
+        },
+        {
+            "id": 3284,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Have you tried the new CMake release 3.0.0?",
+            "created_on": "2014-07-04T20:27:46Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 3447,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I'll close this. There is no feedback given and the issue itself seems related to the local system of absolly - we can't reproduce. Just reopen if you disagree.",
+            "created_on": "2014-09-09T16:47:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 540,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 326,
+        "name": "absolly"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "cmake syntax error whitespace osx mavericks",
+    "description": "this error gets spammed when trying to comple the latest source\r\n\r\nCMake Warning (dev) in CMakeLists.txt:\r\n  Syntax Warning in cmake code at\r\n\r\n    /Users/tiemen/etlegacy/CMakeLists.txt:803:24\r\n\r\n  Argument not separated from preceding token by whitespace.\r\nThis warning is for project developers.  Use -Wno-dev to suppress it.\r\n\r\nremoving  OUTPUT_STRIP_TRAILING_WHITESPACE on line 187 does nothing",
+    "start_date": "2014-05-22",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "OS X"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-05-22T20:14:00Z",
+    "updated_on": "2014-09-09T16:47:45Z",
+    "closed_on": "2014-09-09T16:47:45Z"
+}

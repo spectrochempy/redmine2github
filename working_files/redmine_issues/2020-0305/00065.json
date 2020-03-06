@@ -1,0 +1,168 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 13,
+            "issue_id": 65,
+            "issue_to_id": 49,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "d6ade0493c7ebfc328ca68f0cd68862f8f5b8b5e",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "general: NET_AdrToString returns address with port again, fixes #65, refs #49",
+            "committed_on": "2012-07-22T15:08:32Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 159,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Are you saying \"/connect ip:port\" on console does work properly and only the browser/menu part is affected?",
+            "created_on": "2012-07-20T11:08:03Z",
+            "details": []
+        },
+        {
+            "id": 163,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "... there is another related ticket I didn't know it still exists ... prio increased ...",
+            "created_on": "2012-07-20T11:45:29Z",
+            "details": []
+        },
+        {
+            "id": 164,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-07-20T11:46:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 166,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "IR4T4 wrote:\r\n> Are you saying \"/connect ip:port\" on console does work properly and only the browser/menu part is affected?\r\n\r\nExactly.",
+            "created_on": "2012-07-21T15:22:29Z",
+            "details": []
+        },
+        {
+            "id": 169,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Fixed when connecting to an IPv4 server (and there aren't any IPv6-only servers and I'm not sure if IPv6 works in ET:L anyway).\r\n\r\n>Dunno where all these bugs come from. Original ET 2.60b was free of them\r\nSome of the newly introduced bugs (such as this one) come from SDL migration and ioquake3 import, others come from user:Radegast :-), but don't worry, I usually learn from my mistakes. _Usually._",
+            "created_on": "2012-07-22T15:22:23Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 170,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2012-07-22T15:24:53Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 65,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 7,
+        "name": "Immediate"
+    },
+    "author": {
+        "id": 35,
+        "name": "Dragonji"
+    },
+    "assigned_to": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 1,
+        "name": "2.70rc1"
+    },
+    "subject": "Server address doesn't contain port",
+    "description": "Can't connect to any server with port other than default through browser. _Server info_ works only for servers on default port too.\r\n\r\n// Dunno where all these bugs come from. Original ET 2.60b was free of them",
+    "start_date": "2012-07-20",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-07-20T00:01:22Z",
+    "updated_on": "2012-07-22T15:24:53Z",
+    "closed_on": "2012-07-22T15:24:53Z"
+}

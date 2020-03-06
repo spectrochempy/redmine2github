@@ -1,0 +1,145 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "d73272b2eaff31f663fb2f4a7f20556f3f17392b",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: cvars g_intermissionTime and g_intermissionReadyPercent introduced\nrefs #235",
+            "committed_on": "2013-03-10T16:09:38Z"
+        },
+        {
+            "revision": "1bc84639283107432afe002dee573958b562f369",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "ui: added g_intermissionTime and g_intermissionReadyPercent refs #235",
+            "committed_on": "2013-03-12T00:14:58Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1252,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-03-05T17:06:35Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1296,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "RaFal please add g_intermissionTime and g_intermissionReadyPercent to the extended host game menu (if there is enough space to do it). ",
+            "created_on": "2013-03-10T16:21:40Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "13"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 1298,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "",
+            "created_on": "2013-03-12T00:16:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 235,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 110,
+        "name": "Harlekin"
+    },
+    "assigned_to": {
+        "id": 13,
+        "name": "RaFaL"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 7,
+        "name": "2.71rc2"
+    },
+    "subject": "intermission time",
+    "description": "add cvar to set individual intermission time.",
+    "start_date": "2013-03-05",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-03-05T13:49:55Z",
+    "updated_on": "2013-03-12T00:16:02Z",
+    "closed_on": "2013-03-12T00:16:02Z"
+}

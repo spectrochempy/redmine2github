@@ -1,0 +1,310 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 402,
+            "issue_id": 1218,
+            "issue_to_id": 1228,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "dc5b4e7e3a6b863c7d6662b1587b768933afe762",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: display debriefing results first in mapvote mode, refs #1218\n\nThis fixes the cg_autoscreenshot feature.",
+            "committed_on": "2019-03-09T17:17:31Z"
+        },
+        {
+            "revision": "dda4ca17ccf8961ca6d6d2d5802e32db826065f1",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: added vote button on debriefing screen, refs #1218",
+            "committed_on": "2019-03-09T17:17:39Z"
+        },
+        {
+            "revision": "76fd97374ab3b703a9839f39edde50f9d19f91f2",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: added vote status indicator in debriefing, refs #1218",
+            "committed_on": "2019-04-18T17:55:42Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7849,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I think if there is the common screen first many players wouldn't vote for a map because there is no hint about gametype/voting and why pressing to  next view?! The general interest here shouldn't be personal stats (at first).",
+            "created_on": "2019-03-08T13:18:58Z",
+            "details": []
+        },
+        {
+            "id": 7850,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I disagree, completely. Voting first for the next map is against all common sense. We should try to add a hint for vote (top bar?) so the existing features aren't broken.",
+            "created_on": "2019-03-08T13:20:07Z",
+            "details": []
+        },
+        {
+            "id": 7853,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-03-08T13:36:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "MapVoting displays vote first in debriefing screen",
+                    "new_value": "MapVoting displays vote first in debriefing screen and break auto screenshot"
+                }
+            ]
+        },
+        {
+            "id": 7854,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-03-08T13:36:15Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "MapVoting displays vote first in debriefing screen and break auto screenshot",
+                    "new_value": "MapVoting displays vote first in debriefing screen and breaks auto screenshot"
+                }
+            ]
+        },
+        {
+            "id": 7859,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-03-09T17:23:51Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 7862,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Reopening as \"Feeback\". The autoscreenshot feature is now fixed, and the vote button is proeminent and visible.",
+            "created_on": "2019-03-09T19:29:59Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 7880,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "The change above is positively received, but it is possible to further improve the voting workflow.\r\nTry to add a vote in a single step (select the map to vote), rather than relying on the \"select map + click vote button\" used at the moment.\r\n\r\nKeep in mind multiple maps can be voted with g_mapVoteFlags 4.",
+            "created_on": "2019-03-20T20:00:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 7882,
+            "user": {
+                "id": 40,
+                "name": "hellreturn"
+            },
+            "notes": "IR4T4 wrote:\r\n> I think if there is the common screen first many players wouldn't vote for a map because there is no hint about gametype/voting and why pressing to  next view?! The general interest here shouldn't be personal stats (at first).\r\n\r\n+1 but even if their is common screen, people will not vote. This has happened on our servers. People are so busy chatting, seeing their stats and 50 sec passes out, pretty fast. Increasing intermission doesn't solve the issue, either. We run banners specially during intermission, to raise the awareness. May be a in-build intermission banner would help. IMO, LUA option works fine as well. \r\n\r\nOne option if you guys can fix it i.e. players can vote /reconnect vote again and pump up the votes for 1 map. If that can be resolved, it would be great. I haven't tried similar behavior on ETL mod yet but I believe it exist in various other mods. Thanks!\r\n\r\n",
+            "created_on": "2019-03-20T22:53:12Z",
+            "details": []
+        },
+        {
+            "id": 7883,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "hellreturn wrote:\r\n> +1 but even if their is common screen, people will not vote. This has happened on our servers. People are so busy chatting, seeing their stats and 50 sec passes out, pretty fast. Increasing intermission doesn't solve the issue, either. We run banners specially during intermission, to raise the awareness. May be a in-build intermission banner would help. IMO, LUA option works fine as well. \r\n\r\nWell, if you want to force people to vote, there is the g_mapvoteflag 2 which won't end intermission unless some percentage of players have voted (g_intermissionReadyPercent ). It's a double edge sword though, as if you put it to 100% some players will cause the next map to be delayed by not voting in time, or block it by not voting at all.\r\n\r\nEventually, you can't really force people to vote - and neither should we force them to do so. It's more about giving them the opportunity to influence the choice of the next map, but many players are just happy to go with the flow, regardless of the chosen map.\r\n\r\nWhat we can do, however, is to streamline the process. Make it less clickly to choose a map, maybe add some colour on buttons when the player hasn't voted yet, add some sort of warning on the upper counter, etc.\r\n\r\n> One option if you guys can fix it i.e. players can vote /reconnect vote again and pump up the votes for 1 map. If that can be resolved, it would be great. I haven't tried similar behavior on ETL mod yet but I believe it exist in various other mods. Thanks!\r\n\r\nAh, I didn't realize this was a thing. We'll have a look into this. Tracking in #1228.\r\n",
+            "created_on": "2019-03-21T09:30:41Z",
+            "details": []
+        },
+        {
+            "id": 7884,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-03-21T09:30:57Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1228"
+                }
+            ]
+        },
+        {
+            "id": 7978,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-18T17:59:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 8094,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "TM expressed the need to have that visual \"VOTE\" indicator on the debriefing starting screen too, with the flags.\r\nIt's a bit crowded there, but we might find some place.\r\n\r\nEdit: tried adding the info on the mapvote button itself, but it's too inflexible to be working as expected (especially due to widesvreen support). It's not possible to do so there without a fair amount of code duplication.",
+            "created_on": "2019-05-02T13:54:19Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 8111,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-05-03T16:10:37Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "22",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1218,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 2,
+        "name": "In Progress"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "MapVoting displays vote first in debriefing screen and breaks auto screenshot",
+    "description": "The mapvoting mode displays the map vote as first screen on the debriefing screen.\r\nWhile players are likely more interested in having a look at their global performance first before voting the next map, this is also an issue with the autoscreenshot feature. It is actually useless, since it is the map vote screen that is taken as screenshot, instead of the match results screen.\r\n\r\nChange it to the actual results (as in campaign and objectives mode).",
+    "start_date": "2019-03-07",
+    "done_ratio": 90,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-03-07T20:49:09Z",
+    "updated_on": "2019-05-03T16:10:37Z",
+    "closed_on": "2019-04-18T17:59:02Z"
+}

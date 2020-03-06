@@ -1,0 +1,116 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "fe02435f84bfce2e91183424d4204c286524deca",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "cgame: Fix player model animation (cg_thirdperson 1), refs #1081\n\nRelevant commit introducing this bug :\nhttps://github.com/etlegacy/etlegacy/commit/43a4093b1f3b31c613e488fc76f57adabe621d5d#diff-f40f1e70cb2543edc89f83a9bff5e39fR1392",
+            "committed_on": "2018-03-09T09:59:59Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7158,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-03-09T07:59:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "21"
+                }
+            ]
+        },
+        {
+            "id": 7159,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "Fixed in change : https://github.com/etlegacy/etlegacy/commit/fe02435f84bfce2e91183424d4204c286524deca\r\n\r\nRelevant commit introducing this bug : https://github.com/etlegacy/etlegacy/commit/43a4093b1f3b31c613e488fc76f57adabe621d5d#diff-f40f1e70cb2543edc89f83a9bff5e39fR1392",
+            "created_on": "2018-03-09T10:00:52Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "251"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1081,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "assigned_to": {
+        "id": 251,
+        "name": "Aranud"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Fix player model animation (cg_thirdperson 1)",
+    "description": "Player model animation is too slow.\r\n\r\nNote: 2.75 isn't affected.",
+    "start_date": "2018-03-09",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2018-03-09T07:58:54Z",
+    "updated_on": "2018-03-09T10:00:52Z",
+    "closed_on": "2018-03-09T10:00:52Z"
+}

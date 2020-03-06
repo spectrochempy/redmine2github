@@ -1,0 +1,190 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 151,
+            "issue_id": 662,
+            "issue_to_id": 198,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 152,
+            "issue_id": 662,
+            "issue_to_id": 457,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 3818,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-22T11:11:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "21"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 3819,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-22T11:11:16Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "198"
+                }
+            ]
+        },
+        {
+            "id": 3821,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I think we can do simply hops for corpses when they are hit but I'm not sure if we have animations for different doll effects.",
+            "created_on": "2014-11-22T11:39:45Z",
+            "details": []
+        },
+        {
+            "id": 3823,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-22T12:44:18Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "457"
+                }
+            ]
+        },
+        {
+            "id": 3826,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "According to #457, there are a few death animations available in the code. This isn't a true ragdoll effect, but that would still be a great improvement.",
+            "created_on": "2014-11-22T12:45:43Z",
+            "details": []
+        },
+        {
+            "id": 4120,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Actually I don't know when we should use the effect. The final death doll isn't solid (limbo death) and for HP 0 players there is this up/down movement which shouldn't be changed. ",
+            "created_on": "2014-12-16T16:57:00Z",
+            "details": []
+        },
+        {
+            "id": 4696,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-02-28T19:34:47Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "17"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 662,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "Introduce ragdoll effect",
+    "description": "Hopefully self-explanatory. ",
+    "start_date": "2014-11-22",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-22T11:03:42Z",
+    "updated_on": "2015-02-28T19:34:47Z",
+    "closed_on": "2015-02-28T19:34:47Z"
+}

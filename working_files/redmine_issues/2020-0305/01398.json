@@ -1,0 +1,135 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "3cea64b818d55415aa60f3b1c50d6c375605bc25",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: fixed cursor hint icon and distance for HINT_BAD_USER and ET_ALARMBOX, refs #1398",
+            "committed_on": "2020-02-18T13:24:52Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 8731,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2020-02-17T19:33:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "When a `func_invisible_user` entity doesn't have a `cursorHint` key assigned, the game uses the `HINT_ACTIVATE` hint by default. However, the problem is that this hint is displayed even at ridiculous distances. I think up to 1024 in-game units with direct line of sight.\r\nAdditionally to this, when aiming at the hint, the console gets flooded with the warning message that you can see in the top left corner of the second image.\r\n",
+                    "new_value": "When a `func_invisible_user` entity doesn't have a `cursorHint` key assigned, the game uses the `HINT_ACTIVATE` hint by default. However, the problem is that this hint is displayed even at ridiculous distances. I think up to 1024 in-game units with direct line of sight.\r\nAdditionally to this, when aiming at the hint, the console gets flooded with the warning message that you can see in the top left corner of the second image.\r\n\r\nFirst image is with `cursorHint: HINT_ACTIVATE` where the hint is only displayed in regular distance. Second is a buggy example without `cursorHint` assigned"
+                }
+            ]
+        },
+        {
+            "id": 8732,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2020-02-18T13:25:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8733,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2020-02-18T13:26:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 8734,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "The distance is set to max to help debugging, but changing the icon to something not-default should make more sense (ie, the unexpected \"no shoot\" icon is a good fit). I also found an issue with ET_ALARMBOX where the distance wasn't explicitly set.",
+            "created_on": "2020-02-18T13:28:06Z",
+            "details": []
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1398,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "unassigned cursorHint for func_invisible_user",
+    "description": "When a `func_invisible_user` entity doesn't have a `cursorHint` key assigned, the game uses the `HINT_ACTIVATE` hint by default. However, the problem is that this hint is displayed even at ridiculous distances. I think up to 1024 in-game units with direct line of sight.\r\nAdditionally to this, when aiming at the hint, the console gets flooded with the warning message that you can see in the top left corner of the second image.\r\n\r\nFirst image is with `cursorHint: HINT_ACTIVATE` where the hint is only displayed in regular distance. Second is a buggy example without `cursorHint` assigned",
+    "start_date": "2020-02-17",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2020-02-17T19:31:47Z",
+    "updated_on": "2020-02-18T13:28:06Z",
+    "closed_on": "2020-02-18T13:26:05Z"
+}

@@ -1,0 +1,189 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 33,
+            "issue_id": 145,
+            "issue_to_id": 147,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 35,
+            "issue_id": 145,
+            "issue_to_id": 32,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 36,
+            "issue_id": 145,
+            "issue_to_id": 68,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 771,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "We should not put binary files into git (it's not designed for them).\r\n\r\nWe could:\r\n\r\n1. (Proposed by RaFaL) Compile ET file that can (de)compress zip files to simple zip compressor.\r\n\r\n2. Automatically downlads zip.exe right before zipping files.\r\n\r\n3. (More work probably) Integrate pk3 files with autoupdater. Put pk3 files on our server, and download them automatically on et startup. With this, it could be easier to modify those without releasing new ET:L versions.",
+            "created_on": "2012-12-12T08:51:59Z",
+            "details": []
+        },
+        {
+            "id": 775,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "morsik wrote:\r\n> 3. (More work probably) Integrate pk3 files with autoupdater. Put pk3 files on our server, and download them automatically on et startup. With this, it could be easier to modify those without releasing new ET:L versions.\r\n\r\nGreat idea. I think we should do it this way.",
+            "created_on": "2012-12-12T14:04:18Z",
+            "details": []
+        },
+        {
+            "id": 777,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Point 3., my favourite!",
+            "created_on": "2012-12-12T15:15:44Z",
+            "details": []
+        },
+        {
+            "id": 782,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "+1",
+            "created_on": "2012-12-12T17:19:23Z",
+            "details": []
+        },
+        {
+            "id": 953,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "Solving problem was easy just download zip.exe and paste it into <path to visual studio/VC/bin>",
+            "created_on": "2013-01-11T19:10:29Z",
+            "details": []
+        },
+        {
+            "id": 954,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "",
+            "created_on": "2013-01-11T19:11:14Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 1242,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-02-28T11:03:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 2455,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "created_on": "2013-12-14T18:05:58Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "new_value": "Windows"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 145,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 13,
+        "name": "RaFaL"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 5,
+        "name": "2.71rc1"
+    },
+    "subject": "Packing mod .dlls and pak3",
+    "description": "The Window build is missing zip.exe Well you can manually pack them but it would be nice to have it done by exe.exe\r\n\r\nHeres what Visual Studio gives me\r\nhttp://wklej.org/id/890120/",
+    "start_date": "2012-12-06",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Windows"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-12-06T23:03:44Z",
+    "updated_on": "2013-12-14T18:05:58Z",
+    "closed_on": "2013-01-11T19:11:14Z"
+}

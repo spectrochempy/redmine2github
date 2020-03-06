@@ -1,0 +1,74 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 8741,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2020-02-24T10:34:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1399,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "explosive-damage-only func_constructibles rebuilt without healthbar",
+    "description": "Func_constructibles can have constructible_class 1, 2 or 3 (1 = explosive damage; 2=Satchel; 3=Dynamite )\r\n\r\nWhen using constructible_class 1 the entity by default requires 2 grenades to be destroyed. Once destroyed and repaired, the entity spawns without a healthbar and only needs a single grenade.\r\nAm I missing a script keyword here to make that work or is that a bug? Same behaviour in vanilla ET.",
+    "start_date": "2020-02-24",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2020-02-24T09:04:54Z",
+    "updated_on": "2020-02-24T10:34:54Z"
+}

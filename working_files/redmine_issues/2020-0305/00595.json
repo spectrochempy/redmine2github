@@ -1,0 +1,134 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "b41b5e7b0da41e155c8f3643550535199abba7cb",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "renderer: added WQHD resolution in r_mode cvar, fixes #595",
+            "committed_on": "2014-10-09T10:27:54Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3527,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Agree, according to \"some source\":http://en.wikipedia.org/wiki/Display_resolution it's already more \"common\" that the 2560x1600 resolution.\r\n\r\nI added it in mode 18, while mode 19 is now the 2560x1600.",
+            "created_on": "2014-10-09T10:45:39Z",
+            "details": []
+        },
+        {
+            "id": 3533,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:b41b5e7b0da41e155c8f3643550535199abba7cb.",
+            "created_on": "2014-10-09T12:00:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3536,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-10-09T13:21:12Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 3814,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-22T05:29:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "tracker_id",
+                    "old_value": "3",
+                    "new_value": "2"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 595,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 2,
+        "name": "Anonymous"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "1440p support",
+    "description": "Would like to see 2560x1440 support with the r_mode cvar. It's more common a resolution than the included 2560x1440.\r\n\r\nhttp://dev.etlegacy.com/projects/etlegacy/wiki/List_of_cvars#r_-Additional-or-changed",
+    "start_date": "2014-10-09",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-10-09T10:01:04Z",
+    "updated_on": "2014-11-22T05:29:07Z",
+    "closed_on": "2014-10-09T12:00:44Z"
+}

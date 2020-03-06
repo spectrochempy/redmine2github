@@ -1,0 +1,131 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 152,
+            "issue_id": 662,
+            "issue_to_id": 457,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "9a127a5480de8ca6a491afbe95b348da7ba27377",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: script animation movement type 'dead' added, scriptAnimMoveTypes_t\n& animMoveTypesStr synced refs #457",
+            "committed_on": "2015-02-02T19:55:24Z"
+        },
+        {
+            "revision": "6427d4a59a7cbbcbe4187b3a517e3020736686c6",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: additional anim conditions for the death animation (enemy weapon &\n-position)",
+            "committed_on": "2015-08-27T18:39:11Z"
+        },
+        {
+            "revision": "effa93dece345774a966df2726ae9c5758832a8e",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "mod: implement unused death animation, refs #457\n\n* Fix death_machinegun_2 to use correct death animation\n* Remove unused/useless death_machinegun_3",
+            "committed_on": "2019-07-25T13:55:41Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3824,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-22T12:44:18Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "662"
+                }
+            ]
+        },
+        {
+            "id": 5990,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-09-04T10:55:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "20"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 140,
+            "name": "Spyhawk"
+        }
+    ],
+    "time_entries": null,
+    "id": 457,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 44,
+        "name": "Jacker"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Implement all the death animations",
+    "description": "Currently we only use the one death animation, but in reality there are multiple available which should be used based on the kill shot and from which direction it came from.\r\n\r\nAlso for the future this should be more generic as we might want to add these animations our selves.",
+    "start_date": "2013-12-31",
+    "done_ratio": 20,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-12-31T12:42:14Z",
+    "updated_on": "2016-09-04T10:55:54Z"
+}

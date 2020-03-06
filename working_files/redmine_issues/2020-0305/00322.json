@@ -1,0 +1,132 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 79,
+            "issue_id": 319,
+            "issue_to_id": 322,
+            "relation_type": "blocks",
+            "delay": null
+        },
+        {
+            "id": 81,
+            "issue_id": 321,
+            "issue_to_id": 322,
+            "relation_type": "blocks",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 1766,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-07-25T11:33:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "REND2: Soft Particles",
+                    "new_value": "renderer 2: Soft Particles"
+                }
+            ]
+        },
+        {
+            "id": 3324,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-08-03T21:19:09Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "15"
+                }
+            ]
+        },
+        {
+            "id": 7212,
+            "user": {
+                "id": 7,
+                "name": "TheDushan"
+            },
+            "notes": "I will takeover this",
+            "created_on": "2018-04-09T10:05:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "44",
+                    "new_value": "7"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 322,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 44,
+        "name": "Jacker"
+    },
+    "assigned_to": {
+        "id": 7,
+        "name": "TheDushan"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 15,
+        "name": "renderer2"
+    },
+    "subject": "renderer 2: Soft Particles",
+    "description": "I have been drowling over this function for a while, and as it was requested i will put it up here.\r\n\r\n! This implementation will have to wait for the C & Cleanup task. !",
+    "start_date": "2013-07-25",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-07-25T10:33:33Z",
+    "updated_on": "2018-04-09T10:05:44Z"
+}

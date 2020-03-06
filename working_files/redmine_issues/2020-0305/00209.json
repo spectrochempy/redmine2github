@@ -1,0 +1,153 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 63,
+            "issue_id": 209,
+            "issue_to_id": 201,
+            "relation_type": "duplicates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 1160,
+            "user": {
+                "id": 106,
+                "name": "Odal"
+            },
+            "notes": "Odal wrote:\r\n> Expecially when I switch weapons (1-2-3-4-5-etc), the switch does not happens, I have to release some key, then it happens.\r\n> Observed today on UJE Teamplay server/NQ1.2.9, with ET2.70.\r\n\r\nUPDATE: I use the CTRL key to crunch (instead of default \"C\"), because I use the last finger to press it, so when is pressed, I cannot switch weapons with keys 1-2-3-4-5-etc.\r\nWith 2.60b this does not happens.",
+            "created_on": "2013-02-12T23:09:49Z",
+            "details": []
+        },
+        {
+            "id": 1161,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-02-12T23:16:04Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1162,
+            "user": {
+                "id": 106,
+                "name": "Odal"
+            },
+            "notes": "OPS! I am sorry, it's exactly BUG #201. I discover after my post.\r\n\r\n\r\nThank you for your great job!",
+            "created_on": "2013-02-12T23:26:39Z",
+            "details": []
+        },
+        {
+            "id": 1163,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "No problem. Thanks for reporting.",
+            "created_on": "2013-02-12T23:47:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "44"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 2432,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "created_on": "2013-12-14T17:58:48Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "new_value": "Windows"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 209,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 106,
+        "name": "Odal"
+    },
+    "assigned_to": {
+        "id": 44,
+        "name": "Jacker"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 7,
+        "name": "2.71rc2"
+    },
+    "subject": "Keyboard does not recognise multiple keys pressed (W7/64)",
+    "description": "Expecially when I switch weapons (1-2-3-4-5-etc), the switch does not happens, I have to release some key, then it happens.\r\nObserved today on UJE Teamplay server/NQ1.2.9, with ET2.70.",
+    "start_date": "2013-02-12",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Windows"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-02-12T23:01:37Z",
+    "updated_on": "2013-12-14T17:58:48Z",
+    "closed_on": "2013-02-12T23:47:20Z"
+}

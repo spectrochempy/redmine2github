@@ -1,0 +1,152 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 146,
+            "issue_id": 626,
+            "issue_to_id": 561,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "bfa858c7105a27e9ca2164ae9fd8a92267cd34f2",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed limbo camera update, fixes #626",
+            "committed_on": "2017-03-03T10:25:39Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3715,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "CG_LimboPanel_Draw() doesn't initialize CG_LimboPanel_RequestObjective() unless objectives buttons are clicked (most probably not to flood the server with requests).\r\n\r\nWe might want to call CG_LimboPanel_RequestObjective() one time when displaying the Limbo panel for the first time.",
+            "created_on": "2014-11-14T22:15:01Z",
+            "details": []
+        },
+        {
+            "id": 3716,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-14T22:30:31Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "561"
+                }
+            ]
+        },
+        {
+            "id": 6491,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-03-02T21:21:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "16"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 6492,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:bfa858c7105a27e9ca2164ae9fd8a92267cd34f2.",
+            "created_on": "2017-03-03T10:57:22Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 626,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Limbomenu camera issue",
+    "description": "Even though this is a very small issue, it's still a bug. So how basically is this limbomenu camera bugged?\r\nThe best example you can find is Goldrush. If you see the screenshots you are able to see how first it seems that bank door has blown and the truck is not there. How do they appear? To make them appear, there are simply two ways to do it.\r\n1. Press the up/downarrow located in the limbomenu\r\n2. Close limbomenu, go to the stairs behind the second tank barrier and open limbomenu again to see the results\r\n\r\n-*S",
+    "start_date": "2014-11-14",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-14T21:14:32Z",
+    "updated_on": "2017-03-03T10:57:22Z",
+    "closed_on": "2017-03-03T10:57:22Z"
+}

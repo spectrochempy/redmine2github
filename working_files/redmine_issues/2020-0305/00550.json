@@ -1,0 +1,174 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 154,
+            "issue_id": 550,
+            "issue_to_id": 627,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 3289,
+            "user": {
+                "id": 272,
+                "name": "Danfun64"
+            },
+            "notes": "",
+            "created_on": "2014-07-10T00:24:55Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "For some reason, 32-bit ETLegacy crashes randomly in my 64-bit Debian system. I suspect that the problem lies with the legacy mod, as I saw no problems with etpub.\r\n\r\nI don't know what you recommend forfinding the problem, but I would prefer it be fixed before the final version of 2.71.",
+                    "new_value": "For some reason, 32-bit ETLegacy crashes randomly in my 64-bit Debian system. I suspect that the problem lies with the legacy mod, as I saw no problems with etpub.\r\n\r\nI don't know what you recommend for finding the problem, but I would prefer it be fixed before the final version of 2.71."
+                }
+            ]
+        },
+        {
+            "id": 3290,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "It doesn't crash randomly for us, so it will be impossible to fix without further details. Please start ET:L under GDB debugger in Terminal:\r\n\r\n<pre>\r\n# gdb --args ./etl +set developer 1 +set r_fullscreen 0\r\n# run\r\n... wait until it crashes ...\r\n# backtrace\r\n... this will print useful info ...\r\n</pre>\r\n\r\nWould you be able to compile ET:L from source? There is a guide in the wiki how to \"compile ET:L on Ubuntu\":http://dev.etlegacy.com/projects/etlegacy/wiki/Ubuntu_1404. If you compile Debug version then gdb will produce a much more detailed trace.",
+            "created_on": "2014-07-10T04:43:55Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "12",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 3291,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I'm also on Debian 64bit and I can play hours w/o any crash.\r\n\r\nPlease add some more info (config, map, console print, used ETL/legacy version, sound system on debian ... ).\r\n\r\n",
+            "created_on": "2014-07-10T05:21:20Z",
+            "details": []
+        },
+        {
+            "id": 3335,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "I just played with Windows 8.1 64-bit and I got a random crash. Unfortunately I forgot to take a dump file of it. But I'm quite sure it won't be the last one.\r\n\r\n-*S",
+            "created_on": "2014-08-06T01:47:52Z",
+            "details": []
+        },
+        {
+            "id": 3442,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Every windows user who tests out the build should always launch ETL with procdump running, so we can have the excact crash dumps which can be analyzed directly in visual studio. (This is how I do it)",
+            "created_on": "2014-09-09T11:49:44Z",
+            "details": []
+        },
+        {
+            "id": 3844,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-23T10:48:52Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "627"
+                }
+            ]
+        },
+        {
+            "id": 3869,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "This bug report doesn't bring much needed information to identify the issue. It might be very well the same issue as described in #627, so I'm closing it (can't close as \"Duplicate\", so I'm closing as \"Invalid\" instead).",
+            "created_on": "2014-11-23T16:40:48Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 550,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 6,
+        "name": "Urgent"
+    },
+    "author": {
+        "id": 272,
+        "name": "Danfun64"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Game crashes for unknown reason.",
+    "description": "For some reason, 32-bit ETLegacy crashes randomly in my 64-bit Debian system. I suspect that the problem lies with the legacy mod, as I saw no problems with etpub.\r\n\r\nI don't know what you recommend for finding the problem, but I would prefer it be fixed before the final version of 2.71.",
+    "start_date": "2014-07-10",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": "64-bit"
+        }
+    ],
+    "created_on": "2014-07-09T23:53:13Z",
+    "updated_on": "2014-11-23T16:40:48Z",
+    "closed_on": "2014-11-23T16:40:48Z"
+}

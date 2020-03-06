@@ -1,0 +1,89 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "1f813b601c4054b35d438fb1ad2543ebd27f0f46",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "client: reverted\nhttps://github.com/etlegacy/etlegacy/commit/9804695d92719bae790ba443bfe16a71bae9c78d\nrefs #395",
+            "committed_on": "2013-11-10T19:56:44Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2235,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Code reverted.",
+            "created_on": "2013-11-10T20:01:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 395,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "Tank upside down",
+    "description": "Pictures below are better than words :)\r\n\r\nAccording to RaFal, this bug was introduced in this commit: https://github.com/etlegacy/etlegacy/commit/9804695d92719bae790ba443bfe16a71bae9c78d",
+    "start_date": "2013-11-10",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-11-10T16:53:39Z",
+    "updated_on": "2013-11-10T20:01:28Z",
+    "closed_on": "2013-11-10T20:01:28Z"
+}

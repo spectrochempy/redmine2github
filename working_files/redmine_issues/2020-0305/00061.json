@@ -1,0 +1,195 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 17,
+            "issue_id": 68,
+            "issue_to_id": 61,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "562ad23b80f83da8a4560401649b3e2bd13ca74c",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "punkbuster button removed refs #61",
+            "committed_on": "2012-08-06T12:45:12Z"
+        },
+        {
+            "revision": "49fd0b153bd5c779c2c778c593c6da9a985cdce6",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "etpro removed from server list refs #61",
+            "committed_on": "2012-08-06T12:46:41Z"
+        },
+        {
+            "revision": "0f1fd57cd3c25097607ace78d9373226559e22fe",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "refs #61",
+            "committed_on": "2012-10-05T15:24:53Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 143,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Maybe we should do the same for ETPro servers because they are incompatible as well.",
+            "created_on": "2012-06-14T14:53:45Z",
+            "details": []
+        },
+        {
+            "id": 231,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-08-06T08:55:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "20"
+                }
+            ]
+        },
+        {
+            "id": 233,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "see also http://www.etlegacy.com/projects/etlegacy/repository/revisions/d230554826c988ebcb23ed565173dad3341e6a40\r\n\r\nTODO:\r\nremove all - punkbuster enable/disable buttons are still available via playonline.menu\r\nwe have to ensure - when we switch from vanilla to etl with same fs_hompath - punkbuster 1 doesn't cause any issues.\r\n\r\n",
+            "created_on": "2012-08-06T13:13:53Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "20",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 343,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Button are removed here https://github.com/etlegacy/etlegacy/commit/b9bd2b65335ce8f75fca3588ef3957dce245a01a\r\n",
+            "created_on": "2012-10-05T15:25:19Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                },
+                {
+                    "property": "attr",
+                    "name": "estimated_hours",
+                    "new_value": "2.0"
+                }
+            ]
+        },
+        {
+            "id": 344,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "\"and also terminate connection if users try to manually connect to an ip address of a server which has Punkbuster enabled.\"\r\n\r\nConnection is terminated immediately by the server.",
+            "created_on": "2012-10-05T16:04:35Z",
+            "details": []
+        }
+    ],
+    "watchers": [
+        {
+            "id": 1,
+            "name": "Radegast"
+        }
+    ],
+    "time_entries": null,
+    "id": 61,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 1,
+        "name": "2.70rc1"
+    },
+    "subject": "Disallow client connection if Punkbuster is enabled on the server",
+    "description": "We do not support Punkbuster and we never will, because it is closed source and all the related code was removed from ET-GPL.\r\n\r\nTherefore, we have to \r\n\r\n# filter out servers which have Punkbuster enabled from the ingame server browser \r\n# and also terminate connection if users try to manually connect to an ip address of a server which has Punkbuster enabled.",
+    "start_date": "2012-06-14",
+    "done_ratio": 100,
+    "estimated_hours": 2.0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-06-14T14:42:47Z",
+    "updated_on": "2012-10-05T16:04:35Z",
+    "closed_on": "2012-10-05T15:25:19Z"
+}

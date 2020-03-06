@@ -1,0 +1,184 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 18,
+            "issue_id": 69,
+            "issue_to_id": 68,
+            "relation_type": "precedes",
+            "delay": 0
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "5bd056752ae1eb052a93bc8145b6492c3938bbc0",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "refs #69 ... gametype 6 is unique and established, values > 6 not ...",
+            "committed_on": "2012-08-02T11:24:07Z"
+        },
+        {
+            "revision": "347aec9e621d26b7f8ebdb1e00abc89ab7f3fcb4",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "better text -  refs #69",
+            "committed_on": "2012-08-05T10:05:15Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 203,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "I think I forgot about team deathmatch mode.",
+            "created_on": "2012-07-31T23:14:06Z",
+            "details": []
+        },
+        {
+            "id": 204,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "So far I have investigated Bastard mod and NoQuarter and they both use @gametype = 6@ for map-voting. All we have to do is add this line in @gameinfo.txt@ of our pak3.pk3:\r\n\r\n<pre><code class=\"json\">\r\n{ 6 \"Map voting\" \"Vote\" \"Players vote for the next map.\" }\r\n</code></pre>\r\n\r\nDragon wrote:\r\n> I think I forgot about team deathmatch mode.\r\n\r\nI've never head of that one. Which mod has that? Also, I don't know about any other gametypes. If they exist and use the same gametype number (@gametype = 6@) then we would need to add this line instead:\r\n<pre><code class=\"json\">\r\n{ 6 \"Custom\" \"Cstm\" \"Custom mod gametype.\" }\r\n</code></pre>\r\n\r\nOr perhaps we could negotiate with the main mod teams to standardize new gametype identifiers, for example:\r\n\r\n<pre><code class=\"json\">\r\n  { 0 \"Single Player\" \"SP\" \"Playing with yourself. Woohoo.\" }\r\n  { 1 \"Cooperative\" \"Coop\" \"Playing with yourself. And with others. More woohoo.\" }\r\n  { 2 \"Objective\" \"Obj\" \"Instead of playing through each Map of a Campaign, the Teams can go straight to battle in a single map of their choosing.\" }\r\n  { 3 \"Stopwatch\" \"SW\" \"Each Team struggles to complete the Map's Mission Objectives against the clock. The Teams then swap sides to try to better their opponents' time.\" }\r\n  { 4 \"Campaign\" \"Cmpgn\" \"Both teams battle across a series of maps. Skills and Rewards awarded to each player will persist from map to map.\" }\r\n  { 5 \"Last Man Standing\" \"LMS\" \"Both Teams meet in a map for a fight to the death. Each player only has one life. Use it well.\" }\r\n\r\n  { 6 \"Map voting\" \"Vote\" \"Players vote for the next map.\" }\r\n  { 7 \"Team deathmatch\" \"Tdtm\" \"Let the bullets fly.\" }\r\n  { 99 \"Custom\" \"Cstm\" \"Custom gametype provided by the mod.\" }\r\n</code></pre>",
+            "created_on": "2012-08-02T08:56:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "10"
+                },
+                {
+                    "property": "attr",
+                    "name": "estimated_hours",
+                    "new_value": "0.05"
+                }
+            ]
+        },
+        {
+            "id": 205,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Actually, maybe it should show \"Custom\" instead of ??? for all the unrecognized gametypes? It would make more sense to new players, unlike the question marks which would just confuse them.",
+            "created_on": "2012-08-02T09:05:19Z",
+            "details": []
+        },
+        {
+            "id": 206,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "As far as I know both N!tmod and silEnT use gametype 7 for TDM.",
+            "created_on": "2012-08-02T09:47:17Z",
+            "details": []
+        },
+        {
+            "id": 207,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "File committed - see comment.",
+            "created_on": "2012-08-02T11:34:25Z",
+            "details": []
+        },
+        {
+            "id": 220,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2012-08-05T12:43:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "1",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "10",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 69,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 35,
+        "name": "Dragonji"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 1,
+        "name": "2.70rc1"
+    },
+    "subject": "Map-voting game type",
+    "description": "Most of decent mods allow you to choose new game type, map-voting. It wasn't a part of original game so in-game browser doesn't recognize it. It would be nice if the browser recognizes it and doesn't show '???' anymore.",
+    "start_date": "2012-08-01",
+    "done_ratio": 100,
+    "estimated_hours": 0.05,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-07-31T23:13:28Z",
+    "updated_on": "2012-08-05T12:43:31Z",
+    "closed_on": "2012-08-05T12:43:31Z"
+}

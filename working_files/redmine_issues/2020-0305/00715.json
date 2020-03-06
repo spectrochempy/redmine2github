@@ -1,0 +1,131 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 204,
+            "issue_id": 785,
+            "issue_to_id": 715,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 4402,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2015-01-16T16:39:49Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "785"
+                }
+            ]
+        },
+        {
+            "id": 4713,
+            "user": {
+                "id": 424,
+                "name": "Zecklar"
+            },
+            "notes": "Could you clarify how exactly you reproduce the bug. Neither I nor Spyhawk didn't manage to reproduce the problem. Standing up while reloading just interrupts the reload action...I think that's what it is intended to do. There was no additional reload action after that as shown in the demo. What's you secret? :D",
+            "created_on": "2015-03-04T20:13:59Z",
+            "details": []
+        },
+        {
+            "id": 4715,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "I would test this again but I currently can't. No idea when the video card arrives. I somehow managed to do this back then. Don't know about now. Will update this later on then.\r\n\r\n-*S",
+            "created_on": "2015-03-04T21:39:52Z",
+            "details": []
+        },
+        {
+            "id": 7041,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "",
+            "created_on": "2018-01-25T15:29:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 715,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "MG reloads twice if you stand up while realoding on mount",
+    "description": "Title. Well the demo shows all you need to see.\r\n\r\n-*S",
+    "start_date": "2014-12-13",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-12-13T16:46:59Z",
+    "updated_on": "2018-01-25T15:29:44Z",
+    "closed_on": "2018-01-25T15:29:44Z"
+}

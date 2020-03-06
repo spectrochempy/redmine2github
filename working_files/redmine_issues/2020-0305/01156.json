@@ -1,0 +1,82 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7455,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Redirection has been disabled by default because of abuse. Set ui_serverRedirect 1 to enable it.\r\n\r\nEdit: you have to set this from command line",
+            "created_on": "2018-12-29T10:30:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "19"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1156,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 817,
+        "name": "kohelo79"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Server redirection",
+    "description": "I played once in the Legacy testserver from where i downloaded new version files.\r\nLeft-Bottom of the atteched photo you'll see which version i have.\r\nNext time when i wanted to play ET but my favorite server was full a messages popped up with somthing like that text: \"Redirection denied because of cvar settings\"\r\nAnd i havent had the redirection button which lead me to the other server if it setted in the server config file. I was only able to reconnent (or go back)\r\n\r\n(sry can't do a propre screenshot)",
+    "start_date": "2018-12-29",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2018-12-29T01:38:11Z",
+    "updated_on": "2018-12-29T10:30:36Z",
+    "closed_on": "2018-12-29T10:30:36Z"
+}

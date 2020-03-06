@@ -1,0 +1,180 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 271,
+            "issue_id": 908,
+            "issue_to_id": 46,
+            "relation_type": "duplicates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 234,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-08-06T13:14:43Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 286,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-08-18T22:28:43Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 2437,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "created_on": "2013-12-14T18:01:04Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "new_value": "Linux"
+                }
+            ]
+        },
+        {
+            "id": 3958,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Just FYI:\r\n\r\nuser:skybon hosts a git server at etl.vorotnikov.me:27960.\r\nIt features daily reset and updates directly from ET:L git repo. Linux and Win32 binaries provided!\r\n\r\nNo MacOS binaries for now. It's not trivial, most cross compiling solution are outdated or/and for masochist people. The best possible solution seems to be  https://github.com/tpoechtrager/osxcross.",
+            "created_on": "2014-11-30T19:18:53Z",
+            "details": []
+        },
+        {
+            "id": 5589,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-12-06T22:58:09Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "5",
+                    "new_value": "12"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "0"
+                }
+            ]
+        },
+        {
+            "id": 5695,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-12-18T21:45:04Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "duplicated",
+                    "new_value": "908"
+                }
+            ]
+        },
+        {
+            "id": 5722,
+            "user": {
+                "id": 135,
+                "name": "neoyukito"
+            },
+            "notes": "Add information from #908\r\n\r\nDescription\r\n\r\nThis is a recommended to increase branch review of the current task.\r\n\r\nThe idea is using a script that automatically generate a test version on the main branch, every day or every week. This way you can go proactively testing the new features, corrected defects, involuntary defects (eg, to correct a defect, you can generate another defect).\r\n\r\nThis version of etlegacy may be a debug version, it could be supplemented by generating a memory dump and condump automatically upon entering the game or mod. This will complement the defect could attached the folder \".. \\etlegacy\\debug\\Log_18DEC2015_001\\files..\".\r\n\r\nRegards.",
+            "created_on": "2015-12-24T15:43:11Z",
+            "details": []
+        }
+    ],
+    "watchers": [
+        {
+            "id": 1,
+            "name": "Radegast"
+        },
+        {
+            "id": 140,
+            "name": "Spyhawk"
+        }
+    ],
+    "time_entries": null,
+    "id": 46,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 4,
+        "name": "ALL"
+    },
+    "subject": "Nightly builds",
+    "description": "h3. Set up buildbot for nightly builds\r\n\r\nThe objective is to make testing easier and have realtime build reports on our irc channel. This process should be completely automated and new builds added to the files section through \"Redmine REST api\":http://www.redmine.org/projects/redmine/wiki/Rest_api if possible or a dedicated wiki page and or http://mirror.etlegacy.com\r\n\r\nBuild bot: http://trac.buildbot.net\r\n\r\nh3. Automatically replace test server with nightly builds\r\n\r\nTest server running at etlegacy.com should be replaced every day at 2:00 CET or alternatively by manually executing a script for immediate replacement.",
+    "start_date": "2012-05-08",
+    "done_ratio": 10,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2012-05-08T15:03:27Z",
+    "updated_on": "2015-12-24T15:43:11Z"
+}

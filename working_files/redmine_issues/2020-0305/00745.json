@@ -1,0 +1,153 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 4217,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "I've updated the test server to the latest version. 64-bit omni-bot segfaults on the server. I haven't investigated why yet.",
+            "created_on": "2014-12-24T01:18:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "* Tag the code -done-\r\n\r\n* Update the test server & do final testing\r\n\r\n* Test installers\r\n\r\n* Make download files available (fix counter)\r\n\r\n* Spread the news",
+                    "new_value": "* Tag the code (\\)\r\n\r\n* Update the test server  (\\) & do final testing\r\n\r\n* Test installers\r\n\r\n* Make download files available (fix counter)\r\n\r\n* Spread the news"
+                }
+            ]
+        },
+        {
+            "id": 4219,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I've checked the Win installer. Good to go!\r\n\r\nThe full Linux installer is online in etlegacy-tools. The official 32bit static version is missing on the mirror before being able to test it. I think it isn't worth to add support for the 64 bit version now (at least not until OB 64bit is ready).",
+            "created_on": "2014-12-24T08:50:10Z",
+            "details": []
+        },
+        {
+            "id": 4221,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "I've uploaded all the available 2.71a builds to http://mirror.etlegacy.com/release:\r\n\r\n* etl_bin_v2.71a.pk3\r\n* etlegacy-2.71a-linux-i686.tar\r\n* etlegacy-2.71a-linux-x86_64.tar\r\n* etlegacy-2.71a-x86.exe\r\n* etlegacy-2.71a-x86.zip\r\n* pak3_v2.71a.pk3\r\n\r\nStill missing OS X bundle.",
+            "created_on": "2014-12-24T10:49:09Z",
+            "details": []
+        },
+        {
+            "id": 4224,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Radegast wrote:\r\n> * etlegacy-2.71a-linux-i686.tar\r\n> * etlegacy-2.71a-linux-x86_64.tar\r\n\r\nAny reason why these aren't gzipped? Could you use the binaries in dropbox (readypackages/linux)? The 32 bits version is huge due to OB files.\r\n",
+            "created_on": "2014-12-24T12:18:10Z",
+            "details": []
+        },
+        {
+            "id": 4225,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Done. I just copied them without the proper extension.",
+            "created_on": "2014-12-24T12:23:55Z",
+            "details": []
+        },
+        {
+            "id": 4226,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Thanks. I updated the Linux static installer script (etlegacy-tools), and tested it. Good to go!",
+            "created_on": "2014-12-24T14:04:13Z",
+            "details": []
+        },
+        {
+            "id": 4238,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "The news is out, installers are out and we are now working on the .1 patch",
+            "created_on": "2014-12-29T14:36:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "20",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 745,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Release 2.71",
+    "description": "* Tag the code (\\)\r\n\r\n* Update the test server  (\\) & do final testing\r\n\r\n* Test installers\r\n\r\n* Make download files available (fix counter)\r\n\r\n* Spread the news",
+    "start_date": "2014-12-22",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-12-22T07:15:43Z",
+    "updated_on": "2014-12-29T14:36:31Z",
+    "closed_on": "2014-12-29T14:36:31Z"
+}

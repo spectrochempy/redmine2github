@@ -1,0 +1,340 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 231,
+            "issue_id": 707,
+            "issue_to_id": 735,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 4043,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-12-11T18:58:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "I did notice players warp a lot in LAN games. g_antilag/g_antiwarp 0/1 has no real effect.",
+                    "new_value": "I did notice players warp a lot in LAN games. g_antilag/g_antiwarp 0/1 have no real effect."
+                }
+            ]
+        },
+        {
+            "id": 4100,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "Meaby this will be helpfull\r\n\r\nSVC_Status: rate limit exceeded, dropping request\r\nSVC_Status: rate limit from 178.33.32.39:2980 exceeded, dropping request",
+            "created_on": "2014-12-15T13:24:23Z",
+            "details": []
+        },
+        {
+            "id": 4106,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "",
+            "created_on": "2014-12-15T18:33:19Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "duplicates",
+                    "new_value": "728"
+                }
+            ]
+        },
+        {
+            "id": 4108,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "",
+            "created_on": "2014-12-15T18:34:18Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "duplicates",
+                    "old_value": "728"
+                }
+            ]
+        },
+        {
+            "id": 4110,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "",
+            "created_on": "2014-12-15T18:34:31Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "728"
+                }
+            ]
+        },
+        {
+            "id": 4112,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-12-15T19:27:17Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "old_value": "728"
+                }
+            ]
+        },
+        {
+            "id": 4114,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "sv_protect was disabled -> no relation to SVC_Status issue",
+            "created_on": "2014-12-15T19:28:00Z",
+            "details": []
+        },
+        {
+            "id": 4202,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-12-21T21:14:59Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "6",
+                    "new_value": "16"
+                }
+            ]
+        },
+        {
+            "id": 4313,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-01-07T14:02:04Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "16",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 4438,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-01-18T21:20:10Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "17"
+                }
+            ]
+        },
+        {
+            "id": 4818,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-03-19T21:24:56Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "735"
+                }
+            ]
+        },
+        {
+            "id": 4820,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "This might be related to #735, which should now be fixed properly.\r\nFeedback welcome!",
+            "created_on": "2015-03-19T21:26:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 4822,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "I think I just started warping after some change. I never saw this before until now. Now I got the warp...\r\n\r\n-*S",
+            "created_on": "2015-03-20T00:24:52Z",
+            "details": []
+        },
+        {
+            "id": 4935,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-05-21T13:02:10Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "17",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 5308,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Fixed in 2.74. I can't reproduce in last release.",
+            "created_on": "2015-09-30T17:10:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 5372,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-11-13T21:01:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 5423,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-11-23T21:50:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "2"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 707,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "Players warping in LAN games (listen server)",
+    "description": "I did notice players warp a lot in LAN games. g_antilag/g_antiwarp 0/1 have no real effect.",
+    "start_date": "2014-12-11",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-12-11T18:28:58Z",
+    "updated_on": "2015-11-23T21:50:20Z",
+    "closed_on": "2015-11-13T21:01:00Z"
+}

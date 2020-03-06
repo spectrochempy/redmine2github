@@ -1,0 +1,63 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 8615,
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "notes": "Hello, it is obvious to me it doesn't build 32 bit arch library, your main problem is that the glew pack it downloads comes only with Makefile in root, and i assume flatpack only uses that, completely ignoring CMakeList.txt build file. This means the cmake flags your are passing through config-opts (which specify binary arch) are completely ignored. \r\nMoreover, the glew we supply in etlegacy-libs contains custom CMakeLists.txt file, as at the time of adding the library, there was no vendor provided CMake support.\r\nTo solve the issue, you probably have to pass CFLAGS=-m32 through make-args or something like that, i have no clue how the whole thing is working on your end.",
+            "created_on": "2019-12-22T11:18:36Z",
+            "details": []
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1374,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 993,
+        "name": "Eonfge"
+    },
+    "category": {
+        "id": 26,
+        "name": "Libs"
+    },
+    "subject": "Packaging request: Help compile glew for 32bit",
+    "description": "Hey everybody,\r\n\r\nIn an attempt to package ET:Legacy for Flathub, I've run into an issue. To provide the best experience for players, ET:Legacy is best run as a 32bit application, so users can use existing mods. One library required for this is glew, but I have been unable to compile it myself for 32bit. \r\n\r\nThus, i want to ask if somebody here can provide me with more info concerning cross-compiling glew to 32bit.\r\n\r\nCurrent Work In Progress packaging manuscript:\r\nhttps://github.com/Eonfge/flathub/tree/com.etlegacy.ETL\r\n\r\nCurrent Work In Progress submission thread:\r\nhttps://github.com/flathub/flathub/pull/1182\r\n\r\nMost other libraries already compile to 32bit (Minizip, glu, jansson) so with some assistance compiling glew to 32bit, it would be possible to publish an easy one click installer for Linux.",
+    "start_date": "2019-12-22",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": "32-bit"
+        }
+    ],
+    "created_on": "2019-12-22T08:22:09Z",
+    "updated_on": "2019-12-22T11:18:36Z"
+}

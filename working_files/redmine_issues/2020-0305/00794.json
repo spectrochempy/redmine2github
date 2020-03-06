@@ -1,0 +1,370 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 248,
+            "issue_id": 794,
+            "issue_to_id": 508,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 249,
+            "issue_id": 534,
+            "issue_to_id": 794,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "a1466ddddef6f3834620e19ede64eb041a640fcd",
+            "user": {
+                "id": 424,
+                "name": "Zecklar"
+            },
+            "comments": "game: Prevent reloading while zooming , refs #794",
+            "committed_on": "2015-08-25T21:10:54Z"
+        },
+        {
+            "revision": "e0553c5d2027ac8cd9f1bc4e3f77e22b3518fd6b",
+            "user": {
+                "id": 424,
+                "name": "Zecklar"
+            },
+            "comments": "game: Prevent switching weapon while reloading, refs #794",
+            "committed_on": "2015-08-25T21:11:40Z"
+        },
+        {
+            "revision": "1f9b9d95da0bbcd71c08d12db18fdb01a01db44f",
+            "user": {
+                "id": 424,
+                "name": "Zecklar"
+            },
+            "comments": "game: Prevent picking up different type of primary weapon while reloading, refs #794",
+            "committed_on": "2015-08-25T21:16:24Z"
+        },
+        {
+            "revision": "6931fd08fca0405de913919b6ff7b6a4d469c2b0",
+            "user": {
+                "id": 424,
+                "name": "Zecklar"
+            },
+            "comments": "game: Prevent  zooming while reloading, refs #794",
+            "committed_on": "2015-08-27T18:04:58Z"
+        },
+        {
+            "revision": "0a727340134b92af2caf34d9a12c6980018bf97f",
+            "user": {
+                "id": 424,
+                "name": "Zecklar"
+            },
+            "comments": "Revert \"game: Prevent picking up different type of primary weapon while reloading, refs #794\"\n\nThis reverts commit 1f9b9d95da0bbcd71c08d12db18fdb01a01db44f.",
+            "committed_on": "2015-09-07T19:53:52Z"
+        },
+        {
+            "revision": "b63e0837c2b6d58392d2070abb70ae4076268a71",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: prevent picking up while reloading or overheating, fixes #794 #508",
+            "committed_on": "2017-03-04T22:50:34Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 5011,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Any steps to reproduce?",
+            "created_on": "2015-07-24T07:28:56Z",
+            "details": []
+        },
+        {
+            "id": 5012,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "IR4T4 wrote:\r\n> Any steps to reproduce?\r\n\r\nThese are old bugs, essentially when you are reloading if you spam the weapon change (from mp40 -> healthpack) it wil change to the healthpack after the animation is finished but when you swtich back to the gun it has not really reloaded.\r\n\r\nWhen you reload a weapon you cant stop the process and switch to a pistol or any other weapon. (This should be in the game imho!)\r\n\r\nThe zoom thing should not be implemented, when zooming the sniper needs to close his scope.. This is how it is in every game and imho for a good reason, without this the sniper would be a bit OP.\r\n\r\nThe same issue as with reload switching exists with the pickup, theres a delay when you cant actually use the weapon (not long but still exists and annoying)",
+            "created_on": "2015-07-24T07:33:37Z",
+            "details": []
+        },
+        {
+            "id": 5220,
+            "user": {
+                "id": 424,
+                "name": "Zecklar"
+            },
+            "notes": "",
+            "created_on": "2015-08-25T21:18:53Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 5222,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2015-08-26T07:41:23Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "508"
+                }
+            ]
+        },
+        {
+            "id": 5224,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "I came to noticed that you can't pick up any other weapons except Sten while reloading. When you have Sten you are able to pick up another weapon. Also what I noticed that now it's fixed that you can't reload while pressing +zoom (B) but you can zoom while reloading.\r\n\r\n-*S",
+            "created_on": "2015-08-26T07:47:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "There are some bugs that can happen with reload.\r\n\r\n{TODO}\r\n* Fix possibility to reload and switch weapon at the same time\r\n* Fix possibility to reload while +zoom (B)\r\n* Fix the bug when you reload and pick up a weapon from the ground causing that you can't shoot the picked up weapon straight away\r\n\r\n-*S",
+                    "new_value": "There are some bugs that can happen with reload.\r\n\r\n{TODO}\r\n* -Fix possibility to reload and switch weapon at the same time-\r\n* -Fix possibility to reload while +zoom (B)-\r\n* Fix and prevent the possibility to zoom (B) while reloading\r\n* Fix the bug when you reload and pick up a weapon from the ground causing that you can't shoot the picked up weapon straight away\r\n* Fix #508\r\n\r\n-*S"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "20"
+                }
+            ]
+        },
+        {
+            "id": 5226,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2015-08-26T07:56:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "There are some bugs that can happen with reload.\r\n\r\n{TODO}\r\n* -Fix possibility to reload and switch weapon at the same time-\r\n* -Fix possibility to reload while +zoom (B)-\r\n* Fix and prevent the possibility to zoom (B) while reloading\r\n* Fix the bug when you reload and pick up a weapon from the ground causing that you can't shoot the picked up weapon straight away\r\n* Fix #508\r\n\r\n-*S",
+                    "new_value": "There are some bugs that can happen with reload.\r\n\r\n{TODO}\r\n* -Fix possibility to reload and switch weapon at the same time-\r\n* -Fix possibility to reload while +zoom (B)-\r\n* Fix and prevent the possibility to +zoom (B) while reloading\r\n* Fix the bug when you reload and pick up a weapon from the ground causing that you can't shoot the picked up weapon straight away\r\n* FIx and prevent \\weapprevinbank and \\weapnextinbank usage while reloading\r\n* Fix #508\r\n\r\n-*S"
+                }
+            ]
+        },
+        {
+            "id": 5228,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2015-08-26T08:03:32Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "534"
+                }
+            ]
+        },
+        {
+            "id": 5234,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Saukko wrote:\r\n> What I noticed that now it's fixed that you can't reload while pressing +zoom (B) but you can zoom while reloading.\r\n> \r\n> -*S\r\n\r\n",
+            "created_on": "2015-08-26T10:11:58Z",
+            "details": []
+        },
+        {
+            "id": 5235,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2015-08-26T10:20:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "There are some bugs that can happen with reload.\r\n\r\n{TODO}\r\n* -Fix possibility to reload and switch weapon at the same time-\r\n* -Fix possibility to reload while +zoom (B)-\r\n* Fix and prevent the possibility to +zoom (B) while reloading\r\n* Fix the bug when you reload and pick up a weapon from the ground causing that you can't shoot the picked up weapon straight away\r\n* FIx and prevent \\weapprevinbank and \\weapnextinbank usage while reloading\r\n* Fix #508\r\n\r\n-*S",
+                    "new_value": "There are some bugs that can happen with reload.\r\n\r\n{TODO}\r\n* -Fix possibility to reload and switch weapon at the same time-\r\n* -Fix possibility to reload while +zoom (B)-\r\n* Fix and prevent the possibility to +zoom (B) while reloading\r\n* -Fix the bug when you reload and pick up a weapon from the ground causing that you can't shoot the picked up weapon straight away-\r\n* FIx and prevent \\weapprevinbank and \\weapnextinbank usage while reloading\r\n* Fix #508\r\n\r\n-*S"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "20",
+                    "new_value": "30"
+                }
+            ]
+        },
+        {
+            "id": 5246,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2015-08-28T03:48:26Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "There are some bugs that can happen with reload.\r\n\r\n{TODO}\r\n* -Fix possibility to reload and switch weapon at the same time-\r\n* -Fix possibility to reload while +zoom (B)-\r\n* Fix and prevent the possibility to +zoom (B) while reloading\r\n* -Fix the bug when you reload and pick up a weapon from the ground causing that you can't shoot the picked up weapon straight away-\r\n* FIx and prevent \\weapprevinbank and \\weapnextinbank usage while reloading\r\n* Fix #508\r\n\r\n-*S",
+                    "new_value": "There are some bugs that can happen with reload.\r\n\r\n{TODO}\r\n* -Fix possibility to reload and switch weapon at the same time-\r\n* -Fix possibility to reload while +zoom (B)-\r\n* -Fix and prevent the possibility to +zoom (B) while reloading-\r\n* -Fix the bug when you reload and pick up a weapon from the ground causing that you can't shoot the picked up weapon straight away-\r\n* FIx and prevent \\weapprevinbank and \\weapnextinbank usage while reloading\r\n* Fix #508\r\n\r\n-*S"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "30",
+                    "new_value": "60"
+                }
+            ]
+        },
+        {
+            "id": 6366,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2017-02-09T20:58:33Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "996"
+                }
+            ]
+        },
+        {
+            "id": 6369,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2017-02-09T21:03:25Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "old_value": "996"
+                }
+            ]
+        },
+        {
+            "id": 6508,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:b63e0837c2b6d58392d2070abb70ae4076268a71.",
+            "created_on": "2017-03-04T22:56:30Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "60",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 6731,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-05-21T15:15:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 794,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Reload is bugged while doing other commands",
+    "description": "There are some bugs that can happen with reload.\r\n\r\n{TODO}\r\n* -Fix possibility to reload and switch weapon at the same time-\r\n* -Fix possibility to reload while +zoom (B)-\r\n* -Fix and prevent the possibility to +zoom (B) while reloading-\r\n* -Fix the bug when you reload and pick up a weapon from the ground causing that you can't shoot the picked up weapon straight away-\r\n* FIx and prevent \\weapprevinbank and \\weapnextinbank usage while reloading\r\n* Fix #508\r\n\r\n-*S",
+    "start_date": "2015-01-22",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-01-22T14:55:11Z",
+    "updated_on": "2017-05-21T15:15:17Z",
+    "closed_on": "2017-03-04T22:56:30Z"
+}

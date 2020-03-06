@@ -1,0 +1,181 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 149,
+            "issue_id": 649,
+            "issue_to_id": 316,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "26bc514046344c7189b979153f736a903fb75faf",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "qcommon: let users know how to deal with multiple client instances refs\n#649",
+            "committed_on": "2015-11-29T13:33:30Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3790,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "There's no reason to have 2 or more instances of a game...\r\n\r\nWhen the game is started, no confirmation about if it will crash or not later, I don't think changing the fact it crashed upon just a launch success is OK? Or in other words: if I launch the second one between the first one launch and crash, fun?",
+            "created_on": "2014-11-21T15:43:01Z",
+            "details": []
+        },
+        {
+            "id": 3797,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2014-11-21T17:49:12Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "316"
+                }
+            ]
+        },
+        {
+            "id": 3833,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Mateos wrote:\r\n> There's no reason to have 2 or more instances of a game...\r\nIt's sometimes useful for testing purposes.\r\n",
+            "created_on": "2014-11-22T20:00:53Z",
+            "details": []
+        },
+        {
+            "id": 3834,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Dragonji wrote:\r\n> Mateos wrote:\r\n> > There's no reason to have 2 or more instances of a game...\r\n> It's sometimes useful for testing purposes.\r\n\r\nPrecisely this.\r\n\r\n-*S",
+            "created_on": "2014-11-22T21:46:09Z",
+            "details": []
+        },
+        {
+            "id": 3836,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Servers might host more than one ET instance.  We should extend the pid file name by ip + port to distinguish pid files of instances.\r\n",
+            "created_on": "2014-11-23T08:46:59Z",
+            "details": []
+        },
+        {
+            "id": 3838,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "That is  a nice solution and it would fix #316 as well. However, the client/server will have to check if other pids are still valid or not in order to find out if ET:L crashed.",
+            "created_on": "2014-11-23T09:04:23Z",
+            "details": []
+        },
+        {
+            "id": 3840,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "There is a positive side effect: When socket isn't closed and server is started again ETL jumps to the next free port -> server isn't reachable under the known port.  So if there are pid files created with 'unknown' ports admins know what's up.",
+            "created_on": "2014-11-23T10:33:49Z",
+            "details": []
+        },
+        {
+            "id": 5517,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "The given message has been extended. This isn't a bug - it's a feature #-) ... when 2 client instances are started the message shows us both clients use same profile (and path = fs_homepath). Start both clients with different fs_homepath and ensure there aren't any other side effects (thinking of guid or file lock issues). \r\n\r\n",
+            "created_on": "2015-11-29T13:36:10Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 649,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "ET:L thinks the client has crashed when trying to open another client",
+    "description": "How to reproduce:\r\n1. Open etl.exe\r\n2. Open another etl.exe\r\n\r\nThen you should get the message that is shown in this: http://puu.sh/cYue4/605bb76b4a.png screenshot.\r\n\r\n-*S",
+    "start_date": "2014-11-20",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-20T15:56:53Z",
+    "updated_on": "2015-11-29T13:36:09Z",
+    "closed_on": "2015-11-29T13:36:09Z"
+}

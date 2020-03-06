@@ -1,0 +1,203 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 404,
+            "issue_id": 1140,
+            "issue_to_id": 300,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 406,
+            "issue_id": 1237,
+            "issue_to_id": 300,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "b4d8f8c8412f8db1058cd08736e0f365c6e47a33",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: enable hitsounds by default, refs #300",
+            "committed_on": "2015-02-10T19:52:29Z"
+        },
+        {
+            "revision": "0b193eed3b55b2e6279261b1dddac5261574ced7",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: set default fov value to 106.27 for 16:9 screens, refs #300",
+            "committed_on": "2015-03-14T07:54:41Z"
+        },
+        {
+            "revision": "91e4bb66e395ce8cd668c0e9bc1517928f2f33e7",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "Revert \"cgame: set default fov value to 106.27 for 16:9 screens, refs #300\"\n\nThis reverts commit 0b193eed3b55b2e6279261b1dddac5261574ced7.",
+            "committed_on": "2015-03-24T20:58:49Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1746,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Here's my config for example, with screenshots (it is too bright on winter maps such as Rail Gun though).\r\n\r\n> seta r_displayRefresh \"75\"\r\n> seta r_smp \"0\"\r\n> seta r_mode \"7\"\r\n> seta r_depthbits \"24\"\r\n> seta r_stencilbits \"0\"\r\n> seta r_stereo \"0\"\r\n> seta r_colorbits \"0\"\r\n> seta r_texturebits \"0\"\r\n> seta r_clampToEdge \"1\"\r\n> seta r_ext_texture_env_add \"1\"\r\n> seta r_nv_fogdist_mode \"GL_EYE_RADIAL_NV\"\r\n> seta r_ext_NV_fog_dist \"0\"\r\n> seta r_ext_texture_filter_anisotropic \"0\"\r\n> seta r_ati_fsaa_samples \"1\"\r\n> seta r_ati_truform_pointmode \"GL_PN_TRIANGLES_POINT_MODE_LINEAR\"\r\n> seta r_ati_truform_normalmode \"GL_PN_TRIANGLES_NORMAL_MODE_LINEAR\"\r\n> seta r_ati_truform_tess \"1\"\r\n> seta r_ext_ATI_pntriangles \"0\"\r\n> seta r_glIgnoreWicked3D \"0\"\r\n> seta r_ext_compiled_vertex_array \"1\"\r\n> seta r_ext_multitexture \"1\"\r\n> seta r_ext_gamma_control \"1\"\r\n> seta r_ext_compressed_textures \"1\"\r\n> seta r_allowExtensions \"1\"\r\n> seta r_glDriver \"opengl32\"\r\n> seta joy_threshold \"0.15\"\r\n> seta in_joyBallScale \"0.02\"\r\n> seta in_joystick \"0\"\r\n> seta in_mouse \"1\"\r\n> seta in_mididevice \"0\"\r\n> seta in_midichannel \"1\"\r\n> seta in_midiport \"1\"\r\n> seta cg_zoomstepsniper \"2\"\r\n> seta cg_zoomDefaultSniper \"20\"\r\n> seta cg_voiceSpriteTime \"6000\"\r\n> seta cg_descriptiveText \"1\"\r\n> seta snaps \"20\"\r\n> seta sensitivity \"2.4\"\r\n> seta scr_conspeed \"6\"\r\n> seta rate \"50000\"\r\n> seta pmove_msec \"8\"\r\n> seta pmove_fixed \"0\"\r\n> seta mv_sensitivity \"20\"\r\n> seta cm_playerCurveClip \"1\"\r\n> seta s_wavonly \"0\"\r\n> seta s_volume \"0.281250\"\r\n> seta s_separation \"0.5\"\r\n> seta s_musicvolume \"0.541667\"\r\n> seta s_mixPreStep \"0.05\"\r\n> seta s_mixahead \"0.2\"\r\n> seta s_khz \"44\"\r\n> seta s_doppler \"1\"\r\n> seta s_defaultsound \"0\"\r\n> seta s_channels \"2\"\r\n> seta s_bits \"16\"\r\n> seta r_znear \"3\"\r\n> seta r_zfar \"0\"\r\n> seta r_wolffog \"0\"\r\n> seta r_uifullscreen \"0\"\r\n> seta r_trisColor \"1.0 1.0 1.0 1.0\"\r\n> seta r_textureMode \"GL_LINEAR_MIPMAP_NEAREST\"\r\n> seta r_textureAnisotropy \"1.0\"\r\n> seta r_swapInterval \"0\"\r\n> seta r_subdivisions \"999\"\r\n> seta r_singleShader \"0\"\r\n> seta r_simpleMipMaps \"1\"\r\n> seta r_showtris \"0\"\r\n> seta r_shownormals \"0\"\r\n> seta r_showmodelbounds \"0\"\r\n> seta r_roundImagesDown \"1\"\r\n> seta r_railWidth \"16\"\r\n> seta r_railSegmentLength \"32\"\r\n> seta r_railCoreWidth \"1\"\r\n> seta r_primitives \"0\"\r\n> seta r_picmip \"1\"\r\n> seta r_overBrightBits \"1\"\r\n> seta r_oldMode \"\"\r\n> seta r_normallength \"0.5\"\r\n> seta r_nocurves \"0\"\r\n> seta r_nocull \"0\"\r\n> seta r_mapoverbrightbits \"3\"\r\n> seta r_lodscale \"5\"\r\n> seta r_lodCurveError \"250\"\r\n> seta r_lodbias \"2\"\r\n> seta r_lightmap \"0\"\r\n> seta r_intensity \"1.50\"\r\n> seta r_inGameVideo \"1\"\r\n> seta r_ignorehwgamma \"1\"\r\n> seta r_ignoreGLErrors \"1\"\r\n> seta r_ignoreFastPath \"0\"\r\n> seta r_highQualityVideo \"0\"\r\n> seta r_gamma \"1.48\"\r\n> seta r_fullscreen \"1\"\r\n> seta r_flares \"0\"\r\n> seta r_finish \"0\"\r\n> seta r_fastsky \"0\"\r\n> seta r_facePlaneCull \"1\"\r\n> seta r_dynamiclight \"0\"\r\n> seta r_drawworld \"1\"\r\n> seta r_drawSun \"0\"\r\n> seta r_drawfoliage \"0\"\r\n> seta r_drawentities \"1\"\r\n> seta r_dlightBacks \"1\"\r\n> seta r_detailtextures \"0\"\r\n> seta r_customaspect \"1\"\r\n> seta r_colorMipLevels \"0\"\r\n> seta r_clear \"0\"\r\n> seta r_cacheShaders \"1\"\r\n> seta r_ambientScale \"0.5\"\r\n> seta m_pitch \"0.0131\"\r\n> seta m_yaw \"0.019\"\r\n> seta m_forward \"0.25\"\r\n> seta m_side \"0.19\"\r\n> seta m_filter \"0\"\r\n> seta con_autoclear \"1\"\r\n> seta com_maxfps \"125\"\r\n> seta com_introplayed \"0\"\r\n> seta cl_yawspeed \"140\"\r\n> seta cl_wwwDownload \"1\"\r\n> seta cl_timenudge \"0\"\r\n> seta cl_run \"1\"\r\n> seta cl_pitchspeed \"0\"\r\n> seta cl_packetdup \"1\"\r\n> seta cl_mouseAccel \"0\"\r\n> seta cl_maxpackets \"100\"\r\n> seta cl_language \"0\"\r\n> seta cl_freelook \"1\"\r\n> seta cl_doubletapdelay \"350\"\r\n> seta cl_anonymous \"0\"\r\n> seta cl_allowDownload \"1\"\r\n> seta cg_wolfparticles \"0\"\r\n> seta cg_weaponcycledelay \"1\"\r\n> seta cg_viewsize \"100\"\r\n> seta cg_useWeapsForZoom \"1\"\r\n> seta cg_useScreenshotJPEG \"1\"\r\n> seta cg_teamChatTime \"8000\"\r\n> seta cg_teamChatsOnly \"0\"\r\n> seta cg_teamChatHeight \"5\"\r\n> seta cg_stereoSeparation \"0.4\"\r\n> seta cg_specHelp \"1\"\r\n> seta cg_showblood \"1\"\r\n> seta cg_shadows \"0\"\r\n> seta cg_runroll \"0\"\r\n> seta cg_runpitch \"0\"\r\n> seta cg_recoilPitch \"0\"\r\n> seta cg_railTrailTime \"400\"\r\n> seta cg_quickMessageAlt \"1\"\r\n> seta cg_printObjectiveInfo \"1\"\r\n> seta cg_predictItems \"1\"\r\n> seta cg_popupLimboMenu \"0\"\r\n> seta cg_noVoiceText \"0\"\r\n> seta cg_noVoiceChats \"0\"\r\n> seta cg_noTaunt \"0\"\r\n> seta cg_noAmmoAutoSwitch \"0\"\r\n> seta cg_marktime \"0\"\r\n> seta cg_instanttapout \"1\"\r\n> seta cg_hudalpha \"2\"\r\n> seta cg_gun_frame \"0\"\r\n> seta cg_gibs \"1\"\r\n> seta cg_fov \"108\"\r\n> seta cg_footsteps \"1\"\r\n> seta cg_fastSolids \"1\"\r\n> seta cg_errordecay \"100\"\r\n> seta cg_drawWeaponIconFlash \"0\"\r\n> seta cg_drawTeamOverlay \"2\"\r\n> seta cg_drawStatus \"1\"\r\n> seta cg_drawSpreadScale \"1\"\r\n> seta cg_drawSnapshot \"0\"\r\n> seta cg_drawSmallPopupIcons \"1\"\r\n> seta cg_drawRoundTimer \"1\"\r\n> seta cg_drawReinforcementTime \"1\"\r\n> seta cg_drawNotifyText \"1\"\r\n> seta cg_drawGun \"1\"\r\n> seta cg_drawFPS \"1\"\r\n> seta cg_drawFireteamOverlay \"1\"\r\n> seta cg_drawCrosshairPickups \"1\"\r\n> seta cg_drawCrosshairNames \"1\"\r\n> seta cg_drawCrosshair \"5\"\r\n> seta cg_drawCompass \"1\"\r\n> seta cg_drawBuddies \"1\"\r\n> seta cg_draw2D \"1\"\r\n> seta cg_damageKick \"1\"\r\n> seta cg_cycleAllWeaps \"1\"\r\n> seta cg_cursorHints \"1\"\r\n> seta cg_crosshairY \"0\"\r\n> seta cg_crosshairX \"0\"\r\n> seta cg_crosshairSize \"36\"\r\n> seta cg_crosshairPulse \"0\"\r\n> seta cg_crosshairHealth \"0\"\r\n> seta cg_crosshairColorAlt \"red\"\r\n> seta cg_crosshairColor \"cyan\"\r\n> seta cg_crosshairAlphaAlt \"1.0\"\r\n> seta cg_crosshairAlpha \"1.0\"\r\n> seta cg_coronas \"0\"\r\n> seta cg_coronafardist \"0\"\r\n> seta cg_complaintPopUp \"0\"\r\n> seta cg_cameraOrbitDelay \"50\"\r\n> seta cg_brassTime \"0\"\r\n> seta cg_bobyaw \"0\"\r\n> seta cg_bobup \"0.0\"\r\n> seta cg_bobroll \"0\"\r\n> seta cg_bobpitch \"0\"\r\n> seta cg_bloodTime \"0\"\r\n> seta cg_bloodFlash \"0\"\r\n> seta cg_bloodDamageBlend \"0\"\r\n> seta cg_blinktime \"0\"\r\n> seta cg_autoswitch \"0\"\r\n> seta cg_autoReload \"0\"\r\n> seta cg_autoactivate \"1\"\r\n> seta cg_autoAction \"0\"\r\n> seta cg_atmosphericEffects \"0\"\r\n> seta cg_announcer \"1\"\r\n> seta cg_console \"0\"\r\n> seta cg_consoleShadowed \"1\"\r\n> seta cg_zoomfov \"22.5\"\r\n> seta cg_zoomDefaultBinoc \"22.5\"\r\n> seta cg_zoomDefaultSnooper \"40\"\r\n> seta cg_zoomDefaultFG \"55\"\r\n> seta cg_zoomStepBinoc \"3\"\r\n> seta cg_zoomStepSnooper \"5\"\r\n> seta cg_zoomStepFG \"10\"\r\n> seta cg_deferPlayers \"1\"\r\n> seta cg_hitsounds \"1\"\r\n> seta cg_obituaryLocation \"0\"\r\n> seta cg_obituaryFilter \"0\"\r\n> seta cg_drawDisconnectIcon \"1\"\r\n> seta cg_popupTime \"0\"\r\n> seta cg_popupFadeTime \"2500\"\r\n> seta cg_popupWaitTime \"5000\"\r\n> seta cg_numPopups \"10\"\r\n> seta cg_drawClock \"0\"\r\n> seta cg_muzzleFlash \"1\"\r\n> seta cg_mapZoom \"5\"\r\n> seta cg_locationMode \"0\"\r\n> seta cg_locationMaxChars \"25\"\r\n> seta cg_locationJustify \"0\"\r\n> seta cg_drawSpeed \"0\"\r\n> seta cg_speedRefresh \"100\"\r\n>\r\n> seta cg_optimizePrediction \"1\"\r\n> seta cg_recording_statusline \"9\"\r\n> seta cg_tracers \"1\"\r\n> seta cg_drawTime \"1\"\r\n> seta cg_drawTimeSeconds \"0\"\r\n> seta cg_panzerhack \"1\"\r\n> seta cg_speedinterval \"100\"\r\n> seta cg_speedunit \"0\"\r\n> seta cg_fireteamAlpha \"0.6\"\r\n> seta cg_chatAlpha \"0.33\"\r\n> seta cg_lagometerAlpha \"0.6\"\r\n> seta cg_specAlpha \"1.0\"\r\n",
+            "created_on": "2013-06-27T00:25:23Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "180",
+                    "new_value": "shot0000.png"
+                },
+                {
+                    "property": "attachment",
+                    "name": "181",
+                    "new_value": "shot0001.png"
+                },
+                {
+                    "property": "attachment",
+                    "name": "182",
+                    "new_value": "shot0002.png"
+                },
+                {
+                    "property": "attachment",
+                    "name": "183",
+                    "new_value": "shot0003.png"
+                },
+                {
+                    "property": "attachment",
+                    "name": "184",
+                    "new_value": "shot0004.png"
+                },
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 1747,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Are you still using 2.60b? If not, I recommend you let ET:L recreate the config, because there are tons of obsolete cvars in that config. I removed some of them plus Silent mod cvars and changed a couple of things. The remaining unchecked cvars are marked with \">\"\r\n\r\n\r\n<pre>\r\nseta r_mode \"-2\" // default to desktop resolution\r\nseta r_depthbits \"24\"\r\nseta r_stencilbits \"0\"\r\nseta r_stereoEnabled \"0\"\r\nseta r_colorbits \"0\"\r\nseta r_texturebits \"0\"\r\nseta r_ext_texture_env_add \"1\"\r\nseta r_ext_texture_filter_anisotropic \"0\" // Why 0?\r\nseta r_ext_compiled_vertex_array \"1\"\r\nseta r_ext_multitexture \"1\"\r\nseta r_ext_compressed_textures \"1\"\r\nseta r_allowExtensions \"1\"\r\nseta joy_threshold \"0.15\"\r\nseta in_joyBallScale \"0.02\"\r\nseta in_joystick \"0\"\r\nseta in_mouse \"1\"\r\nseta cg_zoomstepsniper \"2\"\r\nseta cg_zoomDefaultSniper \"20\"\r\nseta cg_voiceSpriteTime \"6000\"\r\nseta cg_descriptiveText \"1\"\r\nseta snaps \"20\"\r\nseta sensitivity \"2.4\"\r\nseta scr_conspeed \"6\" // maybe too much\r\nseta rate \"50000\"\r\nseta pmove_msec \"8\"\r\nseta pmove_fixed \"0\"\r\n> seta mv_sensitivity \"20\"\r\n> seta cm_playerCurveClip \"1\"\r\n> seta s_volume \"0.281250\"\r\n> seta s_separation \"0.5\"\r\n> seta s_musicvolume \"0.541667\"\r\n> seta s_mixPreStep \"0.05\"\r\n> seta s_mixahead \"0.2\"\r\n> seta s_khz \"44\"\r\n> seta s_doppler \"1\"\r\n> seta s_defaultsound \"0\"\r\n> seta s_channels \"2\"\r\n> seta s_bits \"16\"\r\n> seta r_znear \"3\"\r\n> seta r_zfar \"0\"\r\n> seta r_wolffog \"0\"\r\n> seta r_uifullscreen \"0\"\r\n> seta r_trisColor \"1.0 1.0 1.0 1.0\"\r\nseta r_textureMode \"GL_LINEAR_MIPMAP_NEAREST\"\r\n> seta r_swapInterval \"0\"\r\n> seta r_subdivisions \"999\"\r\n> seta r_singleShader \"0\"\r\n> seta r_simpleMipMaps \"1\"\r\n> seta r_showtris \"0\"\r\n> seta r_shownormals \"0\"\r\n> seta r_showmodelbounds \"0\"\r\n> seta r_roundImagesDown \"1\"\r\n> seta r_railWidth \"16\"\r\n> seta r_railSegmentLength \"32\"\r\n> seta r_railCoreWidth \"1\"\r\n> seta r_primitives \"0\"\r\n> seta r_picmip \"1\"\r\n> seta r_overBrightBits \"1\"\r\n> seta r_oldMode \"\"\r\n> seta r_normallength \"0.5\"\r\n> seta r_nocurves \"0\"\r\n> seta r_nocull \"0\"\r\n> seta r_mapoverbrightbits \"3\"\r\n> seta r_lodscale \"5\"\r\n> seta r_lodCurveError \"250\"\r\n> seta r_lodbias \"2\"\r\n> seta r_lightmap \"0\"\r\n> seta r_intensity \"1.50\"\r\nseta r_inGameVideo \"1\"\r\n> seta r_ignorehwgamma \"1\"\r\nseta r_ignoreGLErrors \"1\"\r\n> seta r_ignoreFastPath \"0\"\r\nseta r_highQualityVideo \"1\" // changed to 1. BTW, this is a candidate for removal along with the dumb preset detection\r\n> seta r_gamma \"1.48\"\r\nseta r_fullscreen \"1\"\r\n> seta r_flares \"0\"\r\n> seta r_finish \"0\"\r\n> seta r_fastsky \"0\"\r\n> seta r_facePlaneCull \"1\"\r\n> seta r_dynamiclight \"0\"\r\n> seta r_drawworld \"1\"\r\n> seta r_drawSun \"0\"\r\n> seta r_drawfoliage \"0\"\r\n> seta r_drawentities \"1\"\r\n> seta r_dlightBacks \"1\"\r\n> seta r_detailtextures \"0\"\r\n> seta r_customaspect \"1\"\r\n> seta r_colorMipLevels \"0\"\r\n> seta r_clear \"0\"\r\n> seta r_cacheShaders \"1\"\r\n> seta r_ambientScale \"0.5\"\r\n> seta m_pitch \"0.0131\"\r\n> seta m_yaw \"0.019\"\r\n> seta m_forward \"0.25\"\r\n> seta m_side \"0.19\"\r\n> seta m_filter \"0\"\r\n> seta con_autoclear \"1\"\r\n> seta com_maxfps \"125\"\r\n> seta com_introplayed \"0\"\r\n> seta cl_yawspeed \"140\"\r\nseta cl_wwwDownload \"1\"\r\n> seta cl_timenudge \"0\"\r\nseta cl_run \"1\"\r\n> seta cl_pitchspeed \"0\"\r\n> seta cl_packetdup \"1\"\r\n> seta cl_mouseAccel \"0\"\r\n> seta cl_maxpackets \"100\"\r\nseta cl_language \"0\"\r\nseta cl_freelook \"1\"\r\n> seta cl_doubletapdelay \"350\"\r\n> seta cl_anonymous \"0\"\r\nseta cl_allowDownload \"1\"\r\nseta cg_wolfparticles \"0\"\r\n> seta cg_weaponcycledelay \"1\"\r\n> seta cg_useWeapsForZoom \"1\"\r\nseta cg_useScreenshotJPEG \"1\"\r\n> seta cg_teamChatTime \"8000\"\r\n> seta cg_teamChatsOnly \"0\"\r\n> seta cg_teamChatHeight \"5\"\r\n> seta cg_stereoSeparation \"0.4\"\r\nseta cg_specHelp \"1\"\r\n> seta cg_showblood \"1\"\r\nseta cg_shadows \"0\" // Why 0?\r\n> seta cg_runroll \"0\"\r\n> seta cg_runpitch \"0\"\r\n> seta cg_recoilPitch \"0\"\r\n> seta cg_railTrailTime \"400\"\r\n> seta cg_quickMessageAlt \"1\"\r\n> seta cg_printObjectiveInfo \"1\"\r\n> seta cg_predictItems \"1\"\r\n> seta cg_popupLimboMenu \"0\"\r\n> seta cg_noVoiceText \"0\"\r\n> seta cg_noVoiceChats \"0\"\r\n> seta cg_noAmmoAutoSwitch \"0\"\r\n> seta cg_marktime \"0\"\r\n> seta cg_instanttapout \"1\"\r\n> seta cg_hudalpha \"2\"\r\n> seta cg_gun_frame \"0\"\r\n> seta cg_gibs \"1\"\r\nseta cg_fov \"108\" // Others should look this over. \r\n> seta cg_footsteps \"1\"\r\n> seta cg_fastSolids \"1\"\r\n> seta cg_errordecay \"100\"\r\n> seta cg_drawWeaponIconFlash \"0\"\r\n> seta cg_drawTeamOverlay \"2\"\r\n> seta cg_drawStatus \"1\"\r\n> seta cg_drawSpreadScale \"1\"\r\n> seta cg_drawSnapshot \"0\"\r\nseta cg_drawSmallPopupIcons \"1\"\r\n> seta cg_drawRoundTimer \"1\"\r\n> seta cg_drawReinforcementTime \"1\"\r\n> seta cg_drawNotifyText \"1\"\r\nseta cg_drawGun \"1\"\r\nseta cg_drawFPS \"0\" // most players are not interested in this\r\n> seta cg_drawFireteamOverlay \"1\"\r\n> seta cg_drawCrosshairPickups \"1\"\r\n> seta cg_drawCrosshairNames \"1\"\r\n> seta cg_drawCrosshair \"5\"\r\n> seta cg_drawCompass \"1\"\r\n> seta cg_drawBuddies \"1\"\r\nseta cg_draw2D \"1\"\r\n> seta cg_cycleAllWeaps \"1\"\r\n> seta cg_cursorHints \"1\"\r\n> seta cg_crosshairY \"0\"\r\n> seta cg_crosshairX \"0\"\r\n> seta cg_crosshairSize \"36\"\r\n> seta cg_crosshairPulse \"0\"\r\n> seta cg_crosshairHealth \"0\"\r\n> seta cg_crosshairColorAlt \"red\"\r\n> seta cg_crosshairColor \"cyan\"\r\n> seta cg_crosshairAlphaAlt \"1.0\"\r\n> seta cg_crosshairAlpha \"1.0\"\r\n> seta cg_coronas \"0\"\r\n> seta cg_coronafardist \"0\"\r\n> seta cg_complaintPopUp \"0\"\r\n> seta cg_cameraOrbitDelay \"50\"\r\n> seta cg_brassTime \"0\"\r\n> seta cg_bobyaw \"0\"\r\n> seta cg_bobup \"0.0\"\r\n> seta cg_bobroll \"0\"\r\n> seta cg_bobpitch \"0\"\r\n> seta cg_bloodTime \"0\"\r\n> seta cg_bloodFlash \"0\"\r\n> seta cg_bloodDamageBlend \"0\"\r\n> seta cg_blinktime \"0\"\r\n> seta cg_autoswitch \"0\"\r\n> seta cg_autoReload \"0\"\r\n> seta cg_autoactivate \"1\"\r\n> seta cg_autoAction \"0\"\r\n> seta cg_atmosphericEffects \"0\"\r\n> seta cg_consoleShadowed \"1\"\r\n> seta cg_zoomfov \"22.5\"\r\n> seta cg_zoomDefaultBinoc \"22.5\"\r\n> seta cg_zoomDefaultSnooper \"40\"\r\n> seta cg_zoomDefaultFG \"55\"\r\n> seta cg_zoomStepBinoc \"3\"\r\n> seta cg_zoomStepSnooper \"5\"\r\n> seta cg_zoomStepFG \"10\"\r\n> seta cg_deferPlayers \"1\"\r\nseta cg_hitsounds \"0\" // I know a lot of people use this, but W:ET != Q3, so 0 by default\r\n> seta cg_obituaryLocation \"0\"\r\n> seta cg_obituaryFilter \"0\"\r\n> seta cg_drawDisconnectIcon \"1\"\r\n> seta cg_popupTime \"0\"\r\n> seta cg_popupFadeTime \"2500\"\r\n> seta cg_popupWaitTime \"5000\"\r\n> seta cg_numPopups \"10\"\r\nseta cg_muzzleFlash \"1\"\r\n> seta cg_mapZoom \"5\"\r\n\r\nseta cg_recording_statusline \"9\"\r\nseta cg_tracers \"1\"\r\nseta cg_drawTime \"1\"\r\n</pre>",
+            "created_on": "2013-06-28T07:55:41Z",
+            "details": []
+        },
+        {
+            "id": 1756,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-07-12T02:14:51Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 7916,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-03-31T14:40:26Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1140"
+                }
+            ]
+        },
+        {
+            "id": 7921,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-03-31T16:06:28Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1237"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 300,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 35,
+        "name": "Dragonji"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Tweak default client config",
+    "description": "This is a very important thing in my eyes. It would be great if the default cfg that is bundled with installer was \"newbie friendly\" as default config is terrible IMO, especially for newbies who dunno much about cvars and stuff (there aren't many new players unfortunately).\r\n\r\nFor me the biggest issues are:\r\n1. It is too dark by default (even Oasis doesn't look like an Nothern African map in noon time)\r\n2. The weap viewmodel take almost half of the screen, small FoV increase (let's say to 100) would be appreciated.\r\n3. Blood HUD splash, bob things etc. are not any useful to play better.\r\n4. ... more to add",
+    "start_date": "2013-05-02",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-05-01T22:22:19Z",
+    "updated_on": "2013-07-12T02:14:51Z"
+}

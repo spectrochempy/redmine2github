@@ -1,0 +1,250 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 53,
+            "issue_id": 136,
+            "issue_to_id": 167,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 56,
+            "issue_id": 167,
+            "issue_to_id": 147,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 57,
+            "issue_id": 167,
+            "issue_to_id": 32,
+            "relation_type": "precedes",
+            "delay": 0
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "7cb72a8d86ad348a17a2d7c5b52d05805b1167bb",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "misc: versioned pak3 and etl_bin, tarred omnibot, fixes #167",
+            "committed_on": "2013-02-03T21:54:40Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 985,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "Not really.\r\nAFAIK older paks (which are overwritten by new paks) are saved as <name>.<crc32>.pk3 filename (where original filename was <name>.pk3).\r\n\r\nExample:\r\n-rw-r--r-- 1 morsik morsik    21152 01-16 22:52 zz_silentmenu.3f1731ad.pk3\r\n-rw-r--r-- 1 morsik morsik    21552 11-04 19:38 zz_silentmenu.7166234c.pk3\r\n-rw-r--r-- 1 morsik morsik    19639 10-14 23:59 zz_silentmenu.pk3\r\n",
+            "created_on": "2013-01-19T13:38:31Z",
+            "details": []
+        },
+        {
+            "id": 987,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "This is exactly the thing I want to avoid: clients have to download stuff again when pk3s have the same name. The next time your example connects to a sever and the server is using your first file zz_silentmenu.3f1731ad.pk3 it'll create another file&download again ....",
+            "created_on": "2013-01-19T15:16:04Z",
+            "details": []
+        },
+        {
+            "id": 989,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "pak3, pak4, pak5 etc. wouldn't be enough?",
+            "created_on": "2013-01-19T15:54:52Z",
+            "details": []
+        },
+        {
+            "id": 990,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "user:IR4T4: as you say, clients have to redownload paks with the same name but different contents, so how would adding a version suffix help? Those paks would be downloaded anyway. It is a problem and it will be a worse problem when the autoupdater works, because clients will have legacy directory full of different pak3s, but I don't see how adding a version suffix would help.",
+            "created_on": "2013-01-19T16:36:21Z",
+            "details": []
+        },
+        {
+            "id": 992,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I'll clarify in IRC ...\r\n\r\nDragonji wrote:\r\n> pak3, pak4, pak5 etc. wouldn't be enough?\r\nFor example. Or even even better: pak3_271rc1.pk3 ... pak3_271.pk3\r\n",
+            "created_on": "2013-01-19T17:38:14Z",
+            "details": []
+        },
+        {
+            "id": 993,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "About what pointed Radegast, why not make the auto-updater clean the previous package(s) if the update is successful?",
+            "created_on": "2013-01-19T19:13:48Z",
+            "details": []
+        },
+        {
+            "id": 995,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Mateos wrote:\r\n> About what pointed Radegast, why not make the auto-updater clean the previous package(s) if the update is successful?\r\nThat will happen in fs_basepath (downloaded files are stored in fs_homepath). \r\n",
+            "created_on": "2013-01-19T19:22:14Z",
+            "details": []
+        },
+        {
+            "id": 996,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "We should ensure this won't be the case. It's a bad idea anyway to use the same path. Original ETL installation files might be overwritten/replaced by downloads.\r\n",
+            "created_on": "2013-01-19T21:00:39Z",
+            "details": []
+        },
+        {
+            "id": 1018,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "{TODO}\r\n\r\n* pak3_271rc1.pk3\r\n* etl_bin__271rc1.pk3",
+            "created_on": "2013-01-24T13:17:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 1022,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-01-24T13:49:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "1",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 1026,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-01-24T19:59:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "3",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 1092,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Applied in changeset commit:7cb72a8d86ad348a17a2d7c5b52d05805b1167bb.",
+            "created_on": "2013-02-03T22:19:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 167,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "assigned_to": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 14,
+        "name": "Mod pak3.pk3"
+    },
+    "fixed_version": {
+        "id": 5,
+        "name": "2.71rc1"
+    },
+    "subject": "Add version to pk3 files",
+    "description": "Our pk3s in legacy path should have a version suffix. Otherwise clients will overwite different ETL versions and in worst case they'll download them again.",
+    "start_date": "2013-01-07",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-01-07T20:09:47Z",
+    "updated_on": "2013-02-03T22:19:06Z",
+    "closed_on": "2013-02-03T22:19:06Z"
+}

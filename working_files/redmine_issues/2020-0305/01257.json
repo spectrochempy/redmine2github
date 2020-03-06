@@ -1,0 +1,143 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "1af386f6101fd086a24d8b408ae15c1444552161",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: fixed UI menu overlapping, refs #1257",
+            "committed_on": "2019-04-21T09:22:28Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 8007,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-20T15:56:27Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "1080",
+                    "new_value": "ets_etlegacy-menu_410_nightly-20190326-0700_src.zip"
+                }
+            ]
+        },
+        {
+            "id": 8008,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "A quick test reveals that the ETL logo isn't responsible. There is something else.\r\n\r\nEdit: The issue is resolution dependent:\r\n* At 1920*1080, I can't click any of the ETs button\r\n* At 1280*720, I can't click the first 3 ETs buttons only\r\n* At  800*600, I can't clik the first ETs button only\r\n* At 640*480, all ETs buttons are working (virtual coordinates in UI are also 640*480)\r\n",
+            "created_on": "2019-04-20T16:39:54Z",
+            "details": []
+        },
+        {
+            "id": 8009,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "See screenshots in UI debug mode (developer 1; F11):\r\n\r\n* The top left pink area belongs to the main in game menu,\r\n* The bottom left pink area belongs to the custom menu,\r\n* The right pink area belongs to the custom menu option when clicked.\r\n\r\nNote that button outside of their own pink area can't be clicked (first 3 buttons of ETs menu, and the left portion of the \"Close window\" at the bottom of the custom option menu).\r\n\r\nCheck `Cui_WideRect(&menu->window.rect);` in `Menu_UpdatePosition()`. This expands the whole window area, and as a result distort the drawing area.\r\nIssue has been introduced in https://github.com/etlegacy/etlegacy/commit/a5bff0cdd4cb662ddd4f7f8b8896cc24e1c7882e.\r\n\r\nFixing this will also fix a lot of small UI issues.",
+            "created_on": "2019-04-20T18:21:31Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "1081",
+                    "new_value": "shot0006.jpg"
+                },
+                {
+                    "property": "attachment",
+                    "name": "1082",
+                    "new_value": "shot0007.jpg"
+                }
+            ]
+        },
+        {
+            "id": 8010,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-21T09:28:48Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 865,
+            "name": "etskate"
+        }
+    ],
+    "time_entries": null,
+    "id": 1257,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 15,
+        "name": "Mod UI"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Customized menu not clickable due to ETL logo",
+    "description": "Issue reported by Kate/ETc:\r\n\r\nTheir customized menu can't be clicked in a specific area, liekly due to the ETL logo. See screenshot.",
+    "start_date": "2019-04-20",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-04-20T15:54:48Z",
+    "updated_on": "2019-04-21T09:28:48Z",
+    "closed_on": "2019-04-21T09:28:48Z"
+}

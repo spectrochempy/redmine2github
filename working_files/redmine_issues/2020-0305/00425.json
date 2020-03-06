@@ -1,0 +1,136 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 104,
+            "issue_id": 425,
+            "issue_to_id": 376,
+            "relation_type": "duplicates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 2384,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2013-12-11T22:02:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Engineers can't be seen as whole when cg_fov's value is greater than 90",
+                    "new_value": "Engineer's arm can't be seen as whole when cg_fov's value is greater than 90"
+                }
+            ]
+        },
+        {
+            "id": 2385,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Thx Saukko. This issue doesn't appear with cg_gun_fovscale=1 that has been implemented in #376 in master (not available in rc3). Since this is enabled by default, I'd consider this bug already fixed.",
+            "created_on": "2013-12-11T22:28:34Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "16"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 2387,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "So I guess this ticket shall be closed then. Excuse me for another miss-ticket. Have to start asking first before doing these. ;)\r\n\r\n-*S",
+            "created_on": "2013-12-11T23:05:30Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 2388,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-12-11T23:49:57Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "duplicates",
+                    "new_value": "376"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 425,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "Engineer's arm can't be seen as whole when cg_fov's value is greater than 90",
+    "description": "So basicly the problem is that when you take your pliers as engineer and start using them, you can't see engineer's arm as whole when the cg_fov is greater than 90.\r\nIn my example it is 112 which I normally use and I cannot see the whole arm, there's tiny bit of invisibility on it.\r\nCheck the right bottom corner on my screenshot to see the real issue.\r\n\r\n-*S",
+    "start_date": "2013-12-11",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-12-11T21:34:39Z",
+    "updated_on": "2013-12-11T23:05:30Z",
+    "closed_on": "2013-12-11T23:05:30Z"
+}

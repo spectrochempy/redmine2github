@@ -1,0 +1,209 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 230,
+            "issue_id": 831,
+            "issue_to_id": 171,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 238,
+            "issue_id": 849,
+            "issue_to_id": 831,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 451,
+            "issue_id": 859,
+            "issue_to_id": 831,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 4774,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-03-14T09:31:46Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "171"
+                }
+            ]
+        },
+        {
+            "id": 4837,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-03-21T12:58:46Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Translation of strings in console don't render correctly (at least Russian).\r\nThe UI is fine, however.\r\n\r\nbq. Available client translations: German Polish Russian\r\nAvailable mod translations: Czech German Spanish Finnish French Dutch Norwegian Polish Russian",
+                    "new_value": "Translation of strings in console don't render correctly (at least Russian).\r\nThe UI is fine, however.\r\n\r\nbq. Available client translations: German Polish Russian\r\nAvailable mod translations: Czech German Spanish Finnish French Dutch Norwegian Polish Russian\r\n\r\n\r\nCommit that might be relevant: \"53bfbc8f468115169a985eb632f4cc16403f70d8\":https://github.com/etlegacy/etlegacy/commit/53bfbc8f468115169a985eb632f4cc16403f70d8"
+                }
+            ]
+        },
+        {
+            "id": 4913,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-04-09T09:09:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Translation of strings in console don't render correctly (at least Russian).\r\nThe UI is fine, however.\r\n\r\nbq. Available client translations: German Polish Russian\r\nAvailable mod translations: Czech German Spanish Finnish French Dutch Norwegian Polish Russian\r\n\r\n\r\nCommit that might be relevant: \"53bfbc8f468115169a985eb632f4cc16403f70d8\":https://github.com/etlegacy/etlegacy/commit/53bfbc8f468115169a985eb632f4cc16403f70d8",
+                    "new_value": "Translation of strings in game console don't render correctly (at least Russian).\r\nThe system console (unix) and the UI are fine, however.\r\n\r\nbq. Available client translations: German Polish Russian\r\nAvailable mod translations: Czech German Spanish Finnish French Dutch Norwegian Polish Russian\r\n\r\n\r\nCommit that might be relevant: \"53bfbc8f468115169a985eb632f4cc16403f70d8\":https://github.com/etlegacy/etlegacy/commit/53bfbc8f468115169a985eb632f4cc16403f70d8"
+                }
+            ]
+        },
+        {
+            "id": 5007,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-07-24T05:59:25Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "849"
+                }
+            ]
+        },
+        {
+            "id": 8592,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-12-06T16:00:42Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8594,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-12-06T16:01:04Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "859"
+                }
+            ]
+        },
+        {
+            "id": 8649,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "The font rendering system used in console is still the old crappy one, using an image file rather than direct TTF font like the mod part does. This means, no UTF8 support possible either.\r\nThe modern font rendering system has to be implemented, see Daemon engine for reference.",
+            "created_on": "2019-12-31T08:30:00Z",
+            "details": []
+        },
+        {
+            "id": 8650,
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "notes": "Even ttf fonts are transformed into image format along with metadata to offset glyphs in the end, so there shouldn't be any complexities to make it working with a console, here is a quick example of arialblk ttf used as console font that can print cyrillics. It obviously requires some baseline adjustments, but everything is possible and isn't hard to do.",
+            "created_on": "2019-12-31T10:33:16Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "1153",
+                    "new_value": "con.png"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 831,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "buggy client unicode translation support",
+    "description": "Translation of strings in game console don't render correctly (at least Russian).\r\nThe system console (unix) and the UI are fine, however.\r\n\r\nbq. Available client translations: German Polish Russian\r\nAvailable mod translations: Czech German Spanish Finnish French Dutch Norwegian Polish Russian\r\n\r\n\r\nCommit that might be relevant: \"53bfbc8f468115169a985eb632f4cc16403f70d8\":https://github.com/etlegacy/etlegacy/commit/53bfbc8f468115169a985eb632f4cc16403f70d8",
+    "start_date": "2015-03-14",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-03-14T09:30:46Z",
+    "updated_on": "2019-12-31T10:33:16Z"
+}

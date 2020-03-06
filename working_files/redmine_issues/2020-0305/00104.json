@@ -1,0 +1,136 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "717674ac4af6638d88e37e326d4a3af2b17f019b",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "generic: let's find all implicit lighmaps again refs #104",
+            "committed_on": "2012-11-08T13:28:02Z"
+        },
+        {
+            "revision": "f8f37c802ec1cd40ec4db6ae25c686c6b0381891",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "generic: final fix for lightmap issue refs #104 safe\nCOM_StripExtension() works perfectly but not for worldDir",
+            "committed_on": "2012-11-08T16:06:38Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 460,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-11-05T12:07:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Fix COM_StripExtension related ",
+                    "new_value": "Fix COM_StripExtension related code"
+                }
+            ]
+        },
+        {
+            "id": 461,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Bug occures when COM_StripExtension() is called in and out param are same pointer.",
+            "created_on": "2012-11-05T14:40:00Z",
+            "details": []
+        },
+        {
+            "id": 464,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Complete lighmap loading was bugged. After some fiddling with pointer issues affected code is set back to GPL code. ",
+            "created_on": "2012-11-08T16:35:42Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 465,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-11-08T16:35:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 104,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 7,
+        "name": "Immediate"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 1,
+        "name": "2.70rc1"
+    },
+    "subject": "Fix COM_StripExtension related code",
+    "description": "Compared to vanilla code our COM_StripExtension() function strips COMPLETE pathes when it shouldn't.\r\n\r\nExample: External lighmap loading\r\n\r\n\r\n\r\n<pre>\r\nRE_LoadWorldMap() ...\r\n\r\n\t// ydnar: set map meta dir\r\n\ttr.worldDir = CopyString(name);\r\n\tri.Printf(PRINT_ALL, \"^5*WORLDDIR*  dir %s\\n\", tr.worldDir);\r\n\tCOM_StripExtension(tr.worldDir, tr.worldDir, sizeof(tr.worldDir));\r\n\r\n\tri.Printf(PRINT_ALL, \"^5*STRIP*  dir %s\\n\", tr.worldDir);\r\n</pre>\r\n\r\nWe'll get 'map' (s is also lost) instead of \"maps/<MAP_NAME>\"\r\n\r\n\r\nGPL\r\n<pre>\r\n\r\n/*\r\n============\r\nCOM_StripExtension\r\n============\r\n*/\r\nvoid COM_StripExtension( const char *in, char *out ) {\r\n\twhile ( *in && *in != '.' ) {\r\n\t\t*out++ = *in++;\r\n\t}\r\n\t*out = 0;\r\n}\r\n</pre>\r\n\r\nETL:\r\n<pre>\r\n/*\r\n============\r\nCOM_StripExtension\r\n============\r\n*/\r\nvoid COM_StripExtension(const char *in, char *out, int destsize)\r\n{\r\n\tconst char *dot = strrchr(in, '.'), *slash;\r\n\tif (dot && (!(slash = strrchr(in, '/')) || slash < dot))\r\n\t{\r\n\t\tQ_strncpyz(out, in, (destsize < dot - in + 1 ? destsize : dot - in + 1));\r\n\t}\r\n\telse\r\n\t{\r\n\t\tQ_strncpyz(out, in, destsize);\r\n\t}\r\n}\r\n</pre>\r\n\r\nTask: \r\n- Figure out reason why this has been changed\r\n- Check all locations of COM_StripExtension() and fix RE_LoadWorldMap()\r\n\r\nI would like to fix this before the release",
+    "start_date": "2012-11-05",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-11-05T12:06:44Z",
+    "updated_on": "2012-11-08T16:35:58Z",
+    "closed_on": "2012-11-08T16:35:58Z"
+}

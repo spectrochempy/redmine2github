@@ -1,0 +1,115 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 8576,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-12-02T19:02:51Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8587,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Can't reproduce on latest Windows 10.",
+            "created_on": "2019-12-04T17:03:27Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 8602,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Please comment/reopen if the issue persists on recent Win 10 builds (no issue on 1909, SDL 2.0.10).",
+            "created_on": "2019-12-11T13:07:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "7",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1298,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Incorrect screenshot resolution when Windows' scaling is used",
+    "description": "I'll explain here what is going on here.\r\n\r\nBy default my laptop has resolution of 1920x1080 and scaling 150% (because otherwise all the texts would be way too small to even see).\r\nSo if you take screenshot in .jpg form its resolution will be 1280x720 instead of 1920x1080.\r\n\r\nI fix this simply by changing the scaling to 100%. After that you will get 1920x1080 resolution screenshots.\r\nWhat I found out is that the game thinks my resolution is 1280x720. So that's why also changing the resolution from game manually causes the game window not being fit inside inside the frame.\r\n\r\n-*S",
+    "start_date": "2019-05-20",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Windows"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-05-20T11:59:39Z",
+    "updated_on": "2019-12-11T13:07:49Z",
+    "closed_on": "2019-12-11T13:07:49Z"
+}

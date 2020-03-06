@@ -1,0 +1,146 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 117,
+            "issue_id": 492,
+            "issue_to_id": 229,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 2888,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-01-22T14:22:14Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "229"
+                }
+            ]
+        },
+        {
+            "id": 2890,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Duplicate ;) - see http://dev.etlegacy.com/issues/229",
+            "created_on": "2014-01-22T14:23:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 2891,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-01-22T14:23:21Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 2892,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "I am already working on this, and the ETTV was completely done by the etpro team (bani and others) it is not opensourced and most likely will never be (this is the reason we need to roll our own). I have talked with the etpro teams members and its very unlikely that they can release it anything soon (if ever).",
+            "created_on": "2014-01-22T14:29:26Z",
+            "details": []
+        },
+        {
+            "id": 2893,
+            "user": {
+                "id": 156,
+                "name": "ailmanki"
+            },
+            "notes": "IR4T4 wrote:\r\n> Duplicate ;) - see http://dev.etlegacy.com/issues/229\r\n\r\nOops, didn't found it at first by searching for it. Strange - now I can find both..",
+            "created_on": "2014-01-22T14:34:19Z",
+            "details": []
+        }
+    ],
+    "watchers": [
+        {
+            "id": 156,
+            "name": "ailmanki"
+        }
+    ],
+    "time_entries": null,
+    "id": 492,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 156,
+        "name": "ailmanki"
+    },
+    "category": {
+        "id": 5,
+        "name": "Server"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "ETTV",
+    "description": "ETTV is required for competition.\r\n\r\nSee etpro forum for ettv, http://bani.anime.net/banimod/forums/viewforum.php?f=18\r\n\r\nSorry I tried to find the source of this stuff in Quake3, but could not find it yet. Never set this up for Q3, but I suppose it comes from there..",
+    "start_date": "2014-01-22",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": "N/A"
+        }
+    ],
+    "created_on": "2014-01-22T14:00:51Z",
+    "updated_on": "2014-01-22T14:34:19Z",
+    "closed_on": "2014-01-22T14:23:13Z"
+}

@@ -1,0 +1,235 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 334,
+            "issue_id": 1029,
+            "issue_to_id": 555,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 355,
+            "issue_id": 555,
+            "issue_to_id": 552,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "275c6fbaf588b6821991508d2f6c55481eea0be3",
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "comments": "renderer2: fix reflections on Radar ponds",
+            "committed_on": "2018-02-06T22:47:35Z"
+        },
+        {
+            "revision": "30da8a0916782d4d722ac9a9a910071cfba5c630",
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "comments": "renderer2: add foliage, fix surface vertex lit\n\nadds support for vbo/software foliage (r_vboFoliage)\nfixes surface vertex lighting\nrefs #552, #555",
+            "committed_on": "2018-02-11T14:54:14Z"
+        },
+        {
+            "revision": "063609b81cc674e0a8f81909f24195eea8568587",
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "comments": "renderer2: extend lightmap by vertex support\n\nAdds lightmap by vertex support for other render\nfuncs. Refactor things to eliminate duplicates.\nrefs #555",
+            "committed_on": "2018-02-12T11:41:21Z"
+        },
+        {
+            "revision": "240527c9dcffb098a8d80885fca40fee5805f22c",
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "comments": "renderer2:  fix sky shader vertex lighting issue\n\nMade sky shader to be excluded from the vertex lighting fixer,\nthat adjusts cgen/agen values based on a number of arguments.\nSkybox ain't need that anyways.\n\nrefs #555",
+            "committed_on": "2018-03-04T10:06:57Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3316,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-08-03T21:17:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "15"
+                }
+            ]
+        },
+        {
+            "id": 3658,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2014-11-09T17:28:01Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "There is an incorrectly renderer puddle shader in Radar in r2 (on road near edge of map, run `setviewpos 482 3875 1417 96`). This is a special case handled by opengl1's tr_shader.c. r2 needs an equivalent.\r\n\r\nsrc/renderer/tr_shader.c: ParseStage\r\n\r\n// if shader stage references a lightmap, but no lightmap is present\r\n// (vertex-approximated surfaces), then set cgen to vertex\r\nif (stage->bundle[0].isLightmap && shader.lightmapIndex < 0 &&\r\nstage->bundle[0].image[0] == tr.whiteImage)\r\n{\r\nstage->rgbGen = CGEN_EXACT_VERTEX;\r\n}\r\n",
+                    "new_value": "There is an incorrectly renderer puddle shader in Radar in r2 (on road near edge of map, run `setviewpos 482 3875 1417 96`). This is a special case handled by opengl1's tr_shader.c. r2 needs an equivalent.\r\n\r\nsrc/renderer/tr_shader.c: ParseStage\r\n\r\n<pre><code class=\"C\">\r\n// if shader stage references a lightmap, but no lightmap is present\r\n// (vertex-approximated surfaces), then set cgen to vertex\r\nif (stage->bundle[0].isLightmap && shader.lightmapIndex < 0 &&\r\nstage->bundle[0].image[0] == tr.whiteImage)\r\n{\r\nstage->rgbGen = CGEN_EXACT_VERTEX;\r\n}\r\n</code></pre>"
+                }
+            ]
+        },
+        {
+            "id": 6709,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "",
+            "created_on": "2017-05-09T13:37:17Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1029"
+                }
+            ]
+        },
+        {
+            "id": 6762,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "will implement this one",
+            "created_on": "2017-05-30T18:39:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "281"
+                }
+            ]
+        },
+        {
+            "id": 7008,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "This issue is related to our foliage issue. There are no rain drops painted (see r1) and this is done with foliage tech.",
+            "created_on": "2017-12-17T00:59:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "281"
+                }
+            ]
+        },
+        {
+            "id": 7009,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-12-17T00:59:31Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "552"
+                }
+            ]
+        },
+        {
+            "id": 7074,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Fixed.\r\n\r\nThank you ryven. ",
+            "created_on": "2018-02-11T16:00:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 555,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 301,
+        "name": "ZTM"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 15,
+        "name": "renderer2"
+    },
+    "subject": "renderer2: discolored puddle in Radar",
+    "description": "There is an incorrectly renderer puddle shader in Radar in r2 (on road near edge of map, run `setviewpos 482 3875 1417 96`). This is a special case handled by opengl1's tr_shader.c. r2 needs an equivalent.\r\n\r\nsrc/renderer/tr_shader.c: ParseStage\r\n\r\n<pre><code class=\"C\">\r\n// if shader stage references a lightmap, but no lightmap is present\r\n// (vertex-approximated surfaces), then set cgen to vertex\r\nif (stage->bundle[0].isLightmap && shader.lightmapIndex < 0 &&\r\nstage->bundle[0].image[0] == tr.whiteImage)\r\n{\r\nstage->rgbGen = CGEN_EXACT_VERTEX;\r\n}\r\n</code></pre>",
+    "start_date": "2014-08-03",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-08-03T09:12:43Z",
+    "updated_on": "2018-02-11T16:00:24Z",
+    "closed_on": "2018-02-11T16:00:24Z"
+}

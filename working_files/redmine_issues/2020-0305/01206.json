@@ -1,0 +1,274 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 403,
+            "issue_id": 1206,
+            "issue_to_id": 1095,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7754,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-02-14T10:20:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "21"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 7791,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Cannot reproduce. Are you sure somebody else (bot?) didn't open the door from the other side?",
+            "created_on": "2019-02-14T15:45:52Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 7792,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Axis team door near big gate on radar seems to have issues. The direction of opening is alternating.\r\n\r\nHow to reproduce:\r\nSpawn as axis and open the door from gate side only. ",
+            "created_on": "2019-02-14T17:14:33Z",
+            "details": []
+        },
+        {
+            "id": 7793,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-02-14T17:15:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "7",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 7796,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Which \"gate\" are we talking about? The gate the allies have to dynamite, near the truck that collects the radar parts? I still can't reproduce.",
+            "created_on": "2019-02-14T18:47:29Z",
+            "details": []
+        },
+        {
+            "id": 7798,
+            "user": {
+                "id": 110,
+                "name": "Harlekin"
+            },
+            "notes": "It is viewangle related. i add a demo to show it.",
+            "created_on": "2019-02-14T19:11:08Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "1048",
+                    "new_value": "2019-02-14-200840-frostbite.dm_84"
+                }
+            ]
+        },
+        {
+            "id": 7799,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "It looks like the issue is platform specific. It doesn't happen on windows (localhost) but it looks like it does when qagame is hosted on a Linux machine (?).",
+            "created_on": "2019-02-14T20:49:42Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "old_value": "",
+                    "new_value": "Linux"
+                }
+            ]
+        },
+        {
+            "id": 7860,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "The issue seems to appear on Linux 32 bit only. This is likely related to a math library issue (ie, check MAX_PATCH_PLANE related code).",
+            "created_on": "2019-03-09T17:34:12Z",
+            "details": []
+        },
+        {
+            "id": 7874,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-03-14T10:56:37Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "2",
+                    "old_value": "",
+                    "new_value": "32-bit"
+                }
+            ]
+        },
+        {
+            "id": 7889,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-03-21T17:38:19Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1095"
+                }
+            ]
+        },
+        {
+            "id": 7891,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-03-21T17:38:34Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Crouch makes the door open to the wrong direction",
+                    "new_value": "Crouch makes the door open to the wrong direction (Linux 32 bit)"
+                }
+            ]
+        },
+        {
+            "id": 8062,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-26T22:36:34Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Crouch makes the door open to the wrong direction (Linux 32 bit)",
+                    "new_value": "Door open the wrong direction half the time (Linux 32 bit)"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "8"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "22",
+                    "new_value": "8"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "10"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1206,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 8,
+        "name": "Confirmed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 110,
+        "name": "Harlekin"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Door open the wrong direction half the time (Linux 32 bit)",
+    "description": "Noticed that doors open to the wrong direction, if i try to open them crouched. eg: Radar the door at the gate opens towards the player if i come from the axis bracks side.",
+    "start_date": "2019-02-13",
+    "done_ratio": 10,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": "32-bit"
+        }
+    ],
+    "created_on": "2019-02-13T21:08:56Z",
+    "updated_on": "2019-04-26T22:36:34Z"
+}

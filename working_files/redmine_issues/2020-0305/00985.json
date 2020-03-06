@@ -1,0 +1,114 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "54f813e4225186d8ddf3443dd39e6f460e3cec9c",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: fixed edit and numeric fields mouse over color, fixes #985",
+            "committed_on": "2017-02-14T11:13:50Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 6346,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-02-08T14:32:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "NUMERICFIELD menu entries are not highlighted on mouse over",
+                    "new_value": "NUMERICFIELD/EDITFIELD menu entries are not highlighted on mouse over"
+                },
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "See label on mouse over f.e. in system menu -> custom height/width",
+                    "new_value": "See label on mouse over f.e. in system menu -> custom height/width\r\n\r\nNUMERICFIELD and EDITFIELD are affected"
+                }
+            ]
+        },
+        {
+            "id": 6409,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:54f813e4225186d8ddf3443dd39e6f460e3cec9c.",
+            "created_on": "2017-02-14T11:15:19Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 985,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "NUMERICFIELD/EDITFIELD menu entries are not highlighted on mouse over",
+    "description": "See label on mouse over f.e. in system menu -> custom height/width\r\n\r\nNUMERICFIELD and EDITFIELD are affected",
+    "start_date": "2017-01-31",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-01-31T19:06:20Z",
+    "updated_on": "2017-02-14T11:15:19Z",
+    "closed_on": "2017-02-14T11:15:19Z"
+}

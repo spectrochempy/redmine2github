@@ -1,0 +1,231 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 106,
+            "issue_id": 271,
+            "issue_to_id": 422,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "d09e28c7cf662414717bee46d5634adcb756cd53",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "server: report number of human players, refs #422",
+            "committed_on": "2013-12-11T01:20:44Z"
+        },
+        {
+            "revision": "81a789968606e37753460a049cb98ca31d04185b",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "server: report number of human players, refs #422",
+            "committed_on": "2013-12-11T20:42:29Z"
+        },
+        {
+            "revision": "1d0dad82a07c6f94dd5c9d68617a077d28f70d5e",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: added client and bots count, refs #271, fixes #422",
+            "committed_on": "2014-02-19T12:32:06Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2487,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Unvanquished uses \"humans (+bots) / total\", so I'd suggest we go the same way too. I also think it is less confusing when looking for a server with human players.",
+            "created_on": "2013-12-18T20:53:28Z",
+            "details": []
+        },
+        {
+            "id": 2488,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Splatterladder way FTW.",
+            "created_on": "2013-12-18T21:53:40Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "243",
+                    "new_value": "xyz.png"
+                }
+            ]
+        },
+        {
+            "id": 2493,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Splatterladder uses @players (+bots) / total@ which I always found quite confusing. I think it's because they use the + sign even though bots are already counted in the number of players.\r\n\r\nThe Unvanquished format makes sense. Let's do it that way.\r\n\r\nWe could make it configurable, so users can choose which format they prefer. I don't know if we want to waste a cvar for this though. Maybe we should create an ini settings file for less important vars that are only loaded on start up.\r\n",
+            "created_on": "2013-12-20T10:44:33Z",
+            "details": []
+        },
+        {
+            "id": 2495,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Radegast wrote:\r\n> I think it's because they use the + sign even though bots are already counted in the number of players.\r\nThey are not :)\r\n",
+            "created_on": "2013-12-20T12:45:27Z",
+            "details": []
+        },
+        {
+            "id": 2496,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "We might add a new etl server var 'sv_bots' for active in game bots with SERVERINFO flag. In case of OB framework it's just the value of omnibots_playing. This would show our missing bot count value without getstatus calls ... at least for legacy servers.  ",
+            "created_on": "2013-12-20T16:05:35Z",
+            "details": []
+        },
+        {
+            "id": 2497,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "We don't need to do that, because Legacy servers already send the number of humans in the @infoResponse@.",
+            "created_on": "2013-12-20T16:42:47Z",
+            "details": []
+        },
+        {
+            "id": 2501,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-12-21T15:06:12Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "271"
+                }
+            ]
+        },
+        {
+            "id": 3015,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-02-15T22:08:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 3057,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-02-19T12:53:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "11"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 422,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 15,
+        "name": "Mod UI"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "Increase player column width in the server browser",
+    "description": "Legacy servers report total number of players and number of humans on the server, so we need to make a room for this in the player column.\r\n\r\nAlso decide on the format:\r\n\r\n@players (humans) / total@\r\n\r\nor\r\n\r\n@humans (+bots) / total@\r\n\r\n2.60b servers will not report bots unless we ping them with @getstatus@ request and use @omnibots_playing@ variable. This should be done on the server-side anyway and we don't want to send additional 1000 getstatus requests. ",
+    "start_date": "2013-12-11",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-12-11T00:48:26Z",
+    "updated_on": "2014-02-19T12:53:03Z",
+    "closed_on": "2014-02-19T12:53:03Z"
+}

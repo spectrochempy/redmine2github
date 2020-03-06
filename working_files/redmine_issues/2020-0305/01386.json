@@ -1,0 +1,56 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1386,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Tallies votes results are confusing",
+    "description": "Tallies votes results are confusing, because the requirements for a vote to be accepted are not explicit: a minimum percentage of voters need to vote or a positive result will be dismissed.\r\n\r\nImprove the UI with the required information, so people understand why a \"successful\" vote fails.\r\n",
+    "start_date": "2020-01-07",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2020-01-07T11:59:15Z",
+    "updated_on": "2020-01-07T11:59:15Z"
+}

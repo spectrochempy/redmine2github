@@ -1,0 +1,268 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 298,
+            "issue_id": 621,
+            "issue_to_id": 924,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 5867,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "What exactly is it you want implemented? I don't seem to understand, sorry. \r\nThe skybox in W:ET also consist of 6 different textures, like the 'cubemap' presented in this post?",
+            "created_on": "2016-04-06T22:14:03Z",
+            "details": []
+        },
+        {
+            "id": 5868,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-04-08T15:24:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "12"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 5869,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "I meant the picture the way it is kemon, a cubemap as a cubemap.. Dont know how to explain it. but I think CS is amongst those who use it this way...",
+            "created_on": "2016-04-09T12:11:19Z",
+            "details": []
+        },
+        {
+            "id": 5874,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-07-18T09:00:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 6021,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "I don't think this is a good idea. The only benefit I see is more convenience for the person who is creating/modifying the skybox texture, since it wouldn't be needed to create a larger canvas in Photoshop and manually place them next to each other for editing.\r\nThe larger canvas brings me to a big downside this would bring, We established that even 2048x2048px textures are probably not going to work, that means that the maximum size a texture can have is 1024x1024px. Right now each side of the skybox can be optimized and make use of the full potential of 1024px _(or 2048px if we can find out why ET: Legacy has problems where vanilla ET doesn't)_.\r\n\r\nIf we put the whole skybox into one texture like in \"this cubemap\":http://ogldev.atspace.co.uk/www/tutorial25/skybox.jpg Thunder linked, the overall maximum of 1024 _(2048)_ px doesn't change, but now each side is restricted to 256 _(512)_ px.\r\n\r\nAnother technical problem this would bring, is that W:ET is designed to use textures which have a power of 2 as px size. There would be no problem with the width since the four sides make use of the complete potential. However, there are only 3 textures in height, which means that the height of the texture would be 768 _(1536)_ px, which means that we would have to add another 256x1024 _(512x2048)_ row of unused black *or* make sure ET has no problem with 'uneven' texture sizes code-wise.\r\n\r\n",
+            "created_on": "2016-09-14T07:42:42Z",
+            "details": []
+        },
+        {
+            "id": 6026,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Several textures are not squares ones in ET assets, it's fine as long as both dimensions are power-of-two.\r\n\r\nAlso see https://en.wikipedia.org/wiki/Cube_mapping#Advantages",
+            "created_on": "2016-09-14T17:58:01Z",
+            "details": []
+        },
+        {
+            "id": 6027,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "I think you might have misunderstood me. I'm not saying there is a problem, because the cube map isn't square, I'm saying there is a problem because it inherently isn't power of two. \r\nThe width of a cube map is made up of the 4 sky sides. The height is made up of one side plus top and bottom, so 3 sky sides. The height therefore is *not* a power of 2. We therefore would need to include an area of 256x1024 (512x2048) to make up for the missing 4th square in height. This means unnecessary additional filesize. \r\nIf you divide the finished cube map with the additional area into even squares of 256 (512) px, of the existing *16* squares *only 6* will be used for the texture.\r\n\r\nIn my opinion this is way too much waste, if the only benefit is more convenience for the creator/modder.\r\nI will check the link you provided to have a better understanding of the advantages, but as I laid out above, I don't see the use of this right now.",
+            "created_on": "2016-09-14T19:53:19Z",
+            "details": []
+        },
+        {
+            "id": 6031,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Each part of the cube map is a square, in the case of ETL must be a power-of-two one, so game-side you only capture the part of the texture that you'll apply to the current face you are rendering...\r\n\r\nThis was used by a lot of recent games after ET due to its simplicity. Source uses this, it's better than fake environnement like in Breakout 2 :)",
+            "created_on": "2016-09-15T04:46:21Z",
+            "details": []
+        },
+        {
+            "id": 6201,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "think renderer2 allready got it as I found this in xreal shadermanual:\r\n\r\n<code>6.1.2. cubeMap <map>\r\n\r\nThis stage uses a cube map as the image map. Looks for _px, _py, _pz, _nx, _ny, _nz for the positive x, y, z, and negative x, y, z sides. </code>\r\n",
+            "created_on": "2016-12-29T18:20:35Z",
+            "details": []
+        },
+        {
+            "id": 6215,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "We don't have the power and there is no good reason to add this to r1. Let's focus r2!",
+            "created_on": "2017-01-13T12:52:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "cube map",
+                    "new_value": "Test cube maps"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "15"
+                }
+            ]
+        },
+        {
+            "id": 6216,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-01-13T12:52:15Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "tracker_id",
+                    "old_value": "2",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 6221,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-01-15T08:05:29Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "621"
+                }
+            ]
+        },
+        {
+            "id": 6768,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "think this is just a \"skybox\" feature so Kemon can relax.\r\nbut we might need to do some changes to it.\r\nlook at existing skyboxes to see.\r\n\r\nshould be looking for .ft - .lf and so on I guess\r\n\r\ncan look at this one:\r\nhttp://www.thewolfteam.org/cmdownloads/envmap_stormydays/",
+            "created_on": "2017-06-11T06:55:17Z",
+            "details": []
+        },
+        {
+            "id": 8482,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Closing at thunder's request.",
+            "created_on": "2019-09-15T18:01:48Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 924,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 281,
+        "name": "thunder"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 15,
+        "name": "renderer2"
+    },
+    "subject": "Test cube maps",
+    "description": "is this possible to implement?\r\nhttp://ogldev.atspace.co.uk/www/tutorial25/tutorial25.html\r\n\r\nwould be much easier with skyboxes then :)",
+    "start_date": "2016-04-06",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2016-04-06T18:57:06Z",
+    "updated_on": "2019-09-15T18:01:48Z",
+    "closed_on": "2019-09-15T18:01:48Z"
+}

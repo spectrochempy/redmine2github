@@ -1,0 +1,165 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 530,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "This should only be a matter of copy & paste from ioquake3 code. However, to make VOIP work two things would have to happen:\r\n\r\n# we would have to fix OpenAL support\r\n# we would have to either bump the protocol version or use dual-protocols like ioquake3 does = incompatibility with W:ET 2.60b",
+            "created_on": "2012-11-15T18:51:48Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 534,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Don't get me wrong I like this feature but ... what system to add? mumble, teamspeak? ... just implementing one VOIP client system is a bad choice. Maybe better than none but in my eyes it's not the time to add such a feature. Beside Radegasts notes I can imagine keyboard issues (AZERTY problem - see #111) when there is a need for additional control keys of the VOIP client.\r\n\r\n",
+            "created_on": "2012-11-15T19:24:14Z",
+            "details": []
+        },
+        {
+            "id": 540,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "IR4T4 wrote:\r\n> ... what system to add? mumble, teamspeak?\r\n\r\nioquake3 has a custom VOIP protocol which is part of the client and server. You only need to enable voip cvar and then press \u2019q\u2019 to speak. Mumble positional audio support is a separate feature.",
+            "created_on": "2012-11-15T20:16:23Z",
+            "details": []
+        },
+        {
+            "id": 541,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I see worth a try :)",
+            "created_on": "2012-11-15T22:55:52Z",
+            "details": []
+        },
+        {
+            "id": 1596,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "",
+            "created_on": "2013-04-27T11:07:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "VoIP In-Game",
+                    "new_value": "In-game VoIP support"
+                },
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Is ET:L should have this option?\r\nCommunicating between everyone on the server / teams / parties\r\nand you will be abble to disable/enable this anytime you want",
+                    "new_value": "Should ET:L have this option?\r\nCommunicating between everyone on the server/team/party.\r\n\r\nOne should be able to disable/enable this anytime."
+                }
+            ]
+        },
+        {
+            "id": 3663,
+            "user": {
+                "id": 364,
+                "name": "winrid"
+            },
+            "notes": "Radegast wrote:\r\n> ioquake3 has a custom VOIP protocol which is part of the client and server. You only need to enable voip cvar and then press \u2019q\u2019 to speak. Mumble positional audio support is a separate feature.\r\n\r\nIs it proximity based? Proximity based VOIP is a very fun game dynamic. If you try out Resistance and Liberation you'll see what I mean. It could be a server setting.\r\nEDIT: Didn't catch your last sentence.",
+            "created_on": "2014-11-09T18:46:48Z",
+            "details": []
+        },
+        {
+            "id": 5081,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-08-08T18:45:48Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "3",
+                    "new_value": "4"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 13,
+            "name": "RaFaL"
+        }
+    ],
+    "time_entries": null,
+    "id": 119,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 13,
+        "name": "RaFaL"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 4,
+        "name": "ALL"
+    },
+    "subject": "In-game VoIP support",
+    "description": "Should ET:L have this option?\r\nCommunicating between everyone on the server/team/party.\r\n\r\nOne should be able to disable/enable this anytime.",
+    "start_date": "2012-11-15",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2012-11-15T15:48:32Z",
+    "updated_on": "2015-08-08T18:45:48Z"
+}

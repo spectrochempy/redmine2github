@@ -1,0 +1,373 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 325,
+            "issue_id": 1023,
+            "issue_to_id": 266,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 326,
+            "issue_id": 415,
+            "issue_to_id": 266,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 1392,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "",
+            "created_on": "2013-03-25T00:24:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "fs_game does not do what it's supposed to do",
+                    "new_value": "fs_game does not recognize profile"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1393,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "lottin wrote:\r\n> ...\r\n> If I start etl with \"etl +set fs_game etpub\" I'm asked to create a new profile, so I'm afraid this is not it.\r\n\r\nThis is exactly the way it should work - this isn't a bug. Each mod has got it's own profile. If you start a new mod the first time you have to create a profile for the running mod. When you connect to a server with a new mod the profile is created w/o the profile create dialog automaticallly.\r\n\r\nProfiles are stored in fs_homepath/<MOD>/profile/<profilename>\r\n\r\nDifferent mods have different CVARS so you are able to set CVAR values per modification! On the other hand you don't mess up a mod's profile with CVARS of other mods. \r\n\r\n",
+            "created_on": "2013-03-25T07:46:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 1394,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-03-25T07:46:59Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 1396,
+            "user": {
+                "id": 92,
+                "name": "lottin"
+            },
+            "notes": "I had a profile but I was lacking a \"defaultprofile.dat\" file, that was what was causing the problem.",
+            "created_on": "2013-03-25T10:01:53Z",
+            "details": []
+        },
+        {
+            "id": 1397,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "user:IR4T4, this bug is not invalid. It happens because we changed the default mod from etmain to legacy. Since legacy is not in the search path, defaultprofile.dat is not found even if a profile was already created. I was going to add legacy mod as the last search path, but I wanted to test first if it could bring any unwanted effects.",
+            "created_on": "2013-03-25T13:07:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "6",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 1398,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I would keep it as it is. A defaultprofile.dat file is created per mod path. In case the legacy profile cfg is read you may also collect CVARS of legacy mod the 'loaded' mod doesn't use (which is a vanilla bug fix beside the not known side effects if you add legacy to the search path) ...",
+            "created_on": "2013-03-25T14:36:27Z",
+            "details": []
+        },
+        {
+            "id": 1399,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "OK, I will add a top-level defaultprofile.dat in fs_homepath",
+            "created_on": "2013-03-25T16:01:30Z",
+            "details": []
+        },
+        {
+            "id": 1400,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-03-25T16:01:40Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 1404,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "I can't fix it that way and we can't add Legacy to the default search paths.",
+            "created_on": "2013-03-26T16:26:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 1423,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "We might do this:\r\nIf fs_game is set and != \"legacy\" and profile name is our default value try to read the name of player directly from fs_homepath/legacy/defaultprofile.dat.\r\n",
+            "created_on": "2013-03-27T06:14:59Z",
+            "details": []
+        },
+        {
+            "id": 1730,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I've had a closer look: A defaultprofile.dat file is created with the UI createProfile command/process which is the way to go for running a mod the very first time.  \r\n\r\nlottin wrote:\r\n> If I start etl with \"etl +set fs_game etpub\" I'm asked to create a new profile, so I'm afraid this is not it.\r\nThis is it. Done once we keep the mod config clean with mod only used cvars - this fixes genuine behaviour of importing etmain (or in our case legacy) cvars into the mod.\r\n\r\n{FIXME} Write defaultprofile.dat on disconnect and on ETL exit if there is no dat in path for given fs_game (should fix direct connect to mod case w/o exec createProfile before)",
+            "created_on": "2013-06-05T12:03:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 1773,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-07-26T07:05:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "70"
+                }
+            ]
+        },
+        {
+            "id": 1849,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-08-20T17:48:15Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "7",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 2017,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-10-03T03:45:41Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "see this forum thread for details:\r\nhttp://www.etlegacy.com/boards/3/topics/349",
+                    "new_value": "see this forum thread for details:\r\nhttp://www.dev.etlegacy.com/boards/3/topics/349"
+                }
+            ]
+        },
+        {
+            "id": 6386,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "This should be solved once and for all.",
+            "created_on": "2017-02-11T16:51:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 6597,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-03-20T15:02:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 6602,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-03-20T15:18:09Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 6607,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-03-20T22:32:51Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1023"
+                }
+            ]
+        },
+        {
+            "id": 6611,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-03-21T17:57:14Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "415"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 266,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 92,
+        "name": "lottin"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "fs_game does not recognize profile",
+    "description": "see this forum thread for details:\r\nhttp://www.dev.etlegacy.com/boards/3/topics/349",
+    "start_date": "2013-03-25",
+    "done_ratio": 70,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-03-24T23:46:05Z",
+    "updated_on": "2017-03-20T15:18:09Z",
+    "closed_on": "2013-03-25T07:46:59Z"
+}

@@ -1,0 +1,118 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7658,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "If you're self compiling the 64bit version, look at #1089 too (bottom comments).",
+            "created_on": "2019-01-23T21:02:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "12"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 7659,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Could be a driver issue too. Upload32 function hasn't been changed for a long time.",
+            "created_on": "2019-01-23T21:55:45Z",
+            "details": []
+        },
+        {
+            "id": 7683,
+            "user": {
+                "id": 767,
+                "name": "tiffie"
+            },
+            "notes": "I downgraded etl and it seems to work fine\r\ndowngraded etlegacy-mod-git (2.76.84.g5b973102-1 -> 2.76-1)\r\ndowngraded etlegacy-git (2.76.84.g5b973102-1 -> 2.76-1)\r\n\r\netl -v                         \r\nClient: ET Legacy v2.76 linux-x86_64 Jan 24 2019 DEBUG\r\nMasked as: ET 2.60b linux-x86_64 May  8 2006\r\nBuilt: 2019-01-24T20:12:44 UTC\r\n\r\n",
+            "created_on": "2019-01-24T20:39:34Z",
+            "details": []
+        },
+        {
+            "id": 7685,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Start a listen server and some bots ....",
+            "created_on": "2019-01-24T22:20:53Z",
+            "details": []
+        },
+        {
+            "id": 8430,
+            "user": {
+                "id": 767,
+                "name": "tiffie"
+            },
+            "notes": "seems to be a driver issue\r\nhttps://devtalk.nvidia.com/default/topic/1060993/linux/segmentation-fault-usr-lib-libnvidia-glcore-so-390-116/",
+            "created_on": "2019-08-13T19:16:00Z",
+            "details": []
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1190,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 767,
+        "name": "tiffie"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "segmentation fault on start",
+    "description": "When I start\r\netl -v                                                                                                                                                                                                                                              :(\r\nClient: ET Legacy v2.76-73-g4c1b5b47 linux-x86_64 Jan 23 2019 DEBUG\r\nMasked as: ET 2.60b linux-x86_64 May  8 2006\r\nBuilt: 2019-01-23T20:53:58 UTC\r\n\r\nI get\r\nProgram received signal SIGSEGV, Segmentation fault.\r\n0x00007fffe3ebc368 in ?? () from /usr/lib/libnvidia-glcore.so.390.87\r\n(gdb) backtr\r\n#0  0x00007fffe3ebc368 in ?? () from /usr/lib/libnvidia-glcore.so.390.87\r\n#1  0x00007fffe39ad036 in ?? () from /usr/lib/libnvidia-glcore.so.390.87\r\n#2  0x00007fffe39b7c4a in ?? () from /usr/lib/libnvidia-glcore.so.390.87\r\n#3  0x00007fffe3b18c63 in ?? () from /usr/lib/libnvidia-glcore.so.390.87\r\n#4  0x00007fffe3ae4737 in ?? () from /usr/lib/libnvidia-glcore.so.390.87\r\n#5  0x00007fffe3ae8e54 in ?? () from /usr/lib/libnvidia-glcore.so.390.87\r\n#6  0x00007fffe3aecb58 in ?? () from /usr/lib/libnvidia-glcore.so.390.87\r\n#7  0x00007fffe3b0a897 in ?? () from /usr/lib/libnvidia-glcore.so.390.87\r\n#8  0x00007fffe8d28d62 in Upload32 (noCompress=<optimized out>, pUploadHeight=0x555557fd269c, pUploadWidth=0x555557fd2698, format=0x555557fd26a8, lightMap=qfalse, picmip=qfalse, mipmap=<optimized out>, height=8, width=8, data=0x7fffffffcfe0)\r\n    at /tmp/aur-etlegacy-git/src/etlegacy/src/renderer/tr_image.c:771\r\n#9  R_CreateImage (name=<optimized out>, name@entry=0x7fffe8d5b347 \"*white\", pic=pic@entry=0x7fffffffcfe0 '\\377' <repeats 200 times>..., width=width@entry=8, height=height@entry=8, mipmap=mipmap@entry=qfalse, allowPicmip=allowPicmip@entry=qfalse, wrapClampMode=10497)\r\n    at /tmp/aur-etlegacy-git/src/etlegacy/src/renderer/tr_image.c:960\r\n#10 0x00007fffe8d28fab in R_CreateBuiltinImages () at /tmp/aur-etlegacy-git/src/etlegacy/src/renderer/tr_image.c:1320\r\n#11 0x00007fffe8d29c71 in R_InitImages () at /tmp/aur-etlegacy-git/src/etlegacy/src/renderer/tr_image.c:1460\r\n#12 0x00007fffe8d2c2d5 in R_Init () at /tmp/aur-etlegacy-git/src/etlegacy/src/renderer/tr_init.c:1279\r\n#13 0x00007fffe8d34d17 in RE_BeginRegistration (glconfigOut=0x5555567e7d54 <cls+1525076>) at /tmp/aur-etlegacy-git/src/etlegacy/src/renderer/tr_model.c:1838\r\n#14 0x00005555555b3280 in CL_InitRenderer () at /tmp/aur-etlegacy-git/src/etlegacy/src/client/cl_main.c:2462\r\n#15 0x00005555555b3325 in CL_StartHunkUsers () at /tmp/aur-etlegacy-git/src/etlegacy/src/client/cl_main.c:2493\r\n#16 0x00005555555b3498 in CL_StartHunkUsers () at /tmp/aur-etlegacy-git/src/etlegacy/src/client/cl_main.c:2486\r\n#17 0x000055555557bf85 in Com_Init (commandLine=0x7fffffffd8d0 \"\") at /tmp/aur-etlegacy-git/src/etlegacy/src/qcommon/common.c:3040\r\n#18 0x000055555556a598 in main (argc=1, argv=0x7fffffffddd8) at /tmp/aur-etlegacy-git/src/etlegacy/src/sys/sys_main.c:1065\r\n\r\nnvidia-390xx 390.87-28\r\nnvidia-390xx-utils 390.87-1\r\n\r\nIs that an nvidia thing or et related? Downgrading nvidia didn't seem to fix the issue.",
+    "start_date": "2019-01-23",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-01-23T20:58:08Z",
+    "updated_on": "2019-08-13T19:16:00Z"
+}

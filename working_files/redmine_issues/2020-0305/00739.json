@@ -1,0 +1,166 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "7d1f89ae1148b04b5af09a673b3bda82c3e09b71",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: less damage for fall'n'die refs #741",
+            "committed_on": "2014-12-18T16:22:22Z"
+        },
+        {
+            "revision": "c25712761190a854d6046c9cf9655dc381e9a3a5",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "game: don't deal too much damage when push/crush/gibbed, ref #739\n\nEach 9999 damage value are replaced by the exact amount needed to gib",
+            "committed_on": "2018-02-19T15:09:07Z"
+        },
+        {
+            "revision": "a13088460f97845db76ff5b4b334478c51dcbcf4",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "game: check for other ent than player that can also take a great amount of damage, refs #739\n\nThe damage deal to non player entity can be excessively great",
+            "committed_on": "2018-02-26T13:21:51Z"
+        },
+        {
+            "revision": "be73040a2c8599c5e982aa2dc50513e42d5f7f1f",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed scripted movers not destroyed at start of map, refs #739 #1144\n\nF.e. Panzer tank in GoldRush map.",
+            "committed_on": "2018-12-25T18:21:26Z"
+        },
+        {
+            "revision": "5f679abf7591da9d26dcd9bdb96ab8588bf8d389",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: use cleaner MOD_EXPLOSIVE for movers entities, refs #739 #1144",
+            "committed_on": "2018-12-25T20:51:14Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7091,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "This seems already done.",
+            "created_on": "2018-02-16T15:20:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 7099,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "I change the remaning 9999 damage from world entity and player : https://github.com/etlegacy/etlegacy/commit/c25712761190a854d6046c9cf9655dc381e9a3a5\r\n\r\nNow it should deal the exact amount of damage needed to gib the player and the statistic should no longer be as big as before.\r\n\r\nTips: The damage need to gib is defined by GIB_HEALTH which is valued to -175.\r\n\r\n",
+            "created_on": "2018-02-19T15:57:43Z",
+            "details": []
+        },
+        {
+            "id": 7146,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-02-26T13:42:38Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 739,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Pushing or flinging teammate to death causes too much team damage",
+    "description": "Pushing or flinging to death causes 9999 team damage instead of the amount of the HP the player actually has. For example if you push a soldier to death who has 100 HP, then the team damage recieved would be 100 HP and not 9999 HP. Same goes for the player who pushed would have team damage given 100 HP instead of 9999 HP.\r\n\r\n-*S",
+    "start_date": "2014-12-18",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-12-18T11:11:32Z",
+    "updated_on": "2018-02-26T13:42:38Z",
+    "closed_on": "2018-02-26T13:42:38Z"
+}

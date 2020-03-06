@@ -1,0 +1,162 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 6732,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Send us a patch.",
+            "created_on": "2017-05-22T14:35:35Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 6733,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "> but with slow GPUs\r\n\r\nNot worth the effort.\r\n\r\nA high dpi screen should be used with a high-end graphic card, with the according high performance, fully proprietary driver from nVidia or AMD.",
+            "created_on": "2017-05-22T15:24:39Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 6734,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Ah, so new laptops aren't supported? :D",
+            "created_on": "2017-05-22T21:19:45Z",
+            "details": []
+        },
+        {
+            "id": 6735,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "New laptops don't allow lower resolution?",
+            "created_on": "2017-05-23T12:57:00Z",
+            "details": []
+        },
+        {
+            "id": 6736,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Ah, so the game leaves a constraint to the user? Some cool design choice yeah. What year is it?",
+            "created_on": "2017-05-23T13:06:31Z",
+            "details": []
+        },
+        {
+            "id": 6737,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "It is the year where you send patch if you want a feature that is not worth the effort.\r\nThese hidpi laptop with low gfx perf aren't designed for gaming.\r\n\r\nNow please stop being condescending: the code is open, stop complaining and start by sticking your thumb out of your a**.\r\n\r\n",
+            "created_on": "2017-05-23T14:33:07Z",
+            "details": []
+        },
+        {
+            "id": 6738,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Judging it isn't worth the effort and throwing the thing away is \"condescending\" as you say, but heh, even though most of the new stuff (engines, software) support this feature (you have like plenty of articles online), it's not a big issue ETL doesn't do as well; non-techi people will just see an old game running with low frame rate on modern systems and forget about it. I think you just missed my point ^^'",
+            "created_on": "2017-05-23T14:38:17Z",
+            "details": []
+        },
+        {
+            "id": 6739,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "There are points being missed on both sides. But please understand that we are an incredibly small team and to no extend comparable to game studios working on those referenced modern games. This ticket is closed and will remain closed, because we have absolutely no ressources lying around and the workload is already immensly impressive. All of the people involved are doing this as a hobby.\r\nEveryone who wants to can join our efforts and the fastest way to get your desired features is to send patches. There are quite a few people on here/Discord/IRC etc that have the potential knowledge to work on this project but choose not to because of various reasons. We respect that, but please also respect our decision to priotitize issues and decline those that we deem to not be worth being looked into. We do not get paid for this but the workload is that of a full-time job. So please respect our decision if we can't work on some features. \r\n\r\nAgain, we are an open team a nd if you have knowledge in that area, which by the discussion seems likely, then just have a look for yourself.\r\n\r\nThis is not meant to be offensive, but rather defensive. Please understand the situation we are in.",
+            "created_on": "2017-05-23T15:15:09Z",
+            "details": []
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 1036,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 286,
+        "name": "Calinou"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 4,
+        "name": "ALL"
+    },
+    "subject": "Add support for undersampled 3D rendering",
+    "description": "Support for undersampled 3D rendering should be added, to allow users of hiDPI monitors (but with slow GPUs) to play the game with decent framerates without the inconveniences of lower-resolution fullscreen.\r\n\r\nFor example, I get low, unstable framerate (20-30 FPS) on my laptop in its native resolution (3840\u00d72160), but after forcing the game to run in 1920\u00d71080 fullscreen, I get 60-100 FPS in most areas of official maps (in a local game with only one player, though).\r\n\r\nThe game seems to handle non-native fullscreen resolutions quite well on Linux, probably thanks to SDL 2, but it could be even better with undersampling (which many modern games provide now).\r\n\r\nUpsides of undersampling compared to lower-resolution fullscreen:\r\n- Keeps the HUD and fonts sharp (although the HUD head probably will be undersampled)\r\n- No modesetting required when alt-tabbing (makes it faster to switch between windows)\r\n- Can be used in windowed mode\r\n- Makes it possible to change the upscaling algorithm used (lower or higher-quality, or even pixelated for a retro look)\r\n\r\nDownsides:\r\n- Probably slower than lower-resolution fullscreen, but needs to be tested",
+    "start_date": "2017-05-22",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-05-22T14:17:27Z",
+    "updated_on": "2017-05-23T15:15:09Z",
+    "closed_on": "2017-05-22T15:24:39Z"
+}

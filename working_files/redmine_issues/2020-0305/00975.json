@@ -1,0 +1,346 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 299,
+            "issue_id": 932,
+            "issue_to_id": 975,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 321,
+            "issue_id": 974,
+            "issue_to_id": 975,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 328,
+            "issue_id": 975,
+            "issue_to_id": 1010,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "9811244e657fa866715da31bfd60091452566661",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cmake: add WolfAdmin to installers, refs #975",
+            "committed_on": "2017-03-24T21:40:05Z"
+        },
+        {
+            "revision": "dda0db65a6f4d80f01567f72e80faadd599516ef",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "misc: fix cmake scripts for geoip, ob  & wa",
+            "committed_on": "2017-03-26T16:19:34Z"
+        },
+        {
+            "revision": "c0e1d80940996731b3f5207497a1bfa37fdc2e85",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: fixed WolfAdmin install path, refs #975",
+            "committed_on": "2017-07-01T12:53:51Z"
+        },
+        {
+            "revision": "67e89ae5773e99e9caa9a584e892e1a2148a1f84",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: updated WolfAdmin md5sum, refs #975",
+            "committed_on": "2018-12-19T17:44:00Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 6224,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-01-15T12:39:49Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "932"
+                }
+            ]
+        },
+        {
+            "id": 6226,
+            "user": {
+                "id": 392,
+                "name": "Timothy"
+            },
+            "notes": "",
+            "created_on": "2017-01-15T12:42:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Add WoldAdmin to installers",
+                    "new_value": "Add WolfAdmin to installers"
+                }
+            ]
+        },
+        {
+            "id": 6247,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "From #217:\r\n\r\nIR4T4 wrote:\r\n> We should ask the OB team to change their code and read the OB config file from fs_homepath first. If there is no file in fs_homepath the fs_basepath file is failback case.\r\n\r\nThere is a similar issue with WolfAdmin. We should ensure it takes fs_basepath as fallback (for config files, maybe database too).",
+            "created_on": "2017-01-19T10:13:53Z",
+            "details": []
+        },
+        {
+            "id": 6518,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-03-05T23:22:45Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "974"
+                }
+            ]
+        },
+        {
+            "id": 6521,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-03-05T23:32:28Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "183"
+                }
+            ]
+        },
+        {
+            "id": 6631,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "{TODO}\r\n* Fix \"chmod: cannot access './legacy/omni-bot/': No such file or directory\" error\r\n* -Fix wIn installaler Polish translation-\r\n* -Fix WA default config + DB creation- (done)",
+            "created_on": "2017-03-24T21:41:36Z",
+            "details": []
+        },
+        {
+            "id": 6659,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-04-10T14:40:58Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1010"
+                }
+            ]
+        },
+        {
+            "id": 6668,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-04-10T15:58:33Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 6729,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "{FIXME}\r\n-The WA achive shouldn't be entirely extracted in the mod folder, but correctly installed.- (done)",
+            "created_on": "2017-05-21T13:35:19Z",
+            "details": []
+        },
+        {
+            "id": 7315,
+            "user": {
+                "id": 363,
+                "name": "illwieckz"
+            },
+            "notes": "I tried to compile ET: Legacy using @easybuild.sh@ but it fails on WolfAdmin extraction step:\r\n\r\n<pre><code>-- Installing WolfAdmin\r\n-- Downloading WolfAdmin archive to /home/illwieckz/dev/etlegacy/build/legacy/wolfadmin.tar.gz\r\n-- [download 1% complete]\u2026\r\n-- [download 100% complete]\r\n-- Extracting WolfAdmin archive to /home/illwieckz/dev/etlegacy/build/legacy/wolfadmin\r\nCMake Error at cmake/ETLInstallWolfAdmin.cmake:19 (file):\r\n  file COPY cannot find\r\n  \"/home/illwieckz/dev/etlegacy/build/legacy/wolfadmin/luamods\".\r\nCall Stack (most recent call first):\r\n  CMakeLists.txt:168 (include)\r\n\r\n\r\nCMake Error at cmake/ETLInstallWolfAdmin.cmake:22 (file):\r\n  file COPY cannot find\r\n  \"/home/illwieckz/dev/etlegacy/build/legacy/wolfadmin/lualibs\".\r\nCall Stack (most recent call first):\r\n  CMakeLists.txt:168 (include)\r\n\r\n\r\n-- Adding WolfAdmin to installer scripts\r\n-- ***********************************************************\r\n-- Genuine ET files are not copied - ET: Legacy won't start !!!\r\n-- In order to start the game copy\r\n-- pak0.pk3, pak1.pk3 and pak2.pk3\r\n-- to ./etmain\r\n-- ***********************************************************\r\n-- Configuring incomplete, errors occurred!\r\nSee also \"/home/illwieckz/dev/etlegacy/build/CMakeFiles/CMakeOutput.log\".\r\nExiting!</code></pre>\r\n\r\nThe CMakeOutput.log seems to have nothing related to WolfAdmin:\r\n\r\n<pre><code>$ grep -ir wolfadmin /home/illwieckz/dev/etlegacy/build/CMakeFiles/CMakeOutput.log\r\n\u00d8</code></pre>\r\n\r\nThe @wolfadmin.tar.gz@ file is correctly downloaded, stored with the right name and expected path, and listable.",
+            "created_on": "2018-10-23T23:32:20Z",
+            "details": []
+        },
+        {
+            "id": 7316,
+            "user": {
+                "id": 363,
+                "name": "illwieckz"
+            },
+            "notes": "Wait, I just did that in @cmake/ETLFunctions.cmake@ and it now works, that makes no sense:\r\n\r\n<pre><code class=\"diff\">- \t\tCOMMAND ${CMAKE_COMMAND} -E tar -xzf ${_PATH}\r\n+ \t\tCOMMAND ${CMAKE_COMMAND} -E tar -xvzf ${_PATH}</code></pre>\r\n",
+            "created_on": "2018-10-23T23:35:36Z",
+            "details": []
+        },
+        {
+            "id": 7354,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-12-21T13:05:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 7526,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-01-06T08:35:53Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 7548,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-01-15T13:02:38Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "old_value": "183"
+                }
+            ]
+        },
+        {
+            "id": 7783,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-02-14T10:43:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "22",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 392,
+            "name": "Timothy"
+        },
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 975,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 4,
+        "name": "Feedback"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Add WolfAdmin to installers",
+    "description": "Let's add our prefered game manager to the installs.",
+    "start_date": "2017-01-15",
+    "done_ratio": 80,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-01-15T12:38:10Z",
+    "updated_on": "2019-02-14T10:43:13Z"
+}

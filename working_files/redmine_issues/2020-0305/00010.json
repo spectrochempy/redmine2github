@@ -1,0 +1,352 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 16,
+            "issue_id": 68,
+            "issue_to_id": 10,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "c6a81805c5224df8826b8578b069f3a7ca91382d",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "misc: added ader\u2019s ET:L icon, fixes #10",
+            "committed_on": "2012-11-04T16:30:02Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 104,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "The attached image was the first proposal made by Psykorgasm a month ago. I haven't heard from him since.",
+            "created_on": "2012-05-10T21:04:27Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "17",
+                    "new_value": "etlegacy-icon-proposal1.png"
+                },
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "12"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 156,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "http://www.iconfinder.com/icondetails/6300/128/et_icon",
+            "created_on": "2012-07-15T19:27:54Z",
+            "details": []
+        },
+        {
+            "id": 176,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Created from RobyBlind http://i.imgur.com/7I7SZ.jpg\n\nRadegast, what about a user contest? We might open a topic on SD and ask the ET community ...",
+            "created_on": "2012-07-26T17:00:09Z",
+            "details": []
+        },
+        {
+            "id": 278,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-08-18T12:51:41Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 315,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "IR4T4 wrote:\n> Created from RobyBlind http://i.imgur.com/7I7SZ.jpg\n> \n> Radegast, what about a user contest? We might open a topic on SD and ask the ET community ...\nI totally forgot about this until *ader10* showed up on our IRC channel today and gave us this new logo.\n\nThe one thing that makes this one stand out is that it is in SVG format, so we can scale it anyway we like without loosing any of the image quality. So it can be used for the game icon as well as the main big logo in the etmain menu.\n",
+            "created_on": "2012-09-22T14:53:00Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "39",
+                    "new_value": "wolf_paths.svg"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 316,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2012-09-22T17:50:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 454,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Applied in changeset commit:c6a81805c5224df8826b8578b069f3a7ca91382d.",
+            "created_on": "2012-11-04T16:36:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 520,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-11-13T23:05:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 794,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Radegast wrote:\r\n> The one thing that makes this one stand out is that it is in SVG format, so we can scale it anyway we like without loosing any of the image quality. So it can be used for the game icon as well as the main big logo in the etmain menu.\r\nCould somebody do some nicer shadow for this logo 'cause it's ugly at the moment to be honest.",
+            "created_on": "2012-12-14T15:18:40Z",
+            "details": []
+        },
+        {
+            "id": 797,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "I think the shadow looks good.\r\n\r\n!etlegacy.png!",
+            "created_on": "2012-12-14T17:11:28Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "74",
+                    "new_value": "etlegacy.png"
+                }
+            ]
+        },
+        {
+            "id": 799,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "",
+            "created_on": "2012-12-14T21:36:42Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "75",
+                    "new_value": "wolf_shadow.png"
+                }
+            ]
+        },
+        {
+            "id": 800,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "!wolf_shadow.png!\n\nLooks much better IMHO.",
+            "created_on": "2012-12-14T21:37:29Z",
+            "details": []
+        },
+        {
+            "id": 815,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "Dragon wrote:\r\n> !wolf_shadow.png!\r\n> \r\n> Looks much better IMHO.\r\n\r\nTrue. But better to find svg of it ;> (with transparent background)",
+            "created_on": "2012-12-15T12:45:13Z",
+            "details": []
+        },
+        {
+            "id": 848,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "morsik wrote:\r\n> True. But better to find svg of it ;> (with transparent background)\r\nI don't know if it's possible to do such shadows in Inkscape, however, it's really simple to export a logo without a shadow from Inkscape with whatever resolution you like to PNG and then add a shadow in GIMP, that's what I did (took me around 3 mins).",
+            "created_on": "2012-12-24T15:52:08Z",
+            "details": []
+        },
+        {
+            "id": 850,
+            "user": {
+                "id": 51,
+                "name": "babets"
+            },
+            "notes": "Hi, I just added a little bit of shadow to the svg one.\r\nJust my 2 cents: the svg format is just an xml file so it's good to use it if you want to make the icon \"versionable\" in git, I think you can just convert it to png at \"compile time\" using imagemagick.\r\n\r\nI made the shadow a little bit smaller than the one posted by dragonji but I can make it bigger in a second.",
+            "created_on": "2012-12-25T18:55:47Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "84",
+                    "new_value": "wolf_paths-shadow.svg"
+                }
+            ]
+        },
+        {
+            "id": 851,
+            "user": {
+                "id": 51,
+                "name": "babets"
+            },
+            "notes": "!g3826.png!\r\nExported to png just for comparison.",
+            "created_on": "2012-12-25T19:03:22Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "85",
+                    "new_value": "g3826.png"
+                }
+            ]
+        },
+        {
+            "id": 853,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "babets wrote:\r\n> !g3826.png!\r\n> Exported to png just for comparison.\r\nLooks nice :)",
+            "created_on": "2012-12-25T21:28:25Z",
+            "details": []
+        },
+        {
+            "id": 1338,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Any news on this? babets's modified version looks way better than the original one with that \"shadow\".",
+            "created_on": "2013-03-17T14:05:58Z",
+            "details": []
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 10,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 5,
+        "name": "2.71rc1"
+    },
+    "subject": "Design a new hires game icon",
+    "description": "",
+    "start_date": "2012-03-02",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-03-02T13:46:49Z",
+    "updated_on": "2013-03-17T14:05:58Z",
+    "closed_on": "2012-11-04T16:36:07Z"
+}

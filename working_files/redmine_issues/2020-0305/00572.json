@@ -1,0 +1,260 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "d098af23d187f016d8efc752e33e0cad2f752c08",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "engine: merged part of the ioq3 com_frame code to fix cpu usage issues, refs #572",
+            "committed_on": "2014-12-29T14:11:34Z"
+        },
+        {
+            "revision": "f1bb7cf13249d20be782659a3c43c7dfb56a965c",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "general: removed unused variable, uncrustify, refs #572",
+            "committed_on": "2014-12-29T14:54:29Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3418,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "What os are you using? Win8.1 for instance does show 100% core usage even on vanilla ET (With my specs i can run 10 ETs at 125 fps).",
+            "created_on": "2014-08-31T19:19:09Z",
+            "details": []
+        },
+        {
+            "id": 3419,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Same on linux. One core is used for ET/ETL. \r\n\r\nCalinou wrote:\r\n> The game uses way too much CPU. Usually about 100 %, sometimes up to 180 % (this means a thread is fully used + other threads are quite used).\r\n\r\nWe can't talk about threads, because ET doesn't use threads. It's a single process app which is always using full resources = 1 CPU. \r\nFPS are more related to the used gfx card and settings (r_mode f.e.).\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+            "created_on": "2014-08-31T20:31:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "12"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "6",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 3420,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Actually there's a simple fix to this (which i just pushed to the master) which sleeps the main thread 0 ms which at least on windows causes the system to not eat up 100% of the core, i do not know if also works on linux but we can change it to 1ms of it helps on other os:s..",
+            "created_on": "2014-08-31T20:53:44Z",
+            "details": []
+        },
+        {
+            "id": 3421,
+            "user": {
+                "id": 286,
+                "name": "Calinou"
+            },
+            "notes": "OS is Xubuntu 14.04.\r\n\r\nSleeping 1 ms makes sense, this is what most other games do (like Xonotic). Make it configurable (through a cvar) if you can (disabling the sleep is good for benchmarking).\r\n\r\nIs there a cvar in 2.71rc4 to change the sleep interval? I've tried r_swapInterval 1, it works OK, but still at about 95 %. Higher values make everything slow.\r\n\r\nPS: I don't agree with the priority change, it should at least be High because it may reduce hardware life span (and causes unnecessary power usage).",
+            "created_on": "2014-09-01T16:53:28Z",
+            "details": []
+        },
+        {
+            "id": 3424,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Priority change has been done because I can't reproduce on debian. Listen server with 30 bots uses max 60% of a single core and I'm running several apps as well. This might be a local issue on your side. ",
+            "created_on": "2014-09-02T20:46:00Z",
+            "details": []
+        },
+        {
+            "id": 3457,
+            "user": {
+                "id": 236,
+                "name": "chriswww"
+            },
+            "notes": "Calinou wrote:\r\n> The game uses way too much CPU. Usually about 100 %, sometimes up to 180 % (this means a thread is fully used + other threads are quite used).\r\n> \r\n> The FPS are limited to 61, so I'm not running with too much FPS.\r\n\r\nET (both legacy and vanilla) runs an endless main loop which, even if it has nothing to do, will keep running that code. So eats 100% cpu. There's a quake (4 i think) config cvar and code to make the loop use a callback timer with an interval so that it doesn't eat all cpu, at the expense of possibly less responsive game.\r\nET code is incredibly intertwined between fps / screen refresh setting / sound and network settings. I can successfully make cpu usage around 5% by using an FPS limiter, setting it to any number that is equal or below com_maxfps (the real fps as displayed, which matches magic values 71,76,90,100,125 etc). Have tested with Fraps and the utility to show frametimes. It's as good as or better than without FPS limiting.\r\nMy current best settings (minimal input lag) cl_maxpackets 100, rate 25000, com_maxfps 200, display refresh 100 and the FPS limiter (nvidia profile using nvidia inspector) set to 200, I also use Precision X to make sure the GPU is not throttling back and forth as ET hardly uses GPU but throttling causes problems. I set affinity to the last core and priority High. Windows power profile set to 100 percent all time, all bios power saving features disabled (e.g. Intel SpeedStep, C states, Turbo etc.)\r\n",
+            "created_on": "2014-09-15T01:51:51Z",
+            "details": []
+        },
+        {
+            "id": 3458,
+            "user": {
+                "id": 236,
+                "name": "chriswww"
+            },
+            "notes": "You shouldn't run ET with an fps of 61, as fps is tied to keyboard/mouse input and sound and graphics. The default com_maxfps of 85 (which is actually real fps of 90 because of the engine quirks, use cg_drawfps 1 to see real fps) is bare minimum before you start seeing screen stutter. It should really be 125 or higher. Vsync minimizes somewhat the visual stutter but it's still there. Game should be really run with vsync off on a high refresh monitor.\r\nOriginally the game was setup/meant to run on a 4:3 resolution with 85Hz on a CRT monitor, with vsync on....but on a CRT vsync has no input lag. If you are running it on a 60Hz LCD, don't expect too much goodness, as the game was meant for CRT high refresh.",
+            "created_on": "2014-09-15T01:57:58Z",
+            "details": []
+        },
+        {
+            "id": 3459,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "This issue should be already fixed, just waiting for someone using linux to confirm that it is ok (windows, and osx are confirmed)",
+            "created_on": "2014-09-15T07:28:03Z",
+            "details": []
+        },
+        {
+            "id": 3461,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "",
+            "created_on": "2014-09-15T19:19:23Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 4234,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I never realized it, but CPU is locked around 95% here (client only)... and did miss that ticket.\r\nConfirmed by morsik too.\r\n\r\nRelevant commit: \"40fa9abc71f4912dc9526c60fc8670aab07f875e\":https://github.com/etlegacy/etlegacy/commit/40fa9abc71f4912dc9526c60fc8670aab07f875e\r\n\r\nEvery time I run \"etl\", I see two processes: one needing very low cpu (a few percents only), while the other is stuck at ~95-100%. Killing one kills the other. etlded runs without cpu issue. I have a quadcore, if that is of any relevance.\r\n\r\nEdit: didn't read all the comments. So I'm not sure if that \"issue\" can be solved or not. On WIndows, I can see the game makes the CPU heating much less for some reason. ",
+            "created_on": "2014-12-28T21:48:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "6",
+                    "new_value": "16"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 4237,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "",
+            "created_on": "2014-12-29T14:31:25Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 572,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 6,
+        "name": "Urgent"
+    },
+    "author": {
+        "id": 286,
+        "name": "Calinou"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 16,
+        "name": "2.72"
+    },
+    "subject": "Incredibly high CPU usage",
+    "description": "The game uses way too much CPU. Usually about 100 %, sometimes up to 180 % (this means a thread is fully used + other threads are quite used).\r\n\r\nThe FPS are limited to 61, so I'm not running with too much FPS.",
+    "start_date": "2014-08-31",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-08-31T17:49:53Z",
+    "updated_on": "2014-12-29T14:31:25Z",
+    "closed_on": "2014-12-29T14:31:25Z"
+}

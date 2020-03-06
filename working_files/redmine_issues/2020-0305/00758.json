@@ -1,0 +1,98 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 4300,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "The nsis script is part of the whole cmake&cpack build and packaging process. The nsis file is in the main repo.",
+            "created_on": "2015-01-05T23:24:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 4301,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-01-06T04:49:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "16"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 758,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 15,
+        "name": "muessli"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 16,
+        "name": "2.72"
+    },
+    "subject": "etlegacy.nsi should be part of the WindowsInstaller",
+    "description": "The NullSoftInstallerScript schould IMO be part of the WindowsInstaller.\r\nSo everybody can explore the WindowsInstallation.\r\nFurther: all Stuff to be needed to compile the *.nsi-File should also included.",
+    "start_date": "2015-01-05",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Windows"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-01-05T22:36:47Z",
+    "updated_on": "2015-01-06T04:49:00Z",
+    "closed_on": "2015-01-05T23:24:08Z"
+}

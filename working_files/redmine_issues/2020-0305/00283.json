@@ -1,0 +1,198 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "1b27c74ed1ce9656efc7bfde05ed60fc4edbce4d",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "cgame: added cg_drawTime cvar and functionality, refs #283",
+            "committed_on": "2013-04-26T08:18:10Z"
+        },
+        {
+            "revision": "e4303ae50c190c377b86a4c0f7e6ff61c5589366",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "cgame: added cg_drawTimeSeconds, refs #283",
+            "committed_on": "2013-04-26T08:37:49Z"
+        },
+        {
+            "revision": "70ca9c4f38e3fcec18ef7c43909b942e10b7fc54",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed cg_drawTimeSeconds and added leading zero, refs #283\n\ncg_drawTimeSeconds 1 displays seconds, 0 is disabled. Also use ':' instead\nof '.' for second delimiter, and always use double digit for sec, min. Use\ndouble digit for hours unless the 12 hours format is selected.",
+            "committed_on": "2013-04-26T10:14:39Z"
+        },
+        {
+            "revision": "5db7feb6f3335d678a85ae37a5d528a3a2eafaa5",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "Merge pull request #50 from Spyhawk/clock\n\ncgame: fixed cg_drawTimeSeconds and added leading zero, refs #283",
+            "committed_on": "2013-04-26T11:49:07Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1504,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "",
+            "created_on": "2013-04-07T15:58:01Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "44"
+                }
+            ]
+        },
+        {
+            "id": 1574,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "cg_drawTime is now functional (0/1/2) cg_drawTimeSeconds is not yet implemented and i aint sure if I even bother with it.",
+            "created_on": "2013-04-26T08:20:22Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 1575,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Implemented cg_drawTimeSeconds anyway so this is now done and finished.",
+            "created_on": "2013-04-26T08:41:25Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "7"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 1576,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Errrm ... why you don't do bitflags? ... 2 cvars are just a waste :O",
+            "created_on": "2013-04-26T08:56:58Z",
+            "details": []
+        },
+        {
+            "id": 1578,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Thats what i thought initially, but then again if people are used to this then let them have it.. You can change it if you wish :P",
+            "created_on": "2013-04-26T09:01:56Z",
+            "details": []
+        },
+        {
+            "id": 1579,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Yes please. I mean it's such a rarely used feature - most players don't want an additional permanent 'blinky' area anyway. We have the wiki and finally a menu entry (RaFal?) so players will find a way to set the seconds in the clock.",
+            "created_on": "2013-04-26T10:26:35Z",
+            "details": []
+        }
+    ],
+    "watchers": [
+        {
+            "id": 44,
+            "name": "Jacker"
+        },
+        {
+            "id": 13,
+            "name": "RaFaL"
+        }
+    ],
+    "time_entries": null,
+    "id": 283,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 44,
+        "name": "Jacker"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 7,
+        "name": "2.71rc2"
+    },
+    "subject": "Add local time (cg_drawTime)",
+    "description": "Add cg_drawTime, cg_drawTimeSeconds, to draw local time.\r\n\r\n* cg_drawTime can be 0 (not displayed), 1 (24 hr clock) or 2 (12 hour clock with am/pm).\r\n* cg_drawTimeSeconds will display seconds\r\n\r\nThis is a crucial feature in order not to miss an appointment or not to forget to go to bed before dawn.",
+    "start_date": "2013-04-07",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-04-07T13:53:31Z",
+    "updated_on": "2013-04-26T10:26:35Z",
+    "closed_on": "2013-04-26T08:41:25Z"
+}

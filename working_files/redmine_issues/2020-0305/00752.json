@@ -1,0 +1,174 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 185,
+            "issue_id": 752,
+            "issue_to_id": 271,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "dc567bd54b11504a43df8b13e7666c75ab910a42",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: fixed sv_maxclients count in server browser (windows), fixes #752",
+            "committed_on": "2015-01-03T15:06:17Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 4259,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I can reproduce on Windows... but unlike Dragonji, the value shown instead of sv_maxclients is the human players value (few minutes ago there was a Legacy server with 3 people connected, and sv_maxclients indeed displayed \"3\").\r\n\r\nLinux builds are fine.",
+            "created_on": "2015-01-02T19:59:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "8"
+                },
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "old_value": "",
+                    "new_value": "Windows"
+                }
+            ]
+        },
+        {
+            "id": 4260,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-01-02T20:07:24Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "511",
+                    "new_value": "shot0000.jpg"
+                }
+            ]
+        },
+        {
+            "id": 4261,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Seemingly working workaround:\r\n\r\n<pre><code class=\"diff\">\r\ndiff --git a/src/ui/ui_main.c b/src/ui/ui_main.c\r\nindex 8b8e93c..51215e4 100644\r\n--- a/src/ui/ui_main.c\r\n+++ b/src/ui/ui_main.c\r\n@@ -6626,7 +6626,7 @@ const char *UI_FeederItemText(float feederID, int index, int column, qhandle_t *\r\n \t\t\t\t\tCom_sprintf(clientBuff, sizeof(clientBuff), \"^W%s^9(+%s)/%s\",\r\n \t\t\t\t\t            Info_ValueForKey(info, \"humans\"),\r\n \t\t\t\t\t            va(\"%i\", atoi(Info_ValueForKey(info, \"clients\")) - atoi(Info_ValueForKey(info, \"humans\"))),\r\n-\t\t\t\t\t            Info_ValueForKey(info, \"sv_maxclients\"));\r\n+\t\t\t\t\t            va(\"%i\", atoi(Info_ValueForKey(info, \"sv_maxclients\"))));\r\n \t\t\t\t}\r\n \t\t\t\telse\r\n \t\t\t\t{\r\n-- \r\n</code></pre>\r\n\r\nLooks like integer to string conversion not handled by MSVC (!?)..",
+            "created_on": "2015-01-02T21:31:28Z",
+            "details": []
+        },
+        {
+            "id": 4265,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-01-03T14:50:22Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "271"
+                }
+            ]
+        },
+        {
+            "id": 4267,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Fixed, thx to Ensi. Info_ValueForKey reuses the same buffer, so the value was overwritten. It was working on Linux probably because of different memory management.",
+            "created_on": "2015-01-03T15:14:16Z",
+            "details": []
+        },
+        {
+            "id": 4268,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:dc567bd54b11504a43df8b13e7666c75ab910a42.",
+            "created_on": "2015-01-03T15:30:01Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 752,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 35,
+        "name": "Dragonji"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 16,
+        "name": "2.72"
+    },
+    "subject": "Client shows wrong sv_maxclients value",
+    "description": "Client shows a value of non human players instead of sv_maxclients on masterlist for etlded servers. See screenshot attached below.",
+    "start_date": "2015-01-02",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Windows"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-01-02T16:45:34Z",
+    "updated_on": "2015-01-03T15:30:01Z",
+    "closed_on": "2015-01-03T15:30:01Z"
+}

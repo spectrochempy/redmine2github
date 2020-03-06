@@ -1,0 +1,100 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "8c541ee04533c5a535724b2b32c34d904247bde2",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: distinguish bots from anonymous players flags, refs #1312",
+            "committed_on": "2019-06-29T23:13:05Z"
+        },
+        {
+            "revision": "59987fe4744ad41361063a30c7191c3c20c036c1",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: added bots flag to world flags, fixes #1312",
+            "committed_on": "2019-06-30T19:37:28Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 8347,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:59987fe4744ad41361063a30c7191c3c20c036c1.",
+            "created_on": "2019-06-30T19:45:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1312,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Add specific flag for bots",
+    "description": "Bots use the UN flag by default. It might be a good idea to differentiate them from players, especially since the privacy geo option make players use the UN flag too.\r\nFor the flag, we might consider using the \"space invader\" icon that is already used on UI here and there (vanilla icon shipped with pak0.pk3).",
+    "start_date": "2019-06-25",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-06-25T18:43:33Z",
+    "updated_on": "2019-06-30T19:45:50Z",
+    "closed_on": "2019-06-30T19:45:50Z"
+}

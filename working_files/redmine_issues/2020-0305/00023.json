@@ -1,0 +1,209 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 83,
+            "issue_id": 23,
+            "issue_to_id": 317,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "3ac56026d5337025012fb6583dfd413c59f3a667",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "client: do not bind +speed to the CAPSLOCK key by default, fixes #23",
+            "committed_on": "2012-05-25T16:16:31Z"
+        },
+        {
+            "revision": "c7fd8d3b5121fd044e2c4ef635b8edecc7158894",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: bind +speed to CAPSLOCK again - reverts\nhttp://dev.etlegacy.com/projects/etlegacy/repository/revisions/3ac56026d5337025012fb6583dfd413c59f3a667\nrefs #23 refs #317",
+            "committed_on": "2013-07-31T08:52:54Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 50,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "That's not bug. Player goes slower if you enable CAPS LOCK. Try to disable it. :D\n\nThis is because:\n\n    /bindlist\n...\nCAPSLOCK \"+speed\"\n",
+            "created_on": "2012-03-17T14:17:09Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 51,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "CAPS LOCK works like switch here, but it worked like normal button in original ET.",
+            "created_on": "2012-03-17T16:30:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "6",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "10"
+                }
+            ]
+        },
+        {
+            "id": 120,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-05-18T18:33:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 123,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-05-18T18:38:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Movement slowed down afetr HW usage",
+                    "new_value": "Movement slowed down after HW usage"
+                }
+            ]
+        },
+        {
+            "id": 126,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "+speed is not bound to the CAPSLOCK key by default anymore. \r\n\r\nMake sure you delete that from every @etconfig.cfg@ you have.",
+            "created_on": "2012-05-25T16:46:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "10",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 1789,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "http://dev.etlegacy.com/projects/etlegacy/repository/revisions/3ac56026d5337025012fb6583dfd413c59f3a667 reverted.\r\n'bind CAPSLOCK \"+speed\"' wasn't removed from etmain/default.cfg anyway. New issue #317.",
+            "created_on": "2013-07-31T08:58:39Z",
+            "details": []
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 23,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "assigned_to": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 1,
+        "name": "2.70rc1"
+    },
+    "subject": "Movement slowed down after HW usage",
+    "description": "Can't reproduce it but for some reasons movement slowed down (HW speed) and stays after HW usage (unskilled). Weapon/class change etc doesn't help here to get normal speed again. ",
+    "start_date": "2012-03-15",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-03-15T20:17:03Z",
+    "updated_on": "2013-07-31T08:58:39Z",
+    "closed_on": "2012-05-25T16:46:03Z"
+}

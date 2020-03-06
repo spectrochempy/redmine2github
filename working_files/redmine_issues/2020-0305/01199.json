@@ -1,0 +1,144 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 393,
+            "issue_id": 1166,
+            "issue_to_id": 1199,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "03a176b246e0f3211f5c5b101de1eb0d1186fc2f",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "misc: fix easybuild.sh to properly link bundled openssl",
+            "committed_on": "2019-01-30T09:13:21Z"
+        },
+        {
+            "revision": "52289508220778c0cdedf54d588766a26126e740",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: disabled OpenSSL support in easybuild.sh",
+            "committed_on": "2019-03-03T11:52:46Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7707,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-02-01T17:17:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Fix openSSL/add hhtps for curl/download",
+                    "new_value": "Fix openSSL/add https for curl/download"
+                }
+            ]
+        },
+        {
+            "id": 7715,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-02-03T10:15:03Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1166"
+                }
+            ]
+        },
+        {
+            "id": 7836,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Note: the latest libs code (https://github.com/etlegacy/etlegacy-libs/commit/8159d2b8a01670c65ec2e18b3d5d1730d302ff62) fixes some issue with Debian, but breaks the ability to build the code for Mingw/Win developers.\r\nThe cmake code has to be rewritten entirely to implement openssl correctly.",
+            "created_on": "2019-03-02T23:28:24Z",
+            "details": []
+        },
+        {
+            "id": 7837,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I reverted the change to fix Linux build.\r\n2.76 wasn't compiled with OpenSSL support and was doing just fine, the \"bugfix-only\" 2.77 shouldn't either. This is however something we should fix later on.",
+            "created_on": "2019-03-03T11:57:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "22",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1199,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Fix openSSL/add https for curl/download",
+    "description": "Make curl to use https.",
+    "start_date": "2019-02-01",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-02-01T17:17:10Z",
+    "updated_on": "2019-03-03T11:57:05Z"
+}

@@ -1,0 +1,135 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7023,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Did you check cvar vote_allow_friendlyfire ?",
+            "created_on": "2018-01-19T13:05:40Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 7517,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-01-06T08:21:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 7653,
+            "user": {
+                "id": 392,
+                "name": "Timothy"
+            },
+            "notes": "I cannot reproduce this on latest master. There does not seem to be any lines in the code related to friendly fire in the complaints conditions either (check \"g_combat.c\":https://github.com/etlegacy/etlegacy/blob/c3fe9e38fe73a943452529683daad648e83a8349/src/game/g_combat.c#L483).\r\n\r\nThe only conditions for teamkills that should not trigger complaints are:\r\n* construction kills\r\n* dynamite kills (dynamites placed on objectives)\r\n* kills that are exempt from complaints by g_disableComplaints",
+            "created_on": "2019-01-23T13:29:24Z",
+            "details": []
+        },
+        {
+            "id": 7760,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I could reproduce in the past but haven't checked recetly. The issue is restrited to MOD_SHOVE, which is handled differently than other 'real' weapons.\r\nTODO: Check on a map where shove is easily possible, like mina.",
+            "created_on": "2019-02-14T10:33:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "16",
+                    "new_value": "21"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "22",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 742,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 4,
+        "name": "Feedback"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Complains aren't possible when FF is off",
+    "description": "How complaint popups are suddenly disabled when friendly fire is off? You can still push people to death.\r\n\r\n-*S",
+    "start_date": "2014-12-18",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-12-18T11:38:06Z",
+    "updated_on": "2019-02-14T10:33:31Z"
+}

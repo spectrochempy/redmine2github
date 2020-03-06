@@ -1,0 +1,128 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "90a3b5d5acfa731d6ca5734bb89d461bce5a4bcd",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "renderer2: C conversion",
+            "committed_on": "2013-12-26T15:02:49Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2187,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-11-01T12:50:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Compiling vertexLighting_DBS_world_fp.glsl fails with \"#else after #else\" on MacOSX",
+                    "new_value": "Compiling vertexLighting_DBS_world_fp.glsl fails with \"#else after #else\""
+                },
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "20",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "44"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 2567,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-12-26T15:46:38Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 386,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 273,
+        "name": "otty"
+    },
+    "assigned_to": {
+        "id": 44,
+        "name": "Jacker"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "Compiling vertexLighting_DBS_world_fp.glsl fails with \"#else after #else\"",
+    "description": "For rendergl2, compiling the fragmentshader vertexLighting_DBS_world fails on my IMac, because of a illegal #else statement. I cannot reproduce this fail for Win32 or Linux ( have no machines available ). But this error seems to be reasonable:\r\n\r\nI had a look in XreaL's repository and Tr3b is checking COMPAT_Q3 to be set in this statement. Since this check is removed from ETL, the #else block beginning on line 206 should be invalid all the time.\r\n\r\nI quickfixed this issue with replacing the \"#else\" in line 149 with \"#elif 1\". ",
+    "start_date": "2013-11-01",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-11-01T09:29:13Z",
+    "updated_on": "2013-12-26T15:46:38Z",
+    "closed_on": "2013-12-26T15:46:38Z"
+}

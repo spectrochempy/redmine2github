@@ -1,0 +1,180 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 12,
+            "issue_id": 63,
+            "issue_to_id": 60,
+            "relation_type": "duplicates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 148,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "The first bug which produced those black lines in Silentmod UI was the same bug which caused issue #60 and was already fixed in commit:ef760e34 commit by user:IR4T4.\r\n\r\nThe second bug I am not sure about. Console shows up correctly in linux and I don't have Windows to try it out there.",
+            "created_on": "2012-07-05T10:40:27Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 150,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Well, what I can say, I tested *_etl-2.70-git20120504-win32.zip_* build and both things are present in there, but it seems this package is just outdated. It would be great if someone from the team could update it because I don't have Visual Studio at the moment so I cannot compile ET:L myself.",
+            "created_on": "2012-07-05T17:08:06Z",
+            "details": []
+        },
+        {
+            "id": 153,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "user:Dragon, I've just uploaded a new build \"etl-2.70-git20120711-win32.zip\":http://etlegacy.com/attachments/download/23/etl-2.70-git20120711-win32.zip, please test it and report your findings. Note that the downloaded files are still saved in the @AppData@ directory on Windows (issue #59).",
+            "created_on": "2012-07-11T17:37:25Z",
+            "details": []
+        },
+        {
+            "id": 168,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "user:Dragon, is the ingame console still buggy?",
+            "created_on": "2012-07-22T09:18:38Z",
+            "details": []
+        },
+        {
+            "id": 172,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Looks good now :)",
+            "created_on": "2012-07-22T17:52:20Z",
+            "details": []
+        },
+        {
+            "id": 174,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-07-22T21:25:33Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "3",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 175,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2012-07-23T07:32:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 63,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 35,
+        "name": "Dragonji"
+    },
+    "assigned_to": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 1,
+        "name": "2.70rc1"
+    },
+    "subject": "UI and console aren't showed properly",
+    "description": "Reported earlier: http://forums.warchestgames.com/showthread.php/31857-ET-Legacy?p=395084&viewfull=1#post395084",
+    "start_date": "2012-07-05",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-07-05T08:45:14Z",
+    "updated_on": "2012-07-23T07:32:29Z",
+    "closed_on": "2012-07-22T21:25:33Z"
+}

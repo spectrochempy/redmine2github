@@ -1,0 +1,283 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "84e06d24ade615bcc6fd10579370adbc7ceb4d53",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "ui: fixed sort order of cg_markTime in the menu refs #557",
+            "committed_on": "2014-09-09T17:36:28Z"
+        },
+        {
+            "revision": "33bcf0e2421ab29309d0c5ab98df703a30db9027",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "renderer: debug prints in RE_ProjectDecal refs #557",
+            "committed_on": "2014-09-13T15:51:29Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3356,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-08-12T15:24:53Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 3367,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Bullet marks and player shadows seem to be bugged. I can't see both with current legacy mod code but with other mods.  ",
+            "created_on": "2014-08-17T06:34:40Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Wall Mark Lifetime issues",
+                    "new_value": "Fix wall mark and shadows"
+                },
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "1",
+                    "new_value": "16"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "10"
+                }
+            ]
+        },
+        {
+            "id": 3370,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-08-17T06:57:04Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Fix wall mark and shadows",
+                    "new_value": "Fix wall marks and shadows"
+                }
+            ]
+        },
+        {
+            "id": 3430,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "This bug is more than odd and seems to be introduced after RC3, RC4 is affected:\r\n\r\nCurrent code:\r\n- Jacker can't reproduce on Win & OS X\r\n- Mateos can reproduce on Win & legacy mod but some other mods run fine\r\n- I can reproduce on Linux  & legacy mod but some other mods run fine\r\n\r\n---\r\n\r\nI did install Linux RC3 again, legacy mod of RC3 and RC4 run without issues.",
+            "created_on": "2014-09-07T06:51:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "16",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 3432,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "I also tried the current code and it seems there's no effect when you enable wallmarks. I'm using Windows 8.1 Enterprise 64-bit.\r\n\r\n-*S",
+            "created_on": "2014-09-08T15:58:06Z",
+            "details": []
+        },
+        {
+            "id": 3454,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "This bug is introduced by commit https://github.com/etlegacy/etlegacy/pull/85\r\n\r\nWhen HUD player head is drawn the issue occurs (toogle cg_althud). At that point vanilla uses the save/restore view system call.\r\n\r\n\r\n",
+            "created_on": "2014-09-14T09:10:35Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "10",
+                    "new_value": "20"
+                }
+            ]
+        },
+        {
+            "id": 3455,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-09-14T09:11:59Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Fix wall marks and shadows",
+                    "new_value": "Fix wall marks, bulet markers and shadows"
+                }
+            ]
+        },
+        {
+            "id": 3456,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "R_CullPointAndRadius fails when it shouldn't - see tr_main.c line 345/347",
+            "created_on": "2014-09-14T09:18:59Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Fix wall marks, bulet markers and shadows",
+                    "new_value": "Fix wall marks, bullet markers and shadows"
+                }
+            ]
+        },
+        {
+            "id": 3460,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "http://www.etlegacy.com/projects/etlegacy/repository/revisions/efc95a2a77d39417e7dafe668d0902b31aaac2a4\r\nFixed.",
+            "created_on": "2014-09-15T18:53:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "301"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "20",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        },
+        {
+            "id": 44,
+            "name": "Jacker"
+        },
+        {
+            "id": 1,
+            "name": "Radegast"
+        },
+        {
+            "id": 301,
+            "name": "ZTM"
+        }
+    ],
+    "time_entries": null,
+    "id": 557,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 9,
+        "name": "Mateos"
+    },
+    "assigned_to": {
+        "id": 301,
+        "name": "ZTM"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Fix wall marks, bullet markers and shadows",
+    "description": "Task: In the Options > View menu, In-game Display section, when you left click on this option, it decreases the value, while it should increase, like the other options there.\r\n\r\nBug: I don't have any wall marks with this option, on or off; Compiled just now.",
+    "start_date": "2014-08-12",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-08-12T11:50:28Z",
+    "updated_on": "2014-09-15T18:53:16Z",
+    "closed_on": "2014-09-15T18:53:16Z"
+}

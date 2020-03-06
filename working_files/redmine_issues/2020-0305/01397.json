@@ -1,0 +1,123 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "33f1610f9ecc827745785c374d49dce7505fdaee",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "client: do not crash the client if the video frame fails to decode, refs #1397",
+            "committed_on": "2020-02-14T16:15:19Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 8725,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2020-02-12T10:11:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8726,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2020-02-12T12:56:39Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Disclaimer: Please don't use the name of the castle in the text. FireFly received mail from the lawyers of that castle due to alleged copyright violation, so I'm going to refer to it as \"castle map\" to not feed possible algorithms.\r\n\r\n\r\nIt's unfortunately not entirely consistent, but if you enter the castle courtyard as you can see in the video the game crashes without warning/error.\r\nSometimes it's fine to simply go through the corridor as spectator/player, especially after a bit of time has passed, but as soon as you try to use /noclip to fly through the opposing wall it always crashes.\r\n\r\nAudio is SDL2 so it can't really be related to \"#1390\":https://dev.etlegacy.com/issues/1390\r\n\r\n\r\n\r\n",
+                    "new_value": "Disclaimer: Please don't use the name of the castle in the text. FireFly received mail from the lawyers of that castle due to alleged copyright violation, so we are not feeding possible algorithms.\r\n\r\n\r\nIt's unfortunately not entirely consistent, but if you enter the castle courtyard as you can see in the video the game crashes without warning/error.\r\nSometimes it's fine to simply go through the corridor as spectator/player, especially after a bit of time has passed, but as soon as you try to use /noclip to fly through the opposing wall it always crashes.\r\n\r\nAudio is SDL2 so it can't really be related to \"#1390\":https://dev.etlegacy.com/issues/1390\r\n\r\n\r\n\"map in question\":https://et.trackbase.net/map/70/  - \"Download\":https://www.wolffiles.de/index.php?filebase&fid=203\r\n"
+                }
+            ]
+        },
+        {
+            "id": 8728,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2020-02-15T19:42:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "90"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1397,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 4,
+        "name": "Feedback"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Game crash in \"castle map\"",
+    "description": "Disclaimer: Please don't use the name of the castle in the text. FireFly received mail from the lawyers of that castle due to alleged copyright violation, so we are not feeding possible algorithms.\r\n\r\n\r\nIt's unfortunately not entirely consistent, but if you enter the castle courtyard as you can see in the video the game crashes without warning/error.\r\nSometimes it's fine to simply go through the corridor as spectator/player, especially after a bit of time has passed, but as soon as you try to use /noclip to fly through the opposing wall it always crashes.\r\n\r\nAudio is SDL2 so it can't really be related to \"#1390\":https://dev.etlegacy.com/issues/1390\r\n\r\n\r\n\"map in question\":https://et.trackbase.net/map/70/  - \"Download\":https://www.wolffiles.de/index.php?filebase&fid=203\r\n",
+    "start_date": "2020-02-12",
+    "done_ratio": 90,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2020-02-12T10:10:53Z",
+    "updated_on": "2020-02-15T19:42:54Z"
+}

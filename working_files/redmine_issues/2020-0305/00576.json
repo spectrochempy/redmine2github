@@ -1,0 +1,108 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "99716f8c1c7ab6ce0eeb06aa8765047b6e177b75",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "client: while console is active it takes priority with the escape key, fixes #576",
+            "committed_on": "2014-09-09T09:27:26Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3436,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Applied in changeset commit:99716f8c1c7ab6ce0eeb06aa8765047b6e177b75.",
+            "created_on": "2014-09-09T09:31:26Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3437,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2014-09-09T09:36:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 576,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "ESC closes menus in a wrong order",
+    "description": "The thing what I mean with the title here is this for example:\r\n\r\n1. Go in-game\r\n2. Open limbomenu\r\n3. Open Console\r\n4. Press ESC (limbomenu closes)\r\n5. Press ESC again (console closes)\r\n\r\nIn my opinion it should close those in a different order. Because you opened console last and it's on top of the limbomenu, I want to close console first, not the limbomenu.\r\nThis can be done with the menu that comes up by pressing ESC and then opening console. It behaves in the same way as in my example.\r\n\r\n-*S",
+    "start_date": "2014-09-09",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-09-09T09:04:21Z",
+    "updated_on": "2014-09-09T09:36:13Z",
+    "closed_on": "2014-09-09T09:31:26Z"
+}

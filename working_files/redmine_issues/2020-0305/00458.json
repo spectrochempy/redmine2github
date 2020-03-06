@@ -1,0 +1,151 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "82652fd99f743678fb6b1bc4b9b7695ff2ada4fe",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "general: default fs_homepath value changed. *NIX = '.etlegacy' - WIN =\n'ETLegacy' fixes #458",
+            "committed_on": "2014-01-01T23:27:14Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2651,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Or just change it to completely another ones to make all happy, for example: _ETLegacy_ for Windows and _.etlegacy_ for *nix.",
+            "created_on": "2013-12-31T15:21:41Z",
+            "details": []
+        },
+        {
+            "id": 2658,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "The names were chosen to resemble original W:ET 2.60b paths, but now that I see user:Dragonji 's idea to use _ETLegacy_ on Windows and OS X and _.etlegacy_ on linux, I think it makes the most sense.",
+            "created_on": "2013-12-31T17:28:35Z",
+            "details": []
+        },
+        {
+            "id": 2659,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Yea, definitely.\r\n\r\n_ETLegacy_ on Windows and OS X\r\n_.etlegacy_ on linux and other *nix\r\n\r\nI won't be able to work on ET:L at all until the end of January, so let's set the version:2.71rc4 ETA to 1.2.2013.",
+            "created_on": "2014-01-01T13:19:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                }
+            ]
+        },
+        {
+            "id": 2660,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "apple: legacy (not hidden)",
+            "created_on": "2014-01-01T15:14:42Z",
+            "details": []
+        },
+        {
+            "id": 2661,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Applied in changeset commit:82652fd99f743678fb6b1bc4b9b7695ff2ada4fe.",
+            "created_on": "2014-01-01T15:32:43Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 2725,
+            "user": {
+                "id": 15,
+                "name": "muessli"
+            },
+            "notes": "@all, super speed!\r\nmany thx!\r\nmfg muessli",
+            "created_on": "2014-01-02T22:09:37Z",
+            "details": []
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 458,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "Use the same fs_homepath directory name under *nix and Windows",
+    "description": "From muessli, in the forums: http://dev.etlegacy.com/boards/2/topics/720\r\n\r\n>  IMO all Names (both: Linux and Windows) should prefixed with etl* (only lowercase)\r\n> Not a big deal IMO but just keep in mind this game\u2019s full title is Wolfenstein: Enemy Territory not Enemy Territory: Wolfenstein so WolfETL is a correct abbreviation here (from Dragonji)\r\n\r\nNot a big issue, but if the fs_homepath is changed (to one way or the other), this should be done BEFORE the first 2.71 stable release, or never.\r\n\r\nI'm personally fine with the current situation, since Linux users are used to the old .etwolf, while \"WolfET\" makes sense for windows users as Dragonji pointed out.",
+    "start_date": "2013-12-31",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-12-31T14:55:27Z",
+    "updated_on": "2014-01-02T22:09:37Z",
+    "closed_on": "2014-01-01T15:32:43Z"
+}

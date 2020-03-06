@@ -1,0 +1,223 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "ddf2edafef5c94943edee8c2c0c567dbf5297608",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: some alt vsays refs #1046",
+            "committed_on": "2017-07-18T13:04:19Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 6822,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "keMoN wrote:\r\n> I'm very fond of the deeper implementation of the quick-chat in NQ.\r\nI like it too and will add the basic implementation in a few seconds. Allthough this feature is quite handy I can imagine some players don't like it. Let's add a cvar \u2026{TODO} for it. \r\n \r\n> Also very important! When in the quick-chat menu you can press \"V\" to go back to home-screen, but another key-press doesn't close the quick-chat menu.\r\nAre you talking about the 'ESC' key?\r\n",
+            "created_on": "2017-07-18T11:36:39Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 6823,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "No, actually the ESC key works and closes the menu, but in my opinion it would be good if another \"V\" press would close the menu. You press \"L\" to get into the Limbo menu and \"L\" to get out. You press \"ESC\" to get into the main menu and \"ESC\" again to switch out of it. So it would be nice if the quick-chat also works that way, especially since \"V\" already acts as a step-back-button from sub-menus. ",
+            "created_on": "2017-07-18T14:47:28Z",
+            "details": []
+        },
+        {
+            "id": 6824,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I don't think changing the 'v' key behaviour is a good idea. *Players are used to it* and ESC is the standard to close menus (and Limbo :D ).\r\nWhich key should be used to step back in the voice chat menu? Just keep it as it is ....\r\n ",
+            "created_on": "2017-07-19T05:34:55Z",
+            "details": []
+        },
+        {
+            "id": 6825,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "I don't really see any harm in changing it, since a key-press of \"V\" can't have any other functionality or custom binds in that scenario. It's not like we would screw up something.\r\nI mainly suggested it, because when closing the quick-chat menu, I either need to say something or remove my fingers from WASD, which cuts movement. \"V\" can be easily reached with the pinky, which means I can continue running.",
+            "created_on": "2017-07-19T07:59:12Z",
+            "details": []
+        },
+        {
+            "id": 6860,
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "notes": "I agree with Kemon. V or any other binded key for the quick message window, should close menu if you are in the \"main window\" in hierarchy, otherwise it should put you back to \"main window\" level, as it does right now. I had caught myself on the same idea several times, when i would press \"v\" accidentally (or not) and trying to hit escape to close it - is not an option. For instance, if i would be moving in some direction, and would not want to take the fingers off wasd to reach the escape button. But taking into account how the menus are implemented i can guess that's not the cleanest task to accomplish.",
+            "created_on": "2017-07-28T13:20:13Z",
+            "details": []
+        },
+        {
+            "id": 6861,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "By this we would lead to a new set of problems and I'm still not convinced about the story. Other chat keys are affected too. 't' for sending a message or the fireteam voice chat.\r\nThey don't close when same key is pressed again - it's about key behaviour consistency and player habits.\r\n\r\nWhich key should be used for stepping back in the voice menus (or other menus)? We should think about such before we interfere the menu system.\r\nI'm with you some keys are far away from wasd but there is still the option to bind custom ESCAPE to a key you can reach. ",
+            "created_on": "2017-07-31T09:52:23Z",
+            "details": []
+        },
+        {
+            "id": 6862,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "Obviously, it doesn't make sense to have the voice-chat close with the same key, because those are letters and you write in the chat box also with those letters.\r\nIn the case of the quick-chat menu, there is nothing that button could possibly do in that situation. We are highly unlikely to mess up configs, we are not changing the current behaviour, since ESC will still close it. All I'm suggesting is to *additionally* give \"V\" the function to close the menu. If people are used to ESC, then they can still press ESC. I can honestly can not see *any* harm in this. \"V\" opens the menu, you can press \"V\" to step-back inside the menu and in my opinion it would be nice to be able to also close the menu with \"V\". *Nothing is changing, no configs are being destroyed, no habits are broken.* \r\n\r\nKey-consistency:\r\nPress \"L\" to open Limbo menu, press \"L\" to close Limbo menu.\r\nPress \"Esc\" to open main menu, press \"Esc\" to close main menu.\r\nPress \"Ctrl\", \"Alt\", \"...\" to open one of those weird things, release \"Ctrl\", \"Alt\", \"...\" to close one of the weird things.\r\nPress \"Tab\" to open the Team overview, release \"Tab\" to close the Team overview.\r\nPress \"G\" to open the map, release \"G\" to close the map.\r\n\r\nThey *all* open and close with the same key. Whether it's a key-press or key-hold doesn't really matter. There is absolutely no case where you can't close a menu (not chat-box) by pressing the same key again that opened it. So your argument of key-consistency is actually in favour of having \"V\" close that menu.\r\n",
+            "created_on": "2017-07-31T17:49:46Z",
+            "details": []
+        },
+        {
+            "id": 6865,
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "notes": "I'd like to add that, for instance, V doesn't behave as step back in voice chat menu, but rather it just restarts the voice chat window, i believe they never bothered to fix that, as unlike the limbo and other in-game windows kemon has listed (that are cgame windows), voice chat works from ui module, which makes it hard to implement desired behavior in a clean way, but that's just my guess. I'd like to have exception for voice chats, more over i am pretty sure i will add such behavior in etjump, it's especially quite useful while jumping. Would be cool if you could implement smart step-back system for some menus, without editing the menu files it self (to remain consistent with vanilla menus and such). Also the behavior could be optional and work through cvar.",
+            "created_on": "2017-08-01T10:32:39Z",
+            "details": []
+        },
+        {
+            "id": 6866,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "Well, I don't know how UI functions, but I've heard from *a lot* of people that it is a complete mess.^^ So far the counter-arguments were 'player habits' and 'key-consistency' which are just not valid for reasons pointed out above. But if there are actual limits in the UI setup that's something else. Although it really has to be a completely mad system if it wouldn't allow something like that. Anyway, in my opinion this isn't worth if it should actually require the implementation of yet another cvar. Like I said, current habits and configs would remain unaffected.",
+            "created_on": "2017-08-01T11:08:29Z",
+            "details": []
+        },
+        {
+            "id": 6867,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "> voice chat works from ui module, which makes it hard to implement desired behavior in a clean way, but that\u2019s just my guess. \r\n\r\nThis is correct. Voices chat is actually implemented in both cgame and ui module, and is as such quite messy. I haven't looked into fixing the relevant code yet, but I wouldn't be surprised if it is _slightly_ more complicate to implement than expected...",
+            "created_on": "2017-08-01T12:20:03Z",
+            "details": []
+        },
+        {
+            "id": 6869,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "Oh well, let's scratch that one from the list then. *IF* at some point in time someone miraculously redesigns the UI system, we can still put it back on the board.\r\nHaving cvars for such a minor thing probably isn't wise. If IR4 already has the right-click auto-voice-commands implemented, you can close the ticket.\r\n\r\nI find it quite mind-boggling that the developers used such a bad system for their UI, but it was probably state-of-the-art back then? :D",
+            "created_on": "2017-08-01T13:45:28Z",
+            "details": []
+        },
+        {
+            "id": 7025,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "Deeper quick-chat has been implemented.\r\nChanges to UI functionality will have to wait to a complete rework of the current UI code.",
+            "created_on": "2018-01-20T12:42:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1046,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "deeper quick-chat implementation",
+    "description": "I'm very fond of the deeper implementation of the quick-chat in NQ.\r\n\r\nFor example when you are medic and have your packs or the needle equipped, you can right-click and it will directly send \"I'm a Medic!\". It's handy because all those downed players keep spamming \"Need a Medic\" until you give them some acknowledgement. Same with the ammo packs. When the nade is equipped it shouts \"Fire in the hole!\", same for the airstrike and smoke bomb. With engi's pliers and dynomite he could shout \"Cover me!\" etc.\r\n\r\nAlso very important! When in the quick-chat menu you can press \"V\" to go back to home-screen, but another key-press doesn't close the quick-chat menu.",
+    "start_date": "2017-07-14",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-07-14T19:09:41Z",
+    "updated_on": "2018-01-20T12:42:08Z",
+    "closed_on": "2018-01-20T12:42:08Z"
+}

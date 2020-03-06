@@ -1,0 +1,180 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "4f7d0647f0f0a3a793752bd6fc43472bdaf7a28d",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: prevent underwater jump, refs #943",
+            "committed_on": "2016-09-20T15:55:51Z"
+        },
+        {
+            "revision": "b0a070915928316deff04f9d9b6c621f5bbcdd08",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: better fix for underwater jump issue, refs #943",
+            "committed_on": "2016-09-20T17:25:38Z"
+        },
+        {
+            "revision": "3735f74d2adfbf3d3c8cf3f92a06a22304fa32c6",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: do the early return in case of under water animation issue, some\nclean up",
+            "committed_on": "2016-09-21T14:34:11Z"
+        },
+        {
+            "revision": "50ab6186dbf7270638cb8703fae1d765e7fb159f",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: prevent underwater jump, refs #943",
+            "committed_on": "2016-09-22T09:08:14Z"
+        },
+        {
+            "revision": "8017c57ae88d1fbb8a534857e09cfa8baee2969e",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: better fix for underwater jump issue, refs #943",
+            "committed_on": "2016-09-22T09:08:15Z"
+        },
+        {
+            "revision": "3f526a7f4a2b6f50c95ee426d54e9791ba9edccd",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed ability to run on water, refs #943",
+            "committed_on": "2016-09-23T19:01:32Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 6056,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2016-09-19T21:37:11Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "It is currently possible to walk backward onto the water, Jesus style. Also, sometime the jump animation show up underwater, especially when there is a small slope underwater (such as the one right at the entry of the first allies spawn underwater tunnel). ",
+                    "new_value": "It is currently possible to walk onto the water, Jesus style, but entering the water without jumping and then jumping to stay afloat. Also, sometime the jump animation show up underwater, especially when there is a small slope underwater (such as the one right at the entry of the first allies spawn underwater tunnel). "
+                }
+            ]
+        },
+        {
+            "id": 6071,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I can actually fix the walk on water bug by changing waterlevel from > 2 to > 1 in PM_Footsteps(), but this has the side effect of forcing players to swim when the water depth is low enough that they can either stand or swim. It looks a bit silly.\r\n\r\nWhat we'd need is a way to check the actual depth of water. The waterlevel variable just tells about the location of the model relatively to the water (1 means feet in water, 2 means can stand with head above water, and 3 means completely underwater).\r\n\r\nEdit: should now be fixed.",
+            "created_on": "2016-09-23T17:00:12Z",
+            "details": []
+        },
+        {
+            "id": 6072,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2016-09-23T19:02:21Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 6077,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2016-09-26T18:26:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 943,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Fix underwater movement",
+    "description": "It is currently possible to walk onto the water, Jesus style, but entering the water without jumping and then jumping to stay afloat. Also, sometime the jump animation show up underwater, especially when there is a small slope underwater (such as the one right at the entry of the first allies spawn underwater tunnel). ",
+    "start_date": "2016-09-19",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2016-09-19T20:17:54Z",
+    "updated_on": "2016-09-26T18:26:06Z",
+    "closed_on": "2016-09-26T18:26:06Z"
+}

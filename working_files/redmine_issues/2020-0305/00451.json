@@ -1,0 +1,174 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "191d7b8fe7ccd91540b5bcb227aa02f9c81cb0a8",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: added cg_drawPing, refs #451",
+            "committed_on": "2014-02-05T11:18:40Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2625,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Should be added as a althud flag.. No need to waste a cvar for this.",
+            "created_on": "2013-12-29T18:06:11Z",
+            "details": []
+        },
+        {
+            "id": 2626,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Jacker wrote:\r\n> Should be added as a althud flag.. No need to waste a cvar for this.\r\n\r\nWell anything to make it visible would be just fine then. Feel free to change the title.\r\n\r\n-*S",
+            "created_on": "2013-12-29T18:16:13Z",
+            "details": []
+        },
+        {
+            "id": 2633,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Imho, we should also move the FPS counter to the altHud flag code since the timer and local time are already there.\r\n\r\nAnd maybe even the snapshot debug counter, but that one is probably not used by many people out there :D",
+            "created_on": "2013-12-30T16:52:01Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 2957,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Jacker, could you expand on the \"altFlag\" thing? The current flag is used to move the various element on hud, but I'm not sure how to avoid a new cvar to enable/disable ping display. I also don't think adding a new cvar is that bad, since it is purely on the client side (I added cg_drawPing in the meantime).",
+            "created_on": "2014-02-05T11:27:47Z",
+            "details": []
+        },
+        {
+            "id": 2958,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-02-05T11:28:46Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 2959,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Never mind, its fine the way you did it.. :)",
+            "created_on": "2014-02-05T11:29:47Z",
+            "details": []
+        },
+        {
+            "id": 2960,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-02-05T11:42:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 451,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "Add cg_drawPing",
+    "description": "As the title says. Add a CVAR cg_drawPing to be able to see your ping.\r\n\r\n-*S",
+    "start_date": "2013-12-29",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-12-29T17:45:34Z",
+    "updated_on": "2014-02-05T11:42:32Z",
+    "closed_on": "2014-02-05T11:42:32Z"
+}

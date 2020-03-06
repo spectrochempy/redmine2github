@@ -1,0 +1,103 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "930d1317a87f8a5da255a345851018539cde8b55",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "Visual Studio fixes #2",
+            "committed_on": "2012-04-17T16:32:14Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 8,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "",
+            "created_on": "2012-03-04T14:29:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 5103,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-08-08T18:56:51Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "17"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 2,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "Fix client -> server binary messages \"trap_SendMessage\"",
+    "description": "The binary message stuff introduced with 2.60b seems to be broken from client to server. (server -> client works properly)\r\n\r\n*Reproduce:*\r\n Just call client trap_SendMessage\r\n*Error:*\r\n Returns \"bad game system trap 89\"",
+    "start_date": "2012-03-02",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2012-03-02T10:32:43Z",
+    "updated_on": "2015-08-08T18:56:51Z",
+    "closed_on": "2012-03-04T14:29:07Z"
+}

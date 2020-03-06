@@ -1,0 +1,91 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 8636,
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "notes": "Alright, it might not be worth bringing pmove per client support into legacy, in fact, it's quite broken when it comes to weapons, however, it would probably make more sense if we would attempt to port b_fixedphysics from etpro, this cvar brings best from both worlds, it makes movement physics to be non-frame dependant, yet leaving weapon recoils, spreads and what not untouched.",
+            "created_on": "2019-12-28T17:46:27Z",
+            "details": []
+        },
+        {
+            "id": 8637,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Closing as Invalid per request.",
+            "created_on": "2019-12-28T19:07:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1378,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 505,
+        "name": "ryven"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "pmove_fixed cannot be set per client request",
+    "description": "Currently pmove_fixed is forced by the server by default, however, you are still able to reset it on the client side, but this won't be communicated over the net, so you'll end up getting bunch of prediction errors. This seems to be an etmain bug, but most of mods did fix this, including etpro, jaymod and etpub (and etjump) by allowing setting the value per client, legacy already has the code that is meant to parse the value from useirinfo cvar.",
+    "start_date": "2019-12-28",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-12-28T16:13:16Z",
+    "updated_on": "2019-12-28T19:07:50Z",
+    "closed_on": "2019-12-28T19:07:50Z"
+}

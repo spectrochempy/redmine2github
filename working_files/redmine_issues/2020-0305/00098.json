@@ -1,0 +1,259 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 61,
+            "issue_id": 198,
+            "issue_to_id": 98,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "53d3cbe5b08829a7a09869bf45f96f9f47d881f8",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: commented a condition in CG_PredictionOk which always evaluates\nto true",
+            "committed_on": "2015-08-09T10:41:06Z"
+        },
+        {
+            "revision": "2d2ef4f1d56a1d38c7266457cbb6033223e79d1b",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: cg_optimizePrediction feature by forty",
+            "committed_on": "2015-09-05T09:53:22Z"
+        },
+        {
+            "revision": "de041647e89449d25446e37b59e73ad7919cefce",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: missing prediction code",
+            "committed_on": "2015-09-06T17:19:41Z"
+        },
+        {
+            "revision": "8f2446a066862ebf12254c0efb45fb9e5ff81f3b",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: fix stats[STAT_AIRLEFT] prediction when not in water (we have a tiny diff in time when player is in water)",
+            "committed_on": "2015-09-06T19:42:26Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 429,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-11-03T16:58:10Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 1590,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "",
+            "created_on": "2013-04-27T10:54:18Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Add prediction code ...",
+                    "new_value": "Add prediction code..."
+                }
+            ]
+        },
+        {
+            "id": 5085,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-08-08T18:47:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 5129,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-08-09T09:35:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Add prediction code...",
+                    "new_value": "Inspect/add prediction code..."
+                }
+            ]
+        },
+        {
+            "id": 5131,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "* CG_PredictionOk() in cg_predict.c is actually unused in Vanilla/Legacy mod.\r\n* ETPub and NQ make use of it with the cg_optimizePrediction cvar.\r\n* Check also coverity CID 1315760. There is an early return in the middle of the existing CG_PredictionOk function.",
+            "created_on": "2015-08-09T10:31:59Z",
+            "details": []
+        },
+        {
+            "id": 5132,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Prediction code in ETPub is bugged. They fixed it in silEnT mod but changes are not public as silEnT is closed.\r\n\r\nhttp://mygamingtalk.com/forums/tracker/issue-200-jump-problems/",
+            "created_on": "2015-08-09T19:38:52Z",
+            "details": []
+        },
+        {
+            "id": 5137,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Dragonji wrote:\r\n> Prediction code in ETPub is bugged. They fixed it in silEnT mod but changes are not public as silEnT is closed.\r\n> \r\n> http://mygamingtalk.com/forums/tracker/issue-200-jump-problems/\r\n\r\nThx Dragon. If I understand correctly, this mostly affects doublejump that isn't (and might never be) implemented in legacy). Also, according to that \"forum link\":http://mygamingtalk.com/forums/topic/1078-doublejump-problem, the open sourced \"ETrun\":https://github.com/ETrun/ETrun mod also fixed it, probably in this \"commit\":https://github.com/ETrun/ETrun/commit/97e6c276c30e3ca3e5ee51a3a511dd7ddcec26e1.\r\n\r\n",
+            "created_on": "2015-08-10T10:19:02Z",
+            "details": []
+        },
+        {
+            "id": 5138,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Not exactly. Don't know about ETrun but in ETPub/old silEnT jumping is bugged in general, not only DJ. My movie attached to the ticket nicely showed it but as I can see it's no more available. Unfortunately I can't reupload it atm.",
+            "created_on": "2015-08-10T13:48:55Z",
+            "details": []
+        },
+        {
+            "id": 5210,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "{FIXME}\r\n* Check leaning code. Afaik, it's implemented client side only. Sync it server side might solve a few issues related to the anti-wallhack.",
+            "created_on": "2015-08-23T12:03:01Z",
+            "details": []
+        },
+        {
+            "id": 5912,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-08-25T09:32:30Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 6214,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-01-13T12:15:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 98,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Inspect/add prediction code...",
+    "description": "Extend pmove for prediction.",
+    "start_date": "2012-11-03",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2012-11-03T16:56:36Z",
+    "updated_on": "2017-01-13T12:15:57Z"
+}

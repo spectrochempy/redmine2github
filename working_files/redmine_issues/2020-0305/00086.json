@@ -1,0 +1,260 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "10213923eb776d08523692b48a51b33fa35d64cb",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "include g_local.h in bot interface again refs #86",
+            "committed_on": "2012-10-10T10:22:37Z"
+        },
+        {
+            "revision": "90649b278a8ff40c0a6207f8007e5368c347f89f",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "tmp solution to build OB on 64b refs #86",
+            "committed_on": "2012-10-10T10:50:11Z"
+        },
+        {
+            "revision": "e1dd1a71035b6af8ce6f75bc5a7e4407ea7de434",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "avoid redefinitions of GAME headers, formattings, added some definitions\nrequired for OB refs #86",
+            "committed_on": "2012-10-10T10:54:31Z"
+        },
+        {
+            "revision": "ad9c58b177492bcaf0cc71ea7268f1f4082c0eea",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "updated CMakeLists.txt to build OB - note: OB builds fine &\nbotlib is loaded now but freezes when adding a bot: 'bot addbot' refs\n#86",
+            "committed_on": "2012-10-10T10:57:31Z"
+        },
+        {
+            "revision": "87a5a702113d36b62ce046386934393f8d4a7271",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "(Re)Discovered bot freeze bug with dutchmeat and fixed it using\nRedeye's bot check refs #86",
+            "committed_on": "2012-10-10T13:11:21Z"
+        },
+        {
+            "revision": "7e286590d655a3c7602eedc95d53db2816aed8d3",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "include cstdio (or not) for omnibot builds based on CMakeLists.txt refs\n#86",
+            "committed_on": "2012-10-13T11:45:49Z"
+        },
+        {
+            "revision": "04b9dd96615a865ee7b1af2c2de97e2d746c98c4",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "general linux: 'make install' includes simple Omni-Bot installation\nrefs #86, general: build option for MV_MULTIVIEW",
+            "committed_on": "2012-10-24T12:26:05Z"
+        },
+        {
+            "revision": "f809a1d6db2f7f1efb80053cf6c6b143ea5a2631",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "general linux: sh scripts for omnibot installs (only) refs #86,\nrefs #58",
+            "committed_on": "2012-11-04T06:59:59Z"
+        },
+        {
+            "revision": "2b7f221f5d3ffc3710c8512fa717a20de4d6ebc0",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game linux: adjustements for OB refs #86, refs #94",
+            "committed_on": "2012-11-04T21:01:22Z"
+        },
+        {
+            "revision": "ec8b382988bb3d516605447f9a8c210ea962c88e",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: engine bot code removal refs #86, refs #51",
+            "committed_on": "2012-11-14T10:24:43Z"
+        },
+        {
+            "revision": "ac0616c39bdda969e41f0a8ca7765fc60661a668",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: omnibot fix - added 'exploded' to gScriptEvents refs #86",
+            "committed_on": "2013-02-23T09:19:26Z"
+        },
+        {
+            "revision": "533519e95062c2246bae1a91d4c3e96b9ad6d88d",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: omnibot fix - added 'exploded' to gScriptEvents refs #86",
+            "committed_on": "2013-02-25T19:52:01Z"
+        },
+        {
+            "revision": "688806d312d86e2e4ad0eac129ffd09e05fdc4bd",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: latest g_etbot_interface.cpp changes merged refs #86 - see\nhttps://code.google.com/p/omni-bot/source/diff?spec=svn859&r=859&format=side&path=/trunk/GameInterfaces/ET/src/game/g_etbot_interface.cpp",
+            "committed_on": "2013-03-14T08:56:33Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 358,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Status: \r\n\r\n- OB builds fine with \"-DUSE_OMNIBOTS=yes\" on linux 64bit systems\r\n- Bot lib is loaded but game freezes when adding a bot 'bot addbot'\r\n\r\nFIXME: don't include <cstdio> when building on 32b - see Omnibot/common/BotLoadLibrary.cpp line 22\r\n\r\n",
+            "created_on": "2012-10-10T11:13:11Z",
+            "details": []
+        },
+        {
+            "id": 359,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Bot freeze bug is fixed now. Enjoy Omni-bots!",
+            "created_on": "2012-10-10T13:21:23Z",
+            "details": []
+        },
+        {
+            "id": 365,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-10-13T12:05:19Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 390,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-10-21T15:11:10Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 394,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-10-21T20:11:43Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "3",
+                    "new_value": "5"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 86,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 5,
+        "name": "Server"
+    },
+    "fixed_version": {
+        "id": 1,
+        "name": "2.70rc1"
+    },
+    "subject": "Add omni-bot to mod code",
+    "description": "",
+    "start_date": "2012-10-10",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-10-10T10:11:35Z",
+    "updated_on": "2012-10-21T20:11:43Z",
+    "closed_on": "2012-10-21T20:11:43Z"
+}

@@ -1,0 +1,218 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "c3a86cb21e88c8aaf4183071cdfdaa283693fa17",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: select spawnpoint fix refs #202, unused code removed refs #52",
+            "committed_on": "2013-03-02T10:31:57Z"
+        },
+        {
+            "revision": "094cb2c16049516b3f0f5ae57717761136519f6c",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: fix for hovering over command map spawn icons fixes #202,\ncg_automapzoom introduced (merged from NQ)",
+            "committed_on": "2013-04-16T17:15:27Z"
+        },
+        {
+            "revision": "b8721ea6d26cb2aecc443cd729b4b4c0de040b44",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: select spawnpoint fix refs #202, unused code removed refs #52",
+            "committed_on": "2013-06-24T12:07:17Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1139,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-02-10T21:37:55Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1140,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-02-10T21:42:40Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "4",
+                    "new_value": "16"
+                }
+            ]
+        },
+        {
+            "id": 1144,
+            "user": {
+                "id": 110,
+                "name": "Harlekin"
+            },
+            "notes": "Description in Limbo menue disapears after first mouse \"contact\" with any object or spawnflag on the limbo-map.\r\nHappens with Standard and custom cfg.",
+            "created_on": "2013-02-11T09:04:19Z",
+            "details": []
+        },
+        {
+            "id": 1269,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-03-06T18:26:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 1284,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-03-07T06:44:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 1307,
+            "user": {
+                "id": 110,
+                "name": "Harlekin"
+            },
+            "notes": "I can now select the spawn. But as soon as i hoover over an objective in limbo the description of all disapear and won't apear again.",
+            "created_on": "2013-03-13T06:46:30Z",
+            "details": []
+        },
+        {
+            "id": 1418,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "I can confirm this. Spawn point selection works, but hovering over the icons works only for an instant and then it won't do anything.",
+            "created_on": "2013-03-26T23:15:30Z",
+            "details": []
+        },
+        {
+            "id": 1543,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Applied in changeset commit:094cb2c16049516b3f0f5ae57717761136519f6c.",
+            "created_on": "2013-04-16T17:49:22Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 202,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 110,
+        "name": "Harlekin"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 7,
+        "name": "2.71rc2"
+    },
+    "subject": "Can't select Spawn in Limbo",
+    "description": "Can't select any Spawn in Limbo",
+    "start_date": "2013-02-10",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-02-10T21:32:57Z",
+    "updated_on": "2013-04-16T17:49:22Z",
+    "closed_on": "2013-04-16T17:49:22Z"
+}

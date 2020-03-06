@@ -1,0 +1,293 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "a55f90249a52c79c63b80e84f388f0fb5e07137f",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "renderer: fixed possible division by zero, refs #688\n\nPrevent division by zero in following ResampleTexture()",
+            "committed_on": "2014-12-02T18:22:23Z"
+        },
+        {
+            "revision": "b91fae1fd9050fef53d3a0f0ed0dad150291e997",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "renderer: code cleanup, refs #688",
+            "committed_on": "2014-12-03T19:42:52Z"
+        },
+        {
+            "revision": "1ffc9a92fdb2b3e2f345005a53328d6344f4bdb3",
+            "user": {
+                "id": 372,
+                "name": "Ododo"
+            },
+            "comments": "renderer: swapped order of for comparisons, refs #688\n\nThanks to this change, image[16] is never called (same reasons as at line 3953)",
+            "committed_on": "2014-12-03T21:14:08Z"
+        },
+        {
+            "revision": "28ece71507f955995e03b3c9dde9e80f95b04104",
+            "user": {
+                "id": 372,
+                "name": "Ododo"
+            },
+            "comments": "rendererGLES: swapped order of for comparisons, refs #688",
+            "committed_on": "2014-12-04T05:43:11Z"
+        },
+        {
+            "revision": "00e4754ef58b4bb8a133da3f65c91e915648ed3f",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "renderer2: division by zero failsafe, refs #688",
+            "committed_on": "2014-12-06T13:14:48Z"
+        },
+        {
+            "revision": "a887bc0747dd3606ae6feef44f10c2741b9dee2a",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "renderer2: better division by zero check, refs #688",
+            "committed_on": "2014-12-06T17:12:27Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3950,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-30T16:48:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 3952,
+            "user": {
+                "id": 2,
+                "name": "Anonymous"
+            },
+            "notes": "Issue seems to disappear if compiled with clang.",
+            "created_on": "2014-11-30T17:10:01Z",
+            "details": []
+        },
+        {
+            "id": 3959,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "also note that it's only the release build that crashes, so the issue is most probably with gcc's compiler optimizations",
+            "created_on": "2014-12-01T10:39:33Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "ETL crashes on map change",
+                    "new_value": "ETL crashes on map change with Release build"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 3961,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Radegast wrote:\r\n> also note that it's only the release build that crashes, so the issue is most probably with gcc's compiler optimizations\r\n\r\nHere, the bug appears with GCC 4.9.2 with a debug build (Arch Linux), so it might be version dependent instead.\r\n",
+            "created_on": "2014-12-01T12:22:52Z",
+            "details": []
+        },
+        {
+            "id": 3962,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "The problem is I am also on Arch linux running the same GCC version (4.9.2) :-O",
+            "created_on": "2014-12-01T13:08:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "ETL crashes on map change with Release build",
+                    "new_value": "ETL crashes on map change"
+                }
+            ]
+        },
+        {
+            "id": 3963,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Here are some additional information:\r\n* Using the -git PKGBUILD for a system wide install, I get a crash with debug build (32 bits).\r\n* Using my own local copy, I get a crash only with release build. Debug runs fine (32 bits).\r\n\r\nUsing default makepkg.conf config (apart from \"-j4\"):\r\n<pre>\r\nCARCH=\"x86_64\"\r\nCHOST=\"x86_64-unknown-linux-gnu\"\r\n\r\n#-- Compiler and Linker Flags\r\n# -march (or -mcpu) builds exclusively for an architecture\r\n# -mtune optimizes for an architecture, but builds for whole processor family\r\nCPPFLAGS=\"-D_FORTIFY_SOURCE=2\"\r\nCFLAGS=\"-march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong --param=ssp-buffer-size=4\"\r\nCXXFLAGS=\"-march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong --param=ssp-buffer-size=4\"\r\nLDFLAGS=\"-Wl,-O1,--sort-common,--as-needed,-z,relro\"\r\n#-- Make Flags: change this for DistCC/SMP systems\r\nMAKEFLAGS=\"-j4\"\r\n#-- Debugging flags\r\nDEBUG_CFLAGS=\"-g -fvar-tracking-assignments\"\r\nDEBUG_CXXFLAGS=\"-g -fvar-tracking-assignments\"\r\n</pre>\r\n\r\n(I'm not sure if those fully applies, since the PKGBUILD Debug build are cross compiled for 32 bits)\r\nMy local copy only use \"-j4\", no other additional parameter.",
+            "created_on": "2014-12-01T14:50:16Z",
+            "details": []
+        },
+        {
+            "id": 3973,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Pushed a possible fix, and my client didn't crash in release mode with gcc. Please test and report.",
+            "created_on": "2014-12-02T18:49:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 3976,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "user:Ododo seems to have pinpointed the necessary fix for this issue (tested without my own division by zero check - no crash).\r\n\r\nAlso, the client seems to load faster, at least on my machine.",
+            "created_on": "2014-12-03T22:03:23Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 3977,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Spyhawk wrote:\r\n> user:Ododo seems to have pinpointed the necessary fix for this issue (tested without my own division by zero check - no crash).\r\n> \r\n> Also, the client seems to load faster, at least on my machine.\r\n\r\nAlso possible due to changing the zone megs size..",
+            "created_on": "2014-12-03T23:07:56Z",
+            "details": []
+        },
+        {
+            "id": 3979,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "You've done amazing job user:Ododo and user:Spyhawk. Release build doesn't crash anymore.",
+            "created_on": "2014-12-04T21:05:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3980,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "All credits to Ododo. That is him that found the proper fix :)",
+            "created_on": "2014-12-04T22:32:22Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 688,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 2,
+        "name": "Anonymous"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "ETL crashes on map change",
+    "description": "When server restarts, I still see the last \"field\" frame, loading screen blinks for 2-3 times then it crashes. Using latest debug build.\r\n\r\nBacktrace: http://pastebin.com/Y2JhCsKV\r\nAlso reported here: http://dev.etlegacy.com/boards/3/topics/927",
+    "start_date": "2014-11-30",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-30T16:47:00Z",
+    "updated_on": "2014-12-04T22:32:22Z",
+    "closed_on": "2014-12-04T22:32:22Z"
+}

@@ -1,0 +1,268 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "cfe54ca425eadba162e79272914a02492dded38a",
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "comments": "mod: fix old demo playback, fixes #1320\n\n* refactored code a little to enhance gdb experience\n* fixed old demo playback was broken due to out of bounds array writes\n  upon skill rating parsing\n\nrefs #403 #1227",
+            "committed_on": "2019-07-19T15:27:58Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 8351,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "On which version was the demo taken? 2.76 and up are sadly not compatible with older demos.",
+            "created_on": "2019-07-05T06:32:09Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "21"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8353,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-07-05T06:34:13Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1319"
+                }
+            ]
+        },
+        {
+            "id": 8367,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "This is a duplicate of #1319. Since the sound array is shorter, some indexes of the old demo are out of bound. Closing now.",
+            "created_on": "2019-07-08T10:36:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 8369,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-07-08T10:36:25Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "old_value": "1319"
+                }
+            ]
+        },
+        {
+            "id": 8370,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-07-08T10:36:37Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "duplicates",
+                    "new_value": "1319"
+                }
+            ]
+        },
+        {
+            "id": 8372,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Apparently not related, according to riven. Reopening.",
+            "created_on": "2019-07-08T10:56:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "6",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "0"
+                }
+            ]
+        },
+        {
+            "id": 8379,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "",
+            "created_on": "2019-07-12T15:00:30Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 8381,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "",
+            "created_on": "2019-07-12T15:01:01Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "duplicates",
+                    "old_value": "1319"
+                }
+            ]
+        },
+        {
+            "id": 8383,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "",
+            "created_on": "2019-07-12T15:01:40Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "0"
+                }
+            ]
+        },
+        {
+            "id": 8416,
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "notes": "Applied in changeset commit:cfe54ca425eadba162e79272914a02492dded38a.",
+            "created_on": "2019-07-19T16:29:22Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1320,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 697,
+        "name": "artium"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Error when replaying a demo",
+    "description": "I get `Cvar_Update: handle out of range` on g6e02b0e build.",
+    "start_date": "2019-07-05",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-07-04T23:43:39Z",
+    "updated_on": "2019-07-19T16:29:22Z",
+    "closed_on": "2019-07-19T16:29:22Z"
+}

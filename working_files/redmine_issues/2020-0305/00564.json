@@ -1,0 +1,126 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 142,
+            "issue_id": 564,
+            "issue_to_id": 563,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 3575,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-10-23T17:52:02Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "563"
+                }
+            ]
+        },
+        {
+            "id": 3577,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Arty is no longer available on low charge. We might close this. ",
+            "created_on": "2014-10-23T17:55:18Z",
+            "details": []
+        },
+        {
+            "id": 3614,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-11-04T06:50:41Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 90,
+            "name": "Saukko"
+        }
+    ],
+    "time_entries": null,
+    "id": 564,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Can't always hear \"Insufficient fire support\"",
+    "description": "This bug has something to do with http://dev.etlegacy.com/issues/563. You are not able to hear \"Insufficient fire support\" when you are trying to do artillery with too low charge bar when having airstrike canister or ammopacks in your hand.\r\n\r\n-*S",
+    "start_date": "2014-08-15",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-08-15T10:42:38Z",
+    "updated_on": "2014-11-04T06:50:41Z",
+    "closed_on": "2014-11-04T06:50:41Z"
+}

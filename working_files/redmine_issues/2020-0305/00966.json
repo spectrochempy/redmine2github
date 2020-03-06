@@ -1,0 +1,289 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 6161,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2016-11-17T09:19:52Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "12",
+                    "new_value": "21"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "19"
+                },
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "old_value": "OS X",
+                    "new_value": ""
+                }
+            ]
+        },
+        {
+            "id": 6162,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I can't confirm this.",
+            "created_on": "2016-11-24T21:12:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "10"
+                }
+            ]
+        },
+        {
+            "id": 6163,
+            "user": {
+                "id": 622,
+                "name": "Theophany"
+            },
+            "notes": "Should I provide a demo to show it? Pretty sure I have some footage. I also notice if you get heavy weapons level 4 you lose the extra smg under the same circumstances.",
+            "created_on": "2016-11-24T22:11:59Z",
+            "details": []
+        },
+        {
+            "id": 6164,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Let me just know how to reproduce step by step.",
+            "created_on": "2016-11-25T10:31:05Z",
+            "details": []
+        },
+        {
+            "id": 6165,
+            "user": {
+                "id": 622,
+                "name": "Theophany"
+            },
+            "notes": "IR4T4 wrote:\r\n> Let me just know how to reproduce step by step.\r\n\r\nSure thing! I only really play on the official ET Legacy server, but if I get up to level 4 light weapons as a medic, engineer, field ops or covert ops and then switch to soldier or spectator and then go back to any of the four classes with dual wield pistols, my sidearm resets to a single pistol despite still being level 4 light weapons.\r\n\r\nSimilarly, if I get to level 4 heavy weapons and get the smg sidearm and then go spectator or any other class, if I go back to soldier I don't get my smg secondary weapon.\r\n\r\nI haven't tried to recreate this on Windows or Linux, so can't confirm if it is a MacOS specific bug.",
+            "created_on": "2016-11-25T10:40:01Z",
+            "details": []
+        },
+        {
+            "id": 6166,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "I did tested it and things looks like this:\r\n\r\nAkimbo Pistols works on window so it points out its Mac OS specific issue\r\n\r\nWith smgs its another thing more like weapon table is working as it should or not. When you are chosing soldier the default primary weapon you are getting is SMG which blocks SMG as secondary instead you are getting Akimbo weapon. The solution here is manually changing weapons by limbo or by command via console.\r\nAlso I don't thing we need 2 SMG's in soldier case don't you think ?",
+            "created_on": "2016-11-28T09:26:25Z",
+            "details": []
+        },
+        {
+            "id": 6167,
+            "user": {
+                "id": 622,
+                "name": "Theophany"
+            },
+            "notes": "Yes, the soldier SMG thing is just a weird quirk that means you have to reselect a heavy weapon, but if you switch to a light weapons class and then back to soldier you lose your SMG and go back to a single pistol. This may also be MacOS specific?\r\n\r\n\r\n\r\n",
+            "created_on": "2016-11-28T09:38:46Z",
+            "details": []
+        },
+        {
+            "id": 6168,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "Theophany wrote:\r\n> Yes, the soldier SMG thing is just a weird quirk that means you have to reselect a heavy weapon, but if you switch to a light weapons class and then back to soldier you lose your SMG and go back to a single pistol. This may also be MacOS specific?\r\n\r\nAbout this one no its not Mac OS specific issue. Either its made for purpose for using just 1 SMG instead of 2 or its issue which we will have to fix.",
+            "created_on": "2016-11-28T09:56:28Z",
+            "details": []
+        },
+        {
+            "id": 6169,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "I couldn't reprpduce this akimbo issue. A demo taken in original maps could be nice or then a very exact way of the reproduction.\r\nAbout the SMG thing see #594 for its intended behaviour. The way you can't pick two SMGs was changed.\r\n\r\n-*S",
+            "created_on": "2016-11-29T00:02:42Z",
+            "details": []
+        },
+        {
+            "id": 6176,
+            "user": {
+                "id": 622,
+                "name": "Theophany"
+            },
+            "notes": "Saukko wrote:\r\n> I couldn't reprpduce this akimbo issue. A demo taken in original maps could be nice or then a very exact way of the reproduction.\r\n> About the SMG thing see #594 for its intended behaviour. The way you can't pick two SMGs was changed.\r\n> \r\n> -*S\r\n\r\nLet me put together a short avidemo later today to show the issue exactly. I'll also try and get one to show the SMG entitlement removed for soldiers too.",
+            "created_on": "2016-11-29T12:08:17Z",
+            "details": []
+        },
+        {
+            "id": 6177,
+            "user": {
+                "id": 622,
+                "name": "Theophany"
+            },
+            "notes": "Ok, so there is a short demo file attached, the last minute will show you the bug in question. I am a medic with akimbo pistols, but when I switch to engineer, I lose my akimbo pistols. I'll try and recreate one explaining the same bug for the secondary SMG for soldiers (i.e. you lose your SMG if you've earned heavy weapons 4, switch class and go back to soldier).",
+            "created_on": "2016-11-29T15:08:04Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "674",
+                    "new_value": "2016-11-29-143702-radar.dm_84"
+                }
+            ]
+        },
+        {
+            "id": 6178,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "I went to the same server and tried to reproduce this but without a good result. I was medic, got light weapon to level 4, died once, got my akimbo and then changed to engineer. And the result was me being with akimbo.\r\n\r\n-*S",
+            "created_on": "2016-11-29T16:05:17Z",
+            "details": []
+        },
+        {
+            "id": 6179,
+            "user": {
+                "id": 622,
+                "name": "Theophany"
+            },
+            "notes": "Saukko wrote:\r\n> I went to the same server and tried to reproduce this but without a good result. I was medic, got light weapon to level 4, died once, got my akimbo and then changed to engineer. And the result was me being with akimbo.\r\n> \r\n> -*S\r\n\r\non MacOS client?",
+            "created_on": "2016-11-29T16:09:13Z",
+            "details": []
+        },
+        {
+            "id": 6180,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Theophany wrote:\r\n> on MacOS client?\r\n\r\nI am really unsure about this being a mac OS X specific issue. The gamecode is platform independent, so I'd say the bug occurs under some condition only.",
+            "created_on": "2016-11-29T19:02:27Z",
+            "details": []
+        },
+        {
+            "id": 6181,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Windows 10 actually.\r\n\r\n-*S",
+            "created_on": "2016-11-29T19:05:33Z",
+            "details": []
+        },
+        {
+            "id": 6182,
+            "user": {
+                "id": 622,
+                "name": "Theophany"
+            },
+            "notes": "So bizarre... I'll have a crack at doing a clean install tomorrow to make sure there are no other factors at play. I'm wondering if there are any cvars I can try to assign weaponbank items to try to 'equip' akimbo when respawning?",
+            "created_on": "2016-11-29T19:10:49Z",
+            "details": []
+        },
+        {
+            "id": 6267,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Only explanation I could give is that you're using some buggy scripts to change classes. Cannot reproduce either.",
+            "created_on": "2017-01-24T12:08:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 6289,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Closing, please reopen/comment if you find a way to reproduce the issue.",
+            "created_on": "2017-02-01T09:13:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "7",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "10",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 966,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 622,
+        "name": "Theophany"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Akimbo pistols disappear when changing class",
+    "description": "When you hit light weapons level 4 and switch class your akimbo pistols will be reduced to single wield pistol. This happens when going spectator and rejoining the match too.",
+    "start_date": "2016-11-16",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2016-11-16T17:30:51Z",
+    "updated_on": "2017-02-01T09:13:16Z",
+    "closed_on": "2017-02-01T09:13:16Z"
+}

@@ -1,0 +1,208 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 316,
+            "issue_id": 1006,
+            "issue_to_id": 432,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "74e9a40b995f1f233917860bd9d2660d8824ba63",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: draw objective carrier on command map, fixes #432",
+            "committed_on": "2013-12-26T16:06:11Z"
+        },
+        {
+            "revision": "206f0ed712ea61613dadf5dbbad23b4dd488f00f",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed players not visible on map to non spectators, refs #432",
+            "committed_on": "2013-12-26T19:39:30Z"
+        },
+        {
+            "revision": "c0016d4fd02c302a4098d142e57fa81dda7f69c7",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: free objective carrier map entity when out of sight, refs #432 #661",
+            "committed_on": "2015-11-27T17:38:20Z"
+        },
+        {
+            "revision": "99e39f4bb61590e5f239f06d506d323f5e8d79d2",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed objective carrier disappearing from map, refs #432 fixes #1006",
+            "committed_on": "2017-02-19T16:57:22Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2518,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I agree. The objective icon is already visible above the carrier's head and in the fireteam window, along with location/map coordinate. This is a logical addition.\r\n\r\nEdit: Jaymod actually implements this.",
+            "created_on": "2013-12-23T13:36:10Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "21",
+                    "new_value": "16"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 2538,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2013-12-25T17:01:37Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "10"
+                }
+            ]
+        },
+        {
+            "id": 2570,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:74e9a40b995f1f233917860bd9d2660d8824ba63.",
+            "created_on": "2013-12-26T18:06:21Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "10",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 6451,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-02-19T16:31:38Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1006"
+                }
+            ]
+        },
+        {
+            "id": 6453,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-02-19T17:33:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "19"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 432,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Teammate objective carrier should be shown on the command map",
+    "description": "As the title says, the command map should show the teammate who's carrying the objective. By this I mean that it shows objective icon over the person who's carrying the objective.\r\n\r\n-*S",
+    "start_date": "2013-12-23",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-12-23T12:57:50Z",
+    "updated_on": "2017-02-19T17:33:57Z",
+    "closed_on": "2013-12-26T18:06:21Z"
+}

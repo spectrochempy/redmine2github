@@ -1,0 +1,411 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 300,
+            "issue_id": 953,
+            "issue_to_id": 974,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 362,
+            "issue_id": 1071,
+            "issue_to_id": 953,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 6104,
+            "user": {
+                "id": 611,
+                "name": "gezafisch"
+            },
+            "notes": "Freezes randomly on Ubuntu 16.04.  Hardware : Lenovo X1 Carbon 2015 ; i5, 8 GB RAM, 2GB VRAM. ",
+            "created_on": "2016-10-21T13:05:21Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "old_value": "",
+                    "new_value": "Linux"
+                },
+                {
+                    "property": "cf",
+                    "name": "2",
+                    "old_value": "",
+                    "new_value": "64-bit"
+                }
+            ]
+        },
+        {
+            "id": 6227,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-01-15T12:43:15Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "974"
+                }
+            ]
+        },
+        {
+            "id": 6309,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I can't reproduce it locally with master. Crash occures in cgame of 2.75.\r\n\r\n",
+            "created_on": "2017-02-03T16:26:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "21",
+                    "new_value": "16"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "10"
+                }
+            ]
+        },
+        {
+            "id": 6320,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-02-04T17:38:46Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "5",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 6674,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-04-11T13:02:04Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "6",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 7012,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "crashlog from an IRC user named adilix.\r\nMaybe it's helpful in this case\r\nhttps://pastebin.com/KLfBf14p\r\n\r\n(debian 7.11 and 32bit)",
+            "created_on": "2017-12-27T11:01:58Z",
+            "details": []
+        },
+        {
+            "id": 7134,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-02-25T13:46:58Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1071"
+                }
+            ]
+        },
+        {
+            "id": 7138,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-02-25T16:00:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Legacy mod 2.75 freezes on some linux systems (debian, ubunu)",
+                    "new_value": "Legacy mod 2.75 freezes on some linux systems (debian, ubuntu, arch linux)"
+                }
+            ]
+        },
+        {
+            "id": 7295,
+            "user": {
+                "id": 767,
+                "name": "tiffie"
+            },
+            "notes": "Is there any update or workaround? Its pretty unusable since I cant even play one match without reconnecting several times",
+            "created_on": "2018-10-11T19:56:46Z",
+            "details": []
+        },
+        {
+            "id": 7297,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "We can't reproduce this with master.",
+            "created_on": "2018-10-14T01:36:15Z",
+            "details": []
+        },
+        {
+            "id": 7302,
+            "user": {
+                "id": 767,
+                "name": "tiffie"
+            },
+            "notes": "I'm using the arch package etlegacy32-git 2.75.2015.g12a464bc-1. The problem described in #1071 still persits for me. Kind of reproducable (I dont know under which circumstances, but I bareley can play one map coherently)",
+            "created_on": "2018-10-15T21:10:37Z",
+            "details": []
+        },
+        {
+            "id": 7303,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Can you reproduce the crash locally? This bug isn't engine related - it's caused by the 2.75 cgame binary.",
+            "created_on": "2018-10-15T21:46:53Z",
+            "details": []
+        },
+        {
+            "id": 7357,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-12-21T13:08:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 7523,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-01-06T08:32:41Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 7566,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "No freeze on 2.76. Closed.",
+            "created_on": "2019-01-17T13:15:14Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "10",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 7595,
+            "user": {
+                "id": 767,
+                "name": "tiffie"
+            },
+            "notes": "bq. etl -v\r\nClient: ET Legacy v2.76-35-gd64203e8 linux-i386 Jan 17 2019 DEBUG\r\nMasked as: ET 2.60b linux-i386 May  8 2006\r\nBuilt: 2019-01-17T21:30:35 UTC\r\n\r\nMy etl is still broken.\r\nI already deleted ~/.et* after the update, but I could not even play 30 seconds...\r\n",
+            "created_on": "2019-01-18T20:20:03Z",
+            "details": []
+        },
+        {
+            "id": 7596,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-01-18T20:26:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "8"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 7597,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I have had no crash so far. Might be related to cvar settings?",
+            "created_on": "2019-01-18T20:27:15Z",
+            "details": []
+        },
+        {
+            "id": 7602,
+            "user": {
+                "id": 767,
+                "name": "tiffie"
+            },
+            "notes": "Aren't those settings part of the ~/.etlegacy directory?\r\nIt's weird - nobody seem to have the same problem (within the game)",
+            "created_on": "2019-01-18T23:14:56Z",
+            "details": []
+        },
+        {
+            "id": 7605,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Try getting a \"backtrace\":https://dev.etlegacy.com/projects/etlegacy/wiki/Spyhawks_notes#Debug-mode to get more info. You just need to compile as debug, but that seem to be the case already.",
+            "created_on": "2019-01-18T23:42:05Z",
+            "details": []
+        },
+        {
+            "id": 7608,
+            "user": {
+                "id": 767,
+                "name": "tiffie"
+            },
+            "notes": "well, \r\netl -v                         \r\nClient: ET Legacy v2.76-40-gbb3d9ec3 linux-x86_64 Jan 18 2019 DEBUG\r\nMasked as: ET 2.60b linux-x86_64 May  8 2006\r\nBuilt: 2019-01-18T23:07:57 UTC\r\n\r\nseems to work better O.o",
+            "created_on": "2019-01-19T00:18:13Z",
+            "details": []
+        },
+        {
+            "id": 7609,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Fixed then.",
+            "created_on": "2019-01-19T14:22:56Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 953,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 7,
+        "name": "Immediate"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Legacy mod 2.75 freezes on some linux systems (debian, ubuntu, arch linux)",
+    "description": "The mod randomly freezes.",
+    "start_date": "2016-10-21",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": "64-bit"
+        }
+    ],
+    "created_on": "2016-10-21T09:49:08Z",
+    "updated_on": "2019-01-19T14:22:55Z",
+    "closed_on": "2019-01-19T14:22:55Z"
+}

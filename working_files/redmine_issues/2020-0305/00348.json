@@ -1,0 +1,236 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "ac4e3c5b6fd8610536e0bfd8a13dbd75f9eadb8f",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: removed FEATURE_LIVEAUTH, refs #348",
+            "committed_on": "2017-02-07T14:10:24Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1986,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-09-26T07:44:22Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "12"
+                }
+            ]
+        },
+        {
+            "id": 2040,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-10-05T18:52:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "9",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 2128,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "",
+            "created_on": "2013-10-21T13:02:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 2774,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "We should include an in game Reporting system that people can report cheaters IN GAME like in CS:GO. That way suspicious players will get picked out much faster. Would not require much actually, just an custom .menu and a post request from the engine curl component.",
+            "created_on": "2014-01-07T12:35:24Z",
+            "details": []
+        },
+        {
+            "id": 2775,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "That will probably add a lot of unnecessary work to you guys. There surely will be a lot of false reports from frustrated players with low skills.",
+            "created_on": "2014-01-07T14:15:16Z",
+            "details": []
+        },
+        {
+            "id": 2776,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "If ETL at some point really takes of the ground I hope that we will not have a shortage of helping hands..",
+            "created_on": "2014-01-07T14:16:37Z",
+            "details": []
+        },
+        {
+            "id": 2777,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Not sure about the way you're choosing to implement the auth/ban system, but:\r\n- make it easy for the admins of the server to review the complains - reviewing them should be primarily their job, not the job of et:l team.\r\n- also send the ID of the complainer. People complaining without real justification should face the consequences.\r\n\r\n(although I'm sure you've thought about this already)",
+            "created_on": "2014-01-07T14:48:40Z",
+            "details": []
+        },
+        {
+            "id": 2778,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Spyhawk wrote:\r\n> Not sure about the way you're choosing to implement the auth/ban system, but:\r\n> - make it easy for the admins of the server to review the complains,\r\n> - also send the ID of the complainer. People complaining without real justification should face the consequences.\r\n\r\nThis is not game server based (that can be made with lua if someone so chooses). This is meant for players to send an message to us (read legacy team). Because we have the auth database aka -> we can tag/ban players.",
+            "created_on": "2014-01-07T15:01:38Z",
+            "details": []
+        },
+        {
+            "id": 2779,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Jacker wrote:\r\n> This is not game server based (that can be made with lua if someone so chooses). This is meant for players to send an message to us (read legacy team). Because we have the auth database aka -> we can tag/ban players.\r\n\r\nYes, I've understood this. What I mean is that if et:l project is successful (and it will :) ), the banning/tagging workload will increase proportionally to the number of et:l server. Unless the legacy team increases also proportionally, the involved workload isn't sustainable on the long term.\r\n\r\nIf this tag/ban work can't be automated, the only way to make this working efficiently would be to externalize it. In a nutshell, make the various server admins do the grunt but necessary work, while the legacy team will treat all special requests only.\r\n\r\nHere's how this could be handled.\r\n\r\nThe admins of server X get a special panel on the auth server. When a player on server X file a complain, the request is sent on the auth server, in the server admin panel X. Admins of X choose to ban the players or not, depending on the proof they got (demo, screenshot, whatever). Legacy team can in any time do the job, or reverse the decision of admins of server X. Admins of server Y get a similar panel on the auth server, and treat requests generated from their server.\r\n\r\nImplementation would be surely more complex  than the above (ie, banning/tagging could be partially made automatically, with x request from x different players, etc), but you get the underlying idea: to make it efficient, distribute the workload.",
+            "created_on": "2014-01-07T17:34:40Z",
+            "details": []
+        },
+        {
+            "id": 2780,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Spyhawk wrote:\r\n> Here's how this could be handled.\r\n> \r\n> The admins of server X get a special panel on the auth server. When a player on server X file a complain, the request is sent on the auth server, in the server admin panel X. Admins of X choose to ban the players or not, depending on the proof they got (demo, screenshot, whatever). Legacy team can in any time do the job, or reverse the decision of admins of server X. Admins of server Y get a similar panel on the auth server, and treat requests generated from their server.\r\nI like the idea! However, in my opinion admins should be able to send a complaint further to ET:L team which might decide then not to only ban a player on a specific server but globally.\r\n\r\nSpyhawk wrote:\r\n> Legacy team can in any time (...) reverse the decision of admins of server X.\r\nLegacy team shouldn't have power to remove specific local bans, it should be up to the server owners only (not talking about global bans which should only be handled by ET:L team IMO).",
+            "created_on": "2014-01-07T18:29:09Z",
+            "details": []
+        },
+        {
+            "id": 2781,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Dragonji wrote:\r\n> I like the idea! However, in my opinion admins should be able to send a complaint further to ET:L team which might decide then not to only ban a player on a specific server but globally.\r\n> \r\n> Legacy team shouldn't have power to remove specific local bans, it should be up to the server owners only (not talking about global bans which should only be handled by ET:L team IMO).\r\n\r\nAs I understand it, the Auth server is _only_ about global bans. Local bans will be handled as they currently are (shrubbot, lua, ..). And yes, I suggest that the admins enable the global bans themselves, _but_ they should upload a proof to the server at the same time. A banned player that appeals his ban will see his request handled by the legacy team, and if no proof was given (or if it the given proof is disputable), the player will simply get unbanned.\r\n\r\nAs a side note, I've seen community websites run by companies that use the same principle to check users content. Instead of checking by themselves profile pictures, they ask random users to have a look (optionally) and do the work. I believe admins that see cheaters destroying their beloved server would gratefully help to globally ban them :)    ",
+            "created_on": "2014-01-07T19:26:31Z",
+            "details": []
+        },
+        {
+            "id": 4620,
+            "user": {
+                "id": 7,
+                "name": "TheDushan"
+            },
+            "notes": "No!\r\n\r\nThis is not just about admin authentication or global ban.\r\nWith this you can provide and do more things, like I tried with OpenWolf.\r\nIn my old source I had complete working HTTP crash system with bug reporting UI.\r\n\r\nFor login you can do something like this.\r\n\r\nint Net_HTTP_Init()\r\n{\r\nhttp.multi_handle = curl_multi_init();\r\n\r\nif ( http.multi_handle == NULL ) {\r\nreturn 0;\r\n}\r\n\r\nhttp_usernameandpassword = Cvar_Get( \"usernameandpassword\", \"username:password\", CVAR_ARCHIVE );\r\nhttp_bugauth = Cvar_Get( \"http_bugauth\", \"username:password\", CVAR_ARCHIVE );\r\nhttp.headers = curl_slist_append( http.headers, \"Accept: application/openwolf\" );\r\nreturn -1;\r\n}\r\n\r\nthis is basic what I had for client\r\n\r\n#if defined (USE_HTTP)\r\nCmd_AddCommand (\"login\", CL_Login_f, \"^1Login to URL.\");\r\nCmd_AddCommand (\"highscore\", CL_Highscore_f, \"^1Gets highscores results from the website.\");\r\nCmd_AddCommand (\"forgotpassword\", CL_ForgotPassword_f, \"^1Send forgot password request to URL.\");\r\nCmd_AddCommand (\"getaccount\", CL_GetAccount_f, \"^1Get account from URL.\");\r\nCmd_AddCommand (\"globalhighscores\", CL_GlobalHighScores_f, \"^1Get highscores from URL.\");\r\n#endif\r\n\r\nfor login system on webpage\r\n\r\nstatic void CL_Login_f( void )\r\n{\r\nif ( Cmd_Argc() != 3) {\r\nCom_Printf( \"usage: login user password\\n\");\r\nreturn;\t\r\n}\r\n\r\nHTTP_PostUrl( va(\"http://%s/user/login\", AUTHORIZE_SERVER_NAME), CL_Login_response, 0, \"user[login]=%s&user[password]=%s&version=%d\", Cmd_Argv(1), Cmd_Argv(2), 31 );\r\n}\r\n\r\n",
+            "created_on": "2015-02-17T00:57:05Z",
+            "details": []
+        },
+        {
+            "id": 4622,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "I had the auth system already done and the serverside is still online, but i never committed the code to the master as we agreed that we would work with the etlive group and combine the auth systems. That never took off tho, and i have no idea of the live projects status.\r\n\r\nThe etlive implementation also used curl:s http requests and had a backend with www technology.\r\n\r\nThe implementation which i did was done with the existing plain udp sockets / string payloads so it was very lightweight, and it did/does have encryption with aes256. The backend is a simple udp sockets server (multithreaded tho) which actually is the one handling the current udpate and motd messages for the legacy clients and servers.",
+            "created_on": "2015-02-17T14:22:13Z",
+            "details": []
+        },
+        {
+            "id": 4623,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Auth ofc will open a lot of doors for us (if we ever drop it in) as we can do a lobby systems, complaint systems and so fort.. Its just a matter of making them work.",
+            "created_on": "2015-02-17T14:24:05Z",
+            "details": []
+        }
+    ],
+    "watchers": [
+        {
+            "id": 140,
+            "name": "Spyhawk"
+        }
+    ],
+    "time_entries": null,
+    "id": 348,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 44,
+        "name": "Jacker"
+    },
+    "assigned_to": {
+        "id": 44,
+        "name": "Jacker"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Authentication system",
+    "description": "We should add an authentication system to legacy, which would add the support for clients to be able to authenticate against our to be created authentication server. Game server would be able either accept only authenticated players or just skip the authentication allowing all players to join.\r\n\r\nImplementing this on the client & server code would allow all the existing mods to have support for an authentication system.\r\n\r\nThe auth system would make kicking/banning and identifying players more effective, which would be a welcome addition for both the public and clan play.",
+    "start_date": "2013-09-24",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-09-24T16:07:25Z",
+    "updated_on": "2015-02-17T14:24:05Z"
+}

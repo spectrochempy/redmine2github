@@ -1,0 +1,754 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 227,
+            "issue_id": 830,
+            "issue_to_id": 770,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 228,
+            "issue_id": 830,
+            "issue_to_id": 437,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 229,
+            "issue_id": 830,
+            "issue_to_id": 419,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 232,
+            "issue_id": 832,
+            "issue_to_id": 830,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 419,
+            "issue_id": 1258,
+            "issue_to_id": 830,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "1bf792b135fa5abff987f6f8e1230ef5f7eba558",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: moved dump print after error check",
+            "committed_on": "2015-03-10T14:23:27Z"
+        },
+        {
+            "revision": "1108bb5200ee3699168fd3bd201b263b43542ebf",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: fixed console scroll handle length",
+            "committed_on": "2015-03-10T14:26:48Z"
+        },
+        {
+            "revision": "b7013d4c84de5c70a9366abcd5dc7270ba377f35",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: fixed maximum console scroll back position",
+            "committed_on": "2015-03-10T15:10:55Z"
+        },
+        {
+            "revision": "9b10379ec0fb64627f8f9749da4b89af2012ce6b",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: adjusted console version string horizontal position",
+            "committed_on": "2015-03-10T15:18:09Z"
+        },
+        {
+            "revision": "080eecf5cc093e746369772ac10f2fe98731fdc6",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: use narrower scrollbar",
+            "committed_on": "2015-03-10T15:47:14Z"
+        },
+        {
+            "revision": "13ac6ee738f2c5db8cd42ff6f231c20ae7dbadb9",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: fixed last lines of visible in full console",
+            "committed_on": "2015-03-11T15:43:26Z"
+        },
+        {
+            "revision": "9781152f95eb525066c4247594b617d870b91c38",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: factored console functions out and cleanup, refs #830",
+            "committed_on": "2015-04-15T14:15:11Z"
+        },
+        {
+            "revision": "1fae5145750b3d1c2f2c69e193203d1213b01369",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: minor console alignment enhancement, refs #830",
+            "committed_on": "2015-04-15T14:15:11Z"
+        },
+        {
+            "revision": "e75fbbd6da9e6deca283afef7db954087a76e540",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: factored console functions out and cleanup, refs #830",
+            "committed_on": "2015-04-18T19:09:21Z"
+        },
+        {
+            "revision": "63ac39a8925522f5ebc2cf7798996b8cb2343746",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: minor console alignment enhancement, refs #830",
+            "committed_on": "2015-04-18T19:09:21Z"
+        },
+        {
+            "revision": "d4bb7f6620d44a418d92c1a836e113e2ad84cd14",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: added console animated scroll, refs #830",
+            "committed_on": "2015-07-23T05:55:56Z"
+        },
+        {
+            "revision": "4d02bb2746e072479d6c8dd16d28f40df721e4a6",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: set scroll indicator transparency, refs #830",
+            "committed_on": "2015-07-29T14:48:02Z"
+        },
+        {
+            "revision": "9ff62fa819ddc961bc06382e8fcb7fac946861e0",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: slowed down console mouse scrolling, refs #830",
+            "committed_on": "2015-11-23T12:44:32Z"
+        },
+        {
+            "revision": "2a36dafd0340a04a8b496294fdd82ada42121468",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: renamed scr_conspeed for consistency, refs #830",
+            "committed_on": "2015-11-23T12:49:53Z"
+        },
+        {
+            "revision": "6d3b178a9a1057ba669b7383138965682056cb54",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: use consistent color for console location messages, refs #830",
+            "committed_on": "2019-01-01T21:28:33Z"
+        },
+        {
+            "revision": "968e34f69076ffacfaa4af4990e0349c91b1b100",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "general: adjusted default blue color for console readability, refs #830",
+            "committed_on": "2019-01-01T21:28:34Z"
+        },
+        {
+            "revision": "754a57e0096f464c41c5ff3d30576e3055945109",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "general: adjusted blue color for curse console readability, refs #830",
+            "committed_on": "2019-05-17T17:21:19Z"
+        },
+        {
+            "revision": "f524bf05528b9ccb335bdb2cd1bd0bee46a56c26",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: added system clock in console, refs #830",
+            "committed_on": "2019-05-17T17:21:20Z"
+        },
+        {
+            "revision": "02da4227699dd261531d8b48f540696e8396d144",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "engine: initialization log cleanup, refs #830",
+            "committed_on": "2019-09-20T09:41:30Z"
+        },
+        {
+            "revision": "e121996b05e817859610d10b003d8161962a65b1",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "general: added timestamp on server console and log, refs #830",
+            "committed_on": "2019-09-20T10:17:51Z"
+        },
+        {
+            "revision": "b1cb22a3ef16c2ffb372d3fb6af758c7018bc3f2",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "general: use level time as common timestamp, refs #830",
+            "committed_on": "2019-09-20T11:41:12Z"
+        },
+        {
+            "revision": "0dcb250758b2d3b00d33aa0e9c9cd80e1b0de0fb",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: adjusted console clock spacing, refs #830",
+            "committed_on": "2019-12-24T13:57:23Z"
+        },
+        {
+            "revision": "bccc070ad296b8369ccbf1af58c0d35c5e4cf015",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: added visual ticking to console clock, refs #830",
+            "committed_on": "2019-12-31T14:54:39Z"
+        },
+        {
+            "revision": "133ec0afbc12ee41f3801e0f7b7739d5df7493f4",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: adjusted console scrollbar length, refs #830",
+            "committed_on": "2019-12-31T14:54:46Z"
+        },
+        {
+            "revision": "bdef495d85bbeb5c85ac7325643fe1f0bf439c1c",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: removed unused and broken console code, refs #830",
+            "committed_on": "2020-01-04T17:21:07Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 4750,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2015-03-11T12:46:58Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "770"
+                }
+            ]
+        },
+        {
+            "id": 4752,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2015-03-11T12:48:19Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "437"
+                }
+            ]
+        },
+        {
+            "id": 4754,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2015-03-11T12:48:29Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "419"
+                }
+            ]
+        },
+        {
+            "id": 4756,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2015-03-11T12:48:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "console improvements",
+                    "new_value": "Console improvements"
+                }
+            ]
+        },
+        {
+            "id": 4757,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-03-11T13:04:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "The client console can be improved in a number of way. Unvanquished implements the following features:\r\n\r\n- Search the console output, to scroll to the last line that display some string,\r\n- Grep, to display all console output lines that display some string,  \r\n- scrollbar marker, to display what has been displayed since you opened the console,\r\n- prompt clock (display local time in console, not that useful but why not?)\r\n\r\nThey also have a nice scrolling effect with some transparency, which might give a more modern feeling to our console.",
+                    "new_value": "The client console can be improved in a number of way. Unvanquished implements the following features:\r\n\r\n- Search the console output, to scroll to the last line that display some string,\r\n- Grep, to display all console output lines that display some string,  \r\n- scrollbar marker, to display what has been displayed since you opened the console,\r\n- prompt clock (display local time in console, not that useful but why not?)\r\n\r\nThey also have a nice scrolling effect with some transparency, which might give a more modern feeling to our console.\r\n\r\nAlso, check the Con_MessageMode{,2,3}_f functions. They seem deprecated and can probably be removed.\r\nCheck Con_DrawNotify and Con_ClearNotify - they don't seem to be used at all, although we might use them for the 'update available' warning."
+                }
+            ]
+        },
+        {
+            "id": 4760,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "May I ask why link a list of new features to bugs?",
+            "created_on": "2015-03-11T18:08:22Z",
+            "details": []
+        },
+        {
+            "id": 4761,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Because those would improve console experience?\r\n\r\n-*S",
+            "created_on": "2015-03-11T18:45:28Z",
+            "details": []
+        },
+        {
+            "id": 4763,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "In programming terms, if you link between each other it means one bug getting fixed is part of fixing the other bound bugs.\r\n\r\nI don't see any link between bugs and features when programming on one task, that's why I asked. That's just my pov :)",
+            "created_on": "2015-03-11T19:17:11Z",
+            "details": []
+        },
+        {
+            "id": 4764,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Saukko> Mateos is right. Bugs/Features linked should ideally have a direct relation to each other, or suspected to play a role in the linked bugs/features.",
+            "created_on": "2015-03-11T19:40:45Z",
+            "details": []
+        },
+        {
+            "id": 4765,
+            "user": {
+                "id": 177,
+                "name": "Zelly"
+            },
+            "notes": "Hopefully this is how I do comments in this, is kind of confusing to me. :D\r\n\r\nPersonally I have made changes to my console to open fullscreen by default.\r\nAs well as to take out the shader image of the console it has always bugged me.\r\nI made my console entirely black with a small transparency and i think it looks really nice.\r\nThe only issue with this is that black test is very difficult to read, but it is no more difficult to read for me than grey was with the console shader. Also there is an issue sometimes when a lot of text is printed it will not show my input until i hit enter. I assume that it is easily fixed, however I do not know C very much at all and I just go by trial error...\r\nAlso I made /condump (with no arguments) save a condump with the current time/date as the name.\r\nI attached ss of what myn looks like (Ignore the lua stuff in the console :D)",
+            "created_on": "2015-03-11T20:09:33Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "556",
+                    "new_value": "2015-02-10-145132-supplydepot2.jpg"
+                }
+            ]
+        },
+        {
+            "id": 4769,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Spyhawk wrote:\r\n> - prompt clock (display local time in console, not that useful but why not?)\r\nWhy yes? :)\r\nIt's completely useless as every single mod has @cg_drawTime@.",
+            "created_on": "2015-03-12T17:34:51Z",
+            "details": []
+        },
+        {
+            "id": 4770,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-03-12T20:41:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "The client console can be improved in a number of way. Unvanquished implements the following features:\r\n\r\n- Search the console output, to scroll to the last line that display some string,\r\n- Grep, to display all console output lines that display some string,  \r\n- scrollbar marker, to display what has been displayed since you opened the console,\r\n- prompt clock (display local time in console, not that useful but why not?)\r\n\r\nThey also have a nice scrolling effect with some transparency, which might give a more modern feeling to our console.\r\n\r\nAlso, check the Con_MessageMode{,2,3}_f functions. They seem deprecated and can probably be removed.\r\nCheck Con_DrawNotify and Con_ClearNotify - they don't seem to be used at all, although we might use them for the 'update available' warning.",
+                    "new_value": "The client console can be improved in a number of way. Unvanquished implements the following features:\r\n\r\n- Search the console output, to scroll to the last line that display some string,\r\n- Grep, to display all console output lines that display some string,  \r\n- scrollbar marker, to display what has been displayed since you opened the console,\r\n- prompt clock (display local time in console, not that useful but why not?)\r\n- timestamp on entered command\r\n\r\nThey also have a nice scrolling effect with some transparency, which might give a more modern feeling to our console.\r\n\r\nAlso, check the Con_MessageMode{,2,3}_f functions. They seem deprecated and can probably be removed.\r\nCheck Con_DrawNotify and Con_ClearNotify - they don't seem to be used at all, although we might use them for the 'update available' warning."
+                }
+            ]
+        },
+        {
+            "id": 4771,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-03-12T23:27:01Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "The client console can be improved in a number of way. Unvanquished implements the following features:\r\n\r\n- Search the console output, to scroll to the last line that display some string,\r\n- Grep, to display all console output lines that display some string,  \r\n- scrollbar marker, to display what has been displayed since you opened the console,\r\n- prompt clock (display local time in console, not that useful but why not?)\r\n- timestamp on entered command\r\n\r\nThey also have a nice scrolling effect with some transparency, which might give a more modern feeling to our console.\r\n\r\nAlso, check the Con_MessageMode{,2,3}_f functions. They seem deprecated and can probably be removed.\r\nCheck Con_DrawNotify and Con_ClearNotify - they don't seem to be used at all, although we might use them for the 'update available' warning.",
+                    "new_value": "The client console can be improved in a number of way. Unvanquished implements the following features:\r\n\r\n- Search the console output, to scroll to the last line that display some string,\r\n- Grep, to display all console output lines that display some string,  \r\n- scrollbar marker, to display what has been displayed since you opened the console,\r\n- prompt clock (display local time in console, not that useful but why not?)\r\n- timestamp on entered command\r\n\r\nThey also have a nice scrolling effect with some transparency, which might give a more modern feeling to our console.\r\n\r\nAlso, check the Con_MessageMode{,2,3}_f functions. They seem deprecated and can probably be removed - check related KEYCATCH_MESSAGE too.\r\nCheck Con_DrawNotify and Con_ClearNotify - they don't seem to be used at all, although we might use them for the 'update available' warning."
+                }
+            ]
+        },
+        {
+            "id": 4829,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-03-20T08:52:01Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "832"
+                }
+            ]
+        },
+        {
+            "id": 4912,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-04-06T21:40:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "The client console can be improved in a number of way. Unvanquished implements the following features:\r\n\r\n- Search the console output, to scroll to the last line that display some string,\r\n- Grep, to display all console output lines that display some string,  \r\n- scrollbar marker, to display what has been displayed since you opened the console,\r\n- prompt clock (display local time in console, not that useful but why not?)\r\n- timestamp on entered command\r\n\r\nThey also have a nice scrolling effect with some transparency, which might give a more modern feeling to our console.\r\n\r\nAlso, check the Con_MessageMode{,2,3}_f functions. They seem deprecated and can probably be removed - check related KEYCATCH_MESSAGE too.\r\nCheck Con_DrawNotify and Con_ClearNotify - they don't seem to be used at all, although we might use them for the 'update available' warning.",
+                    "new_value": "The client console can be improved in a number of way. Unvanquished implements the following features:\r\n\r\n- Search the console output, to scroll to the last line that display some string,\r\n- Grep, to display all console output lines that display some string,  \r\n- scrollbar marker, to display what has been displayed since you opened the console,\r\n- prompt clock (display local time in console, not that useful but why not?)\r\n- timestamp on entered command\r\n- timestamp for comdump filename (see \"b18d57006725095c795fe968f7c2b1e103c7c18a\":https://github.com/Unvanquished/Unvanquished/commit/b18d57006725095c795fe968f7c2b1e103c7c18a)\r\n\r\nThey also have a nice scrolling effect with some transparency, which might give a more modern feeling to our console.\r\n\r\nAlso, check the Con_MessageMode{,2,3}_f functions. They seem deprecated and can probably be removed - check related KEYCATCH_MESSAGE too.\r\nCheck Con_DrawNotify and Con_ClearNotify - they don't seem to be used at all, although we might use them for the 'update available' warning."
+                }
+            ]
+        },
+        {
+            "id": 5355,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Is there an option to control how fast should scrolling work? By speed I mean number of lines I scroll up/down when I press PgUp/PgDown once.",
+            "created_on": "2015-11-08T13:29:46Z",
+            "details": []
+        },
+        {
+            "id": 5356,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Dragonji wrote:\r\n> Is there an option to control how fast should scrolling work? By speed I mean number of lines I scroll up/down when I press PgUp/PgDown once.\r\n\r\nNo. The number of lines scrolled is half of the total number of lines visible in console.\r\n",
+            "created_on": "2015-11-08T16:22:01Z",
+            "details": []
+        },
+        {
+            "id": 5396,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "I feel like it's scrolling too much at once. AFAIR, in vanilla ET only 2 or 3 lines are scrolled up at once.\r\n\r\nCould there be a setting for scrolling speed in ET:L?",
+            "created_on": "2015-11-22T13:34:02Z",
+            "details": []
+        },
+        {
+            "id": 5397,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Dragonji wrote:\r\n> Could there be a setting for scrolling speed in ET:L?\r\n\r\nI'd rather find a good default than add another cvar for a tiny setting. Also, half a screen scrolling with Pg Up/Pg Down is pretty standard on Unix system.",
+            "created_on": "2015-11-22T16:43:00Z",
+            "details": []
+        },
+        {
+            "id": 5401,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "And in Windows you can choose in the mouse settings...",
+            "created_on": "2015-11-23T07:39:05Z",
+            "details": []
+        },
+        {
+            "id": 5402,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Mateos wrote:\r\n> And in Windows you can choose in the mouse settings...\r\n\r\nWhy would I change it globally if I find the default setting not accurate only in *one* application?",
+            "created_on": "2015-11-23T10:56:25Z",
+            "details": []
+        },
+        {
+            "id": 5403,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "I meant by this that the OS offers a tweak, so why not the game ^^'",
+            "created_on": "2015-11-23T10:59:29Z",
+            "details": []
+        },
+        {
+            "id": 5404,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Mateos wrote:\r\n> I meant by this that the OS offers a tweak, so why not the game ^^'\r\n\r\nOh, sorry, misunderstood you ;)\r\n\r\nSpyhawk wrote:\r\n> I'd rather find a good default than add another cvar for a tiny setting.\r\n\r\nWell, there's a cvar for controlling the speed of opening/closing console so... :D\r\n\r\nSpyhawk wrote:\r\n> Also, half a screen scrolling with Pg Up/Pg Down is pretty standard on Unix system.\r\n\r\nHow about keeping current behaviour for PgUp/PgDown keys and \"restore\" vanilla's amount (or even 1.5x vanilla's) of scrolled lines for mouse scrolling?",
+            "created_on": "2015-11-23T11:10:55Z",
+            "details": []
+        },
+        {
+            "id": 5405,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Hmm scrolling actually only calls PageUp or PageDown function, I did miss that here. I'll see if I can implement proper scrolling here, thanks for the feedback Dragon.\r\n\r\n> Well, there\u2019s a cvar for controlling the speed of opening/closing console so... \r\n\r\nOh, is it?\r\n\r\n> How about keeping current behaviour for PgUp/PgDown keys and \"restore\" vanilla\u2019s amount (or even 1.5x vanilla\u2019s) of scrolled lines for mouse scrolling?\r\n\r\nJust had a look. It's probably better to use a relative amount of lines rather than a fixed numbers of lines, so the \"speed\" would be adjusted across the various screen resolution.\r\n\r\nCurrent is half a screen for PgUp/PgDn and mouse scrolling, let's keep it that way for PgUp/PgDn but reduce it to 1/4 for mouse scrolling.",
+            "created_on": "2015-11-23T11:24:45Z",
+            "details": []
+        },
+        {
+            "id": 5406,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Spyhawk wrote:\r\n> Oh, is it?\r\n\r\nIt's _scr_conspeed_. Yeah, its name is weird, I guess it's the only cvar with scr_ prefix.\r\n\r\nhttps://github.com/etlegacy/etlegacy/blob/master/src/client/cl_console.c#L293",
+            "created_on": "2015-11-23T12:02:27Z",
+            "details": []
+        },
+        {
+            "id": 5407,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Dragonji wrote:\r\n> It's _scr_conspeed_. Yeah, its name is weird, I guess it's the only cvar with scr_ prefix.\r\n\r\nRight. Guess I'll renamed it to con_conspeed, as there are already other  con_ variables.\r\n",
+            "created_on": "2015-11-23T12:44:03Z",
+            "details": []
+        },
+        {
+            "id": 5408,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Maybe con_scrollspeed would be more explicit? conspeed could be the rate at which stuff is printed or it opens up",
+            "created_on": "2015-11-23T12:45:29Z",
+            "details": []
+        },
+        {
+            "id": 5409,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Mateos wrote:\r\n> Maybe con_scrollspeed would be more explicit? conspeed could be the rate at which stuff is printed or it opens up\r\n\r\ncon_scrollspeed could be rate at which scolling occurs or rate at which console opens up...  con_openspeed maybe?\r\n\r\n",
+            "created_on": "2015-11-23T12:47:55Z",
+            "details": []
+        },
+        {
+            "id": 5410,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Well usually talking about scrolling is scrolling through a page using a mouse, up to you ^^' con_navscrollspeed? x)",
+            "created_on": "2015-11-23T12:50:10Z",
+            "details": []
+        },
+        {
+            "id": 5411,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Spyhawk wrote:\r\n> Right. Guess I'll renamed it to con_conspeed, as there are already other  con_ variables.\r\n\r\nI guess there's no reason to stick with mysterious _conspeed_ if the cvar's going to be renamed anyway. More adequate name would be appreciated.",
+            "created_on": "2015-11-23T12:58:40Z",
+            "details": []
+        },
+        {
+            "id": 6130,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2016-11-02T17:03:37Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "274"
+                }
+            ]
+        },
+        {
+            "id": 6132,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2016-11-02T19:06:24Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "old_value": "274"
+                }
+            ]
+        },
+        {
+            "id": 8027,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-21T18:20:36Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1258"
+                }
+            ]
+        },
+        {
+            "id": 8192,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-05-17T09:06:01Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "The client console can be improved in a number of way. Unvanquished implements the following features:\r\n\r\n- Search the console output, to scroll to the last line that display some string,\r\n- Grep, to display all console output lines that display some string,  \r\n- scrollbar marker, to display what has been displayed since you opened the console,\r\n- prompt clock (display local time in console, not that useful but why not?)\r\n- timestamp on entered command\r\n- timestamp for comdump filename (see \"b18d57006725095c795fe968f7c2b1e103c7c18a\":https://github.com/Unvanquished/Unvanquished/commit/b18d57006725095c795fe968f7c2b1e103c7c18a)\r\n\r\nThey also have a nice scrolling effect with some transparency, which might give a more modern feeling to our console.\r\n\r\nAlso, check the Con_MessageMode{,2,3}_f functions. They seem deprecated and can probably be removed - check related KEYCATCH_MESSAGE too.\r\nCheck Con_DrawNotify and Con_ClearNotify - they don't seem to be used at all, although we might use them for the 'update available' warning.",
+                    "new_value": "The client console can be improved in a number of way. Unvanquished implements the following features:\r\n\r\n- Search the console output, to scroll to the last line that display some string,\r\n- Grep, to display all console output lines that display some string,  \r\n- scrollbar marker, to display what has been displayed since you opened the console,\r\n- prompt clock (display local time in console, not that useful but why not?)\r\n- timestamp on entered command (see above)\r\n- timestamp for comdump filename (see \"b18d57006725095c795fe968f7c2b1e103c7c18a\":https://github.com/Unvanquished/Unvanquished/commit/b18d57006725095c795fe968f7c2b1e103c7c18a)\r\n\r\nThey also have a nice scrolling effect with some transparency, which might give a more modern feeling to our console.\r\n\r\nAlso, check the Con_MessageMode{,2,3}_f functions. They seem deprecated and can probably be removed - check related KEYCATCH_MESSAGE too.\r\nCheck Con_DrawNotify and Con_ClearNotify - they don't seem to be used at all, although we might use them for the 'update available' warning."
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 830,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Console improvements",
+    "description": "The client console can be improved in a number of way. Unvanquished implements the following features:\r\n\r\n- Search the console output, to scroll to the last line that display some string,\r\n- Grep, to display all console output lines that display some string,  \r\n- scrollbar marker, to display what has been displayed since you opened the console,\r\n- prompt clock (display local time in console, not that useful but why not?)\r\n- timestamp on entered command (see above)\r\n- timestamp for comdump filename (see \"b18d57006725095c795fe968f7c2b1e103c7c18a\":https://github.com/Unvanquished/Unvanquished/commit/b18d57006725095c795fe968f7c2b1e103c7c18a)\r\n\r\nThey also have a nice scrolling effect with some transparency, which might give a more modern feeling to our console.\r\n\r\nAlso, check the Con_MessageMode{,2,3}_f functions. They seem deprecated and can probably be removed - check related KEYCATCH_MESSAGE too.\r\nCheck Con_DrawNotify and Con_ClearNotify - they don't seem to be used at all, although we might use them for the 'update available' warning.",
+    "start_date": "2015-03-11",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-03-11T11:18:44Z",
+    "updated_on": "2019-05-17T09:06:01Z"
+}

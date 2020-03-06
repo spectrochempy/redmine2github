@@ -1,0 +1,208 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 3720,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "For now I haven't been able to reproduce this. But I will keep my ete on this still for a while. I will put it fixed myself after a while.\r\n\r\n-*S",
+            "created_on": "2014-11-15T04:47:39Z",
+            "details": []
+        },
+        {
+            "id": 3721,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-15T08:19:46Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 3725,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I can imagine this issue was caused by the decal changes we did. Let's close this now.",
+            "created_on": "2014-11-15T12:23:40Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3726,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-11-15T12:23:48Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 4041,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Reopened. The bug still exists, according to Saukko.",
+            "created_on": "2014-12-11T15:34:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "6",
+                    "new_value": "8"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 4042,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "The bug is still alive. See the demo I attached.\r\n\r\n-*S",
+            "created_on": "2014-12-11T18:51:02Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "472",
+                    "new_value": "demo0050.dm_84"
+                }
+            ]
+        },
+        {
+            "id": 4044,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-12-11T20:45:01Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 5982,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-09-04T10:15:26Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 518,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Shooting dead body makes sparks",
+    "description": "Ok there are two things to mention here. When you shoot a dead body it makes sparks. When you shoot sand normally it doesn't make any sparks when you hit it with bullets. So when you keep shooting on the sand where the dead body was for a while, it still makes sparks. But after a while it doesn't make anymore sparks.\r\n\r\n-*S",
+    "start_date": "2014-02-22",
+    "done_ratio": 80,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-02-22T15:07:36Z",
+    "updated_on": "2016-09-04T10:15:26Z",
+    "closed_on": "2014-11-15T12:23:40Z"
+}

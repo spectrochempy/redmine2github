@@ -1,0 +1,56 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1393,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Debriefing scores not always sent correctly",
+    "description": "This sometimes happen when switching to score page before any scores arrived, so everyone got dashes instead of scores, but when scores are received, we can only see 0 on own row (and some others as well).",
+    "start_date": "2020-01-22",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2020-01-22T10:27:39Z",
+    "updated_on": "2020-01-22T10:27:39Z"
+}

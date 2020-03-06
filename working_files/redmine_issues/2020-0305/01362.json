@@ -1,0 +1,138 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "bae8ce7a96383afada6c6c57b295f6fd7a3696a0",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "game: fix grenade/riflenade dissapearing and not doing damage, refs #1362",
+            "committed_on": "2019-11-29T16:03:53Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 8541,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "",
+            "created_on": "2019-11-17T18:02:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "17"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "8"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8559,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "Applied in change set commit:bae8ce7a96383afada6c6c57b295f6fd7a3696a0.",
+            "created_on": "2019-11-29T16:08:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "251"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 421,
+            "name": "kimi"
+        }
+    ],
+    "time_entries": null,
+    "id": 1362,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 6,
+        "name": "Urgent"
+    },
+    "author": {
+        "id": 421,
+        "name": "kimi"
+    },
+    "assigned_to": {
+        "id": 251,
+        "name": "Aranud"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "riflenade dissapearing and not doing damage",
+    "description": "see the video or demo",
+    "start_date": "2019-11-17",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-11-17T16:53:12Z",
+    "updated_on": "2019-11-29T16:08:17Z",
+    "closed_on": "2019-11-29T16:08:17Z"
+}

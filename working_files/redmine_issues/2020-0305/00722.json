@@ -1,0 +1,103 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 4091,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "The rank is linked to the player, not the helmet. When it's shot off, a generic model is created and the helmet doesn't know what to show anymore. This is probably not worth fixing (code complexity + more memory used?). ",
+            "created_on": "2014-12-14T15:59:44Z",
+            "details": []
+        },
+        {
+            "id": 4624,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "It's just cosmetics nobody cares about anyway. Not worth spending time on this IMO.",
+            "created_on": "2015-02-17T14:35:34Z",
+            "details": []
+        },
+        {
+            "id": 4625,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Ok -> closed.",
+            "created_on": "2015-02-17T15:01:56Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "17"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 722,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "The rank icon disappears from the helmet when it's shot off",
+    "description": "As the title says. See the three screenshots.\r\n\r\n-*S",
+    "start_date": "2014-12-14",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-12-14T15:48:26Z",
+    "updated_on": "2015-02-17T15:01:56Z",
+    "closed_on": "2015-02-17T15:01:56Z"
+}

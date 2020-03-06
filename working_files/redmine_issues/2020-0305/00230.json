@@ -1,0 +1,246 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "0e8bd2a946ccf1239fe33be5be3565ce26d26c7d",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "game: added class and weapon restriction cvars, they now work only limbomenu is still lacking, refs #230",
+            "committed_on": "2013-03-06T19:46:46Z"
+        },
+        {
+            "revision": "19ada80b150b42c84ac83211805f003eae28faf2",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "cgame: class and weapon restrictions are now transmitted to the clients, refs #230",
+            "committed_on": "2013-04-28T20:36:34Z"
+        },
+        {
+            "revision": "674f59514a19b85a68ae0bc09279f80e7888014b",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "cgame: Limbomenu now shows the team restrictions, refs #230",
+            "committed_on": "2013-04-29T12:44:16Z"
+        },
+        {
+            "revision": "ef8fb49a811160faad07e7711b69be42ed4f82c9",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "cgame: fixed the free class find, refs #230",
+            "committed_on": "2013-04-29T14:07:55Z"
+        },
+        {
+            "revision": "50df5c93e11b8e5e2af6d5555b39854714230f69",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "cgame: added full teams check, refs #230",
+            "committed_on": "2013-04-29T15:58:02Z"
+        },
+        {
+            "revision": "13641e78901be85700219443a1af6dd3e4e15759",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "cgame: fixed limbo ERROR message, refs #230",
+            "committed_on": "2013-04-29T16:56:28Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1262,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "I think i can implement this.",
+            "created_on": "2013-03-06T11:12:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "44"
+                }
+            ]
+        },
+        {
+            "id": 1264,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "",
+            "created_on": "2013-03-06T11:42:59Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 1274,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "This functionality must still be implemented to the limbo menu but the basic server side functionality works now, players cannot spawn with invalid classes or weapons.",
+            "created_on": "2013-03-06T20:22:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 1280,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "legacy.cfg is updated\r\n\r\n{TODO}\r\n* limbo menu (server -> client communication)\r\n* -update wiki cvars page-",
+            "created_on": "2013-03-07T05:50:57Z",
+            "details": []
+        },
+        {
+            "id": 1306,
+            "user": {
+                "id": 110,
+                "name": "Harlekin"
+            },
+            "notes": "updated wiki cvars page",
+            "created_on": "2013-03-13T06:07:26Z",
+            "details": []
+        },
+        {
+            "id": 1357,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-03-18T12:11:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1616,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Limbomenu now shows the data, there is still a minor bug in it but I'll try to fix it today.",
+            "created_on": "2013-04-29T12:46:33Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 1618,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Bug fixed and feature is ready&done.",
+            "created_on": "2013-04-29T14:09:35Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 230,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 110,
+        "name": "Harlekin"
+    },
+    "assigned_to": {
+        "id": 44,
+        "name": "Jacker"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 7,
+        "name": "2.71rc2"
+    },
+    "subject": "team_max restrictions",
+    "description": "I'm missing featues like:\r\nteam_maxSoldiers\r\nteam_maxMedics\r\nteam_maxEngineers\r\nteam_maxFieldops\r\nteam_maxCovertops\r\nteam_maxMortars\r\nteam_maxFlamers\r\nteam_maxMg42s\r\nteam_maxPanzers\r\nteam_maxRiflegrenades",
+    "start_date": "2013-03-05",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-03-05T13:43:57Z",
+    "updated_on": "2013-04-29T14:09:35Z",
+    "closed_on": "2013-04-29T14:09:35Z"
+}

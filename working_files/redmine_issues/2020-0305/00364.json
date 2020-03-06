@@ -1,0 +1,648 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 110,
+            "issue_id": 157,
+            "issue_to_id": 364,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "906fb365e3ed89a4410b53d29b795dd1ecf4be3f",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "renderer: fix decals on 64 bit linux refs #364",
+            "committed_on": "2014-01-19T10:23:26Z"
+        },
+        {
+            "revision": "e7ad664679c763d2d56900aa77bcd02c5f4a66dc",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "renderers: fix for piggy dev meets piggy C - useless var removed fixes\n#364",
+            "committed_on": "2014-01-19T11:20:23Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2058,
+            "user": {
+                "id": 252,
+                "name": "Unode"
+            },
+            "notes": "Extra info: I'm running the game on a NVIDIA GT218 using the 319.32 drivers.",
+            "created_on": "2013-10-07T14:48:13Z",
+            "details": []
+        },
+        {
+            "id": 2059,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Now, how did you build the client? Did by any change build it with visual studio 2010?\r\n>edit never mind category is for linux, i misread",
+            "created_on": "2013-10-08T07:02:09Z",
+            "details": []
+        },
+        {
+            "id": 2060,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Unode, did you compile it yourself (rc2)?\r\n\r\nWhich Linux is used ?",
+            "created_on": "2013-10-09T15:41:02Z",
+            "details": []
+        },
+        {
+            "id": 2067,
+            "user": {
+                "id": 252,
+                "name": "Unode"
+            },
+            "notes": "Yes, compiled on Gentoo Linux from 2.71rc2 (git tag) using gcc 4.6.3.\r\nMy system is 64bits but compilation was done for 32bits using the easybuild.sh script.\r\n\r\nThe (old) official builds/binaries are no longer online so I couldn't test those.\r\n\r\nI just did another test and I can only seem to reproduce this error when connecting to a dedicated server which is the same build but running on a different machine.\r\nIf I start the game and host directly this doesn't happen.\r\n\r\nI also tried connecting to the test server (with 2.71rc2 and latest git master cb29f8ad5c) but it complains that pk3 are different.\r\n\r\nCould some server side cvar affect this?",
+            "created_on": "2013-10-14T11:50:49Z",
+            "details": []
+        },
+        {
+            "id": 2068,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Binaries from previous release are still available at http://www.etlegacy.com/download if you want to test them.",
+            "created_on": "2013-10-14T12:06:53Z",
+            "details": []
+        },
+        {
+            "id": 2071,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Odd ... I was thinking about a shader issue at first. \r\nIf it doesn't happen when you host a game (and in that case your own bins are used) it seems gentoo 'interprets' our binaries differently compared to other linux distributions. ^^\r\n\r\nI'll add some debug info to the related code and attach the files asap. \r\n ",
+            "created_on": "2013-10-14T17:45:14Z",
+            "details": []
+        },
+        {
+            "id": 2072,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-10-14T17:45:26Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "9"
+                }
+            ]
+        },
+        {
+            "id": 2102,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-10-18T14:59:41Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "9",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 2125,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "i cannot duplicate this behav. anymore on the master. Could anyone else test this out?",
+            "created_on": "2013-10-20T19:56:25Z",
+            "details": []
+        },
+        {
+            "id": 2143,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "I am running Gentoo with Radeon mesa drivers and I cannot reproduce this.",
+            "created_on": "2013-10-22T14:59:57Z",
+            "details": []
+        },
+        {
+            "id": 2144,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I did fix the color issues we have had with competition settings - see attached screeny and warmup text ... some HUD texts (HP and XP) were yellow. \r\nThere was a wrong color set with trap_R_SetColor and I do assume this wrong shader color was another side effect.\r\n\r\n\r\n",
+            "created_on": "2013-10-22T16:00:29Z",
+            "details": []
+        },
+        {
+            "id": 2145,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "I will now close this issue as no one can produce it anymore.",
+            "created_on": "2013-10-23T07:22:46Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 2192,
+            "user": {
+                "id": 252,
+                "name": "Unode"
+            },
+            "notes": "Hi everyone,\r\n\r\nJust to let you know that I cannot reproduce the bug anymore with neither git-v2.71rc3 nor git-master, both using the provided easy-build.sh script.\r\nAdditionally I get consistent behavior between connecting to a dedicated server and hosting locally, however instead of the blue shadow, I now get no shadow in neither of the explosives (Mines, Granades, Panzer...).\r\n\r\nAnd just to make things more confusing, I get the correct behavior if I use the 2.71rc3 official Linux build provided on the website.\r\nFinally, I noticed that the folder structure of the git versions is different (bin/ mod/ share/) from the official build (bin/ and mod/ merged and no share/). Don't know if this is part of the problem...\r\n\r\nI attached the full build log on my machine.",
+            "created_on": "2013-11-01T16:41:36Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "204",
+                    "new_value": "fullbuild.log"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 2193,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I can reproduce the issue on Arch. My local git build (\"easybuild\") does show explosion shadows correctly, but they don't appear in the official Arch package with splitted /share and /bin directories.",
+            "created_on": "2013-11-01T18:54:27Z",
+            "details": []
+        },
+        {
+            "id": 2194,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-11-01T19:07:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 2195,
+            "user": {
+                "id": 252,
+                "name": "Unode"
+            },
+            "notes": "Spyhawk seems to have the exact opposite behavior that I have. The official build works fine for me but not the ones I compile.\r\n\r\nI also tried different versions of the server but it doesn't seem to matter, i.e. client side only.\r\n\r\nPS: In some places the mp_bin.pk3 file is mentioned as one to be copied to etmain/ (easybuild output) in others not (wiki and binary output). I assumed the latter would be correct.\r\nPS2: The NVIDIA drivers I have are currently version 319.60",
+            "created_on": "2013-11-01T19:38:30Z",
+            "details": []
+        },
+        {
+            "id": 2196,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Unode> To clear this issue a bit, I do have the very same issue. The \"easybuild\" method doesn't have the missing explosion shadows (official build on etlegacy.com, local build with easybuild.sh), while the splitted directories method does (all packaged linux version, including Arch).\r\n\r\nI don't think this is related to the graphical driver (I'm running Intel), but wrong permission access might be involved.",
+            "created_on": "2013-11-01T20:19:49Z",
+            "details": []
+        },
+        {
+            "id": 2262,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Some update: The blue shadows issue and the grey shadows not displaying with splitted directories are totally unrelated, the latter being older. It has been introduced in this commit: https://github.com/etlegacy/etlegacy/commit/86d2661b4b21b801f5e92c929daf3862b23760eb",
+            "created_on": "2013-11-15T16:17:26Z",
+            "details": []
+        },
+        {
+            "id": 2267,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "To clarify: Spyhawk, can you reproduce this shader issue with an own build? I can't.  ",
+            "created_on": "2013-11-16T07:32:53Z",
+            "details": []
+        },
+        {
+            "id": 2269,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "IR4T4> I can, but only when using splitted directories (/usr/bin, /usr/share/etlegacy). A custom build with easybuild.sh won't show the issue.",
+            "created_on": "2013-11-16T11:11:12Z",
+            "details": []
+        },
+        {
+            "id": 2270,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Spyhawk wrote:\r\n> IR4T4> I can, but only when using splitted directories (/usr/bin, /usr/share/etlegacy). A custom build with easybuild.sh won't show the issue.\r\nWell ... if it's related to the above commit it shouldn't be a big deal to figure out what causes the blue shader.\r\n",
+            "created_on": "2013-11-16T14:21:04Z",
+            "details": []
+        },
+        {
+            "id": 2271,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "IR4T4> The blue shader issue has been solved, as stated above by Unode. I'm talking about the missing explosion shader only  - no matter what color it is :)\r\n\r\nEdit: In fact, #364 is solved. We probably need to open a new ticket for this different issue.",
+            "created_on": "2013-11-16T14:33:03Z",
+            "details": []
+        },
+        {
+            "id": 2372,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2013-12-11T11:03:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Explosions are rendered blue instead of gray/black",
+                    "new_value": "No explosion shadows when using splitted directories"
+                },
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "As visible on the screenshot attached explosions by grenades, mines and panzerfaust will be rendered blue instead of gray/black.\r\n\r\nThis was present in 2.71rc1 and is still visible in 2.71rc2.\r\n\r\nChanging between different shadow rendering modes didn't affect the result.",
+                    "new_value": "-As visible on the screenshot attached explosions by grenades, mines and panzerfaust will be rendered blue instead of gray/black.-\r\n-This was present in 2.71rc1 and is still visible in 2.71rc2.-\r\n-Changing between different shadow rendering modes didn't affect the result.-\r\n\r\n(the above fixed in 2.71rc3)\r\n\r\nJust to let you know that I cannot reproduce the bug anymore with neither git-v2.71rc3 nor git-master, both using the provided easy-build.sh script.\r\nAdditionally I get consistent behavior between connecting to a dedicated server and hosting locally, however instead of the blue shadow, I now get no shadow in neither of the explosives (Mines, Granades, Panzer...).\r\n\r\nAnd just to make things more confusing, I get the correct behavior if I use the 2.71rc3 official Linux build provided on the website.\r\nFinally, I noticed that the folder structure of the git versions is different (bin/ mod/ share/) from the official build (bin/ and mod/ merged and no share/). Don\u2019t know if this is part of the problem...\r\n\r\nI attached the full build log on my machine."
+                }
+            ]
+        },
+        {
+            "id": 2392,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "It took me time to narrow it down, but is seems I finally have a clue about what happens here. It is, in fact, not closely related to splitted directories, but directly related to build flags applied at compilation time.\r\n\r\nOn Arch Linux, the missing explosion shadows bug appears when I build etl with the distro packaging tools (PKGBUILD/makepkg), where some build options are passed by default. By disabling those (using \"option=(!buildflags)\" in the PKGBUILD), the shadows are correctly displayed.\r\n\r\nDefault build flags (everything vanilla, except -j4 that I enabled):\r\n\r\n<pre>\r\n#########################################################################\r\n# ARCHITECTURE, COMPILE FLAGS\r\n#########################################################################\r\n#\r\nCARCH=\"x86_64\"\r\nCHOST=\"x86_64-unknown-linux-gnu\"\r\n\r\n#-- Compiler and Linker Flags\r\n# -march (or -mcpu) builds exclusively for an architecture\r\n# -mtune optimizes for an architecture, but builds for whole processor family\r\nCPPFLAGS=\"-D_FORTIFY_SOURCE=2\"\r\nCFLAGS=\"-march=x86-64 -mtune=generic -O2 -pipe -fstack-protector --param=ssp-buffer-size=4\"\r\nCXXFLAGS=\"-march=x86-64 -mtune=generic -O2 -pipe -fstack-protector --param=ssp-buffer-size=4\"\r\nLDFLAGS=\"-Wl,-O1,--sort-common,--as-needed,-z,relro\"\r\n#-- Make Flags: change this for DistCC/SMP systems\r\nMAKEFLAGS=\"-j4\"\r\n#-- Debugging flags\r\nDEBUG_CFLAGS=\"-g -fvar-tracking-assignments\"\r\nDEBUG_CXXFLAGS=\"-g -fvar-tracking-assignments\"\r\n</pre>\r\n\r\nFor the interested Arch users, the PKGBUILD is available at https://aur.archlinux.org/packages/et/etlegacy-git/PKGBUILD (remove !buildflags to enable the bug).\r\n\r\nUnode, could something similar happen on your Gentoo with eflags?",
+            "created_on": "2013-12-12T01:41:40Z",
+            "details": []
+        },
+        {
+            "id": 2397,
+            "user": {
+                "id": 252,
+                "name": "Unode"
+            },
+            "notes": "My system flags on a computer with 1 i5-2500 are:\r\n\r\n<pre>\r\nCFLAGS=\"-march=core2 -mtune=generic -O2 -pipe\"\r\nCXXFLAGS=\"-march=core2 -mtune=generic -O2 -pipe\"\r\nCHOST=\"x86_64-pc-linux-gnu\"\r\nMAKEOPTS=\"-j3\"\r\nLDFLAGS=\"-Wl,-O1 -Wl,--as-needed\"\r\n</pre>\r\n\r\nLet me know what options to change and I'll try reproducing (or not) the error again.\r\n\r\nBeen a while since I last tried (have been using the official build since it came out).\r\n\r\nThanks for taking time to do spelunking on that error.",
+            "created_on": "2013-12-12T12:02:07Z",
+            "details": []
+        },
+        {
+            "id": 2422,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "created_on": "2013-12-14T17:55:50Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "new_value": "Linux"
+                }
+            ]
+        },
+        {
+            "id": 2509,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I also don't know what causes this but I can reproduce the bug with Debian 64 bit build.\r\n\r\n<pre>\r\nCARCH=\"x86_64\" \r\nCHOST=\"x86_64-unknown-linux-gnu\"\r\n</pre>\r\n\r\n",
+            "created_on": "2013-12-23T07:57:48Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "No explosion shadows when using splitted directories",
+                    "new_value": "No explosion shadows/black crater"
+                }
+            ]
+        },
+        {
+            "id": 2524,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Update: issue occures with 32 bit multiarch build as well ",
+            "created_on": "2013-12-23T19:46:36Z",
+            "details": []
+        },
+        {
+            "id": 2539,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-12-25T20:52:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 2621,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-12-29T14:17:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 2642,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-12-31T12:54:23Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "5",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 2643,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-12-31T12:54:33Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "2",
+                    "old_value": "",
+                    "new_value": "64-bit"
+                }
+            ]
+        },
+        {
+            "id": 2687,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "This bug keeps us away to do release builds with multiarch!",
+            "created_on": "2014-01-02T09:10:48Z",
+            "details": []
+        },
+        {
+            "id": 2768,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-01-06T15:44:53Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "157"
+                }
+            ]
+        },
+        {
+            "id": 2857,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "renderer2 is not affected!",
+            "created_on": "2014-01-18T22:33:15Z",
+            "details": []
+        },
+        {
+            "id": 2858,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I've nailed the issue down to a var scope thingy which is quite odd ...\r\n\r\nCommit https://github.com/etlegacy/etlegacy/compare/cd1790ffe3f2...906fb365e3ed shows me decals/craters again (32 bit build, 32 bit multiarch Debian 64). \r\n\r\nCurrently I've no real idea what causes this behaviour finally. It might be related to the stack or used Vector4Set macro.  However vec4_t and Vector4Set (which is the only used function for omniProjection in RE_ProjectDecal) are spread all over the code - time to investigate this.\r\n",
+            "created_on": "2014-01-19T10:44:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "60"
+                }
+            ]
+        },
+        {
+            "id": 2859,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I confirm the latest commit fix the issue for me too. Well done IR4.",
+            "created_on": "2014-01-19T11:27:48Z",
+            "details": []
+        },
+        {
+            "id": 2860,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Applied in changeset commit:e7ad664679c763d2d56900aa77bcd02c5f4a66dc.",
+            "created_on": "2014-01-19T11:35:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "60",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 2861,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I've found the reason. Fixed for all renderers.",
+            "created_on": "2014-01-19T11:36:25Z",
+            "details": []
+        },
+        {
+            "id": 2863,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-01-19T13:00:56Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 252,
+            "name": "Unode"
+        },
+        {
+            "id": 9,
+            "name": "Mateos"
+        },
+        {
+            "id": 1,
+            "name": "Radegast"
+        }
+    ],
+    "time_entries": null,
+    "id": 364,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 6,
+        "name": "Urgent"
+    },
+    "author": {
+        "id": 252,
+        "name": "Unode"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "No explosion shadows/black crater",
+    "description": "-As visible on the screenshot attached explosions by grenades, mines and panzerfaust will be rendered blue instead of gray/black.-\r\n-This was present in 2.71rc1 and is still visible in 2.71rc2.-\r\n-Changing between different shadow rendering modes didn't affect the result.-\r\n\r\n(the above fixed in 2.71rc3)\r\n\r\nJust to let you know that I cannot reproduce the bug anymore with neither git-v2.71rc3 nor git-master, both using the provided easy-build.sh script.\r\nAdditionally I get consistent behavior between connecting to a dedicated server and hosting locally, however instead of the blue shadow, I now get no shadow in neither of the explosives (Mines, Granades, Panzer...).\r\n\r\nAnd just to make things more confusing, I get the correct behavior if I use the 2.71rc3 official Linux build provided on the website.\r\nFinally, I noticed that the folder structure of the git versions is different (bin/ mod/ share/) from the official build (bin/ and mod/ merged and no share/). Don\u2019t know if this is part of the problem...\r\n\r\nI attached the full build log on my machine.",
+    "start_date": "2013-10-07",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": "64-bit"
+        }
+    ],
+    "created_on": "2013-10-07T14:45:39Z",
+    "updated_on": "2014-01-19T13:00:56Z",
+    "closed_on": "2014-01-19T11:35:24Z"
+}

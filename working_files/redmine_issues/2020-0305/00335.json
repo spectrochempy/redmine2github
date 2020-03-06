@@ -1,0 +1,368 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "99b58eaa372c3ad3da8ad6f33f381e28cd8642dc",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "general: updated unzip to 1.01h and zlib to 1.2.8, refs #335",
+            "committed_on": "2014-01-10T17:15:51Z"
+        },
+        {
+            "revision": "3f53d0ba9f3636d0ab2b1630131a08567f0a0c42",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "general: updated to minizip 1.1, refs #335",
+            "committed_on": "2015-07-11T10:35:07Z"
+        },
+        {
+            "revision": "afbb0e915484c3fa06ad27e405e673689e5305e2",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "general: fixed minizip build on windows, refs #335",
+            "committed_on": "2015-07-13T14:25:09Z"
+        },
+        {
+            "revision": "620881fd164ca44655e3fb1866328db716612222",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "fixed the osx build",
+            "committed_on": "2015-07-26T11:12:03Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1858,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-08-24T14:40:46Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "http://www.winimage.com/zLibDll/minizip.html",
+                    "new_value": "http://www.winimage.com/zLibDll/minizip.html\r\n\r\nUsed version: 1.01e\r\n\r\nLatest version: 1.01h"
+                },
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "12"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 1859,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-08-24T14:42:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Update/merge zLib and ZLib",
+                    "new_value": "Update/merge to latest minizip and zlib"
+                },
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "http://www.winimage.com/zLibDll/minizip.html\r\n\r\nUsed version: 1.01e\r\n\r\nLatest version: 1.01h",
+                    "new_value": "http://www.winimage.com/zLibDll/minizip.html\r\n\r\nUsed version: 1.01e\r\nLatest version: 1.01h\r\n\r\nhttp://www.zlib.net/\r\n\r\nUsed version: 1.2.3\r\nLatest version: 1.2.8"
+                }
+            ]
+        },
+        {
+            "id": 1955,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-09-18T18:33:23Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "9"
+                }
+            ]
+        },
+        {
+            "id": 2049,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-10-06T15:54:53Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "9",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 2790,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "The update to zlib 1.2.8 and minizip 1.01h is now done. There's also a more recent version of minizip, 1.1, which add zip64 support (and only that). I'm not sure if this could be of any use for our future 64bits builds.\r\n\r\nThere's a risk of breaking compatibility with minizip 1.0, so if we decide to move to minizip 1.1 this should be done for 2.72 or later.",
+            "created_on": "2014-01-10T17:30:49Z",
+            "details": []
+        },
+        {
+            "id": 2791,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-01-10T17:44:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 3384,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Since the project moved to SDL2, we might as well update to minizip 1.1...\r\nDoes anyone have any objection to this upgrade?",
+            "created_on": "2014-08-21T16:52:19Z",
+            "details": []
+        },
+        {
+            "id": 3388,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "It's yours.",
+            "created_on": "2014-08-22T06:02:07Z",
+            "details": []
+        },
+        {
+            "id": 3410,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "The minizip 1.01 and 1.1 are quite different, as they haven't been developed by the same person (minizip 1.1 is a fork of an older 1.01). I simply replaced the 1.1 files without major changes, and it seems to work but at this point I don't feel confident in pushing this to master. I guess I'll keep testing it for some time before committing it to master.",
+            "created_on": "2014-08-29T11:41:20Z",
+            "details": []
+        },
+        {
+            "id": 4962,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-07-11T10:41:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "17"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 4963,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-07-11T13:09:41Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 4972,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "We have issues on OSX -> open again.",
+            "created_on": "2015-07-14T16:27:37Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 4973,
+            "user": {
+                "id": 472,
+                "name": "GFelisberto"
+            },
+            "notes": "Build is failling on OSX. Build logs attacjed.",
+            "created_on": "2015-07-14T16:35:14Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "575",
+                    "new_value": "etlog"
+                },
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "old_value": "",
+                    "new_value": "OS X"
+                }
+            ]
+        },
+        {
+            "id": 4974,
+            "user": {
+                "id": 472,
+                "name": "GFelisberto"
+            },
+            "notes": "",
+            "created_on": "2015-07-14T17:04:14Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "old_value": "OS X",
+                    "new_value": ""
+                }
+            ]
+        },
+        {
+            "id": 4975,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Yes, GFelisberto reported the issue yesterday on IRC. I know how to fix the issue, but don't have access to a mac right now. Give me a couple of days to test the fix.",
+            "created_on": "2015-07-14T17:48:26Z",
+            "details": []
+        },
+        {
+            "id": 5036,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-07-26T13:52:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 335,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "Update/merge to latest minizip and zlib",
+    "description": "http://www.winimage.com/zLibDll/minizip.html\r\n\r\nUsed version: 1.01e\r\nLatest version: 1.01h\r\n\r\nhttp://www.zlib.net/\r\n\r\nUsed version: 1.2.3\r\nLatest version: 1.2.8",
+    "start_date": "2013-08-24",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-08-24T14:40:04Z",
+    "updated_on": "2015-07-26T13:52:31Z",
+    "closed_on": "2015-07-26T13:52:31Z"
+}

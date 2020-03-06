@@ -1,0 +1,140 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 4045,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-12-11T20:47:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "When minimizing/maximizing in the main menu the window isn't restored. Ingame works properly.\r\n\r\nHow to reproduce:\r\nStart a listen server, disconnect -> minimize & maximize",
+                    "new_value": "When minimizing/maximizing in the main menu the window isn't restored. Instead you see a small window bar with common window options that don't react. Ingame works properly.\r\n\r\nHow to reproduce:\r\nStart a listen server, disconnect -> minimize & maximize\r\n"
+                }
+            ]
+        },
+        {
+            "id": 4115,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I cannot reproduce (Win 7). Anyone else?",
+            "created_on": "2014-12-15T21:18:12Z",
+            "details": []
+        },
+        {
+            "id": 4128,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "Can't reproduce",
+            "created_on": "2014-12-17T15:39:50Z",
+            "details": []
+        },
+        {
+            "id": 4204,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-12-21T21:15:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "6",
+                    "new_value": "16"
+                }
+            ]
+        },
+        {
+            "id": 4248,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "This has no longer happened on the later master versions. Closing",
+            "created_on": "2014-12-31T09:14:18Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 706,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 16,
+        "name": "2.72"
+    },
+    "subject": "Minimizing/maximizing in main menu causes issues on Windows 7",
+    "description": "When minimizing/maximizing in the main menu the window isn't restored. Instead you see a small window bar with common window options that don't react. Ingame works properly.\r\n\r\nHow to reproduce:\r\nStart a listen server, disconnect -> minimize & maximize\r\n",
+    "start_date": "2014-12-11",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-12-11T18:26:48Z",
+    "updated_on": "2014-12-31T09:14:18Z",
+    "closed_on": "2014-12-31T09:14:18Z"
+}

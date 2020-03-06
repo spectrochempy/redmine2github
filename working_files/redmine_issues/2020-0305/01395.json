@@ -1,0 +1,74 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 8706,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2020-01-29T21:05:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "ETL currently ships with OmniBot, the de-facto standard module for AI players.\r\nHowever, OB doesn't work with the game when compiled with msvc (on windows), and isn't available on osx either.\r\n\r\nOmniBot is also a quite big lib, and it is not trivial to compile it by ourselves. It requires boost and a very specific setup to be compiled (probably some old Debian), so we have to use the lib as shipped by upstream.\r\nThese factor make it quite inconvenient to test the code when not working with Visual Studio (mingw - CLion, QtCreator, ..).\r\n\r\nAs an option, add the alternative bobots AI in the codebase.\r\n\r\nPros:\r\n* relatively easy to implement in the codebase. The \"source code\":http://bobots.e-monsite.com/pages/bobot-source/ is available.\r\n* might be lighter, and faster than OB that is using GameMonkey scripts + an external lib\r\n* could be extended and improved easily, unlike OB where we have to rely on new upstream releases.\r\n* might provide a better gameplay due to being more dynamic than OB, which are often just running in a linear way.\r\n* much more technically interesting, as it relies on fuzzy logic and genetic algorithm for path finding (nerd stuff, see \"original doc\":http://bobots.e-monsite.com/pages/projet-bobots/making-of-bobots.html)\r\n\r\nCons:\r\n* part of the code source is still in French, needs to be translated for long term maintenance\r\n* only an old source code is available (v.4.08), later changes have to be ported back (changes are only minor though)\r\n* the integration code in the mod is not available publicly (nor anymore), but it should be relatively easy to add the hooks at the correct location.\r\n* not as many  map waypoints scripts available, though they can be quickly created.\r\n\r\nWhile the idea is primarily to facilitate development and testing, we might eventually decide to enable it in future releases to have a more dynamic AI, or to have a mix of both OB and BB.\r\n\r\n----\r\nChanges that happened after the open sourced 4.08 version:\r\n(in French, see \"original changelog\":http://bobots.e-monsite.com/pages/projet-bobots/changelog.html page)\r\n\r\nVersion 5.1.0:\r\n* Am\u00e9lioration du pick up objective. Les bots qui s'emparent d'un objectif comme dans radar (les kits radar) ou glodrush (les godlbars) ne sont plus dispers\u00e9s par d\"autres objectifs possibles mais se focalisent sur l'endroit ou ils doivent d\u00e9poser le kit / goldbar (voire autres) pris \u00e0 l'ennemi. Dans Radar et sans Axis, les bots alli\u00e9s mettent \u00e0 peine cinq minutes pour ramener les kits radar dans le camion. Dans Goldrush c'est \u00e0 peine plus.\r\n* Am\u00e9lioration de la gestion du MGNest : Les bots ne vont plus sur un MGNest si celui est d\u00e9j\u00e0 occup\u00e9.\r\n* Am\u00e9lioration du node blockable (Endroit ou le bot se positionne pour attendre un ennemi) : Les bots n'y vont plus si celui est d\u00e9j\u00e0 occup\u00e9.\r\n* Gestion des armes qui chauffent pour les bots : Sten, mp34, mobileMG42, mobileBrowning. Les bots attendent que leur arme se soit refroidie pour s'en servir, en attendant ils prennent les pistolets.\r\n\r\nVersion 5.5.0:\r\n* Ajout d'un node walk, quand les bots sont dessus ils marchent jusqu'au prochain node, (diverses vitesses de marche).\r\n* Les bots ne sautent plus quand  ils passent sur leurs mines.\r\n* Quand on est d\u00e9guis\u00e9, les bots n'attaquent pas.",
+                    "new_value": "ETL currently ships with OmniBot, the de-facto standard module for AI players.\r\nHowever, OB doesn't work with the game when compiled with msvc (on windows), and isn't available on osx either.\r\n\r\nOmniBot is also a quite big lib, and it is not trivial to compile it by ourselves. It requires boost and a very specific setup to be compiled (probably some old Debian), so we have to use the lib as shipped by upstream.\r\nThese factor make it quite inconvenient to test the code when not working with Visual Studio (mingw - CLion, QtCreator, ..).\r\n\r\nAs an option, add the alternative bobots AI in the codebase.\r\n\r\nPros:\r\n* relatively easy to implement in the codebase. The \"source code\":http://bobots.e-monsite.com/pages/bobot-source/ is available (GPLv3).\r\n* might be lighter, and faster than OB that is using GameMonkey scripts + an external lib\r\n* could be extended and improved easily, unlike OB where we have to rely on new upstream releases.\r\n* might provide a better gameplay due to being more dynamic than OB, which are often just running in a linear way.\r\n* much more technically interesting, as it relies on fuzzy logic and genetic algorithm for path finding (nerd stuff, see \"original doc\":http://bobots.e-monsite.com/pages/projet-bobots/making-of-bobots.html)\r\n\r\nCons:\r\n* part of the code source is still in French, needs to be translated for long term maintenance\r\n* only an old source code is available (v.4.08), later changes have to be ported back (changes are only minor though)\r\n* the integration code in the mod is not available publicly (not anymore), but it should be relatively easy to add the hooks at the correct location.\r\n* not as many  map waypoints scripts available, though they can be quickly created.\r\n\r\nWhile the idea is primarily to facilitate development and testing, we might eventually decide to enable it in future releases to have a more dynamic AI, or to have a mix of both OB and BB.\r\n\r\n----\r\nChanges that happened after the open sourced 4.08 version:\r\n(in French, see \"original changelog\":http://bobots.e-monsite.com/pages/projet-bobots/changelog.html page)\r\n\r\nVersion 5.1.0:\r\n* Am\u00e9lioration du pick up objective. Les bots qui s'emparent d'un objectif comme dans radar (les kits radar) ou glodrush (les godlbars) ne sont plus dispers\u00e9s par d\"autres objectifs possibles mais se focalisent sur l'endroit ou ils doivent d\u00e9poser le kit / goldbar (voire autres) pris \u00e0 l'ennemi. Dans Radar et sans Axis, les bots alli\u00e9s mettent \u00e0 peine cinq minutes pour ramener les kits radar dans le camion. Dans Goldrush c'est \u00e0 peine plus.\r\n* Am\u00e9lioration de la gestion du MGNest : Les bots ne vont plus sur un MGNest si celui est d\u00e9j\u00e0 occup\u00e9.\r\n* Am\u00e9lioration du node blockable (Endroit ou le bot se positionne pour attendre un ennemi) : Les bots n'y vont plus si celui est d\u00e9j\u00e0 occup\u00e9.\r\n* Gestion des armes qui chauffent pour les bots : Sten, mp34, mobileMG42, mobileBrowning. Les bots attendent que leur arme se soit refroidie pour s'en servir, en attendant ils prennent les pistolets.\r\n\r\nVersion 5.5.0:\r\n* Ajout d'un node walk, quand les bots sont dessus ils marchent jusqu'au prochain node, (diverses vitesses de marche).\r\n* Les bots ne sautent plus quand  ils passent sur leurs mines.\r\n* Quand on est d\u00e9guis\u00e9, les bots n'attaquent pas.\r\n\r\n----\r\n\r\nAs a sidenote, check Easfront mod as it includes its own AI system, using the vanilla botai code."
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1395,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Add bobots",
+    "description": "ETL currently ships with OmniBot, the de-facto standard module for AI players.\r\nHowever, OB doesn't work with the game when compiled with msvc (on windows), and isn't available on osx either.\r\n\r\nOmniBot is also a quite big lib, and it is not trivial to compile it by ourselves. It requires boost and a very specific setup to be compiled (probably some old Debian), so we have to use the lib as shipped by upstream.\r\nThese factor make it quite inconvenient to test the code when not working with Visual Studio (mingw - CLion, QtCreator, ..).\r\n\r\nAs an option, add the alternative bobots AI in the codebase.\r\n\r\nPros:\r\n* relatively easy to implement in the codebase. The \"source code\":http://bobots.e-monsite.com/pages/bobot-source/ is available (GPLv3).\r\n* might be lighter, and faster than OB that is using GameMonkey scripts + an external lib\r\n* could be extended and improved easily, unlike OB where we have to rely on new upstream releases.\r\n* might provide a better gameplay due to being more dynamic than OB, which are often just running in a linear way.\r\n* much more technically interesting, as it relies on fuzzy logic and genetic algorithm for path finding (nerd stuff, see \"original doc\":http://bobots.e-monsite.com/pages/projet-bobots/making-of-bobots.html)\r\n\r\nCons:\r\n* part of the code source is still in French, needs to be translated for long term maintenance\r\n* only an old source code is available (v.4.08), later changes have to be ported back (changes are only minor though)\r\n* the integration code in the mod is not available publicly (not anymore), but it should be relatively easy to add the hooks at the correct location.\r\n* not as many  map waypoints scripts available, though they can be quickly created.\r\n\r\nWhile the idea is primarily to facilitate development and testing, we might eventually decide to enable it in future releases to have a more dynamic AI, or to have a mix of both OB and BB.\r\n\r\n----\r\nChanges that happened after the open sourced 4.08 version:\r\n(in French, see \"original changelog\":http://bobots.e-monsite.com/pages/projet-bobots/changelog.html page)\r\n\r\nVersion 5.1.0:\r\n* Am\u00e9lioration du pick up objective. Les bots qui s'emparent d'un objectif comme dans radar (les kits radar) ou glodrush (les godlbars) ne sont plus dispers\u00e9s par d\"autres objectifs possibles mais se focalisent sur l'endroit ou ils doivent d\u00e9poser le kit / goldbar (voire autres) pris \u00e0 l'ennemi. Dans Radar et sans Axis, les bots alli\u00e9s mettent \u00e0 peine cinq minutes pour ramener les kits radar dans le camion. Dans Goldrush c'est \u00e0 peine plus.\r\n* Am\u00e9lioration de la gestion du MGNest : Les bots ne vont plus sur un MGNest si celui est d\u00e9j\u00e0 occup\u00e9.\r\n* Am\u00e9lioration du node blockable (Endroit ou le bot se positionne pour attendre un ennemi) : Les bots n'y vont plus si celui est d\u00e9j\u00e0 occup\u00e9.\r\n* Gestion des armes qui chauffent pour les bots : Sten, mp34, mobileMG42, mobileBrowning. Les bots attendent que leur arme se soit refroidie pour s'en servir, en attendant ils prennent les pistolets.\r\n\r\nVersion 5.5.0:\r\n* Ajout d'un node walk, quand les bots sont dessus ils marchent jusqu'au prochain node, (diverses vitesses de marche).\r\n* Les bots ne sautent plus quand  ils passent sur leurs mines.\r\n* Quand on est d\u00e9guis\u00e9, les bots n'attaquent pas.\r\n\r\n----\r\n\r\nAs a sidenote, check Easfront mod as it includes its own AI system, using the vanilla botai code.",
+    "start_date": "2020-01-29",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2020-01-29T18:44:41Z",
+    "updated_on": "2020-01-29T21:05:16Z"
+}

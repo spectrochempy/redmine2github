@@ -1,0 +1,715 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 373,
+            "issue_id": 1155,
+            "issue_to_id": 403,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 374,
+            "issue_id": 1155,
+            "issue_to_id": 1139,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 453,
+            "issue_id": 1155,
+            "issue_to_id": 1252,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 455,
+            "issue_id": 1376,
+            "issue_to_id": 1155,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "f67a9c2d02b7dcedf07d084bae528a0a52ae3fdd",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: added foundation for prestige tracking feature, refs #1155\n\nAdd underlying support:\n* additional session var\n* additional scoreboard\n* info window stats\n* end of game stats\n* debriefing screen\n* cmake enabling macro",
+            "committed_on": "2020-02-15T18:10:24Z"
+        },
+        {
+            "revision": "2aff1e3bcd653f8e35bcce6692949ac54c3c8277",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: added skill points read/write in database, refs #1155",
+            "committed_on": "2020-02-15T18:10:24Z"
+        },
+        {
+            "revision": "93296c5a96258ef1eb162e56a1b68edeaf386685",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: display differential and total XP in stats window, refs #1155",
+            "committed_on": "2020-02-15T18:10:24Z"
+        },
+        {
+            "revision": "a681337d0b86b15654777cf25f5cda8ba61872ad",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: added prestige point progression popup, refs #1155",
+            "committed_on": "2020-02-15T18:10:24Z"
+        },
+        {
+            "revision": "e035d24f4fd3639e7881e6b99afdbed184b71022",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: added prestige display in debriefing, refs #1155",
+            "committed_on": "2020-02-15T18:10:24Z"
+        },
+        {
+            "revision": "69e25cb8688474ae529d624f40a884035cfc4269",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: added prestige collect button, refs #1155",
+            "committed_on": "2020-02-15T18:10:24Z"
+        },
+        {
+            "revision": "7b4c7d6595f87dc22cec45cd3d5c788a67d39675",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: added most prestigious player award, refs #1155",
+            "committed_on": "2020-02-15T18:10:24Z"
+        },
+        {
+            "revision": "89246b08e5cfef54a4f606a838cc58e20bc33e51",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: ignore bots when handling prestige data, refs #1155",
+            "committed_on": "2020-02-15T18:10:24Z"
+        },
+        {
+            "revision": "c1c0eb9d14962f32d32f44ee5bc0aae6ccb8680c",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: added completed skills tracker on limbo panel, refs #1155",
+            "committed_on": "2020-02-15T18:10:24Z"
+        },
+        {
+            "revision": "3b05c134652d7a0d7ace179a964dd029939d60dc",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: made prestige take skill cvars into account, refs #1155",
+            "committed_on": "2020-02-15T18:10:24Z"
+        },
+        {
+            "revision": "b1e84286c25eda84164a973743604e31b94f0e6a",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: added prestige in userinfo, refs #1155",
+            "committed_on": "2020-02-15T18:10:24Z"
+        },
+        {
+            "revision": "8f0e07e38a119dcf1061b256e4abfb51adb27758",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: use prestige icon in scoreboard, refs #1155",
+            "committed_on": "2020-02-15T18:10:24Z"
+        },
+        {
+            "revision": "b8dea36e72d43b13d90c796d1404ff505a16a4b6",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: added prestige as crosshair info option, refs #1155",
+            "committed_on": "2020-02-15T18:10:24Z"
+        },
+        {
+            "revision": "9533ff3232b50fbb66c48bc2dc6a2c1324f82820",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: added prestige as crosshair info option, refs #1155",
+            "committed_on": "2020-02-15T18:10:24Z"
+        },
+        {
+            "revision": "10ada5bf144c4bdb3744a5bc9f24821e74be83d6",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: added prestige streak counter, refs #1155",
+            "committed_on": "2020-02-15T18:10:24Z"
+        },
+        {
+            "revision": "57fd7af9c16175502f0989262001ee118a1f36d8",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: hide gametype dependent stats in info window, debriefing and statsdump, refs #403 #1155",
+            "committed_on": "2020-02-15T18:11:34Z"
+        },
+        {
+            "revision": "c5bafa465d5d9b90283feee95c031994840080fe",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: do not display prestige popups in incompatible gametypes, refs #1155",
+            "committed_on": "2020-02-15T22:14:50Z"
+        },
+        {
+            "revision": "d6926d59e911a8f968334120b1c26a126d322692",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed prestige button and maxed skills visible after reset, refs #1155",
+            "committed_on": "2020-02-15T22:27:16Z"
+        },
+        {
+            "revision": "2ab2ee1295df89f1fe4f17596a44759886aae499",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed broken prestige record in database, refs #1155\n\nThe previous fix in d6926d59e911a8f968334120b1c26a126d322692\nprevented the new value to be correctly recorded.",
+            "committed_on": "2020-02-15T23:00:25Z"
+        },
+        {
+            "revision": "07d1843f4a17682e4ca657013889c7bb12515eb0",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed initial declaration not allowed in c99, refs #1155",
+            "committed_on": "2020-02-19T17:18:57Z"
+        },
+        {
+            "revision": "8af552e41e3328598f0fe425790b7bbb55e735f2",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: display prestige value on limbo panel, refs #1155",
+            "committed_on": "2020-02-20T16:48:48Z"
+        },
+        {
+            "revision": "48469161e04a94f224b59da3ee707e88838fc015",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed scoreboard not sorted by differential XPs, refs #1155",
+            "committed_on": "2020-02-20T20:26:01Z"
+        },
+        {
+            "revision": "67ec74dd36ce9be27a99d00840fa2dd75c054e0b",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: display note when collecting prestige points, refs #1155",
+            "committed_on": "2020-02-21T19:36:42Z"
+        },
+        {
+            "revision": "034c0dcd64369c197121d6d2cfdd9e8535a5271f",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed prestige streak increased in GS_PLAYING on disconnect, refs #1155",
+            "committed_on": "2020-02-21T20:25:18Z"
+        },
+        {
+            "revision": "36135382cb91e388f463c358a0cfb9c4e3b1cce0",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: use multiline for prestige note on debriefing, refs #1155",
+            "committed_on": "2020-02-24T09:50:25Z"
+        },
+        {
+            "revision": "04282f2d637139227a8c12520ef431e65fd91d07",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed possible uninitialized prestige streak value, refs #1155",
+            "committed_on": "2020-02-29T14:37:55Z"
+        },
+        {
+            "revision": "65b3167f8e2f3044e89d1714614c7b9ef2d61bdc",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed prestige recorded even with no new skillpoints, refs #1155",
+            "committed_on": "2020-02-29T14:38:29Z"
+        },
+        {
+            "revision": "68e7b644ad369153995fd0de065cc44d4a7a00fe",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed prestige collection with no XPs on current map, refs #1155",
+            "committed_on": "2020-02-29T15:38:00Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7426,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-12-27T12:39:10Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "403"
+                }
+            ]
+        },
+        {
+            "id": 7428,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-12-27T12:39:32Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1139"
+                }
+            ]
+        },
+        {
+            "id": 7430,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-12-27T12:43:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "With the latest release, we've taken several steps to discourage and eventually get rid of XP Save (see \"Why XP Save is bad idea in the first place\":https://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating#What-about-XP-Save).\r\n\r\n* we're displaying differential XP only (XP earned during current map/campaign), never total XP\r\n* we've introduced Skill Rating (#403), to better reflect skill of players and get a similar \"loyalty program\" given by total XP so players come back to a same server\r\n* we've tied ranks on Skill Rating, rather than skill levels. Nobody knows if you farm XPs, but everybody knows if you contribute positively to the success of your team.\r\n\r\nHowever, skill levels are still tied to collected XP, so XPSave is still useful to keep skill levels permamently.\r\n\r\nFor this last missing step, introducing the idea of CoD-style Prestige might just be what we're looking for:\r\n\r\n* When all skill levels are reached, propose to the player at start of map/connection to reset XP to earn \"Prestige points\"\r\n* A prestige counter is increased, and stored in DB\r\n* A third Scoreboard with prestige earned could be easily implemented\r\n\r\nSee below for some possible implementation details:\r\n\r\n```\r\n<aeth> Hopefully I'll have time in the next month or so to work on a fun mod[...], and when max level you can do a CoD-style reset so you're never maxed out so you don't have full skills all the time)\r\n\r\n<aeth> CoD-style reset, at least as I've seen it in mods for other FPSes (haven't played CoD in many, many years) means XP save, except you're encouraged to reset to the start again when you're at max level. Not sure when/where they did/do this, but it's called \"Prestige\" and it's in the CoD 4: Modern Warfare description on Wikipedia so it started at least back in 2007, if not earlier.\r\n<aeth> So it's kind of a middle ground between no XP save (starting fresh periodically) and XP save (basically playing maxed out for days 3-900 of playing on the server).\r\n<aeth> It basically always puts you some place in the middle of the skill tree, as I've seen it in other mods, e.g. in Garry's Mod game modes, because when you're at the max you reset and when you're at the beginning leveling up is easy.\r\n<aeth> Naturally, you'd also have to rebalance leveling up, too. You'd probably have to get battle sense and light weapons to progress much more slowly than the other skills so you finish them all around the same time instead of sitting at max light weapons and battle sense early. Alternatively, more tiers in those than in the class-specific ones.\r\n<aeth> I'll have to take a look at the Lua API this weekend or so, but it would ideally (if feasible) work something like this: (1) when you reach maximum level in a skill you no longer gain XP in that skill (to discourage not taking the reset option) and (2) when you reach maximum level in all skills (and this would encourage playing more than just medic) you reset back to 0 XP and increment a number.\r\n<aeth> This number would show up in the status screens (TAB, /scores, end of games, etc.) and would be much, much lower than the ridiculous numbers that players on XP save servers can get (and people wouldn't always have maxed out skills, unlike with XP save). There would also need to be some minor benefit, maybe e.g. alternate weapon textures or something.\r\n<aeth> Oh, and skill progression would also have to be slowed down so it takes 40-80 hours on that server to increment the number so even triple digits would be very, very rare.\r\n```",
+                    "new_value": "With the latest release, we've taken several steps to discourage and eventually get rid of XP Save (see \"Why XP Save is a bad idea in the first place\":https://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating#What-about-XP-Save).\r\n\r\n* we're displaying differential XP only (XP earned during current map/campaign), never total XP\r\n* we've introduced Skill Rating (#403), to better reflect skill of players and get a similar \"loyalty program\" given by total XP so players come back to a same server\r\n* we've tied ranks on Skill Rating, rather than skill levels. Nobody knows if you farm XPs, but everybody knows if you contribute positively to the success of your team.\r\n\r\nHowever, skill levels are still tied to collected XP, so XPSave is still useful to keep skill levels permamently.\r\n\r\nFor this last missing step, introducing the idea of CoD-style Prestige might just be what we're looking for:\r\n\r\n* When all skill levels are reached, propose to the player at start of map/connection to reset XP to earn \"Prestige points\"\r\n* A prestige counter is increased, and stored in DB\r\n* A third Scoreboard with prestige earned could be easily implemented\r\n\r\nSee below for some possible implementation details:\r\n\r\n```\r\n<aeth> Hopefully I'll have time in the next month or so to work on a fun mod[...], and when max level you can do a CoD-style reset so you're never maxed out so you don't have full skills all the time)\r\n\r\n<aeth> CoD-style reset, at least as I've seen it in mods for other FPSes (haven't played CoD in many, many years) means XP save, except you're encouraged to reset to the start again when you're at max level. Not sure when/where they did/do this, but it's called \"Prestige\" and it's in the CoD 4: Modern Warfare description on Wikipedia so it started at least back in 2007, if not earlier.\r\n<aeth> So it's kind of a middle ground between no XP save (starting fresh periodically) and XP save (basically playing maxed out for days 3-900 of playing on the server).\r\n<aeth> It basically always puts you some place in the middle of the skill tree, as I've seen it in other mods, e.g. in Garry's Mod game modes, because when you're at the max you reset and when you're at the beginning leveling up is easy.\r\n<aeth> Naturally, you'd also have to rebalance leveling up, too. You'd probably have to get battle sense and light weapons to progress much more slowly than the other skills so you finish them all around the same time instead of sitting at max light weapons and battle sense early. Alternatively, more tiers in those than in the class-specific ones.\r\n<aeth> I'll have to take a look at the Lua API this weekend or so, but it would ideally (if feasible) work something like this: (1) when you reach maximum level in a skill you no longer gain XP in that skill (to discourage not taking the reset option) and (2) when you reach maximum level in all skills (and this would encourage playing more than just medic) you reset back to 0 XP and increment a number.\r\n<aeth> This number would show up in the status screens (TAB, /scores, end of games, etc.) and would be much, much lower than the ridiculous numbers that players on XP save servers can get (and people wouldn't always have maxed out skills, unlike with XP save). There would also need to be some minor benefit, maybe e.g. alternate weapon textures or something.\r\n<aeth> Oh, and skill progression would also have to be slowed down so it takes 40-80 hours on that server to increment the number so even triple digits would be very, very rare.\r\n```"
+                }
+            ]
+        },
+        {
+            "id": 7431,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-12-27T12:46:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "With the latest release, we've taken several steps to discourage and eventually get rid of XP Save (see \"Why XP Save is a bad idea in the first place\":https://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating#What-about-XP-Save).\r\n\r\n* we're displaying differential XP only (XP earned during current map/campaign), never total XP\r\n* we've introduced Skill Rating (#403), to better reflect skill of players and get a similar \"loyalty program\" given by total XP so players come back to a same server\r\n* we've tied ranks on Skill Rating, rather than skill levels. Nobody knows if you farm XPs, but everybody knows if you contribute positively to the success of your team.\r\n\r\nHowever, skill levels are still tied to collected XP, so XPSave is still useful to keep skill levels permamently.\r\n\r\nFor this last missing step, introducing the idea of CoD-style Prestige might just be what we're looking for:\r\n\r\n* When all skill levels are reached, propose to the player at start of map/connection to reset XP to earn \"Prestige points\"\r\n* A prestige counter is increased, and stored in DB\r\n* A third Scoreboard with prestige earned could be easily implemented\r\n\r\nSee below for some possible implementation details:\r\n\r\n```\r\n<aeth> Hopefully I'll have time in the next month or so to work on a fun mod[...], and when max level you can do a CoD-style reset so you're never maxed out so you don't have full skills all the time)\r\n\r\n<aeth> CoD-style reset, at least as I've seen it in mods for other FPSes (haven't played CoD in many, many years) means XP save, except you're encouraged to reset to the start again when you're at max level. Not sure when/where they did/do this, but it's called \"Prestige\" and it's in the CoD 4: Modern Warfare description on Wikipedia so it started at least back in 2007, if not earlier.\r\n<aeth> So it's kind of a middle ground between no XP save (starting fresh periodically) and XP save (basically playing maxed out for days 3-900 of playing on the server).\r\n<aeth> It basically always puts you some place in the middle of the skill tree, as I've seen it in other mods, e.g. in Garry's Mod game modes, because when you're at the max you reset and when you're at the beginning leveling up is easy.\r\n<aeth> Naturally, you'd also have to rebalance leveling up, too. You'd probably have to get battle sense and light weapons to progress much more slowly than the other skills so you finish them all around the same time instead of sitting at max light weapons and battle sense early. Alternatively, more tiers in those than in the class-specific ones.\r\n<aeth> I'll have to take a look at the Lua API this weekend or so, but it would ideally (if feasible) work something like this: (1) when you reach maximum level in a skill you no longer gain XP in that skill (to discourage not taking the reset option) and (2) when you reach maximum level in all skills (and this would encourage playing more than just medic) you reset back to 0 XP and increment a number.\r\n<aeth> This number would show up in the status screens (TAB, /scores, end of games, etc.) and would be much, much lower than the ridiculous numbers that players on XP save servers can get (and people wouldn't always have maxed out skills, unlike with XP save). There would also need to be some minor benefit, maybe e.g. alternate weapon textures or something.\r\n<aeth> Oh, and skill progression would also have to be slowed down so it takes 40-80 hours on that server to increment the number so even triple digits would be very, very rare.\r\n```",
+                    "new_value": "With the latest release, we've taken several steps to discourage and eventually get rid of XP Save (see \"Why XP Save is a bad idea in the first place\":https://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating#What-about-XP-Save).\r\n\r\n* we're displaying differential XP only (XP earned during current map/campaign), never total XP\r\n* we've introduced Skill Rating (#403), to better reflect skill of players and get a similar \"loyalty program\" given by total XP so players come back to a same server\r\n* we've tied ranks on Skill Rating, rather than skill levels. Nobody knows if you farm XPs, but everybody knows if you contribute positively to the success of your team.\r\n\r\nHowever, skill levels are still tied to collected XP, so XPSave is still useful to keep skill levels permamently.\r\n\r\nFor this last missing step, introducing the idea of CoD-style Prestige might just be what we're looking for:\r\n\r\n* When all skill levels are reached, propose to the player at start of map/connection or end of map to reset XP to earn \"Prestige points\"\r\n* A prestige counter is increased, and stored in DB\r\n* A third Scoreboard with prestige earned could be easily implemented\r\n\r\nSee below for some possible implementation details:\r\n\r\n```\r\n<aeth> Hopefully I'll have time in the next month or so to work on a fun mod[...], and when max level you can do a CoD-style reset so you're never maxed out so you don't have full skills all the time)\r\n\r\n<aeth> CoD-style reset, at least as I've seen it in mods for other FPSes (haven't played CoD in many, many years) means XP save, except you're encouraged to reset to the start again when you're at max level. Not sure when/where they did/do this, but it's called \"Prestige\" and it's in the CoD 4: Modern Warfare description on Wikipedia so it started at least back in 2007, if not earlier.\r\n<aeth> So it's kind of a middle ground between no XP save (starting fresh periodically) and XP save (basically playing maxed out for days 3-900 of playing on the server).\r\n<aeth> It basically always puts you some place in the middle of the skill tree, as I've seen it in other mods, e.g. in Garry's Mod game modes, because when you're at the max you reset and when you're at the beginning leveling up is easy.\r\n<aeth> Naturally, you'd also have to rebalance leveling up, too. You'd probably have to get battle sense and light weapons to progress much more slowly than the other skills so you finish them all around the same time instead of sitting at max light weapons and battle sense early. Alternatively, more tiers in those than in the class-specific ones.\r\n<aeth> I'll have to take a look at the Lua API this weekend or so, but it would ideally (if feasible) work something like this: (1) when you reach maximum level in a skill you no longer gain XP in that skill (to discourage not taking the reset option) and (2) when you reach maximum level in all skills (and this would encourage playing more than just medic) you reset back to 0 XP and increment a number.\r\n<aeth> This number would show up in the status screens (TAB, /scores, end of games, etc.) and would be much, much lower than the ridiculous numbers that players on XP save servers can get (and people wouldn't always have maxed out skills, unlike with XP save). There would also need to be some minor benefit, maybe e.g. alternate weapon textures or something.\r\n<aeth> Oh, and skill progression would also have to be slowed down so it takes 40-80 hours on that server to increment the number so even triple digits would be very, very rare.\r\n```"
+                }
+            ]
+        },
+        {
+            "id": 7497,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-01-05T16:44:34Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 7623,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-01-20T18:24:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "22",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 7949,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-13T11:31:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "With the latest release, we've taken several steps to discourage and eventually get rid of XP Save (see \"Why XP Save is a bad idea in the first place\":https://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating#What-about-XP-Save).\r\n\r\n* we're displaying differential XP only (XP earned during current map/campaign), never total XP\r\n* we've introduced Skill Rating (#403), to better reflect skill of players and get a similar \"loyalty program\" given by total XP so players come back to a same server\r\n* we've tied ranks on Skill Rating, rather than skill levels. Nobody knows if you farm XPs, but everybody knows if you contribute positively to the success of your team.\r\n\r\nHowever, skill levels are still tied to collected XP, so XPSave is still useful to keep skill levels permamently.\r\n\r\nFor this last missing step, introducing the idea of CoD-style Prestige might just be what we're looking for:\r\n\r\n* When all skill levels are reached, propose to the player at start of map/connection or end of map to reset XP to earn \"Prestige points\"\r\n* A prestige counter is increased, and stored in DB\r\n* A third Scoreboard with prestige earned could be easily implemented\r\n\r\nSee below for some possible implementation details:\r\n\r\n```\r\n<aeth> Hopefully I'll have time in the next month or so to work on a fun mod[...], and when max level you can do a CoD-style reset so you're never maxed out so you don't have full skills all the time)\r\n\r\n<aeth> CoD-style reset, at least as I've seen it in mods for other FPSes (haven't played CoD in many, many years) means XP save, except you're encouraged to reset to the start again when you're at max level. Not sure when/where they did/do this, but it's called \"Prestige\" and it's in the CoD 4: Modern Warfare description on Wikipedia so it started at least back in 2007, if not earlier.\r\n<aeth> So it's kind of a middle ground between no XP save (starting fresh periodically) and XP save (basically playing maxed out for days 3-900 of playing on the server).\r\n<aeth> It basically always puts you some place in the middle of the skill tree, as I've seen it in other mods, e.g. in Garry's Mod game modes, because when you're at the max you reset and when you're at the beginning leveling up is easy.\r\n<aeth> Naturally, you'd also have to rebalance leveling up, too. You'd probably have to get battle sense and light weapons to progress much more slowly than the other skills so you finish them all around the same time instead of sitting at max light weapons and battle sense early. Alternatively, more tiers in those than in the class-specific ones.\r\n<aeth> I'll have to take a look at the Lua API this weekend or so, but it would ideally (if feasible) work something like this: (1) when you reach maximum level in a skill you no longer gain XP in that skill (to discourage not taking the reset option) and (2) when you reach maximum level in all skills (and this would encourage playing more than just medic) you reset back to 0 XP and increment a number.\r\n<aeth> This number would show up in the status screens (TAB, /scores, end of games, etc.) and would be much, much lower than the ridiculous numbers that players on XP save servers can get (and people wouldn't always have maxed out skills, unlike with XP save). There would also need to be some minor benefit, maybe e.g. alternate weapon textures or something.\r\n<aeth> Oh, and skill progression would also have to be slowed down so it takes 40-80 hours on that server to increment the number so even triple digits would be very, very rare.\r\n```",
+                    "new_value": "With the latest release, we've taken several steps to discourage and eventually get rid of XP Save (see \"Why XP Save is a bad idea in the first place\":https://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating#What-about-XP-Save).\r\n\r\n* we're displaying differential XPs only (XPs earned during current map/campaign), never total XPs;\r\n* we've introduced Skill Rating (#403), to better reflect skill of players and get a similar \"loyalty program\" given by total XP so players come back to a same server;\r\n* we've tied ranks on Skill Rating, rather than skill levels. Nobody knows if you farm XPs, but everybody knows if you contribute positively to the success of your team.\r\n\r\nHowever, skill levels are still tied to collected XP, so XPSave is still useful to keep skill levels permamently.\r\n\r\nFor this last missing step, introducing the idea of CoD-style Prestige might just be what we're looking for:\r\n\r\n* When all skill levels are reached, propose to the player at start of map/connection or end of map to reset XPs to earn \"Prestige points\"\r\n* A prestige counter is increased, and stored in DB\r\n* A third Scoreboard with prestige earned could be easily implemented\r\n* Tied ranks to prestige instead of SK, as a way to encourage reset XPs\r\n\r\nSee below for some possible implementation details:\r\n\r\n```\r\n<aeth> Hopefully I'll have time in the next month or so to work on a fun mod[...], and when max level you can do a CoD-style reset so you're never maxed out so you don't have full skills all the time)\r\n\r\n<aeth> CoD-style reset, at least as I've seen it in mods for other FPSes (haven't played CoD in many, many years) means XP save, except you're encouraged to reset to the start again when you're at max level. Not sure when/where they did/do this, but it's called \"Prestige\" and it's in the CoD 4: Modern Warfare description on Wikipedia so it started at least back in 2007, if not earlier.\r\n<aeth> So it's kind of a middle ground between no XP save (starting fresh periodically) and XP save (basically playing maxed out for days 3-900 of playing on the server).\r\n<aeth> It basically always puts you some place in the middle of the skill tree, as I've seen it in other mods, e.g. in Garry's Mod game modes, because when you're at the max you reset and when you're at the beginning leveling up is easy.\r\n<aeth> Naturally, you'd also have to rebalance leveling up, too. You'd probably have to get battle sense and light weapons to progress much more slowly than the other skills so you finish them all around the same time instead of sitting at max light weapons and battle sense early. Alternatively, more tiers in those than in the class-specific ones.\r\n<aeth> I'll have to take a look at the Lua API this weekend or so, but it would ideally (if feasible) work something like this: (1) when you reach maximum level in a skill you no longer gain XP in that skill (to discourage not taking the reset option) and (2) when you reach maximum level in all skills (and this would encourage playing more than just medic) you reset back to 0 XP and increment a number.\r\n<aeth> This number would show up in the status screens (TAB, /scores, end of games, etc.) and would be much, much lower than the ridiculous numbers that players on XP save servers can get (and people wouldn't always have maxed out skills, unlike with XP save). There would also need to be some minor benefit, maybe e.g. alternate weapon textures or something.\r\n<aeth> Oh, and skill progression would also have to be slowed down so it takes 40-80 hours on that server to increment the number so even triple digits would be very, very rare.\r\n```"
+                }
+            ]
+        },
+        {
+            "id": 7984,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-19T08:01:21Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "With the latest release, we've taken several steps to discourage and eventually get rid of XP Save (see \"Why XP Save is a bad idea in the first place\":https://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating#What-about-XP-Save).\r\n\r\n* we're displaying differential XPs only (XPs earned during current map/campaign), never total XPs;\r\n* we've introduced Skill Rating (#403), to better reflect skill of players and get a similar \"loyalty program\" given by total XP so players come back to a same server;\r\n* we've tied ranks on Skill Rating, rather than skill levels. Nobody knows if you farm XPs, but everybody knows if you contribute positively to the success of your team.\r\n\r\nHowever, skill levels are still tied to collected XP, so XPSave is still useful to keep skill levels permamently.\r\n\r\nFor this last missing step, introducing the idea of CoD-style Prestige might just be what we're looking for:\r\n\r\n* When all skill levels are reached, propose to the player at start of map/connection or end of map to reset XPs to earn \"Prestige points\"\r\n* A prestige counter is increased, and stored in DB\r\n* A third Scoreboard with prestige earned could be easily implemented\r\n* Tied ranks to prestige instead of SK, as a way to encourage reset XPs\r\n\r\nSee below for some possible implementation details:\r\n\r\n```\r\n<aeth> Hopefully I'll have time in the next month or so to work on a fun mod[...], and when max level you can do a CoD-style reset so you're never maxed out so you don't have full skills all the time)\r\n\r\n<aeth> CoD-style reset, at least as I've seen it in mods for other FPSes (haven't played CoD in many, many years) means XP save, except you're encouraged to reset to the start again when you're at max level. Not sure when/where they did/do this, but it's called \"Prestige\" and it's in the CoD 4: Modern Warfare description on Wikipedia so it started at least back in 2007, if not earlier.\r\n<aeth> So it's kind of a middle ground between no XP save (starting fresh periodically) and XP save (basically playing maxed out for days 3-900 of playing on the server).\r\n<aeth> It basically always puts you some place in the middle of the skill tree, as I've seen it in other mods, e.g. in Garry's Mod game modes, because when you're at the max you reset and when you're at the beginning leveling up is easy.\r\n<aeth> Naturally, you'd also have to rebalance leveling up, too. You'd probably have to get battle sense and light weapons to progress much more slowly than the other skills so you finish them all around the same time instead of sitting at max light weapons and battle sense early. Alternatively, more tiers in those than in the class-specific ones.\r\n<aeth> I'll have to take a look at the Lua API this weekend or so, but it would ideally (if feasible) work something like this: (1) when you reach maximum level in a skill you no longer gain XP in that skill (to discourage not taking the reset option) and (2) when you reach maximum level in all skills (and this would encourage playing more than just medic) you reset back to 0 XP and increment a number.\r\n<aeth> This number would show up in the status screens (TAB, /scores, end of games, etc.) and would be much, much lower than the ridiculous numbers that players on XP save servers can get (and people wouldn't always have maxed out skills, unlike with XP save). There would also need to be some minor benefit, maybe e.g. alternate weapon textures or something.\r\n<aeth> Oh, and skill progression would also have to be slowed down so it takes 40-80 hours on that server to increment the number so even triple digits would be very, very rare.\r\n```",
+                    "new_value": "With the latest release, we've taken several steps to discourage and eventually get rid of XP Save (see \"Why XP Save is a bad idea in the first place\":https://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating#What-about-XP-Save).\r\n\r\n* we're displaying differential XPs only (XPs earned during current map/campaign), never total XPs;\r\n* we've introduced Skill Rating (#403), to better reflect skill of players and get a similar \"loyalty program\" given by total XP so players come back to a same server;\r\n* we've tied ranks on Skill Rating, rather than skill levels. Nobody knows if you farm XPs, but everybody knows if you contribute positively to the success of your team.\r\n\r\nHowever, skill levels are still tied to collected XP, so XPSave is still useful to keep skill levels permamently.\r\n\r\nFor this last missing step, introducing the idea of CoD-style Prestige might just be what we're looking for:\r\n\r\n* When all skill levels are reached, propose to the player at start of map/connection or end of map to reset XPs to earn \"Prestige points\"\r\n* A prestige counter is increased, and stored in DB\r\n* A third Scoreboard with prestige earned could be easily implemented\r\n* Tied ranks to prestige instead of SK, as a way to encourage reset XPs\r\n\r\nSee below for some possible implementation details:\r\n\r\n```\r\n<aeth> Hopefully I'll have time in the next month or so to work on a fun mod[...], and when max level you can do a CoD-style reset so you're never maxed out so you don't have full skills all the time)\r\n\r\n<aeth> CoD-style reset, at least as I've seen it in mods for other FPSes (haven't played CoD in many, many years) means XP save, except you're encouraged to reset to the start again when you're at max level. Not sure when/where they did/do this, but it's called \"Prestige\" and it's in the CoD 4: Modern Warfare description on Wikipedia so it started at least back in 2007, if not earlier.\r\n<aeth> So it's kind of a middle ground between no XP save (starting fresh periodically) and XP save (basically playing maxed out for days 3-900 of playing on the server).\r\n<aeth> It basically always puts you some place in the middle of the skill tree, as I've seen it in other mods, e.g. in Garry's Mod game modes, because when you're at the max you reset and when you're at the beginning leveling up is easy.\r\n<aeth> Naturally, you'd also have to rebalance leveling up, too. You'd probably have to get battle sense and light weapons to progress much more slowly than the other skills so you finish them all around the same time instead of sitting at max light weapons and battle sense early. Alternatively, more tiers in those than in the class-specific ones.\r\n<aeth> I'll have to take a look at the Lua API this weekend or so, but it would ideally (if feasible) work something like this: (1) when you reach maximum level in a skill you no longer gain XP in that skill (to discourage not taking the reset option) and (2) when you reach maximum level in all skills (and this would encourage playing more than just medic) you reset back to 0 XP and increment a number.\r\n<aeth> This number would show up in the status screens (TAB, /scores, end of games, etc.) and would be much, much lower than the ridiculous numbers that players on XP save servers can get (and people wouldn't always have maxed out skills, unlike with XP save). There would also need to be some minor benefit, maybe e.g. alternate weapon textures or something.\r\n<aeth> Oh, and skill progression would also have to be slowed down so it takes 40-80 hours on that server to increment the number so even triple digits would be very, very rare.\r\n```\r\n\r\nAnother potential idea to encourage XP reset:\r\n* Some levels of Prestige points could be used to unlock small, cosmetic features only (new faces, _minor_ skim variation, etc.)\r\n* See \"ET-Headquarter mod\":https://www.moddb.com/mods/et-headquarters, where \"coins\" could be used to get personalized equipment (see videos - while I don't like the mess that the provided HQ faces and skins allow on server, the underlying idea is great)."
+                }
+            ]
+        },
+        {
+            "id": 8013,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-21T14:10:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "With the latest release, we've taken several steps to discourage and eventually get rid of XP Save (see \"Why XP Save is a bad idea in the first place\":https://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating#What-about-XP-Save).\r\n\r\n* we're displaying differential XPs only (XPs earned during current map/campaign), never total XPs;\r\n* we've introduced Skill Rating (#403), to better reflect skill of players and get a similar \"loyalty program\" given by total XP so players come back to a same server;\r\n* we've tied ranks on Skill Rating, rather than skill levels. Nobody knows if you farm XPs, but everybody knows if you contribute positively to the success of your team.\r\n\r\nHowever, skill levels are still tied to collected XP, so XPSave is still useful to keep skill levels permamently.\r\n\r\nFor this last missing step, introducing the idea of CoD-style Prestige might just be what we're looking for:\r\n\r\n* When all skill levels are reached, propose to the player at start of map/connection or end of map to reset XPs to earn \"Prestige points\"\r\n* A prestige counter is increased, and stored in DB\r\n* A third Scoreboard with prestige earned could be easily implemented\r\n* Tied ranks to prestige instead of SK, as a way to encourage reset XPs\r\n\r\nSee below for some possible implementation details:\r\n\r\n```\r\n<aeth> Hopefully I'll have time in the next month or so to work on a fun mod[...], and when max level you can do a CoD-style reset so you're never maxed out so you don't have full skills all the time)\r\n\r\n<aeth> CoD-style reset, at least as I've seen it in mods for other FPSes (haven't played CoD in many, many years) means XP save, except you're encouraged to reset to the start again when you're at max level. Not sure when/where they did/do this, but it's called \"Prestige\" and it's in the CoD 4: Modern Warfare description on Wikipedia so it started at least back in 2007, if not earlier.\r\n<aeth> So it's kind of a middle ground between no XP save (starting fresh periodically) and XP save (basically playing maxed out for days 3-900 of playing on the server).\r\n<aeth> It basically always puts you some place in the middle of the skill tree, as I've seen it in other mods, e.g. in Garry's Mod game modes, because when you're at the max you reset and when you're at the beginning leveling up is easy.\r\n<aeth> Naturally, you'd also have to rebalance leveling up, too. You'd probably have to get battle sense and light weapons to progress much more slowly than the other skills so you finish them all around the same time instead of sitting at max light weapons and battle sense early. Alternatively, more tiers in those than in the class-specific ones.\r\n<aeth> I'll have to take a look at the Lua API this weekend or so, but it would ideally (if feasible) work something like this: (1) when you reach maximum level in a skill you no longer gain XP in that skill (to discourage not taking the reset option) and (2) when you reach maximum level in all skills (and this would encourage playing more than just medic) you reset back to 0 XP and increment a number.\r\n<aeth> This number would show up in the status screens (TAB, /scores, end of games, etc.) and would be much, much lower than the ridiculous numbers that players on XP save servers can get (and people wouldn't always have maxed out skills, unlike with XP save). There would also need to be some minor benefit, maybe e.g. alternate weapon textures or something.\r\n<aeth> Oh, and skill progression would also have to be slowed down so it takes 40-80 hours on that server to increment the number so even triple digits would be very, very rare.\r\n```\r\n\r\nAnother potential idea to encourage XP reset:\r\n* Some levels of Prestige points could be used to unlock small, cosmetic features only (new faces, _minor_ skim variation, etc.)\r\n* See \"ET-Headquarter mod\":https://www.moddb.com/mods/et-headquarters, where \"coins\" could be used to get personalized equipment (see videos - while I don't like the mess that the provided HQ faces and skins allow on server, the underlying idea is great).",
+                    "new_value": "With the latest release, we've taken several steps to discourage and eventually get rid of XP Save (see \"Why XP Save is a bad idea in the first place\":https://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating#What-about-XP-Save).\r\n\r\n* we're displaying differential XPs only (XPs earned during current map/campaign), never total XPs;\r\n* we've introduced Skill Rating (#403), to better reflect skill of players and get a similar \"loyalty program\" given by total XP so players come back to a same server;\r\n* we've tied ranks on Skill Rating, rather than skill levels. Nobody knows if you farm XPs, but everybody knows if you contribute positively to the success of your team.\r\n\r\nHowever, skill levels are still tied to collected XP, so XPSave is still useful to keep skill levels permamently.\r\n\r\nFor this last missing step, introducing the idea of CoD-style Prestige might just be what we're looking for:\r\n\r\n* When all skill levels are reached, propose to the player at start of map/connection or end of map to reset XPs to earn \"Prestige points\"\r\n* A prestige counter is increased, and stored in DB\r\n* A third Scoreboard with prestige earned could be easily implemented\r\n\r\nSee below for some possible implementation details:\r\n\r\n```\r\n<aeth> Hopefully I'll have time in the next month or so to work on a fun mod[...], and when max level you can do a CoD-style reset so you're never maxed out so you don't have full skills all the time)\r\n\r\n<aeth> CoD-style reset, at least as I've seen it in mods for other FPSes (haven't played CoD in many, many years) means XP save, except you're encouraged to reset to the start again when you're at max level. Not sure when/where they did/do this, but it's called \"Prestige\" and it's in the CoD 4: Modern Warfare description on Wikipedia so it started at least back in 2007, if not earlier.\r\n<aeth> So it's kind of a middle ground between no XP save (starting fresh periodically) and XP save (basically playing maxed out for days 3-900 of playing on the server).\r\n<aeth> It basically always puts you some place in the middle of the skill tree, as I've seen it in other mods, e.g. in Garry's Mod game modes, because when you're at the max you reset and when you're at the beginning leveling up is easy.\r\n<aeth> Naturally, you'd also have to rebalance leveling up, too. You'd probably have to get battle sense and light weapons to progress much more slowly than the other skills so you finish them all around the same time instead of sitting at max light weapons and battle sense early. Alternatively, more tiers in those than in the class-specific ones.\r\n<aeth> I'll have to take a look at the Lua API this weekend or so, but it would ideally (if feasible) work something like this: (1) when you reach maximum level in a skill you no longer gain XP in that skill (to discourage not taking the reset option) and (2) when you reach maximum level in all skills (and this would encourage playing more than just medic) you reset back to 0 XP and increment a number.\r\n<aeth> This number would show up in the status screens (TAB, /scores, end of games, etc.) and would be much, much lower than the ridiculous numbers that players on XP save servers can get (and people wouldn't always have maxed out skills, unlike with XP save). There would also need to be some minor benefit, maybe e.g. alternate weapon textures or something.\r\n<aeth> Oh, and skill progression would also have to be slowed down so it takes 40-80 hours on that server to increment the number so even triple digits would be very, very rare.\r\n```\r\n\r\nAnother potential idea to encourage XP reset:\r\n* Add a \"Most prestigious\" award\r\n* Tie ranks to prestige instead of Skill Rating\r\n* Display prestige rank in scoreboard, crosshair info, ..\r\n* Server broadcast when players increase prestige (voluntary reset), ..\r\n* Some levels of Prestige points could be used to unlock small, cosmetic features only (new faces, _minor_ skim variation, etc.)\r\n* See \"ET-Headquarter mod\":https://www.moddb.com/mods/et-headquarters, where \"coins\" could be used to get personalized equipment (see videos - while I don't like the mess that the provided HQ faces and skins allow on server, the underlying idea is great)."
+                }
+            ]
+        },
+        {
+            "id": 8105,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-05-02T17:27:04Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "With the latest release, we've taken several steps to discourage and eventually get rid of XP Save (see \"Why XP Save is a bad idea in the first place\":https://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating#What-about-XP-Save).\r\n\r\n* we're displaying differential XPs only (XPs earned during current map/campaign), never total XPs;\r\n* we've introduced Skill Rating (#403), to better reflect skill of players and get a similar \"loyalty program\" given by total XP so players come back to a same server;\r\n* we've tied ranks on Skill Rating, rather than skill levels. Nobody knows if you farm XPs, but everybody knows if you contribute positively to the success of your team.\r\n\r\nHowever, skill levels are still tied to collected XP, so XPSave is still useful to keep skill levels permamently.\r\n\r\nFor this last missing step, introducing the idea of CoD-style Prestige might just be what we're looking for:\r\n\r\n* When all skill levels are reached, propose to the player at start of map/connection or end of map to reset XPs to earn \"Prestige points\"\r\n* A prestige counter is increased, and stored in DB\r\n* A third Scoreboard with prestige earned could be easily implemented\r\n\r\nSee below for some possible implementation details:\r\n\r\n```\r\n<aeth> Hopefully I'll have time in the next month or so to work on a fun mod[...], and when max level you can do a CoD-style reset so you're never maxed out so you don't have full skills all the time)\r\n\r\n<aeth> CoD-style reset, at least as I've seen it in mods for other FPSes (haven't played CoD in many, many years) means XP save, except you're encouraged to reset to the start again when you're at max level. Not sure when/where they did/do this, but it's called \"Prestige\" and it's in the CoD 4: Modern Warfare description on Wikipedia so it started at least back in 2007, if not earlier.\r\n<aeth> So it's kind of a middle ground between no XP save (starting fresh periodically) and XP save (basically playing maxed out for days 3-900 of playing on the server).\r\n<aeth> It basically always puts you some place in the middle of the skill tree, as I've seen it in other mods, e.g. in Garry's Mod game modes, because when you're at the max you reset and when you're at the beginning leveling up is easy.\r\n<aeth> Naturally, you'd also have to rebalance leveling up, too. You'd probably have to get battle sense and light weapons to progress much more slowly than the other skills so you finish them all around the same time instead of sitting at max light weapons and battle sense early. Alternatively, more tiers in those than in the class-specific ones.\r\n<aeth> I'll have to take a look at the Lua API this weekend or so, but it would ideally (if feasible) work something like this: (1) when you reach maximum level in a skill you no longer gain XP in that skill (to discourage not taking the reset option) and (2) when you reach maximum level in all skills (and this would encourage playing more than just medic) you reset back to 0 XP and increment a number.\r\n<aeth> This number would show up in the status screens (TAB, /scores, end of games, etc.) and would be much, much lower than the ridiculous numbers that players on XP save servers can get (and people wouldn't always have maxed out skills, unlike with XP save). There would also need to be some minor benefit, maybe e.g. alternate weapon textures or something.\r\n<aeth> Oh, and skill progression would also have to be slowed down so it takes 40-80 hours on that server to increment the number so even triple digits would be very, very rare.\r\n```\r\n\r\nAnother potential idea to encourage XP reset:\r\n* Add a \"Most prestigious\" award\r\n* Tie ranks to prestige instead of Skill Rating\r\n* Display prestige rank in scoreboard, crosshair info, ..\r\n* Server broadcast when players increase prestige (voluntary reset), ..\r\n* Some levels of Prestige points could be used to unlock small, cosmetic features only (new faces, _minor_ skim variation, etc.)\r\n* See \"ET-Headquarter mod\":https://www.moddb.com/mods/et-headquarters, where \"coins\" could be used to get personalized equipment (see videos - while I don't like the mess that the provided HQ faces and skins allow on server, the underlying idea is great).",
+                    "new_value": "With the latest release, we've taken several steps to discourage and eventually get rid of XP Save (see \"Why XP Save is a bad idea in the first place\":https://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating#What-about-XP-Save).\r\n\r\n* we're displaying differential XPs only (XPs earned during current map/campaign), never total XPs;\r\n* we've introduced Skill Rating (#403), to better reflect skill of players and get a similar \"loyalty program\" given by total XP so players come back to a same server;\r\n* we've tied ranks on Skill Rating, rather than skill levels. Nobody knows if you farm XPs, but everybody knows if you contribute positively to the success of your team.\r\n\r\nHowever, skill levels are still tied to collected XP, so XPSave is still useful to keep skill levels permamently.\r\n\r\nFor this last missing step, introducing the idea of CoD-style Prestige might just be what we're looking for:\r\n\r\n* When all skill levels are reached, propose to the player at start of map/connection or end of map to reset XPs to earn \"Prestige points\"\r\n* A prestige counter is increased, and stored in DB\r\n* A third Scoreboard with prestige earned could be easily implemented\r\n\r\nSee below for some possible implementation details:\r\n\r\n```\r\n<aeth> Hopefully I'll have time in the next month or so to work on a fun mod[...], and when max level you can do a CoD-style reset so you're never maxed out so you don't have full skills all the time)\r\n\r\n<aeth> CoD-style reset, at least as I've seen it in mods for other FPSes (haven't played CoD in many, many years) means XP save, except you're encouraged to reset to the start again when you're at max level. Not sure when/where they did/do this, but it's called \"Prestige\" and it's in the CoD 4: Modern Warfare description on Wikipedia so it started at least back in 2007, if not earlier.\r\n<aeth> So it's kind of a middle ground between no XP save (starting fresh periodically) and XP save (basically playing maxed out for days 3-900 of playing on the server).\r\n<aeth> It basically always puts you some place in the middle of the skill tree, as I've seen it in other mods, e.g. in Garry's Mod game modes, because when you're at the max you reset and when you're at the beginning leveling up is easy.\r\n<aeth> Naturally, you'd also have to rebalance leveling up, too. You'd probably have to get battle sense and light weapons to progress much more slowly than the other skills so you finish them all around the same time instead of sitting at max light weapons and battle sense early. Alternatively, more tiers in those than in the class-specific ones.\r\n<aeth> I'll have to take a look at the Lua API this weekend or so, but it would ideally (if feasible) work something like this: (1) when you reach maximum level in a skill you no longer gain XP in that skill (to discourage not taking the reset option) and (2) when you reach maximum level in all skills (and this would encourage playing more than just medic) you reset back to 0 XP and increment a number.\r\n<aeth> This number would show up in the status screens (TAB, /scores, end of games, etc.) and would be much, much lower than the ridiculous numbers that players on XP save servers can get (and people wouldn't always have maxed out skills, unlike with XP save). There would also need to be some minor benefit, maybe e.g. alternate weapon textures or something.\r\n<aeth> Oh, and skill progression would also have to be slowed down so it takes 40-80 hours on that server to increment the number so even triple digits would be very, very rare.\r\n```\r\n\r\nAnother potential idea to encourage XP reset:\r\n* Add a \"Most prestigious\" award\r\n* Tie ranks to prestige instead of Skill Rating\r\n* Display prestige rank in scoreboard, crosshair info, ..\r\n* Server broadcast when players increase prestige (voluntary reset), ..\r\n* Some levels of Prestige points could be used to unlock small, cosmetic features only (new faces, _minor_ skim variation, etc.)\r\n* See \"ET-Headquarter mod\":https://www.moddb.com/mods/et-headquarters, where \"coins\" could be used to get personalized equipment (see videos - while I don't like the mess that the provided HQ faces and skins allow on server, the underlying idea is great).\r\n\r\nAlso:\r\n* Disable prestige feature if XPsave like features (XP save, or custom skill_levels) are enabled. This should give an extra incentive to play the game with its intended balance."
+                }
+            ]
+        },
+        {
+            "id": 8524,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-11-10T17:13:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8603,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-12-11T13:52:09Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1252"
+                }
+            ]
+        },
+        {
+            "id": 8606,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-12-11T14:25:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "With the latest release, we've taken several steps to discourage and eventually get rid of XP Save (see \"Why XP Save is a bad idea in the first place\":https://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating#What-about-XP-Save).\r\n\r\n* we're displaying differential XPs only (XPs earned during current map/campaign), never total XPs;\r\n* we've introduced Skill Rating (#403), to better reflect skill of players and get a similar \"loyalty program\" given by total XP so players come back to a same server;\r\n* we've tied ranks on Skill Rating, rather than skill levels. Nobody knows if you farm XPs, but everybody knows if you contribute positively to the success of your team.\r\n\r\nHowever, skill levels are still tied to collected XP, so XPSave is still useful to keep skill levels permamently.\r\n\r\nFor this last missing step, introducing the idea of CoD-style Prestige might just be what we're looking for:\r\n\r\n* When all skill levels are reached, propose to the player at start of map/connection or end of map to reset XPs to earn \"Prestige points\"\r\n* A prestige counter is increased, and stored in DB\r\n* A third Scoreboard with prestige earned could be easily implemented\r\n\r\nSee below for some possible implementation details:\r\n\r\n```\r\n<aeth> Hopefully I'll have time in the next month or so to work on a fun mod[...], and when max level you can do a CoD-style reset so you're never maxed out so you don't have full skills all the time)\r\n\r\n<aeth> CoD-style reset, at least as I've seen it in mods for other FPSes (haven't played CoD in many, many years) means XP save, except you're encouraged to reset to the start again when you're at max level. Not sure when/where they did/do this, but it's called \"Prestige\" and it's in the CoD 4: Modern Warfare description on Wikipedia so it started at least back in 2007, if not earlier.\r\n<aeth> So it's kind of a middle ground between no XP save (starting fresh periodically) and XP save (basically playing maxed out for days 3-900 of playing on the server).\r\n<aeth> It basically always puts you some place in the middle of the skill tree, as I've seen it in other mods, e.g. in Garry's Mod game modes, because when you're at the max you reset and when you're at the beginning leveling up is easy.\r\n<aeth> Naturally, you'd also have to rebalance leveling up, too. You'd probably have to get battle sense and light weapons to progress much more slowly than the other skills so you finish them all around the same time instead of sitting at max light weapons and battle sense early. Alternatively, more tiers in those than in the class-specific ones.\r\n<aeth> I'll have to take a look at the Lua API this weekend or so, but it would ideally (if feasible) work something like this: (1) when you reach maximum level in a skill you no longer gain XP in that skill (to discourage not taking the reset option) and (2) when you reach maximum level in all skills (and this would encourage playing more than just medic) you reset back to 0 XP and increment a number.\r\n<aeth> This number would show up in the status screens (TAB, /scores, end of games, etc.) and would be much, much lower than the ridiculous numbers that players on XP save servers can get (and people wouldn't always have maxed out skills, unlike with XP save). There would also need to be some minor benefit, maybe e.g. alternate weapon textures or something.\r\n<aeth> Oh, and skill progression would also have to be slowed down so it takes 40-80 hours on that server to increment the number so even triple digits would be very, very rare.\r\n```\r\n\r\nAnother potential idea to encourage XP reset:\r\n* Add a \"Most prestigious\" award\r\n* Tie ranks to prestige instead of Skill Rating\r\n* Display prestige rank in scoreboard, crosshair info, ..\r\n* Server broadcast when players increase prestige (voluntary reset), ..\r\n* Some levels of Prestige points could be used to unlock small, cosmetic features only (new faces, _minor_ skim variation, etc.)\r\n* See \"ET-Headquarter mod\":https://www.moddb.com/mods/et-headquarters, where \"coins\" could be used to get personalized equipment (see videos - while I don't like the mess that the provided HQ faces and skins allow on server, the underlying idea is great).\r\n\r\nAlso:\r\n* Disable prestige feature if XPsave like features (XP save, or custom skill_levels) are enabled. This should give an extra incentive to play the game with its intended balance.",
+                    "new_value": "With the latest release, we've taken several steps to discourage and eventually get rid of XP Save (see \"Why XP Save is a bad idea in the first place\":https://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating#What-about-XP-Save).\r\n\r\n* we're displaying differential XPs only (XPs earned during current map/campaign), never total XPs;\r\n* we've introduced Skill Rating (#403), to better reflect skill of players and get a similar \"loyalty program\" given by total XP so players come back to a same server;\r\n* we've tied ranks on Skill Rating, rather than skill levels. Nobody knows if you farm XPs, but everybody knows if you contribute positively to the success of your team.\r\n\r\nHowever, skill levels are still tied to collected XP, so XPSave is still useful to keep skill levels permamently.\r\n\r\nFor this last missing step, introducing the idea of CoD-style Prestige might just be what we're looking for:\r\n\r\n* When all skill levels are reached, propose to the player at start of map/connection or end of map to reset XPs to earn \"Prestige points\"\r\n* A prestige counter is increased, and stored in DB\r\n* A third Scoreboard with prestige earned could be easily implemented\r\n\r\nSee below for some possible implementation details:\r\n\r\n```\r\n<aeth> Hopefully I'll have time in the next month or so to work on a fun mod[...], and when max level you can do a CoD-style reset so you're never maxed out so you don't have full skills all the time)\r\n\r\n<aeth> CoD-style reset, at least as I've seen it in mods for other FPSes (haven't played CoD in many, many years) means XP save, except you're encouraged to reset to the start again when you're at max level. Not sure when/where they did/do this, but it's called \"Prestige\" and it's in the CoD 4: Modern Warfare description on Wikipedia so it started at least back in 2007, if not earlier.\r\n<aeth> So it's kind of a middle ground between no XP save (starting fresh periodically) and XP save (basically playing maxed out for days 3-900 of playing on the server).\r\n<aeth> It basically always puts you some place in the middle of the skill tree, as I've seen it in other mods, e.g. in Garry's Mod game modes, because when you're at the max you reset and when you're at the beginning leveling up is easy.\r\n<aeth> Naturally, you'd also have to rebalance leveling up, too. You'd probably have to get battle sense and light weapons to progress much more slowly than the other skills so you finish them all around the same time instead of sitting at max light weapons and battle sense early. Alternatively, more tiers in those than in the class-specific ones.\r\n<aeth> I'll have to take a look at the Lua API this weekend or so, but it would ideally (if feasible) work something like this: (1) when you reach maximum level in a skill you no longer gain XP in that skill (to discourage not taking the reset option) and (2) when you reach maximum level in all skills (and this would encourage playing more than just medic) you reset back to 0 XP and increment a number.\r\n<aeth> This number would show up in the status screens (TAB, /scores, end of games, etc.) and would be much, much lower than the ridiculous numbers that players on XP save servers can get (and people wouldn't always have maxed out skills, unlike with XP save). There would also need to be some minor benefit, maybe e.g. alternate weapon textures or something.\r\n<aeth> Oh, and skill progression would also have to be slowed down so it takes 40-80 hours on that server to increment the number so even triple digits would be very, very rare.\r\n```\r\n\r\nAnother potential idea to encourage XP reset:\r\n* Add a \"Most prestigious\" award\r\n* Tie ranks to prestige instead of Skill Rating\r\n* Display prestige rank in scoreboard, crosshair info, ..\r\n* Server broadcast when players increase prestige (voluntary reset), ..\r\n* Some levels of Prestige points could be used to unlock small, cosmetic features only (new faces, _minor_ skim variation, etc.)\r\n* See \"ET-Headquarter mod\":https://www.moddb.com/mods/et-headquarters, where \"coins\" could be used to get personalized equipment (see videos - while I don't like the mess that the provided HQ faces and skins allow on server, the underlying idea is great).\r\n\r\nAlso:\r\n* Disable prestige feature if XPsave like features (XP save, or custom skill_levels) are enabled. This should give an extra incentive to play the game with its intended balance.\r\n* Link prestige to the dynamic campaign feature (#1252) somehow, for example when all levels are reached in a campaign."
+                }
+            ]
+        },
+        {
+            "id": 8612,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-12-14T15:38:04Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "With the latest release, we've taken several steps to discourage and eventually get rid of XP Save (see \"Why XP Save is a bad idea in the first place\":https://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating#What-about-XP-Save).\r\n\r\n* we're displaying differential XPs only (XPs earned during current map/campaign), never total XPs;\r\n* we've introduced Skill Rating (#403), to better reflect skill of players and get a similar \"loyalty program\" given by total XP so players come back to a same server;\r\n* we've tied ranks on Skill Rating, rather than skill levels. Nobody knows if you farm XPs, but everybody knows if you contribute positively to the success of your team.\r\n\r\nHowever, skill levels are still tied to collected XP, so XPSave is still useful to keep skill levels permamently.\r\n\r\nFor this last missing step, introducing the idea of CoD-style Prestige might just be what we're looking for:\r\n\r\n* When all skill levels are reached, propose to the player at start of map/connection or end of map to reset XPs to earn \"Prestige points\"\r\n* A prestige counter is increased, and stored in DB\r\n* A third Scoreboard with prestige earned could be easily implemented\r\n\r\nSee below for some possible implementation details:\r\n\r\n```\r\n<aeth> Hopefully I'll have time in the next month or so to work on a fun mod[...], and when max level you can do a CoD-style reset so you're never maxed out so you don't have full skills all the time)\r\n\r\n<aeth> CoD-style reset, at least as I've seen it in mods for other FPSes (haven't played CoD in many, many years) means XP save, except you're encouraged to reset to the start again when you're at max level. Not sure when/where they did/do this, but it's called \"Prestige\" and it's in the CoD 4: Modern Warfare description on Wikipedia so it started at least back in 2007, if not earlier.\r\n<aeth> So it's kind of a middle ground between no XP save (starting fresh periodically) and XP save (basically playing maxed out for days 3-900 of playing on the server).\r\n<aeth> It basically always puts you some place in the middle of the skill tree, as I've seen it in other mods, e.g. in Garry's Mod game modes, because when you're at the max you reset and when you're at the beginning leveling up is easy.\r\n<aeth> Naturally, you'd also have to rebalance leveling up, too. You'd probably have to get battle sense and light weapons to progress much more slowly than the other skills so you finish them all around the same time instead of sitting at max light weapons and battle sense early. Alternatively, more tiers in those than in the class-specific ones.\r\n<aeth> I'll have to take a look at the Lua API this weekend or so, but it would ideally (if feasible) work something like this: (1) when you reach maximum level in a skill you no longer gain XP in that skill (to discourage not taking the reset option) and (2) when you reach maximum level in all skills (and this would encourage playing more than just medic) you reset back to 0 XP and increment a number.\r\n<aeth> This number would show up in the status screens (TAB, /scores, end of games, etc.) and would be much, much lower than the ridiculous numbers that players on XP save servers can get (and people wouldn't always have maxed out skills, unlike with XP save). There would also need to be some minor benefit, maybe e.g. alternate weapon textures or something.\r\n<aeth> Oh, and skill progression would also have to be slowed down so it takes 40-80 hours on that server to increment the number so even triple digits would be very, very rare.\r\n```\r\n\r\nAnother potential idea to encourage XP reset:\r\n* Add a \"Most prestigious\" award\r\n* Tie ranks to prestige instead of Skill Rating\r\n* Display prestige rank in scoreboard, crosshair info, ..\r\n* Server broadcast when players increase prestige (voluntary reset), ..\r\n* Some levels of Prestige points could be used to unlock small, cosmetic features only (new faces, _minor_ skim variation, etc.)\r\n* See \"ET-Headquarter mod\":https://www.moddb.com/mods/et-headquarters, where \"coins\" could be used to get personalized equipment (see videos - while I don't like the mess that the provided HQ faces and skins allow on server, the underlying idea is great).\r\n\r\nAlso:\r\n* Disable prestige feature if XPsave like features (XP save, or custom skill_levels) are enabled. This should give an extra incentive to play the game with its intended balance.\r\n* Link prestige to the dynamic campaign feature (#1252) somehow, for example when all levels are reached in a campaign.",
+                    "new_value": "With the latest release, we've taken several steps to discourage and eventually get rid of XP Save (see \"Why XP Save is a bad idea in the first place\":https://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating#What-about-XP-Save).\r\n\r\n* we're displaying differential XPs only (XPs earned during current map/campaign), never total XPs;\r\n* we've introduced Skill Rating (#403), to better reflect skill of players and get a similar \"loyalty program\" given by total XP so players come back to a same server;\r\n* we've tied ranks on Skill Rating, rather than skill levels. Nobody knows if you farm XPs, but everybody knows if you contribute positively to the success of your team.\r\n\r\nHowever, skill levels are still tied to collected XP, so XPSave is still useful to keep skill levels permamently.\r\n\r\nFor this last missing step, introducing the idea of CoD-style Prestige might just be what we're looking for:\r\n\r\n* When all skill levels are reached, propose to the player at start of map/connection or end of map to reset XPs to earn \"Prestige points\"\r\n* A prestige counter is increased, and stored in DB\r\n* A third Scoreboard with prestige earned could be easily implemented\r\n\r\nSee below for some possible implementation details:\r\n\r\n```\r\n<aeth> Hopefully I'll have time in the next month or so to work on a fun mod[...], and when max level you can do a CoD-style reset so you're never maxed out so you don't have full skills all the time)\r\n\r\n<aeth> CoD-style reset, at least as I've seen it in mods for other FPSes (haven't played CoD in many, many years) means XP save, except you're encouraged to reset to the start again when you're at max level. Not sure when/where they did/do this, but it's called \"Prestige\" and it's in the CoD 4: Modern Warfare description on Wikipedia so it started at least back in 2007, if not earlier.\r\n<aeth> So it's kind of a middle ground between no XP save (starting fresh periodically) and XP save (basically playing maxed out for days 3-900 of playing on the server).\r\n<aeth> It basically always puts you some place in the middle of the skill tree, as I've seen it in other mods, e.g. in Garry's Mod game modes, because when you're at the max you reset and when you're at the beginning leveling up is easy.\r\n<aeth> Naturally, you'd also have to rebalance leveling up, too. You'd probably have to get battle sense and light weapons to progress much more slowly than the other skills so you finish them all around the same time instead of sitting at max light weapons and battle sense early. Alternatively, more tiers in those than in the class-specific ones.\r\n<aeth> I'll have to take a look at the Lua API this weekend or so, but it would ideally (if feasible) work something like this: (1) when you reach maximum level in a skill you no longer gain XP in that skill (to discourage not taking the reset option) and (2) when you reach maximum level in all skills (and this would encourage playing more than just medic) you reset back to 0 XP and increment a number.\r\n<aeth> This number would show up in the status screens (TAB, /scores, end of games, etc.) and would be much, much lower than the ridiculous numbers that players on XP save servers can get (and people wouldn't always have maxed out skills, unlike with XP save). There would also need to be some minor benefit, maybe e.g. alternate weapon textures or something.\r\n<aeth> Oh, and skill progression would also have to be slowed down so it takes 40-80 hours on that server to increment the number so even triple digits would be very, very rare.\r\n```\r\n\r\nAnother potential idea to encourage XP reset:\r\n* Add a big popup in game when prestige point can be earned, after the last level has been reached\r\n* Add an in-game popup to track partial prestige point, f.e. when a class has reached full rank\r\n* Add a \"Most prestigious\" award\r\n* Tie ranks to prestige instead of Skill Rating\r\n* Display prestige rank in scoreboard, crosshair info, ..\r\n* Server broadcast when players increase prestige (voluntary reset), ..\r\n* Some levels of Prestige points could be used to unlock small, cosmetic features only (new faces, _minor_ skim variation, etc.)\r\n* See \"ET-Headquarter mod\":https://www.moddb.com/mods/et-headquarters, where \"coins\" could be used to get personalized equipment (see videos - while I don't like the mess that the provided HQ faces and skins allow on server, the underlying idea is great).\r\n\r\nAlso:\r\n* Disable prestige feature if XPsave like features (XP save, or custom skill_levels) are enabled. This should give an extra incentive to play the game with its intended balance.\r\n* Link prestige to the dynamic campaign feature (#1252) somehow, for example when all levels are reached in a campaign."
+                }
+            ]
+        },
+        {
+            "id": 8619,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-12-24T10:21:00Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1376"
+                }
+            ]
+        },
+        {
+            "id": 8684,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2020-01-13T16:19:11Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "With the latest release, we've taken several steps to discourage and eventually get rid of XP Save (see \"Why XP Save is a bad idea in the first place\":https://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating#What-about-XP-Save).\r\n\r\n* we're displaying differential XPs only (XPs earned during current map/campaign), never total XPs;\r\n* we've introduced Skill Rating (#403), to better reflect skill of players and get a similar \"loyalty program\" given by total XP so players come back to a same server;\r\n* we've tied ranks on Skill Rating, rather than skill levels. Nobody knows if you farm XPs, but everybody knows if you contribute positively to the success of your team.\r\n\r\nHowever, skill levels are still tied to collected XP, so XPSave is still useful to keep skill levels permamently.\r\n\r\nFor this last missing step, introducing the idea of CoD-style Prestige might just be what we're looking for:\r\n\r\n* When all skill levels are reached, propose to the player at start of map/connection or end of map to reset XPs to earn \"Prestige points\"\r\n* A prestige counter is increased, and stored in DB\r\n* A third Scoreboard with prestige earned could be easily implemented\r\n\r\nSee below for some possible implementation details:\r\n\r\n```\r\n<aeth> Hopefully I'll have time in the next month or so to work on a fun mod[...], and when max level you can do a CoD-style reset so you're never maxed out so you don't have full skills all the time)\r\n\r\n<aeth> CoD-style reset, at least as I've seen it in mods for other FPSes (haven't played CoD in many, many years) means XP save, except you're encouraged to reset to the start again when you're at max level. Not sure when/where they did/do this, but it's called \"Prestige\" and it's in the CoD 4: Modern Warfare description on Wikipedia so it started at least back in 2007, if not earlier.\r\n<aeth> So it's kind of a middle ground between no XP save (starting fresh periodically) and XP save (basically playing maxed out for days 3-900 of playing on the server).\r\n<aeth> It basically always puts you some place in the middle of the skill tree, as I've seen it in other mods, e.g. in Garry's Mod game modes, because when you're at the max you reset and when you're at the beginning leveling up is easy.\r\n<aeth> Naturally, you'd also have to rebalance leveling up, too. You'd probably have to get battle sense and light weapons to progress much more slowly than the other skills so you finish them all around the same time instead of sitting at max light weapons and battle sense early. Alternatively, more tiers in those than in the class-specific ones.\r\n<aeth> I'll have to take a look at the Lua API this weekend or so, but it would ideally (if feasible) work something like this: (1) when you reach maximum level in a skill you no longer gain XP in that skill (to discourage not taking the reset option) and (2) when you reach maximum level in all skills (and this would encourage playing more than just medic) you reset back to 0 XP and increment a number.\r\n<aeth> This number would show up in the status screens (TAB, /scores, end of games, etc.) and would be much, much lower than the ridiculous numbers that players on XP save servers can get (and people wouldn't always have maxed out skills, unlike with XP save). There would also need to be some minor benefit, maybe e.g. alternate weapon textures or something.\r\n<aeth> Oh, and skill progression would also have to be slowed down so it takes 40-80 hours on that server to increment the number so even triple digits would be very, very rare.\r\n```\r\n\r\nAnother potential idea to encourage XP reset:\r\n* Add a big popup in game when prestige point can be earned, after the last level has been reached\r\n* Add an in-game popup to track partial prestige point, f.e. when a class has reached full rank\r\n* Add a \"Most prestigious\" award\r\n* Tie ranks to prestige instead of Skill Rating\r\n* Display prestige rank in scoreboard, crosshair info, ..\r\n* Server broadcast when players increase prestige (voluntary reset), ..\r\n* Some levels of Prestige points could be used to unlock small, cosmetic features only (new faces, _minor_ skim variation, etc.)\r\n* See \"ET-Headquarter mod\":https://www.moddb.com/mods/et-headquarters, where \"coins\" could be used to get personalized equipment (see videos - while I don't like the mess that the provided HQ faces and skins allow on server, the underlying idea is great).\r\n\r\nAlso:\r\n* Disable prestige feature if XPsave like features (XP save, or custom skill_levels) are enabled. This should give an extra incentive to play the game with its intended balance.\r\n* Link prestige to the dynamic campaign feature (#1252) somehow, for example when all levels are reached in a campaign.",
+                    "new_value": "With the latest release, we've taken several steps to discourage and eventually get rid of XP Save (see \"Why XP Save is a bad idea in the first place\":https://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating#What-about-XP-Save).\r\n\r\n* we're displaying differential XPs only (XPs earned during current map/campaign), never total XPs;\r\n* we've introduced Skill Rating (#403), to better reflect skill of players and get a similar \"loyalty program\" given by total XP so players come back to a same server;\r\n* we've tied ranks on Skill Rating, rather than skill levels. Nobody knows if you farm XPs, but everybody knows if you contribute positively to the success of your team.\r\n\r\nHowever, skill levels are still tied to collected XP, so XPSave is still useful to keep skill levels permamently.\r\n\r\nFor this last missing step, introducing the idea of CoD-style Prestige might just be what we're looking for:\r\n\r\n* When all skill levels are reached, propose to the player at start of map/connection or end of map to reset XPs to earn \"Prestige points\"\r\n* A prestige counter is increased, and stored in DB\r\n* A third Scoreboard with prestige earned could be easily implemented\r\n\r\nSee below for some possible implementation details:\r\n\r\n```\r\n<aeth> Hopefully I'll have time in the next month or so to work on a fun mod[...], and when max level you can do a CoD-style reset so you're never maxed out so you don't have full skills all the time)\r\n\r\n<aeth> CoD-style reset, at least as I've seen it in mods for other FPSes (haven't played CoD in many, many years) means XP save, except you're encouraged to reset to the start again when you're at max level. Not sure when/where they did/do this, but it's called \"Prestige\" and it's in the CoD 4: Modern Warfare description on Wikipedia so it started at least back in 2007, if not earlier.\r\n<aeth> So it's kind of a middle ground between no XP save (starting fresh periodically) and XP save (basically playing maxed out for days 3-900 of playing on the server).\r\n<aeth> It basically always puts you some place in the middle of the skill tree, as I've seen it in other mods, e.g. in Garry's Mod game modes, because when you're at the max you reset and when you're at the beginning leveling up is easy.\r\n<aeth> Naturally, you'd also have to rebalance leveling up, too. You'd probably have to get battle sense and light weapons to progress much more slowly than the other skills so you finish them all around the same time instead of sitting at max light weapons and battle sense early. Alternatively, more tiers in those than in the class-specific ones.\r\n<aeth> I'll have to take a look at the Lua API this weekend or so, but it would ideally (if feasible) work something like this: (1) when you reach maximum level in a skill you no longer gain XP in that skill (to discourage not taking the reset option) and (2) when you reach maximum level in all skills (and this would encourage playing more than just medic) you reset back to 0 XP and increment a number.\r\n<aeth> This number would show up in the status screens (TAB, /scores, end of games, etc.) and would be much, much lower than the ridiculous numbers that players on XP save servers can get (and people wouldn't always have maxed out skills, unlike with XP save). There would also need to be some minor benefit, maybe e.g. alternate weapon textures or something.\r\n<aeth> Oh, and skill progression would also have to be slowed down so it takes 40-80 hours on that server to increment the number so even triple digits would be very, very rare.\r\n```\r\n\r\nAnother potential idea to encourage XP reset:\r\n* Add a big popup in game when prestige point can be earned, after the last level has been reached\r\n* Add an in-game popup to track partial prestige point, f.e. when a class has reached full rank and/or just before the end of match.\r\n* Add a \"Most prestigious\" award\r\n* Tie ranks to prestige instead of Skill Rating\r\n* Display prestige rank in scoreboard, crosshair info, ..\r\n* Server broadcast when players increase prestige (voluntary reset), ..\r\n* Some levels of Prestige points could be used to unlock small, cosmetic features only (new faces, _minor_ skim variation, etc.)\r\n* See \"ET-Headquarter mod\":https://www.moddb.com/mods/et-headquarters, where \"coins\" could be used to get personalized equipment (see videos - while I don't like the mess that the provided HQ faces and skins allow on server, the underlying idea is great).\r\n\r\nAlso:\r\n* Disable prestige feature if XPsave like features (XP save, or custom skill_levels) are enabled. This should give an extra incentive to play the game with its intended balance.\r\n* Link prestige to the dynamic campaign feature (#1252) somehow, for example when all levels are reached in a campaign."
+                }
+            ]
+        },
+        {
+            "id": 8696,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2020-01-22T10:52:18Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "With the latest release, we've taken several steps to discourage and eventually get rid of XP Save (see \"Why XP Save is a bad idea in the first place\":https://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating#What-about-XP-Save).\r\n\r\n* we're displaying differential XPs only (XPs earned during current map/campaign), never total XPs;\r\n* we've introduced Skill Rating (#403), to better reflect skill of players and get a similar \"loyalty program\" given by total XP so players come back to a same server;\r\n* we've tied ranks on Skill Rating, rather than skill levels. Nobody knows if you farm XPs, but everybody knows if you contribute positively to the success of your team.\r\n\r\nHowever, skill levels are still tied to collected XP, so XPSave is still useful to keep skill levels permamently.\r\n\r\nFor this last missing step, introducing the idea of CoD-style Prestige might just be what we're looking for:\r\n\r\n* When all skill levels are reached, propose to the player at start of map/connection or end of map to reset XPs to earn \"Prestige points\"\r\n* A prestige counter is increased, and stored in DB\r\n* A third Scoreboard with prestige earned could be easily implemented\r\n\r\nSee below for some possible implementation details:\r\n\r\n```\r\n<aeth> Hopefully I'll have time in the next month or so to work on a fun mod[...], and when max level you can do a CoD-style reset so you're never maxed out so you don't have full skills all the time)\r\n\r\n<aeth> CoD-style reset, at least as I've seen it in mods for other FPSes (haven't played CoD in many, many years) means XP save, except you're encouraged to reset to the start again when you're at max level. Not sure when/where they did/do this, but it's called \"Prestige\" and it's in the CoD 4: Modern Warfare description on Wikipedia so it started at least back in 2007, if not earlier.\r\n<aeth> So it's kind of a middle ground between no XP save (starting fresh periodically) and XP save (basically playing maxed out for days 3-900 of playing on the server).\r\n<aeth> It basically always puts you some place in the middle of the skill tree, as I've seen it in other mods, e.g. in Garry's Mod game modes, because when you're at the max you reset and when you're at the beginning leveling up is easy.\r\n<aeth> Naturally, you'd also have to rebalance leveling up, too. You'd probably have to get battle sense and light weapons to progress much more slowly than the other skills so you finish them all around the same time instead of sitting at max light weapons and battle sense early. Alternatively, more tiers in those than in the class-specific ones.\r\n<aeth> I'll have to take a look at the Lua API this weekend or so, but it would ideally (if feasible) work something like this: (1) when you reach maximum level in a skill you no longer gain XP in that skill (to discourage not taking the reset option) and (2) when you reach maximum level in all skills (and this would encourage playing more than just medic) you reset back to 0 XP and increment a number.\r\n<aeth> This number would show up in the status screens (TAB, /scores, end of games, etc.) and would be much, much lower than the ridiculous numbers that players on XP save servers can get (and people wouldn't always have maxed out skills, unlike with XP save). There would also need to be some minor benefit, maybe e.g. alternate weapon textures or something.\r\n<aeth> Oh, and skill progression would also have to be slowed down so it takes 40-80 hours on that server to increment the number so even triple digits would be very, very rare.\r\n```\r\n\r\nAnother potential idea to encourage XP reset:\r\n* Add a big popup in game when prestige point can be earned, after the last level has been reached\r\n* Add an in-game popup to track partial prestige point, f.e. when a class has reached full rank and/or just before the end of match.\r\n* Add a \"Most prestigious\" award\r\n* Tie ranks to prestige instead of Skill Rating\r\n* Display prestige rank in scoreboard, crosshair info, ..\r\n* Server broadcast when players increase prestige (voluntary reset), ..\r\n* Some levels of Prestige points could be used to unlock small, cosmetic features only (new faces, _minor_ skim variation, etc.)\r\n* See \"ET-Headquarter mod\":https://www.moddb.com/mods/et-headquarters, where \"coins\" could be used to get personalized equipment (see videos - while I don't like the mess that the provided HQ faces and skins allow on server, the underlying idea is great).\r\n\r\nAlso:\r\n* Disable prestige feature if XPsave like features (XP save, or custom skill_levels) are enabled. This should give an extra incentive to play the game with its intended balance.\r\n* Link prestige to the dynamic campaign feature (#1252) somehow, for example when all levels are reached in a campaign.",
+                    "new_value": "With the latest release, we've taken several steps to discourage and eventually get rid of XP Save (see \"Why XP Save is a bad idea in the first place\":https://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating#What-about-XP-Save).\r\n\r\n* we're displaying differential XPs only (XPs earned during current map/campaign), never total XPs;\r\n* we've introduced Skill Rating (#403), to better reflect skill of players and get a similar \"loyalty program\" given by total XP so players come back to a same server;\r\n* we've tied ranks on Skill Rating, rather than skill levels. Nobody knows if you farm XPs, but everybody knows if you contribute positively to the success of your team.\r\n\r\nHowever, skill levels are still tied to collected XP, so XPSave is still useful to keep skill levels permamently.\r\n\r\nFor this last missing step, introducing the idea of CoD-style Prestige might just be what we're looking for:\r\n\r\n* When all skill levels are reached, propose to the player at start of map/connection or end of map to reset XPs to earn \"Prestige points\"\r\n* A prestige counter is increased, and stored in DB\r\n* A third Scoreboard with prestige earned could be easily implemented\r\n\r\nSee below for some possible implementation details:\r\n\r\n```\r\n<aeth> Hopefully I'll have time in the next month or so to work on a fun mod[...], and when max level you can do a CoD-style reset so you're never maxed out so you don't have full skills all the time)\r\n\r\n<aeth> CoD-style reset, at least as I've seen it in mods for other FPSes (haven't played CoD in many, many years) means XP save, except you're encouraged to reset to the start again when you're at max level. Not sure when/where they did/do this, but it's called \"Prestige\" and it's in the CoD 4: Modern Warfare description on Wikipedia so it started at least back in 2007, if not earlier.\r\n<aeth> So it's kind of a middle ground between no XP save (starting fresh periodically) and XP save (basically playing maxed out for days 3-900 of playing on the server).\r\n<aeth> It basically always puts you some place in the middle of the skill tree, as I've seen it in other mods, e.g. in Garry's Mod game modes, because when you're at the max you reset and when you're at the beginning leveling up is easy.\r\n<aeth> Naturally, you'd also have to rebalance leveling up, too. You'd probably have to get battle sense and light weapons to progress much more slowly than the other skills so you finish them all around the same time instead of sitting at max light weapons and battle sense early. Alternatively, more tiers in those than in the class-specific ones.\r\n<aeth> I'll have to take a look at the Lua API this weekend or so, but it would ideally (if feasible) work something like this: (1) when you reach maximum level in a skill you no longer gain XP in that skill (to discourage not taking the reset option) and (2) when you reach maximum level in all skills (and this would encourage playing more than just medic) you reset back to 0 XP and increment a number.\r\n<aeth> This number would show up in the status screens (TAB, /scores, end of games, etc.) and would be much, much lower than the ridiculous numbers that players on XP save servers can get (and people wouldn't always have maxed out skills, unlike with XP save). There would also need to be some minor benefit, maybe e.g. alternate weapon textures or something.\r\n<aeth> Oh, and skill progression would also have to be slowed down so it takes 40-80 hours on that server to increment the number so even triple digits would be very, very rare.\r\n```\r\n\r\nAnother potential idea to encourage XP reset:\r\n* Add a big popup in game when prestige point can be earned, after the last level has been reached\r\n* Add an in-game popup to track partial prestige point, f.e. when a class has reached full rank and/or just before the end of match.\r\n* Add a \"Most prestigious\" award\r\n* Tie ranks to prestige instead of Skill Rating\r\n* Display prestige rank in scoreboard, crosshair info, ..\r\n* Server broadcast when players increase prestige (voluntary reset), maybe debriefing screen notification?\r\n* Some levels of Prestige points could be used to unlock small, cosmetic features only (new faces, _minor_ skim variation, etc.)\r\n* See \"ET-Headquarter mod\":https://www.moddb.com/mods/et-headquarters, where \"coins\" could be used to get personalized equipment (see videos - while I don't like the mess that the provided HQ faces and skins allow on server, the underlying idea is great).\r\n\r\nAlso:\r\n* Disable prestige feature if XPsave like features (XP save, or custom skill_levels) are enabled. This should give an extra incentive to play the game with its intended balance.\r\n* Link prestige to the dynamic campaign feature (#1252) somehow, for example when all levels are reached in a campaign."
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "20"
+                }
+            ]
+        },
+        {
+            "id": 8703,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2020-01-24T18:01:18Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "With the latest release, we've taken several steps to discourage and eventually get rid of XP Save (see \"Why XP Save is a bad idea in the first place\":https://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating#What-about-XP-Save).\r\n\r\n* we're displaying differential XPs only (XPs earned during current map/campaign), never total XPs;\r\n* we've introduced Skill Rating (#403), to better reflect skill of players and get a similar \"loyalty program\" given by total XP so players come back to a same server;\r\n* we've tied ranks on Skill Rating, rather than skill levels. Nobody knows if you farm XPs, but everybody knows if you contribute positively to the success of your team.\r\n\r\nHowever, skill levels are still tied to collected XP, so XPSave is still useful to keep skill levels permamently.\r\n\r\nFor this last missing step, introducing the idea of CoD-style Prestige might just be what we're looking for:\r\n\r\n* When all skill levels are reached, propose to the player at start of map/connection or end of map to reset XPs to earn \"Prestige points\"\r\n* A prestige counter is increased, and stored in DB\r\n* A third Scoreboard with prestige earned could be easily implemented\r\n\r\nSee below for some possible implementation details:\r\n\r\n```\r\n<aeth> Hopefully I'll have time in the next month or so to work on a fun mod[...], and when max level you can do a CoD-style reset so you're never maxed out so you don't have full skills all the time)\r\n\r\n<aeth> CoD-style reset, at least as I've seen it in mods for other FPSes (haven't played CoD in many, many years) means XP save, except you're encouraged to reset to the start again when you're at max level. Not sure when/where they did/do this, but it's called \"Prestige\" and it's in the CoD 4: Modern Warfare description on Wikipedia so it started at least back in 2007, if not earlier.\r\n<aeth> So it's kind of a middle ground between no XP save (starting fresh periodically) and XP save (basically playing maxed out for days 3-900 of playing on the server).\r\n<aeth> It basically always puts you some place in the middle of the skill tree, as I've seen it in other mods, e.g. in Garry's Mod game modes, because when you're at the max you reset and when you're at the beginning leveling up is easy.\r\n<aeth> Naturally, you'd also have to rebalance leveling up, too. You'd probably have to get battle sense and light weapons to progress much more slowly than the other skills so you finish them all around the same time instead of sitting at max light weapons and battle sense early. Alternatively, more tiers in those than in the class-specific ones.\r\n<aeth> I'll have to take a look at the Lua API this weekend or so, but it would ideally (if feasible) work something like this: (1) when you reach maximum level in a skill you no longer gain XP in that skill (to discourage not taking the reset option) and (2) when you reach maximum level in all skills (and this would encourage playing more than just medic) you reset back to 0 XP and increment a number.\r\n<aeth> This number would show up in the status screens (TAB, /scores, end of games, etc.) and would be much, much lower than the ridiculous numbers that players on XP save servers can get (and people wouldn't always have maxed out skills, unlike with XP save). There would also need to be some minor benefit, maybe e.g. alternate weapon textures or something.\r\n<aeth> Oh, and skill progression would also have to be slowed down so it takes 40-80 hours on that server to increment the number so even triple digits would be very, very rare.\r\n```\r\n\r\nAnother potential idea to encourage XP reset:\r\n* Add a big popup in game when prestige point can be earned, after the last level has been reached\r\n* Add an in-game popup to track partial prestige point, f.e. when a class has reached full rank and/or just before the end of match.\r\n* Add a \"Most prestigious\" award\r\n* Tie ranks to prestige instead of Skill Rating\r\n* Display prestige rank in scoreboard, crosshair info, ..\r\n* Server broadcast when players increase prestige (voluntary reset), maybe debriefing screen notification?\r\n* Some levels of Prestige points could be used to unlock small, cosmetic features only (new faces, _minor_ skim variation, etc.)\r\n* See \"ET-Headquarter mod\":https://www.moddb.com/mods/et-headquarters, where \"coins\" could be used to get personalized equipment (see videos - while I don't like the mess that the provided HQ faces and skins allow on server, the underlying idea is great).\r\n\r\nAlso:\r\n* Disable prestige feature if XPsave like features (XP save, or custom skill_levels) are enabled. This should give an extra incentive to play the game with its intended balance.\r\n* Link prestige to the dynamic campaign feature (#1252) somehow, for example when all levels are reached in a campaign.",
+                    "new_value": "With the latest release, we've taken several steps to discourage and eventually get rid of XP Save (see \"Why XP Save is a bad idea in the first place\":https://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating#What-about-XP-Save).\r\n\r\n* we're displaying differential XPs only (XPs earned during current map/campaign), never total XPs;\r\n* we've introduced Skill Rating (#403), to better reflect skill of players and get a similar \"loyalty program\" given by total XP so players come back to a same server;\r\n* we've tied ranks on Skill Rating, rather than skill levels. Nobody knows if you farm XPs, but everybody knows if you contribute positively to the success of your team.\r\n\r\nHowever, skill levels are still tied to collected XP, so XPSave is still useful to keep skill levels permamently.\r\n\r\nFor this last missing step, introducing the idea of CoD-style Prestige might just be what we're looking for:\r\n\r\n* When all skill levels are reached, propose to the player at start of map/connection or end of map to reset XPs to earn \"Prestige points\"\r\n* A prestige counter is increased, and stored in DB\r\n* A third Scoreboard with prestige earned could be easily implemented\r\n\r\nSee below for some possible implementation details:\r\n\r\n```\r\n<aeth> Hopefully I'll have time in the next month or so to work on a fun mod[...], and when max level you can do a CoD-style reset so you're never maxed out so you don't have full skills all the time)\r\n\r\n<aeth> CoD-style reset, at least as I've seen it in mods for other FPSes (haven't played CoD in many, many years) means XP save, except you're encouraged to reset to the start again when you're at max level. Not sure when/where they did/do this, but it's called \"Prestige\" and it's in the CoD 4: Modern Warfare description on Wikipedia so it started at least back in 2007, if not earlier.\r\n<aeth> So it's kind of a middle ground between no XP save (starting fresh periodically) and XP save (basically playing maxed out for days 3-900 of playing on the server).\r\n<aeth> It basically always puts you some place in the middle of the skill tree, as I've seen it in other mods, e.g. in Garry's Mod game modes, because when you're at the max you reset and when you're at the beginning leveling up is easy.\r\n<aeth> Naturally, you'd also have to rebalance leveling up, too. You'd probably have to get battle sense and light weapons to progress much more slowly than the other skills so you finish them all around the same time instead of sitting at max light weapons and battle sense early. Alternatively, more tiers in those than in the class-specific ones.\r\n<aeth> I'll have to take a look at the Lua API this weekend or so, but it would ideally (if feasible) work something like this: (1) when you reach maximum level in a skill you no longer gain XP in that skill (to discourage not taking the reset option) and (2) when you reach maximum level in all skills (and this would encourage playing more than just medic) you reset back to 0 XP and increment a number.\r\n<aeth> This number would show up in the status screens (TAB, /scores, end of games, etc.) and would be much, much lower than the ridiculous numbers that players on XP save servers can get (and people wouldn't always have maxed out skills, unlike with XP save). There would also need to be some minor benefit, maybe e.g. alternate weapon textures or something.\r\n<aeth> Oh, and skill progression would also have to be slowed down so it takes 40-80 hours on that server to increment the number so even triple digits would be very, very rare.\r\n```\r\n\r\nAnother potential idea to encourage XP reset:\r\n* Add a big popup in game when prestige point can be earned, after the last level has been reached\r\n* Add an in-game popup to track partial prestige point, f.e. when a class has reached full rank and/or just before the end of match.\r\n* -Add a \"Most prestigious\" award- (done)\r\n* Tie ranks to prestige instead of Skill Rating (is that necessary?)\r\n* Display prestige rank in scoreboard, crosshair info, ..\r\n* Server broadcast when players increase prestige (voluntary reset), maybe debriefing screen notification?\r\n* Some levels of Prestige points could be used to unlock small, cosmetic features only (new faces, _minor_ skim variation, etc.)\r\n* Use ribbons to visually display the prestige level (scoreboard, limbo menu where campaign medals usually are, debriefing, ...)\r\n* See \"ET-Headquarter mod\":https://www.moddb.com/mods/et-headquarters, where \"coins\" could be used to get personalized equipment (see videos - while I don't like the mess that the provided HQ faces and skins allow on server, the underlying idea is great).\r\n\r\nAlso:\r\n* Disable prestige feature if XPsave like features (XP save, or custom skill_levels) are enabled. This should give an extra incentive to play the game with its intended balance.\r\n* -Link prestige to the dynamic campaign feature (#1252) somehow, for example when all levels are reached in a campaign.- (prestige isn't enabled in campaign for obvious reason, #1252 is the perfect improvement for that game type)"
+                }
+            ]
+        },
+        {
+            "id": 8721,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2020-02-10T16:40:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "With the latest release, we've taken several steps to discourage and eventually get rid of XP Save (see \"Why XP Save is a bad idea in the first place\":https://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating#What-about-XP-Save).\r\n\r\n* we're displaying differential XPs only (XPs earned during current map/campaign), never total XPs;\r\n* we've introduced Skill Rating (#403), to better reflect skill of players and get a similar \"loyalty program\" given by total XP so players come back to a same server;\r\n* we've tied ranks on Skill Rating, rather than skill levels. Nobody knows if you farm XPs, but everybody knows if you contribute positively to the success of your team.\r\n\r\nHowever, skill levels are still tied to collected XP, so XPSave is still useful to keep skill levels permamently.\r\n\r\nFor this last missing step, introducing the idea of CoD-style Prestige might just be what we're looking for:\r\n\r\n* When all skill levels are reached, propose to the player at start of map/connection or end of map to reset XPs to earn \"Prestige points\"\r\n* A prestige counter is increased, and stored in DB\r\n* A third Scoreboard with prestige earned could be easily implemented\r\n\r\nSee below for some possible implementation details:\r\n\r\n```\r\n<aeth> Hopefully I'll have time in the next month or so to work on a fun mod[...], and when max level you can do a CoD-style reset so you're never maxed out so you don't have full skills all the time)\r\n\r\n<aeth> CoD-style reset, at least as I've seen it in mods for other FPSes (haven't played CoD in many, many years) means XP save, except you're encouraged to reset to the start again when you're at max level. Not sure when/where they did/do this, but it's called \"Prestige\" and it's in the CoD 4: Modern Warfare description on Wikipedia so it started at least back in 2007, if not earlier.\r\n<aeth> So it's kind of a middle ground between no XP save (starting fresh periodically) and XP save (basically playing maxed out for days 3-900 of playing on the server).\r\n<aeth> It basically always puts you some place in the middle of the skill tree, as I've seen it in other mods, e.g. in Garry's Mod game modes, because when you're at the max you reset and when you're at the beginning leveling up is easy.\r\n<aeth> Naturally, you'd also have to rebalance leveling up, too. You'd probably have to get battle sense and light weapons to progress much more slowly than the other skills so you finish them all around the same time instead of sitting at max light weapons and battle sense early. Alternatively, more tiers in those than in the class-specific ones.\r\n<aeth> I'll have to take a look at the Lua API this weekend or so, but it would ideally (if feasible) work something like this: (1) when you reach maximum level in a skill you no longer gain XP in that skill (to discourage not taking the reset option) and (2) when you reach maximum level in all skills (and this would encourage playing more than just medic) you reset back to 0 XP and increment a number.\r\n<aeth> This number would show up in the status screens (TAB, /scores, end of games, etc.) and would be much, much lower than the ridiculous numbers that players on XP save servers can get (and people wouldn't always have maxed out skills, unlike with XP save). There would also need to be some minor benefit, maybe e.g. alternate weapon textures or something.\r\n<aeth> Oh, and skill progression would also have to be slowed down so it takes 40-80 hours on that server to increment the number so even triple digits would be very, very rare.\r\n```\r\n\r\nAnother potential idea to encourage XP reset:\r\n* Add a big popup in game when prestige point can be earned, after the last level has been reached\r\n* Add an in-game popup to track partial prestige point, f.e. when a class has reached full rank and/or just before the end of match.\r\n* -Add a \"Most prestigious\" award- (done)\r\n* Tie ranks to prestige instead of Skill Rating (is that necessary?)\r\n* Display prestige rank in scoreboard, crosshair info, ..\r\n* Server broadcast when players increase prestige (voluntary reset), maybe debriefing screen notification?\r\n* Some levels of Prestige points could be used to unlock small, cosmetic features only (new faces, _minor_ skim variation, etc.)\r\n* Use ribbons to visually display the prestige level (scoreboard, limbo menu where campaign medals usually are, debriefing, ...)\r\n* See \"ET-Headquarter mod\":https://www.moddb.com/mods/et-headquarters, where \"coins\" could be used to get personalized equipment (see videos - while I don't like the mess that the provided HQ faces and skins allow on server, the underlying idea is great).\r\n\r\nAlso:\r\n* Disable prestige feature if XPsave like features (XP save, or custom skill_levels) are enabled. This should give an extra incentive to play the game with its intended balance.\r\n* -Link prestige to the dynamic campaign feature (#1252) somehow, for example when all levels are reached in a campaign.- (prestige isn't enabled in campaign for obvious reason, #1252 is the perfect improvement for that game type)",
+                    "new_value": "With the latest release, we've taken several steps to discourage and eventually get rid of XP Save (see \"Why XP Save is a bad idea in the first place\":https://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating#What-about-XP-Save).\r\n\r\n* we're displaying differential XPs only (XPs earned during current map/campaign), never total XPs;\r\n* we've introduced Skill Rating (#403), to better reflect skill of players and get a similar \"loyalty program\" given by total XP so players come back to a same server;\r\n* we've tied ranks on Skill Rating, rather than skill levels. Nobody knows if you farm XPs, but everybody knows if you contribute positively to the success of your team.\r\n\r\nHowever, skill levels are still tied to collected XP, so XPSave is still useful to keep skill levels permamently.\r\n\r\nFor this last missing step, introducing the idea of CoD-style Prestige might just be what we're looking for:\r\n\r\n* When all skill levels are reached, propose to the player at start of map/connection or end of map to reset XPs to earn \"Prestige points\"\r\n* A prestige counter is increased, and stored in DB\r\n* A third Scoreboard with prestige earned could be easily implemented\r\n\r\nSee below for some possible implementation details:\r\n\r\n```\r\n<aeth> Hopefully I'll have time in the next month or so to work on a fun mod[...], and when max level you can do a CoD-style reset so you're never maxed out so you don't have full skills all the time)\r\n\r\n<aeth> CoD-style reset, at least as I've seen it in mods for other FPSes (haven't played CoD in many, many years) means XP save, except you're encouraged to reset to the start again when you're at max level. Not sure when/where they did/do this, but it's called \"Prestige\" and it's in the CoD 4: Modern Warfare description on Wikipedia so it started at least back in 2007, if not earlier.\r\n<aeth> So it's kind of a middle ground between no XP save (starting fresh periodically) and XP save (basically playing maxed out for days 3-900 of playing on the server).\r\n<aeth> It basically always puts you some place in the middle of the skill tree, as I've seen it in other mods, e.g. in Garry's Mod game modes, because when you're at the max you reset and when you're at the beginning leveling up is easy.\r\n<aeth> Naturally, you'd also have to rebalance leveling up, too. You'd probably have to get battle sense and light weapons to progress much more slowly than the other skills so you finish them all around the same time instead of sitting at max light weapons and battle sense early. Alternatively, more tiers in those than in the class-specific ones.\r\n<aeth> I'll have to take a look at the Lua API this weekend or so, but it would ideally (if feasible) work something like this: (1) when you reach maximum level in a skill you no longer gain XP in that skill (to discourage not taking the reset option) and (2) when you reach maximum level in all skills (and this would encourage playing more than just medic) you reset back to 0 XP and increment a number.\r\n<aeth> This number would show up in the status screens (TAB, /scores, end of games, etc.) and would be much, much lower than the ridiculous numbers that players on XP save servers can get (and people wouldn't always have maxed out skills, unlike with XP save). There would also need to be some minor benefit, maybe e.g. alternate weapon textures or something.\r\n<aeth> Oh, and skill progression would also have to be slowed down so it takes 40-80 hours on that server to increment the number so even triple digits would be very, very rare.\r\n```\r\n\r\nAnother potential idea to encourage XP reset:\r\n* Add a big popup in game when prestige point can be earned, after the last level has been reached\r\n* Add an in-game popup to track partial prestige point, f.e. when a class has reached full rank and/or just before the end of match.\r\n* -Add a \"Most prestigious\" award- (done)\r\n* Tie ranks to prestige instead of Skill Rating (is that necessary?)\r\n* Display prestige rank in scoreboard, crosshair info, ..\r\n* Server broadcast when players increase prestige (voluntary reset), maybe debriefing screen notification?\r\n* Some levels of Prestige points could be used to unlock small, cosmetic features only (new faces, _minor_ skim variation, etc.)\r\n* Use ribbons to visually display the prestige level (scoreboard, limbo menu where campaign medals usually are, debriefing, ...)\r\n* See \"ET-Headquarter mod\":https://www.moddb.com/mods/et-headquarters, where \"coins\" could be used to get personalized equipment (see videos - while I don't like the mess that the provided HQ faces and skins allow on server, the underlying idea is great).\r\n\r\nAlso:\r\n* Disable prestige feature if XPsave like features (XP save, or custom skill_levels) are enabled. This should give an extra incentive to play the game with its intended balance.\r\n* -Link prestige to the dynamic campaign feature (#1252) somehow, for example when all levels are reached in a campaign.- (prestige isn't enabled in campaign for obvious reason, #1252 is the perfect improvement for that game type)\r\n\r\n{TODO}\r\n* add streak tracker, so we know how many time a fully levelled up player without reseting. This might help in ensuring the feature is incentive enough."
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "20",
+                    "new_value": "70"
+                }
+            ]
+        },
+        {
+            "id": 8727,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2020-02-13T17:11:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "With the latest release, we've taken several steps to discourage and eventually get rid of XP Save (see \"Why XP Save is a bad idea in the first place\":https://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating#What-about-XP-Save).\r\n\r\n* we're displaying differential XPs only (XPs earned during current map/campaign), never total XPs;\r\n* we've introduced Skill Rating (#403), to better reflect skill of players and get a similar \"loyalty program\" given by total XP so players come back to a same server;\r\n* we've tied ranks on Skill Rating, rather than skill levels. Nobody knows if you farm XPs, but everybody knows if you contribute positively to the success of your team.\r\n\r\nHowever, skill levels are still tied to collected XP, so XPSave is still useful to keep skill levels permamently.\r\n\r\nFor this last missing step, introducing the idea of CoD-style Prestige might just be what we're looking for:\r\n\r\n* When all skill levels are reached, propose to the player at start of map/connection or end of map to reset XPs to earn \"Prestige points\"\r\n* A prestige counter is increased, and stored in DB\r\n* A third Scoreboard with prestige earned could be easily implemented\r\n\r\nSee below for some possible implementation details:\r\n\r\n```\r\n<aeth> Hopefully I'll have time in the next month or so to work on a fun mod[...], and when max level you can do a CoD-style reset so you're never maxed out so you don't have full skills all the time)\r\n\r\n<aeth> CoD-style reset, at least as I've seen it in mods for other FPSes (haven't played CoD in many, many years) means XP save, except you're encouraged to reset to the start again when you're at max level. Not sure when/where they did/do this, but it's called \"Prestige\" and it's in the CoD 4: Modern Warfare description on Wikipedia so it started at least back in 2007, if not earlier.\r\n<aeth> So it's kind of a middle ground between no XP save (starting fresh periodically) and XP save (basically playing maxed out for days 3-900 of playing on the server).\r\n<aeth> It basically always puts you some place in the middle of the skill tree, as I've seen it in other mods, e.g. in Garry's Mod game modes, because when you're at the max you reset and when you're at the beginning leveling up is easy.\r\n<aeth> Naturally, you'd also have to rebalance leveling up, too. You'd probably have to get battle sense and light weapons to progress much more slowly than the other skills so you finish them all around the same time instead of sitting at max light weapons and battle sense early. Alternatively, more tiers in those than in the class-specific ones.\r\n<aeth> I'll have to take a look at the Lua API this weekend or so, but it would ideally (if feasible) work something like this: (1) when you reach maximum level in a skill you no longer gain XP in that skill (to discourage not taking the reset option) and (2) when you reach maximum level in all skills (and this would encourage playing more than just medic) you reset back to 0 XP and increment a number.\r\n<aeth> This number would show up in the status screens (TAB, /scores, end of games, etc.) and would be much, much lower than the ridiculous numbers that players on XP save servers can get (and people wouldn't always have maxed out skills, unlike with XP save). There would also need to be some minor benefit, maybe e.g. alternate weapon textures or something.\r\n<aeth> Oh, and skill progression would also have to be slowed down so it takes 40-80 hours on that server to increment the number so even triple digits would be very, very rare.\r\n```\r\n\r\nAnother potential idea to encourage XP reset:\r\n* Add a big popup in game when prestige point can be earned, after the last level has been reached\r\n* Add an in-game popup to track partial prestige point, f.e. when a class has reached full rank and/or just before the end of match.\r\n* -Add a \"Most prestigious\" award- (done)\r\n* Tie ranks to prestige instead of Skill Rating (is that necessary?)\r\n* Display prestige rank in scoreboard, crosshair info, ..\r\n* Server broadcast when players increase prestige (voluntary reset), maybe debriefing screen notification?\r\n* Some levels of Prestige points could be used to unlock small, cosmetic features only (new faces, _minor_ skim variation, etc.)\r\n* Use ribbons to visually display the prestige level (scoreboard, limbo menu where campaign medals usually are, debriefing, ...)\r\n* See \"ET-Headquarter mod\":https://www.moddb.com/mods/et-headquarters, where \"coins\" could be used to get personalized equipment (see videos - while I don't like the mess that the provided HQ faces and skins allow on server, the underlying idea is great).\r\n\r\nAlso:\r\n* Disable prestige feature if XPsave like features (XP save, or custom skill_levels) are enabled. This should give an extra incentive to play the game with its intended balance.\r\n* -Link prestige to the dynamic campaign feature (#1252) somehow, for example when all levels are reached in a campaign.- (prestige isn't enabled in campaign for obvious reason, #1252 is the perfect improvement for that game type)\r\n\r\n{TODO}\r\n* add streak tracker, so we know how many time a fully levelled up player without reseting. This might help in ensuring the feature is incentive enough.",
+                    "new_value": "With the latest release, we've taken several steps to discourage and eventually get rid of XP Save (see \"Why XP Save is a bad idea in the first place\":https://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating#What-about-XP-Save).\r\n\r\n* we're displaying differential XPs only (XPs earned during current map/campaign), never total XPs;\r\n* we've introduced Skill Rating (#403), to better reflect skill of players and get a similar \"loyalty program\" given by total XP so players come back to a same server;\r\n* we've tied ranks on Skill Rating, rather than skill levels. Nobody knows if you farm XPs, but everybody knows if you contribute positively to the success of your team.\r\n\r\nHowever, skill levels are still tied to collected XP, so XPSave is still useful to keep skill levels permamently.\r\n\r\nFor this last missing step, introducing the idea of CoD-style Prestige might just be what we're looking for:\r\n\r\n* When all skill levels are reached, propose to the player at start of map/connection or end of map to reset XPs to earn \"Prestige points\"\r\n* A prestige counter is increased, and stored in DB\r\n* A third Scoreboard with prestige earned could be easily implemented\r\n\r\nSee below for some possible implementation details:\r\n\r\n```\r\n<aeth> Hopefully I'll have time in the next month or so to work on a fun mod[...], and when max level you can do a CoD-style reset so you're never maxed out so you don't have full skills all the time)\r\n\r\n<aeth> CoD-style reset, at least as I've seen it in mods for other FPSes (haven't played CoD in many, many years) means XP save, except you're encouraged to reset to the start again when you're at max level. Not sure when/where they did/do this, but it's called \"Prestige\" and it's in the CoD 4: Modern Warfare description on Wikipedia so it started at least back in 2007, if not earlier.\r\n<aeth> So it's kind of a middle ground between no XP save (starting fresh periodically) and XP save (basically playing maxed out for days 3-900 of playing on the server).\r\n<aeth> It basically always puts you some place in the middle of the skill tree, as I've seen it in other mods, e.g. in Garry's Mod game modes, because when you're at the max you reset and when you're at the beginning leveling up is easy.\r\n<aeth> Naturally, you'd also have to rebalance leveling up, too. You'd probably have to get battle sense and light weapons to progress much more slowly than the other skills so you finish them all around the same time instead of sitting at max light weapons and battle sense early. Alternatively, more tiers in those than in the class-specific ones.\r\n<aeth> I'll have to take a look at the Lua API this weekend or so, but it would ideally (if feasible) work something like this: (1) when you reach maximum level in a skill you no longer gain XP in that skill (to discourage not taking the reset option) and (2) when you reach maximum level in all skills (and this would encourage playing more than just medic) you reset back to 0 XP and increment a number.\r\n<aeth> This number would show up in the status screens (TAB, /scores, end of games, etc.) and would be much, much lower than the ridiculous numbers that players on XP save servers can get (and people wouldn't always have maxed out skills, unlike with XP save). There would also need to be some minor benefit, maybe e.g. alternate weapon textures or something.\r\n<aeth> Oh, and skill progression would also have to be slowed down so it takes 40-80 hours on that server to increment the number so even triple digits would be very, very rare.\r\n```\r\n\r\nAnother potential idea to encourage XP reset:\r\n* -Add a big popup in game when prestige point can be earned, after the last level has been reached- (done)\r\n* -Add an in-game popup to track partial prestige point, f.e. when a class has reached full rank and/or just before the end of match.- (done)\r\n* -Add a \"Most prestigious\" award- (done)\r\n* -Tie ranks to prestige instead of Skill Rating (is that necessary?)- (not needed)\r\n* -Display prestige rank in scoreboard, crosshair info, ..- (done)\r\n* Server broadcast when players increase prestige (voluntary reset), maybe debriefing screen notification?\r\n* Some levels of Prestige points could be used to unlock small, cosmetic features only (new faces, _minor_ skim variation, etc.)\r\n* Use ribbons to visually display the prestige level (scoreboard, limbo menu where campaign medals usually are, debriefing, ...)\r\n* See \"ET-Headquarter mod\":https://www.moddb.com/mods/et-headquarters, where \"coins\" could be used to get personalized equipment (see videos - while I don't like the mess that the provided HQ faces and skins allow on server, the underlying idea is great).\r\n\r\nAlso:\r\n* -Disable prestige feature if XPsave like features (XP save, or custom skill_levels) are enabled. This should give an extra incentive to play the game with its intended balance.- (not needed)\r\n* -Link prestige to the dynamic campaign feature (#1252) somehow, for example when all levels are reached in a campaign.- (prestige isn't enabled in campaign for obvious reason, #1252 is the perfect improvement for that game type)\r\n* -add streak tracker, so we know how many time a fully levelled up player without reseting. This might help in ensuring the feature is incentive enough.- (done)"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "70",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 8729,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2020-02-15T19:43:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 1155,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 4,
+        "name": "Feedback"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Add Prestige to encourage XP reset",
+    "description": "With the latest release, we've taken several steps to discourage and eventually get rid of XP Save (see \"Why XP Save is a bad idea in the first place\":https://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating#What-about-XP-Save).\r\n\r\n* we're displaying differential XPs only (XPs earned during current map/campaign), never total XPs;\r\n* we've introduced Skill Rating (#403), to better reflect skill of players and get a similar \"loyalty program\" given by total XP so players come back to a same server;\r\n* we've tied ranks on Skill Rating, rather than skill levels. Nobody knows if you farm XPs, but everybody knows if you contribute positively to the success of your team.\r\n\r\nHowever, skill levels are still tied to collected XP, so XPSave is still useful to keep skill levels permamently.\r\n\r\nFor this last missing step, introducing the idea of CoD-style Prestige might just be what we're looking for:\r\n\r\n* When all skill levels are reached, propose to the player at start of map/connection or end of map to reset XPs to earn \"Prestige points\"\r\n* A prestige counter is increased, and stored in DB\r\n* A third Scoreboard with prestige earned could be easily implemented\r\n\r\nSee below for some possible implementation details:\r\n\r\n```\r\n<aeth> Hopefully I'll have time in the next month or so to work on a fun mod[...], and when max level you can do a CoD-style reset so you're never maxed out so you don't have full skills all the time)\r\n\r\n<aeth> CoD-style reset, at least as I've seen it in mods for other FPSes (haven't played CoD in many, many years) means XP save, except you're encouraged to reset to the start again when you're at max level. Not sure when/where they did/do this, but it's called \"Prestige\" and it's in the CoD 4: Modern Warfare description on Wikipedia so it started at least back in 2007, if not earlier.\r\n<aeth> So it's kind of a middle ground between no XP save (starting fresh periodically) and XP save (basically playing maxed out for days 3-900 of playing on the server).\r\n<aeth> It basically always puts you some place in the middle of the skill tree, as I've seen it in other mods, e.g. in Garry's Mod game modes, because when you're at the max you reset and when you're at the beginning leveling up is easy.\r\n<aeth> Naturally, you'd also have to rebalance leveling up, too. You'd probably have to get battle sense and light weapons to progress much more slowly than the other skills so you finish them all around the same time instead of sitting at max light weapons and battle sense early. Alternatively, more tiers in those than in the class-specific ones.\r\n<aeth> I'll have to take a look at the Lua API this weekend or so, but it would ideally (if feasible) work something like this: (1) when you reach maximum level in a skill you no longer gain XP in that skill (to discourage not taking the reset option) and (2) when you reach maximum level in all skills (and this would encourage playing more than just medic) you reset back to 0 XP and increment a number.\r\n<aeth> This number would show up in the status screens (TAB, /scores, end of games, etc.) and would be much, much lower than the ridiculous numbers that players on XP save servers can get (and people wouldn't always have maxed out skills, unlike with XP save). There would also need to be some minor benefit, maybe e.g. alternate weapon textures or something.\r\n<aeth> Oh, and skill progression would also have to be slowed down so it takes 40-80 hours on that server to increment the number so even triple digits would be very, very rare.\r\n```\r\n\r\nAnother potential idea to encourage XP reset:\r\n* -Add a big popup in game when prestige point can be earned, after the last level has been reached- (done)\r\n* -Add an in-game popup to track partial prestige point, f.e. when a class has reached full rank and/or just before the end of match.- (done)\r\n* -Add a \"Most prestigious\" award- (done)\r\n* -Tie ranks to prestige instead of Skill Rating (is that necessary?)- (not needed)\r\n* -Display prestige rank in scoreboard, crosshair info, ..- (done)\r\n* Server broadcast when players increase prestige (voluntary reset), maybe debriefing screen notification?\r\n* Some levels of Prestige points could be used to unlock small, cosmetic features only (new faces, _minor_ skim variation, etc.)\r\n* Use ribbons to visually display the prestige level (scoreboard, limbo menu where campaign medals usually are, debriefing, ...)\r\n* See \"ET-Headquarter mod\":https://www.moddb.com/mods/et-headquarters, where \"coins\" could be used to get personalized equipment (see videos - while I don't like the mess that the provided HQ faces and skins allow on server, the underlying idea is great).\r\n\r\nAlso:\r\n* -Disable prestige feature if XPsave like features (XP save, or custom skill_levels) are enabled. This should give an extra incentive to play the game with its intended balance.- (not needed)\r\n* -Link prestige to the dynamic campaign feature (#1252) somehow, for example when all levels are reached in a campaign.- (prestige isn't enabled in campaign for obvious reason, #1252 is the perfect improvement for that game type)\r\n* -add streak tracker, so we know how many time a fully levelled up player without reseting. This might help in ensuring the feature is incentive enough.- (done)",
+    "start_date": "2018-12-27",
+    "done_ratio": 90,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2018-12-27T12:39:02Z",
+    "updated_on": "2020-02-15T19:43:08Z"
+}

@@ -1,0 +1,143 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 67,
+            "issue_id": 257,
+            "issue_to_id": 239,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "a639e6da744b49aceae76e7dae29ab6f86877a7e",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "cgame: cg_fireteamlatchedclass added, server side still need a bit of work, refs #239",
+            "committed_on": "2013-03-20T18:51:17Z"
+        },
+        {
+            "revision": "54dbe2e2e6f970442f5a229500c4c2855c4df9bf",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "qagame: send clientinfo when class is changed, refs #239",
+            "committed_on": "2013-03-20T19:32:12Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1377,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "cg_fireteamlatchedclass is now added and it works, but still needs to be fixed on the server side (the server only send the info if weapon has changed, so it should also send the info if the class has changed).",
+            "created_on": "2013-03-20T18:56:24Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "144",
+                    "new_value": "fireteam.jpg"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "7"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 1379,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Works now as in etpro. Will update wiki as well.",
+            "created_on": "2013-03-20T19:34:11Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 239,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 44,
+        "name": "Jacker"
+    },
+    "assigned_to": {
+        "id": 44,
+        "name": "Jacker"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 7,
+        "name": "2.71rc2"
+    },
+    "subject": "Show fireteam members latched class",
+    "description": "Implementation of the b_latchedclass from etpro, what it means is basically an simple info in the fireteam window that shows the fireteam members next class (if it is different than the current class). So that members of the fireteam know that someone is switching class. Should be quite simple to add. Ill add a cg_latchedclass cvar so that people who dislike it can disable it.",
+    "start_date": "2013-03-07",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-03-07T11:43:36Z",
+    "updated_on": "2013-03-20T19:34:11Z",
+    "closed_on": "2013-03-20T19:34:11Z"
+}

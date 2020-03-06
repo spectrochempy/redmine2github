@@ -1,0 +1,338 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 215,
+            "issue_id": 807,
+            "issue_to_id": 798,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "eea2de584e0ca3ae18851b4ab3d65aeed3f041dc",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: don't check ent->watertype & CONTENTS_LAVA twice refs #807",
+            "committed_on": "2015-02-10T14:45:07Z"
+        },
+        {
+            "revision": "e9f7d4a0feaba7e0f6a1281965b3833d311a7c2d",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "renderer: print a warning when unknown shader surface parms are scripted\nrefs #807",
+            "committed_on": "2015-02-11T14:52:41Z"
+        },
+        {
+            "revision": "f649625ab35aa7bfbf3e25da44a2b2fc47e866e7",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: let slag code work as intended refs #807",
+            "committed_on": "2015-02-13T14:31:45Z"
+        },
+        {
+            "revision": "ac7734f987d3d7667e9f91a71ab9bf0ec4529a59",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: slag damage refs #807",
+            "committed_on": "2015-02-14T11:35:43Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 4531,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-01-31T17:13:54Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "798"
+                }
+            ]
+        },
+        {
+            "id": 4534,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "There is a note in the code '// modified since slime is no longer deadly' and compared to ioq3 we don't do the G_Damage in case of ent->watertype & CONTENTS_SLIME.\r\n\r\nAdd damage back for slime (P_WorldEffects):\r\n<pre><code class=\"c\">\t\r\n    // check for sizzle damage (move to pmove?)\r\n\tif (ent->waterlevel && (ent->watertype & (CONTENTS_LAVA|CONTENTS_SLIME)))\r\n\t{\r\n\t\tif (ent->health > 0 && ent->pain_debounce_time <= level.time)\r\n\t\t{\r\n\t\t\tif (ent->watertype & CONTENTS_LAVA)\r\n\t\t\t{\r\n\t\t\t\tG_Damage(ent, NULL, NULL, NULL, NULL, 30 * ent->waterlevel, 0, MOD_LAVA);\r\n\t\t\t}\r\n\r\n\t\t\tif (ent->watertype & CONTENTS_SLIME)\r\n\t\t\t{\r\n\t\t\t\tG_Damage(ent, NULL, NULL, NULL, NULL, 10 * ent->waterlevel, 0, MOD_SLIME);\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n</code></pre>\r\n\r\nWe should try that. If this is a bad change of gameplay we can remove MOD_SLIME.",
+            "created_on": "2015-02-01T07:44:57Z",
+            "details": []
+        },
+        {
+            "id": 4535,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-02-01T07:46:42Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "20"
+                }
+            ]
+        },
+        {
+            "id": 4536,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Worth to mention: \r\n- keyword of infoParms 'slime' isn't used - use \"slag\" instead.\r\n- MASK_OPAQUE doesn't contain CONTENTS_SLIME\r\n\r\nI do assume 'slag' is used for ice surfaces and we can probably remove MOD_SLIME.",
+            "created_on": "2015-02-01T07:52:36Z",
+            "details": []
+        },
+        {
+            "id": 4567,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-02-10T05:49:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "17"
+                }
+            ]
+        },
+        {
+            "id": 4568,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "'slag' seems to be used by another kind of water (similar but with more friction).\r\n\r\nAlso, MOD_LAVA doesn't seem to do any damage without map script (according to some mapper). We should have a look too.",
+            "created_on": "2015-02-10T08:57:45Z",
+            "details": []
+        },
+        {
+            "id": 4571,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I did some research:\r\n\r\n- LAVA should damage when surfaceparm 'lava' is set and ent->waterlevel is not 0 -  see g_active.c 146\r\n \r\n- SLIME & SLAG: in fact surfaceparm 'slime' isn't implemented in ET :O keyword 'slag' replaces this. But this isn't documented in any shader manual I've found in the net. I think mapping tools and mappers don't know about this ....  I have no Radiant installed ... can anybody have a look if surfaceparm 'slag' is offered in ET mapping?\r\n\r\nhttp://q3map2.everyonelookbusy.net/shader_manual/contents.htm",
+            "created_on": "2015-02-10T15:13:47Z",
+            "details": []
+        },
+        {
+            "id": 4572,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "The most recent and still maintained Q3Map2 Shader Manual is this one:\r\nhttp://robotrenegade.com/q3map2/docs/shader_manual/contents.html\r\n\r\nIt doesn't have this shader instruction listed.\r\n\r\nET doesn't output a warning when a non-existing shader instruction is used, only when you badly use one existing :/ (From experience)",
+            "created_on": "2015-02-10T19:54:27Z",
+            "details": []
+        },
+        {
+            "id": 4573,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Here's a test map to mess with.",
+            "created_on": "2015-02-10T20:22:17Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "542",
+                    "new_value": "ETL_Tests.pk3"
+                }
+            ]
+        },
+        {
+            "id": 4576,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "New version: easier access to the swimming pool, you can swim inside, added a trace map so you can use mortar/arty on the surface, and a map script for 1 second respawn time and no time limit.",
+            "created_on": "2015-02-11T19:21:19Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "543",
+                    "new_value": "ETL_Tests.pk3"
+                }
+            ]
+        },
+        {
+            "id": 4587,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Slag code works as intended now. It enables kind of mud movement for players under/in water. \r\n\r\nRun attached map to see never used/working vanilla feature.\r\n\r\nSo back to MOD_SLIME. We should remove it.",
+            "created_on": "2015-02-13T14:45:26Z",
+            "details": []
+        },
+        {
+            "id": 4588,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Weird, the debug message (that you forgot to remove) shows that some frame don't happen in SLIME:\r\n\r\n<pre>SLIME\r\n !SLIME\r\n SLIME\r\n SLIME\r\n !SLIME\r\n SLIME\r\n SLIME\r\n SLIME\r\n !SLIM</pre>\r\n\r\n> So back to MOD_SLIME. We should remove it.\r\nAlternatively, we could also use it as a variation of MOD_WATER (?).",
+            "created_on": "2015-02-13T15:02:29Z",
+            "details": []
+        },
+        {
+            "id": 4589,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Client frame != server frame, We can add MOD any time.",
+            "created_on": "2015-02-13T15:18:04Z",
+            "details": []
+        },
+        {
+            "id": 4591,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "IR4T4 wrote:\r\n> Slag code works as intended now. It enables kind of mud movement for players under/in water. \r\n> \r\n> Run attached map to see never used/working vanilla feature.\r\n> \r\n> So back to MOD_SLIME. We should remove it.\r\n\r\nHave you attached to it a custom sound, like walking in mud (more realistic one than HL\u00b2 :P)?",
+            "created_on": "2015-02-13T18:17:54Z",
+            "details": []
+        },
+        {
+            "id": 4592,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "We don't have any fitting sounds in pak0 but it's easy to add them.",
+            "created_on": "2015-02-14T04:39:55Z",
+            "details": []
+        },
+        {
+            "id": 4593,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "It's a variation of water!\r\n\r\n{FIXME}\r\n- add some good sounds\r\n- -adjust MOD_SLIME when player dies in mud-\r\n- change HINT_WATER and related icons",
+            "created_on": "2015-02-14T04:49:33Z",
+            "details": []
+        },
+        {
+            "id": 4815,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-03-19T20:11:09Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "17",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 4917,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Slag reference in Q3Map2:\r\nhttps://github.com/TTimo/GtkRadiant/blob/master/tools/quake3/q3map2/game_wolfet.h#L110\r\n\r\nAlso lava right below; First time I see donotenter too...\r\n\r\n/* materials */ part is also quite interesting :)\r\n\r\nCompared with RtCW header, it's inherited... Copy/Pasted/(Poorly) Adapted >.>\r\n\r\nNote: That header will need a cleanup... ai, monster etc. should be removed. I think I'll manage that.\r\n\r\nNote 2: monster... Could these \"slick\" events be used for the greater good of ETL? :3",
+            "created_on": "2015-04-17T07:45:13Z",
+            "details": []
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        },
+        {
+            "id": 44,
+            "name": "Jacker"
+        },
+        {
+            "id": 256,
+            "name": "keMoN"
+        },
+        {
+            "id": 140,
+            "name": "Spyhawk"
+        }
+    ],
+    "time_entries": null,
+    "id": 807,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "MOD_SLIME is never used",
+    "description": "There is an obituary death message in the code for MOD_SLIME events (\"died by toxic material\"), but this MOD is actually never initialized anywhere in the code (unlike MOD_LAVA, see g_active.c).\r\n\r\nI tried various stuff on the \"Toxicity facility 3.1\" map, but I always get the generic \"was killed\" when poisoned.\r\nInvestigate and fix accordingly.",
+    "start_date": "2015-01-31",
+    "done_ratio": 20,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-01-31T17:13:44Z",
+    "updated_on": "2015-04-17T07:45:13Z"
+}

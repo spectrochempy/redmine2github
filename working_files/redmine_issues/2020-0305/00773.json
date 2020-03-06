@@ -1,0 +1,164 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 190,
+            "issue_id": 773,
+            "issue_to_id": 725,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 191,
+            "issue_id": 773,
+            "issue_to_id": 772,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 192,
+            "issue_id": 773,
+            "issue_to_id": 680,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 4349,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2015-01-11T04:30:43Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "725"
+                }
+            ]
+        },
+        {
+            "id": 4351,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2015-01-11T04:30:58Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "772"
+                }
+            ]
+        },
+        {
+            "id": 4353,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2015-01-11T04:31:05Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "680"
+                }
+            ]
+        },
+        {
+            "id": 5466,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Closed. No need for extra tickets just pointing to other tickets.",
+            "created_on": "2015-11-25T15:27:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 5468,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-11-25T15:30:56Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "2"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 773,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "Fix fireteam issues",
+    "description": "There are plenty of issues with this one too. I will make a similar list like I did for the referee function issues.\r\n\r\nAlso that if you create a fireteam and leave it straight away, you are able to press F1 or F2 to make the fireteam private or not to.\r\n\r\n-*S",
+    "start_date": "2015-01-11",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-01-11T04:29:14Z",
+    "updated_on": "2015-11-25T15:30:56Z",
+    "closed_on": "2015-11-25T15:27:17Z"
+}

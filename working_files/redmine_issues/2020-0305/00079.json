@@ -1,0 +1,164 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "5c3a1bd1b6e124919fecba681a1110cba15e7737",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: Warning fix for localisation strings refs #79",
+            "committed_on": "2012-11-12T13:39:55Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 335,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-10-02T19:25:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 482,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-11-11T20:15:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "1",
+                    "new_value": "16"
+                }
+            ]
+        },
+        {
+            "id": 491,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-11-11T22:42:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 506,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Fixed.",
+            "created_on": "2012-11-12T13:53:19Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 507,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "IR4T4 wrote:\r\n> Fixed.\r\n\r\nIn case you don\u2019t know this - Redmine will assign, mark closed and set % to 100 if you use \"fixes #\" instead of \"refs #\" in the commit message.",
+            "created_on": "2012-11-12T13:55:54Z",
+            "details": []
+        }
+    ],
+    "watchers": [
+        {
+            "id": 1,
+            "name": "Radegast"
+        }
+    ],
+    "time_entries": null,
+    "id": 79,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 5,
+        "name": "2.71rc1"
+    },
+    "subject": "Warning about two identical localisation strings",
+    "description": "Strings with different capitalisation are marked as duplicates, e.g.\r\n<pre>\r\n        CLOCK IS NOW SET TO %s!\r\n        Clock is now set to %s!\r\n</pre>\r\n\r\nCurrently, there are two such strings which have different capitalisation in the code:\r\n<pre>\r\n        WARNING: Duplicate string found: \"Clock is now set to %s!\"\r\n        WARNING: Duplicate string found: \"Stopwatch Round\"\r\n</pre>",
+    "start_date": "2012-09-13",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-09-13T17:54:11Z",
+    "updated_on": "2012-11-12T13:55:54Z",
+    "closed_on": "2012-11-12T13:53:19Z"
+}

@@ -1,0 +1,223 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 3477,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "So you want to attach skins with swastikas to ET:L?\r\n\r\nCan't really see point of this. Gore can already be disabled.",
+            "created_on": "2014-09-24T19:14:05Z",
+            "details": []
+        },
+        {
+            "id": 3478,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "The point is that *you* can now *decide* what your game should look like. Right now the complete responsibility rests with the server admin who can only change it server-wide and since there are always people who might be offended or unhappy with the interrupt in their denial, that's not going to happen.\r\nWith this system the player can choose what he wants to see and doesn't have to take the other players into count.\r\n\r\nAlso in default settings the addon won't be attached to Legacy, that's the whole point. Otherwise german players would already have commited a crime by downloading the game, although they didn't even choose 'uncensored'. They are added to the game in terms of a DLC.\r\n\r\nAbout gore...I wasn't talking about disabling gore in the censored version. I was talking about making it messier in the uncensored version. However this is just optional, introducing historically correct skins is my main concern in this matter. \r\n",
+            "created_on": "2014-09-25T07:58:21Z",
+            "details": []
+        },
+        {
+            "id": 3479,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Doesn't this feature defeat the purpose of sv_pure? Or am I missing something here?",
+            "created_on": "2014-09-25T10:46:57Z",
+            "details": []
+        },
+        {
+            "id": 3480,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "I do not know. But I suppose it would be possible to make an exception for 'official' packs? \r\nI just think that this feature would be really nice and worth the codework. ",
+            "created_on": "2014-09-25T13:37:48Z",
+            "details": []
+        },
+        {
+            "id": 3481,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Kemon, please specify exactly what you mean by censored and uncensored. If it's just about swastika we can close this ticket. Historical correctness or not.\r\nET has the character of a nazi game for outsiders anyway. We did discuss about this a while ago and I think I can speak for all devs. We don't want to enhance this.",
+            "created_on": "2014-09-27T05:12:27Z",
+            "details": []
+        },
+        {
+            "id": 3482,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-09-27T05:13:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "10"
+                }
+            ]
+        },
+        {
+            "id": 3484,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "Of course I'm talking about swastikas on german skins. But apparently neither am I seeing the problem with this, nor are you seeing the advantages of this.\r\nIt will NOT be integraded in standard Legacy. It's a DLC that can be added on top by *client-choice*. \r\nThis doesn't affect the global game appearance itself, but grants the client the option to tweak his game. \r\nIt takes the responsibility off of server-admins.\r\nI can understand the absence of swastikas for legal reasons! (again that's why it isn't included in standard Legacy), but I definitely do NOT understand how you can be offended by those symbols, yet still play an obvious WW2 shooter in which you can actually kill the good guys. That's plain denial, which I personally find worse.\r\n\r\n>>ET has the character of a nazi game for outsiders anyway\r\nYou don't have to publicly promote this feature....\r\n",
+            "created_on": "2014-09-27T10:37:43Z",
+            "details": []
+        },
+        {
+            "id": 3485,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "keMoN wrote:\r\n\r\n> still play an obvious WW2 shooter in which you can actually kill the good guys.\r\n\r\nI'm not German, but I don't think there were only \"good\" and \"bad\" guys, just young people that had to go to war.\r\n\r\n> You don't have to publicly promote this feature....\r\n Well, if we're talking about skin packs on the client side only, then this feature already exists. It's available client side on server that have sv_pure disabled, which is usually not done because of security/cheating reason.\r\n",
+            "created_on": "2014-09-27T11:15:27Z",
+            "details": []
+        },
+        {
+            "id": 3486,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "> skin packs on the client side only, then this feature already exists\r\nI did not know that, but like you say, only few (if any) have disabled sv_pure, because that would also load the funsounds and all the other random stuff from other servers right?\r\n\r\nIs it possible to go around that? To let players run 'official' packs clientside although sv_pure is enabled? \r\nIt's not like those textures differ from each other in gameplay changing means (eg see-through/semi-transparent while default arent).\r\n\r\nEDIT: > I\u2019m not German, but I don\u2019t think there were only \"good\" and \"bad\" guys, just young people that had to go to war.\r\nKudos!",
+            "created_on": "2014-09-27T12:19:27Z",
+            "details": []
+        },
+        {
+            "id": 3488,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "I wouldn't mess with sv_pure or anything complicated. Simply add a cvar and depending on user's choice either load swastika or \"normal\" shader, e.g. by looking for \"_nazi\" suffix. Like you said it would be the normal shader by default because of German players, but I personally see no harm in making the game a bit more realistic. We might add a disclaimer such as \"The ET:L development team does not approve of the ideology that this symbol represents\" or similar, however, I don't think even that is necessary because no normal thinking person could see this game as a propaganda tool.",
+            "created_on": "2014-09-28T20:15:11Z",
+            "details": []
+        },
+        {
+            "id": 3489,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Isn't there a serious risk of allowing client side only pk3? To me, adding a cvar for some pk3 only sounds like making sv_pure completely useless. To be honest, I believe this feature isn't worth the hassle as the risk/reward is too big, not to mention the controversial issues.",
+            "created_on": "2014-09-29T09:35:48Z",
+            "details": []
+        },
+        {
+            "id": 3490,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Agreed with Spyhawk. Anyway, server admins would be able to force that cvar anyway so clients might have no choice eventually.",
+            "created_on": "2014-09-29T10:05:06Z",
+            "details": []
+        },
+        {
+            "id": 3491,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Spyhawk wrote:\r\n> Isn't there a serious risk of allowing client side only pk3? To me, adding a cvar for some pk3 only sounds like making sv_pure completely useless. To be honest, I believe this feature isn't worth the hassle as the risk/reward is too big, not to mention the controversial issues.\r\n+1\r\n",
+            "created_on": "2014-09-29T10:06:05Z",
+            "details": []
+        },
+        {
+            "id": 3492,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "All right then. We might return to this some day, but for now it looks like Kemon and myself were overruled by majority.",
+            "created_on": "2014-09-29T12:33:42Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3493,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Actually spyhawk took the whole thingy to the top. It's not the question of majority in this case. It's more about a feature that cause more trouble than help.\r\n\r\nRadegast: Define no normal thinking persons and you'll know the people using propaganda tools. :)",
+            "created_on": "2014-09-29T17:11:03Z",
+            "details": []
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 589,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "fixed_version": {
+        "id": 10,
+        "name": "N/A"
+    },
+    "subject": "uncensor by client choice",
+    "description": "This would grant the client the possibility to choose between *censored* and *uncensored*.\r\nCensored is activated by default. Uncensored will initiate a download of an uncut pack containing historically correct skins and messier gore textures.\r\nThis option can be put in Esc > Options > Game.\r\n\r\nHaving this option client side allows those, who want to play an uncensored game to have their way, while the others are playing with default textures. This also takes the responsibility off of the server admins.",
+    "start_date": "2014-09-24",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-09-24T16:08:25Z",
+    "updated_on": "2014-09-29T17:11:03Z",
+    "closed_on": "2014-09-29T12:33:42Z"
+}

@@ -1,0 +1,440 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "af37fb532083ef31a708da06bd6c897e8dcd5218",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "clean up refs #50",
+            "committed_on": "2012-08-07T09:15:18Z"
+        },
+        {
+            "revision": "d8258710da64ef3bfe112746abdfcf91123193b5",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "misc: removed unused variables in UI code, refs #50",
+            "committed_on": "2012-10-02T00:35:07Z"
+        },
+        {
+            "revision": "6736135bde47e5427b873e1e6ef0d6123476ef36",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "obsolete ui bot cvars removal refs #50",
+            "committed_on": "2012-10-07T16:27:32Z"
+        },
+        {
+            "revision": "87459101ed2e791619b0da400c3d8d5e5639eea6",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod ui: unreachable and unused code removed refs #50",
+            "committed_on": "2012-11-06T08:19:44Z"
+        },
+        {
+            "revision": "b0632fa62ef483a37e437fcf5dcb5b9e4852b20c",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod ui: obsolete PB syscalls deactivated, clean up refs #50",
+            "committed_on": "2012-11-06T09:06:34Z"
+        },
+        {
+            "revision": "e057e09b489cd42f19fe7f711c851a7221b2bea9",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "ui: removed forgotten semicolon from code clean up, refs #50",
+            "committed_on": "2012-11-16T19:24:56Z"
+        },
+        {
+            "revision": "ee04dd000bfae064cf7a55177a560d39b10a5a53",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "general: removed support for ancient Macs, refs #50, refs #51, refs #52, refs #74",
+            "committed_on": "2012-11-16T20:24:00Z"
+        },
+        {
+            "revision": "2b570b80a67263e1482597b1aad686899dae7e9a",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "ui: removed unused defines and variables, refs #50",
+            "committed_on": "2012-11-22T17:09:32Z"
+        },
+        {
+            "revision": "10d60c74c81d57dc8fb1cbc42f5668d48a4644cf",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: print number of used cvars, ui: ui_notebookCurrentPage cvar removed\nrefs #50",
+            "committed_on": "2012-11-30T08:30:24Z"
+        },
+        {
+            "revision": "3292e8d6c92021d87f6f7dceb6e896ed903ec8ab",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "UI: cvars removal refs #50",
+            "committed_on": "2012-11-30T08:54:29Z"
+        },
+        {
+            "revision": "5c602c0303898a6889453624119093ff45e97596",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: some clean up/optimizations refs #50, refs #51, refs #52",
+            "committed_on": "2012-12-03T10:23:24Z"
+        },
+        {
+            "revision": "90d13d36fea14b99327bd96ec7713b8e9e123944",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "UI: button focus adjusted / clean up fixes #144 refs #50",
+            "committed_on": "2012-12-06T17:19:53Z"
+        },
+        {
+            "revision": "8adb7e832ef4ed30a2b57253ba4c333977144ba5",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "ui: relics removed refs #50",
+            "committed_on": "2012-12-08T12:35:36Z"
+        },
+        {
+            "revision": "c8caabac272300e818c2a82d13ec58e30fddebad",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "ui: unused function removed refs #50",
+            "committed_on": "2012-12-10T14:28:24Z"
+        },
+        {
+            "revision": "269f7341ae2e49343ac1c2cfcf3136f780e97e3e",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "ui: code style var scope/clean up refs #50",
+            "committed_on": "2012-12-10T21:26:19Z"
+        },
+        {
+            "revision": "fe698bd18082ec7a2c14cc9d1d1e054547a412ff",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "client: unused cvars/code removed refs #50 refs #51",
+            "committed_on": "2012-12-12T00:00:41Z"
+        },
+        {
+            "revision": "1ef53ed21c78e9af76039b571b220ec5d5f3b205",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "ui: no need for player models in ui refs #50",
+            "committed_on": "2012-12-12T00:41:14Z"
+        },
+        {
+            "revision": "b5dd1d081aedb1fb8993c48b72b6fb1f5dcd5428",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "ui: some clean up in ui refs #50",
+            "committed_on": "2012-12-14T14:06:50Z"
+        },
+        {
+            "revision": "508b68ae485aaeb59617eb9d7a68b6d3430e819f",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "generic: removed the rest of cdkey, refs #50, refs #31",
+            "committed_on": "2012-12-15T02:41:43Z"
+        },
+        {
+            "revision": "97f0c22f20b86be3400300cf79900eaf8a064960",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "ui: clean up refs #50",
+            "committed_on": "2012-12-29T12:42:08Z"
+        },
+        {
+            "revision": "5204bb7820762fae8c2c778d65d704905cd52401",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "ui: removed ui_singlePlayerActive and startSingleplayer, refs #50, refs #28",
+            "committed_on": "2013-01-04T18:56:31Z"
+        },
+        {
+            "revision": "9683ab8a92f74ffbd0a914ed5c3cf43b839f03dd",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "ui: removed unused code, refs #50",
+            "committed_on": "2013-02-02T17:03:40Z"
+        },
+        {
+            "revision": "44b81d9ef2c44c1944aff12466c4a0a8d54a2c06",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "UI: unused function UI_GetIndexFromSelection removed (updateSPMenu) refs\n#50 refs #193",
+            "committed_on": "2013-02-05T17:35:02Z"
+        },
+        {
+            "revision": "a6ffc3bbd462d07517349fee30cf5e9fc2aff0ad",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "ui: inGameLoad is unused refs #50",
+            "committed_on": "2013-02-13T18:34:07Z"
+        },
+        {
+            "revision": "329e16a5349359950a5b7f55fd4044726df8c59a",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "ui: unused UI_MapCountByCampaign() function removed refs #50",
+            "committed_on": "2013-02-28T08:40:21Z"
+        },
+        {
+            "revision": "df43963f2501196ddd75f14b24aa05b5cae83faf",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame/ui: unused ui/cg cvars removal (smallFont/bigFont) refs #50 refs\n52",
+            "committed_on": "2013-02-28T08:55:48Z"
+        },
+        {
+            "revision": "eb9029632c83308425042190db5c2bdcdf9d41c1",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "ui: removed set but not used variable 'inHandler', refs #50",
+            "committed_on": "2013-03-05T23:45:09Z"
+        },
+        {
+            "revision": "6dab138bed1ab703f1a4af505b0267ebb42cf247",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "ui: unsed functions removed refs #50",
+            "committed_on": "2013-03-08T12:12:28Z"
+        },
+        {
+            "revision": "e267779229815a10afb9dd09c10cc52ef82ee3fc",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "ui: clean up of ui_local.h refs #50",
+            "committed_on": "2013-03-30T16:57:21Z"
+        },
+        {
+            "revision": "21c0a6b24ad23da04f1a6f77e4bca52272baf439",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "ui: unused cvars removal refs #50",
+            "committed_on": "2013-05-31T08:07:49Z"
+        },
+        {
+            "revision": "142107e87c77bbf87a361ceb5d46979d4aef9f57",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "ui: some clean up refs #50 , print a message for bad ui export types,\ncvar ui_isSpectator removed",
+            "committed_on": "2013-09-14T18:50:56Z"
+        },
+        {
+            "revision": "72eb32d70f91d86dea9d167d8cfc54a678e66823",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "ui: no high score sound in ET refs #50",
+            "committed_on": "2014-02-26T14:32:02Z"
+        },
+        {
+            "revision": "a28fd72bfb8914f54fe9e9cca51abd9c9a9779f6",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "ui: unused code commented refs #50",
+            "committed_on": "2014-10-04T08:08:51Z"
+        },
+        {
+            "revision": "e0129a14da014235a2d5571928406cb78a23e4a9",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: unused code commented, refs #50",
+            "committed_on": "2014-11-21T13:03:18Z"
+        },
+        {
+            "revision": "2e2b4a9f0108bf07df6b39984d619368db733094",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: removed unused defines, refs #50",
+            "committed_on": "2017-01-29T17:24:31Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 111,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-05-16T18:20:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "parent_id",
+                    "new_value": "31"
+                }
+            ]
+        },
+        {
+            "id": 200,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "created_on": "2012-07-30T10:34:52Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 334,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2012-10-02T17:03:37Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "20"
+                }
+            ]
+        },
+        {
+            "id": 360,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-10-11T21:06:21Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "1",
+                    "new_value": "15"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 50,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 15,
+        "name": "Mod UI"
+    },
+    "fixed_version": {
+        "id": 4,
+        "name": "ALL"
+    },
+    "parent": {
+        "id": 31
+    },
+    "subject": "Remove unused UI code",
+    "description": "Remove useless code\r\nSee #31 - reference for ui",
+    "start_date": "2012-05-16",
+    "done_ratio": 20,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-05-16T18:15:01Z",
+    "updated_on": "2012-10-11T21:06:21Z"
+}

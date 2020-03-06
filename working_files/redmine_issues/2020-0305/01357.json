@@ -1,0 +1,78 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 8575,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-12-01T20:59:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "12"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "10"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1357,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 1019,
+        "name": "pataquets"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 10,
+        "name": "N/A"
+    },
+    "subject": "Create an 'official', Automated Build image on Docker Hub",
+    "description": "Docker Hub allows you to create Automated Builds from source: https://docs.docker.com/docker-hub/builds/\r\nIt would add another packaging/distribution/installation method, whose buildings would be triggered automatically on each commit. It also allows to create different image tags from git tags & branches.\r\nAlso, documentation could easily include a canonical \"docker run\" statement to quickly spin up a ET:L server with just a single command.\r\nAlso, by taking advantage of layered Docker images, a \"base\" (server-only) image can be built and a child image for running on desktop, if more packages/libs are needed. There are some images around on Docker Hub, but having an authoritative, built from source base image would help contributors and avoid duplicate efforts. Thus, the whole community can focus on maintaining a common image, but allow also individual contributors to base theirs in the official one. The base image should be as unopionionated as possible, though. Initially just a \"compiled binaries\" would do, and iterating from there, if needed. \r\n\r\nBy making the image build via an AB, you give the resulting image verifiability and auditability. Also, the build is fully automatic. You can have the latest image tag build from HEAD and individual image tags from git's release tags and branches.\r\nSome people avoid non-verifiable (manually uploaded) images due to security & traceability reasons.\r\n\r\nJust a free Docker Hub account and a quick setup would do. Ping me if you need help.",
+    "start_date": "2019-10-31",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-10-31T19:35:47Z",
+    "updated_on": "2019-12-01T20:59:45Z"
+}

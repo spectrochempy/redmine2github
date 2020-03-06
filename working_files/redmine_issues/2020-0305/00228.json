@@ -1,0 +1,156 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 376,
+            "issue_id": 1145,
+            "issue_to_id": 228,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 444,
+            "issue_id": 1321,
+            "issue_to_id": 228,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "4cfecfac6df19b53742673f563054d7bc6975fbb",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: inactivity cvars fix fixes #228 - thanks NQ",
+            "committed_on": "2013-03-15T10:22:25Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1333,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Applied in changeset commit:4cfecfac6df19b53742673f563054d7bc6975fbb.",
+            "created_on": "2013-03-15T10:38:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 1334,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-03-15T10:39:11Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 7452,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-12-28T17:08:04Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1145"
+                }
+            ]
+        },
+        {
+            "id": 8390,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-07-13T11:07:07Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1321"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 228,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 7,
+        "name": "2.71rc2"
+    },
+    "subject": "Fix/finish inactivity cvars",
+    "description": "g_inactivity is propably bugged - g_spectatorInactivity is missing completely.\r\n\r\n",
+    "start_date": "2013-03-05",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-03-05T05:57:06Z",
+    "updated_on": "2013-03-15T10:39:11Z",
+    "closed_on": "2013-03-15T10:38:49Z"
+}

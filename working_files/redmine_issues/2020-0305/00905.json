@@ -1,0 +1,188 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 5670,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "We'd still need to update the lib reference in the main repo. Maybe we simply shouldn't merge Transifex pull request that often... once a week is enough. Afaik, the bot will merge the commit together.",
+            "created_on": "2015-12-13T13:52:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 5671,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Still, reference could be updated only before releases and people responsible for translating could update their local files directly from the submodule.",
+            "created_on": "2015-12-13T14:38:31Z",
+            "details": []
+        },
+        {
+            "id": 5672,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "In the end we have the same amount of commits to the main rep because of submodule updates. I do understand the 'spam' argument but it's also nice to show progress in any part of ET: L development directly. Sub module commits aren't shown on the web page and submodule update commits itself usually don't describe what has been changed in the libs.\r\n\r\n>Maybe we simply shouldn\u2019t merge Transifex pull request that often\r\nsigned\r\n\r\nI'll close this.",
+            "created_on": "2015-12-13T19:34:21Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 5688,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "I like the idea of weekly commits but no for moving translations into separate repo",
+            "created_on": "2015-12-17T10:58:27Z",
+            "details": []
+        },
+        {
+            "id": 5689,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "IR4T4 wrote:\r\n> In the end we have the same amount of commits to the main rep because of submodule updates.\r\nDragonji wrote:\r\n> Still, reference could be updated only before releases and people responsible for translating could update their local files directly from the submodule.\r\n\r\nIR4T4 wrote:\r\n>  I do understand the 'spam' argument but it's also nice to show progress in any part of ET: L development directly.\r\nIt's admittedly some kind of progress but it's not that valuable (harsh word but I can't really find a better one) to have 2-3 commits related to it every 1-2 days. It not only \"litters\" commits history but also make it more difficult to catch significant code changes for visitors.\r\n\r\nRafal wrote:\r\n> but no for moving translations into separate repo\r\nAny arguments?",
+            "created_on": "2015-12-18T13:09:36Z",
+            "details": []
+        },
+        {
+            "id": 5696,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Dragonji wrote:\r\n> Any arguments?\r\n\r\nUnnecessary complexity. Simply merge once a week max and be done with it.",
+            "created_on": "2015-12-18T22:52:02Z",
+            "details": []
+        },
+        {
+            "id": 5698,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "@Rafal> Please merge once a week maximum only.",
+            "created_on": "2015-12-19T11:54:46Z",
+            "details": []
+        },
+        {
+            "id": 5699,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "But pull requests from Transifex Bot will still come at the same frequency. In practice merging them once a week won't change much.",
+            "created_on": "2015-12-19T13:19:58Z",
+            "details": []
+        },
+        {
+            "id": 5700,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Dragonji wrote:\r\n> But pull requests from Transifex Bot will still come at the same frequency. In practice merging them once a week won't change much.\r\n\r\nWhy so? Squash them and be done.\r\n\r\n",
+            "created_on": "2015-12-19T16:35:18Z",
+            "details": []
+        },
+        {
+            "id": 5705,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "An easier way to handle that would be to configure the bot to send a PR only once a week.",
+            "created_on": "2015-12-20T14:57:26Z",
+            "details": []
+        }
+    ],
+    "watchers": [
+        {
+            "id": 13,
+            "name": "RaFaL"
+        }
+    ],
+    "time_entries": null,
+    "id": 905,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 35,
+        "name": "Dragonji"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "Move translations to submodule",
+    "description": "The idea is to just attach a submodule with translations into main code repository instead of pushing translation updates directly into main repo. IMHO, translation commits just \"pollute\" main repo and make it more difficult to browse the changes history.",
+    "start_date": "2015-12-13",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-12-13T12:43:04Z",
+    "updated_on": "2015-12-20T14:57:26Z",
+    "closed_on": "2015-12-13T19:34:21Z"
+}

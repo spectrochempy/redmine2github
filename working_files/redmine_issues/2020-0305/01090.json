@@ -1,0 +1,124 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "8dc9aeedc707f3e14ac63fc96df287bd6e1ca4c7",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "renderer2: fix \"GLSL_SelectTexture: Trying to select non existing\ntexture 0 - program name:\" for hdr_rendering 1 refs #1090",
+            "committed_on": "2018-03-27T19:47:14Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7191,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-03-27T09:11:12Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "GLSL_SelectTexture: Trying to select non existing texture 0 - program name:''\r\n",
+                    "new_value": "GLSL_SelectTexture: Trying to select non existing texture 0 - program name:''\r\n\r\nnote: additional assets are required\r\n"
+                }
+            ]
+        },
+        {
+            "id": 7192,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-03-27T19:44:39Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "renderer2: fix hdr_rendering 1 - GLSL_SelectTexture: Trying to select non existing texture 0 - program name:''",
+                    "new_value": "renderer2: fix hdr_rendering / r_bloom issues"
+                },
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "GLSL_SelectTexture: Trying to select non existing texture 0 - program name:''\r\n\r\nnote: additional assets are required\r\n",
+                    "new_value": "- * GLSL_SelectTexture: Trying to select non existing texture 0 - program name:''* fixed\r\n\r\n- glitches on screen - see r_bluemblur 1-10 / hdr rendering\r\n "
+                }
+            ]
+        },
+        {
+            "id": 7193,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-03-27T19:49:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "- * GLSL_SelectTexture: Trying to select non existing texture 0 - program name:''* fixed\r\n\r\n- glitches on screen - see r_bluemblur 1-10 / hdr rendering\r\n ",
+                    "new_value": "- *GLSL_SelectTexture: Trying to select non existing texture 0 - program name:'* fixed\r\n\r\n- glitches on screen - see r_bluemblur 1-10 / hdr rendering\r\n "
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1090,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 15,
+        "name": "renderer2"
+    },
+    "subject": "renderer2: fix hdr_rendering / r_bloom issues",
+    "description": "- *GLSL_SelectTexture: Trying to select non existing texture 0 - program name:'* fixed\r\n\r\n- glitches on screen - see r_bluemblur 1-10 / hdr rendering\r\n ",
+    "start_date": "2018-03-27",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2018-03-27T09:10:45Z",
+    "updated_on": "2018-03-27T19:49:06Z"
+}

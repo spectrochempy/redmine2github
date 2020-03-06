@@ -1,0 +1,222 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 315,
+            "issue_id": 1006,
+            "issue_to_id": 391,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "ba7257dbd94c7c2de803695926f389040b64336c",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: draw icon over friendly disguised cvops, refs #391",
+            "committed_on": "2013-11-13T23:59:47Z"
+        },
+        {
+            "revision": "8e3e0d178250b60c2e49c899666f5b4fc63afc49",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: disguised shader fix refs #391",
+            "committed_on": "2013-11-24T18:19:44Z"
+        },
+        {
+            "revision": "749f12c56eb553b0845574a608a8bbfb357c49d6",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed typo in disguised shader, refs #391",
+            "committed_on": "2013-11-25T12:32:31Z"
+        },
+        {
+            "revision": "43e489229cb30dcb2fbc06f506a41fed402f623e",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: disguised shader fix refs #391",
+            "committed_on": "2013-12-11T20:42:25Z"
+        },
+        {
+            "revision": "0337e75764af57093ea790cbbf0e8b1651177dee",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed typo in disguised shader, refs #391",
+            "committed_on": "2013-12-11T20:42:25Z"
+        },
+        {
+            "revision": "238dbd493deb6d4a6cbfe675c07fc0ebc9e04f89",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: improved visiblity of disguised covops on map, refs #391\n\n* and replaced disguised icon by the more visible 'no shoot' icon",
+            "committed_on": "2013-12-27T19:41:07Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2245,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "The 'undercover' icon over friendly disguised coverops has been added. It is, however, not always permanent - it is temporarily replaced when the coverops ask for ammo/medipack, or when the player is saying something (\"!\" icon). I'm not sure if adding code to show all icons at the same time is really required. NQ does it because coverops can talk to the enemy team, but for legacy this seems a bit overkill. What do you think guys?\r\n\r\nNote that the red 'No shoot' icon is still present when aiming at the coverops - no change here.",
+            "created_on": "2013-11-14T00:19:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 2300,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Here's a little related bug: the added icon is visible through tree trunk, maybe even walls (not sure about this).",
+            "created_on": "2013-11-24T15:57:19Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "223",
+                    "new_value": "2013-11-24-162648-oasis.jpg"
+                },
+                {
+                    "property": "attachment",
+                    "name": "224",
+                    "new_value": "2013-11-24-162647-oasis.jpg"
+                }
+            ]
+        },
+        {
+            "id": 2301,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "You need to add shader fix for this:\r\n\r\n<pre><code>sprites/undercover\r\n{\r\n\tnocompress\r\n\tnopicmip\r\n\t{\r\n\t\tmap sprites/undercover.tga\r\n\t\tblendfunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA\r\n\t\trgbgen vertex\r\n\t}\r\n}</code></pre>",
+            "created_on": "2013-11-24T16:32:16Z",
+            "details": []
+        },
+        {
+            "id": 2302,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Thx Dragon and IR4.\r\n\r\nThe issue is, however, still present after the proposed fix has been applied.\r\nEdit: That was a typo, the fix by DragonJi was correct. Applied in the next commit.",
+            "created_on": "2013-11-25T12:26:49Z",
+            "details": []
+        },
+        {
+            "id": 2303,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "From what I've seen so far, the new displayed icon does its job effectively. I deem the need to display it at all time alongside the other icons unnecessary, so I'll close this issue - we still can reopen it later if someone complains about it.",
+            "created_on": "2013-11-25T19:58:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 6449,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-02-19T16:31:23Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1006"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 391,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "Make friendly disguised coverops more visible to teammates.",
+    "description": "I'm not sure how that would change the gameplay, so I'm opening a new request.\r\n\r\nYou know how it goes: you fight some enemies, and then a coverops of your team takes a disguise from one of the dead body. You continue to fight, looking for more enemies, and the now disguised coverops enter your field of view. You aim and shoot one or two bullets, before realizing that poor old guy is on your side when the \"no shoot\" icon appears.\r\n\r\nThe idea of this feature is to add a permanent icon above friendly disguised coverops, to avoid this situation (done this way in NQ, if I'm not wrong).",
+    "start_date": "2013-11-09",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-11-09T21:19:29Z",
+    "updated_on": "2013-11-25T19:58:20Z",
+    "closed_on": "2013-11-25T19:58:20Z"
+}

@@ -1,0 +1,269 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 997,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-01-21T06:52:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 998,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-01-21T06:55:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Reported by lootin http://www.etlegacy.com/boards/3/topics/217\r\n\r\n\"...\r\nStarting ET:L with\r\n\r\nSDL_AUDIODRIVER='alsa\u2019 etl\r\n\r\nI get no sound:\r\n\r\n\u2014\u2014 Initializing Sound \u2014\u2014\r\nSDL_Init( SDL_INIT_AUDIO )... OK\r\nSDL audio driver is \"(UNKNOWN)\".\r\nSDL_OpenAudio() failed: No available audio device\r\nSound initialization failed.\r\n\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2013\r\n\r\nIn order to get the sound to work I must use the 'dsp\u2019 driver but this means that sound won\u2019t work if another program is already using the sound card at the same time.\r\n\r\nMy SDL install seems correct because the plaympeg binary (from the smpeg package) can use both the alsa and dsp drivers without problem.\r\n\r\nI\u2019m using ET:L 2.70rc1 and libsdl 1.2.15 on Debian.\r\n\"\r\n\r\n********\r\n\r\nCan anyone confirm this bug?\r\n\r\neasybuild.sh (libasound2/libasound2-dev are installed) generates this output on my Debian \r\n<pre>\r\nchecking for ALSA LDFLAGS...  -lasound -lm -ldl -lpthread\r\nchecking for libasound headers version >= 0.9.0... found.\r\nchecking for snd_ctl_open in -lasound... no\r\n</pre>\r\n",
+                    "new_value": "Reported by lottin http://www.etlegacy.com/boards/3/topics/217\r\n\r\n\"...\r\nStarting ET:L with\r\n\r\nSDL_AUDIODRIVER='alsa\u2019 etl\r\n\r\nI get no sound:\r\n\r\n\u2014\u2014 Initializing Sound \u2014\u2014\r\nSDL_Init( SDL_INIT_AUDIO )... OK\r\nSDL audio driver is \"(UNKNOWN)\".\r\nSDL_OpenAudio() failed: No available audio device\r\nSound initialization failed.\r\n\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2013\r\n\r\nIn order to get the sound to work I must use the 'dsp\u2019 driver but this means that sound won\u2019t work if another program is already using the sound card at the same time.\r\n\r\nMy SDL install seems correct because the plaympeg binary (from the smpeg package) can use both the alsa and dsp drivers without problem.\r\n\r\nI\u2019m using ET:L 2.70rc1 and libsdl 1.2.15 on Debian.\r\n\"\r\n\r\n********\r\n\r\nCan anyone confirm this bug?\r\n\r\neasybuild.sh (libasound2/libasound2-dev are installed) generates this output on my Debian \r\n<pre>\r\nchecking for ALSA LDFLAGS...  -lasound -lm -ldl -lpthread\r\nchecking for libasound headers version >= 0.9.0... found.\r\nchecking for snd_ctl_open in -lasound... no\r\n</pre>\r\n\r\nhttp://www.lfbs.rwth-aachen.de/~stefan/docs/neutrino/audio/libs/snd_ctl_open.html"
+                }
+            ]
+        },
+        {
+            "id": 999,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-01-21T06:57:30Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Reported by lottin http://www.etlegacy.com/boards/3/topics/217\r\n\r\n\"...\r\nStarting ET:L with\r\n\r\nSDL_AUDIODRIVER='alsa\u2019 etl\r\n\r\nI get no sound:\r\n\r\n\u2014\u2014 Initializing Sound \u2014\u2014\r\nSDL_Init( SDL_INIT_AUDIO )... OK\r\nSDL audio driver is \"(UNKNOWN)\".\r\nSDL_OpenAudio() failed: No available audio device\r\nSound initialization failed.\r\n\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2013\r\n\r\nIn order to get the sound to work I must use the 'dsp\u2019 driver but this means that sound won\u2019t work if another program is already using the sound card at the same time.\r\n\r\nMy SDL install seems correct because the plaympeg binary (from the smpeg package) can use both the alsa and dsp drivers without problem.\r\n\r\nI\u2019m using ET:L 2.70rc1 and libsdl 1.2.15 on Debian.\r\n\"\r\n\r\n********\r\n\r\nCan anyone confirm this bug?\r\n\r\neasybuild.sh (libasound2/libasound2-dev are installed) generates this output on my Debian \r\n<pre>\r\nchecking for ALSA LDFLAGS...  -lasound -lm -ldl -lpthread\r\nchecking for libasound headers version >= 0.9.0... found.\r\nchecking for snd_ctl_open in -lasound... no\r\n</pre>\r\n\r\nhttp://www.lfbs.rwth-aachen.de/~stefan/docs/neutrino/audio/libs/snd_ctl_open.html",
+                    "new_value": "Reported by lottin http://www.etlegacy.com/boards/3/topics/217\r\n\r\n\"...\r\nStarting ET:L with\r\n\r\nSDL_AUDIODRIVER='alsa\u2019 etl\r\n\r\nI get no sound:\r\n\r\n\u2014\u2014 Initializing Sound \u2014\u2014\r\nSDL_Init( SDL_INIT_AUDIO )... OK\r\nSDL audio driver is \"(UNKNOWN)\".\r\nSDL_OpenAudio() failed: No available audio device\r\nSound initialization failed.\r\n\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2013\r\n\r\nIn order to get the sound to work I must use the 'dsp\u2019 driver but this means that sound won\u2019t work if another program is already using the sound card at the same time.\r\n\r\nMy SDL install seems correct because the plaympeg binary (from the smpeg package) can use both the alsa and dsp drivers without problem.\r\n\r\nI\u2019m using ET:L 2.70rc1 and libsdl 1.2.15 on Debian.\r\n\"\r\n\r\n********\r\n\r\nCan anyone confirm this bug?\r\n\r\neasybuild.sh (libasound2/libasound2-dev are installed) generates this output on my Debian \r\n<pre>\r\nchecking for ALSA LDFLAGS...  -lasound -lm -ldl -lpthread\r\nchecking for libasound headers version >= 0.9.0... found.\r\nchecking for snd_ctl_open in -lasound... no\r\n</pre>\r\n"
+                }
+            ]
+        },
+        {
+            "id": 1032,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "lottin, is OSS also installed on your system?",
+            "created_on": "2013-01-25T08:06:49Z",
+            "details": []
+        },
+        {
+            "id": 1033,
+            "user": {
+                "id": 92,
+                "name": "lottin"
+            },
+            "notes": "IR4T4 wrote:\r\n> lottin, is OSS also installed on your system?\r\n\r\nI have OSS emulation via Alsa.",
+            "created_on": "2013-01-25T12:26:06Z",
+            "details": []
+        },
+        {
+            "id": 1038,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "It seems OSS causes all the trouble. Several people in IRC have no issues with ALSA (OSS is not installed).\r\n",
+            "created_on": "2013-01-25T20:09:34Z",
+            "details": []
+        },
+        {
+            "id": 1042,
+            "user": {
+                "id": 92,
+                "name": "lottin"
+            },
+            "notes": "IR4T4 wrote:\r\n> It seems OSS causes all the trouble. Several people in IRC have no issues with ALSA (OSS is not installed).\r\n\r\nI will investigate further and will post the findings here.",
+            "created_on": "2013-01-26T14:53:23Z",
+            "details": []
+        },
+        {
+            "id": 1044,
+            "user": {
+                "id": 92,
+                "name": "lottin"
+            },
+            "notes": "Ok, this is what I've found.\r\n\r\n1. ldd indicates that the etl binary is not dynamically linked to libSDL, so this means that it uses its own version of libSDL.\r\n\r\n2. I've run the command \"SDL_AUDIODRIVER='alsa' etl +quit\" with ltrace and it seems that the SDL library that etl uses doesn't have Alsa support:\r\n\r\nvsnprintf(\"SDL_Init( SDL_INIT_AUDIO )... \", 4096, \"SDL_Init( SDL_INIT_AUDIO )... \", 0xfffed3c4) = 30\r\nstrlen(\"SDL_Init( SDL_INIT_AUDIO )... \")         = 30\r\nmemcpy(0x08e3bbd7, \"SDL_Init( SDL_INIT_AUDIO )... \", 30) = 0x08e3bbd7\r\nmemcpy(0x08e3a300, \"\", 0)                        = 0x08e3a300\r\nfputs(\"SDL_Init( SDL_INIT_AUDIO )... \", 0xf744b580) = 1\r\ngetenv(\"SDL_AUDIODRIVER\")                        = \"alsa\"\r\nstrcasecmp(\"pulse\", \"alsa\")                      = 15\r\nstrcasecmp(\"dsp\", \"alsa\")                        = 3\r\nstrcasecmp(\"dma\", \"alsa\")                        = 3\r\nstrcasecmp(\"arts\", \"alsa\")                       = 6\r\nstrcasecmp(\"esd\", \"alsa\")                        = 4\r\nstrcasecmp(\"nas\", \"alsa\")                        = 13\r\nstrcasecmp(\"disk\", \"alsa\")                       = 3\r\nstrcasecmp(\"dummy\", \"alsa\")                      = 3\r\nstrlen(\"No available audio device\")              = 25\r\n\r\nTo me this looks like a compilation problem, maybe Alsa library missing at compile time. (Note that I'm using the binaries that I downladed from the ET:L project.)  If I'm right, just recompile with Alsa support and should be fine.",
+            "created_on": "2013-01-27T10:42:30Z",
+            "details": []
+        },
+        {
+            "id": 1045,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Good catch & will be fixed with next RC. TU! \r\nRC1 was done with bundled libs and unfortunately lib32asound2 was not installed :/ ... I wonder which versions the guys in IRC did use for testing ALSA ;)\r\n<pre>\r\nchecking for libasound headers version >= 0.9.0... found.\r\nchecking for snd_ctl_open in -lasound... yes\r\n-- dynamic libasound -> libasound.so.2\r\n</pre>\r\n\r\n",
+            "created_on": "2013-01-27T12:48:50Z",
+            "details": []
+        },
+        {
+            "id": 1046,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-01-27T12:57:15Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 1129,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-02-10T11:56:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 1238,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-02-28T10:58:53Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 1240,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-02-28T11:00:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 2418,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "created_on": "2013-12-14T17:55:48Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "new_value": "Linux"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 92,
+            "name": "lottin"
+        }
+    ],
+    "time_entries": null,
+    "id": 174,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 5,
+        "name": "2.71rc1"
+    },
+    "subject": "Alsa driver doesn't work",
+    "description": "Reported by lottin http://www.etlegacy.com/boards/3/topics/217\r\n\r\n\"...\r\nStarting ET:L with\r\n\r\nSDL_AUDIODRIVER='alsa\u2019 etl\r\n\r\nI get no sound:\r\n\r\n\u2014\u2014 Initializing Sound \u2014\u2014\r\nSDL_Init( SDL_INIT_AUDIO )... OK\r\nSDL audio driver is \"(UNKNOWN)\".\r\nSDL_OpenAudio() failed: No available audio device\r\nSound initialization failed.\r\n\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2013\r\n\r\nIn order to get the sound to work I must use the 'dsp\u2019 driver but this means that sound won\u2019t work if another program is already using the sound card at the same time.\r\n\r\nMy SDL install seems correct because the plaympeg binary (from the smpeg package) can use both the alsa and dsp drivers without problem.\r\n\r\nI\u2019m using ET:L 2.70rc1 and libsdl 1.2.15 on Debian.\r\n\"\r\n\r\n********\r\n\r\nCan anyone confirm this bug?\r\n\r\neasybuild.sh (libasound2/libasound2-dev are installed) generates this output on my Debian \r\n<pre>\r\nchecking for ALSA LDFLAGS...  -lasound -lm -ldl -lpthread\r\nchecking for libasound headers version >= 0.9.0... found.\r\nchecking for snd_ctl_open in -lasound... no\r\n</pre>\r\n",
+    "start_date": "2013-01-21",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-01-21T06:51:47Z",
+    "updated_on": "2013-12-14T17:55:48Z",
+    "closed_on": "2013-02-28T10:58:53Z"
+}

@@ -1,0 +1,166 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "fb10320d5ef8d6006c0e57eb3f66e4811a62967e",
+            "user": {
+                "id": 364,
+                "name": "winrid"
+            },
+            "comments": "Fix scrolling inconsistency with server info\n\nServer info was set as selectable, causing it to only scroll once you've\n\"scrolled\" through every row of data visible in the window.",
+            "committed_on": "2014-11-08T20:06:38Z"
+        },
+        {
+            "revision": "996465225da55493e6a89d561bb0cb962a67550c",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "ui: parse fix - 'notselectable' doesn't expect a keyword refs #569",
+            "committed_on": "2014-11-09T16:58:58Z"
+        },
+        {
+            "revision": "6727aab7612142c2d954aa1f95073d5101959d94",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "Merge pull request #100 from winrid/master\n\nclient: mouse scroll is inconsistent in server info, fixes #569",
+            "committed_on": "2014-11-20T13:07:14Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3634,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "",
+            "created_on": "2014-11-08T20:42:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3635,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-11-08T21:05:53Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 3636,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2014-11-08T21:07:38Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "364"
+                }
+            ]
+        },
+        {
+            "id": 3748,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Sorry I got to say that this one isn't just yet fixed. I have totally forgotten about the Server info in-game too. Same fix applies there too I guess?\r\n\r\n-*S",
+            "created_on": "2014-11-20T01:06:36Z",
+            "details": []
+        },
+        {
+            "id": 3751,
+            "user": {
+                "id": 364,
+                "name": "winrid"
+            },
+            "notes": "Saukko wrote:\r\n> Sorry I got to say that this one isn't just yet fixed. I have totally forgotten about the Server info in-game too. Same fix applies there too I guess?\r\n> \r\n> -*S\r\nAh crap! Yeah, will take a look then update ticket.\r\n",
+            "created_on": "2014-11-20T03:21:51Z",
+            "details": []
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 569,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 364,
+        "name": "winrid"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Mouse scroll is inconsistent in server info",
+    "description": "How to reproduce this bug:\r\n\r\n1. Go to 'Play Online'\r\n2. Press on any server and press on 'Server Info'\r\n3. Scroll down and up and see how it doesn't scroll properly through it\r\n\r\nA bit annoying because you expect it to scroll normally but it doesn't feel normal when it doesn't take the first scroll when scrolling down.\r\n\r\n-*S",
+    "start_date": "2014-08-22",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-08-21T22:37:23Z",
+    "updated_on": "2014-11-20T04:08:32Z",
+    "closed_on": "2014-11-08T20:42:17Z"
+}

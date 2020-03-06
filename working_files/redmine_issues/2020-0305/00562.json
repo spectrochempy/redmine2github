@@ -1,0 +1,328 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 207,
+            "issue_id": 785,
+            "issue_to_id": 562,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "e85aca0dd59140e30ae14e5e412a8df20a7d5d59",
+            "user": {
+                "id": 424,
+                "name": "Zecklar"
+            },
+            "comments": "game: Fixes weapon cycle bug, fixes #562",
+            "committed_on": "2015-03-05T10:34:50Z"
+        },
+        {
+            "revision": "3a79bc8cd174db537720e274cb218d0ac944c659",
+            "user": {
+                "id": 424,
+                "name": "Zecklar"
+            },
+            "comments": "game: Weapon cycle bugfix, refs #562",
+            "committed_on": "2015-03-13T16:42:12Z"
+        },
+        {
+            "revision": "ff2580ff3a8c2244be23d22a7407a1d579368cf6",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: don't switch weapon when mounting/unmounting refs #562",
+            "committed_on": "2015-03-15T09:19:30Z"
+        },
+        {
+            "revision": "f5a58bc12ccf7892e26db57dd5e486823ce01b29",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: parenthesis fix, refs #562",
+            "committed_on": "2015-03-16T00:05:42Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 4408,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2015-01-16T16:41:14Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "785"
+                }
+            ]
+        },
+        {
+            "id": 4717,
+            "user": {
+                "id": 424,
+                "name": "Zecklar"
+            },
+            "notes": "Applied in changeset commit:e85aca0dd59140e30ae14e5e412a8df20a7d5d59.",
+            "created_on": "2015-03-05T11:06:27Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 4719,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-03-05T12:43:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "424"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "17"
+                }
+            ]
+        },
+        {
+            "id": 4723,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Reopening (see GH comment). All weapon animations seem to be missing now. ",
+            "created_on": "2015-03-05T23:27:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 4772,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-03-13T17:00:27Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 4777,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "The reason why the weapon cycle is slower in our special case (see bug description) is quite simple: \r\nWeapon is switched while the weapon is still unmounting but the animation of unmounting isn't shown. If you don't switch the weapon while standing up and unmounting you'll see what I'm talking about.\r\n\r\nPM_FinishWeaponChange sets our time finally see lines above 'pm->ps->weaponTime += switchtime;' I 've done some tests after reading PM_FinishWeaponChange and detected there are more weapons affected to this bug. I can reproduce issues with weapons where switchtime  in PM_FinishWeaponChange is set to bigger values (mortar, rifle ...).\r\n\r\nA patch has been committed forcing the unmounting animations to finish before next weapon in cycle is shown/available. ",
+            "created_on": "2015-03-15T09:08:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "60"
+                }
+            ]
+        },
+        {
+            "id": 4808,
+            "user": {
+                "id": 424,
+                "name": "Zecklar"
+            },
+            "notes": "So is this bug fixed or not? Quite confusing  that you dropped the % even though you committed a fix for this issue (?)",
+            "created_on": "2015-03-19T16:17:17Z",
+            "details": []
+        },
+        {
+            "id": 4809,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Let Saukko close it.",
+            "created_on": "2015-03-19T17:54:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "60",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 4810,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "I'll test it when I get back home. Sorry for taking so long.\r\n\r\n-*S",
+            "created_on": "2015-03-19T18:42:36Z",
+            "details": []
+        },
+        {
+            "id": 4811,
+            "user": {
+                "id": 424,
+                "name": "Zecklar"
+            },
+            "notes": "No hurry, I just wanted to make sure if IR4T4's fix was the final commit.",
+            "created_on": "2015-03-19T18:44:14Z",
+            "details": []
+        },
+        {
+            "id": 4821,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "I guess it's better than before. But to me it seems that the (un)mount animation is a bit... buggy even though I fixed it before. Got to take a look at that later. But to me this could be closed if the feedback is all good.\r\n\r\n-*S",
+            "created_on": "2015-03-20T00:13:21Z",
+            "details": []
+        },
+        {
+            "id": 4825,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-03-20T04:44:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 4826,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-03-20T04:45:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "424"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 424,
+            "name": "Zecklar"
+        }
+    ],
+    "time_entries": null,
+    "id": 562,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "Weapon cycle bug with MG",
+    "description": "This is what I found out. I had to take a deeper look how MG works out. Here's how you reproduce the bug:\r\n\r\n1. Take a soldier with MG\r\n2. Prone and mount MG\r\n3. Stand up/dismount MG\r\n4. Try to change weapon\r\n\r\nSo this makes the weapon cycle slower than normally it supposed to be. I have cg_weaponcycle set to 0 from the default 150 so the cycle is simply faster. You notice the difference when you try to cycle weapons normally. It changes the weapon fast and normal. But when you do the reproduction path, you'll notice how the weapon change somehow \"stops\" for a moment.\r\n\r\n-*S",
+    "start_date": "2014-08-15",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-08-15T02:15:52Z",
+    "updated_on": "2015-03-20T04:45:31Z",
+    "closed_on": "2015-03-20T04:44:57Z"
+}

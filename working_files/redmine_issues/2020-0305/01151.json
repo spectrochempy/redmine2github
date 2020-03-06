@@ -1,0 +1,316 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 377,
+            "issue_id": 1133,
+            "issue_to_id": 1151,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 378,
+            "issue_id": 1151,
+            "issue_to_id": 804,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "eaa54b6b350f5286adda9e0d0b92fe58ed60c817",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: use distinct colored class icon when unavailable, refs #1151\n\nFor better visibility vs skill lvl 4 red background.",
+            "committed_on": "2018-12-28T16:48:28Z"
+        },
+        {
+            "revision": "57c4c8cec1a2dfa1e6f13c434f5a20967415d438",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: added class restriction check to /class cmd, refs #1151",
+            "committed_on": "2018-12-31T00:23:00Z"
+        },
+        {
+            "revision": "01c81264bedf0e58d101fc75a8c732da1499d03a",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: added weapon restriction check to /class cmd, refs #1151",
+            "committed_on": "2018-12-31T15:05:16Z"
+        },
+        {
+            "revision": "59bc44f1d1fcafed4c33c3086912f91f9d90f362",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: use green background for level upgrades in limbo, refs #1151",
+            "committed_on": "2018-12-31T17:26:03Z"
+        },
+        {
+            "revision": "e094d9b1b03c2ea61a087da014e150501853a69b",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "mod: fix riflenade disable restriction",
+            "committed_on": "2019-01-02T10:09:12Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7406,
+            "user": {
+                "id": 110,
+                "name": "Harlekin"
+            },
+            "notes": "Unavailable classes should be crossed out in limbo.",
+            "created_on": "2018-12-26T06:58:29Z",
+            "details": []
+        },
+        {
+            "id": 7411,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Harlekin wrote:\r\n> Unavailable classes should be crossed out in limbo.\r\nThey are not crossed out but background is painted in red.\r\n",
+            "created_on": "2018-12-26T10:45:55Z",
+            "details": []
+        },
+        {
+            "id": 7417,
+            "user": {
+                "id": 110,
+                "name": "Harlekin"
+            },
+            "notes": "IR4T4 wrote:\r\n> Harlekin wrote:\r\n> > Unavailable classes should be crossed out in limbo.\r\n> They are not crossed out but background is painted in red.\r\n\r\nLevel 4 looks pretty much the same as class not available. see screenshot. There ain't much difference.\r\n",
+            "created_on": "2018-12-26T19:48:12Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "956",
+                    "new_value": "class.jpg"
+                }
+            ]
+        },
+        {
+            "id": 7450,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Now coloring the icon in red instead of the backgound. No confusion possible anymore.",
+            "created_on": "2018-12-28T16:51:43Z",
+            "details": []
+        },
+        {
+            "id": 7460,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-12-30T17:44:18Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1133"
+                }
+            ]
+        },
+        {
+            "id": 7466,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-12-31T00:28:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 7473,
+            "user": {
+                "id": 110,
+                "name": "Harlekin"
+            },
+            "notes": "maybe make achievements green and if unavail red.",
+            "created_on": "2018-12-31T14:54:52Z",
+            "details": []
+        },
+        {
+            "id": 7474,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I agree that red color for level is confusing. I always thought these were related to restriction, rather than earned skills.",
+            "created_on": "2018-12-31T15:07:35Z",
+            "details": []
+        },
+        {
+            "id": 7475,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Does this looks better?\r\n\r\nIn any case, we shouldn't use the same colored element to display restriction, as it is possible to have both the levels and the restriction displayed at the same time (in case the class is limited to a specific number greater than 0).",
+            "created_on": "2018-12-31T15:43:54Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "959",
+                    "new_value": "shot0000.jpg"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 7477,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-12-31T15:58:09Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 7479,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-12-31T17:14:29Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "804"
+                }
+            ]
+        },
+        {
+            "id": 7482,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-01-01T13:31:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 1151,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Let class command check for restricted classes & weapons",
+    "description": "CG_Class_f shouldn't send the team command (+ wrong message) when selected class or weapon is restricted (see cg_limbopanel). \r\n\r\nIn case of restriction we'll send an adequate message.\r\n",
+    "start_date": "2018-12-25",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2018-12-25T21:22:43Z",
+    "updated_on": "2019-01-01T13:31:07Z",
+    "closed_on": "2019-01-01T13:31:07Z"
+}

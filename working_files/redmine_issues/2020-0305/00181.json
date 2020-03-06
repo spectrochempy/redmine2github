@@ -1,0 +1,441 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 92,
+            "issue_id": 234,
+            "issue_to_id": 181,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 253,
+            "issue_id": 403,
+            "issue_to_id": 181,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 91,
+            "issue_id": 309,
+            "issue_to_id": 181,
+            "relation_type": "blocks",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "278fc490254d57f9dbaa44109df5019fb1d45047",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "ladm: initial groundwork, refs #181",
+            "committed_on": "2014-02-11T00:27:09Z"
+        },
+        {
+            "revision": "70048556a28b022dd5071c955d7a9d2c7f98bc87",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "ladm: added command table, refs #181",
+            "committed_on": "2014-02-11T14:09:54Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1177,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-02-15T11:41:55Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "6",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 1513,
+            "user": {
+                "id": 156,
+                "name": "ailmanki"
+            },
+            "notes": "Many lua scripts will need info about the players and there levels. So if different lua scripts can talk to eachother (IPCSend IPCReceive are not so pleasant to deal with), then it should be done in lua, but else the mod should handle that.",
+            "created_on": "2013-04-09T14:46:41Z",
+            "details": []
+        },
+        {
+            "id": 1841,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-08-20T07:02:35Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Add some kind of user management to the mod/engine? for online servers",
+                    "new_value": "Add some kind of user management to the mod for online servers"
+                },
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Similar to shrubbot there is a need to deal with users/custom commands/authentication.\r\n\r\n- shouldn't be file based (sqlite)\r\n- inspect if Lua is the way to go - see http://dev.kernwaffe.de/projects/noq\r\n- connects to white list servers?\r\n\r\n",
+                    "new_value": "Similar to shrubbot there is a need to deal with users/custom commands/authentication/ levels & such.\r\n\r\n- shouldn't be file based (sqlite)\r\n- inspect if Lua is the way to go - see http://dev.kernwaffe.de/projects/noq\r\n\r\n\r\n"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 1912,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-09-05T21:00:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "9"
+                }
+            ]
+        },
+        {
+            "id": 2056,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-10-06T15:59:52Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "9",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 2508,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Radegast, I'm surprised ... https://github.com/etlegacy/lua_scripts/commit/560a2c8b88b5b8a4694c1698c61ac167f9c1f21d",
+            "created_on": "2013-12-23T07:50:32Z",
+            "details": []
+        },
+        {
+            "id": 2513,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "user:IR4T4, why are you surprised? \r\n\r\nHmm, I just realized I don't know what license NOQ is released under. Also, I think you sent me a newer version of NOQ than the one I committed, but I couldn't find it anywhere. This discussion doesn't belong here, we should move it to the project:scripts project.",
+            "created_on": "2013-12-23T11:53:03Z",
+            "details": []
+        },
+        {
+            "id": 2515,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Radegast wrote:\r\n> Hmm, I just realized I don't know what license NOQ is released under.\r\n\r\nhttps://gitorious.org/enemy-territory/pages/Home",
+            "created_on": "2013-12-23T11:56:30Z",
+            "details": []
+        },
+        {
+            "id": 2516,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Mateos> NQ isn't NOQ :)\r\n\r\n(the link you provided is my own work, but I removed the NQ source code a while ago).",
+            "created_on": "2013-12-23T12:03:30Z",
+            "details": []
+        },
+        {
+            "id": 2517,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Radegast wrote:\r\n> user:IR4T4, why are you surprised? \r\nBecause you did add a sql based Lua script to the rep.  If I do remember correctly you wanted to add a sql interface to the engine and do it this way.  However the decission might push legacy mod online servers when the NOQ is adjusted to legacy. It's just sad we've lost at least a year of development :/ \r\n\r\nActually there is no real licence.\r\n<pre>\r\nNQ Lua team 2009-2011 - No warranty :)\r\n</pre>\r\n\r\n",
+            "created_on": "2013-12-23T12:34:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "project_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "17",
+                    "new_value": "22"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 2519,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Oh no, I was never against the use of database from within Lua (just look at my XPSave script). What I do not want to do is to add database handling inside the Legacy mod itself. I still think it is best to do it engine-side and let mods use it through an interface (and yes, that means expose it to Lua as well).\r\n\r\nuser:Spyhawk said on the IRC today that it is a shame there is no admin system for the Legacy mod, so I thought we might use NOQ in the meantime. ",
+            "created_on": "2013-12-23T16:01:15Z",
+            "details": []
+        },
+        {
+            "id": 2520,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Radegast wrote:\r\n> Also, I think you sent me a newer version of NOQ than the one I committed, but I couldn't find it anywhere.\r\n\r\nI think the version of NOQ I committed is too outdated. I haven't had a closer look at the time, but I remember the one user:IR4T4 gave me had command plugin system for example.",
+            "created_on": "2013-12-23T16:05:51Z",
+            "details": []
+        },
+        {
+            "id": 2521,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Radegast wrote:\r\n> Oh no, I was never against the use of database from within Lua...\r\nSee your last answer here: http://dev.etlegacy.com/boards/1/topics/477?r=483#message-483\r\n\r\nrevision 199 is only a bit outdated but currently I don't have access to the NOQ repository. RaFal or ailmanki might know more about the current revision. \r\n\r\n",
+            "created_on": "2013-12-23T16:34:13Z",
+            "details": []
+        },
+        {
+            "id": 2522,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Yes, my opinion hasn't changed, but let me make it clear once again. Adding db access to C code on the mod side and exposing it to Lua -> not OK. What I have in mind is:\r\n\r\n!etl_db_diagram.png!\r\n\r\n",
+            "created_on": "2013-12-23T17:02:16Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "247",
+                    "new_value": "etl_db_diagram.png"
+                }
+            ]
+        },
+        {
+            "id": 2523,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Well I don't think existing mods will use ETL engine SQL ...  it's a bit too late to introduce such a standard ... but maybe I'm wrong\r\n\r\n1. people are forced to use ETL server (is this a reason ? :D) / moders have to update their persistence code\r\n2. I think we run into buffer issues/limits (32000 chars) when we pass bigger resultsets through the engine \r\n\r\nFinally if you add an arrow in the above image from Lua-API to MySQL we have the current and planned situation?! We might use 2 SQL clients (server & lua) on the same database.\r\nModders can  do the same way and we don't have to blow the mod game code up ...\r\n\r\n\r\n",
+            "created_on": "2013-12-23T18:25:32Z",
+            "details": []
+        },
+        {
+            "id": 2525,
+            "user": {
+                "id": 156,
+                "name": "ailmanki"
+            },
+            "notes": "IR4T4 wrote:\r\n> revision 199 is only a bit outdated but currently I don't have access to the NOQ repository. RaFal or ailmanki might know more about the current revision.\r\nI have not more access then you have IR4T4, I think Luborg from Kernwaffe community should now more, I haven't touched NOQ in ages.\r\nIn my opinion it had good stuff, but overall - to be honest - I was not liking the direction it went so I stopped working on it.\r\n\r\nI was never a fan of MySQL, as its difficult to predict what it doing. Its a black box in some ways - sure that is not completely true as such.\r\nBut lets just look at extreme situations, you are running a server for 10 years, your SQL db can be huge. MySQL is great but it has to be correctly used, and that is not so easy I think.\r\nThe idea of shifting MySQL into the core of ET, I like a lot - as then it should be possible to have proper threading I guess? What I wonder why MySQL, in my experience most software allows to define a SQL compatible database and just use what you prefer.\r\nLastly mods can then expose access to the DB in lua if they like.",
+            "created_on": "2013-12-24T08:17:40Z",
+            "details": []
+        },
+        {
+            "id": 2526,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "IR4T4 wrote:\r\n> Well I don't think existing mods will use ETL engine SQL ...  it's a bit too late to introduce such a standard ... but maybe I'm wrong\r\nMost active in development mods already has got some kind of DBs. I don't really think devs will spend time on moving to SQL. What is more they want their mods to be compatible with as wide range of ET versions as possible, they're not going to limit use of their mods to etlded only. Just my opinion.\r\n",
+            "created_on": "2013-12-24T10:16:02Z",
+            "details": []
+        },
+        {
+            "id": 2527,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Dragonji wrote:\r\n> Most active in development mods already has got some kind of DBs. I don't really think devs will spend time on moving to SQL. What is more they want their mods to be compatible with as wide range of ET versions as possible, they're not going to limit use of their mods to etlded only. Just my opinion.\r\n\r\nThat's true. But in my opinion, we shouldn't focus on existing mods. They'll work anyway, regardless of what is done in etl (either through db access in the mod code, or through Lua). At this time, the only concerned mod is Legacy, and possibly future mods derived from it. \r\n\r\nNote that since it is distributed with etl, there's also no reason to make effort to keep Legacy mod compatibility with 2.60b server (I'm not talking about the 2.60b client here). It might break at some point, or it might even be broken already(?).\r\n\r\nAs I currently see it, the question to be answered is: \"What is the best  way for the Legacy mod and future derived mods?\" And also \"What is the best  way for the Legacy mod and future mods?\", but only once et:l will have taken over the world :P \r\n\r\nBtw Radegast, it would be great if you could write the \"roadmap  and thoughts about the future of ET:L and the Legacy mod\" as discussed a few months ago (it doesn't have to be long, it only needs to define the main direction you are thinking about).",
+            "created_on": "2013-12-24T11:08:44Z",
+            "details": []
+        },
+        {
+            "id": 2528,
+            "user": {
+                "id": 293,
+                "name": "gaoesa"
+            },
+            "notes": "I'm not really sure how to properly write posts in these as this is my first.\r\n\r\nI have couple of notes that I think should be considered. First, for a server admin having MySQL server on their server is not automatic. For admins who host their servers on paid providers, would need to get the MySQL from their providers. In that sense, using TinySQL could be a better alternative, as the database can be locally stored in the server game folder. Second, MySQL is a resource hog, from the administrator stand point. Third, having to deal with a generic relational database will add a lot of overhead to the mod execution. This could be alleviated by loading required data before the game starts or with asynchronous accessess for example. The first is the easier method of these two. It's a good thing to have a ready made database solution for a new mod, that will let the mod to store whatever data it wants. But I would like to emphasize these needs and especially fetching large results should be taken into acount in the implementation and in the interface.\r\n\r\nP.S. It is unlikely that silEnT will move to a new database solution. But some form of optional compatibility (for admins to get data out) would not be out of the question. If ET SDK licensing allows using interfaces of the GPL version of the engine.",
+            "created_on": "2013-12-24T13:20:43Z",
+            "details": []
+        },
+        {
+            "id": 2534,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "MySQL was chosen just as an example, but we will be using ODBC, so most database engines will be supported including sqlite3, TinySQL and PostreSQL. You can even use Microsoft Excel as your DB backed if you wish :-) I am confident we will be able to make it efficient.\r\n\r\nDragonji wrote:\r\n> IR4T4 wrote:\r\n> > Well I don't think existing mods will use ETL engine SQL ...  it's a bit too late to introduce such a standard ... but maybe I'm wrong\r\n> Most active in development mods already has got some kind of DBs. I don't really think devs will spend time on moving to SQL. What is more they want their mods to be compatible with as wide range of ET versions as possible, they're not going to limit use of their mods to etlded only. Just my opinion.\r\n\r\nET:L is aiming to become _the_ standard.\r\n\r\nI don't expect existing mods to migrate to our database api if they already have a working database solution. This feature is primarily aimed for new mods or those mods that don't have DB support yet. \r\n\r\n",
+            "created_on": "2013-12-24T15:23:56Z",
+            "details": []
+        },
+        {
+            "id": 2535,
+            "user": {
+                "id": 293,
+                "name": "gaoesa"
+            },
+            "notes": "Radegast wrote:\r\n> MySQL was chosen just as an example, but we will be using ODBC, so most database engines will be supported including sqlite3, TinySQL and PostreSQL. You can even use Microsoft Excel as your DB backed if you wish :-) I am confident we will be able to make it efficient.\r\n\r\nIndeed I actually meant sqlite. I just mixed it. Yes, I'm sure it can be made efficient, I just wanted to distress these requirements to the disucciosn as they need to be thought out early in the database table design and in the interface. Engine blocked in sleep to wait results from the database would be bad.\r\n",
+            "created_on": "2013-12-24T16:03:16Z",
+            "details": []
+        },
+        {
+            "id": 5284,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-09-12T17:59:17Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "403"
+                }
+            ]
+        },
+        {
+            "id": 5572,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "See relevant discussion here too: http://dev.etlegacy.com/boards/2/topics/431",
+            "created_on": "2015-12-06T10:44:35Z",
+            "details": []
+        },
+        {
+            "id": 6272,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "We're going the WolfAdmin route. See #975. DB engine has been added.\r\nThis ticket can be closed (I can't :/).",
+            "created_on": "2017-01-30T16:05:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 7496,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "WolfAdmin is shipped with ETL 2.76 release.",
+            "created_on": "2019-01-05T13:54:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        },
+        {
+            "id": 156,
+            "name": "ailmanki"
+        },
+        {
+            "id": 140,
+            "name": "Spyhawk"
+        }
+    ],
+    "time_entries": null,
+    "id": 181,
+    "project": {
+        "id": 4,
+        "name": "Lua scripts for the Legacy mod"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 22,
+        "name": "Lua scripts"
+    },
+    "fixed_version": {
+        "id": 4,
+        "name": "ALL"
+    },
+    "subject": "Add some kind of user management to the mod for online servers",
+    "description": "Similar to shrubbot there is a need to deal with users/custom commands/authentication/ levels & such.\r\n\r\n- shouldn't be file based (sqlite)\r\n- inspect if Lua is the way to go - see http://dev.kernwaffe.de/projects/noq\r\n\r\n\r\n",
+    "start_date": "2013-01-29",
+    "done_ratio": 100,
+    "created_on": "2013-01-29T11:29:00Z",
+    "updated_on": "2019-01-05T13:54:54Z",
+    "closed_on": "2019-01-05T13:54:54Z"
+}

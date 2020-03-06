@@ -1,0 +1,159 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 422,
+            "issue_id": 1270,
+            "issue_to_id": 986,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "b99bd97234743a538f538ba564eb29dde6f7aab0",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "qcommon: fixed Alt-Tab crash when console is open and command line empty, fixes #986",
+            "committed_on": "2017-02-01T19:28:58Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 6298,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "bq. qcommon/q_shared.c:1459:void Q_strncpyz(char *dest, const char *src, size_t destsize)\r\nqcommon/q_shared.c:1467:                Com_Error(ERR_FATAL, \"Q_strncpyz: NULL src\");\r\nqcommon/q_shared.c:1635:        Q_strncpyz(dest + l1, src, size - l1);\r\nqcommon/q_shared.h:703:void Q_strncpyz(char *dest, const char *src, size_t destsize);\r\n\r\nLine 1467 is a global error, not really helping here.\r\n \r\nWith a breakpoint and backtrace:\r\n\r\nbq.\r\n\r\n(gdb) bt\r\n#0  Q_strncpyz (dest=0x81e0498 <completionString> \"\", src=0x0, destsize=1024) at /home/remy/dev/etlegacy/src/qcommon/q_shared.c:1467\r\n#1  0x0808c3d3 in Field_CompleteCommand (cmd=0x9128740 <g_consoleField+12> \"\", doCommands=qtrue, doCvars=qtrue) at /home/remy/dev/etlegacy/src/qcommon/common.c:3762\r\n#2  0x0808ca7c in Field_AutoComplete (field=0x9128734 <g_consoleField>) at /home/remy/dev/etlegacy/src/qcommon/common.c:4018\r\n#3  0x0808c868 in Console_AutoComplete (field=0x9128734 <g_consoleField>, completionOffset=0x91234a0 <con+655432>) at /home/remy/dev/etlegacy/src/qcommon/common.c:3951\r\n#4  0x080e0917 in Console_Key (key=9) at /home/remy/dev/etlegacy/src/client/cl_keys.c:651\r\n#5  0x080e22d6 in CL_KeyEvent (key=9, down=qtrue, time=22336) at /home/remy/dev/etlegacy/src/client/cl_keys.c:1456\r\n#6  0x0808a20e in Com_EventLoop () at /home/remy/dev/etlegacy/src/qcommon/common.c:2503\r\n#7  0x0808ba52 in Com_Frame () at /home/remy/dev/etlegacy/src/qcommon/common.c:3353\r\n#8  0x081136a0 in Sys_GameLoop () at /home/remy/dev/etlegacy/src/sys/sys_main.c:967\r\n#9  0x081137e0 in main (argc=1, argv=0xffffd164) at /home/remy/dev/etlegacy/src/sys/sys_main.c:1074\r\n\r\nCommit of interest: https://github.com/etlegacy/etlegacy/commit/5b84ac0bd361dce5837c2fd591a298d97f511cc3\r\n",
+            "created_on": "2017-02-01T17:08:43Z",
+            "details": []
+        },
+        {
+            "id": 6300,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-02-01T18:13:47Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Alt-Tab sometimes crashed the game.\r\n\r\nHow to reproduce: no idea, just do a mixture of \"Alt-Tab\" and space, Maj, Ctrl (like checking weapon stats) until a crash occurs.\r\nThe crashlog contains this info: \"Q_strncpyz: NULL src\".\r\n\r\nMany \"unknown cmd minimize\" are printed in console when using Alt-Tab, but this seems unrelated to the crash - would still be great to fix it.\r\nThis _might_ be platform dependent issue, tested on Linux.\r\n\r\nbq. \r\nConnected to a pure server.\r\n[skipnotify]^1FIGHT!\r\n[skipnotify]unknown cmd minimize\r\n[skipnotify]unknown cmd minimize\r\n[skipnotify]unknown cmd minimize\r\n[skipnotify]^7(^o[BOT]^7Vokur^7)^3(^3^1Oasis Water Pump^3): ^5I'm constructing!\r\n[skipnotify]unknown cmd minimize\r\n[skipnotify]unknown cmd minimize\r\n^7^o[BOT]^7Milius^7^7 failed to spot ^7^o[BOT]^7Sean^7^7's Landmine\r\n^7^o[BOT]^7Stinger^7^7 failed to spot ^7^o[BOT]^7Sean^7^7's Landmine\r\n^7^o[BOT]^7Ryver^7^7 failed to spot ^7^o[BOT]^7Sean^7^7's Landmine\r\n[skipnotify]unknown cmd minimize\r\n^7^o[BOT]^7Halfbaked^7^7 was killed by ^7^o[BOT]^7Kaolin^7^7's Thompson\r\n^7^o[BOT]^7Mungri^7^7 was killed by ^7^o[BOT]^7Blackadder^7^7's MP 40\r\n[skipnotify]unknown cmd minimize\r\n^7^o[BOT]^7CraigChrist^7^7 failed to spot ^7^o[BOT]^7Bean^7^7's Landmine\r\n^7^o[BOT]^7Kaolin^7^7 failed to spot ^7^o[BOT]^7Bean^7^7's Landmine\r\n[skipnotify]unknown cmd minimize\r\n[skipnotify]unknown cmd minimize\r\n^7^o[BOT]^7Mungri^7^7 vaporized himself\r\n^7^o[BOT]^7Sean^7^7 was killed by ^7^o[BOT]^7Ryver^7^7's Thompson\r\n^7^o[BOT]^7Ryver^7^7 was killed by ^7^o[BOT]^7Brad^7^7's FG 42\r\n^7^o[BOT]^7Vokur^7^7 was killed by ^7^o[BOT]^7Blackadder^7^7's MP 40\r\n[skipnotify]^7(^o[BOT]^7Ryver^7)^3(^3^3Old City^3): ^5Hold your fire!\r\n^7^o[BOT]^7Milius^7^7 was killed by ^7^o[BOT]^7Nohope^7^7's MP 40\r\n^7^1:^7L^1|^7Spyhaw^1k^7^7 was killed by ^7^o[BOT]^7Bean^7^7's K43\r\n^7^o[BOT]^7Bean^7^7 was killed by ^7^o[BOT]^7Stinger^7^7's FG 42\r\n^7^o[BOT]^7CraigChrist^7^7 was shelled by ^7^o[BOT]^7Nohope^7^7's artillery support\r\n^7^o[BOT]^7Stinger^7^7 failed to spot ^7^o[BOT]^7Bean^7^7's Landmine\r\n[skipnotify]unknown cmd minimize\r\n----- CL_Shutdown -----\r\nSys_LoadGameDll -> FS_CL_ExtractFromPakFile(/home/remy/.etlegacy, legacy, ui.mp.i386.so)\r\nSys_LoadDll(./legacy/ui.mp.i386.so)... failed: \"Failed loading ./legacy/ui.mp.i386.so: ./legacy/ui.mp.i386.so: cannot open shared object file: No such file or directory\"\r\nSys_LoadDll(/home/remy/.etlegacy/legacy/ui.mp.i386.so)... succeeded\r\nSys_LoadDll(legacy/ui) found vmMain function at 0x6aa78900\r\nInitializing Legacy ui v2.75-451-g60a2323f\r\n145 UI cvars in use.\r\nTotal favourite servers restored: 2\r\nClosing SDL audio device...\r\nSDL audio device shut down.\r\nRE_Shutdown( 1 )\r\nSDL input devices shut down.\r\n-----------------------\r\n----- Server Shutdown -----\r\n==== ShutdownGame (0 - oasis) ====\r\n^2<EndGame>\r\n^2-- Script System Info --\r\n^2Current Memory Usage 3.61193 MB\r\n^2Soft Memory Usage 4.81677 MB\r\n^2Hard Memory Limit 5.35197 MB\r\n^2System Memory Usage 2.21348 MB\r\n^2Full Collects 2\r\n^2Inc Collects 1\r\n^2GC Warnings 0\r\n^2Threads: 1, 0 Running, 0 Blocked, 1 Sleeping\r\n^2ShutdownOmniBot\r\n---------------------------\r\nPID file removed.\r\nSQLite3 can't close database - not active.\r\nQ_strncpyz: NULL src",
+                    "new_value": "Alt-Tab sometimes crashed the game.\r\n\r\nHow to reproduce: Open console, then press Alt-Tab.\r\nThe crashlog contains this info: \"Q_strncpyz: NULL src\".\r\n\r\nMany \"unknown cmd minimize\" are printed in console when using Alt-Tab, but this seems unrelated to the crash - would still be great to fix it.\r\nThis _might_ be platform dependent issue, tested on Linux.\r\n\r\nbq. \r\nConnected to a pure server.\r\n[skipnotify]^1FIGHT!\r\n[skipnotify]unknown cmd minimize\r\n[skipnotify]unknown cmd minimize\r\n[skipnotify]unknown cmd minimize\r\n[skipnotify]^7(^o[BOT]^7Vokur^7)^3(^3^1Oasis Water Pump^3): ^5I'm constructing!\r\n[skipnotify]unknown cmd minimize\r\n[skipnotify]unknown cmd minimize\r\n^7^o[BOT]^7Milius^7^7 failed to spot ^7^o[BOT]^7Sean^7^7's Landmine\r\n^7^o[BOT]^7Stinger^7^7 failed to spot ^7^o[BOT]^7Sean^7^7's Landmine\r\n^7^o[BOT]^7Ryver^7^7 failed to spot ^7^o[BOT]^7Sean^7^7's Landmine\r\n[skipnotify]unknown cmd minimize\r\n^7^o[BOT]^7Halfbaked^7^7 was killed by ^7^o[BOT]^7Kaolin^7^7's Thompson\r\n^7^o[BOT]^7Mungri^7^7 was killed by ^7^o[BOT]^7Blackadder^7^7's MP 40\r\n[skipnotify]unknown cmd minimize\r\n^7^o[BOT]^7CraigChrist^7^7 failed to spot ^7^o[BOT]^7Bean^7^7's Landmine\r\n^7^o[BOT]^7Kaolin^7^7 failed to spot ^7^o[BOT]^7Bean^7^7's Landmine\r\n[skipnotify]unknown cmd minimize\r\n[skipnotify]unknown cmd minimize\r\n^7^o[BOT]^7Mungri^7^7 vaporized himself\r\n^7^o[BOT]^7Sean^7^7 was killed by ^7^o[BOT]^7Ryver^7^7's Thompson\r\n^7^o[BOT]^7Ryver^7^7 was killed by ^7^o[BOT]^7Brad^7^7's FG 42\r\n^7^o[BOT]^7Vokur^7^7 was killed by ^7^o[BOT]^7Blackadder^7^7's MP 40\r\n[skipnotify]^7(^o[BOT]^7Ryver^7)^3(^3^3Old City^3): ^5Hold your fire!\r\n^7^o[BOT]^7Milius^7^7 was killed by ^7^o[BOT]^7Nohope^7^7's MP 40\r\n^7^1:^7L^1|^7Spyhaw^1k^7^7 was killed by ^7^o[BOT]^7Bean^7^7's K43\r\n^7^o[BOT]^7Bean^7^7 was killed by ^7^o[BOT]^7Stinger^7^7's FG 42\r\n^7^o[BOT]^7CraigChrist^7^7 was shelled by ^7^o[BOT]^7Nohope^7^7's artillery support\r\n^7^o[BOT]^7Stinger^7^7 failed to spot ^7^o[BOT]^7Bean^7^7's Landmine\r\n[skipnotify]unknown cmd minimize\r\n----- CL_Shutdown -----\r\nSys_LoadGameDll -> FS_CL_ExtractFromPakFile(/home/remy/.etlegacy, legacy, ui.mp.i386.so)\r\nSys_LoadDll(./legacy/ui.mp.i386.so)... failed: \"Failed loading ./legacy/ui.mp.i386.so: ./legacy/ui.mp.i386.so: cannot open shared object file: No such file or directory\"\r\nSys_LoadDll(/home/remy/.etlegacy/legacy/ui.mp.i386.so)... succeeded\r\nSys_LoadDll(legacy/ui) found vmMain function at 0x6aa78900\r\nInitializing Legacy ui v2.75-451-g60a2323f\r\n145 UI cvars in use.\r\nTotal favourite servers restored: 2\r\nClosing SDL audio device...\r\nSDL audio device shut down.\r\nRE_Shutdown( 1 )\r\nSDL input devices shut down.\r\n-----------------------\r\n----- Server Shutdown -----\r\n==== ShutdownGame (0 - oasis) ====\r\n^2<EndGame>\r\n^2-- Script System Info --\r\n^2Current Memory Usage 3.61193 MB\r\n^2Soft Memory Usage 4.81677 MB\r\n^2Hard Memory Limit 5.35197 MB\r\n^2System Memory Usage 2.21348 MB\r\n^2Full Collects 2\r\n^2Inc Collects 1\r\n^2GC Warnings 0\r\n^2Threads: 1, 0 Running, 0 Blocked, 1 Sleeping\r\n^2ShutdownOmniBot\r\n---------------------------\r\nPID file removed.\r\nSQLite3 can't close database - not active.\r\nQ_strncpyz: NULL src"
+                }
+            ]
+        },
+        {
+            "id": 6301,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:b99bd97234743a538f538ba564eb29dde6f7aab0.",
+            "created_on": "2017-02-01T19:45:55Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 6302,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "This is a Linux specific bug.",
+            "created_on": "2017-02-01T19:46:33Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "old_value": "",
+                    "new_value": "Linux"
+                }
+            ]
+        },
+        {
+            "id": 8081,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2019-04-30T12:02:28Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1270"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 986,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 7,
+        "name": "Immediate"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Alt-Tab crash",
+    "description": "Alt-Tab sometimes crashed the game.\r\n\r\nHow to reproduce: Open console, then press Alt-Tab.\r\nThe crashlog contains this info: \"Q_strncpyz: NULL src\".\r\n\r\nMany \"unknown cmd minimize\" are printed in console when using Alt-Tab, but this seems unrelated to the crash - would still be great to fix it.\r\nThis _might_ be platform dependent issue, tested on Linux.\r\n\r\nbq. \r\nConnected to a pure server.\r\n[skipnotify]^1FIGHT!\r\n[skipnotify]unknown cmd minimize\r\n[skipnotify]unknown cmd minimize\r\n[skipnotify]unknown cmd minimize\r\n[skipnotify]^7(^o[BOT]^7Vokur^7)^3(^3^1Oasis Water Pump^3): ^5I'm constructing!\r\n[skipnotify]unknown cmd minimize\r\n[skipnotify]unknown cmd minimize\r\n^7^o[BOT]^7Milius^7^7 failed to spot ^7^o[BOT]^7Sean^7^7's Landmine\r\n^7^o[BOT]^7Stinger^7^7 failed to spot ^7^o[BOT]^7Sean^7^7's Landmine\r\n^7^o[BOT]^7Ryver^7^7 failed to spot ^7^o[BOT]^7Sean^7^7's Landmine\r\n[skipnotify]unknown cmd minimize\r\n^7^o[BOT]^7Halfbaked^7^7 was killed by ^7^o[BOT]^7Kaolin^7^7's Thompson\r\n^7^o[BOT]^7Mungri^7^7 was killed by ^7^o[BOT]^7Blackadder^7^7's MP 40\r\n[skipnotify]unknown cmd minimize\r\n^7^o[BOT]^7CraigChrist^7^7 failed to spot ^7^o[BOT]^7Bean^7^7's Landmine\r\n^7^o[BOT]^7Kaolin^7^7 failed to spot ^7^o[BOT]^7Bean^7^7's Landmine\r\n[skipnotify]unknown cmd minimize\r\n[skipnotify]unknown cmd minimize\r\n^7^o[BOT]^7Mungri^7^7 vaporized himself\r\n^7^o[BOT]^7Sean^7^7 was killed by ^7^o[BOT]^7Ryver^7^7's Thompson\r\n^7^o[BOT]^7Ryver^7^7 was killed by ^7^o[BOT]^7Brad^7^7's FG 42\r\n^7^o[BOT]^7Vokur^7^7 was killed by ^7^o[BOT]^7Blackadder^7^7's MP 40\r\n[skipnotify]^7(^o[BOT]^7Ryver^7)^3(^3^3Old City^3): ^5Hold your fire!\r\n^7^o[BOT]^7Milius^7^7 was killed by ^7^o[BOT]^7Nohope^7^7's MP 40\r\n^7^1:^7L^1|^7Spyhaw^1k^7^7 was killed by ^7^o[BOT]^7Bean^7^7's K43\r\n^7^o[BOT]^7Bean^7^7 was killed by ^7^o[BOT]^7Stinger^7^7's FG 42\r\n^7^o[BOT]^7CraigChrist^7^7 was shelled by ^7^o[BOT]^7Nohope^7^7's artillery support\r\n^7^o[BOT]^7Stinger^7^7 failed to spot ^7^o[BOT]^7Bean^7^7's Landmine\r\n[skipnotify]unknown cmd minimize\r\n----- CL_Shutdown -----\r\nSys_LoadGameDll -> FS_CL_ExtractFromPakFile(/home/remy/.etlegacy, legacy, ui.mp.i386.so)\r\nSys_LoadDll(./legacy/ui.mp.i386.so)... failed: \"Failed loading ./legacy/ui.mp.i386.so: ./legacy/ui.mp.i386.so: cannot open shared object file: No such file or directory\"\r\nSys_LoadDll(/home/remy/.etlegacy/legacy/ui.mp.i386.so)... succeeded\r\nSys_LoadDll(legacy/ui) found vmMain function at 0x6aa78900\r\nInitializing Legacy ui v2.75-451-g60a2323f\r\n145 UI cvars in use.\r\nTotal favourite servers restored: 2\r\nClosing SDL audio device...\r\nSDL audio device shut down.\r\nRE_Shutdown( 1 )\r\nSDL input devices shut down.\r\n-----------------------\r\n----- Server Shutdown -----\r\n==== ShutdownGame (0 - oasis) ====\r\n^2<EndGame>\r\n^2-- Script System Info --\r\n^2Current Memory Usage 3.61193 MB\r\n^2Soft Memory Usage 4.81677 MB\r\n^2Hard Memory Limit 5.35197 MB\r\n^2System Memory Usage 2.21348 MB\r\n^2Full Collects 2\r\n^2Inc Collects 1\r\n^2GC Warnings 0\r\n^2Threads: 1, 0 Running, 0 Blocked, 1 Sleeping\r\n^2ShutdownOmniBot\r\n---------------------------\r\nPID file removed.\r\nSQLite3 can't close database - not active.\r\nQ_strncpyz: NULL src",
+    "start_date": "2017-02-01",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-02-01T10:38:54Z",
+    "updated_on": "2017-02-01T19:46:33Z",
+    "closed_on": "2017-02-01T19:45:55Z"
+}

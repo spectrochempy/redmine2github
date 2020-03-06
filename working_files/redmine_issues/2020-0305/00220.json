@@ -1,0 +1,215 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 65,
+            "issue_id": 220,
+            "issue_to_id": 56,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "f8a860200087aa2988686ee4ace1676601e49605",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "ui: fixed gamma cvar refs #220",
+            "committed_on": "2013-02-27T12:14:09Z"
+        },
+        {
+            "revision": "11a1b80a4680ac5ac833d129a26f65da97b907ac",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "client: reset gamma back to it's original value when not saved, fixes #220",
+            "committed_on": "2013-10-18T21:46:25Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1233,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "",
+            "created_on": "2013-02-27T12:16:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                },
+                {
+                    "property": "attr",
+                    "name": "estimated_hours",
+                    "new_value": "0.05"
+                }
+            ]
+        },
+        {
+            "id": 1234,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I have to open this again .... We have several issues like this. In the menus ui_X_SYSTEMAVAR is set but this gets only active for the X_SYSTEMAVAR when \r\nuiScript systemCvarsApply is called - see ui_main.c 5517/ text search 'ui_r_gamma'.\r\n\r\nOther example: Slider for brighness/gamma in create profile menu. Changing the value hasn't got any visible effect because ui_r_gamma is used instead of r_gamma.\r\n\r\nThis info might stop some confusion about r_gamma #56\r\n",
+            "created_on": "2013-02-27T13:01:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 1907,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-09-05T20:54:40Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "13",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 1966,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-09-19T16:45:18Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "When gamma value is changed via source:etmain/ui/options_graphics.menu, it is saved when the BACK button is clicked, but not when the APPLY button is clicked.",
+                    "new_value": "When gamma value is changed via source:etmain/ui/options_graphics.menu, it is saved when the BACK button is clicked, but not when the APPLY button is clicked.\r\n\r\nAlso, gamma changes to the default value (1.3) about 1 second after game start. It is set to the correct value when changed in console or when joining/starting a new game."
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "7",
+                    "new_value": "9"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "10"
+                }
+            ]
+        },
+        {
+            "id": 2115,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Applied in changeset commit:11a1b80a4680ac5ac833d129a26f65da97b907ac.",
+            "created_on": "2013-10-18T21:53:23Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "10",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 1,
+            "name": "Radegast"
+        },
+        {
+            "id": 13,
+            "name": "RaFaL"
+        },
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 220,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "assigned_to": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 15,
+        "name": "Mod UI"
+    },
+    "fixed_version": {
+        "id": 9,
+        "name": "2.71rc3"
+    },
+    "subject": "Gamma value is not saved when changed via Graphics options menu",
+    "description": "When gamma value is changed via source:etmain/ui/options_graphics.menu, it is saved when the BACK button is clicked, but not when the APPLY button is clicked.\r\n\r\nAlso, gamma changes to the default value (1.3) about 1 second after game start. It is set to the correct value when changed in console or when joining/starting a new game.",
+    "start_date": "2013-02-27",
+    "done_ratio": 100,
+    "estimated_hours": 0.05,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-02-27T00:16:47Z",
+    "updated_on": "2013-10-18T21:53:23Z",
+    "closed_on": "2013-10-18T21:53:23Z"
+}

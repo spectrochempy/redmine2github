@@ -1,0 +1,150 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "af0d31c48db0fce0d4e0a03871bb398ca49b66e8",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: always precache fx sounds, start to fix of announcer sounds refs\n#99",
+            "committed_on": "2012-11-07T16:19:28Z"
+        },
+        {
+            "revision": "b515ad6849eb9ea5406a8e1599200216567c49df",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: localisations clean-up and adds refs #132 announcer sounds refs\n#99",
+            "committed_on": "2012-11-24T14:13:45Z"
+        },
+        {
+            "revision": "102ca13f1f440f3fe5452bdf1752e982a70f0a86",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: announcer sounds refs #99 refs #89",
+            "committed_on": "2012-11-25T22:51:03Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 463,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "- prepare\r\n- fight\r\n- goat",
+            "created_on": "2012-11-07T16:28:43Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Fix the fight sound at start",
+                    "new_value": "Fix announcer sounds"
+                }
+            ]
+        },
+        {
+            "id": 478,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-11-11T13:08:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 642,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-11-25T23:03:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 99,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 5,
+        "name": "2.71rc1"
+    },
+    "subject": "Fix announcer sounds",
+    "description": "Code is not finished ...",
+    "start_date": "2012-11-03",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-11-03T16:57:52Z",
+    "updated_on": "2012-11-25T23:03:07Z",
+    "closed_on": "2012-11-25T23:03:07Z"
+}

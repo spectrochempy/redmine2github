@@ -1,0 +1,87 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 8391,
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "notes": "",
+            "created_on": "2019-07-13T11:49:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "16"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "505"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "22"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1325,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 505,
+        "name": "ryven"
+    },
+    "assigned_to": {
+        "id": 505,
+        "name": "ryven"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Make complaint popup less intrusive",
+    "description": "As was suggested in discord, instead of displaying full complaint popup, display `REPORT (F1)` string, and upon pressing F1 (or any other `voteyes` bind), it would display the full complaint popup. This way it's easier to ignore it, and you are still able to act when necessary. This can be implemented as a new `cg_complaintPopUp` value.",
+    "start_date": "2019-07-13",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-07-13T11:48:21Z",
+    "updated_on": "2019-07-13T11:49:08Z"
+}

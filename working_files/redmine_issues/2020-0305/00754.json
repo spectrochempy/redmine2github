@@ -1,0 +1,74 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 4306,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-01-07T13:57:14Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "16",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 754,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Legacy mod's etconfig.cfg gets affected by other mods",
+    "description": "So basically how does this work:\r\n\r\nYou have etconfig.cfg in legacy mod folder, alright.\r\nBut the things take a bad turn right after you play in any other mod.\r\nWhen you play in another mod, it will take all the CVARs from that specific mod and put them into legacy mod's etconfig.cfg.\r\nSo in my opinion if there are any mod specific CVARs it should keep them for the mod itself and not put them into the legacy etconfig.cfg or any other. Every mod should have its own etconfig.cfg to work with.\r\n\r\n-*S",
+    "start_date": "2015-01-03",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-01-02T23:38:53Z",
+    "updated_on": "2015-01-07T13:57:14Z"
+}

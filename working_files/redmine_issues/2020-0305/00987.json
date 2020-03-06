@@ -1,0 +1,243 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 414,
+            "issue_id": 1243,
+            "issue_to_id": 987,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 6292,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Note this might be related to the MSG_WriteBits issue that has been fixed in master already.",
+            "created_on": "2017-02-01T10:55:49Z",
+            "details": []
+        },
+        {
+            "id": 6295,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Spyhawk wrote:\r\n> Note this might be related to the MSG_WriteBits issue that has been fixed in master already.\r\n\r\nNot sure about this. Basically the given error message tells us we are out of memory in Z - allocating memory fails. We did fix tons of leaks and I think we should update our server to master. Let's use latest code ...\r\n",
+            "created_on": "2017-02-01T14:40:52Z",
+            "details": []
+        },
+        {
+            "id": 6332,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Sever had been updated. Let's see if it crashes again.",
+            "created_on": "2017-02-06T10:54:35Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 7356,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-12-21T13:08:10Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "8"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "10"
+                }
+            ]
+        },
+        {
+            "id": 7513,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-01-06T08:20:12Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 7790,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-02-14T12:06:41Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "22",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 7993,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-19T09:44:44Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1243"
+                }
+            ]
+        },
+        {
+            "id": 8502,
+            "user": {
+                "id": 372,
+                "name": "Ododo"
+            },
+            "notes": "A file descriptor for etl.db  seems to be created on each map load, without closing the previous. (see attachment)\r\nSo maybe the system has reached a limit as the errno 24 on mapvoteinfo.txt suggest.\r\n\r\n\r\nEDIT: sorry wanted to answer to #1243\r\n",
+            "created_on": "2019-10-23T04:57:19Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "1146",
+                    "new_value": "etlded-fds.txt"
+                }
+            ]
+        },
+        {
+            "id": 8505,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-10-27T11:44:19Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8550,
+            "user": {
+                "id": 40,
+                "name": "hellreturn"
+            },
+            "notes": "Had similar crash today. \r\n\r\nPlayers: 40 appx\r\nETL Server: Current release\r\nMod: silent mod\r\nMap: ET Beach \r\n\r\nError before crash - \r\nZ_Malloc: failed on allocation of 33856 bytes from the main zone. \r\n\r\n\r\n",
+            "created_on": "2019-11-25T19:53:38Z",
+            "details": []
+        },
+        {
+            "id": 8551,
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "notes": "Are you using official 2.76 build, or making one yourself from the master?\r\nBut thanks for the report, these issues being slowly investigated.",
+            "created_on": "2019-11-25T20:00:08Z",
+            "details": []
+        },
+        {
+            "id": 8552,
+            "user": {
+                "id": 40,
+                "name": "hellreturn"
+            },
+            "notes": "ryven wrote:\r\n> Are you using official 2.76 build, or making one yourself from the master?\r\n> But thanks for the report, these issues being slowly investigated.\r\n\r\n2.76 build. All our ETL servers (Windows + Linux) are on official 2.76 build as of now. ",
+            "created_on": "2019-11-25T23:35:31Z",
+            "details": []
+        }
+    ],
+    "watchers": [
+        {
+            "id": 40,
+            "name": "hellreturn"
+        }
+    ],
+    "time_entries": null,
+    "id": 987,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 4,
+        "name": "Feedback"
+    },
+    "priority": {
+        "id": 7,
+        "name": "Immediate"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 5,
+        "name": "Server"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Server crash",
+    "description": "Server randomly crashes after being left alone for a few days (etlegacy.com). This happened a couple of time already.\r\n\r\nbq. Userinfo: \\name\\^o[BOT]^7Royen\\rate\\25000\\snaps\\20\\ip\\localhost\\cl_guid\\OMNIBOT1200000000000000000000000\r\nClientUserinfoChanged: 12 n\\^o[BOT]^7Royen\\t\\2\\c\\3\\lc\\3\\r\\0\\m\\0000000\\s\\0000000\\dn\\\\dr\\0\\w\\8\\lw\\8\\sw\\7\\mu\\0\\ref\\0\\u\\0\r\nUserinfo: \\name\\^o[BOT]^7Merki\\rate\\25000\\snaps\\20\\ip\\localhost\\cl_guid\\OMNIBOT1400000000000000000000000\r\nClientUserinfoChanged: 14 n\\^o[BOT]^7Merki\\t\\2\\c\\1\\lc\\1\\r\\0\\m\\0000000\\s\\0000000\\dn\\\\dr\\0\\w\\8\\lw\\8\\sw\\7\\mu\\0\\ref\\0\\u\\0\r\nvoice: ^o[BOT]^7Beelz Medic\r\nKill: 6 5 8: ^o[BOT]^7Halfwit killed ^o[BOT]^7Beelz by MOD_MP40\r\n----- Server Shutdown -----\r\nSending heartbeat to etmaster.idsoftware.com\r\nSending heartbeat to master.etlegacy.com\r\n==== ShutdownGame (0 - venice) ====\r\n^2<EndGame>\r\n^2-- Script System Info --\r\n^2Current Memory Usage 3.6894 MB\r\n^2Soft Memory Usage 4.80334 MB\r\n^2Hard Memory Limit 5.33704 MB\r\n^2System Memory Usage 2.90606 MB\r\n^2Full Collects 3\r\n^2Inc Collects 1\r\n^2GC Warnings 0\r\n^2Threads: 4, 3 Running, 0 Blocked, 1 Sleeping\r\n^2ShutdownOmniBot\r\nShutdownGame:\r\n------------------------------------------------------------\r\n---------------------------\r\nZ_Malloc: failed on allocation of 33912 bytes from the main zone: /media/sf_legacy/lnxetlegacy64/src/server/sv_net_chan.c, line: 265 (sizeof(netchan_buffer_t))\r\n",
+    "start_date": "2017-02-01",
+    "done_ratio": 10,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-02-01T10:43:58Z",
+    "updated_on": "2019-11-25T23:35:31Z"
+}

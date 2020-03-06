@@ -1,0 +1,125 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 3539,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "It's been discussed before on IRC, but imho dynamite and landmines are two different cases: landmine can't be armed everywhere due to world's limitations, while dynamite can't be armed near a friendly objective (but an enemy could still arm your dynamite).\r\n\r\nThus, I don't see any reason why the charge bar should be replenished when a dynamite is used, armed or not.",
+            "created_on": "2014-10-12T09:29:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "16",
+                    "new_value": "21"
+                }
+            ]
+        },
+        {
+            "id": 3541,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Spyhawk wrote:\r\n> Thus, I don't see any reason why the charge bar should be replenished when a dynamite is used, armed or not.\r\nI'm thinking the same.\r\n\r\nSpyhawk (IRC) wrote:\r\n>If an engi wants to blow up his own objectives, he should be punished.\r\nI don't know if it's possible in all mods but some engineers want to protect the objective by dynamite. I hate this - several times I did protect the objective I got killed by team dynamite. Warbell construction on top of the roof is best example so yes - he/she should be punished :)\r\n\r\nI don't think we should spend gimmicks for stupidness - each experienced engineer knows planting/arming defuses the chargebar. Let's close this issue.",
+            "created_on": "2014-10-12T10:48:49Z",
+            "details": []
+        },
+        {
+            "id": 3552,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-10-18T20:03:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3569,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-10-22T17:09:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 597,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "If trying to plant dynamite on friendly objective you should get filled chargebar",
+    "description": "I got an example here. When you try to plant landmines on places where you can't it will fill your chargebar when you try to arm them. Also the landmine will disappear during the progress. But in dynamite's case, there's not this feature. Instead of giving back your charge into chargebar it let's it be at the state when you threw the dynamite. So my suggestion is clear, when you try to plant dynamite at your own objective, your dynamite will disappear (as it does now) + you will get your chargebar filled again.\r\n\r\n-*S",
+    "start_date": "2014-10-10",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-10-10T15:18:21Z",
+    "updated_on": "2014-10-22T17:09:29Z",
+    "closed_on": "2014-10-18T20:03:44Z"
+}

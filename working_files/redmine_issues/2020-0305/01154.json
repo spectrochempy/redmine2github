@@ -1,0 +1,166 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 371,
+            "issue_id": 1154,
+            "issue_to_id": 594,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 372,
+            "issue_id": 1154,
+            "issue_to_id": 678,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 427,
+            "issue_id": 1159,
+            "issue_to_id": 1154,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7419,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Last time I looked at panzerhack, it caused much more issues related to weapon slots and weapon pickup (for soldier lvl 4) than I was ready to deal with. Not worth the hassle. Related to #594, #678.",
+            "created_on": "2018-12-26T21:22:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "1",
+                    "new_value": "16"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 7420,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-12-26T21:22:25Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "594"
+                }
+            ]
+        },
+        {
+            "id": 7422,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-12-26T21:22:34Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "678"
+                }
+            ]
+        },
+        {
+            "id": 7444,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-12-28T01:05:01Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 8160,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-05-09T18:15:53Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1159"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1154,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 110,
+        "name": "Harlekin"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "b_panzerhack: level 4 heavy weapons moved smg to weaponbank 2",
+    "description": "b_panzerhack 1 if set to 1, the secondary MP40/Thompson (for a soldier with level 4 heavy weapons) is moved to weaponbank 2\r\n\r\nThis makes it much easier to get the right weapon after someone used knife/grenade as soldier. Else it's just luck to have smg or heavy weapon...",
+    "start_date": "2018-12-26",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2018-12-26T19:59:52Z",
+    "updated_on": "2018-12-28T01:05:01Z"
+}

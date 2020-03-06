@@ -1,0 +1,91 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "6bc21ddeaa653ace74be3d004e7532f6f035da15",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "general: removed curses support, fixes #1311",
+            "committed_on": "2019-06-29T17:01:37Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 8346,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:6bc21ddeaa653ace74be3d004e7532f6f035da15.",
+            "created_on": "2019-06-29T18:03:19Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1311,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Remove curse support",
+    "description": "Curse support is actually broken, and only useful to add input command line to the console (afaik).\r\nLinux/mac console already can do that, and powershell on windows can do the same too.\r\n\r\nRemove curse support entirely. It's not worth fixing and basically deprecated.",
+    "start_date": "2019-06-25",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-06-25T18:36:20Z",
+    "updated_on": "2019-06-29T18:03:19Z",
+    "closed_on": "2019-06-29T18:03:19Z"
+}

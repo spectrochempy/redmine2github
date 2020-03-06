@@ -1,0 +1,182 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 417,
+            "issue_id": 1170,
+            "issue_to_id": 1183,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7631,
+            "user": {
+                "id": 110,
+                "name": "Harlekin"
+            },
+            "notes": "",
+            "created_on": "2019-01-20T20:49:56Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "broken nextmap command",
+                    "new_value": "broken nextmap command in gametype 4"
+                }
+            ]
+        },
+        {
+            "id": 7632,
+            "user": {
+                "id": 110,
+                "name": "Harlekin"
+            },
+            "notes": "nextmap responds\r\n\"nextmap\" is: \"map_restart 0\" default:\"\"\r\n\r\nsimple workaround: set nextmap \"timelimit 0.000001\"\r\nworks only after warmup.... at least it does not break gametype anymore",
+            "created_on": "2019-01-20T21:03:16Z",
+            "details": []
+        },
+        {
+            "id": 7633,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-01-20T21:07:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "7"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 7636,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I think this issue is because of G_configSet calls.\r\n\r\nThere is:\r\n\r\n<pre>\r\n\tif (!level.config.publicConfig && g_gamestate.integer == GS_WARMUP_COUNTDOWN)\r\n\t{\r\n\t\tlevel.lastRestartTime = (qboolean)level.time;\r\n\t\ttrap_SendConsoleCommand(EXEC_APPEND, va(\"map_restart 0 %i\\n\", GS_WARMUP));\r\n\t}\r\n\telse\r\n\t{\r\n\t\ttrap_SendConsoleCommand(EXEC_APPEND, va(\"map_restart 0 %i\\n\", GS_WARMUP));\r\n\t}\r\n</pre>\r\n\r\nI",
+            "created_on": "2019-01-21T09:13:21Z",
+            "details": []
+        },
+        {
+            "id": 8017,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-21T14:51:30Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "854"
+                }
+            ]
+        },
+        {
+            "id": 8019,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-21T14:51:58Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1170"
+                }
+            ]
+        },
+        {
+            "id": 8021,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-21T14:52:35Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "old_value": "854"
+                }
+            ]
+        },
+        {
+            "id": 8417,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Voting to change map/campaign might also not work due to the very same issue.",
+            "created_on": "2019-07-20T10:35:40Z",
+            "details": []
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1183,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 7,
+        "name": "Immediate"
+    },
+    "author": {
+        "id": 110,
+        "name": "Harlekin"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "broken nextmap command in gametype 4",
+    "description": "If the server is in campaign mode and the nextmap command is executed (vstr nextmap/same if nextmap is executed via wolfadmin), the map just restarts and server gets into gametype 2",
+    "start_date": "2019-01-20",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-01-20T20:47:03Z",
+    "updated_on": "2019-07-20T10:35:40Z"
+}

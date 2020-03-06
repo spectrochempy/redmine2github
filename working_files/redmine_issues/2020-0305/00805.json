@@ -1,0 +1,200 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "b6ac1c565924b9ff7b64181c876e296a9f77c477",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: added popup filter cvar, refs #805",
+            "committed_on": "2019-05-04T14:46:04Z"
+        },
+        {
+            "revision": "5d0857b5c54e04a8e7a9d8a859d89d75b030ba85",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: added popup filter options, refs #805",
+            "committed_on": "2019-05-04T15:28:08Z"
+        },
+        {
+            "revision": "d5914098d881fe64534f5e1641923cc3d34c12db",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: fixed weapon pickup filter and cleanup, refs #805",
+            "committed_on": "2019-05-04T17:49:23Z"
+        },
+        {
+            "revision": "cf253873b9d45aa03fb0ca4b3d2138abfc7204b8",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: added popup filter for promotion upgrades, refs #805",
+            "committed_on": "2019-05-18T12:05:31Z"
+        },
+        {
+            "revision": "cfefb807dbe26dd5f4032bd008167c81b12b45ac",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: added promotion popup filter options, refs #805",
+            "committed_on": "2019-05-18T12:11:19Z"
+        },
+        {
+            "revision": "59f5c20767c284da401d6e2254811a0494db0e6a",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed missing break, refs #805",
+            "committed_on": "2019-05-23T10:48:21Z"
+        },
+        {
+            "revision": "8b449b27d81277dda292ab5f739df84c9cc3890e",
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "comments": "cgame: fix cg_popupBigFilter had inverse behavior",
+            "committed_on": "2019-08-07T16:58:55Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 4530,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-01-31T14:18:14Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "add obituaries icons filter",
+                    "new_value": "add obituaries/popup filter"
+                },
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Add an option to filter out the various kind of obituaries icons:\r\n- kills\r\n- accidental selfkill (MOD_WATER, MOD_CRUSH)\r\n- picked up items\r\n- objectives\r\n\r\nThis could help players to focus on more on objectives related tasks.",
+                    "new_value": "Add an option to filter out the various kind of obituaries popup messages:\r\n- kills (made by enemy/team/selfkill//made by yourself/kill involving yourself/)\r\n- picked up items\r\n- objectives\r\n- connect\r\n- teamjoin\r\n- mapinfo\r\n\r\nThis could help players to focus on more on objectives related tasks."
+                }
+            ]
+        },
+        {
+            "id": 8114,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-05-03T21:05:48Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8115,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Cvar in NQ is `cg_popUpMessageFilter`:\r\n\r\n  0     Filter disabled\r\n  1     Filter out objective messages (planted at ..., capture flags, etc.)\r\n  2     Filter out pick-up messages (Picked up a health/ammo packs, weapons)\r\n  4     Filter out team joining messages\r\n  8     Filter out player connect/disconnect messages\r\n  16   Filter out all map script messages (command post constructed, tank damaged, etc.)\r\n  32   Filter out all obituaries caused by the enemy team\r\n  64   Filter out all obituaries caused by your own team\r\n  128 Filter out all obituaries for self kills (of all players)\r\n  256 Do NOT filter out death/kill messages\r\n\r\nSee if all of these are worth implementing separately or not. Add cvar in UI too, with a few predefined but useful options (f.e. \"All\", \"obj only\", \"Kill and connect\" etc.). Filter console output too (?).",
+            "created_on": "2019-05-03T23:11:49Z",
+            "details": []
+        },
+        {
+            "id": 8120,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-05-04T17:59:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 805,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "add obituaries/popup filter",
+    "description": "Add an option to filter out the various kind of obituaries popup messages:\r\n- kills (made by enemy/team/selfkill//made by yourself/kill involving yourself/)\r\n- picked up items\r\n- objectives\r\n- connect\r\n- teamjoin\r\n- mapinfo\r\n\r\nThis could help players to focus on more on objectives related tasks.",
+    "start_date": "2015-01-31",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-01-31T13:46:42Z",
+    "updated_on": "2019-05-04T17:59:24Z",
+    "closed_on": "2019-05-04T17:59:24Z"
+}

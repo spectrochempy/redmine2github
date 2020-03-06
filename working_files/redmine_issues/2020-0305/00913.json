@@ -1,0 +1,146 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 273,
+            "issue_id": 278,
+            "issue_to_id": 913,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 5732,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "",
+            "created_on": "2015-12-30T20:36:20Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "278"
+                }
+            ]
+        },
+        {
+            "id": 5734,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "This is a useless ticket since the client can play the server demos just fine. The process starts a local server that actually plays back the demo for the client, but this is the same process as you playing a map with bots locally.",
+            "created_on": "2015-12-30T20:40:34Z",
+            "details": []
+        },
+        {
+            "id": 5735,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "You're right, appropriate commands are also available within the client but I couldn't get them to work. I tried to test two demos but neither worked.\r\n\r\nHere are my demo files:\r\nhttps://dl.dropboxusercontent.com/u/19256625/nq1.sv_84 (map: supply, mod: nq 1.2.9)\r\nhttps://dl.dropboxusercontent.com/u/19256625/silent1.sv_84 (map: adlernest_2, mod: silent 0.9.0)\r\n\r\nWhen I start the first one (sv_demo nq1) I'm just being connected to an empty local server. However, when I start the second one, my ET:L client crashes to the desktop. I'm on Win 10.",
+            "created_on": "2015-12-30T21:15:14Z",
+            "details": []
+        },
+        {
+            "id": 5736,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "So suprisingly some one has broken it, as it did work, but it always was just my testing stuff.",
+            "created_on": "2015-12-30T22:13:11Z",
+            "details": []
+        },
+        {
+            "id": 5737,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Changing the ticket as its original request was invalid.",
+            "created_on": "2015-12-31T01:32:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "tracker_id",
+                    "old_value": "2",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Let clients play server recorded demos",
+                    "new_value": "Add menu(s) for controlling sv demos playback"
+                },
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Would be nice to have a possibility to play server recorded demos on the client.\r\n\r\nCurrently, only server can play such demos (file format is .sv_84)",
+                    "new_value": "Add appropriate interface for sv demos playback in client menus (like Replays for dm_84)."
+                },
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "1",
+                    "new_value": "15"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 913,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 35,
+        "name": "Dragonji"
+    },
+    "category": {
+        "id": 15,
+        "name": "Mod UI"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Add menu(s) for controlling sv demos playback",
+    "description": "Add appropriate interface for sv demos playback in client menus (like Replays for dm_84).",
+    "start_date": "2015-12-30",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-12-30T20:34:06Z",
+    "updated_on": "2015-12-31T01:32:02Z"
+}

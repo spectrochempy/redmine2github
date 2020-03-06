@@ -1,0 +1,185 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 3638,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2014-11-08T23:57:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "5",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 3639,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "This might have something to do with the current sound issues.\r\n\r\n-*S",
+            "created_on": "2014-11-08T23:58:14Z",
+            "details": []
+        },
+        {
+            "id": 3642,
+            "user": {
+                "id": 364,
+                "name": "winrid"
+            },
+            "notes": "Saukko wrote:\r\n> This might have something to do with the current sound issues.\r\n> \r\n> -*S\r\n\r\nI seem to get \"known event X\" a lot as well, makes the game almost unplayable for me. So far I've seen the values 7, 8, and 61.\r\nIs thrown from CG_EntityEvent... looking into it.",
+            "created_on": "2014-11-09T03:35:31Z",
+            "details": []
+        },
+        {
+            "id": 3644,
+            "user": {
+                "id": 364,
+                "name": "winrid"
+            },
+            "notes": "winrid wrote:\r\n> Saukko wrote:\r\n> > This might have something to do with the current sound issues.\r\n> > \r\n> > -*S\r\n> \r\n> I seem to get \"known event X\" a lot as well, makes the game almost unplayable for me. So far I've seen the values 7, 8, and 61.\r\n> Is thrown from CG_EntityEvent... looking into it.\r\n\r\nLooks like it's partially related to the event names enum in bg_public.h... note that it's bad practice to use implicit and explicit values in your enums.\r\n",
+            "created_on": "2014-11-09T04:48:04Z",
+            "details": []
+        },
+        {
+            "id": 3645,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "This happens when mod version of qagame and cgame differ. Remove your  dlls fs_homepath. ",
+            "created_on": "2014-11-09T05:55:34Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "6",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 3646,
+            "user": {
+                "id": 364,
+                "name": "winrid"
+            },
+            "notes": "IR4T4 wrote:\r\n> This happens when mod version of qagame and cgame differs. Remove your  dlls fs_homepath.\r\n\r\nI'm using whatever is currently in the repository so I don't understand how that happens yet... also where is fs_homepath set?",
+            "created_on": "2014-11-09T06:03:24Z",
+            "details": []
+        },
+        {
+            "id": 3648,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "IR4T4 wrote:\r\n> when you have a dll of mod in fs_homepath\r\n> and you connect to a server the very first time\r\n> this dll in fs_homepath is used instead of server dll\r\n> people don't notice that in the past because events and such don't change much from mod version to mod version\r\n> but I know this issue from NQ \r\n\r\nwinrid wrote:\r\n> I'm using whatever is currently in the repository so I don't understand how that happens yet... also where is fs_homepath set?\r\nfs_homepath defaults to ~/.etlegacy on linux and \"My Documents\\ETLegacy\" on Windows and you can change either by adding @set fs_homepath \"./path/to/homepath\"@ into a config file or by launching the game with @+set fs_hompath \"./path/to/homepath\"@ param.\r\n",
+            "created_on": "2014-11-09T08:14:18Z",
+            "details": []
+        },
+        {
+            "id": 3666,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "This issue as same as the 613, both were fixed by deleting two pk3 files located in legacy mod folder. Those two files obviously have come during the downloads when going to the test server.\r\n\r\nI guess this could be closed as invalid as the other too, I suppose.\r\n\r\n-*S",
+            "created_on": "2014-11-09T19:38:01Z",
+            "details": []
+        },
+        {
+            "id": 3667,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-11-09T19:44:10Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3669,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Sorry I meant 615 not 613. I made a major typo there. 613 is a serious feature request. 615 is about the sound issues that came along with this issue. My bad!\r\n\r\n-*S",
+            "created_on": "2014-11-09T20:35:24Z",
+            "details": []
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 614,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Unknown event: 129",
+    "description": "This error is totally random... I have no clue why it comes but here are two cases when it happened:\r\n1. When I was constructing hydro pump in Oasis\r\n2. After I switched team from Allies to Axis\r\n\r\nThis error comes very often and is then very imporatnt to get fixed.\r\n\r\n-*S",
+    "start_date": "2014-11-09",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-08T23:03:54Z",
+    "updated_on": "2014-11-09T20:35:24Z",
+    "closed_on": "2014-11-09T19:44:10Z"
+}

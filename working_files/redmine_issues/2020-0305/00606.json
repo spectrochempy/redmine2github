@@ -1,0 +1,223 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 156,
+            "issue_id": 664,
+            "issue_to_id": 606,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "7a497759dac4448969a2e01950801e6900a189bb",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "server: use 2.60b-style version string in infoResponse/statusResponse, fixes #606\n\nHLSW now shows ET:L servers as \"ET - Legacy\" instead of Q3Comp",
+            "committed_on": "2014-11-21T08:16:40Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3597,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Well, technically, that is a HLSW bug :P\r\n\r\nIs there a way to report this issue to HLSW instead (support section seems to be down)?",
+            "created_on": "2014-10-30T09:56:51Z",
+            "details": []
+        },
+        {
+            "id": 3598,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "50% HLSW, 50% my fault",
+            "created_on": "2014-10-30T12:23:40Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 3781,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Applied in changeset commit:7a497759dac4448969a2e01950801e6900a189bb.",
+            "created_on": "2014-11-21T08:29:42Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3782,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "I thought about it and it makes sense to use 2.60b-like version string.\r\n\r\nHLSW is unmaintained, so there is no reason to change stuff to remain compatible with it, but it now shows ET:L servers as ET - Legacy instead of Q3C:\r\n\r\n!hlsw_etl.png!",
+            "created_on": "2014-11-21T08:32:54Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "421",
+                    "new_value": "hlsw_etl.png"
+                }
+            ]
+        },
+        {
+            "id": 3860,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Reopening.\r\n\r\nThis last change prevents the client to distinguished between 2.60 and ET:L server, see #664.",
+            "created_on": "2014-11-23T14:26:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 3862,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-23T14:28:06Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "664"
+                }
+            ]
+        },
+        {
+            "id": 3876,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-23T21:05:26Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 606,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 35,
+        "name": "Dragonji"
+    },
+    "assigned_to": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 5,
+        "name": "Server"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "HLSW shows ETL servers as Q3Comp",
+    "description": "Like the title says, HLSW shows ET:L servers (servers that use etlded bin) as Q3Comp game instead of Wolfenstein Enemy Territory.\r\n\r\nMost probably it's because you changed server versioning. It used to be \"ET Legacy 2.7rcX\", now it's just \"2.71rcX\".",
+    "start_date": "2014-10-30",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-10-30T09:35:28Z",
+    "updated_on": "2014-11-23T21:05:26Z",
+    "closed_on": "2014-11-23T21:05:26Z"
+}

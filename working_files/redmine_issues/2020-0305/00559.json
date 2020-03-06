@@ -1,0 +1,182 @@
+{
+    "children": [
+        {
+            "id": 560,
+            "tracker": {
+                "id": 1,
+                "name": "Bug"
+            },
+            "subject": "Settings that need restart won't get you back to the game"
+        }
+    ],
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "c365c987e77ac6c607d300b926fd5f7291bec213",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "proper fix for the fullscreen being black on windows, refs #559",
+            "committed_on": "2014-10-08T11:31:34Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3391,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2014-08-22T11:40:27Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "1",
+                    "new_value": "12"
+                }
+            ]
+        },
+        {
+            "id": 3402,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-08-23T09:04:15Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "old_value": "",
+                    "new_value": "Windows"
+                }
+            ]
+        },
+        {
+            "id": 3467,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Is this issue still valid?",
+            "created_on": "2014-09-19T11:54:01Z",
+            "details": []
+        },
+        {
+            "id": 3468,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Yeah, this still happens. And so does: http://www.etlegacy.com/issues/560\r\n\r\n-*S",
+            "created_on": "2014-09-19T13:29:19Z",
+            "details": []
+        },
+        {
+            "id": 3506,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "this should be fixed now, please test",
+            "created_on": "2014-10-06T23:31:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 3508,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "",
+            "created_on": "2014-10-08T11:38:23Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 559,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "When launching etl.exe the screen is black",
+    "description": "So here's a bit more information to the title itself. Here is how you reproduce this:\r\n1. Launch etl.exe\r\n2. Screen stays black\r\n\r\nHere's a thing I noticed. I could press Esc nad that way I could hear a sound that leads to leace the game. But to get rid of the black screen I needed to go to the desktop and then get back into the game. After that I could see the main menu again.\r\n\r\nMy specs have stayed the same:\r\nGraphic card: NVIDIA GTX 295\r\nOS: Windows 8.1 Enterprise\r\n\r\nI had everything working when I compiled it 4.8.2014, but now I removed everything from my build and compiled again and still this new problem started occuring.\r\n\r\n-*S",
+    "start_date": "2014-08-15",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Windows"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-08-15T01:34:52Z",
+    "updated_on": "2014-10-08T11:38:23Z",
+    "closed_on": "2014-10-08T11:38:23Z"
+}

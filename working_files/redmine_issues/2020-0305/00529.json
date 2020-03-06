@@ -1,0 +1,195 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 208,
+            "issue_id": 785,
+            "issue_to_id": 529,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "f987dd5f334f0096890226c971090ad63f01ab80",
+            "user": {
+                "id": 424,
+                "name": "Zecklar"
+            },
+            "comments": "cgame: fixed MG shake & stuck bug, refs #529 #447",
+            "committed_on": "2015-03-03T11:19:48Z"
+        },
+        {
+            "revision": "8f3fc8f74197c6383ff35302a7d8c6e23710f755",
+            "user": {
+                "id": 424,
+                "name": "Zecklar"
+            },
+            "comments": "game: Underwater weapon shake fix, fixes #529",
+            "committed_on": "2015-03-11T21:00:12Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 4410,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2015-01-16T16:41:23Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "785"
+                }
+            ]
+        },
+        {
+            "id": 4714,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-03-04T20:32:59Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "424"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "17"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 4758,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "I found that this bug still occurs when you drop into water.\r\n\r\nHow to reproduce:\r\n\r\n1. Shoot with MG\r\n2. Go underwater\r\n\r\n-*S",
+            "created_on": "2015-03-11T13:25:31Z",
+            "details": []
+        },
+        {
+            "id": 4759,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-03-11T13:49:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 4767,
+            "user": {
+                "id": 424,
+                "name": "Zecklar"
+            },
+            "notes": "Applied in changeset commit:8f3fc8f74197c6383ff35302a7d8c6e23710f755.",
+            "created_on": "2015-03-11T21:07:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 529,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 424,
+        "name": "Zecklar"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "MG shaking bug",
+    "description": "Ok, there are a couple of bugs I found during my MG experiments.\r\n1. While shooting with MG and you go prone and go forward, the MG keeps shaking like it would be shooting all the time. Same happens if you jump and so.\r\n2. When you shoot with MG till it overheats, move forward while proning and stand up, you can't start shooting straight away, it gets stuck. This could be related to this issue: http://dev.etlegacy.com/issues/447\r\n\r\nSee the demo to see what's going on.\r\n\r\n-*S",
+    "start_date": "2014-03-16",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-03-16T15:46:09Z",
+    "updated_on": "2015-03-11T21:07:36Z",
+    "closed_on": "2015-03-11T21:07:36Z"
+}

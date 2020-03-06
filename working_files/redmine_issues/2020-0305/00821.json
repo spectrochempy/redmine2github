@@ -1,0 +1,79 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 5479,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-11-27T05:19:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 821,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 8,
+        "name": "Confirmed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 15,
+        "name": "Mod UI"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Console display \"No config with filename '0' found\"",
+    "description": "When the \"Auto-configure\" feature of a listen server is set to \"No\" (instead of public/competition settings), the server might display:\r\n\r\nbq. Will try to load config: \"configs/0.config\"\r\nWarning: No config with filename '0' found\r\n\r\nThis happens because the g_customConfig cvar cannot be set to an empty string, as cvarStrList doesn't support it. Instead, I did use \"0\" as a cheap workaround. The server config check then correctly catches that non existing config file.\r\n\r\nReplace the cvarStrList by something that allows a cvar to be empty, or expand cvarStrList to support empty string.",
+    "start_date": "2015-02-21",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-02-21T17:30:20Z",
+    "updated_on": "2015-11-27T05:19:05Z"
+}

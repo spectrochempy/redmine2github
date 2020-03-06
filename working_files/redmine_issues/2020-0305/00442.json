@@ -1,0 +1,206 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "f1d7039a00b41247359efab00421d718e6208c8a",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "client: add cursor management for edit field UI, refs #442\n\n* Create Text_PaintWithCursor_Ext and CG_Text_PaintWithCursor_Ext\n* Add cursor implementation in BG_PanelButton_EditClick\n* Add cursor for debriefing chat and limbopanel name editing",
+            "committed_on": "2019-10-05T00:17:14Z"
+        },
+        {
+            "revision": "f4aff917beb6261132b5cd71cc5867835d2139fc",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "mod: better cursor handle, refs #442",
+            "committed_on": "2019-11-19T11:17:16Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2559,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2013-12-26T14:13:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "There's no possibility to go through all the laters in intermission chat",
+                    "new_value": "There's no possibility to go through all the letters in intermission chat"
+                }
+            ]
+        },
+        {
+            "id": 2560,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-12-26T14:17:59Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "16"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 2591,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Note: -Unvanquished seems to have fixed this bug.- (was teamchat, not intermission chat sorry).",
+            "created_on": "2013-12-27T17:28:11Z",
+            "details": []
+        },
+        {
+            "id": 5065,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-08-08T13:48:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 5687,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-12-16T17:21:10Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 8496,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "Need feedback to ensure nothing missing",
+            "created_on": "2019-10-05T00:18:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8498,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "",
+            "created_on": "2019-10-09T11:33:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 442,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "There's no possibility to go through all the letters in intermission chat",
+    "description": "Basically you can't go through the letters in the intermission chat to be able to fix a typo or anything with the arrow keys.\r\n\r\n-*S",
+    "start_date": "2013-12-26",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-12-26T13:39:40Z",
+    "updated_on": "2019-10-09T11:33:03Z",
+    "closed_on": "2019-10-09T11:33:03Z"
+}

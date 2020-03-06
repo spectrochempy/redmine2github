@@ -1,0 +1,259 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "9059cc8b189d4c4894b18631443908f7240a6206",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed sniper zoom uncorrectly set after revive, refs #445",
+            "committed_on": "2013-12-28T20:45:45Z"
+        },
+        {
+            "revision": "4efe49120b4912cce4174d52e42d6802421889cd",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: reset scoped weapons after revive, fixes #445",
+            "committed_on": "2015-01-19T12:08:50Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2584,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Is this a bug, or a feature request?\r\n\r\nTo rephrase the above, after being killed your scope is set to the default value. This is intended, since you wouldn't locate your target easily if full zoomed in. Or did I miss something here?",
+            "created_on": "2013-12-27T12:10:51Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "21",
+                    "new_value": "16"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 2594,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "After you get killed and right after revived, the scope doesn't go to the default value it goes like you would have it without zooming your scope. By this mean I mean if you would be using any other weapon. For example if you have have cg_fov 110 and then you zoom with your sniper, get killed and revived, you will have your cg_fov 110 insterad of the fov that the least zoomed sniper has. I think I should take a demo to show how it actually works. Because in the picture you can see that the zoom is way too close, you can't zoom that close with the sniper in any case.\r\n\r\n-*S",
+            "created_on": "2013-12-28T15:47:18Z",
+            "details": []
+        },
+        {
+            "id": 2595,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2013-12-28T15:52:17Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "253",
+                    "new_value": "demo0000.dm_84"
+                }
+            ]
+        },
+        {
+            "id": 2596,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2013-12-28T15:53:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "tracker_id",
+                    "old_value": "2",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 2598,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I pushed a quick fix for this, but a better way of dealing with this issue would be to prevent the scoped view from appearing after revive, similarly to the binoc (after revive, you're not looking through them).",
+            "created_on": "2013-12-28T20:50:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 3029,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-02-16T10:52:53Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 4425,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Also {TODO}\r\n* Fix Binocular flash when getting revived while zooming with Binoculars\r\n\r\n-*S",
+            "created_on": "2015-01-18T14:41:56Z",
+            "details": []
+        },
+        {
+            "id": 4426,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2015-01-18T15:19:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "When zooming with sniper, getting killed, getting revived while zoomed",
+                    "new_value": "Sniper zooms and binoculars flash after getting revived"
+                }
+            ]
+        },
+        {
+            "id": 4449,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:4efe49120b4912cce4174d52e42d6802421889cd.",
+            "created_on": "2015-01-19T12:22:19Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 4450,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-01-19T12:22:41Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "17"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 445,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "Sniper zooms and binoculars flash after getting revived",
+    "description": "So basically the bug here is that when you get killed while zoomed in with sniper and after that somebody revives you, it will make your sniper zoomed in like shown in the picture.\r\n\r\n-*S",
+    "start_date": "2013-12-26",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-12-26T22:19:33Z",
+    "updated_on": "2015-01-19T12:22:40Z",
+    "closed_on": "2015-01-19T12:22:19Z"
+}

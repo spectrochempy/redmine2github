@@ -1,0 +1,92 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7703,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2019-01-31T08:25:52Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "14"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "256"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "15"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 846,
+            "name": "RedDwarf"
+        }
+    ],
+    "time_entries": null,
+    "id": 1195,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 846,
+        "name": "RedDwarf"
+    },
+    "assigned_to": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "category": {
+        "id": 14,
+        "name": "Mod pak3.pk3"
+    },
+    "fixed_version": {
+        "id": 15,
+        "name": "renderer2"
+    },
+    "subject": "ETL:bergen vehicle disappears",
+    "description": "just watch the in game .dm file please.\r\n\r\nTimo asked me to upload it.\r\n\r\n",
+    "start_date": "2019-01-29",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-01-29T20:11:32Z",
+    "updated_on": "2019-01-31T08:25:52Z"
+}

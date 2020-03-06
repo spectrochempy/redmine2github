@@ -1,0 +1,119 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 6063,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2016-09-23T09:23:25Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "21"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 6089,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "I think that this is quite unnecessary. Basically, it is just a different way to achieve the same result. Yes, it would probably be a lot cleaner and easier for newcomers to learn, but essentially it is a lot of work for the same result.",
+            "created_on": "2016-10-01T19:28:14Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 6090,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "In that case, closing.",
+            "created_on": "2016-10-02T11:07:04Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 946,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "IF-ELSE functionality in map-scripts",
+    "description": "Mostly self-explanatory.\r\nThankfully I don't have to do the map-scripts for my maps on my own, since I outsource that to phishi (phisherman), but he also said it would be nice to have if-else functionality in map-scripts.\r\nCurrently you have to work with \"accums\":http://games.chruker.dk/enemy_territory/scripting_reference.php#accum_registers, which apparently is really annoying and unnecessarily complicated.\r\n\r\nMight not be the worst thing to make map-scripting more similar to modern code languages, would it?\r\n\r\nAlso with this we can deliberately break compatibility to force player to use ET:L, while the game can continue to safely claim full compatibility to 2.60b.",
+    "start_date": "2016-09-22",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2016-09-22T20:07:12Z",
+    "updated_on": "2016-10-02T11:07:04Z",
+    "closed_on": "2016-10-02T11:07:04Z"
+}

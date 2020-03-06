@@ -1,0 +1,175 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "af6fac77473219abead4797baf407845b5bab74f",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "renderer: r_primitives 1 starts again refs #310",
+            "committed_on": "2013-06-06T11:11:40Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1731,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Game crashes on this line:\r\n<pre><code class=\"C\">\r\nelement(indexes[0]);\r\n</code></pre>\r\n\r\nat @R_DrawStripElements@ in source:src/renderer/tr_shade.c\r\n\r\n<pre><code class=\"C\">\r\nR_DrawStripElements(int numIndexes, const glIndex_t *indexes, void (GLAPIENTRY *element)(GLint))\r\n</code></pre>\r\n\r\nI have absolutely no idea what this code does. Commenting out every @element(x)@ lines makes the game start, but nothing is rendered.",
+            "created_on": "2013-06-05T20:56:17Z",
+            "details": []
+        },
+        {
+            "id": 1732,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I think it's cause by this line:\r\n<pre>\r\nR_DrawStripElements(numIndexes, indexes, 0); //R_DrawStripElements(numIndexes, indexes, qglArrayElement); FIX THIS\r\n</pre>\r\n\r\nWhat's your r_primitives value?",
+            "created_on": "2013-06-06T04:31:58Z",
+            "details": []
+        },
+        {
+            "id": 1733,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "That was it. Manually setting @r_primitives@ to 2 or 3 avoids the crash.\r\n\r\n",
+            "created_on": "2013-06-06T05:10:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "44"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "10"
+                }
+            ]
+        },
+        {
+            "id": 1734,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Yeah that's it. I was just writing the explaination as you figured it out as well. The glArrayElement/qglArrayElement code is lost ....",
+            "created_on": "2013-06-06T05:17:34Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Client crashes upon start up on Mac OS X",
+                    "new_value": "Renderer: Fix r_primitive 1"
+                },
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "20",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 1735,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-06-06T05:18:35Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "3",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 1745,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "https://github.com/etlegacy/etlegacy/commit/1536977e0f73bf64a93cc8e4c1c8790f367378f3",
+            "created_on": "2013-06-26T23:13:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "10",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 310,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 7,
+        "name": "Immediate"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "assigned_to": {
+        "id": 44,
+        "name": "Jacker"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 7,
+        "name": "2.71rc2"
+    },
+    "subject": "Renderer: Fix r_primitive 1",
+    "description": "This crash was introduced with the new renderer.\r\n\r\nhttp://pastebin.com/CPmWCQgm",
+    "start_date": "2013-06-05",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-06-05T15:20:46Z",
+    "updated_on": "2013-06-26T23:13:32Z",
+    "closed_on": "2013-06-26T23:13:32Z"
+}

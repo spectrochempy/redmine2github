@@ -1,0 +1,219 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "c8ef0a52d85a98c4b6b1ac58d3fd12f9569c63c1",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "qcommon: do no longer reference pk3s with campaign files when gametype\nis not campaign style refs #256\n\nNotes:\n- Dedicated server admins have to do an additional restart when\nswitching to gametype 4 on the fly. Otherwise a required pk3 containing\na campaign file is not referenced on first map/game (only!).\n- The CS for online games is shorter on average\n- This change is preventing clients to download maps with .campaign\nfiles on connect",
+            "committed_on": "2018-10-16T12:53:30Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1349,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-03-18T10:00:22Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "16"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1573,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-04-26T08:14:37Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "7",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 6740,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Would it be a good idea to just skip the download of files containing a .campaign file, excepted if the file is necessary (current map, file in mod folder)?\r\n\r\nIn old days some mappers were putting this file in their map package to force people downloading it; this is kind of a bad practice\r\n\r\nAlso, if the server admin wants a package to be downloaded, why not just put the file in the mod folder instead of bloating the file and etmain?",
+            "created_on": "2017-05-24T20:17:04Z",
+            "details": []
+        },
+        {
+            "id": 6741,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Isn't this a chicken egg problem? How to analyze a file which isn't locally available?\r\n\r\n",
+            "created_on": "2017-05-25T09:33:55Z",
+            "details": []
+        },
+        {
+            "id": 6742,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "The file is one or several PK3 files in the etmain of the server, right? If they are downloaded, they exist ^^' Or I don't get it?",
+            "created_on": "2017-05-25T09:43:10Z",
+            "details": []
+        },
+        {
+            "id": 7307,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-10-16T11:36:21Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "16",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 7308,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-10-16T11:37:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 7309,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-10-16T15:54:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "8"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        },
+        {
+            "id": 110,
+            "name": "Harlekin"
+        }
+    ],
+    "time_entries": null,
+    "id": 256,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 4,
+        "name": "Feedback"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 110,
+        "name": "Harlekin"
+    },
+    "category": {
+        "id": 5,
+        "name": "Server"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "prevent map loading that contains .campaign files on connect",
+    "description": "would be nice to have a option that prevent the upload of map.pk3 files that contain .campaign files and are not running at the moment.",
+    "start_date": "2013-03-17",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-03-17T21:16:32Z",
+    "updated_on": "2018-10-16T15:54:57Z"
+}

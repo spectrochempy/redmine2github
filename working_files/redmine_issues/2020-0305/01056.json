@@ -1,0 +1,238 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 413,
+            "issue_id": 1221,
+            "issue_to_id": 1056,
+            "relation_type": "duplicates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "a23af205ea2a6d5283941eeb6be1bacd4308eb0e",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "general: fixed libs loading with utf8 in path, refs #1056",
+            "committed_on": "2019-11-09T12:54:30Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 6881,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Hey, could you move ETLegacy folder elsewhere and try to run the game with *+fs_homepath \"X:\\your\\new\\path\\ETLegacy\"* parameter (see attachment)?",
+            "created_on": "2017-08-24T13:56:00Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "767",
+                    "new_value": "et-settings.png"
+                }
+            ]
+        },
+        {
+            "id": 6882,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I think non ASCII chars cause the trouble in general like: \u00e9, german \u00e4,\u00fc,\u00f6 or is a space in name just enough to produce this issue?  \r\n\r\n",
+            "created_on": "2017-08-25T07:26:53Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "8"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "5",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 7152,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-02-28T12:58:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 7988,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-19T08:29:48Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "duplicated",
+                    "new_value": "1221"
+                }
+            ]
+        },
+        {
+            "id": 7989,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-19T08:31:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "10"
+                }
+            ]
+        },
+        {
+            "id": 7990,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-19T08:32:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8521,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-11-09T12:54:53Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "10",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 8558,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-11-29T14:34:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 1056,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 6,
+        "name": "Urgent"
+    },
+    "author": {
+        "id": 708,
+        "name": "lixoaqui"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Can't load ui_mp_x86.dll because of spaces/accents on user folder on windows 10",
+    "description": "Fresh install on a Win10 64 bit machine and when starting up for the first time I get this error:\r\n\r\nbq. Sys_LoadDll(C:\\Users\\Jos\u00e9 Americo Silva\\Documents\\ETLegacy\\legacy\\ui_mp_x86.dll)... failed: \"Failed loading C:\\Users\\Jos\u00e9 Americo Silva\\Documents\\ETLegacy\\legacy\\ui_mp_x86.dll: Imposs\u00c3\u00advel localizar o m\u00c3\u00b3dulo especificado.\r\n\r\nThe portuguese part says something like 'impossible to locate the specified module'. \r\n\r\nIf I had to guess this is because the user folder has an accent and/or spaces on the path and so ET:Legacy can't find the required files. If I manually use that path the file exists and it's there.",
+    "start_date": "2017-08-23",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Windows"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-08-23T15:57:01Z",
+    "updated_on": "2019-11-29T14:34:03Z",
+    "closed_on": "2019-11-29T14:34:03Z"
+}

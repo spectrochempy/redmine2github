@@ -1,0 +1,480 @@
+{
+    "children": [
+        {
+            "id": 195,
+            "tracker": {
+                "id": 1,
+                "name": "Bug"
+            },
+            "subject": "Grenade throwing not working"
+        }
+    ],
+    "attachments": null,
+    "relations": [
+        {
+            "id": 110,
+            "issue_id": 157,
+            "issue_to_id": 364,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 131,
+            "issue_id": 460,
+            "issue_to_id": 157,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 132,
+            "issue_id": 381,
+            "issue_to_id": 157,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 849,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "",
+            "created_on": "2012-12-24T16:34:51Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "64-bit binaries",
+                    "new_value": "Provide 64-bit binaries"
+                },
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "12"
+                }
+            ]
+        },
+        {
+            "id": 852,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "I hope we'll release x86_64 version with 2.70. It's working without any problem and it's easy to compile (just disable cross building - set variable in CMake)\r\n\r\nLinux x86_64 - sure yes\r\nWindows x86_64 - don't know. Windows 64bit is not that problem like linux, where it always says \"Can't find library\". Mixing bits in Windows is common, while in linux aren't. We can think about it of course, but it's not our priority.\r\nMac OS X x86_64 - i hope yes, but Radegast must say that while only he has OS X (-;",
+            "created_on": "2012-12-25T19:38:41Z",
+            "details": []
+        },
+        {
+            "id": 857,
+            "user": {
+                "id": 7,
+                "name": "TheDushan"
+            },
+            "notes": "I will provide Win64 support and binary files for ET: Legacy. Because of that I have assigned this ticket to myself.",
+            "created_on": "2012-12-29T21:30:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1013,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-01-24T13:00:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 1016,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-01-24T13:14:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "5",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 1536,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "ALthough I can compile in full 64bits using the system Lua librairy (5.2), it seems I'm not able to compile in 64bits with the embedded Lua 5.1 lib:\r\n\r\nLinking C shared module legacy/qagame.mp.x86_64.so\r\n/usr/bin/ld: libs/lua/src/liblua.a(lapi.o): relocation R_X86_64_32 against `luaO_nilobject_' can not be used when making a shared object; recompile with -fPIC\r\nlibs/lua/src/liblua.a: could not read symbols: Bad value\r\ncollect2: error: ld returned 1 exit status\r\nmake[2]: *** [legacy/qagame.mp.x86_64.so] Error 1\r\nmake[1]: *** [CMakeFiles/qagame.mp.x86_64.dir/all] Error 2\r\nmake: *** [all] Error 2",
+            "created_on": "2013-04-12T13:28:31Z",
+            "details": []
+        },
+        {
+            "id": 2206,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Just a thought... Are 64-bit bins really needed? ET will never break 4GB RAM usage limitation ;)\r\n\r\nAnd providing 64-bit bins automatically means a drastical (as for this game) increase in bins pk3 weight, not saying about mods that will not work with 64-bit clients.",
+            "created_on": "2013-11-03T12:39:13Z",
+            "details": []
+        },
+        {
+            "id": 2207,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "We'll do an extra binary pk3 for non vanilla clients. \r\nIt's not about RAM. Linux 64 bit users have to install tons of 32 bit libraries to start ET:L ... the days of 32 bit Desktop computers are numbered. ",
+            "created_on": "2013-11-03T17:56:42Z",
+            "details": []
+        },
+        {
+            "id": 2208,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "And since most users have a x64 system, ET will take advantage of it (could run faster for instance).",
+            "created_on": "2013-11-03T18:26:04Z",
+            "details": []
+        },
+        {
+            "id": 2209,
+            "user": {
+                "id": 7,
+                "name": "TheDushan"
+            },
+            "notes": "I am not sure that you will get any advantage of 64bit in ET. Except that it's cool to support it.",
+            "created_on": "2013-11-03T18:49:53Z",
+            "details": []
+        },
+        {
+            "id": 2210,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "IR4T4 wrote:\r\n> We'll do an extra binary pk3 for non vanilla clients. \r\n> It's not about RAM. Linux 64 bit users have to install tons of 32 bit libraries to start ET:L ... the days of 32 bit Desktop computers are numbered.\r\nLinux users with 64-bit client will only be able to play 2 mods (Legacy + ETPub | pessimistic scenario).\r\n\r\nMateos wrote:\r\n> And since most users have a x64 system, ET will take advantage of it (could run faster for instance).\r\nWell, I do not think it will run faster (if it would, why 99% of Windows games are 32-bit only?)",
+            "created_on": "2013-11-03T19:35:46Z",
+            "details": []
+        },
+        {
+            "id": 2211,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Probably because x32 binaries run on both x36 and x64 systems, while x64 only run on x64; So make a single exe file which can run on any version of the OS :) I thought games could benefit like general software of x64 systems.",
+            "created_on": "2013-11-03T20:54:31Z",
+            "details": []
+        },
+        {
+            "id": 2507,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Spyhawk wrote:\r\n> ALthough I can compile in full 64bits using the system Lua librairy (5.2), it seems I'm not able to compile in 64bits with the embedded Lua 5.1 lib:\r\n> \r\n> Linking C shared module legacy/qagame.mp.x86_64.so\r\n> /usr/bin/ld: libs/lua/src/liblua.a(lapi.o): relocation R_X86_64_32 against `luaO_nilobject_' can not be used when making a shared object; recompile with -fPIC\r\n> libs/lua/src/liblua.a: could not read symbols: Bad value\r\n> collect2: error: ld returned 1 exit status\r\n> make[2]: *** [legacy/qagame.mp.x86_64.so] Error 1\r\n> make[1]: *** [CMakeFiles/qagame.mp.x86_64.dir/all] Error 2\r\n> make: *** [all] Error 2\r\nConfirmed. Same error on Debian wheezy with multiarch.\r\n",
+            "created_on": "2013-12-23T07:47:31Z",
+            "details": []
+        },
+        {
+            "id": 2510,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-12-23T08:00:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "7"
+                },
+                {
+                    "property": "cf",
+                    "name": "2",
+                    "old_value": "",
+                    "new_value": "64-bit"
+                }
+            ]
+        },
+        {
+            "id": 2767,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-01-06T15:44:53Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "364"
+                }
+            ]
+        },
+        {
+            "id": 3179,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-04-29T19:54:56Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "460"
+                }
+            ]
+        },
+        {
+            "id": 3207,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-05-30T19:10:59Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "381"
+                }
+            ]
+        },
+        {
+            "id": 3255,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Compiling Lua with -fPIC should avoid the above error but I haven't had the time to do this and test it.\r\n... and I'm not sure if this is the real fix when 32bit compiles w/o any issues.",
+            "created_on": "2014-06-10T13:46:32Z",
+            "details": []
+        },
+        {
+            "id": 3264,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "We've shipped 64bit OS X and linux mod binaries with the latest release, so people who compile ET:L themselves can join Legacy servers. I wouldn't put up 64bit client binaries on the download page, because people would try to use them to connect to old 2.60b servers and then complain that it crashes.\r\n\r\nThe only platform on our list without 64bit support is Windows, but from my experience people on Windows are not that interested in running native apps anyway (_wink at user:Dragonji_).",
+            "created_on": "2014-06-18T08:51:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "6",
+                    "new_value": "8"
+                },
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "old_value": "",
+                    "new_value": "Windows"
+                }
+            ]
+        },
+        {
+            "id": 3265,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Nice to hear about the progress!\r\n\r\n(sorry for offtopic)",
+            "created_on": "2014-06-18T09:20:25Z",
+            "details": []
+        },
+        {
+            "id": 3266,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "More and more games are x64 compatible, even on Windows: Viscera Cleanup, Chivalry: Medieval Warfare, ...\r\n\r\nThe performance boost isn't negligeable.\r\n\r\nJust saying.",
+            "created_on": "2014-06-18T09:25:40Z",
+            "details": []
+        },
+        {
+            "id": 3269,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Radegast, if we do a separate download and an ingame pop-up with hint 'this is legacy mod only' I wouldn't complain - it doesn't harm our game server and advertises the legacy mod. \r\nIt'll be a big bonus for 64 bit linux players enjoying the game w/o 32 bit libraries. We should ship both linux versions in future.  ",
+            "created_on": "2014-06-18T13:51:38Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "old_value": "Windows",
+                    "new_value": ""
+                }
+            ]
+        },
+        {
+            "id": 3270,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "FYI, I already have 64bits builds available for major distributions in my OBS test repository.",
+            "created_on": "2014-06-19T08:30:54Z",
+            "details": []
+        },
+        {
+            "id": 3272,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "http://stackoverflow.com/questions/7216244/why-is-fpic-absolutely-necessary-on-64-and-not-on-32bit-platforms\r\n\r\nI'll adjust our cmake lib files so we can do a bundled 64bit linux ETL.",
+            "created_on": "2014-06-20T03:00:52Z",
+            "details": []
+        },
+        {
+            "id": 3275,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "The libs are adjusted - \"relocation R_X86_64_32 against X\" shouldn't occure anymore. I can do a 64bit bundled ETL.\r\n\r\nI don't know if these PIC changes cause issues on DARWIN or other posix units. It's important to know when you switch between CROSS_COMPILE32=0/1 the lib libraries have to be removed. 'cmake clean' in ETL/build path doesn't do this job.\r\n\r\npre_easybuild.sh:\r\n<pre>\r\ncd lib\r\n\r\ncd lua\r\nmake clean\r\n\r\ncd ../sdl \r\nmake clean\r\n\r\ncd ../curl\r\nmake clean\r\n\r\ncd ../ogg\r\nmake clean\r\n\r\ncd ../vorbis\r\nmake clean\r\n\r\ncd ../jpeg\r\nmake clean\r\n\r\ncd ../..\r\n\r\n./easybuild.sh \r\n</pre>\r\n\r\n{FIXME} ensure there are no fragments from previous lib versions when CROSS_COMPILE32 toogles",
+            "created_on": "2014-06-22T11:18:18Z",
+            "details": []
+        },
+        {
+            "id": 3512,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "64 bit build now also works in Windows",
+            "created_on": "2014-10-08T14:51:20Z",
+            "details": []
+        },
+        {
+            "id": 3514,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Great news, nice work!",
+            "created_on": "2014-10-08T14:53:59Z",
+            "details": []
+        },
+        {
+            "id": 3517,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-10-08T17:45:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 157,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 35,
+        "name": "Dragonji"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Provide 64-bit binaries",
+    "description": "So, what about x64 binaries?\r\n\r\nI know there are no mods that support ET x64 but it would be nice to have x64 binaries so we can play and test around with legacy mod.",
+    "start_date": "2013-02-07",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": "64-bit"
+        }
+    ],
+    "created_on": "2012-12-24T15:58:03Z",
+    "updated_on": "2014-10-08T17:45:45Z",
+    "closed_on": "2014-10-08T17:45:45Z"
+}

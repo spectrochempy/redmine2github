@@ -1,0 +1,168 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 261,
+            "issue_id": 894,
+            "issue_to_id": 892,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "f35311770e82f377c5c6de827d27ad00ff7a9205",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: replaced awards stats macros, refs #892",
+            "committed_on": "2015-12-08T15:55:33Z"
+        },
+        {
+            "revision": "2b740871ca27e83587dd7c8098307a658adbfe02",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: take ties into account for awards, fixes #892",
+            "committed_on": "2015-12-08T15:55:33Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 5550,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-12-04T09:06:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Awards don't take ties into account, the first slot found receives the award. We can break the tie by comparing XP earned on map or rank, or any other metric if relevant.\r\n\r\nCurrent awards are:\r\n\r\n        \"Highest Fragger\",\r\n\t\"Highest Experience Points\",\r\n\t\"Highest Ranking Officer\",\r\n\t\"Most Highly Decorated\",\r\n\t\"Highest Battle Sense\",     // min lvl 1\r\n\t\"Best Engineer\",\r\n\t\"Best Medic\",\r\n\t\"Best Field Ops\",\r\n\t\"Highest Light Weapons\",\r\n\t\"Best Soldier\",\r\n\t\"Best Covert Ops\",\r\n\t\"Highest Accuracy\",\r\n\t\"I Ain't Got No Friends Award\", // min 5 tks\r\n\t\"Welcome Newbie! Award\",    // dont get this if any other award given or > 100 xp (this map)",
+                    "new_value": "Awards don't take ties into account, the first slot found receives the award. We can break the tie by comparing XP earned on map or rank, or any other metric if relevant.\r\n\r\nCurrent awards are:\r\n\r\n        \"Highest Fragger\",\r\n\t\"Highest Experience Points\",\r\n\t\"Highest Ranking Officer\",\r\n\t\"Most Highly Decorated\",\r\n\t\"Highest Battle Sense\",     // min lvl 1\r\n\t\"Best Engineer\",\r\n\t\"Best Medic\",\r\n\t\"Best Field Ops\",\r\n\t\"Highest Light Weapons\",\r\n\t\"Best Soldier\",\r\n\t\"Best Covert Ops\",\r\n\t\"Highest Accuracy\",\r\n\t\"I Ain't Got No Friends Award\", // min 5 tks\r\n\t\"Welcome Newbie! Award\",    // dont get this if any other award given or > 100 xp (this map)\r\n\r\nSe G_BuildEndgameStats()."
+                }
+            ]
+        },
+        {
+            "id": 5553,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-12-05T11:30:05Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "894"
+                }
+            ]
+        },
+        {
+            "id": 5561,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-12-05T16:32:11Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 5616,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "{FIXME} -Get rid of the existing macro and use regular code/functions. We'll need to personalize the second/third arg for the tie check.-",
+            "created_on": "2015-12-07T20:23:43Z",
+            "details": []
+        },
+        {
+            "id": 5624,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:2b740871ca27e83587dd7c8098307a658adbfe02.",
+            "created_on": "2015-12-08T16:00:21Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 892,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "Awards don't take ties into account",
+    "description": "Awards don't take ties into account, the first slot found receives the award. We can break the tie by comparing XP earned on map or rank, or any other metric if relevant.\r\n\r\nCurrent awards are:\r\n\r\n        \"Highest Fragger\",\r\n\t\"Highest Experience Points\",\r\n\t\"Highest Ranking Officer\",\r\n\t\"Most Highly Decorated\",\r\n\t\"Highest Battle Sense\",     // min lvl 1\r\n\t\"Best Engineer\",\r\n\t\"Best Medic\",\r\n\t\"Best Field Ops\",\r\n\t\"Highest Light Weapons\",\r\n\t\"Best Soldier\",\r\n\t\"Best Covert Ops\",\r\n\t\"Highest Accuracy\",\r\n\t\"I Ain't Got No Friends Award\", // min 5 tks\r\n\t\"Welcome Newbie! Award\",    // dont get this if any other award given or > 100 xp (this map)\r\n\r\nSe G_BuildEndgameStats().",
+    "start_date": "2015-11-27",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-11-27T22:54:26Z",
+    "updated_on": "2015-12-08T16:00:21Z",
+    "closed_on": "2015-12-08T16:00:21Z"
+}

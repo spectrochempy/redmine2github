@@ -1,0 +1,128 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "f5b5d091d3a74813727476b17d78aef8200c4d7f",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: dynamic scale of map name font to fit bounding box fixes #199",
+            "committed_on": "2013-04-23T16:00:02Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1134,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Unfortunately there is no real limit for mappers given ... \r\n\r\n{TODO}\r\n* get the length of string and print it in different sizes related to the length\r\n\r\n",
+            "created_on": "2013-02-10T16:37:16Z",
+            "details": []
+        },
+        {
+            "id": 1135,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "IR4T4 wrote:\r\n> * get the length of string and print it in different sizes related to the length\r\n= Scale map name font to fit its bounding box",
+            "created_on": "2013-02-10T16:46:05Z",
+            "details": []
+        },
+        {
+            "id": 1138,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Side note: Some translations don't fit as well see italian main menu ... \r\n\r\n",
+            "created_on": "2013-02-10T21:32:10Z",
+            "details": []
+        },
+        {
+            "id": 1562,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Applied in changeset commit:f5b5d091d3a74813727476b17d78aef8200c4d7f.",
+            "created_on": "2013-04-23T16:10:14Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 1,
+            "name": "Radegast"
+        },
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 199,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 7,
+        "name": "2.71rc2"
+    },
+    "subject": "Scale map name font to fit its bounding box",
+    "description": "In the UI load panel, long map names overlap their bounding box.\r\n\r\n!map_name_scaling.png!",
+    "start_date": "2013-02-10",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-02-10T16:25:37Z",
+    "updated_on": "2013-04-23T16:10:14Z",
+    "closed_on": "2013-04-23T16:10:14Z"
+}

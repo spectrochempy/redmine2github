@@ -1,0 +1,467 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 337,
+            "issue_id": 1039,
+            "issue_to_id": 973,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "eacfec3403da622509d4d88b2935c53163efb207",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "general: obsolete mp_bin.pk3 requirement cleanup",
+            "committed_on": "2014-02-04T21:17:47Z"
+        },
+        {
+            "revision": "b2cd7bb92de00749c049950e10cb4922c156c158",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "Revert \"sys: check for invalid char on etl server only, refs #53\"\n\nThis reverts commit 0598e7b6598a6c2eca47285e75547fb34815a524.",
+            "committed_on": "2018-02-05T14:44:10Z"
+        },
+        {
+            "revision": "b43ae4a03a0178fcef6770dd2c4e20c00bd73742",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "general: readded fallback on Legacy mod to avoid VM_Create issue, refs #973",
+            "committed_on": "2018-02-10T21:10:33Z"
+        },
+        {
+            "revision": "c009eb5ad1501589dec3028454bed18812728e72",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "general: restrict fallback to non Mac platforms, refs #973",
+            "committed_on": "2018-02-10T21:10:40Z"
+        },
+        {
+            "revision": "457d94c63fb1c74a109f032dadbbffe536a3432f",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "sys: ui fallback for all systems\n\nnote: if there are issues with incompatible mod binaries CGAME will fail",
+            "committed_on": "2018-02-10T22:52:16Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 6217,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Which OS are you using, which version of ET:L are you using, which server are you trying to connect to, and which mod is running on that server?",
+            "created_on": "2017-01-13T16:03:37Z",
+            "details": []
+        },
+        {
+            "id": 6219,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "",
+            "created_on": "2017-01-14T12:06:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "VM_Create  no UI FAILED!!!",
+                    "new_value": "VM_Create on UI FAILED"
+                },
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "5",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 6293,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I can reproduce on some server, using linux client. The mod pak isn't extracted correctly.",
+            "created_on": "2017-02-01T11:02:42Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 6294,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Any logs available?",
+            "created_on": "2017-02-01T14:33:38Z",
+            "details": []
+        },
+        {
+            "id": 6297,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Log attached. Crash happened on F|A Beginners #2 (144.76.100.131), running Silent mod.",
+            "created_on": "2017-02-01T16:44:34Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "689",
+                    "new_value": "crashlog.txt"
+                }
+            ]
+        },
+        {
+            "id": 6304,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Forums references:\r\n* https://dev.etlegacy.com/boards/2/topics/2717\r\n* https://dev.etlegacy.com/boards/3/topics/2920\r\n* https://dev.etlegacy.com/boards/3/topics/2968\r\n* https://www.reddit.com/r/EnemyTerritory/comments/5vvk1l/need_help_getting_back_into_wolfet/\r\n\r\nIR4 mentioned he can connect to the above mentioned server, while I cannot... wtf?",
+            "created_on": "2017-02-02T22:49:48Z",
+            "details": []
+        },
+        {
+            "id": 6306,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-02-02T23:11:33Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 6357,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-02-09T10:59:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 6435,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "The issue is due to the pak not being completely downloaded. This happens on some servers only.\r\nThis seems to be related to a specific server setting, maybe in combination with some client settings?\r\n\r\nI've tried locally with all combination of the following  variables, but I couldn't reproduce locally.\r\n\r\n* set sv_allowDownload \"\" (0/1) \r\n* set sv_wwwDownload \"\" (0/1)\r\n* set sv_wwwDlDisconnected \"\" (0/1)\r\n* set sv_wwwBaseURL \"\" (set or empty)\r\n* set sv_wwwFallbackURL \"\" (set or empty)",
+            "created_on": "2017-02-18T09:42:12Z",
+            "details": []
+        },
+        {
+            "id": 6478,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Interestingly, the official server had some DNS issues resulting in http://game.etlegacy.com/ being unavailable.\r\nSo sv_wwwBaseURL \"http://game.etlegacy.com/\" failed but the pk3 downloads still tried to get through (www fallback?)... and restarts once it's finished (maybe because it was corrupted) in a loop. \r\n\r\nServer config when the issue arise was:\r\n\r\n> set sv_maxRate \"25000\"\t\t\t\t// 10000 standard but poor for ET (0: unlimited)\r\n> set sv_dl_maxRate \"42000\"\t\t\t// increase/decrease if you have plenty/little spare bandwidth\r\n> set sv_allowDownload \"1\"\t\t\t// global toggle for both legacy download and web download\r\n> set sv_wwwDownload \"1\"\t\t\t\t// toggle to enable web download\r\n> set sv_wwwBaseURL \"http://game.etlegacy.com/\" // base URL for redirection\r\n> set sv_wwwDlDisconnected \"0\"\t\t// tell clients to perform their downloads while disconnected from the server\r\n> set sv_wwwFallbackURL \"\"\t\t\t// URL to send to if an http/ftp fails or is refused client side\r\n> set sv_fullmsg \"Server is full.\"\r\n\r\nWe need to check what happens when sv_wwwBaseURL fails.",
+            "created_on": "2017-02-28T12:27:48Z",
+            "details": []
+        },
+        {
+            "id": 6480,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "> We need to check what happens when sv_wwwBaseURL fails.\r\n\r\nKeep in mind to check this in combination with sv_wwwDlDisconnected 0/1 and with sv_wwwFallbackURL (which is not set on our server).\r\n\r\n",
+            "created_on": "2017-02-28T14:41:27Z",
+            "details": []
+        },
+        {
+            "id": 6544,
+            "user": {
+                "id": 392,
+                "name": "Timothy"
+            },
+            "notes": "Involved versions:\r\n\r\nET Legacy v2.75 win-x86 Sep 13 2016\r\n\r\nInvolved mods:\r\n\r\nJaymod 2.2.0\r\nsilEnT 0.9.0\r\n\r\nInvolved servers:\r\n\r\nF|A RECRUITING (et://8.9.4.227:27960)\r\nF|A BEGINNERS #2 (et://144.76.100.131:27960)\r\n<{BBA}>1 XP SAVER (et://173.230.141.36:27960)",
+            "created_on": "2017-03-08T12:41:45Z",
+            "details": []
+        },
+        {
+            "id": 6546,
+            "user": {
+                "id": 392,
+                "name": "Timothy"
+            },
+            "notes": "Reproduced using clean fs_homepath connecting to a Linux server running Jaymod 2.2.0 with following settings:\r\n\r\n> set sv_wwwBaseURL         \"http://home.timosmit.com/wolfet\"\r\n> set sv_wwwDlDisconnected  \"1\"\r\n> set sv_wwwDownload        \"1\"\r\n> set sv_wwwFallbackURL     \"\"",
+            "created_on": "2017-03-09T08:58:16Z",
+            "details": []
+        },
+        {
+            "id": 6549,
+            "user": {
+                "id": 392,
+                "name": "Timothy"
+            },
+            "notes": "From a brief conversation with daredevil from F|A I got the following config, which is roughly the same as I used to reproduce the issue:\r\n\r\n> set sv_maxRate \"25000\"\r\n> set sv_dl_maxRate \"45900\"\r\n> set sv_allowDownload \"1\" \r\n> set sv_wwwDownload \"1\"\t\r\n> set sv_wwwBaseURL \"http://redirect.dediserverhosting.com\"\r\n> set sv_wwwDlDisconnected \"1\"\r\n> set sv_wwwFallbackURL \"http://fearless-assassin.com\"\r\n> set sv_fullmsg \"ET://jay2.clan-fa.com:27960\"\r\n\r\nThe issue appears to be fixed in master, though.",
+            "created_on": "2017-03-10T11:47:50Z",
+            "details": []
+        },
+        {
+            "id": 6550,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Seems indeed to be fixed in master.",
+            "created_on": "2017-03-10T16:18:52Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 6758,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2017-05-30T11:39:54Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1039"
+                }
+            ]
+        },
+        {
+            "id": 6890,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-08-30T16:48:19Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 6895,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-09-03T18:47:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "60"
+                }
+            ]
+        },
+        {
+            "id": 7063,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-02-05T13:50:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "60",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 7066,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Not fixed yet, or at least not entirely.\r\n\r\nSee  173.230.141.36:27960, running jaymod (server is ET 3.00).",
+            "created_on": "2018-02-05T16:58:14Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "60"
+                }
+            ]
+        },
+        {
+            "id": 7071,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "For the record:\r\n\r\nThe issue happens when the mp_bin.pk3 is not present in etmain. We deprecated that file a long time ago.\r\nThis also explains why the issue seems to be due to that commit: https://github.com/etlegacy/etlegacy/commit/6e00921fbfff75f0aa3288b553608d7f2053c4e1 (see #825, #279) (thx Timo for the bisect).\r\n\r\nI'd suggest to readd the hack, but only for the non-mac platforms as it seems problematic for Mac OS X users.\r\n\r\nEdit: related mp_bin removal commit is: https://dev.etlegacy.com/projects/etlegacy/repository/revisions/eacfec3403da622509d4d88b2935c53163efb207/diff/",
+            "created_on": "2018-02-10T20:59:52Z",
+            "details": []
+        },
+        {
+            "id": 7075,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-02-12T10:35:39Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "60",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 7078,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-02-12T11:50:59Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 973,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 7,
+        "name": "Immediate"
+    },
+    "author": {
+        "id": 643,
+        "name": "William"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "VM_Create on UI FAILED",
+    "description": "I have a problem that if i want to join a server, and when im connecting with it ,it says that \"Vm_Create on UI failed\".\r\nI have googled it and seen this problem a lot but i never have got a clear answer.\r\nAny suggestions or help how to remove the error???",
+    "start_date": "2017-01-13",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-01-13T16:00:54Z",
+    "updated_on": "2018-02-12T11:50:59Z",
+    "closed_on": "2018-02-12T11:50:59Z"
+}

@@ -1,0 +1,210 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "e6107e77f434dd9072b3ca314f1801057e27f7bb",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: fixed latched cvars change not displayed, refs #1132",
+            "committed_on": "2018-12-28T00:22:33Z"
+        },
+        {
+            "revision": "7b0092932d9114cc5bae47ab427ac89942397db7",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: removed broken gamma setting from profile creation, refs #1132",
+            "committed_on": "2019-01-01T16:48:09Z"
+        },
+        {
+            "revision": "071553432713bf4feb63471613e891c4e047be30",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: removed broken ui_r_gamma, refs #1132",
+            "committed_on": "2019-01-01T16:48:10Z"
+        },
+        {
+            "revision": "538853ada7250e472790e5f46671de28dddafd37",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: introduced ui_cl_lang, refs #1132",
+            "committed_on": "2019-01-01T17:51:17Z"
+        },
+        {
+            "revision": "21ee34a6065f1c029e17bd15414318c72e036311",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: fixed vid_restart not reinitializing i18n, refs #1132",
+            "committed_on": "2019-01-18T23:58:35Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7437,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "The above mentioned settings are now fixed in UI.\r\nThe language selection (cl_lang) still needs to be fixed. It requires more than a vid_restart.",
+            "created_on": "2018-12-28T00:25:52Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 7486,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I moved the language settings from the game options to the system options page, so it can reused the same logical code of vid_restart.\r\nHowever, the latched cl_lang requires a complete restart of the application. It is probably possible to introduce a check in case cl_lang has been modified and implement a complete client restart. but this is not something I want to dive in so close to release (it might breaks the client a bit...).\r\n\r\nDelaying this last part to the next release. The other graphical options should behave and update correctly.",
+            "created_on": "2019-01-01T18:09:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "8"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 7545,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-01-14T14:53:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 7607,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-01-18T23:59:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 7673,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-01-24T13:16:37Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1132,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 15,
+        "name": "Mod UI"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Changing graphical settings doesn't display in UI",
+    "description": "Changing graphical settings that requires _vid_restart_ don't display in UI before the game is restarted.\r\n\r\nHarlekin:\r\nit does not show the changes.\r\n\r\nIR4:\r\nmapoverbrightbits is latched cvar\r\nit requires a restart\r\n\r\nHarlekin: i made a more options for et vanilla and there it shows changes\r\n\r\n\r\nNote: These are latched cvars. A popup that ask to restart right awyas might do the trick.\r\nSee modification by Harlekin too.\r\n\r\n",
+    "start_date": "2018-12-22",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2018-12-22T21:16:31Z",
+    "updated_on": "2019-01-24T13:16:37Z",
+    "closed_on": "2019-01-18T23:59:28Z"
+}

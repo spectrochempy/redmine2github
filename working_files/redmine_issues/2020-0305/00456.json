@@ -1,0 +1,159 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "083a1b874533e76af94b952246df3c0d5fabbe6f",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: Fixed \"falling to the ground\" animations refs #456 patch by NQ",
+            "committed_on": "2014-04-09T19:34:28Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2641,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "This seems to happen when a player is of low HP before the kill.  ",
+            "created_on": "2013-12-31T11:19:49Z",
+            "details": []
+        },
+        {
+            "id": 3149,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": " ",
+            "created_on": "2014-04-09T17:37:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "11"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "70"
+                }
+            ]
+        },
+        {
+            "id": 3151,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Just tested on GoldRush. I _think_ the issue happened twice during the 30mn game, but this happened at some distances.\r\n\r\nCan someone else confirm this? I'll run another test session when I get time.",
+            "created_on": "2014-04-10T15:14:05Z",
+            "details": []
+        },
+        {
+            "id": 3152,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Did you clean the bins in fs_homepath/legacy before?",
+            "created_on": "2014-04-10T15:19:52Z",
+            "details": []
+        },
+        {
+            "id": 3169,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I can't seem to reproduce, so I'm closing the ticket now.",
+            "created_on": "2014-04-21T10:15:18Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "70",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 456,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "Missing animation transition when going to limbo",
+    "description": "When a player is killed and goes immediately to limbo (either by taping out or being gibbed by another headshot), the player animation goes from standing to lying on the ground without any intermediate animation. The \"falling to the ground\" animation is missing.\r\n\r\nIf possible, the falling animation should be displayed at all time BUT the player should be sent in limbo immediately.",
+    "start_date": "2013-12-31",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-12-31T09:41:37Z",
+    "updated_on": "2014-04-21T10:15:18Z",
+    "closed_on": "2014-04-21T10:15:18Z"
+}

@@ -1,0 +1,227 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 2377,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Odal, which r_mode/screen resolution is used?",
+            "created_on": "2013-12-11T18:07:30Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "15"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 2386,
+            "user": {
+                "id": 106,
+                "name": "Odal"
+            },
+            "notes": "I discover that in different resolutions is possibile or not to work with the scroll bar:\r\n640x480 ok\r\n1024x768 ok\r\n800x600 ok\r\n\r\nall other \"strange\" resolutions do not allow to use scrollbar.\r\n\r\nIn every case is not possible to sort by \"Favourites\".",
+            "created_on": "2013-12-11T22:49:54Z",
+            "details": []
+        },
+        {
+            "id": 2395,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Odd ... I knew of this bug and fixed it for wide screens. Actually I can't reproduce it with f.e. r_mode 13 (1444x900) and current master.\r\n",
+            "created_on": "2013-12-12T05:40:37Z",
+            "details": []
+        },
+        {
+            "id": 2867,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Anyone else can reproduce this with the master branch?",
+            "created_on": "2014-01-20T17:44:43Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 2869,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Works for me (1366x768).",
+            "created_on": "2014-01-20T23:01:23Z",
+            "details": []
+        },
+        {
+            "id": 2873,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Odal, I don't know how you did compile and finally install your build but the bug shouldn't occure anymore. If it still exists after the rc4 release please open this again.",
+            "created_on": "2014-01-21T05:02:38Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 2874,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-01-21T05:03:43Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "7",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 2875,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "My friend told me he experienced the exact same issue in our previous build. I'll just check with him if it still occurs in version:2.71rc4",
+            "created_on": "2014-01-21T09:17:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "0"
+                }
+            ]
+        },
+        {
+            "id": 2876,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Radegast, please figure out which r_modes are finally affected. ",
+            "created_on": "2014-01-21T10:31:33Z",
+            "details": []
+        },
+        {
+            "id": 3094,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Note: Sorting by favorite doesn't seem possible (keep in mind the UI capabilities is very limited!), but you can set the Source as filter for Favourites.\r\n\r\nSince I cannot reproduce the bug either, I'm closing this issue now. Please reopen if the bug is still present after rc4 release.",
+            "created_on": "2014-03-01T21:15:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 106,
+            "name": "Odal"
+        }
+    ],
+    "time_entries": null,
+    "id": 424,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 106,
+        "name": "Odal"
+    },
+    "category": {
+        "id": 15,
+        "name": "Mod UI"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "Scroll bars on server browser and \"sort by\" favourites",
+    "description": "It seems that I cannot use the right scrollbar to scrol down the list of the online servers in the \"Play Online\" window. It does not work also the arrow buttons, up and down, at the end of such scroll bar. Also the selection of the favourites anche the \"sort by\" fovourites has no effect (am I the only who want these things working? :-o ).\r\n\r\nThe mouse wheel works and also the arrow keys (on the keyboard), after one click on the server list.\r\n\r\nI use Win7 with the ET last release (with \"git pull\" - I am not a developer, but I am able to compile).\r\nThank you!!",
+    "start_date": "2013-12-11",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-12-11T17:42:49Z",
+    "updated_on": "2014-03-01T21:15:50Z",
+    "closed_on": "2014-03-01T21:15:50Z"
+}

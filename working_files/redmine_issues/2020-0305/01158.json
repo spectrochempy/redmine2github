@@ -1,0 +1,77 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7845,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-03-07T11:40:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "10"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1158,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 392,
+        "name": "Timothy"
+    },
+    "assigned_to": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "category": {
+        "id": 14,
+        "name": "Mod pak3.pk3"
+    },
+    "fixed_version": {
+        "id": 10,
+        "name": "N/A"
+    },
+    "subject": "Frostbite CP incorrectly shown as 'built' on map",
+    "description": "The CP on ETL Frostbite (version 4) was shown as 'built' on the command map while it was destroyed (by a covie/engi). Have not tried to reproduce it yet, though, as it happened during a pub game.",
+    "start_date": "2019-01-06",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-01-06T17:01:12Z",
+    "updated_on": "2019-03-07T11:40:05Z"
+}

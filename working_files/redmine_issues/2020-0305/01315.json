@@ -1,0 +1,121 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 8342,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "The issue is that the index sound has changed following a refactoring. See the fix in the \"Lua script\":https://github.com/etlegacy/etlegacy-lua_scripts/commit/23c65921890fd9ba0010ceaf2ca85dcc49d171c4.\r\n\r\n{TODO}\r\n* -Add constants for sound indexes in our Lua API- (is that even worth it? ... Probably not).",
+            "created_on": "2019-06-27T18:21:21Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "16",
+                    "new_value": "21"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "6",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "22",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 8388,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Index has been reverted to original value. I don't think it is worth adding constant for a single scripts, as these should stay unchanged anyway.",
+            "created_on": "2019-07-13T09:43:18Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 697,
+            "name": "artium"
+        }
+    ],
+    "time_entries": null,
+    "id": 1315,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Healing teammate while alive produce engineer repairing sound",
+    "description": "From TM forums:\r\nWhenever you heal a fellow teammate while he is still alive, you hear the engineer repairing sound. Cracks me up every time, so no need to rush fixing this!",
+    "start_date": "2019-06-26",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-06-26T17:11:22Z",
+    "updated_on": "2019-07-13T09:43:18Z",
+    "closed_on": "2019-07-13T09:43:18Z"
+}

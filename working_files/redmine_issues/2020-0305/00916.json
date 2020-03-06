@@ -1,0 +1,173 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 276,
+            "issue_id": 916,
+            "issue_to_id": 825,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 275,
+            "issue_id": 906,
+            "issue_to_id": 916,
+            "relation_type": "blocks",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 5751,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-01-09T21:49:34Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "blocked",
+                    "new_value": "906"
+                }
+            ]
+        },
+        {
+            "id": 5757,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-01-12T16:25:04Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "825"
+                }
+            ]
+        },
+        {
+            "id": 5875,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-07-18T09:02:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "We should do a release ASAP.",
+                    "new_value": "We should do a release ASAP.\r\n\r\n* Don't forget to create RPI server install pack * "
+                }
+            ]
+        },
+        {
+            "id": 5917,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-08-25T09:46:43Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Release 2.75",
+                    "new_value": "Release 2.75 'Learning to fly'"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 5999,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-09-09T14:27:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 916,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 6,
+        "name": "Urgent"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "Release 2.75 'Learning to fly'",
+    "description": "We should do a release ASAP.\r\n\r\n* Don't forget to create RPI server install pack * ",
+    "start_date": "2016-01-09",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2016-01-09T21:49:11Z",
+    "updated_on": "2016-09-09T14:27:58Z",
+    "closed_on": "2016-09-09T14:27:58Z"
+}

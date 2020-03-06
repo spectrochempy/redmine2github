@@ -1,0 +1,123 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "5ca61222289177d320ce2faca08a71f09c2d7792",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "client: ask user before usind default settings after crash, fixes #568",
+            "committed_on": "2014-11-09T17:13:16Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3656,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Applied in changeset commit:5ca61222289177d320ce2faca08a71f09c2d7792.",
+            "created_on": "2014-11-09T17:23:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3657,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2014-11-09T17:24:01Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "12",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 568,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Add an option to be able to choose whether reset graphic settings or not after a crash",
+    "description": "I have obviously played Call of Duty and this really came up to my mind. When the game crashes or doesn't exit properly there should be an option whether reset graphic settings on the start or not. Because now it's like that the settings will go to default values when you launch your ET:L after a crash.\r\n\r\nSo what I mean by all this is that there should come a pop-up window before ET:L launches which asks you about the graphic settings. Will you reset them or not. I don't know how would you like this idea but to me it sounds pretty nice because mostly the crashes might occur for some known reason and it's rather pain to change the graphic settings each time your client crashes.\r\n\r\n-*S",
+    "start_date": "2014-08-22",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-08-21T22:29:26Z",
+    "updated_on": "2014-11-09T17:24:01Z",
+    "closed_on": "2014-11-09T17:23:03Z"
+}

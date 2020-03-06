@@ -1,0 +1,142 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "b99e4946bf95286426e2e77cbb2d9cc1f8fa71e6",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "game: don't give satchel detonator at spawn, refs #1148",
+            "committed_on": "2018-12-26T10:26:20Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7395,
+            "user": {
+                "id": 110,
+                "name": "Harlekin"
+            },
+            "notes": "",
+            "created_on": "2018-12-25T09:22:41Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "952",
+                    "old_value": "battery.script"
+                }
+            ]
+        },
+        {
+            "id": 7396,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-12-25T11:20:09Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 7401,
+            "user": {
+                "id": 110,
+                "name": "Harlekin"
+            },
+            "notes": "Was able to reproduce it at legacy testserver and noticed that bots seems not to be affected.",
+            "created_on": "2018-12-25T19:19:21Z",
+            "details": []
+        },
+        {
+            "id": 7410,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "",
+            "created_on": "2018-12-26T10:26:40Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "251"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1148,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 6,
+        "name": "Urgent"
+    },
+    "author": {
+        "id": 110,
+        "name": "Harlekin"
+    },
+    "assigned_to": {
+        "id": 251,
+        "name": "Aranud"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Satchel Bug",
+    "description": "Satchel disappears if it is used once and player gets killed afterwards. Player spawns afterwards only with control unit for satchel.\r\n\r\nAttached a demo",
+    "start_date": "2018-12-25",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2018-12-25T09:22:00Z",
+    "updated_on": "2018-12-26T10:26:40Z",
+    "closed_on": "2018-12-26T10:26:40Z"
+}

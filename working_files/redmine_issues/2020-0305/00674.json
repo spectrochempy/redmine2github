@@ -1,0 +1,88 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 5067,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Output is spammy but correct. Each time the client tries to connect the server sends sv_tempbanmessage content. Just abort the connection process.",
+            "created_on": "2015-08-08T14:05:55Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "17"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 674,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "Console gets spammed by \"You have been kicked...\" after joining there after a kick",
+    "description": "So basically how you reproduce this:\r\n1. Get kicked\r\n2. Try to reconnect to the server\r\n3. Check console after a couple of seconds\r\n\r\nSo it gives the same message every second. So there's \"Awaiting connection... 16\" and you check console, the message has come there 16 times.\r\n\r\n-*S",
+    "start_date": "2014-11-28",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-28T14:25:12Z",
+    "updated_on": "2015-08-08T14:05:55Z",
+    "closed_on": "2015-08-08T14:05:55Z"
+}

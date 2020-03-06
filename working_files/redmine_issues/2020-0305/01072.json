@@ -1,0 +1,225 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 363,
+            "issue_id": 1072,
+            "issue_to_id": 981,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7094,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-02-17T05:15:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "12"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "8"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 7097,
+            "user": {
+                "id": 278,
+                "name": "yks"
+            },
+            "notes": "Tried on Windows, 2.75 client and on same server. \u00d5, \u00c4, \u00d6 and \u00dc seems  to work and no crashes for me.",
+            "created_on": "2018-02-18T16:22:54Z",
+            "details": []
+        },
+        {
+            "id": 7098,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "This bug is current master only, the 2.75 release isn't affected.",
+            "created_on": "2018-02-18T16:50:15Z",
+            "details": []
+        },
+        {
+            "id": 7147,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-02-28T12:45:54Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "981"
+                }
+            ]
+        },
+        {
+            "id": 7149,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Status:\r\n- the current implementation (combination of latest client and server) doesn't crash \r\n- german 'Umlaute' are displayed when the chat is initiated via the chat window, console is still failing (chars are replaced by spaces)  see #981\r\n\r\n{FIXME}\r\n- ensure the current client doesn't crash when connected to older server versions ( 2.75 & earlier) ",
+            "created_on": "2018-02-28T12:46:27Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "20"
+                }
+            ]
+        },
+        {
+            "id": 7151,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-02-28T12:57:34Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "6",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 7358,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-12-21T13:09:33Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 7509,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-01-06T08:19:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 7762,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-02-14T10:34:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "22",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1072,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 4,
+        "name": "Feedback"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 767,
+        "name": "tiffie"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Games crashes if German Umlauts used in chat",
+    "description": "My game on 37.187.79.49:27964 crashed reproducible when sending \u00fc, \u00f6 or \u00e4 in chat.\r\n\r\nClient: ET Legacy v2.75-1537-gf8842e6d linux-i386 Feb 13 2018 DEBUG\r\nMasked as: ET 2.60b linux-i386 May  8 2006\r\nBuilt: 2018-02-13T20:25:15 UTC\r\n\r\n\u00fc -> \"ERROR: invalid playerState field count\"\r\n\u00f6 -> \"ERROR: CL_ParseServerMessage: Illegible server message 177\"\r\n\u00e4 -> \"ERROR: CL_ParseServerMessage: Illegible server message 239\"\r\n\r\nServer problem or clients?",
+    "start_date": "2018-02-16",
+    "done_ratio": 20,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2018-02-16T20:44:50Z",
+    "updated_on": "2019-02-14T10:34:06Z"
+}

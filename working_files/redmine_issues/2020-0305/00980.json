@@ -1,0 +1,214 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "dcb46a3c6409e97f8ca4a41f8c546bf1b5c63f8a",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: give XP when giving packs to teammate with same class, refs #980",
+            "committed_on": "2017-02-05T20:00:39Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 6303,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "This is done on purpose according to comments in Pickup_Health() and Pickup_Weapon().\r\n\r\nTherefore, does it make sense to change it?",
+            "created_on": "2017-02-02T22:30:10Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 6308,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "No. Let's keep it as it is.",
+            "created_on": "2017-02-03T16:23:55Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 6310,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "What is the reasoning in the comments you mentioned, spyhawk?\r\nBecause to me it doesn't really make sense. Of course you shouldn't be rewarded XP when using the ability on yourself, but what kind of teammate you are using it on shouldn't matter, right?\r\nI mean you also get XP for reviving a medic, why not get XP for healing him?",
+            "created_on": "2017-02-03T17:05:25Z",
+            "details": []
+        },
+        {
+            "id": 6311,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "keMoN wrote:\r\n> What is the reasoning in the comments you mentioned, spyhawk?\r\n\r\nThere is no explanation, but the comments are clear enough. This is the intended behavior, and they rejected the idea of giving XP in these specific cases.\r\nMight be for inciting players to focus on players that actually really need medpak/ammo packs - medic and field ops can take care of themselves.",
+            "created_on": "2017-02-03T17:19:30Z",
+            "details": []
+        },
+        {
+            "id": 6312,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "I don't think the vanilla behavior has much sense here. Also, it wouldn't be the end of the world if pros and cons of the possible change were discussed here...",
+            "created_on": "2017-02-04T10:25:57Z",
+            "details": []
+        },
+        {
+            "id": 6313,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "It's not because a ticket is closed that discussion is impossible... \r\n\r\nPro: Incite players to focus on players that actually really need medpak/ammo packs - medic and field ops should take care of themselves.\r\nCon: consistency?\r\n\r\nTo me, both arguments make sense - especially since XP Save didn't exist back in the day, and where inciting teams to to the right thing could make a difference.\r\nWe're also trying to make XP Save completely irrelevant through rating (well, at least that is _my_ personal objective), so XP farming would become irrelevant for players. I'm not against changing the default behavior.",
+            "created_on": "2017-02-04T11:42:21Z",
+            "details": []
+        },
+        {
+            "id": 6316,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "Since this is priority 'low' I don't know how much discussion should be spent here, but for me the consistency is the main aspect, yes.\r\nOf course other medics and fieldops should fix themselves, but what if they can't? No chargebar, no knowledge, etc. \r\nIf a medic is low on health and spent all his charge on healing others, it is a viable and necessary choice of the other medic to heal him.\r\nIf an engi is standing on a landmine and doesn't know what to do, the second engi that comes to defuse it is also rewarded XP, although the first one should've known better.\r\n\r\nI realize that this is a bit getting lost in semantics and I do admit my reasoning is mostly about the plain principle of consistency. It won't have a huge impact, because people will (ideally) support each other anyway.",
+            "created_on": "2017-02-04T12:14:17Z",
+            "details": []
+        },
+        {
+            "id": 6318,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "From my personal experience, players tend to supply each other no matter if they get XP for it or not. Obviously, I don't have any statistics to back this up.\r\n\r\nFor the \"pro scene\" it should be irrelevant anyway as all league configs lock players at 0 skill levels.",
+            "created_on": "2017-02-04T17:18:56Z",
+            "details": []
+        },
+        {
+            "id": 6322,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Makes sense to me. This modification shouldn't be difficult.",
+            "created_on": "2017-02-05T12:16:25Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "6",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 6330,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-02-06T09:56:59Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 980,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Medics and Field Ops don't receive XP for sharing supply to other medics or fieldops",
+    "description": "Medics don't earn XP for giving medpack to other medics, only to other classes. Same issue for Fieldops giving ammo to other field ops.\r\n\r\nI guess this is done to avoid earning XP by giving supply to oneself, but I'm not that preventing XP when sharing supply to other players of the same classes is really intended.",
+    "start_date": "2017-01-31",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-01-31T10:17:39Z",
+    "updated_on": "2017-02-06T09:56:59Z",
+    "closed_on": "2017-02-06T09:56:59Z"
+}

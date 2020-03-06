@@ -1,0 +1,152 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 6560,
+            "user": {
+                "id": 392,
+                "name": "Timothy"
+            },
+            "notes": "Things we tried as discussed via Discord:\r\n\r\n* clean wipe\r\n* remove only etl_bin_v2.75.pk3\r\n* connect to a random 2.75 server (TeamMuppet)\r\n* connect to official server that runs latest build\r\n\r\nWeird is that this also happens on our test server, as that should not require etl_bin_2.75.pk3.",
+            "created_on": "2017-03-15T08:52:52Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "old_value": "",
+                    "new_value": "Windows"
+                },
+                {
+                    "property": "cf",
+                    "name": "2",
+                    "old_value": "",
+                    "new_value": "64-bit"
+                }
+            ]
+        },
+        {
+            "id": 6561,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-03-15T13:24:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 6583,
+            "user": {
+                "id": 392,
+                "name": "Timothy"
+            },
+            "notes": "This issue is caused by a mismatch between distributed @etl_bin_2.75.pk3@ on client and server. Apparently the MD5 hash changed due to Linux x64 binaries being different.",
+            "created_on": "2017-03-18T11:28:15Z",
+            "details": []
+        },
+        {
+            "id": 6637,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "This linky should help to fix the issue: https://dev.etlegacy.com/projects/etlegacy/wiki/Path_and_File_Structure\r\nThe next release will fix it.\r\n\r\n",
+            "created_on": "2017-03-29T14:21:22Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 6652,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Closing now.",
+            "created_on": "2017-04-08T15:20:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1022,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 665,
+        "name": "Boojangles"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "etl_bin_2.75.pk3 missing",
+    "description": "When joining most Legacy servers, I receive a etl_bin_2.75.pk3 missing message and get booted back to the menu. I'm on Windows 8.1. All other servers (Vanilla, Jaymod, ETpub, etc.) work. On occasion, sometimes the server begins downloading the file and will let me in, but most times it doesn't download at all and kicks me out. Sometimes it downloads the file and claims it doesn't exist anyways. I've tried reinstalling several times and have done a clean wipe (deleting everything in the documents folder of ETlegacy and the main one). Here's a dump of me connecting to a Legacy server and getting bumped out.\r\n\r\nET Legacy v2.75 win-x86 Sep 13 2016\r\nZone megs: 64\r\nInfo: fs_game now defaults to 'legacy' mod instead of 'etmain'\r\n----- FS_Startup -----\r\nCurrent search path:\r\n    C:\\Users\\John\\Documents\\ETLegacy\\legacy\r\n    .\\legacy\r\n    .\\legacy\\pak3_v2.75.pk3 (951 files)\r\n    .\\legacy\\etl_bin_v2.75.pk3 (8 files)\r\n    C:\\Users\\John\\Documents\\ETLegacy\\etmain\r\n    .\\etmain\r\n    .\\etmain\\pak2.pk3 (22 files)\r\n    .\\etmain\\pak1.pk3 (10 files)\r\n    .\\etmain\\pak0.pk3 (3725 files)\r\n \r\n----------------------\r\n4716 files in pk3 files\r\nexecing default.cfg\r\ncouldn't exec autoexec.cfg\r\nHunk_Clear: reset the hunk ok\r\nNot logging server attacks to disk.\r\n----- Client Initialization -----\r\n----- Initializing Renderer ----\r\nTrying to load \"renderer_opengl1_x86.dll\" from \"C:\\Program Files (x86)\\Enemy Territory -\r\nLegacy\"...\r\n-------------------------------\r\nCom_sprintf: Output length 28 too short, require 29 bytes.\r\nETKEY file generated.\r\nAvailable client translations: Czech German Greek English Esperanto Spanish Finnish French Italian\r\nKorean Dutch Norwegian Polish Portuguese Romanian Russian Slovak Slovenian\r\nAvailable mod translations: Czech German Greek English Esperanto Spanish Finnish French Italian\r\nKorean Dutch Norwegian Polish Portuguese Romanian Russian Slovak Slovenian\r\nLanguage set to English\r\n----- Client Initialization Complete -----\r\n----- R_Init -----\r\nSDL build version 2.0.4 - link version 2.0.4.\r\nSDL initialized driver \"windows\"\r\nInitializing OpenGL display\r\nEstimated display aspect: 1.778\r\n...setting mode -2: 1920x1080\r\nUsing 24 color bits, 24 depth, 0 stencil display.\r\nAvailable modes [18]: '1280x720 1366x768 1600x900 1920x1080 1360x768 1280x768 1280x800 1440x900\r\n1680x1050 1600x1024 720x480 640x480 800x600 1024x768 1152x864 1280x960 720x576 1280x1024'\r\nUsing GLEW 2.0.0\r\nGL_VENDOR: NVIDIA Corporation\r\nGL_RENDERER: GeForce GTX 970/PCIe/SSE2\r\nGL_VERSION: 4.5.0 NVIDIA 378.49\r\nUsing vanilla renderer\r\nInitializing OpenGL extensions\r\n...found OpenGL extension - GL_EXT_texture_compression_s3tc\r\n...found OpenGL extension - GL_EXT_texture_env_add\r\n...found OpenGL extension - GL_ARB_multitexture\r\n \r\n------- Input Initialization -------\r\n...game controller disabled by cvar setting\r\n------------------------------------\r\nGL_MAX_TEXTURE_SIZE: 16384\r\nGL_MAX_ACTIVE_TEXTURES_ARB: 4\r\nPIXELFORMAT: color(24-bits) Z(24-bit) stencil(0-bits)\r\nMODE: -2, SCREEN: 1920 x 1080 fullscreen (ratio 1.7778) Hz:N/A\r\nGAMMA: hardware w/ 0 overbright bits\r\nrendering primitives: single glDrawElements\r\ntexturemode: GL_LINEAR_MIPMAP_NEAREST\r\npicmip: 1\r\ntexture bits: 0\r\nmultitexture: enabled\r\ncompiled vertex arrays: enabled\r\ntexenv add: enabled\r\ncompressed textures: enabled\r\nInitializing Shaders\r\nR_Init: glGetError() = 0x500\r\n----- finished R_Init -----\r\n------ Initializing Sound (1)------\r\nSDL_Init( SDL_INIT_AUDIO )... OK\r\nSDL audio driver is \"xaudio2\".\r\nSDL_AudioSpec:\r\n  Format:   AUDIO_S16LSB\r\n  Freq:     44100\r\n  Samples:  1024\r\n  Channels: 2\r\n  Silence:  0\r\n  Size:     4096\r\nStarting SDL audio callback...\r\nSDL audio initialized.\r\n----- Sound Info -----\r\nsound system is muted\r\n    1 stereo\r\n32768 samples\r\n   16 samplebits\r\n    1 submission_chunk\r\n44100 speed\r\n1CE4AEE8 dma buffer\r\nNo background file.\r\n----------------------\r\nSound initialization successfully done\r\ns_backend set to SDL2\r\n--------------------------------\r\nSound memory manager started\r\nSys_LoadGameDll -> FS_CL_ExtractFromPakFile(C:\\Users\\John\\Documents\\ETLegacy, legacy,\r\nui_mp_x86.dll)\r\nSys_LoadDll(C:\\Users\\John\\Documents\\ETLegacy\\legacy\\ui_mp_x86.dll)... succeeded\r\nSys_LoadDll(legacy/ui) found vmMain function at 64C02750\r\nInitializing Legacy ui v2.75\r\n145 UI cvars in use.\r\nTotal favourite servers restored: 0\r\nFound high quality video and fast CPU\r\n... DBMS is disabled\r\n--- Common Initialization Complete ---\r\nWinsock initialized.\r\nHostname: John-Desktop\r\nIP: 192.168.1.65\r\nOpening IP socket: 0.0.0.0:27960\r\nNetwork initialized.\r\nWorking directory: C:\\Program Files (x86)\\Enemy Territory - Legacy\r\nexecing preset_high.cfg\r\nr_colorbits will be changed upon restarting.\r\nr_depthbits will be changed upon restarting.\r\nr_picmip will be changed upon restarting.\r\nr_texturebits will be changed upon restarting.\r\nr_ext_texture_filter_anisotropic will be changed upon restarting.\r\nRE_Shutdown( 1 )\r\nSDL input devices shut down.\r\nHunk_Clear: reset the hunk ok\r\n----- Initializing Renderer ----\r\nTrying to load \"renderer_opengl1_x86.dll\" from \"C:\\Program Files (x86)\\Enemy Territory -\r\nLegacy\"...\r\n-------------------------------\r\n----- R_Init -----\r\nSDL build version 2.0.4 - link version 2.0.4.\r\nSDL initialized driver \"windows\"\r\nInitializing OpenGL display\r\nEstimated display aspect: 1.778\r\n...setting mode -2: 1920x1080\r\nUsing 24 color bits, 24 depth, 0 stencil display.\r\nAvailable modes [18]: '1280x720 1366x768 1600x900 1920x1080 1360x768 1280x768 1280x800 1440x900\r\n1680x1050 1600x1024 720x480 640x480 800x600 1024x768 1152x864 1280x960 720x576 1280x1024'\r\nUsing GLEW 2.0.0\r\nGL_VENDOR: NVIDIA Corporation\r\nGL_RENDERER: GeForce GTX 970/PCIe/SSE2\r\nGL_VERSION: 4.5.0 NVIDIA 378.49\r\nUsing vanilla renderer\r\nInitializing OpenGL extensions\r\n...found OpenGL extension - GL_EXT_texture_compression_s3tc\r\n...found OpenGL extension - GL_EXT_texture_env_add\r\n...found OpenGL extension - GL_ARB_multitexture\r\n \r\n------- Input Initialization -------\r\n...game controller disabled by cvar setting\r\n------------------------------------\r\nGL_MAX_TEXTURE_SIZE: 16384\r\nGL_MAX_ACTIVE_TEXTURES_ARB: 4\r\nPIXELFORMAT: color(24-bits) Z(24-bit) stencil(0-bits)\r\nMODE: -2, SCREEN: 1920 x 1080 fullscreen (ratio 1.7778) Hz:N/A\r\nGAMMA: hardware w/ 0 overbright bits\r\nrendering primitives: single glDrawElements\r\ntexturemode: GL_LINEAR_MIPMAP_LINEAR\r\npicmip: 0\r\ntexture bits: 32\r\nmultitexture: enabled\r\ncompiled vertex arrays: enabled\r\ntexenv add: enabled\r\ncompressed textures: enabled\r\nInitializing Shaders\r\nR_Init: glGetError() = 0x500\r\n----- finished R_Init -----\r\nSys_LoadGameDll -> FS_CL_ExtractFromPakFile(C:\\Users\\John\\Documents\\ETLegacy, legacy,\r\nui_mp_x86.dll)\r\nSys_LoadDll(C:\\Users\\John\\Documents\\ETLegacy\\legacy\\ui_mp_x86.dll)... succeeded\r\nSys_LoadDll(legacy/ui) found vmMain function at 64C02750\r\nInitializing Legacy ui v2.75\r\n145 UI cvars in use.\r\nTotal favourite servers restored: 0\r\n \r\n------- Input Initialization -------\r\n...game controller disabled by cvar setting\r\n------------------------------------\r\nCinematic video/etintro.ogv not found\r\nMOTD: resolving motd.etlegacy.com... resolved to 5.135.27.11:27951\r\nUpdater: resolving update.etlegacy.com... couldn't resolve address\r\nexecing preset_normal_ui.cfg\r\nexecing preset_high_ui.cfg\r\ncouldn't exec profiles/Boojangles/etconfig.cfg\r\nTotal favourite servers restored: 0\r\nexecing default.cfg\r\nRE_Shutdown( 1 )\r\nSDL input devices shut down.\r\nHunk_Clear: reset the hunk ok\r\n----- Initializing Renderer ----\r\nTrying to load \"renderer_opengl1_x86.dll\" from \"C:\\Program Files (x86)\\Enemy Territory -\r\nLegacy\"...\r\n-------------------------------\r\n----- R_Init -----\r\nSDL build version 2.0.4 - link version 2.0.4.\r\nSDL initialized driver \"windows\"\r\nInitializing OpenGL display\r\nEstimated display aspect: 1.778\r\n...setting mode -2: 1920x1080\r\nUsing 24 color bits, 24 depth, 0 stencil display.\r\nAvailable modes [18]: '1280x720 1366x768 1600x900 1920x1080 1360x768 1280x768 1280x800 1440x900\r\n1680x1050 1600x1024 720x480 640x480 800x600 1024x768 1152x864 1280x960 720x576 1280x1024'\r\nUsing GLEW 2.0.0\r\nGL_VENDOR: NVIDIA Corporation\r\nGL_RENDERER: GeForce GTX 970/PCIe/SSE2\r\nGL_VERSION: 4.5.0 NVIDIA 378.49\r\nUsing vanilla renderer\r\nInitializing OpenGL extensions\r\n...found OpenGL extension - GL_EXT_texture_compression_s3tc\r\n...found OpenGL extension - GL_EXT_texture_env_add\r\n...found OpenGL extension - GL_ARB_multitexture\r\n \r\n------- Input Initialization -------\r\n...game controller disabled by cvar setting\r\n------------------------------------\r\nGL_MAX_TEXTURE_SIZE: 16384\r\nGL_MAX_ACTIVE_TEXTURES_ARB: 4\r\nPIXELFORMAT: color(24-bits) Z(24-bit) stencil(0-bits)\r\nMODE: -2, SCREEN: 1920 x 1080 fullscreen (ratio 1.7778) Hz:N/A\r\nGAMMA: hardware w/ 0 overbright bits\r\nrendering primitives: single glDrawElements\r\ntexturemode: GL_LINEAR_MIPMAP_LINEAR\r\npicmip: 0\r\ntexture bits: 32\r\nmultitexture: enabled\r\ncompiled vertex arrays: enabled\r\ntexenv add: enabled\r\ncompressed textures: enabled\r\nInitializing Shaders\r\nR_Init: glGetError() = 0x500\r\n----- finished R_Init -----\r\nSys_LoadGameDll -> FS_CL_ExtractFromPakFile(C:\\Users\\John\\Documents\\ETLegacy, legacy,\r\nui_mp_x86.dll)\r\nSys_LoadDll(C:\\Users\\John\\Documents\\ETLegacy\\legacy\\ui_mp_x86.dll)... succeeded\r\nSys_LoadDll(legacy/ui) found vmMain function at 64C02750\r\nInitializing Legacy ui v2.75\r\n145 UI cvars in use.\r\nTotal favourite servers restored: 0\r\n \r\n------- Input Initialization -------\r\n...game controller disabled by cvar setting\r\n------------------------------------\r\n]\\connect 37.187.79.49:27964\r\nMOTD: resolving motd.etlegacy.com... resolved to 5.135.27.11:27951\r\nUpdater: resolving update.etlegacy.com... couldn't resolve address\r\n37.187.79.49:27964 resolved to 37.187.79.49:27964\r\nConnected to a pure server.\r\n----- FS_Startup -----\r\nCurrent search path:\r\n    .\\legacy\\pak3_v2.75.pk3 (951 files)\r\n        on the pure list\r\n    .\\etmain\\pak2.pk3 (22 files)\r\n        on the pure list\r\n    .\\etmain\\pak1.pk3 (10 files)\r\n        on the pure list\r\n    .\\etmain\\pak0.pk3 (3725 files)\r\n        on the pure list\r\n    C:\\Users\\John\\Documents\\ETLegacy\\legacy\r\n    .\\legacy\r\n    .\\legacy\\etl_bin_v2.75.pk3 (8 files)\r\n        not on the pure list\r\n    C:\\Users\\John\\Documents\\ETLegacy\\etmain\r\n    .\\etmain\r\n \r\n----------------------\r\n4716 files in pk3 files\r\nNeed paks: legacy/etl_bin_v2.75.pk3\r\n \r\nNeed paks: @legacy/etl_bin_v2.75.pk3@legacy/etl_bin_v2.75.pk3\r\nNeed paks: @legacy/etl_bin_v2.75.pk3@legacy/etl_bin_v2.75.pk3\r\nClient download subsystem initialized\r\nUnknown command \"+stats\"\r\nUnknown command \"+stats\"\r\nUnknown command \"+stats\"\r\n----- FS_Startup -----\r\nCurrent search path:\r\n    C:\\Users\\John\\Documents\\ETLegacy\\legacy\r\n    .\\legacy\r\n    .\\legacy\\pak3_v2.75.pk3 (951 files)\r\n    .\\legacy\\etl_bin_v2.75.pk3 (8 files)\r\n    C:\\Users\\John\\Documents\\ETLegacy\\etmain\r\n    .\\etmain\r\n    .\\etmain\\pak2.pk3 (22 files)\r\n    .\\etmain\\pak1.pk3 (10 files)\r\n    .\\etmain\\pak0.pk3 (3725 files)\r\n \r\n----------------------\r\n4716 files in pk3 files\r\nSys_LoadGameDll -> FS_CL_ExtractFromPakFile(C:\\Users\\John\\Documents\\ETLegacy, legacy, ui_mp_x86.dll)\r\nSys_LoadDll(C:\\Users\\John\\Documents\\ETLegacy\\legacy\\ui_mp_x86.dll)... succeeded\r\nSys_LoadDll(legacy/ui) found vmMain function at 64C02750\r\nInitializing Legacy ui v2.75\r\n145 UI cvars in use.\r\nTotal favourite servers restored: 0\r\n]/condump etlbin.txt\r\nDumped console text to etlbin.txt.",
+    "start_date": "2017-03-15",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Windows"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": "64-bit"
+        }
+    ],
+    "created_on": "2017-03-15T08:44:02Z",
+    "updated_on": "2017-04-08T15:20:07Z",
+    "closed_on": "2017-04-08T15:20:07Z"
+}

@@ -1,0 +1,625 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 241,
+            "issue_id": 610,
+            "issue_to_id": 55,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "947d14839b3ff438a40f792c7a150bd90123026d",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "misc: comment clean up, refs #55",
+            "committed_on": "2013-01-26T17:12:50Z"
+        },
+        {
+            "revision": "2700612b1dfa5ef7d217060c1740daec7961ef87",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "misc: comment clean up (baseq3 -> etmain), refs #55",
+            "committed_on": "2013-03-26T16:01:53Z"
+        },
+        {
+            "revision": "29b085a4f90395ef897227bfe662cf7c13c6558d",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "misc: comment clean up, refs #55",
+            "committed_on": "2013-04-01T17:55:23Z"
+        },
+        {
+            "revision": "f8e08cd646ec7d47795afd0752b0b8c8b7f4603b",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "cgame: fix clang warning + Doc refs #55",
+            "committed_on": "2016-11-10T16:41:25Z"
+        },
+        {
+            "revision": "5d8afe0f1d914cc5544a75047899b96c033cbb65",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "cgame: fix clang warning + doc refs #55 + uncrustify",
+            "committed_on": "2016-11-12T00:14:19Z"
+        },
+        {
+            "revision": "48f61789509cc0b2a4c2885e9a2eefc265d55321",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "cgame: fix clang warning + doc refs #55",
+            "committed_on": "2016-11-14T13:21:26Z"
+        },
+        {
+            "revision": "aa1bd8d0ad6db50761c1e22288ebd9e673dbc76c",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "cgame: fix clang warning + doc refs #55",
+            "committed_on": "2016-11-14T19:45:07Z"
+        },
+        {
+            "revision": "43a4093b1f3b31c613e488fc76f57adabe621d5d",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "cgame: fix clang warning + docs refs #55",
+            "committed_on": "2016-11-14T22:15:05Z"
+        },
+        {
+            "revision": "a1080a7cdc10ad63b3187b22f83b23c35ea6f81b",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "cgame: fix clang warning + doc refs #55",
+            "committed_on": "2016-11-15T13:39:55Z"
+        },
+        {
+            "revision": "e040c2a5b76cd79847f98991bdd67bd7267dcf90",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "ui: fix clang warning + tiny optimisation + doc refs #55",
+            "committed_on": "2016-11-21T16:27:05Z"
+        },
+        {
+            "revision": "77fef1f23cb5b16f5243272e78de1cfa29778e2c",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "sys: fix clang warning + Doc refs #55",
+            "committed_on": "2016-11-22T12:02:45Z"
+        },
+        {
+            "revision": "4dcd2a6fa8baf19693ceccfff01166d5796e1218",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "server: fix clang warning + doc refs #55",
+            "committed_on": "2016-11-24T12:32:20Z"
+        },
+        {
+            "revision": "47e0e29b81a3635d22d0d01e86b0335a57ad143f",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "server: fix clang warning + docs refs #55",
+            "committed_on": "2016-11-24T16:31:29Z"
+        },
+        {
+            "revision": "7acdd9a8baebad21cec1b116d5bf25a10ffff813",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "sdl: fix clang warning + docs refs #55",
+            "committed_on": "2016-11-28T12:01:56Z"
+        },
+        {
+            "revision": "1864f5edffbbeb32c2bdfd71fc2dc57b8acf48c5",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "db: doc refs #55",
+            "committed_on": "2016-11-28T12:02:07Z"
+        },
+        {
+            "revision": "9fa0942879e0e6294c64caa9f34f0a1a1a47fd56",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "botlib: fix clang warning + comment used function + doc refs #55",
+            "committed_on": "2016-11-28T12:03:59Z"
+        },
+        {
+            "revision": "731e1c51ee06bbcb0c78e6ce3827939ca5e42e31",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "client: fix clang warning + doc refs #55",
+            "committed_on": "2016-11-28T12:07:17Z"
+        },
+        {
+            "revision": "153500887b631595dc4d034b3b781bc330668bd8",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "client: fix clang warning + doc refs #55",
+            "committed_on": "2016-11-28T15:56:48Z"
+        },
+        {
+            "revision": "6bb78d9d0dff5ad8c54f13b9d62dd0853396b290",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "client: doc refs #55",
+            "committed_on": "2016-11-29T12:02:16Z"
+        },
+        {
+            "revision": "3cf75c9e5a90f2cce4f4756bfb1217d1eb253f9f",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "game: fix clang warning + doc refs #55",
+            "committed_on": "2016-12-01T21:39:04Z"
+        },
+        {
+            "revision": "3cdd6c8f63beca4c133bcf326e757b25cfac6e36",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "game: fix clang warning + doc refs #55",
+            "committed_on": "2016-12-02T13:18:54Z"
+        },
+        {
+            "revision": "16994e9badab7f9ef62763358bd863d4e5981d0e",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "game: fix clang warning + doc refs #55",
+            "committed_on": "2016-12-05T16:16:28Z"
+        },
+        {
+            "revision": "470b1ac9c8094587d13bde3a870f1c9926df6b5a",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "game: fix clang warning + doc refs #55",
+            "committed_on": "2016-12-07T16:01:07Z"
+        },
+        {
+            "revision": "f97fdec71c456d9952e12b3a517d2e30ccf8e71b",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "game: fix clang warning + doc refs #55",
+            "committed_on": "2016-12-07T16:01:08Z"
+        },
+        {
+            "revision": "78d7d7aa2cdf0e1767169ff1df81bcbbe56196ca",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "game: fix clang warning + doc refs #55",
+            "committed_on": "2016-12-07T22:35:43Z"
+        },
+        {
+            "revision": "2da428a7629f1a8a55a63967d2346084cae16cc5",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "game: fix clang warning + docs refs #55",
+            "committed_on": "2016-12-08T12:13:36Z"
+        },
+        {
+            "revision": "3dfb103b6efe85d75494c8458367d6606180cb09",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "omnibot: fix clang warning + doc refs #55",
+            "committed_on": "2016-12-08T12:14:17Z"
+        },
+        {
+            "revision": "3b6204115237352313d8358478fb1fb51688dd5f",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "null: doc refs #55",
+            "committed_on": "2016-12-08T12:19:03Z"
+        },
+        {
+            "revision": "d2f56b164f9c5fdcb6fde7a8a5fe212a728e422b",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "qcommon: fix clang warning + docs refs #55",
+            "committed_on": "2016-12-14T22:46:30Z"
+        },
+        {
+            "revision": "b64e41bc128b795b28d47d65b9ff853a835cb990",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "renderer: doc refs #55 + tinys changes",
+            "committed_on": "2017-01-10T22:22:29Z"
+        },
+        {
+            "revision": "68fbf245c811b0ea79cb3fb492cebb99d9a99ba2",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "rendererGLES: doc refs #55 + tinys changes",
+            "committed_on": "2017-01-10T22:22:29Z"
+        },
+        {
+            "revision": "78dff3d10d0aa8701128089940d53ea7718aef37",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "renderercommon: doc refs #55 + tinys changes",
+            "committed_on": "2017-01-10T22:38:12Z"
+        },
+        {
+            "revision": "12eea4af2b2cc6d9ca50d854e0d9cf8866379a49",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "renderercommon: doc refs #55 + tiny changes",
+            "committed_on": "2017-01-16T17:11:31Z"
+        },
+        {
+            "revision": "7af4d4b2da269ffdffceb47720a5042f920c3d16",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "renderer2: doc refs #55 + tiny changes",
+            "committed_on": "2017-01-20T15:23:21Z"
+        },
+        {
+            "revision": "b204a8be51c58c4191c44d89b2396f176e50f1e6",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "renderer2: docs refs #55 + tiny changes",
+            "committed_on": "2017-01-23T16:05:04Z"
+        },
+        {
+            "revision": "e53f92399d93e590247c89679eb4b6d66f9df74b",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "renderer2: docs refs #55 + tiny changes",
+            "committed_on": "2017-01-24T11:17:21Z"
+        },
+        {
+            "revision": "b21c09b668c5cb042e740a8f2f551e2f00dd5dea",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "server: doc refs #55",
+            "committed_on": "2017-01-24T11:32:41Z"
+        },
+        {
+            "revision": "2c977be09cf0383844013ede90876b4cba0ca457",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "botlib: doc refs #55",
+            "committed_on": "2017-01-24T11:42:54Z"
+        },
+        {
+            "revision": "f5e4e2ecbd2df0c50911232143f57d642ba175ef",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "client: doc refs #55",
+            "committed_on": "2017-01-24T11:57:45Z"
+        },
+        {
+            "revision": "9ac036f99f71a45ca86feaa00c01fe668c072eba",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "cgame: doc refs #55",
+            "committed_on": "2017-01-30T11:42:04Z"
+        },
+        {
+            "revision": "b572359db969fe444930568fc020b0b12f5cf280",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "cgame: doc refs #55",
+            "committed_on": "2017-01-30T11:42:04Z"
+        },
+        {
+            "revision": "0e91501f0cfa34902e45e834d1ee8183ef06ceed",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "game: doc refs #55",
+            "committed_on": "2017-01-30T13:01:23Z"
+        },
+        {
+            "revision": "6746db50d87934970f97b8f4225b010dca8a848f",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "ui: doc refs #55",
+            "committed_on": "2017-02-01T12:47:39Z"
+        },
+        {
+            "revision": "f1d048dac0e514c2ebdd6c3a91fa687fa2e290f3",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "general: fix ton of doc warning refs #55",
+            "committed_on": "2017-02-03T17:42:51Z"
+        },
+        {
+            "revision": "1a9892da8ff00f5012ff46c7bf906bb3d9c2120a",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "irc: doc refs #55",
+            "committed_on": "2017-02-08T08:51:17Z"
+        },
+        {
+            "revision": "299f36b0d6057596bbbf9d1b6f56318d6f606cbf",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "general: fix doc warning refs #55",
+            "committed_on": "2017-02-08T12:33:47Z"
+        },
+        {
+            "revision": "084d0d662ac156f08f28188447bcebea37271887",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "qcommon: doc refs #55",
+            "committed_on": "2017-05-23T15:04:17Z"
+        },
+        {
+            "revision": "39ce5d72befc55bae33c7b27e5e88b56db56b649",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "server: doc refs #55",
+            "committed_on": "2017-05-24T09:12:32Z"
+        },
+        {
+            "revision": "fb7b9a847dbe670aa7f2b982cddfde3c955bb5bf",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "renderer: doc refs #55",
+            "committed_on": "2017-05-24T09:12:52Z"
+        },
+        {
+            "revision": "792b6fb24940a6650679516768ae3d0060a51da1",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "common: doc refs #55",
+            "committed_on": "2017-05-24T09:13:10Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 296,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2012-09-02T10:55:12Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 5109,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-08-08T19:10:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "The code is filled with obfuscate comments and developer \"signatures\". Replace all of it with well-structured Doxygen comment blocks and supporting documentation in the Redmine wiki.",
+                    "new_value": "The code is filled with obfuscate comments and developer \"signatures\". Replace all of it with well-structured Doxygen comment blocks and supporting documentation in the Redmine wiki.\r\n\r\nIncorporate doxygen into the ET:L website and make it update upon each new commit.\r\n\r\nMove info from the Redmine wiki and create separate sections for:\r\n\r\n    Console commands\r\n    CVARS\r\n    Lua API\r\n    ...\r\n\r\n"
+                }
+            ]
+        },
+        {
+            "id": 5112,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-08-08T19:11:46Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "610"
+                }
+            ]
+        },
+        {
+            "id": 6598,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-03-20T15:14:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "251"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "19"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "10",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 6638,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-03-29T14:22:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "4"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 55,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "assigned_to": {
+        "id": 251,
+        "name": "Aranud"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 4,
+        "name": "ALL"
+    },
+    "subject": "Improve source code documentation",
+    "description": "The code is filled with obfuscate comments and developer \"signatures\". Replace all of it with well-structured Doxygen comment blocks and supporting documentation in the Redmine wiki.\r\n\r\nIncorporate doxygen into the ET:L website and make it update upon each new commit.\r\n\r\nMove info from the Redmine wiki and create separate sections for:\r\n\r\n    Console commands\r\n    CVARS\r\n    Lua API\r\n    ...\r\n\r\n",
+    "start_date": "2012-05-17",
+    "done_ratio": 50,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2012-05-17T14:14:17Z",
+    "updated_on": "2017-03-29T14:22:36Z"
+}

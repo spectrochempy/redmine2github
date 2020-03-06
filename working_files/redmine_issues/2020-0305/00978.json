@@ -1,0 +1,184 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 302,
+            "issue_id": 978,
+            "issue_to_id": 976,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "49b9eb46d5f212853a3840124f5451b96ff4984f",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: swap disguised voices of disguised covops, refs #978",
+            "committed_on": "2017-01-17T18:18:58Z"
+        },
+        {
+            "revision": "c13ef4d3c41abd8dc5f16aa55b43753528e0eccc",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: remove disguised covops enemy communication, fixes #978",
+            "committed_on": "2017-01-20T10:35:02Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 6239,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-01-16T23:35:38Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "976"
+                }
+            ]
+        },
+        {
+            "id": 6241,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "Like you said, the disguised cvops was really restricted in its possibilities, so I'm generally  in favour of changes.\r\n\r\nI would also include the voice commands. 'Thank you' as a reply to 'need ammo/medic'. And also 'Follow me' and 'Let's go' to lead the enemy into an ambush. Maybe even v6 'I'm a [...]' to make the disguise complete.\r\n\r\nRegarding the voice. In my opinion it should stay the origin team's and shouldn't be changed. It's the same with the face really. Of course it's an information leak, but it just doesn't make sense realistically speaking.",
+            "created_on": "2017-01-17T07:25:44Z",
+            "details": []
+        },
+        {
+            "id": 6242,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "keMoN wrote:\r\n> Of course it's an information leak, but it just doesn't make sense realistically speaking.\r\n\r\nI'm not so sure. The covops is the master of disguise (great make up and fake mustache!), and spies were trained/recruited according to their abilities to speak the foreign language.\r\nThanks for your commands suggestions, we definitely need to add these!\r\n\r\n",
+            "created_on": "2017-01-17T09:46:00Z",
+            "details": []
+        },
+        {
+            "id": 6243,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "That actually makes sense, yes. \r\nAnd it definitely makes the game-play better in my opinion. Gives the Cvops real power, especially on friendly-fire servers.\r\nThe only way to spot him is, by knowing that your team-mate just spawned with you / is in TS with you, or by binoc'ing him.\r\nThat prioritizes team-play significantly.",
+            "created_on": "2017-01-17T10:06:52Z",
+            "details": []
+        },
+        {
+            "id": 6248,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "About the copos skills level 2, is it better for an allied disguised coverops to have:\r\n* his voice be spoken in German from level 2, with English only in level 2 (both heard from allies and axis teams)\r\n* only allow enemy communication from level 2\r\n* do not do anything, allow from level 1 (current situation).\r\n\r\nAlso, I'm not that sure anymore about the new voice commands to add. \"Thank you\" and \"Follow me\" are printed in the team chat (both friendly and enemy), but they aren't necessarily used for misdirecting the enemy, so the enemy chat might be unnecessarily be spammed. I'm now really wondering if allowing the disguised covops to communicate with the enemy is a good fit at all for Legacy mod... This might make more sense for an all new skill level as implemented in NQ.",
+            "created_on": "2017-01-19T13:42:57Z",
+            "details": []
+        },
+        {
+            "id": 6249,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "I honestly don't see a problem with adding it in legacy, since it is not a 'fun' feature. \r\nIn my opinion it fits very well into the level description of skill level 2. If implemented, then I would grant the ability upon reaching level 2 onwards.\r\n\r\nThe spam is a valid point, however. I thought about making yet another quick-chat menu, but for only 5 commands that's bollocks. There is already global chat, team chat, fire team chat, private message, quick chat and fire team quick chat and all of them have their respective hotkey.\r\n\r\nLet me just drift away in my head a bit:\r\nUpon reaching level X (maybe 2) in cvops skill, the cvops is granted with an additional 'misdirection feature' (working title). This menu acts like for example the weapon stats when pressing and holding Ctrl. \r\nWhen the cvops acquires the uniform of an enemy, he also gets hold of the radio. Through this radio he receives all enemy team-chat. Either constantly in red in the regular chat box, or in the small pop-up 'misdirection menu'. Through the misdirection menu he can also use the enemy team quick chat. He can not answer in the enemy team chat. Only read permission. When the disguise is lost, the enemy radio is also lost.\r\n\r\nAlthough microscopic </sarcasm>, this provides a gameplay change and needs discussion. The benefit would be a clear seperation of the quick-chats, so the cvops can decide which team to send what. The gameplay change is that he can also read the enemy team chat. (Because if we implement sth like that, we might as well do it right^^ and then it is worth the actual hotkey bind)\r\n\r\n\r\nIn my opinion the spam makes it look like a half-baked system. You can see that the intention was there, but the implementation is a bit lacking behind. In my opinion either give cvops the whole enemy quick chat menu and maybe even team chat, but *seperated* or not do it at all. I think giving the whole enemy team and quick chat is a big change, but also a nice addition in gameplay.",
+            "created_on": "2017-01-19T17:29:26Z",
+            "details": []
+        },
+        {
+            "id": 6250,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "As discussed with Kemon, better a good feature than a half-backed one. The partial covops enemy communication feature has been removed. ",
+            "created_on": "2017-01-20T10:51:32Z",
+            "details": []
+        },
+        {
+            "id": 6251,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:c13ef4d3c41abd8dc5f16aa55b43753528e0eccc.",
+            "created_on": "2017-01-20T13:59:10Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 978,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Disguised covops doesn't use team voice",
+    "description": "Disguised covops have access to a few team voice commands that are visible to the enemy team (see https://github.com/etlegacy/etlegacy/commit/6a2e4a51b58814ce84c40cca62e5621152b2eda1#diff-4ad84f1fae994c894d750d678a867994R2316).\r\nHowever, the voice used is still the one of the covops original team. An allied disguised covops would talk with the English voice as usual, while the enemy team would hear the English voice instead of the Germanized one.\r\n\r\nI'm am not quite sure this really fit Legacy mod (opinion welcome), but covops  integration has been completely revamped recently (with name, rank, fireteam icon now \"stolen\") as the disguised covops was way too easy to spot in the original game.\r\n\r\nSince this is coming from NQ, the bug is also present in that mod. It has also been suggested that this feature be part of Covert Operations skills level 2, \"Improved use of Sabotage and Misdirection\".\r\nAlso, we should check if other team voice might be included. Only 4 can currently be heard by the enemy team (when disguised): \"Need a medic\", \"Need ammo\", \"Heal Me\" (fireteam voice) and \"Resupply me\" (fireteam voice).\r\n",
+    "start_date": "2017-01-17",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-01-16T23:35:27Z",
+    "updated_on": "2017-01-20T13:59:10Z",
+    "closed_on": "2017-01-20T13:59:10Z"
+}

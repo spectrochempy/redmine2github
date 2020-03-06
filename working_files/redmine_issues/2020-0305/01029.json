@@ -1,0 +1,258 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 333,
+            "issue_id": 1029,
+            "issue_to_id": 1002,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 334,
+            "issue_id": 1029,
+            "issue_to_id": 555,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 335,
+            "issue_id": 1029,
+            "issue_to_id": 1033,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 6700,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "",
+            "created_on": "2017-05-09T13:33:32Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "248"
+                }
+            ]
+        },
+        {
+            "id": 6702,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "",
+            "created_on": "2017-05-09T13:34:24Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "515"
+                }
+            ]
+        },
+        {
+            "id": 6704,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "",
+            "created_on": "2017-05-09T13:34:59Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "639"
+                }
+            ]
+        },
+        {
+            "id": 6706,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "",
+            "created_on": "2017-05-09T13:36:51Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1002"
+                }
+            ]
+        },
+        {
+            "id": 6708,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "",
+            "created_on": "2017-05-09T13:37:17Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "555"
+                }
+            ]
+        },
+        {
+            "id": 6711,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "",
+            "created_on": "2017-05-09T13:39:17Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1033"
+                }
+            ]
+        },
+        {
+            "id": 7238,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-07-24T10:36:22Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "old_value": "248"
+                }
+            ]
+        },
+        {
+            "id": 7259,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-08-14T09:32:29Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "old_value": "639"
+                }
+            ]
+        },
+        {
+            "id": 7261,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-08-14T09:33:14Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "old_value": "515"
+                }
+            ]
+        },
+        {
+            "id": 7263,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "See material folder and r_materialscan.",
+            "created_on": "2018-08-14T09:34:48Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Mirror all R1 shaders in R2",
+                    "new_value": "renderer2: Mirror all R1 shaders in R2"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 1029,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 281,
+        "name": "thunder"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 15,
+        "name": "renderer2"
+    },
+    "subject": "renderer2: Mirror all R1 shaders in R2",
+    "description": "If this renderer should be kept comaptible at all we need to also let it be able to read all old shaders, this would also make both fog and foliage work I guess",
+    "start_date": "2017-04-22",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-04-22T06:12:46Z",
+    "updated_on": "2018-08-14T09:34:48Z",
+    "closed_on": "2018-08-14T09:34:48Z"
+}

@@ -1,0 +1,503 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 173,
+            "issue_id": 714,
+            "issue_to_id": 507,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 396,
+            "issue_id": 1201,
+            "issue_to_id": 507,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 176,
+            "issue_id": 712,
+            "issue_to_id": 507,
+            "relation_type": "duplicates",
+            "delay": null
+        },
+        {
+            "id": 394,
+            "issue_id": 1200,
+            "issue_to_id": 507,
+            "relation_type": "duplicates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "2813f1c80e9ce36834dd60553f09d8bcc245d9b3",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: CG_CheckEvents() cleanup, refs #507",
+            "committed_on": "2015-03-04T19:37:07Z"
+        },
+        {
+            "revision": "12184ce5ca07f1bf3917d12dec11d06c3d2b731e",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: check for all event-only entities, refs #507",
+            "committed_on": "2015-03-04T19:37:07Z"
+        },
+        {
+            "revision": "50fb9a3ae1d533431e1a6d713c70632caf1752cb",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: event message for MOD_TRIGGER_HURT refs #507, decreased damage for\nMOD_TELEFRAG (just not to waste damage stats in case of usage somewhere)",
+            "committed_on": "2015-12-13T22:14:45Z"
+        },
+        {
+            "revision": "a077041ca3f2fa02af71f5df0e2a82b718035379",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: missing MOD_GRENADE added to CG_Obituary refs #507\n\nNote: This MOD is used for direct damage of barrels, alarm clocks etc.\nsee map uje_the _ghetto. Barrels might create MOD_EXPLOSIVE (indirect\nkill) or MOD_GRENADE (direct kill) obituary events!",
+            "committed_on": "2017-07-27T15:16:16Z"
+        },
+        {
+            "revision": "0b50b0a30dd663429e94b1ff8793d84368d6c24f",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed temp entities aren't reset correctly, refs #507",
+            "committed_on": "2019-03-14T10:21:21Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2991,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I did add that note in the code.  MOD_GRENADE (see unused propExplosionLarge()) and MOD_KICKED can be removed. Keep in mind to update noq lua scripts too.\r\n\r\nThe other MODs might be used (we should have a closer look) in G_Damage function of Bullet_Fire_Extended -> GetAmmoTableData(attacker->s.weapon)->mod)\r\n\r\n",
+            "created_on": "2014-02-12T17:46:28Z",
+            "details": []
+        },
+        {
+            "id": 3036,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-02-16T11:05:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 4067,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-12-13T18:49:54Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "714"
+                }
+            ]
+        },
+        {
+            "id": 4069,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-12-13T18:50:40Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "712"
+                }
+            ]
+        },
+        {
+            "id": 4082,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-12-14T00:09:48Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "old_value": "712"
+                }
+            ]
+        },
+        {
+            "id": 4084,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-12-14T00:10:07Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "duplicated",
+                    "new_value": "712"
+                }
+            ]
+        },
+        {
+            "id": 4564,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-02-10T05:43:12Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "17"
+                }
+            ]
+        },
+        {
+            "id": 4643,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-02-18T23:41:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "I've seen this more than once, but I'm still unable to pinpoint exactly the issue. When you die, sometimes the obituaries don't display the reason of your death (nor does the console output). The best I could tell is that the MOD doesn't display when you die by some big explosion/splash damage(?).\r\n\r\nIn the code:\r\n\r\n> FIXME: ... some MODs are not catched - check all!\r\n\r\nMy best guess would be that some Mean Of Death got catched by the default message = NULL, so it is filtered out.\r\n\r\nFor reference, here are also some MOD that aren't used at all in the events list:\r\n\r\n* MOD_GRENADE (related to some explosion stuff?)\r\n* MOD_KICKED  (unused in Legacy?)\r\n* MOD_SYRINGE (unused in Legacy?)\r\n* MOD_AMMO (no idea what it is)\r\n* MOD_SMOKEBOMB (check with MOD_SMOKEGRENADE?)",
+                    "new_value": "I've seen this more than once, but I'm still unable to pinpoint exactly the issue. When you die, sometimes the obituaries don't display the reason of your death (nor does the console output). The best I could tell is that the MOD doesn't display when you die by some big explosion/splash damage(?).\r\n\r\nIn the code:\r\n\r\n> FIXME: ... some MODs are not catched - check all!\r\n\r\nMy best guess would be that some Mean Of Death got caught by the default message = NULL, so it is filtered out.\r\n\r\nFor reference, here are also some MOD that aren't used at all in the events list:\r\n\r\n* MOD_GRENADE (related to some explosion stuff?)\r\n* MOD_KICKED  (unused in Legacy)\r\n* MOD_SYRINGE (unused in Legacy)\r\n* MOD_AMMO (unused in Legacy)\r\n* MOD_SMOKEBOMB (unused in Legacy)"
+                }
+            ]
+        },
+        {
+            "id": 4644,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-02-18T23:41:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Some MOD aren't catched",
+                    "new_value": "Some MOD aren't caught"
+                }
+            ]
+        },
+        {
+            "id": 4645,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I'm wondering if NUM_PM_STACK_ITEMS  isn't big enough... -cg_popupStayTime and cg_popupFadeTime are set to 2.0 and 2.5 sec by default respectively, so if we have more than 32 events during these 4.5 sec some events might not be queued as expected. See CG_FindFreePMItem().- Nope, it's good.\r\n\r\nEdit: After adding some checks, it seems the CG_Obituaries function is not called at all in some circumstances. -I'd look into \"ent->splashMethodOfDeath\" (indirect death, see G_RadiusDamage()) as this might not be taken into account by the current code - and matches the cases I've seen that bug happening.- Edit: Nope, splashMethodOfDeath works as expected...\r\n\r\nServer side is actually fine, but something weird might happen in CG_CheckEvents().",
+            "created_on": "2015-02-18T23:54:01Z",
+            "details": []
+        },
+        {
+            "id": 4712,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "The return in the event-only entities check part of CG_CheckEvents() seems to catch some of the events while it shouldn't.\r\nWhen commenting this return, I cannot reproduce the issue - although the game gets spammed by all kinds of temp events (obituaries, sounds, gfx effect, etc.).\r\n\r\nThe \"cent->previousEvent\" parameter is sometime not reset - see CG_ResetEntity(), especially in CG_TransitionEntity(). This is related to the client interpolation code, and concerns all kind of temp entities, not only death events.\r\n",
+            "created_on": "2015-03-04T19:49:48Z",
+            "details": []
+        },
+        {
+            "id": 4729,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Touching anything about the interpolation code is risky - delaying this ticket to 2.74.",
+            "created_on": "2015-03-07T11:42:53Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "17",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 7696,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "We should have a look at these discarded temp entities in the prediction code for 2.77. These might explain quite a few weirdness.",
+            "created_on": "2019-01-28T19:56:56Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 7699,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-01-28T20:07:15Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 7739,
+            "user": {
+                "id": 392,
+                "name": "Timothy"
+            },
+            "notes": "",
+            "created_on": "2019-02-07T18:13:18Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "duplicated",
+                    "new_value": "1200"
+                }
+            ]
+        },
+        {
+            "id": 7745,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-02-08T15:24:52Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1201"
+                }
+            ]
+        },
+        {
+            "id": 7811,
+            "user": {
+                "id": 372,
+                "name": "Ododo"
+            },
+            "notes": "I think it may come from the fact that this piece  of code from cg_snapshot.c (TransitionSnapshot) L293\r\nis not doing what it should be doing:\r\n\r\n<pre><code class=\"c\">\r\n\tfor (i = 0 ; i < cg.snap->numEntities ; i++)\r\n\t{\r\n\t\tid = cg.snap->entities[i].number;\r\n\t\tCG_TransitionEntity(&cg_entities[id]);\r\n\r\n\t\t// ent doesn't exist in this frame, reset it.\r\n\t\t// this is to fix the silent landmines bug, which is caused\r\n\t\t// by a stale miscTime in the cent\r\n  \t       if (cg_entities[id].currentValid == qfalse && oldValid[id] == qtrue)\r\n\t\t{\r\n\t\t\tCG_ResetEntity(&cg_entities[id]);\r\n\t\t}\r\n\r\n</code></pre>\r\n\r\nWe are iterating on cg.snap->entities after doing cg.snap  = cg.nextSnap;\r\nso id is always an entity number that is present on the nextSnap.\r\n\r\n1) \r\ncg_entities[id].currentValid  will always be qtrue (see CG_TransitionEntity) so Cg_ResetEntity is never reached.\r\n-I think we are supposed to reset the entity before doing TransitionEntity.-\r\n\r\n2)\r\nI think that the programmer wanted to reset the entities that were valid on the oldSnap but that are not present on the nextSnap.\r\n-(and pass them to TransitionEntity ?)-\r\n\r\nbut because we are iterating on entities in the nextSnap we may not catch some of the old entity numbers that are not present on the new snap. (the one that we are interested in).\r\n\r\nI tried to modify the code without success at the moment but maybe i'm missing something.\r\n\r\n\r\n",
+            "created_on": "2019-02-22T16:17:01Z",
+            "details": []
+        },
+        {
+            "id": 7813,
+            "user": {
+                "id": 372,
+                "name": "Ododo"
+            },
+            "notes": "So i attached a patch on cg_snaphot.c that should work\r\nunfortunately i have to ad a for loop so i dont know if it fits the required performances.\r\n\r\nlet me know if the problem is solved (or not)",
+            "created_on": "2019-02-23T14:51:36Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "1049",
+                    "new_value": "507.patch"
+                }
+            ]
+        },
+        {
+            "id": 7819,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Patch looks good to me, but IR4 has some reserve (please add them in the ticket IR4).",
+            "created_on": "2019-02-25T18:41:16Z",
+            "details": []
+        },
+        {
+            "id": 7820,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I'm not convinced the bug is client side and I have two other ideas about it:\r\n\r\n1.) Freeing ents: In G_FreeEntity I did a patch so ents are reused much earlier keeping the game ents 'more' sorted\r\nI've keept a cvar so we can test missing death messages are still occuring when G_FreeEntity isn't optimized:\r\nset l_free 1 at server start\r\n\r\n2.)  Increasing event life time: I can also imagine default life time of events = 300 msecs is too short. The legacy mod is firing more events compared to vanilla ET and adjusting EVENT_VALID_MSEC might do the trick.\r\n\r\n",
+            "created_on": "2019-02-25T20:02:22Z",
+            "details": []
+        },
+        {
+            "id": 7863,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Being curious, I've tested the proposed patch locally.\r\nWhile it seems to solve the missing MOD issue, the patch doesn't work correctly. I can see \"Player X was blaster by Spyhawk's support fire\" (Axis airstrike) in obituaries area and console, while I'm playing as engineer (Allies).",
+            "created_on": "2019-03-09T19:53:58Z",
+            "details": []
+        },
+        {
+            "id": 7864,
+            "user": {
+                "id": 372,
+                "name": "Ododo"
+            },
+            "notes": "Spyhawk wrote:\r\n> Being curious, I've tested the proposed patch locally.\r\n> While it seems to solve the missing MOD issue, the patch doesn't work correctly. I can see \"Player X was blaster by Spyhawk's support fire\" (Axis airstrike) in obituaries area and console, while I'm playing as engineer (Allies).\r\n\r\n\r\nI can't reproduce but maybe resetting the entities here is just a bad idea so remove all the \r\nloop  for (i = 0; i < oldFrame->numEntities; i++)  that i added in the patch.\r\nThe other piece of code will cover the missing MOD issue by itself.\r\n\r\n\r\n\r\n\r\n\r\n",
+            "created_on": "2019-03-10T01:12:21Z",
+            "details": []
+        },
+        {
+            "id": 7867,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "There was an interference with #1219. So far, the proposed patch seems to work properly.",
+            "created_on": "2019-03-13T16:51:00Z",
+            "details": []
+        },
+        {
+            "id": 7868,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Pushed the fix. Further server-side optimizations can always be done later.",
+            "created_on": "2019-03-14T10:45:34Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "372"
+                }
+            ]
+        },
+        {
+            "id": 7892,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-03-22T08:59:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 507,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 372,
+        "name": "Ododo"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Some MOD aren't caught",
+    "description": "I've seen this more than once, but I'm still unable to pinpoint exactly the issue. When you die, sometimes the obituaries don't display the reason of your death (nor does the console output). The best I could tell is that the MOD doesn't display when you die by some big explosion/splash damage(?).\r\n\r\nIn the code:\r\n\r\n> FIXME: ... some MODs are not catched - check all!\r\n\r\nMy best guess would be that some Mean Of Death got caught by the default message = NULL, so it is filtered out.\r\n\r\nFor reference, here are also some MOD that aren't used at all in the events list:\r\n\r\n* MOD_GRENADE (related to some explosion stuff?)\r\n* MOD_KICKED  (unused in Legacy)\r\n* MOD_SYRINGE (unused in Legacy)\r\n* MOD_AMMO (unused in Legacy)\r\n* MOD_SMOKEBOMB (unused in Legacy)",
+    "start_date": "2014-02-12",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-02-12T15:27:45Z",
+    "updated_on": "2019-03-22T08:59:45Z",
+    "closed_on": "2019-03-22T08:59:45Z"
+}

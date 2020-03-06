@@ -1,0 +1,272 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 154,
+            "issue_id": 550,
+            "issue_to_id": 627,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "9463969f34370d070ce62022133702e3d782c8b7",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed illegal memory access, refs #627",
+            "committed_on": "2014-11-17T00:36:04Z"
+        },
+        {
+            "revision": "85211bc63143fa3ee60d112bfd140d60435e2629",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed possible illegal memory access, refs #627",
+            "committed_on": "2014-11-17T14:45:32Z"
+        },
+        {
+            "revision": "1e8157b842d421a942ba131b2a0d308e99fb949f",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed forgotten illegal memory access, refs #627",
+            "committed_on": "2014-11-17T16:38:16Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3718,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2014-11-15T03:56:23Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 3719,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "This seems really odd that, I can't make it happen 100% of the time to crash. So far I'm unabale to find any consistent way to make my ET:L crash.\r\n\r\n-*S",
+            "created_on": "2014-11-15T04:13:39Z",
+            "details": []
+        },
+        {
+            "id": 3722,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I can reproduce on oasis while blowing the wall (last -git, debug release, Linux with Intel 3000 gfx card, localhost server).\r\n\r\n* I can plant dynamite on some random place, no freeze happens. It's related to blowing an objective.\r\n* I can plant dynamite on obj (oasis wall), no freeze happens if I'm enough far away of it when it blows (such as first allies spawn).\r\n* I can plant dynamite on obj (oasis wall), freeze happens if I'm somewhat near the obj (rooftop facing the allies upper exit next to their command post) even though I'm not looking at/can't look at the blowing wall.\r\n\r\nAt this point, I guess this is related to updating the status of objectives when blown up.\r\n\r\nAccording to the forum post, this \r\n* also happens with RC4\r\n* also happens with ATI/nVidia/Intel, so it's definitely not a gfx card issue.\r\n\r\nEDIT: I personally *cannot* reproduce this issue with RC4... ",
+            "created_on": "2014-11-15T09:51:25Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "8"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "5",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 3724,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "added demo, as per IR4 request.",
+            "created_on": "2014-11-15T11:41:15Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "390",
+                    "new_value": "2014-11-15-112922-oasis.dm_84"
+                }
+            ]
+        },
+        {
+            "id": 3727,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Mateos wrote:\r\n\r\n\r\nbq. Also something I said on the IRC but maybe nobody saw it or remember it:\r\n- While using Debug profile in Visual Studio no freeze\r\n- While using Release profile in VS: freeze\r\n\r\nOk so, this is a fact too. I tried it myself with the Debug build, I simply couldn't get it crash.\r\n\r\n-*S",
+            "created_on": "2014-11-15T15:11:51Z",
+            "details": []
+        },
+        {
+            "id": 3728,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "The responsible commit seems to be https://github.com/etlegacy/etlegacy/commit/aa0246dfa7f905f6c9a7c30950aff841e660dc4c, introduced last month.\r\n\r\nThis is probably not the very same issue as other people having a similar crash with RC4 (which I cannot reproduce).\r\nI have really no idea why some of you can't reproduce that issue either.",
+            "created_on": "2014-11-15T15:25:45Z",
+            "details": []
+        },
+        {
+            "id": 3729,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "So, it seems the game doesn't freeze when compiled with VS in debug mode, but does when in compiled release mode.\r\nI just tried with gcc (debug), also no freeze. I usually use clang (debug) which freezes. It really seems to be a compiler thing!?",
+            "created_on": "2014-11-15T16:08:00Z",
+            "details": []
+        },
+        {
+            "id": 3736,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I've fixed some memory access issues found by coverity in the code next to the mentioned commit.\r\n\r\nSo far, I've been able to blow the oasis wall 10 times in a row without freeze, and Saukko also tested it with success. Let's test a bit more before closing this bug. ",
+            "created_on": "2014-11-17T15:52:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 3845,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-23T10:48:52Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "550"
+                }
+            ]
+        },
+        {
+            "id": 3859,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "I tested with Debug & Release configs in VS, no freeze/crash for me.",
+            "created_on": "2014-11-23T14:08:25Z",
+            "details": []
+        },
+        {
+            "id": 3888,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-26T13:06:14Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 627,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 7,
+        "name": "Immediate"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Some explosions cause the game to crash",
+    "description": "This title is referring to this specific topic: http://dev.etlegacy.com/boards/3/topics/1088\r\nSo the issue is, when something explodes, the game will crash.\r\n\r\nFor now we need to narrow the possibilities and so far it's not looking as good as expected.\r\n\r\n-*S",
+    "start_date": "2014-11-15",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-15T03:50:33Z",
+    "updated_on": "2014-11-26T13:06:14Z",
+    "closed_on": "2014-11-26T13:06:14Z"
+}

@@ -1,0 +1,229 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 193,
+            "issue_id": 376,
+            "issue_to_id": 470,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 386,
+            "issue_id": 1175,
+            "issue_to_id": 470,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "91e4bb66e395ce8cd668c0e9bc1517928f2f33e7",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "Revert \"cgame: set default fov value to 106.27 for 16:9 screens, refs #300\"\n\nThis reverts commit 0b193eed3b55b2e6279261b1dddac5261574ced7.",
+            "committed_on": "2015-03-24T20:58:49Z"
+        },
+        {
+            "revision": "00949de02bb5c86321053eb3e8ecb8a79858ae21",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: automatic fov adjustment for wide screens, fixes #470",
+            "committed_on": "2015-03-24T22:20:46Z"
+        },
+        {
+            "revision": "27cf19d1883cf6a9d1a6e1b9462b9fba171a6530",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: adjusted FOV option, refs #470",
+            "committed_on": "2015-03-25T10:33:54Z"
+        },
+        {
+            "revision": "575a33143eb0e2271b2460c19f1a3ed7d84b79be",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: removed obsolete cg_gun_fovscale cvar, refs #470",
+            "committed_on": "2017-01-13T18:37:51Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2744,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-01-04T19:30:43Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 4361,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-01-11T15:17:50Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "376"
+                }
+            ]
+        },
+        {
+            "id": 4780,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "From Ensi: https://github.com/JACoders/OpenJK/commit/ad3cbbd4ce17be90e17580975752128c5a5d9853",
+            "created_on": "2015-03-15T18:06:30Z",
+            "details": []
+        },
+        {
+            "id": 4783,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-03-16T09:13:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "17"
+                }
+            ]
+        },
+        {
+            "id": 4865,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:00949de02bb5c86321053eb3e8ecb8a79858ae21.",
+            "created_on": "2015-03-24T22:30:26Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 4866,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I implemented this feature without an extra cvar, as it doesn't make sense to use a lower fov than 90 anyway (or lower than 106.27 on 16:9 screens).\r\n\r\nI also changed cg_gun_fovscale default value to 0. The reason we implemented it back in the days was that it was impossible to have a \"correct\" fov on 16:9 screen without having a distorted weapon (fov 90 on 4:3 == fov 106.27 on 16:9).\r\n\r\nWith this change, fov 90 is the \"correct\" fov for both square and wide screens. The cg_gun_fovscale cvar doesn't have a real purpose anymore and we even might consider removing it (although some people might want to use it).",
+            "created_on": "2015-03-24T22:34:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                }
+            ]
+        },
+        {
+            "id": 7600,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-01-18T21:49:30Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1175"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 470,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "Automatic fov settings",
+    "description": "Default FOV value is currently 90, which is \"accurate\" only for 4:3 screen. A \"natural\" field of view for 16:9 screen is 106.27.\r\n\r\nIdea of new feature: when set to 0, cg_fov automatically compute the \"best\" FOV for your resolution. Players could still set their preferred fov by manually setting cg_fov.\r\n\r\nHorizontal FOV formula can be found here: http://en.wikipedia.org/wiki/Field_of_view_in_video_games. ",
+    "start_date": "2014-01-04",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-01-04T17:37:43Z",
+    "updated_on": "2015-03-24T22:34:45Z",
+    "closed_on": "2015-03-24T22:30:26Z"
+}

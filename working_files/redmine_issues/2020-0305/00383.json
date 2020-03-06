@@ -1,0 +1,122 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 2161,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Is it meant for a local use only? If yes then yeah, sounds like a good improvement from mapper's PoV.",
+            "created_on": "2013-10-25T13:32:06Z",
+            "details": []
+        },
+        {
+            "id": 2162,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "isn't etmain/textures/texture.jpeg already supported on cheat mode (devmap)..?",
+            "created_on": "2013-10-25T15:15:06Z",
+            "details": []
+        },
+        {
+            "id": 3197,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Jacker wrote:\r\n> isn't etmain/textures/texture.jpeg already supported on cheat mode (devmap)..?\r\n\r\nYea, but the idea behind pk3dirs was to allow mappers to separate their different projects. I'll close this issue because from my current experience it would be better to make the mapping tool select only the required files and start ET:L with a homepath containing only those files. I might change this opinion after I get more experience in mapping and then reopen this issue, but we'll see.",
+            "created_on": "2014-05-28T14:24:42Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3199,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-05-29T03:02:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "11"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 383,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "assigned_to": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "pk3dir support",
+    "description": "> Support for .pk3dir; folders in a search path which end in .pk3dir are treated like .pk3 files.\r\n> \r\n> For example:\r\n> etmain/textures/foo/whatever.jpg   // normal file\r\n> etmain/mymap.pk3dir/textures/mymap/tex1.jpg    // files in the pk3dir for my map\r\n> \r\n> The patch does this by finding folders ending in .pk3dir and adding them to the search paths in the correct order.\r\n> \r\n> This is awesome for mapping/modding, you can keep all the assets for your project bundled together making it easy to zip them into a pk3.\r\n> \r\n> Another advantage: with modern version control you can make each pk3dir a submodule and have a real neat repository.\r\n> \r\n> Notes:\r\n> - pk3dir are not read like pk3s on a pure server\r\n> - pk3dir should be accessed in the correct order as it it was a pk3s\r\n> - This patch doesn't handle recursion or avoiding reading the pk3dir as a folder, but I see no need to (and not having it keeps it backwards compatible if you happen to have a resource at \"mymap.pk3dir/textures/mymap/tex1.jpg\")\r\n\r\nThis patch is up for discussion. It would make life easier for modders and mappers imo.\r\n",
+    "start_date": "2013-10-25",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-10-25T12:58:38Z",
+    "updated_on": "2014-05-29T03:02:29Z",
+    "closed_on": "2014-05-28T14:24:42Z"
+}

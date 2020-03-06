@@ -1,0 +1,288 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "e11da545d41e4dabfc307e89d26a0e2051c00d3c",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "general: (Windows) fixed crash when homepath is not in a standard location, refs #97",
+            "committed_on": "2012-11-03T17:35:52Z"
+        },
+        {
+            "revision": "19af20e8cb300a5137699a52ed58f683568d118b",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "sys: use SHGFP_TYPE_CURRENT as default fs_homepath on windows\n\nUseful if 'My Documents' has been moved to another drive",
+            "committed_on": "2016-01-02T13:23:59Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 428,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "The commit which causes this crash is commit:a87a588c (\"Windows path fix\")\r\n\r\nConfirmed by me on Windows 8 Preview (64bit) and by _TheNumb_ on Windows 7. According to user:Dragonji, Windows XP is not affected.\r\n\r\n<pre>\r\ncvar_set2 com_errormessage FS_CreatePath: failed to create path \"\\\"\r\n</pre>\r\n\r\nThe only CSIDL identifier which does not crash is CSIDL_APPDATA.",
+            "created_on": "2012-11-03T13:33:11Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "10"
+                }
+            ]
+        },
+        {
+            "id": 434,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "As a temporary fix, @SHGFP_TYPE_DEFAULT@ is now forced in @SHGetFolderPath@. The problem is that the file handling code is unable to handle non-standard \"My Documents\" location. For example, when it is mounted on @\\\\zsf\\Home\\Documents@",
+            "created_on": "2012-11-03T17:45:46Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "6",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "10",
+                    "new_value": "40"
+                }
+            ]
+        },
+        {
+            "id": 480,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-11-11T13:12:04Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Windows build crashes",
+                    "new_value": "fs_homepath on WIndows - Windows build crashes"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 564,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2012-11-16T21:29:22Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "fs_homepath on WIndows - Windows build crashes",
+                    "new_value": "fs_homepath on WIndows - use SHGFP_TYPE_CURRENT"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 1007,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-01-23T07:00:46Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 1597,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "",
+            "created_on": "2013-04-27T11:10:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "fs_homepath on WIndows - use SHGFP_TYPE_CURRENT",
+                    "new_value": "fs_homepath on Windows - use SHGFP_TYPE_CURRENT"
+                }
+            ]
+        },
+        {
+            "id": 2450,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "created_on": "2013-12-14T18:05:55Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "new_value": "Windows"
+                }
+            ]
+        },
+        {
+            "id": 4269,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2015-01-03T17:19:34Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 5330,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Isn't it invalid already?",
+            "created_on": "2015-10-16T18:23:29Z",
+            "details": []
+        },
+        {
+            "id": 6271,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "This has been done a long time ago.",
+            "created_on": "2017-01-29T17:29:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "40",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 3,
+            "name": "IR4T4"
+        },
+        {
+            "id": 4,
+            "name": "morsik"
+        },
+        {
+            "id": 1,
+            "name": "Radegast"
+        }
+    ],
+    "time_entries": null,
+    "id": 97,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 4,
+        "name": "morsik"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 4,
+        "name": "ALL"
+    },
+    "parent": {
+        "id": 92
+    },
+    "subject": "fs_homepath on Windows - use SHGFP_TYPE_CURRENT",
+    "description": "",
+    "start_date": "2012-11-02",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Windows"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2012-11-02T20:55:05Z",
+    "updated_on": "2017-01-29T17:29:36Z",
+    "closed_on": "2017-01-29T17:29:36Z"
+}

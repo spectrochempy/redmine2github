@@ -1,0 +1,52 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [],
+    "watchers": [],
+    "time_entries": null,
+    "id": 762,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Some settings don't save after entered them in main menu",
+    "description": "How to reproduce:\r\n1. Have a profile and remove your current etconfig.cfg\r\n2. Now without a config go and set all your preferred settings\r\n3. Join a local game and see that some of the settings haven't been saved\r\n\r\nAlright there are a couple of screenshots to show the situation. settings0 is the result for some of the settings not being saved in the 'View' menu. I left font sliders and automap zoom alone in this case.\r\n\r\nAlso I turned of Muzzle Flash before joining a game, which made it to be on after joining a server.\r\n\r\n-*S",
+    "start_date": "2015-01-08",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-01-08T04:27:32Z",
+    "updated_on": "2015-01-08T04:27:32Z"
+}

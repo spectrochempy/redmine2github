@@ -1,0 +1,249 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 286,
+            "issue_id": 884,
+            "issue_to_id": 80,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 5344,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Are you sure you're using the 32 bit version of etlegacy? Default etlegacy package is 64 bit and can't connect to existing 32 bit servers, only 64 bit servers running Legacy mod.",
+            "created_on": "2015-11-04T21:33:53Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "5",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 5345,
+            "user": {
+                "id": 320,
+                "name": "Storm"
+            },
+            "notes": "Spyhawk wrote:\r\n> Are you sure you're using the 32 bit version of etlegacy? Default etlegacy package is 64 bit and can't connect to existing 32 bit servers, only 64 bit servers running Legacy mod.\r\n\r\nOh... I wasn't aware that the 64 bit version can't connect. I used that since my system is 64 bit too. Then switching to 32 bit to see what happens.\r\n\r\nBTW, two questions:\r\n1; How an issue that prevents me completely from playing the game altogether, is Low priority? I don't mean to bitch but don't really get it.\r\n2; I tried to set version to 2.74 as the version number of my packages but there was no option for that, only 2.75, how come?",
+            "created_on": "2015-11-05T08:03:33Z",
+            "details": []
+        },
+        {
+            "id": 5346,
+            "user": {
+                "id": 320,
+                "name": "Storm"
+            },
+            "notes": "Note: Both \"etlegacy32-git\" and \"etlegacy32-mod-git\" depend on \"lib32-libtheora\" but it is not listed as a dependency and build fails without it.\r\n\r\nOtherwise the 32 bit version works properly, thank you!",
+            "created_on": "2015-11-05T08:49:09Z",
+            "details": []
+        },
+        {
+            "id": 5347,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "I can asnwer only for 1st question\r\nIts due to multi cores processors and threaths\r\nETL is single threath game",
+            "created_on": "2015-11-05T15:41:21Z",
+            "details": []
+        },
+        {
+            "id": 5348,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Storm wrote:\r\n> BTW, two questions:\r\n> 1; How an issue that prevents me completely from playing the game altogether, is Low priority? I don't mean to bitch but don't really get it.\r\n\r\n1/ Because every player issue is \"Very High\" priority from the player point of view, while issue that affects only one player in the whole userbase is simply \"very low\" priority from the devs point of view. We have a lot of real \"high\" priority tickets, and yours certainly isn't one (I read \"Arch\", \"etlegacy\" and \"Vm_Create\" and basically knew what was going on = you didn't even read the PKGBUILD meh). \r\n\r\n2/ Users that report issues as \"high\" priority without even knowing what's going on are usually just bitching (no offense here, just experience). It's always better not to set the priority yourself and let devs do it.\r\n\r\n> 2; I tried to set version to 2.74 as the version number of my packages but there was no option for that, only 2.75, how come?\r\nNo idea what you mean here. You might want to contact the AUR maintainer for the missing dep and this issue I guess.\r\n\r\nEdit: Ah, I understand what you mean now. We use the \"target version\" as the release in which the bugs should be (hopefully) be fixed. As 2.74 is already out, the target version for current issues is 2.75.",
+            "created_on": "2015-11-05T16:34:01Z",
+            "details": []
+        },
+        {
+            "id": 5349,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-11-05T16:42:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 5350,
+            "user": {
+                "id": 320,
+                "name": "Storm"
+            },
+            "notes": "Thanks for the answers! Aren't you AUR maintainer though? Your name is listed there.",
+            "created_on": "2015-11-05T18:34:39Z",
+            "details": []
+        },
+        {
+            "id": 5351,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Storm wrote:\r\n> Thanks for the answers! Aren't you AUR maintainer though? Your name is listed there.\r\n\r\nNo, I gave up the maintenance to skybon a while ago. I shouldn't be listed there though, it's a mistake.\r\n",
+            "created_on": "2015-11-05T18:39:33Z",
+            "details": []
+        },
+        {
+            "id": 5431,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-11-23T21:52:19Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 5928,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-08-26T05:21:46Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 7801,
+            "user": {
+                "id": 697,
+                "name": "artium"
+            },
+            "notes": "Is it possible to change the error message to something more meaningful when there is client/server  mismatch?\r\n\r\nImagine a newbie trying ET for the first time. Most likely he/she will download the 64 bit version as this is the standard nowadays. Most likely he/she will try to connect to the first server in the list with players.\r\nWhat are the chances that it will be 64 bit etlegacy server? After receiving a cryptic error on several server, the player will close the game and move on.\r\n\r\nI am afraid that due to this error,  ET is losing a lot of potential players that could fuel the game.",
+            "created_on": "2019-02-17T19:25:31Z",
+            "details": []
+        },
+        {
+            "id": 7802,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "1/ Not really, because it's a generic error that can have multiple causes. It's not specifically tied to the 64 bit client issue.\r\n2/ I do not believe newbies run Linux. Linux users are usually more tech savy than their Windows/Mac counterparts, and if they do use the 64bit client without reading the README accompaning it (or the wiki, or the warning on the download page), they shouldn't run Linux in the first place imho.",
+            "created_on": "2019-02-18T16:02:32Z",
+            "details": []
+        },
+        {
+            "id": 7804,
+            "user": {
+                "id": 320,
+                "name": "Storm"
+            },
+            "notes": "Spyhawk wrote:\r\n> 2/ I do not believe newbies run Linux. Linux users are usually more tech savy than their Windows/Mac counterparts, and if they do use the 64bit client without reading the README accompaning it (or the wiki, or the warning on the download page), they shouldn't run Linux in the first place imho.\r\n\r\nThat's like the job offers that tell you that they are looking for someone fresh out of collage but you must also have 5 years of field experience. How is one supposed to become experienced in running Linux without running Linux before they are experienced?",
+            "created_on": "2019-02-19T08:17:31Z",
+            "details": []
+        },
+        {
+            "id": 7805,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "The very basic requirement is to learn to read. If that isn't done, then there is no business in running Linux - ever.\r\nAnd that's a moot anyway: this is a generic message, see above.",
+            "created_on": "2019-02-19T15:57:36Z",
+            "details": []
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 884,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 320,
+        "name": "Storm"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "VM_create on cgame failed",
+    "description": "When joining a server, after \"awaiting gamestate\" I disconnect with the following error message:\r\n\r\n@VM_create on cgame failed@\r\n\r\n\r\nI've read a possible cause is low virtual memory, but I have a swapfile of 16G.\r\n\r\nIntel Core i7-2600\r\nGeForce GTX 560\r\n16 GB DDR3 1333 MHz\r\nOS: Arch Linux 64 bit\r\netlegacy 2.74-2 + etlegacy-mod 2.74-2",
+    "start_date": "2015-11-04",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": "64-bit"
+        }
+    ],
+    "created_on": "2015-11-04T17:39:29Z",
+    "updated_on": "2019-02-19T15:57:36Z",
+    "closed_on": "2015-11-05T16:42:28Z"
+}

@@ -1,0 +1,148 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 1995,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "How do you want to solve the problem with ammo-/health packs? F.e. on tap out a field ops drops 2 ammo packs and they are immediatley picked up? This can't be reverted ...",
+            "created_on": "2013-10-01T07:13:58Z",
+            "details": []
+        },
+        {
+            "id": 1996,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "What we can do is that players could press tap out button once to go to the reinforcement queue and would automatically tap out when the time is right.\r\n\r\nTbh I really don\u2019t see the need for this as it just adds complexity to such a simple issue as tapping out..",
+            "created_on": "2013-10-01T08:04:16Z",
+            "details": []
+        },
+        {
+            "id": 1997,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Jacker wrote:\r\n> What we can do is that players could press tap out button once to go to the reinforcement queue and would automatically tap out when the time is right.\r\n\r\nThat's the idea.\r\n \r\n> Tbh I really don't see the need for this as it just adds complexity to such a simple issue as tapping out.\r\n\r\nI do actually think this is a nice improvement over the current behavior, based on a few dozen hours playing ETQW. Actually, what we have to do is waiting for the very last second before reinforcement before tapping out (to maximize probability that medics can find and revive us), and I do sometimes miss the tap out time by a few millisecond... resulting in being in limbo for the next 20 or 30 seconds.\r\n\r\nThe \"drawback\" of this change would be that you can't tap out tactically easily anymore (actually, killed medics can tap out to give medpack to mates that need it). The /kill keyboard shortcut could solve this issue. \r\n\r\n",
+            "created_on": "2013-10-01T11:43:53Z",
+            "details": []
+        },
+        {
+            "id": 1998,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Jacker wrote:\r\n>Tbh I really don't see the need for this as it just adds complexity to such a simple issue as tapping out.\r\nI do agree -  I just wanted to point to some trouble we run in.\r\n \r\nNew features and suggestions are very appreciated but in this case gameplay is just changed. Tapping out tactically is part of the game and missing to tap out too :D \r\n... of course it's nice to keep players in game but for this I would rather implement the 'give health' syringes for players <20% HP.\r\n\r\n",
+            "created_on": "2013-10-01T14:36:17Z",
+            "details": []
+        },
+        {
+            "id": 2000,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "IR4T4 wrote:\r\n> New features and suggestions are very appreciated but in this case gameplay is just changed. Tapping out tactically is part of the game and missing to tap out too :D\r\n\r\nWell, I see this feature more as an improvement and wouldn't have proposed it if I felt it was changing the gameplay. To me, this would solve an annoying game behavior without changing anything else (at least if the tactical tap out is still possible). The additional code complexity might not be worth implementing however. \r\n\r\n> ... of course it's nice to keep players in game but for this I would rather implement the 'give health' syringes for players <20% HP.\r\n\r\nUnlike the above, this sounds like a real total gameplay change. :P\r\n\r\n",
+            "created_on": "2013-10-01T16:11:07Z",
+            "details": []
+        },
+        {
+            "id": 2063,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Closing this issue now, since gameplay is affected more than necessary + not worth the added code complexity.",
+            "created_on": "2013-10-11T11:20:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 2545,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-12-26T07:29:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "11"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 354,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "Add tap in back option",
+    "description": "Not sure if that is easy to implement, but I'd like to see a \"tap in back\" option after you died and chose to go to limbo (tap out), much like ETQW does it: \r\n\r\n\"In W:ET, you could just tap out and the Medic would no longer see the \"need revive\" icon, but ETQW lets you tap back in if, at the last moment, you see a heroic Medic/Technician coming to revive you. If you want to completely tap out, then go to the Limbo Menu (L) and click on Respawn, or you can just use /kill. Once you're completely tapped out, you can spectate other players on your team to see how the game is going, plan your next move, or find where the action is heading.\"",
+    "start_date": "2013-09-30",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-09-30T13:44:14Z",
+    "updated_on": "2013-12-26T07:29:16Z",
+    "closed_on": "2013-10-11T11:20:20Z"
+}

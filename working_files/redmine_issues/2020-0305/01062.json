@@ -1,0 +1,119 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 353,
+            "issue_id": 1062,
+            "issue_to_id": 887,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 6960,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2017-11-02T16:20:30Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "887"
+                }
+            ]
+        },
+        {
+            "id": 7024,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Battlefield level 1 (binocs) is also useless for FieldOps and Covops, as these have binoculars already.\r\nSee \"official manual\":https://www.splashdamage.com/wolfguide/default.htm.",
+            "created_on": "2018-01-19T16:08:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "tracker_id",
+                    "old_value": "3",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 7216,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-04-20T14:54:39Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "First Aid skill lvl 1",
+                    "new_value": "First Aid and Battle Sense skill lvl 1"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1062,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "assigned_to": {
+        "id": 251,
+        "name": "Aranud"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "First Aid and Battle Sense skill lvl 1",
+    "description": "\"First Aid Level 1: Medic Ammo\r\nMedics receive an extra ammunition clip and grenade with their basic weapon load-out.\"\r\n\r\nThis skill is improvable in two aspects. One, it isn't actually a 'First Aid', but rather a 'Light Weapon' skill. Second, it doesn't really do anything except grant another grenade, because it doesn't work on top of 'Light Weapon' skill level 1. So if you were to level up 'Light Weapon' first (which normally you do), then this perk isn't giving you much of anything.\r\n\r\nThe 'free' slot could be used to implement a new skill level perk for the medic (which doesn't interfere with the gameplay too much).\r\n\r\nThere was a discussion about that in Discord/IRC and apparently the skill levels are disabled in comp play anyway, so we won't receive too many problems with implementing a logically sound and gameplay improving new skill for the medic.\r\n\r\n\r\n>if ((client->sess.skill[SK_FIRST_AID] >= 1 && client->sess.playerType == PC_MEDIC) || client->sess.skill[SK_LIGHT_WEAPONS] >= 1)\r\n>\r\n>{\r\n>           client->ps.ammo[GetWeaponTableData(weaponNum)->ammoIndex] += GetWeaponTableData(weaponNum)->maxClip;\r\n>}",
+    "start_date": "2017-11-02",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-11-02T16:19:58Z",
+    "updated_on": "2018-04-20T14:54:39Z"
+}

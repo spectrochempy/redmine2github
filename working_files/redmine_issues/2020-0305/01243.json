@@ -1,0 +1,171 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 414,
+            "issue_id": 1243,
+            "issue_to_id": 987,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "c6d650ea27fa902a81cbbc2e2ced4c021dc646ed",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed mod logfile not always created, refs #1243",
+            "committed_on": "2019-04-12T19:36:18Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7936,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "For reference, there is a copy of the three previous crashed logs on the server (internal access, 80+ mb each):\r\n* output_crashed_at_0820_on_270119.log\r\n* output_crashed_at_1112_on_010419.log\r\n* output_crashed_at_0554_on_060519.log\r\n\r\nAdditional info:\r\nRestarted the test server.\r\n-`WARNING: Couldn't open logfile: legacy_mod.log` is printed, but doesn't seem to be critical here.- (done)",
+            "created_on": "2019-04-02T16:27:53Z",
+            "details": []
+        },
+        {
+            "id": 7945,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "About the mod log side-issue: it looks like the \"append\" mode fails to create a new file when it isn't already present. For some reason, the \"create\" fallback just fails.\r\n* The issue doesn't happen on windows, but only Linux (confirmed on the test server running CentOS 7, locally on Arch, and on by a third party on his server).\r\n* this isn't a permission issue, since it is possible to create a new file (tested locally)\r\n\r\nI couldn't find much about that issue, apart from \"this article\":http://www.decompile.com/cpp/faq/fopen_write_append.htm (\"The descriptions for both the \"a\" and \"a+\" append modes say that the file will be created if it doesn't exist. I've found, in practice, that this doesn't work. If the file doesn't exist when fopen is called with a \"a\" or \"a+\" open mode, the file will not be created.\")\r\n\r\nSuggestion for a dirty workaround: if the append mod fails, try creating the file with a normal \"write\" mode, close the file, and try to append it to it again. (done)",
+            "created_on": "2019-04-12T16:24:56Z",
+            "details": []
+        },
+        {
+            "id": 7986,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Server crashed again. Same symtoms. Log is 95 Mb this time (output_crashed_at_0453_on_190419.log).\r\n\r\nA \"recent commit\":https://github.com/etlegacy/etlegacy/commit/e9e3364033a82360caa134389286b5e22c86962c fixed some issue in the Lua stack (\" Lua vm stack was uncontrollably growing after each hook\r\n  callback call\"), see if that fix improves the situation on the next update.\r\n\r\n* 06/05/19: Ignore the following log: output_stopped_at_1820_on_060519.log (server was restarted for maintenance).\r\n* 05/06/19: new crash. Same symptoms. The Lua stack growth fix doesn't seem to have improved the situation here.\r\n* 28/06/19: yada. Same symtoms.",
+            "created_on": "2019-04-19T08:16:37Z",
+            "details": []
+        },
+        {
+            "id": 7992,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-19T09:44:44Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "987"
+                }
+            ]
+        },
+        {
+            "id": 8366,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-07-08T10:34:14Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "22",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 8506,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-10-27T11:44:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8553,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "See Ododo's comment on seemingly unrelated(?) issue: https://dev.etlegacy.com/issues/987#note-8\r\n\r\n> A file descriptor for etl.db seems to be created on each map load, without closing the previous. (see attachment)\r\n> So maybe the system has reached a limit as the errno 24 on mapvoteinfo.txt suggest.\r\n",
+            "created_on": "2019-11-26T11:26:14Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "1148",
+                    "new_value": "etlded-fds.txt"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1243,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 6,
+        "name": "Urgent"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 5,
+        "name": "Server"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Server crash related to filesystem access",
+    "description": "The test server tends to crash every few weeks or so. The logs have interesting content:\r\n\r\n* it seems the game log file can't be opened (maybe some issue with log rotation)\r\n* the mapvote.txt suddenly can't be opened\r\n* the database eventually can't be accessed anymore (locked), resulting in a hard crash\r\n* There are some WA error, but I believe this is unreletad (WA got some bugfix in its dev branch)\r\n\r\nSee attachment, last bit of the ~80mb server log file.",
+    "start_date": "2019-04-02",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-04-02T16:23:19Z",
+    "updated_on": "2019-11-26T11:26:14Z"
+}

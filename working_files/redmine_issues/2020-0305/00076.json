@@ -1,0 +1,101 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 22,
+            "issue_id": 76,
+            "issue_to_id": 14,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 254,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "This bug should have been fixed see http://www.etlegacy.com/issues/14\n\nAny hints to reproduce? Did you connect to an ET or ETL server? ... it's a server side issue. It doesn't help if an updated client is used only. Only servers with updated code won't throw this error anymore (for the reconnect case). If it's still thrown - pk3s should be invalid for real. I haven't seen this bug on the test server for ages ...\n\n\n",
+            "created_on": "2012-08-11T09:47:07Z",
+            "details": []
+        },
+        {
+            "id": 257,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Well, weird, it doesn't happen on ET:L test server, but even on my own server where I have an own etded binary builded from ET source with \"Invalid .PK3 files referenced\" fix, I am still being kicked while reconnecting using ET:L client.",
+            "created_on": "2012-08-11T12:40:24Z",
+            "details": []
+        },
+        {
+            "id": 283,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "If this still happens with etl 'genuine' files and a proper installation feel free to open this ticket #14 again.",
+            "created_on": "2012-08-18T13:02:15Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 76,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 35,
+        "name": "Dragonji"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 1,
+        "name": "2.70rc1"
+    },
+    "subject": "Invalid .PK3 files referenced",
+    "description": "This bug seems to exist on client side... Even while reconnecting to a server which use binaries with \"Invalid .PK3 files referenced\" fix (ET 3.00 from TrackBase for example), I am still being kicked with this message. Do note that it doesn't happen while reconnecting using ET 2.55/2.6b.",
+    "start_date": "2012-08-11",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-08-11T00:24:59Z",
+    "updated_on": "2012-08-18T13:02:15Z",
+    "closed_on": "2012-08-18T13:02:15Z"
+}

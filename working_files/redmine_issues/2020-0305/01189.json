@@ -1,0 +1,111 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7655,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-01-23T17:26:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "17"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8049,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I am not sure what is the point here (Lua scripts using ref?). Ref commands are used to delegate some functions to specific clients, but if an admin or Lua scripts have access to the server, they can use whatever commands they need already.",
+            "created_on": "2019-04-26T16:22:04Z",
+            "details": []
+        },
+        {
+            "id": 8054,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-26T18:43:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "22",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1189,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 110,
+        "name": "Harlekin"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "ref command does not work in server console",
+    "description": "Tried the ref command in server console and get no feedback at all. Tried ref pause with the same result.\r\n\r\nTried the ref command in client console and i get feedpack. Tried ref pause and game paused.\r\n\r\nServer side ref functionality would be nice for lua based admin systems using ref commands.",
+    "start_date": "2019-01-22",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-01-22T20:31:20Z",
+    "updated_on": "2019-04-26T18:43:13Z"
+}

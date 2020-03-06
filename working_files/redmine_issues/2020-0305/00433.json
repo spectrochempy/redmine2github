@@ -1,0 +1,218 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "d8c48d078eab438f37b92dd87cb90ca30613dcbd",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed broken sw/lms round counter with custom config, fixes #433",
+            "committed_on": "2013-12-29T09:39:36Z"
+        },
+        {
+            "revision": "54fc1a018bd9b0aa78f8f73ec535d9e20c702737",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed c&p typo, refs #433",
+            "committed_on": "2013-12-29T11:29:35Z"
+        },
+        {
+            "revision": "b2c92cf46d191dcf9846310011c0c0058abbd1e0",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: set fConfigReset for cvars so G_WipeCvars skip them refs #433",
+            "committed_on": "2014-10-21T22:38:00Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2536,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Any more info? Which values are used for g_lms_roundlimit, g_lms_matchlimit?\r\n\r\ng_currentRound cvar value is finally responsible for the client view of \"Stopwatch round x\" (cgs.currentRound) and it seems a bit odd there is a negative value set in G_LogExit (trap_Cvar_Set(\"g_currentRound\", va(\"%i\", !g_currentRound.integer));)  A new map will always reset g_currentRound 0 - see SV_Map_f",
+            "created_on": "2013-12-25T10:22:35Z",
+            "details": []
+        },
+        {
+            "id": 2537,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Allright, just played two maps in stopwatch mode (2 x 2 rounds). The bug didn't appear the first time, but it did the second time.\r\n\r\nThe lms cvars were set at g_lms_roundlimit = 3 and g_lms_matchlimit = 2, same value at both rounds of each map - so I guess they aren't directly related to the bug.\r\n\r\nThe *only* thing that changed between the 2 maps is the value of g_customConfig. It was empty when playing the non buggy stopwatch map, but I set it to \"Competition Setting\" on the buggy map. Maybe there is something related here?\r\n\r\nEdit: Confirmed. The round counter is broken when a config (public or comp) is loaded.",
+            "created_on": "2013-12-25T11:10:23Z",
+            "details": []
+        },
+        {
+            "id": 2592,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2013-12-28T09:14:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Stopwatch round counter inconsistent",
+                    "new_value": "Stopwatch rounds broken when config is loaded"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 2593,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "G_wipeCvars() is called by the G_configLoadAndSet() function, resetting all game cvars, including g_currentRound.",
+            "created_on": "2013-12-28T13:04:37Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "10"
+                }
+            ]
+        },
+        {
+            "id": 2601,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Spyhawk wrote:\r\n> G_wipeCvars() is called by the G_configLoadAndSet() function, resetting all game cvars, including g_currentRound.\r\nWe should skip those cvars in the loop of G_wipeCvars() for gametype LMS or stopwatch.",
+            "created_on": "2013-12-28T23:38:13Z",
+            "details": []
+        },
+        {
+            "id": 2607,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Thx IR4, I wasn't sure about the proper way to fix this issue. Now the sw/lms round counter, as well as the lms match/round limit settings are skipped.",
+            "created_on": "2013-12-29T09:49:56Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "10",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 2609,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "You are welcome. Good to see progress :)",
+            "created_on": "2013-12-29T11:11:48Z",
+            "details": []
+        },
+        {
+            "id": 2610,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Oww I think there is a c&p virus ...\r\n\r\nif (g_gametype.integer == GT_WOLF_STOPWATCH && (strcmp(pCvars->cvarName, \"g_lms_currentMatch\") ||\r\n\r\nshould be \r\n\r\nif (g_gametype.integer == GT_WOLF_LMS && (strcmp(pCvars->cvarName, \"g_lms_currentMatch\") ||\r\n\r\n?",
+            "created_on": "2013-12-29T11:19:03Z",
+            "details": []
+        },
+        {
+            "id": 2611,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Indeed. Fixed.",
+            "created_on": "2013-12-29T11:30:58Z",
+            "details": []
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 433,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "Stopwatch rounds broken when config is loaded",
+    "description": "When playing in Stopwatch mode, the team aren't always swapped after the first round. Sometime it works, sometime it doesn't - I'm not sure what triggered the bug.\r\n\r\nExample that just happened: Playing Allies, stopwatch round 1. Win the map in about 4 min. Round 2 loads, clock is correctly set at 4 minutes. But the game think the round is the first one (\"Stopwatch round 1\" is displayed) and I'm still in the allied team.",
+    "start_date": "2013-12-24",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-12-24T17:33:20Z",
+    "updated_on": "2013-12-29T11:30:58Z",
+    "closed_on": "2013-12-29T09:49:56Z"
+}

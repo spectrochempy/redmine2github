@@ -1,0 +1,233 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 1882,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "We can't provide a qick solution to translate our web pages by button or link. But there are options: https://addons.mozilla.org/es/firefox/addon/google-translator-for-firefox/\r\n\r\n\r\n\r\n",
+            "created_on": "2013-09-01T22:00:52Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "tracker_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "13"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 1895,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-09-02T19:10:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "LANGUAGE",
+                    "new_value": "LANGUAGE - add an auto translate button to the web page"
+                }
+            ]
+        },
+        {
+            "id": 1954,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-09-18T18:32:55Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 1972,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-09-19T18:15:30Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "10"
+                }
+            ]
+        },
+        {
+            "id": 3262,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Yea, the best advice is to use the a browser extension for Google Translate or if you can't then go to http://translate.google.com -> type etlegacy.com -> click -> https://translate.google.com/translate?sl=auto&tl=es&js=y&prev=_t&hl=en&ie=UTF-8&u=dev.etlegacy.com&edit-text=&act=url",
+            "created_on": "2014-06-18T08:39:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "13",
+                    "new_value": "23"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 4861,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-03-24T17:44:40Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "560",
+                    "new_value": "sprite.xcf"
+                }
+            ]
+        },
+        {
+            "id": 4862,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-03-24T17:45:43Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "560",
+                    "old_value": "sprite.xcf"
+                }
+            ]
+        },
+        {
+            "id": 4863,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-03-24T17:55:26Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "561",
+                    "new_value": "sprite.png"
+                }
+            ]
+        },
+        {
+            "id": 4864,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-03-24T17:57:56Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "561",
+                    "old_value": "sprite.png"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 337,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 247,
+        "name": "STRATO"
+    },
+    "assigned_to": {
+        "id": 247,
+        "name": "STRATO"
+    },
+    "category": {
+        "id": 23,
+        "name": "Website"
+    },
+    "fixed_version": {
+        "id": 10,
+        "name": "N/A"
+    },
+    "subject": "LANGUAGE - add an auto translate button to the web page",
+    "description": "HELLO\r\nSOY DE CHILE\r\nTHERE IS A POSSIBILITY THAT MAKE A LINK TO THIS PAGE SPANISH LANGUAGE AND KNOW THAT NOT ALL ENGLISH AND OTHER OPENING THERE BE ABLE TO TRANSLATE PAGE AS I WOULD LIKE TO KNOW MORE ABOUT THIS NEW PROJECT\r\nTHANKS\r\nSTRATO",
+    "start_date": "2013-08-31",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-08-31T18:39:30Z",
+    "updated_on": "2015-03-24T17:55:26Z",
+    "closed_on": "2014-06-18T08:39:24Z"
+}

@@ -1,0 +1,730 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 209,
+            "issue_id": 781,
+            "issue_to_id": 774,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 214,
+            "issue_id": 768,
+            "issue_to_id": 774,
+            "relation_type": "duplicates",
+            "delay": null
+        },
+        {
+            "id": 216,
+            "issue_id": 808,
+            "issue_to_id": 774,
+            "relation_type": "duplicates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "d30f866253b4efe0a826a927763a8877f69ccff9",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "client: set the windows process affinity on startup",
+            "committed_on": "2015-01-12T12:10:17Z"
+        },
+        {
+            "revision": "dcf19e86b653df21eb3c62f942a7b9bc3ade5808",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: force at least 1 frame_msec value, refs #774\n\nThanks to Razish (Qtz) for the fix and Ensiform for being awesome",
+            "committed_on": "2015-03-15T21:53:30Z"
+        },
+        {
+            "revision": "6bfdd80d62c02e6bf1cc3d7954874e040110f677",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "general: disabled win32 cpu affinity code, fixes #774",
+            "committed_on": "2015-03-17T12:32:32Z"
+        },
+        {
+            "revision": "c803e0274cbaa124d68192a6d03608ab0d2a0f3f",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "properly disabled the affinity code, refs #774",
+            "committed_on": "2015-03-17T12:44:18Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 4357,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-01-11T13:07:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "7"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "16",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 4358,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Responsible commit seems to be \"d098af23d187f016d8efc752e33e0cad2f752c08\":https://github.com/etlegacy/etlegacy/commit/d098af23d187f016d8efc752e33e0cad2f752c08.\r\n\r\n(Don't take it as granted, as the issue is quite random and I might have misbisected).",
+            "created_on": "2015-01-11T13:30:39Z",
+            "details": []
+        },
+        {
+            "id": 4363,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Setting CPU affinity to the last core only (CPU3 on my quadcore) seems to solve the issue.\r\n",
+            "created_on": "2015-01-11T21:16:26Z",
+            "details": []
+        },
+        {
+            "id": 4369,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Some helpful link from OJK (thx Ensi!):\r\n\r\nhttps://github.com/JACoders/OpenJK/blob/master/codemp/win32/win_shared.cpp#L261\r\nhttps://github.com/JACoders/OpenJK/blob/master/codemp/sys/sys_unix.cpp#L648\r\nhttps://github.com/JACoders/OpenJK/blob/master/codemp/qcommon/common.cpp#L1263\r\n\r\nThis code set com_affinity  on the first core by default and that func is called from qcommon/common.cpp.\r\n",
+            "created_on": "2015-01-12T11:52:33Z",
+            "details": []
+        },
+        {
+            "id": 4412,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-01-16T17:28:22Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "781"
+                }
+            ]
+        },
+        {
+            "id": 4436,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-01-18T21:16:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "17"
+                }
+            ]
+        },
+        {
+            "id": 4527,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-01-31T10:02:54Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "duplicated",
+                    "new_value": "768"
+                }
+            ]
+        },
+        {
+            "id": 4543,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-02-04T12:15:28Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "duplicated",
+                    "new_value": "808"
+                }
+            ]
+        },
+        {
+            "id": 4601,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "So I have a _good_ and a _bad_ news.\r\n\r\nThe good news is that bug doesn't seem directly related to the code. I was having that bug constantly, with the mouse being stuck after about a minutes of play. Since about ten days ago (5-6 of February), I cannot reproduce this problem. It went from \"being always there\" to \"completely fixed\". I tried to bisect the issue without success. I even tried the 2.72 official release (was buggy for me, although it was a bit better than 2.71a) and it works as expected. The fix seems somewhat unrelated to the code.\r\n\r\nThe bad news is, of course, that I have no single idea why it works now. As far as I remember, when it was buggy I tried to launch etl.exe specifically on \"1 single core with a shortcut\":http://www.eightforums.com/tutorials/40339-cpu-affinity-shortcut-program-create-windows.html (with affinity 1), which didn't really worked. After that, launching etl.exe directly (not through shortcut) was still buggy... and then it suddenly worked the next few days.\r\n\r\ntldr: fixed on ma machine, but I don't know why :(",
+            "created_on": "2015-02-16T10:33:30Z",
+            "details": []
+        },
+        {
+            "id": 4611,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Under Windows with a Microsoft mouse ? May be a Microsoft Mouse & Keyboard Center update?\r\n\r\nTried to reset the CFG file and try with a new one?\r\n\r\nMaybe the OS was hanging and selected to disconnect temporarily the mouse? (happens to me from time to time)",
+            "created_on": "2015-02-16T14:49:30Z",
+            "details": []
+        },
+        {
+            "id": 4614,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Mateos wrote:\r\n> Under Windows with a Mircosoft mouse ? May be a Microsoft Mouse & Keyboard Center update?\r\n> Tried to reset the CFG file and try with a new one?\r\n\r\nI've always used a new config file. This shouldn't be hardware dependent, since it happens with my integrated touchpad (no mouse!) and that I haven't done any drivers update recently.\r\n \r\n> Maybe the OS was hanging and selected to disconnect temporarily the mouse? (happens to me from time to time)\r\n\r\nMaybe.... what could cause this issue?",
+            "created_on": "2015-02-16T15:00:08Z",
+            "details": []
+        },
+        {
+            "id": 4656,
+            "user": {
+                "id": 211,
+                "name": "The_Loko"
+            },
+            "notes": "I still have this bug on Linux",
+            "created_on": "2015-02-20T21:56:45Z",
+            "details": []
+        },
+        {
+            "id": 4657,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "The_Loko wrote:\r\n> I still have this bug on Linux\r\n\r\nCould give details about your issue? You're the first person to have it under Linux, so I suspect this is another bug..\r\n\r\n",
+            "created_on": "2015-02-20T22:21:18Z",
+            "details": []
+        },
+        {
+            "id": 4659,
+            "user": {
+                "id": 211,
+                "name": "The_Loko"
+            },
+            "notes": "Spyhawk wrote:\r\n> The_Loko wrote:\r\n> > I still have this bug on Linux\r\n> \r\n> Could give details about your issue? You're the first person to have it under Linux, so I suspect this is another bug..\r\n\r\nI think it's the same, first time It happened was the day this bug was reported.\r\nMost of times, when connecting to a server mouse movement doesn't work. Alt Tab doesn't fix it, restarting the game does.\r\nAs this one, mouse click works and movement works on menu too.\r\n\r\nAlso, after playing in a server a lot of maps (around 10), mouse stops working too when loading a new map.",
+            "created_on": "2015-02-21T16:14:29Z",
+            "details": []
+        },
+        {
+            "id": 4660,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-02-21T18:24:55Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "old_value": "Windows",
+                    "new_value": ""
+                }
+            ]
+        },
+        {
+            "id": 4720,
+            "user": {
+                "id": 211,
+                "name": "The_Loko"
+            },
+            "notes": "I tried 2.72 on my Windows 7 machine and I have the same issue.",
+            "created_on": "2015-03-05T15:16:39Z",
+            "details": []
+        },
+        {
+            "id": 4726,
+            "user": {
+                "id": 2,
+                "name": "Anonymous"
+            },
+            "notes": "Hello,\r\n\r\nI am following this issue since the day it was first reported, because I have the same issue too, on Win 8 64-bit.\r\nSome thoughts:\r\nThe issue only occures when I update to 2.72. With 2.71a the bug is not there. Maybe I am wrong but the bug must happen somewhere between 2.71a and 2.72.\r\nThere are not too much changes between 2.71a and 2.72. Can anyone who can reproduce the bug test 2.71a exe instead of 2.72 exe?\r\nI can't compile ETLegacy, but if someone could, than it might not be to hard to exactly find out where the bug first occurs (around 24/12/2014 to 08/01/2015, maybe: https://github.com/etlegacy/etlegacy/commit/857efa2ab65adb701906071797561149fdcc67b8)\r\nHmm, I have no idea if my assumptions are correct, I simply thought maybe this information will help you a bit.\r\n\r\nKind Regards,\r\nToKu",
+            "created_on": "2015-03-06T13:51:31Z",
+            "details": []
+        },
+        {
+            "id": 4727,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "I have been wondering why there haven't been any investigations after the problem occured.\r\n\r\n-*S",
+            "created_on": "2015-03-06T15:10:15Z",
+            "details": []
+        },
+        {
+            "id": 4728,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "ToKu> The exact commit is known (see #774#note-2 above), but it is still unclear why the bug happens, and why it can suddenly disappear on the very same machine with the very same code (see #774#note-9).",
+            "created_on": "2015-03-06T15:43:20Z",
+            "details": []
+        },
+        {
+            "id": 4743,
+            "user": {
+                "id": 429,
+                "name": "pisek"
+            },
+            "notes": "Spyhawk wrote:\r\n> ToKu> The exact commit is known (see #774#note-2 above), but it is still unclear why the bug happens, and why it can suddenly disappear on the very same machine with the very same code (see #774#note-9).\r\n\r\nIn my case the problem shows up only when running the game with the omni-bots mode. In vanilla etlegacy the mouse works OK.\r\n\r\nThe mouse works at first OK, but after a minute of play, stops. The problem however is not with the mouse itself because when ESC is pressed, the cursor can be moved; when going back to game the mouse stops...\r\nWhen I \"disconnect\" from the server and connect/create it again, it goes again (1min ok, then bump)\r\n\r\nI am using:\r\nWindows 7 64bit (clean system)\r\nET Legacy 2.72",
+            "created_on": "2015-03-09T10:26:21Z",
+            "details": []
+        },
+        {
+            "id": 4744,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "> In my case the problem shows up only when running the game with the omni-bots mode.\r\n\r\nVery interesting. I can't reproduce the issue anymore, but I had the exact same issue as you. could you tell us a bit more about this issue? Were you using a local server, or an online server? Did you use the \"launch ETL with bots\" shortcut? etc.",
+            "created_on": "2015-03-09T14:35:24Z",
+            "details": []
+        },
+        {
+            "id": 4745,
+            "user": {
+                "id": 2,
+                "name": "Anonymous"
+            },
+            "notes": "@Spyhawk> I had a look at the code (#774#note-2 above). I can't see anything which seems wrong with that commit, thought I won't argue against you, you might know more than I, I'm not that skilled and I am no ET Legacy developer. So it is guaranteed that this commit causes the bug?\r\n\r\nI can confirm what Pisek wrote: mouse movement will stop working with omnibots enabled (tested on local server, no shortcut).\r\n\r\n@Pisek> I'm not sure but to me it seems it mostly happens right after 1st respawn after I was killed for the first time, can you confirm this?",
+            "created_on": "2015-03-09T16:47:49Z",
+            "details": []
+        },
+        {
+            "id": 4746,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "ToKu wrote:\r\n> @Spyhawk> I had a look at the code (#774#note-2 above). I can't see anything which seems wrong with that commit, thought I won't argue against you, you might know more than I, I'm not that skilled and I am no ET Legacy developer. So it is guaranteed that this commit causes the bug?\r\n\r\nYes, it is the commit where the bug appears. However, it doesn't mean that code is directly responsible for it. Likely, it made it appear by triggering something else in another part of the code. Hopefully I'll be able to reproduce it with playing with OB settings.",
+            "created_on": "2015-03-09T16:58:56Z",
+            "details": []
+        },
+        {
+            "id": 4747,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "To all players getting this bug:\r\n\r\nIf this issue occures open console (if that works) and enter:\r\n\r\n<pre>\r\ncvarlist\r\ncondump mousebug.txt\r\n</pre>\r\n\r\nYou'll find the mousebug.txt file in fs_homepath. Please attach this file here. Don't forget to  anonymise before (name, GUID etc)",
+            "created_on": "2015-03-09T17:05:06Z",
+            "details": []
+        },
+        {
+            "id": 4748,
+            "user": {
+                "id": 429,
+                "name": "pisek"
+            },
+            "notes": "Unfortunatelly i have it reproduced on non-bot game as well... so no hint here...\r\nBut... I have just changed the sensitivity property to some other value and saved the profile, restarted game and mouse worked - so then just changed the sensitivity back to normal.\r\nIf the error will happen again i will surely dump the logs:)",
+            "created_on": "2015-03-09T17:23:14Z",
+            "details": []
+        },
+        {
+            "id": 4749,
+            "user": {
+                "id": 429,
+                "name": "pisek"
+            },
+            "notes": "ToKu wrote:\r\n> @Pisek> I'm not sure but to me it seems it mostly happens right after 1st respawn after I was killed for the first time, can you confirm this?\r\n\r\nIn my case the mouse problem was fully random: once just in the beginning as spectator, sometimes after 1min of playing etc so no rule here:/",
+            "created_on": "2015-03-09T17:26:57Z",
+            "details": []
+        },
+        {
+            "id": 4766,
+            "user": {
+                "id": 430,
+                "name": "belstgut"
+            },
+            "notes": "condump\r\nhttp://hastebin.com/umifuhiced.txt",
+            "created_on": "2015-03-11T20:30:12Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "17"
+                },
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "old_value": "",
+                    "new_value": "Windows"
+                },
+                {
+                    "property": "cf",
+                    "name": "2",
+                    "old_value": "",
+                    "new_value": "64-bit"
+                }
+            ]
+        },
+        {
+            "id": 4768,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-03-12T08:55:41Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "17"
+                },
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "old_value": "Windows",
+                    "new_value": ""
+                },
+                {
+                    "property": "cf",
+                    "name": "2",
+                    "old_value": "64-bit",
+                    "new_value": ""
+                }
+            ]
+        },
+        {
+            "id": 4778,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "belstgut, your condump on hastebin is gone :/ please attach it as text file. ",
+            "created_on": "2015-03-15T10:15:24Z",
+            "details": []
+        },
+        {
+            "id": 4779,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I can finally reproduce the issue, on Windows only and with other mods than Legacy (reproduced on silent and nitmod so far).\r\nThis is not the exact same issue I was facing previously (mouse working but stopping about 1 minute later - as described by pisek above) but it is the one described by many other people (mouse not working at all on connect, and a few /reconnect can solve the issue). \r\n\r\nUnlike the previous mouse issue I had, it *doesn't show up in localhost*, but *does on online servers*. However, a new bisect showed that the \"same commit\":https://github.com/etlegacy/etlegacy/commit/d098af23d187f016d8efc752e33e0cad2f752c08 is also responsible for this issue, so it is certainly the same bug, or a variant of it.\r\n\r\ncom_minimized and com_unfocused were both set to 0 when this bug happened.",
+            "created_on": "2015-03-15T14:42:19Z",
+            "details": []
+        },
+        {
+            "id": 4781,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Possible fix pushed in \"dcf19e86b653df21eb3c62f942a7b9bc3ade5808\":https://github.com/etlegacy/etlegacy/commit/dcf19e86b653df21eb3c62f942a7b9bc3ade5808. Feedback welcome!\r\n\r\nThanks to Razish (QtZ) for the \"fix\":https://github.com/Razish/QtZ/commit/2cd83291050f6b4af35fcf5777b47cc310020302#diff-37ffbd42e72139cff4e4e8a74fc555c6R554 and Ensiform for the help!\r\n\r\nNote: I'm not sure if the affinity change (d30f8662) is still necessary.",
+            "created_on": "2015-03-15T22:01:55Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 4788,
+            "user": {
+                "id": 424,
+                "name": "Zecklar"
+            },
+            "notes": "The fix is correct.\r\n\r\nWhat happens is division by 0 in CL_Keystate. If frame_msec = 0, in CL_Keystate the line val = (float)msec / frame_sec calculates the result as #IND ( indeterminate ) and in consequence of that, the viewangles ( cl.viewangles ) will be also #IND and so player can't look around anymore.",
+            "created_on": "2015-03-16T18:57:45Z",
+            "details": []
+        },
+        {
+            "id": 4789,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-03-16T20:58:47Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 4797,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:6bfdd80d62c02e6bf1cc3d7954874e040110f677.",
+            "created_on": "2015-03-17T13:26:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 4890,
+            "user": {
+                "id": 441,
+                "name": "watchdog"
+            },
+            "notes": "Hello,\r\nmy mouse didn't working.\r\n\r\nHow can i fix the problem",
+            "created_on": "2015-03-29T23:46:42Z",
+            "details": []
+        },
+        {
+            "id": 4891,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Either compile the source or wait for the next release :)",
+            "created_on": "2015-03-30T07:55:17Z",
+            "details": []
+        },
+        {
+            "id": 4893,
+            "user": {
+                "id": 441,
+                "name": "watchdog"
+            },
+            "notes": "Mateos wrote:\r\n> Either compile the source or wait for the next release :)\r\n\r\nHow can I compile the source?",
+            "created_on": "2015-03-31T05:26:15Z",
+            "details": []
+        },
+        {
+            "id": 4894,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "See README file in the github repo. Also, next time please ask question on forums instead of in the bug tracker.\r\n",
+            "created_on": "2015-03-31T12:58:58Z",
+            "details": []
+        },
+        {
+            "id": 5327,
+            "user": {
+                "id": 515,
+                "name": "LenusikAnop"
+            },
+            "notes": "",
+            "created_on": "2015-10-14T19:34:53Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Mouse movement not working",
+                    "new_value": "\u043a\u0440\u043e\u0432\u044c \u043d\u0430 \u0442\u0443\u0430\u043b\u0435\u0442\u043d\u043e\u0439 \u0431\u0443\u043c\u0430\u0433\u0435 \u043f\u043e\u0441\u043b\u0435 \u043a\u0430\u043b\u0430"
+                },
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "In some cases it seems that the mouse movement is not working.\r\nThis only happens ingame (as spectator aswell as player). In menu it is working.\r\nMouse click works when this problem appears.\r\n\r\nAlready found out that restarting sometimes solves the issue, but not always.\r\nAlso there is a report that ALT+TAB solved the issue.",
+                    "new_value": "\u0412\u0441\u0435\u043c \u043f\u0440\u0438\u0432\u0435\u0442! \u0423\u0432\u0430\u0436\u0432\u0435\u043c\u044b\u0435 \u0444\u043e\u0440\u0443\u043c\u0447\u0430\u043d\u0435! \u0415\u0441\u043b\u0438 \u0412\u044b \u0441\u043e\u0431\u0438\u0440\u0430\u0435\u0442\u0435\u0441\u044c \u0432 \u043e\u0442\u043f\u0443\u0441\u043a. \r\n\u0423 \u043d\u0430\u0441 \u0432 \u043f\u0440\u043e\u0434\u0430\u0436\u0435 \u043e\u0441\u0442\u0430\u043b\u043e\u0441\u044c \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0434\u0435\u0448\u043e\u0432\u044b\u0445 \u043f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u0438\u0439 \u0432 \u0440\u0430\u0437\u043b\u0438\u0447\u043d\u044b\u0435 \u0441\u0442\u0440\u0430\u043d\u044b! \r\n\u0412\u0441\u0435 \u0442\u0443\u0440\u044b \u0434\u043b\u044f \u043e\u0431\u0438\u0442\u0430\u0442\u0435\u043b\u0435\u0439 \u0434\u0430\u043d\u043d\u043e\u0433\u043e \u0444\u043e\u0440\u0443\u043c\u0430 \u043c\u044b \u043f\u0440\u0435\u0434\u043b\u0430\u0433\u0430\u0435\u043c \u0437\u0430 \u043f\u043e\u043b\u043e\u0432\u0438\u043d\u0443 \u0441\u0442\u043e\u0438\u043c\u043e\u0441\u0442\u0438. \u0410\u043a\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u043f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u0438\u044f \u043d\u0438\u0436\u0435! \u0412\u0441\u0435\u043c \u043f\u043e\u0434\u0440\u043e\u0431\u043d\u043e\u0441\u0442\u0438 \u043d\u0430 \u043d\u0430\u0448\u0435\u043c \u0441\u0430\u0439\u0442\u0435! \u0422\u043e\u0440\u043e\u043f\u0438\u0442\u0435\u0441\u044c! \u043e\u0441\u0442\u0430\u043b\u043e\u0441\u044c \u0432\u043e\u0441\u0435\u043c\u044c \u0434\u043d\u0435\u0439. \r\n \r\n\u0422\u043e\u0440\u043e\u043f\u0438\u0442\u0435\u0441\u044c! \r\n<a href=http://v001.ru/2><img>http://shinebar.ru/im/01.jpg</img></a> \r\n\u0422\u043e\u043b\u044c\u043a\u043e \u0441\u0435\u0433\u043e\u0434\u043d\u044f! \r\n<a href=http://v001.ru/2><img>http://shinebar.ru/im/02.jpg</img></a> \r\n\u041f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u0438\u0435 \u0434\u043d\u044f! \r\n<a href=http://v001.ru/2><img>http://shinebar.ru/im/03.jpg</img></a> \r\n \r\n<a href=http://shinebar.ru/sovety-turistam-15>\u0441\u043e\u0432\u0435\u0442\u044b \u0442\u0443\u0440\u0438\u0441\u0442\u0430\u043c 15</a>\r\n<a href=http://shinebar.ru/dostoprimechatelnosti-20>\u0434\u043e\u0441\u0442\u043e\u043f\u0440\u0438\u043c\u0435\u0447\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u0438 20</a>\r\n<a href=http://shinebar.ru/valyuta-meksiki>\u0432\u0430\u043b\u044e\u0442\u0430 \u043c\u0435\u043a\u0441\u0438\u043a\u0438</a>\r\n<a href=http://shinebar.ru/o-rossii>\u043e \u0440\u043e\u0441\u0441\u0438\u0438</a>\r\n<a href=http://shinebar.ru/oteli-indii>\u043e\u0442\u0435\u043b\u0438 \u0438\u043d\u0434\u0438\u0438</a>\r\n<a href=http://shinebar.ru/vizy/vizy-na-sejshely>\u0432\u0438\u0437\u044b \u043d\u0430 \u0441\u0435\u0439\u0448\u0435\u043b\u044b</a>\r\n<a href=http://shinebar.ru/dostoprimechatelnosti-avstrii-14>\u0434\u043e\u0441\u0442\u043e\u043f\u0440\u0438\u043c\u0435\u0447\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u0438 \u0430\u0432\u0441\u0442\u0440\u0438\u0438 14</a>\r\n<a href=http://shinebar.ru/vizy/vizy-na-filippiny>\u0432\u0438\u0437\u044b \u043d\u0430 \u0444\u0438\u043b\u0438\u043f\u043f\u0438\u043d\u044b</a>\r\n<a href=http://shinebar.ru/pogoda-v-turtsii>\u043f\u043e\u0433\u043e\u0434\u0430 \u0432 \u0442\u0443\u0440\u0446\u0438\u0438</a>\r\n<a href=http://shinebar.ru/vizy-na-maldivy>\u0432\u0438\u0437\u044b \u043d\u0430 \u043c\u0430\u043b\u044c\u0434\u0438\u0432\u044b</a>\r\n<a href=http://shinebar.ru/vizy-v-germaniyu>\u0432\u0438\u0437\u044b \u0432 \u0433\u0435\u0440\u043c\u0430\u043d\u0438\u044e</a>\r\n<a href=http://shinebar.ru/vizy-v-braziliyu>\u0432\u0438\u0437\u044b \u0432 \u0431\u0440\u0430\u0437\u0438\u043b\u0438\u044e</a>\r\n<a href=http://shinebar.ru/vizy/vizy-na-mavrikij>\u0432\u0438\u0437\u044b \u043d\u0430 \u043c\u0430\u0432\u0440\u0438\u043a\u0438\u0439</a>\r\n<a href=http://shinebar.ru/ekskursionnye-tury>\u044d\u043a\u0441\u043a\u0443\u0440\u0441\u0438\u043e\u043d\u043d\u044b\u0435 \u0442\u0443\u0440\u044b</a>\r\n<a href=http://shinebar.ru/o-turtsii>\u043e \u0442\u0443\u0440\u0446\u0438\u0438</a>\r\n<a href=http://shinebar.ru/gornolyzhnye-tury>\u0433\u043e\u0440\u043d\u043e\u043b\u044b\u0436\u043d\u044b\u0435 \u0442\u0443\u0440\u044b</a>\r\n<a href=http://shinebar.ru/vizy/vizy-v-niderlandy>\u0432\u0438\u0437\u044b \u0432 \u043d\u0438\u0434\u0435\u0440\u043b\u0430\u043d\u0434\u044b</a>\r\n<a href=http://shinebar.ru/sovety-turistam-7>\u0441\u043e\u0432\u0435\u0442\u044b \u0442\u0443\u0440\u0438\u0441\u0442\u0430\u043c 7</a>\r\n<a href=http://shinebar.ru/karty-vetnama>\u043a\u0430\u0440\u0442\u044b \u0432\u0435\u0442\u043d\u0430\u043c\u0430</a>\r\n<a href=http://shinebar.ru/vizy/vizy-v-tajland>\u0432\u0438\u0437\u044b \u0432 \u0442\u0430\u0439\u043b\u0430\u043d\u0434</a>\r\n<a href=http://shinebar.ru/vizy-na-sejshely>\u0432\u0438\u0437\u044b \u043d\u0430 \u0441\u0435\u0439\u0448\u0435\u043b\u044b</a>\r\n<a href=http://shinebar.ru/vizy/vizy-v-chili>\u0432\u0438\u0437\u044b \u0432 \u0447\u0438\u043b\u0438</a>\r\n<a href=http://shinebar.ru/kurorty-egipta>\u043a\u0443\u0440\u043e\u0440\u0442\u044b \u0435\u0433\u0438\u043f\u0442\u0430</a>\r\n<a href=http://shinebar.ru/poisk-tura/poisk-tura-teztour>\u043f\u043e\u0438\u0441\u043a \u0442\u0443\u0440\u0430 \u0442\u0435\u0437\u0442\u0443\u0440</a>\r\n<a href=http://shinebar.ru/pogoda-v-dominikane>\u043f\u043e\u0433\u043e\u0434\u0430 \u0432 \u0434\u043e\u043c\u0438\u043d\u0438\u043a\u0430\u043d\u0435</a>\r\n"
+                },
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "1",
+                    "new_value": "12"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "106"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "17",
+                    "new_value": "8"
+                },
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "old_value": "",
+                    "new_value": "Pandora"
+                },
+                {
+                    "property": "cf",
+                    "name": "2",
+                    "old_value": "",
+                    "new_value": "64-bit"
+                }
+            ]
+        },
+        {
+            "id": 5335,
+            "user": {
+                "id": 430,
+                "name": "belstgut"
+            },
+            "notes": "",
+            "created_on": "2015-10-17T10:53:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "\u043a\u0440\u043e\u0432\u044c \u043d\u0430 \u0442\u0443\u0430\u043b\u0435\u0442\u043d\u043e\u0439 \u0431\u0443\u043c\u0430\u0433\u0435 \u043f\u043e\u0441\u043b\u0435 \u043a\u0430\u043b\u0430",
+                    "new_value": "Mouse movement not working"
+                },
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "\u0412\u0441\u0435\u043c \u043f\u0440\u0438\u0432\u0435\u0442! \u0423\u0432\u0430\u0436\u0432\u0435\u043c\u044b\u0435 \u0444\u043e\u0440\u0443\u043c\u0447\u0430\u043d\u0435! \u0415\u0441\u043b\u0438 \u0412\u044b \u0441\u043e\u0431\u0438\u0440\u0430\u0435\u0442\u0435\u0441\u044c \u0432 \u043e\u0442\u043f\u0443\u0441\u043a. \r\n\u0423 \u043d\u0430\u0441 \u0432 \u043f\u0440\u043e\u0434\u0430\u0436\u0435 \u043e\u0441\u0442\u0430\u043b\u043e\u0441\u044c \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0434\u0435\u0448\u043e\u0432\u044b\u0445 \u043f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u0438\u0439 \u0432 \u0440\u0430\u0437\u043b\u0438\u0447\u043d\u044b\u0435 \u0441\u0442\u0440\u0430\u043d\u044b! \r\n\u0412\u0441\u0435 \u0442\u0443\u0440\u044b \u0434\u043b\u044f \u043e\u0431\u0438\u0442\u0430\u0442\u0435\u043b\u0435\u0439 \u0434\u0430\u043d\u043d\u043e\u0433\u043e \u0444\u043e\u0440\u0443\u043c\u0430 \u043c\u044b \u043f\u0440\u0435\u0434\u043b\u0430\u0433\u0430\u0435\u043c \u0437\u0430 \u043f\u043e\u043b\u043e\u0432\u0438\u043d\u0443 \u0441\u0442\u043e\u0438\u043c\u043e\u0441\u0442\u0438. \u0410\u043a\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u043f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u0438\u044f \u043d\u0438\u0436\u0435! \u0412\u0441\u0435\u043c \u043f\u043e\u0434\u0440\u043e\u0431\u043d\u043e\u0441\u0442\u0438 \u043d\u0430 \u043d\u0430\u0448\u0435\u043c \u0441\u0430\u0439\u0442\u0435! \u0422\u043e\u0440\u043e\u043f\u0438\u0442\u0435\u0441\u044c! \u043e\u0441\u0442\u0430\u043b\u043e\u0441\u044c \u0432\u043e\u0441\u0435\u043c\u044c \u0434\u043d\u0435\u0439. \r\n \r\n\u0422\u043e\u0440\u043e\u043f\u0438\u0442\u0435\u0441\u044c! \r\n<a href=http://v001.ru/2><img>http://shinebar.ru/im/01.jpg</img></a> \r\n\u0422\u043e\u043b\u044c\u043a\u043e \u0441\u0435\u0433\u043e\u0434\u043d\u044f! \r\n<a href=http://v001.ru/2><img>http://shinebar.ru/im/02.jpg</img></a> \r\n\u041f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u0438\u0435 \u0434\u043d\u044f! \r\n<a href=http://v001.ru/2><img>http://shinebar.ru/im/03.jpg</img></a> \r\n \r\n<a href=http://shinebar.ru/sovety-turistam-15>\u0441\u043e\u0432\u0435\u0442\u044b \u0442\u0443\u0440\u0438\u0441\u0442\u0430\u043c 15</a>\r\n<a href=http://shinebar.ru/dostoprimechatelnosti-20>\u0434\u043e\u0441\u0442\u043e\u043f\u0440\u0438\u043c\u0435\u0447\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u0438 20</a>\r\n<a href=http://shinebar.ru/valyuta-meksiki>\u0432\u0430\u043b\u044e\u0442\u0430 \u043c\u0435\u043a\u0441\u0438\u043a\u0438</a>\r\n<a href=http://shinebar.ru/o-rossii>\u043e \u0440\u043e\u0441\u0441\u0438\u0438</a>\r\n<a href=http://shinebar.ru/oteli-indii>\u043e\u0442\u0435\u043b\u0438 \u0438\u043d\u0434\u0438\u0438</a>\r\n<a href=http://shinebar.ru/vizy/vizy-na-sejshely>\u0432\u0438\u0437\u044b \u043d\u0430 \u0441\u0435\u0439\u0448\u0435\u043b\u044b</a>\r\n<a href=http://shinebar.ru/dostoprimechatelnosti-avstrii-14>\u0434\u043e\u0441\u0442\u043e\u043f\u0440\u0438\u043c\u0435\u0447\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u0438 \u0430\u0432\u0441\u0442\u0440\u0438\u0438 14</a>\r\n<a href=http://shinebar.ru/vizy/vizy-na-filippiny>\u0432\u0438\u0437\u044b \u043d\u0430 \u0444\u0438\u043b\u0438\u043f\u043f\u0438\u043d\u044b</a>\r\n<a href=http://shinebar.ru/pogoda-v-turtsii>\u043f\u043e\u0433\u043e\u0434\u0430 \u0432 \u0442\u0443\u0440\u0446\u0438\u0438</a>\r\n<a href=http://shinebar.ru/vizy-na-maldivy>\u0432\u0438\u0437\u044b \u043d\u0430 \u043c\u0430\u043b\u044c\u0434\u0438\u0432\u044b</a>\r\n<a href=http://shinebar.ru/vizy-v-germaniyu>\u0432\u0438\u0437\u044b \u0432 \u0433\u0435\u0440\u043c\u0430\u043d\u0438\u044e</a>\r\n<a href=http://shinebar.ru/vizy-v-braziliyu>\u0432\u0438\u0437\u044b \u0432 \u0431\u0440\u0430\u0437\u0438\u043b\u0438\u044e</a>\r\n<a href=http://shinebar.ru/vizy/vizy-na-mavrikij>\u0432\u0438\u0437\u044b \u043d\u0430 \u043c\u0430\u0432\u0440\u0438\u043a\u0438\u0439</a>\r\n<a href=http://shinebar.ru/ekskursionnye-tury>\u044d\u043a\u0441\u043a\u0443\u0440\u0441\u0438\u043e\u043d\u043d\u044b\u0435 \u0442\u0443\u0440\u044b</a>\r\n<a href=http://shinebar.ru/o-turtsii>\u043e \u0442\u0443\u0440\u0446\u0438\u0438</a>\r\n<a href=http://shinebar.ru/gornolyzhnye-tury>\u0433\u043e\u0440\u043d\u043e\u043b\u044b\u0436\u043d\u044b\u0435 \u0442\u0443\u0440\u044b</a>\r\n<a href=http://shinebar.ru/vizy/vizy-v-niderlandy>\u0432\u0438\u0437\u044b \u0432 \u043d\u0438\u0434\u0435\u0440\u043b\u0430\u043d\u0434\u044b</a>\r\n<a href=http://shinebar.ru/sovety-turistam-7>\u0441\u043e\u0432\u0435\u0442\u044b \u0442\u0443\u0440\u0438\u0441\u0442\u0430\u043c 7</a>\r\n<a href=http://shinebar.ru/karty-vetnama>\u043a\u0430\u0440\u0442\u044b \u0432\u0435\u0442\u043d\u0430\u043c\u0430</a>\r\n<a href=http://shinebar.ru/vizy/vizy-v-tajland>\u0432\u0438\u0437\u044b \u0432 \u0442\u0430\u0439\u043b\u0430\u043d\u0434</a>\r\n<a href=http://shinebar.ru/vizy-na-sejshely>\u0432\u0438\u0437\u044b \u043d\u0430 \u0441\u0435\u0439\u0448\u0435\u043b\u044b</a>\r\n<a href=http://shinebar.ru/vizy/vizy-v-chili>\u0432\u0438\u0437\u044b \u0432 \u0447\u0438\u043b\u0438</a>\r\n<a href=http://shinebar.ru/kurorty-egipta>\u043a\u0443\u0440\u043e\u0440\u0442\u044b \u0435\u0433\u0438\u043f\u0442\u0430</a>\r\n<a href=http://shinebar.ru/poisk-tura/poisk-tura-teztour>\u043f\u043e\u0438\u0441\u043a \u0442\u0443\u0440\u0430 \u0442\u0435\u0437\u0442\u0443\u0440</a>\r\n<a href=http://shinebar.ru/pogoda-v-dominikane>\u043f\u043e\u0433\u043e\u0434\u0430 \u0432 \u0434\u043e\u043c\u0438\u043d\u0438\u043a\u0430\u043d\u0435</a>\r\n",
+                    "new_value": "In some cases it seems that the mouse movement is not working. \r\nThis only happens ingame (as spectator aswell as player). In menu it is working. \r\nMouse click works when this problem appears. \r\n\r\nAlready found out that restarting sometimes solves the issue, but not always.\r\n\r\nAlso there is a report that ALT+TAB solved the issue."
+                },
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "12",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "106"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8"
+                },
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "old_value": "Pandora",
+                    "new_value": ""
+                },
+                {
+                    "property": "cf",
+                    "name": "2",
+                    "old_value": "64-bit",
+                    "new_value": ""
+                }
+            ]
+        },
+        {
+            "id": 5851,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-03-15T09:26:56Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "2"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 774,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 7,
+        "name": "Immediate"
+    },
+    "author": {
+        "id": 380,
+        "name": "Lammert"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "Mouse movement not working",
+    "description": "In some cases it seems that the mouse movement is not working. \r\nThis only happens ingame (as spectator aswell as player). In menu it is working. \r\nMouse click works when this problem appears. \r\n\r\nAlready found out that restarting sometimes solves the issue, but not always.\r\n\r\nAlso there is a report that ALT+TAB solved the issue.",
+    "start_date": "2015-01-11",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-01-11T12:59:46Z",
+    "updated_on": "2016-03-15T09:26:56Z",
+    "closed_on": "2015-03-17T13:26:17Z"
+}

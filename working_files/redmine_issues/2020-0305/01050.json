@@ -1,0 +1,228 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 348,
+            "issue_id": 1044,
+            "issue_to_id": 1050,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 349,
+            "issue_id": 420,
+            "issue_to_id": 1050,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 6837,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-07-22T17:35:26Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "1",
+                    "new_value": "15"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 6842,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2017-07-23T21:39:23Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1044"
+                }
+            ]
+        },
+        {
+            "id": 6928,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2017-10-09T11:30:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "parent_id",
+                    "new_value": "888"
+                }
+            ]
+        },
+        {
+            "id": 6930,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2017-10-09T11:36:06Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "old_value": "1044"
+                }
+            ]
+        },
+        {
+            "id": 6934,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2017-10-09T11:36:45Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1044"
+                }
+            ]
+        },
+        {
+            "id": 6935,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "Duplicate #1044",
+            "created_on": "2017-10-09T11:38:03Z",
+            "details": []
+        },
+        {
+            "id": 6937,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2017-10-09T11:40:13Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "420"
+                }
+            ]
+        },
+        {
+            "id": 7376,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-12-23T17:36:41Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 7493,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-01-02T13:49:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1050,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 697,
+        "name": "artium"
+    },
+    "category": {
+        "id": 15,
+        "name": "Mod UI"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "parent": {
+        "id": 888
+    },
+    "subject": "Allow filtering server by name",
+    "description": "Similar to the filter of servers by map.\r\n\r\nFor example: muppet\" will filter all the server with the string \"muppet\" in the name.",
+    "start_date": "2017-07-22",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-07-22T16:12:20Z",
+    "updated_on": "2019-01-02T13:49:54Z",
+    "closed_on": "2018-12-23T17:36:41Z"
+}

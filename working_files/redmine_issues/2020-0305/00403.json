@@ -1,0 +1,1682 @@
+{
+    "children": [
+        {
+            "id": 1139,
+            "tracker": {
+                "id": 2,
+                "name": "Feature"
+            },
+            "subject": "Add promotion announcement with Skill Rating"
+        }
+    ],
+    "attachments": null,
+    "relations": [
+        {
+            "id": 253,
+            "issue_id": 403,
+            "issue_to_id": 181,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 256,
+            "issue_id": 887,
+            "issue_to_id": 403,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 311,
+            "issue_id": 1001,
+            "issue_to_id": 403,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 318,
+            "issue_id": 1010,
+            "issue_to_id": 403,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 369,
+            "issue_id": 1137,
+            "issue_to_id": 403,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 373,
+            "issue_id": 1155,
+            "issue_to_id": 403,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 388,
+            "issue_id": 1181,
+            "issue_to_id": 403,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 454,
+            "issue_id": 1376,
+            "issue_to_id": 403,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 257,
+            "issue_id": 309,
+            "issue_to_id": 403,
+            "relation_type": "blocks",
+            "delay": null
+        },
+        {
+            "id": 272,
+            "issue_id": 906,
+            "issue_to_id": 403,
+            "relation_type": "blocks",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "a6dc54d6b9db4a44a9a6d6d8c780edf1d2f9af9a",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: added optional FEATURE_RATING, refs #403",
+            "committed_on": "2015-12-24T13:00:59Z"
+        },
+        {
+            "revision": "0704e00bd0a736357ab9eebb714e81bad60336cc",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: updated easybuild.sh, refs #403",
+            "committed_on": "2015-12-24T13:00:59Z"
+        },
+        {
+            "revision": "41a8f57c6ee8a936fee3957c0415edc69a409864",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: added initial skill rating code, refs #403",
+            "committed_on": "2015-12-24T13:00:59Z"
+        },
+        {
+            "revision": "37037b62e7c89e9fb9f207eb27890733340f46e5",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: added skill rating partial play, refs #403",
+            "committed_on": "2015-12-24T13:00:59Z"
+        },
+        {
+            "revision": "e2764f28624381a971b17768e0fe62483de48fbd",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: added skill rating in scoreboard, refs #403",
+            "committed_on": "2015-12-24T13:00:59Z"
+        },
+        {
+            "revision": "f5e84f58776a726e280ebf2e7565f37eb4a967f7",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: added skill rating in stats window, refs #403",
+            "committed_on": "2015-12-24T13:00:59Z"
+        },
+        {
+            "revision": "b218a576e10e2dfc22a57d2e6a39806ccf3e429f",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: added skill rating in debriefing window, refs #403",
+            "committed_on": "2015-12-24T13:00:59Z"
+        },
+        {
+            "revision": "d11b073abf99baad6d0d01cf0088cdd509b9e561",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: added skill rating in console stats dump, refs #403",
+            "committed_on": "2015-12-24T13:00:59Z"
+        },
+        {
+            "revision": "de4979d664d10b27e78a7432d640bc04fafe7355",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: don't update skill rating in stopwatch and LMS, refs #403",
+            "committed_on": "2015-12-24T13:00:59Z"
+        },
+        {
+            "revision": "d89a352e758b1687ba30580ddb59446a462312b0",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: show rating scoreboard only if rating is enabled, refs #403",
+            "committed_on": "2015-12-24T13:00:59Z"
+        },
+        {
+            "revision": "226ac1e1b33dbde2293e6a16d930af538367ff0c",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: added win probability, refs #403",
+            "committed_on": "2015-12-24T13:00:59Z"
+        },
+        {
+            "revision": "f837d448360efea242dd53679517004735d210bd",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: send only complete rating to clients, refs #403",
+            "committed_on": "2015-12-24T13:00:59Z"
+        },
+        {
+            "revision": "ab09f9835347d5d57bb9ee00e6b860b954f66dd8",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: send delta rating to clients, refs #403",
+            "committed_on": "2015-12-24T13:00:59Z"
+        },
+        {
+            "revision": "8c155ab972429afd8ac090ba745cbe86bdf196e5",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: extended rating algorithm with map parameter, refs #403",
+            "committed_on": "2015-12-24T13:00:59Z"
+        },
+        {
+            "revision": "903247dd77a827daf34b7af00cf5e2e9b6ab0cd4",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: log match result, refs #403",
+            "committed_on": "2015-12-24T13:51:14Z"
+        },
+        {
+            "revision": "f07e062012c3274c0eccc547acf402db79cc89fe",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: removed debug stats, refs #403",
+            "committed_on": "2015-12-24T13:51:14Z"
+        },
+        {
+            "revision": "b79909ed35ca8a7b8aee61826caa5fd758a452ae",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: fix overwriting map vote values in CS_LEGACYINFO when\ng_skillRating is enabled refs #403",
+            "committed_on": "2016-01-17T06:03:26Z"
+        },
+        {
+            "revision": "e8657df8c6ddcafb0fee41b3d4372b3a9be6f406",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: make g_skillRating latched. Don't execute rating code when disabled\n(WIP) refs #403",
+            "committed_on": "2016-01-17T14:17:19Z"
+        },
+        {
+            "revision": "1005d01b2547cbe4af7a725531408c8e86a8a1af",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: do not execute rating code when disabled, refs #403",
+            "committed_on": "2016-08-30T11:34:57Z"
+        },
+        {
+            "revision": "46f4d36dd3e3f7bf60ed3d1f4c2053e14b0bfcfb",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: disable g_skillrating by default, refs #403",
+            "committed_on": "2016-09-01T17:09:07Z"
+        },
+        {
+            "revision": "c9118341e8e0b60614b0d484f24f6325150b8801",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cmake: enabled FEATURE_RATING by default, refs #403",
+            "committed_on": "2016-09-01T17:11:06Z"
+        },
+        {
+            "revision": "bd8fc227a96892e34e830c2d13c09d8ceb5c6ec2",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed variable initialization, refs #403",
+            "committed_on": "2016-09-02T18:58:40Z"
+        },
+        {
+            "revision": "4ddfaa84ec797d8557dd7869f95d0eed89e3d5fa",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: removed useless code, refs #403",
+            "committed_on": "2016-09-02T19:14:52Z"
+        },
+        {
+            "revision": "40d67460ee730f24648b7b6605e3e0f4a3e86932",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed unintialized pointer read, refs #403",
+            "committed_on": "2016-09-02T19:40:27Z"
+        },
+        {
+            "revision": "86d98cd60e262ad0d8cb306bce2a068f04edf504",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: added no division by zero check, refs #403\n\nin case the check above doesn't catch it",
+            "committed_on": "2016-09-02T19:40:27Z"
+        },
+        {
+            "revision": "3b57ec90204dd2509d917d65ed69367cac2cfdaf",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: enable FEATURE_RATING in easybuild.sh too, refs #403",
+            "committed_on": "2016-09-02T20:00:11Z"
+        },
+        {
+            "revision": "4b6ffab15baafacf9879497125150e3f023f446c",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: cleanup, refs #403",
+            "committed_on": "2016-09-03T07:30:55Z"
+        },
+        {
+            "revision": "83b26ab56a484036b2c04ab604d87c275e543011",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: stats info label alignment, refs #403",
+            "committed_on": "2016-09-03T20:51:50Z"
+        },
+        {
+            "revision": "aa8ba49f1222f0cec01ee11ebffc6ae6c3afbbf3",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: added missing map win bias, refs #403",
+            "committed_on": "2016-09-06T10:54:28Z"
+        },
+        {
+            "revision": "937d8a439606cc5569aad23847cc02ed89b15307",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: display map prob on scoreboard, refs #403",
+            "committed_on": "2016-09-06T10:54:29Z"
+        },
+        {
+            "revision": "4fba92127fd44e03d047bd19cdeee07a97adc595",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: do not display negative rating and cleanup, refs #403",
+            "committed_on": "2016-09-11T22:09:07Z"
+        },
+        {
+            "revision": "506bf1d329381617e82174f7c9387ddc1e714e23",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed rating in stats window not updating when spec, refs #403",
+            "committed_on": "2016-09-12T09:13:24Z"
+        },
+        {
+            "revision": "b5ffb5b441ea644a1dde77dfdc01cccb5674867d",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: hide skill rating in debriefing when disabled, refs #478 #403",
+            "committed_on": "2016-09-15T17:20:43Z"
+        },
+        {
+            "revision": "75e3180449f9896f6acc3df9ee09f685b7efa572",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed debriefing stats not displaying when rating is disabled, refs #403",
+            "committed_on": "2016-09-15T18:31:19Z"
+        },
+        {
+            "revision": "845e23302558bbf73a44f821c11aa8cd79616e6e",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: do not send any rating data when disabled, refs #403",
+            "committed_on": "2016-09-15T19:20:33Z"
+        },
+        {
+            "revision": "cba8e69743ebc5ce7fc7460f0a4f440ca2688f36",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: do not send delta rating in client userinfo, refs #403",
+            "committed_on": "2016-09-17T11:44:43Z"
+        },
+        {
+            "revision": "0416a7d7df23f5b130354605db0515c992c1f7f7",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: entirely removed rating from user configstring, refs #403",
+            "committed_on": "2016-09-19T12:27:57Z"
+        },
+        {
+            "revision": "7ad92968567acf2b1c8b2061e7c40b34843ed47e",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "cgame: fix logical dead code (Coverity) + fix some Clang warning",
+            "committed_on": "2016-11-02T13:07:29Z"
+        },
+        {
+            "revision": "a19f62ea65ecc378d87bf696f7f332261cb315c6",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "cgame: clean up + uncrustify",
+            "committed_on": "2016-11-03T17:45:33Z"
+        },
+        {
+            "revision": "9d97cf944ac67fd592b04b217b307b1f8ec5634c",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed total play time, refs #403",
+            "committed_on": "2017-01-23T00:07:46Z"
+        },
+        {
+            "revision": "9d193942b83204c9adb47ab2a6e6cf1d9223a979",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: use highest ranking as first award, refs #403 #894",
+            "committed_on": "2017-01-23T00:36:56Z"
+        },
+        {
+            "revision": "52ee97dcc92c673ac6b55588e900dcfe990e1d35",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: added g_skillRating in default config file, refs #403",
+            "committed_on": "2017-01-23T00:49:49Z"
+        },
+        {
+            "revision": "efdfbdd1bcaedde1fc8183b10e93f17e69ba7afb",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: do not display meaningless total rating stats, refs #403",
+            "committed_on": "2017-02-23T14:41:02Z"
+        },
+        {
+            "revision": "29a636ced5a3cb9f9c3e2c1dd1a952c8b75dfa73",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed individual rating update with partial play, refs #403",
+            "committed_on": "2017-02-25T22:20:57Z"
+        },
+        {
+            "revision": "8681cbf454d5b33fb43c750ef5b219160735d3b4",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: enable FEATURE_DBMS if FEATURE_RATING is enabled, refs #403",
+            "committed_on": "2017-02-26T23:59:31Z"
+        },
+        {
+            "revision": "d69d1ae1f627585ca7af9075154ca00f8ee43596",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: use engine database for skill rating, refs #403",
+            "committed_on": "2017-02-26T23:59:47Z"
+        },
+        {
+            "revision": "8f3d76a21a23dcc7c11217d3f42aebd22e7c9219",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: added map rating bias and continuity correction, refs #403",
+            "committed_on": "2017-02-27T01:16:54Z"
+        },
+        {
+            "revision": "ff73c3e6bb6a9ad7b78268e17e89fa70de8a9a38",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: set RO flag on Lua rating variables, refs #403",
+            "committed_on": "2017-02-27T01:16:54Z"
+        },
+        {
+            "revision": "b1590142e4fdf00cff40140c4c2537b025538c0a",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: set PRAGMA sync off with db_mode 2, refs #403",
+            "committed_on": "2017-02-27T01:16:54Z"
+        },
+        {
+            "revision": "e56cbaae28f630e7f2e409b579e301efa765b1c6",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: added shuffle by rating cmds, refs #403",
+            "committed_on": "2017-02-27T01:16:54Z"
+        },
+        {
+            "revision": "03c7fff92f541a5d132a07ba35e7c1ed22c052a5",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: added shuffle by rating menu options, refs #403",
+            "committed_on": "2017-02-27T01:16:54Z"
+        },
+        {
+            "revision": "4a6029acad37a2e62ec4cbb4d32e0d838139b3fb",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: added highest rated player award, refs #403 #894",
+            "committed_on": "2017-02-27T01:16:54Z"
+        },
+        {
+            "revision": "e26c6463e4e64022448cb96d51601385f99f8596",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: set RO flag for time related Lua fields, refs #403",
+            "committed_on": "2017-02-27T01:35:24Z"
+        },
+        {
+            "revision": "6a497024a590ec09fa4ea80b002871383bfda836",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed logically dead code, refs #403",
+            "committed_on": "2017-02-28T10:18:24Z"
+        },
+        {
+            "revision": "0b9bab5bf86c06d427088f920b8928d4d2daabcc",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: display endgame stats float values with two digits, refs #403 #894",
+            "committed_on": "2017-02-28T20:33:45Z"
+        },
+        {
+            "revision": "f908a1c5073bcd2fae80bb0cfadbc339f03ec001",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: skill rating send function cleanup, refs #403",
+            "committed_on": "2017-03-01T10:31:58Z"
+        },
+        {
+            "revision": "c11f4030954147ceba939184b289172a58288f17",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: win prob takes disconnected players into account, refs #403",
+            "committed_on": "2017-03-01T21:46:26Z"
+        },
+        {
+            "revision": "f73bb19294e2e5515049d4307a0218788f388e77",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed missing guid assignment and small optimization, refs #403",
+            "committed_on": "2017-03-02T13:51:16Z"
+        },
+        {
+            "revision": "240a61e9326209286e8f835c103a4304070c0b00",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: code cleanup, refs #403",
+            "committed_on": "2017-03-02T13:54:29Z"
+        },
+        {
+            "revision": "1eb2ab85b8f4c71244585b5b1ae0a2b671495536",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: do not display rating award if not positive, refs #403 #894",
+            "committed_on": "2017-03-04T00:07:36Z"
+        },
+        {
+            "revision": "69b25451db850053189026529d6a83c62825cfa4",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: tied ranks to rating when enabled, refs #403",
+            "committed_on": "2017-03-12T11:49:37Z"
+        },
+        {
+            "revision": "27ab81371e39e92854f7915bb689a2d6fbd6e5bf",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: enabled skill rating by default, refs #403",
+            "committed_on": "2017-03-12T11:49:49Z"
+        },
+        {
+            "revision": "1bb1f37e9f3afc6dd5be22d06815ed1d2e472fcc",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: sanitize rank level and cleanup, refs #403",
+            "committed_on": "2017-03-14T00:13:36Z"
+        },
+        {
+            "revision": "777f46b25681cc20a63272c842bfa1a5c4457850",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: capped display of max rating, refs #403",
+            "committed_on": "2017-03-14T00:33:12Z"
+        },
+        {
+            "revision": "a5ca3b40a35fe579027ab4a6c245282cb65c4158",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: capped rating also in stats window and award, refs #403",
+            "committed_on": "2017-03-14T12:06:48Z"
+        },
+        {
+            "revision": "48802e570967a659e98de68c0bf00dc70166daff",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: update ranks at intermission, refs #403",
+            "committed_on": "2017-03-14T14:51:17Z"
+        },
+        {
+            "revision": "40559e74c7bebcd5f2cf7d3e063c6bb55bf1a3d0",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: use map bias for slightly better rating shuffle, refs #403",
+            "committed_on": "2017-03-14T20:52:02Z"
+        },
+        {
+            "revision": "7eb991b0056cab33e6517d6b7cc9c080a5a811f1",
+            "comments": "game: fix compiling without FEATURE_RATING defined",
+            "committed_on": "2017-08-26T22:29:21Z"
+        },
+        {
+            "revision": "5fd94e727e8ec42145f0fc891828714abe9f9bd6",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "Merge pull request #279 from zturtleman/skill-rating\n\ngame: fix compiling without FEATURE_RATING defined refs #403",
+            "committed_on": "2017-08-27T03:48:04Z"
+        },
+        {
+            "revision": "b334986092424a2d86f95826ca9351646277ec48",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: enabled SR scoreboard by default, refs #403 #1137",
+            "committed_on": "2018-12-24T00:27:07Z"
+        },
+        {
+            "revision": "10dcedc91d346221cec19c051f0c466153455e7d",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: adjusted map bias display on SR scoreboard, refs #403 #1137",
+            "committed_on": "2018-12-24T14:57:28Z"
+        },
+        {
+            "revision": "19420cb62db4af69c7ecd1e42be88e6df76f91c4",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: display scoreboard type in infotext area, refs #403 #1137",
+            "committed_on": "2018-12-26T18:18:54Z"
+        },
+        {
+            "revision": "e23d262244a8b962084b350cad2e923192b92607",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed help string overlapping chat area, refs #403 #1137",
+            "committed_on": "2018-12-26T18:31:57Z"
+        },
+        {
+            "revision": "a282c2d3542b15cd29fba717eac35357ada08351",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: removed scoreboard string to avoid overlapping, refs #403 #1137\n\nThere isn't space anywhere!",
+            "committed_on": "2018-12-30T16:41:59Z"
+        },
+        {
+            "revision": "38999eb088f5b865ff4433598baf26de925459a6",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: display scorboard mode in help text, refs #403 #1137",
+            "committed_on": "2018-12-30T17:11:29Z"
+        },
+        {
+            "revision": "711edfc747dbcae44f0427d6bee79b04acc7ef12",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: hide scoreboard help text in intermission, refs #403 #1137",
+            "committed_on": "2018-12-31T00:22:30Z"
+        },
+        {
+            "revision": "4b6efa98eb34da65a00119cc83a11372c2158a2d",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: ensure SR db is deinit only once in intermission, refs #403",
+            "committed_on": "2019-01-14T18:04:51Z"
+        },
+        {
+            "revision": "2f2420213a77720212961fea76bf181da6e4d754",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed default scoreboard with g_SkillRating 1, refs #403 #1137",
+            "committed_on": "2019-01-21T12:15:24Z"
+        },
+        {
+            "revision": "15214acecbf76a4521230c36a63727b7cc97f770",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: disabled SR scoreboard in SW and LMS mode, refs #403 #1181",
+            "committed_on": "2019-01-21T15:47:39Z"
+        },
+        {
+            "revision": "10068c8061bf7ad82817617835b9cc9cd5b81de4",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: only send delta rating in intermission, refs #403 #1127",
+            "committed_on": "2019-04-18T16:55:46Z"
+        },
+        {
+            "revision": "cfe54ca425eadba162e79272914a02492dded38a",
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "comments": "mod: fix old demo playback, fixes #1320\n\n* refactored code a little to enhance gdb experience\n* fixed old demo playback was broken due to out of bounds array writes\n  upon skill rating parsing\n\nrefs #403 #1227",
+            "committed_on": "2019-07-19T15:27:58Z"
+        },
+        {
+            "revision": "8e610c3ebccbb2407adc76ba0a2dea616930abfc",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: minor skill rating code cleanup, refs #403",
+            "committed_on": "2019-09-07T13:57:36Z"
+        },
+        {
+            "revision": "8716200a4c801c07c919feffb1f91ec692817507",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: added rating time init failsafe and cleanup, refs #403 #1344",
+            "committed_on": "2019-09-07T17:10:09Z"
+        },
+        {
+            "revision": "8fa0ad26dede7e5375a024d967ff704175a9aef6",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed rating played time wrongly reset, refs #403 #1344\"\n\nThis reverts commit 8716200a4c801c07c919feffb1f91ec692817507.",
+            "committed_on": "2019-09-08T09:06:36Z"
+        },
+        {
+            "revision": "e52d73a27e8384bee3c0bac9e87f651933d99247",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed SR database not always available when client connect, refs #403 #1344\n\nThis ensure SR data is correctly set when client connects after\nintermission but before the next map is loaded.",
+            "committed_on": "2019-09-18T21:24:08Z"
+        },
+        {
+            "revision": "164876b4f42a6cf61ab992eaf6344c6e28ed919c",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: merged shuffle XP and SR commands, refs #403 #1299",
+            "committed_on": "2019-11-10T11:14:04Z"
+        },
+        {
+            "revision": "790f8fc8a10e4632d4cc23f04c33168d4eceb4b3",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: skill rating minor code cleanup, refs #403",
+            "committed_on": "2019-11-28T17:39:24Z"
+        },
+        {
+            "revision": "1ed90b03a738a13110b15160121b4ffeac8a09aa",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: remove min/max cap on displayed skill rating values, refs #403",
+            "committed_on": "2019-11-28T17:39:24Z"
+        },
+        {
+            "revision": "96b083da1a363681e0f1519c0f0c481d7552d71e",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: added map bias display in statsdump, refs #403",
+            "committed_on": "2019-11-28T17:39:24Z"
+        },
+        {
+            "revision": "d73285c5679450c17eb4356d7548d9a911af1c8a",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: added partial GUID in statsdump, refs #403",
+            "committed_on": "2019-11-28T17:39:24Z"
+        },
+        {
+            "revision": "14687e71fb70e19e3883a074131f5026aa4105b4",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: log skill rating data, refs #403",
+            "committed_on": "2019-11-28T17:39:24Z"
+        },
+        {
+            "revision": "ccdfc12054d1cab0ef5d243cdc9be2e3c7bc5c5f",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: enabled statsdump autoaction by default, refs #403",
+            "committed_on": "2019-11-28T17:39:24Z"
+        },
+        {
+            "revision": "08bad8191287beccf7e782ff8175c90e0ca030af",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed SR time data retrieval after reconnection and refactoring, refs #403",
+            "committed_on": "2019-11-29T12:35:32Z"
+        },
+        {
+            "revision": "b6c3879c28e650701fb62aae142baa73415171de",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed /statsdump not always displayed at end of match, refs #403 #1001",
+            "committed_on": "2019-11-30T19:38:22Z"
+        },
+        {
+            "revision": "f940824b756b8aa46de5e80d868e139aecf6f0a1",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: minor macro fixup and cleanup, refs #403",
+            "committed_on": "2019-12-14T23:43:47Z"
+        },
+        {
+            "revision": "a5ef8f61955f016e3cc7ff442079acb20b9bbf15",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed partial GUID strings to avoid crash in msvc, refs #403",
+            "committed_on": "2020-01-02T11:17:02Z"
+        },
+        {
+            "revision": "6c4cc0f5ae06e62ec1a0a7185d473edd7452acd0",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed guid array length in /players and end of stats, refs #403\n\nThe previous \"fix\" didn't change anything",
+            "committed_on": "2020-01-02T11:38:44Z"
+        },
+        {
+            "revision": "6600d972739b37aecf7ba137d3e97db36ce896e9",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: disabled SR calculation for stopwatch and lms gametypes, refs #403 #1381\n\nThe SR scoreboard is disabled for these game types  already.",
+            "committed_on": "2020-01-07T11:22:27Z"
+        },
+        {
+            "revision": "a55a56c70c090941c57b7400b2288ab7f5ffee80",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: minor skill rating code cleanup, refs #403",
+            "committed_on": "2020-01-19T10:52:46Z"
+        },
+        {
+            "revision": "ee708bff4f449299566252efcf927264204cd06c",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: decoupled game db init functions from SR code, refs #403",
+            "committed_on": "2020-01-22T17:31:45Z"
+        },
+        {
+            "revision": "76ff0f305b36d607842a5ad78732c79113a5c423",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed database define, refs #403",
+            "committed_on": "2020-01-23T15:21:22Z"
+        },
+        {
+            "revision": "0cf54c90e854254635b15548dc2237c0f3ed02ac",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: use a better rank levels distribution, refs #403\n\nThis allows more ranks to be displayed by the players in reality,\nas the old linear version is akin to having a uniform distribution.\n\nSince player skill is a conservative estimate (mu - 3*sigma), it is\nskewed towards 0, so use a log-normal distribution to better reflect\npopulation density in each percentile. Values of lognormal(e, 2/e)\nseem to give good values between 0 and 50, matching the default skill\nrating system range (0 to 2*MU).\n\nUse discrete, hardcoded values for better performance than analytical\ncomputation. In Excel, use LOGNORM.INV(p, e, 2/e) with p being a i/11th\npercentile to match the NUM_EXPERIENCE_LEVELS ranks.",
+            "committed_on": "2020-01-28T17:44:14Z"
+        },
+        {
+            "revision": "862601ed2f20a5f4f6509b86e6bc1d26915898f8",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: log and display last win probability in statsdump, refs #403",
+            "committed_on": "2020-02-10T18:28:41Z"
+        },
+        {
+            "revision": "2bee354bbd43ffe0ea0e3f5d653482ba9298a7f0",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed win prob printing happens after statsdump log message, refs #403",
+            "committed_on": "2020-02-10T18:40:36Z"
+        },
+        {
+            "revision": "00f6cf428b4553a6b90e123dadb71bdd057b7dbd",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: hide win prob in statsdump when SR is disabled, refs #403",
+            "committed_on": "2020-02-11T11:40:27Z"
+        },
+        {
+            "revision": "57fd7af9c16175502f0989262001ee118a1f36d8",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: hide gametype dependent stats in info window, debriefing and statsdump, refs #403 #1155",
+            "committed_on": "2020-02-15T18:11:34Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2279,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2013-11-18T17:21:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "The idea is simple: Implement a new, proved metric that can be used to compare skill of players over time.\r\n\r\nThe existing XPs count measures player's score based on of specific action (kills, construction, revive, ..) but is far from evaluating all aspects of the 'skill' of a player. Also, XPs are useful to control the various skill levels, but don't give any indication of the real global performance - they basically only give a hint about the time the player has played on a specific server.\r\n\r\nA 'skill rating' could be defined as a metric measuring \"all the parameters of a player that allow his team to win\" and the only way to do that is by a probabilistic, bayesian approach. It simply should look at the global output of a game instead of the various micro-parameters (accuracy, number of kill, ... you-name-it).\r\n\r\nETPub implements such a metric with its \"Player Rating\", giving a normalized skill score. The TrueSkill system is a more modern algorythm that has been developed by MicroSoft for its XBox matching service. It has the advantage over the ETPub PR that it starts very low and increases over time (like XPs), before stabilizing when the skill rating is accurate (like the ETPub PR).\r\n\r\nThe algorythm is well documented (see Mooserware below) and several existing implementation can be found on the Internet.\r\n\r\nAlso, we could use that Skill Rating to develop several nice feature later (showing probability of winning a map, team balancing, or even match making with players of similar skills, ... )\r\n\r\n* http://en.wikipedia.org/wiki/TrueSkill\r\n* http://www.moserware.com/2010/03/computing-your-skill.html",
+                    "new_value": "The idea is simple: Implement a new, proved metric that can be used to compare skill of players over time.\r\n\r\nThe existing XPs count measures player's score based on of specific action (kills, construction, revive, ..) but is far from evaluating all aspects of the 'skill' of a player. Also, XPs are useful to control the various skill levels, but don't give any indication of the real global performance - they basically only give a hint about the time the player has played on a specific server (xpsave).\r\n\r\nA 'skill rating' could be defined as a metric measuring \"all the parameters of a player that help his team to win\" and the only way to do that is by a probabilistic, Bayesian approach. It simply should look at the global output of a game instead of the various micro-parameters (accuracy, number of kill, ... you-name-it).\r\n\r\nETPub implements such a metric with its \"Player Rating\", giving a normalized skill score. The TrueSkill system is a more modern algorythm that has been developed by MicroSoft for its XBox matching service. It has the advantage over the ETPub PR that it starts very low and increases over time (like XPs), before stabilizing when the skill rating is accurate (like the ETPub PR).\r\n\r\nThe algorythm is well documented (see Mooserware below) and several existing implementation can be found on the Internet.\r\n\r\nAlso, we could use that Skill Rating to develop several nice feature later (showing probability of winning a map, team balancing, or even match making with players of similar skills, ... )\r\n\r\n* http://en.wikipedia.org/wiki/TrueSkill\r\n* http://www.moserware.com/2010/03/computing-your-skill.html"
+                }
+            ]
+        },
+        {
+            "id": 2281,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2013-11-19T12:59:38Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                }
+            ]
+        },
+        {
+            "id": 4320,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-01-08T14:24:26Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "The idea is simple: Implement a new, proved metric that can be used to compare skill of players over time.\r\n\r\nThe existing XPs count measures player's score based on of specific action (kills, construction, revive, ..) but is far from evaluating all aspects of the 'skill' of a player. Also, XPs are useful to control the various skill levels, but don't give any indication of the real global performance - they basically only give a hint about the time the player has played on a specific server (xpsave).\r\n\r\nA 'skill rating' could be defined as a metric measuring \"all the parameters of a player that help his team to win\" and the only way to do that is by a probabilistic, Bayesian approach. It simply should look at the global output of a game instead of the various micro-parameters (accuracy, number of kill, ... you-name-it).\r\n\r\nETPub implements such a metric with its \"Player Rating\", giving a normalized skill score. The TrueSkill system is a more modern algorythm that has been developed by MicroSoft for its XBox matching service. It has the advantage over the ETPub PR that it starts very low and increases over time (like XPs), before stabilizing when the skill rating is accurate (like the ETPub PR).\r\n\r\nThe algorythm is well documented (see Mooserware below) and several existing implementation can be found on the Internet.\r\n\r\nAlso, we could use that Skill Rating to develop several nice feature later (showing probability of winning a map, team balancing, or even match making with players of similar skills, ... )\r\n\r\n* http://en.wikipedia.org/wiki/TrueSkill\r\n* http://www.moserware.com/2010/03/computing-your-skill.html",
+                    "new_value": "The idea is simple: Implement a new, proved metric that can be used to compare skill of players over time.\r\n\r\nThe existing XPs count measures player's score based on of specific action (kills, construction, revive, ..) but is far from evaluating all aspects of the 'skill' of a player. Also, XPs are useful to control the various skill levels, but don't give any indication of the real global performance - they basically only give a hint about the time the player has played on a specific server (xpsave).\r\n\r\nA 'skill rating' could be defined as a metric measuring \"all the parameters of a player that help his team to win\" and the only way to do that is by a probabilistic, Bayesian approach. It simply should look at the global output of a game instead of the various micro-parameters (accuracy, number of kill, ... you-name-it).\r\n\r\nETPub implements such a metric with its \"Player Rating\", giving a normalized skill score. The TrueSkill system is a more modern algorythm that has been developed by MicroSoft for its XBox matching service. It has the advantage over the ETPub PR that it starts very low and increases over time (like XPs), before stabilizing when the skill rating is accurate (like the ETPub PR).\r\n\r\nThe algorythm is well documented (see Mooserware below) and several existing implementation can be found on the Internet, including this \"Lua implementation\":https://bitbucket.org/visionik/forged-alliance-forever-lua.\r\n\r\nAlso, we could use that Skill Rating to develop several nice feature later (showing probability of winning a map, team balancing, or even match making with players of similar skills, ... )\r\n\r\n* http://en.wikipedia.org/wiki/TrueSkill\r\n* http://www.moserware.com/2010/03/computing-your-skill.html"
+                }
+            ]
+        },
+        {
+            "id": 5253,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-09-02T19:50:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "The idea is simple: Implement a new, proved metric that can be used to compare skill of players over time.\r\n\r\nThe existing XPs count measures player's score based on of specific action (kills, construction, revive, ..) but is far from evaluating all aspects of the 'skill' of a player. Also, XPs are useful to control the various skill levels, but don't give any indication of the real global performance - they basically only give a hint about the time the player has played on a specific server (xpsave).\r\n\r\nA 'skill rating' could be defined as a metric measuring \"all the parameters of a player that help his team to win\" and the only way to do that is by a probabilistic, Bayesian approach. It simply should look at the global output of a game instead of the various micro-parameters (accuracy, number of kill, ... you-name-it).\r\n\r\nETPub implements such a metric with its \"Player Rating\", giving a normalized skill score. The TrueSkill system is a more modern algorythm that has been developed by MicroSoft for its XBox matching service. It has the advantage over the ETPub PR that it starts very low and increases over time (like XPs), before stabilizing when the skill rating is accurate (like the ETPub PR).\r\n\r\nThe algorythm is well documented (see Mooserware below) and several existing implementation can be found on the Internet, including this \"Lua implementation\":https://bitbucket.org/visionik/forged-alliance-forever-lua.\r\n\r\nAlso, we could use that Skill Rating to develop several nice feature later (showing probability of winning a map, team balancing, or even match making with players of similar skills, ... )\r\n\r\n* http://en.wikipedia.org/wiki/TrueSkill\r\n* http://www.moserware.com/2010/03/computing-your-skill.html",
+                    "new_value": "The idea is simple: Implement a new, proved metric that can be used to compare skill of players over time.\r\n\r\nThe existing XPs count measures player's score based on of specific action (kills, construction, revive, ..) but is far from evaluating all aspects of the 'skill' of a player. Also, XPs are useful to control the various skill levels, but don't give any indication of the real global performance - they basically only give a hint about the time the player has played on a specific server (xpsave).\r\n\r\nA 'skill rating' could be defined as a metric measuring \"all the parameters of a player that help his team to win\" and the only way to do that is by a probabilistic, Bayesian approach. It simply should look at the global output of a game instead of the various micro-parameters (accuracy, number of kill, ... you-name-it).\r\n\r\nETPub implements such a metric with its \"Player Rating\", giving a normalized skill score. The TrueSkill system is a more modern algorythm that has been developed by MicroSoft for its XBox matching service. It has the advantage over the ETPub PR that it starts very low and increases over time (like XPs), before stabilizing when the skill rating is accurate (like the ETPub PR).\r\n\r\nThe algorythm is well documented (see Mooserware below) and several existing implementation can be found on the Internet, including this \"Lua implementation\":https://bitbucket.org/visionik/forged-alliance-forever-lua.\r\n\r\nAlso, we could use that Skill Rating to develop several nice feature later (showing probability of winning a map, team balancing, or even match making with players of similar skills, ... )\r\n\r\n* http://en.wikipedia.org/wiki/TrueSkill\r\n* http://www.moserware.com/2010/03/computing-your-skill.html\r\n\r\n*Update:*\r\n\r\nMore detail and analysis is available on the wiki here: [[Bayesian_skill_rating]]."
+                }
+            ]
+        },
+        {
+            "id": 5254,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Added link to some documentation in the wiki here: \"Bayesian skill rating\":http://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating",
+            "created_on": "2015-09-02T19:52:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "The idea is simple: Implement a new, proved metric that can be used to compare skill of players over time.\r\n\r\nThe existing XPs count measures player's score based on of specific action (kills, construction, revive, ..) but is far from evaluating all aspects of the 'skill' of a player. Also, XPs are useful to control the various skill levels, but don't give any indication of the real global performance - they basically only give a hint about the time the player has played on a specific server (xpsave).\r\n\r\nA 'skill rating' could be defined as a metric measuring \"all the parameters of a player that help his team to win\" and the only way to do that is by a probabilistic, Bayesian approach. It simply should look at the global output of a game instead of the various micro-parameters (accuracy, number of kill, ... you-name-it).\r\n\r\nETPub implements such a metric with its \"Player Rating\", giving a normalized skill score. The TrueSkill system is a more modern algorythm that has been developed by MicroSoft for its XBox matching service. It has the advantage over the ETPub PR that it starts very low and increases over time (like XPs), before stabilizing when the skill rating is accurate (like the ETPub PR).\r\n\r\nThe algorythm is well documented (see Mooserware below) and several existing implementation can be found on the Internet, including this \"Lua implementation\":https://bitbucket.org/visionik/forged-alliance-forever-lua.\r\n\r\nAlso, we could use that Skill Rating to develop several nice feature later (showing probability of winning a map, team balancing, or even match making with players of similar skills, ... )\r\n\r\n* http://en.wikipedia.org/wiki/TrueSkill\r\n* http://www.moserware.com/2010/03/computing-your-skill.html\r\n\r\n*Update:*\r\n\r\nMore detail and analysis is available on the wiki here: [[Bayesian_skill_rating]].",
+                    "new_value": "The idea is simple: Implement a new, proved metric that can be used to compare skill of players over time.\r\n\r\nThe existing XPs count measures player's score based on of specific action (kills, construction, revive, ..) but is far from evaluating all aspects of the 'skill' of a player. Also, XPs are useful to control the various skill levels, but don't give any indication of the real global performance - they basically only give a hint about the time the player has played on a specific server (xpsave).\r\n\r\nA 'skill rating' could be defined as a metric measuring \"all the parameters of a player that help his team to win\" and the only way to do that is by a probabilistic, Bayesian approach. It simply should look at the global output of a game instead of the various micro-parameters (accuracy, number of kill, ... you-name-it).\r\n\r\nETPub implements such a metric with its \"Player Rating\", giving a normalized skill score. The TrueSkill system is a more modern algorythm that has been developed by MicroSoft for its XBox matching service. It has the advantage over the ETPub PR that it starts very low and increases over time (like XPs), before stabilizing when the skill rating is accurate (like the ETPub PR).\r\n\r\nThe algorythm is well documented (see Mooserware below) and several existing implementation can be found on the Internet, including this \"Lua implementation\":https://bitbucket.org/visionik/forged-alliance-forever-lua.\r\n\r\nAlso, we could use that Skill Rating to develop several nice feature later (showing probability of winning a map, team balancing, or even match making with players of similar skills, ... )\r\n\r\n* http://en.wikipedia.org/wiki/TrueSkill\r\n* http://www.moserware.com/2010/03/computing-your-skill.html\r\n\r\n*Update:*\r\n\r\nMore detail and analysis is available on the wiki here \"Bayesian skill rating\":http://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating"
+                }
+            ]
+        },
+        {
+            "id": 5255,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-09-02T20:01:15Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 5256,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "I'd say it would be nice to have it in the mod itself so it's easy to integrate it to current stats that are already in the game. It can't be nicely integrated in this aspect if it's a Lua script.",
+            "created_on": "2015-09-03T14:05:17Z",
+            "details": []
+        },
+        {
+            "id": 5257,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Dragonji wrote:\r\n> I'd say it would be nice to have it in the mod itself so it's easy to integrate it to current stats that are already in the game. It can't be nicely integrated in this aspect if it's a Lua script.\r\n\r\nYou are right, and that is actually the way I'm implementing it. The algorithm itself and integration in the mod are mostly done, but I'm still wondering if the loading/writing of data itself would be better done in Lua.\r\n\r\nCan't change the category of the ticket though, so it's stuck to \"Lua scripts\" for the time being.",
+            "created_on": "2015-09-03T14:26:23Z",
+            "details": []
+        },
+        {
+            "id": 5258,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-09-04T14:10:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "project_id",
+                    "old_value": "4",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "21"
+                }
+            ]
+        },
+        {
+            "id": 5283,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-09-12T17:59:17Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "181"
+                }
+            ]
+        },
+        {
+            "id": 5388,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-11-18T16:58:52Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "887"
+                }
+            ]
+        },
+        {
+            "id": 5436,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-11-23T21:56:01Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 5450,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-11-24T19:25:33Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "blocked",
+                    "new_value": "309"
+                }
+            ]
+        },
+        {
+            "id": 5500,
+            "user": {
+                "id": 110,
+                "name": "Harlekin"
+            },
+            "notes": "Would it be possible to let the server adjust some settings for a team based on team rating? Eg let them spawn a little faster, give them extra ammo on spawn, faster recharge of ammo/health cabinets, longer spawnprotection or some kind of other support for a very underpowered team.",
+            "created_on": "2015-11-27T19:13:39Z",
+            "details": []
+        },
+        {
+            "id": 5504,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Harlekin wrote:\r\n> Would it be possible to let the server adjust some settings for a team based on team rating? Eg let them spawn a little faster, give them extra ammo on spawn, faster recharge of ammo/health cabinets, longer spawnprotection or some kind of other support for a very underpowered team.\r\n\r\nAnything is possible, but as a first step we'll include only informative rating. Note that rating takes strength of teams into account, so it's actually \"fair\" to lose against a stronger team. But if you beat a stronger team, your rating would be increased much more than usual.\r\n\r\n",
+            "created_on": "2015-11-27T19:32:57Z",
+            "details": []
+        },
+        {
+            "id": 5719,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "The base TrueSkill algorithm has been implemented (using session to keep values for now), and I extended it for taking map and time parameters.\r\nHowever, to use this extension I'll need to collect data about played maps.\r\n\r\nData collected would be:\r\n* number of time the map was played,\r\n* number of time each side won the map,\r\n* -average time before a team won the map- (not really necessary)\r\n\r\nHere are a few possibilities:\r\n\r\n1/ use a database through LuaSQL or the new engine DB feature;\r\n2/ extend the existing mapvoteinfo.txt file system, and collect data in other gametypes (maybe apart from stopwatch);\r\n3/ use a database system and move the existing mapvoteinfo data collect to a common database.\r\n\r\nOption 3/ might be the cleanest, but 2/ will also work.\r\nOpinion/suggestion?",
+            "created_on": "2015-12-23T16:11:31Z",
+            "details": []
+        },
+        {
+            "id": 5723,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-12-24T15:57:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "70"
+                }
+            ]
+        },
+        {
+            "id": 5725,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-12-26T16:38:19Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "blocked",
+                    "new_value": "906"
+                }
+            ]
+        },
+        {
+            "id": 5951,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "{TODO}\r\n* -Add missing Lua code (maybe as a WolfAdmin plugin)- (code is moved to C)\r\n* -enable FEATURE_RATING- (done)\r\n* -disable g_skillrating by default- (done)",
+            "created_on": "2016-08-30T11:41:54Z",
+            "details": []
+        },
+        {
+            "id": 5979,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I'll rework the existing mapvoteinfo data to use a common database system with the map parameter extension.\r\n\r\nEdit: After some thought, the code has been modified so map stats management can be done entirely on the Lua side (using CS_LEGACYINFO). This should stay separate from the mapvote data.\r\n\r\nOnly the accompanying Lua script is missing now.",
+            "created_on": "2016-09-02T14:53:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 6085,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "The Lua script has been partially written. It works and takes connected players at the end of the match to compute the rating update. Also, players that disconnected and reconnected later in the same match are correctly handled. However, to take the performance of all disconnected players into account, we need to loop over all players that played in the match, and not only level.numConnectedClients.\r\n\r\nThis require the use of an intermediary DB. I am unsure about the best way to implement this, as the C code needs to be adjusted but the DB stuff is for now entirely handled on the Lua side.",
+            "created_on": "2016-09-30T18:43:13Z",
+            "details": []
+        },
+        {
+            "id": 6269,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I'm hitting a wall with that DB-Lua stuff. I now believe the best way to do it is to implement directly in C, taking advantage of the engine DB.\r\nIt also makes sense since the rating system is deeply integrated in the mod code already.\r\n\r\nSpecial commands can still be done in Lua, in the form of a WolfAdmin plugin or independent script.",
+            "created_on": "2017-01-29T13:03:07Z",
+            "details": []
+        },
+        {
+            "id": 6423,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-02-16T10:25:37Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1001"
+                }
+            ]
+        },
+        {
+            "id": 6462,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "{TODO}\r\n* -Put Highest ranking officer award on top-\r\n* -Add variable in config file-\r\n* -Tie ranks to rating instead of XPs (see G_CalcRank() and G_UpgradeSkill(), might require explicit rank update, adjust the big PM message somehow)-\r\n* -track number of matches played in DB- (not useful for rating)\r\n* -use ribbon (like etnam)- (not useful for rating)\r\n* -remove meaningless tot_rating in G_printMatchInfo()-\r\n* -enable g_skillrating by default-\r\n* -add new award for best rated player-\r\n* -add shuffleteamsrating, shuffleteamsrating_norestart votes-\r\n* -add info commands such as /rating, /allrating- (should be done in Lua)\r\n\r\nWIP: move from Lua to C code: done!\r\n* -DB Init in g_main-\r\n* -DB DeInit in g_main.c-\r\n* -DB Deinit in g_vote.c (map, campaign, nextmap, maprestart, mapreset)-\r\n* -check users, match, map tables-\r\n* -empty match table at init-\r\n* -disable rating if failure-\r\n* -ClientConnect -> retrieve rating from match or users tables, or create new one-\r\n* -ClientDisconnect -> write in match table-\r\n* -End of game G_LogExit(): adjust G_UpdateSkillRating for use of match table-\r\n* -Add created and last updated time tracking-\r\n* -Fix edge case player connects/disconnect in intermission-\r\n* -Fix edge case player connects/disconnect in warmup-\r\n* -Fix bug where rating from rating_users table in warmup isn't taken over playing session (use empty rating_match instead)-\r\n* -Fix disconnected players aren't taken into account in scoreboard real time win probability-\r\n* -Retrieve Map prob, Save map prob-\r\n* -Display updated map rating in intermission scoreboard with g_skillRating 2-\r\n* -Fix now broken delta rating-\r\n* -Check log print G_Printf vs G_LogPrintf-\r\n* -Proper headers doc-\r\n* -Optimize speed with PRAGMA or single INSERT transaction for db_mode 2-\r\n* -Set RO flag on Lua rating variables-\r\n \r\n{FIXME}\r\n* db_mode 1 with memory mode (see #1010)",
+            "created_on": "2017-02-23T10:09:43Z",
+            "details": []
+        },
+        {
+            "id": 6476,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-02-27T18:02:00Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1010"
+                }
+            ]
+        },
+        {
+            "id": 6500,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-03-03T14:06:21Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "70",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 6551,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Some results from the DB data after 1 week of data collection (initial mu: 25, initial sigma: 8.33, rating = mu - 3*sigma = 0):\r\n\r\n* 73 entries, from which 18 are bots (55 humans players)\r\n* best/worst rated player\r\n** mu = 42.3, sigma = 6.17 (rating: 23.75). \r\n** mu = 20.6, sigma = 7.89 (rating: -3.10)\r\n* human players with smallest sigma:\r\n** mu = 19.3, sigma = 6 .15 (rating: 0.84)\r\n** mu = 42.3, sigma = 6.17 (rating: 23.75)\r\n\r\nThis shows that ranks based on rating and distributed in a purely linear manner (0-5: Private, .., 45-50: General) are indeed viable. With the very limited number of players and initial bots ratings, it would requires about 3 weeks for the rating to stabilize (lower variance). The more players with higher rating (low uncertainty), the more the system can rate players quickly. \r\n\r\nHowever, using a more log-like distribution of ranks (lower ranks requiring a lower rating, f.e. 0-2: Private, 2-5: Private Fist Class, ..., 40-50: General) might increase diversity of ranks on a server and also motivate new players to stay on the same server.",
+            "created_on": "2017-03-11T01:27:29Z",
+            "details": []
+        },
+        {
+            "id": 6558,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Ranks are now tied to rating in a linear manner when rating is enabled. Otherwise, behavior is still the same with ranks tied to skill levels and XPs.\r\n\r\nWe lose the Ranks popup as the ratings and thus ranks aren't updated in-game but right before intermission, but I don't think it is worth adding complexity just to show these popup at the start of next map.\r\n\r\nNote: An equivalent implementation to rank popup is tracked in #1139.",
+            "created_on": "2017-03-12T13:42:56Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 6590,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-03-19T20:05:09Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 7266,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "For the record: An \"updated version of the TrueSkill algorithm\":https://www.microsoft.com/en-us/research/uploads/prod/2018/03/trueskill2.pdf has been available for a few months:\r\n\r\nBriefly, the classic TrueSkill model makes the following assumptions:\r\n1. Each player has a latent skill value that represents their expected contribution to a team.\r\nA player\u2019s performance in a game is a noisy sample of their skill.\r\n2. The performance of a team is the weighted sum of the performances of its players, where\r\nthe weight is the fraction of time the player spent on the team.\r\n3. If a team\u2019s performance is greater than the other team by a certain margin, the team wins.\r\nOtherwise, the game is a draw. When learning skills from data, only the team win/loss\r\ninformation is used (not scores).\r\n4. Player skills evolve over time according to a random walk. An increase or decrease in skill\r\nis assumed equally likely.\r\n5. A player\u2019s skill in a game mode is assumed independent of their skill in all other modes.\r\n\r\nThe TrueSkill2 model modifies the classic model in the following ways:\r\n*1. A player\u2019s latent skill is inferred from their individual statistics such as kill and death\r\ncounts, in addition to team win/loss.*\r\n2. When a player quits or drops out in the middle of a game, it is treated as a surrender and\r\ntheir skill is updated as if they lost a game (regardless of actual outcome).\r\n3. A player\u2019s skill in a game mode is assumed statistically correlated with their skill in other\r\nmodes, so that when a player starts a new mode, their skill rating from other modes is\r\nborrowed.\r\n4. The random walk of player skill is assumed biased toward increasing skill, with larger bias\r\nduring the first matches a player plays in a game mode.\r\n5. When a player is part of a squad, their performance is assumed to be better than normal.\r\n\r\nThere is no existing implementation as of yet (only the paper). Might worth a look sometimes in the future.\r\n",
+            "created_on": "2018-08-27T20:34:00Z",
+            "details": []
+        },
+        {
+            "id": 7371,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-12-22T21:55:01Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1137"
+                }
+            ]
+        },
+        {
+            "id": 7427,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-12-27T12:39:11Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1155"
+                }
+            ]
+        },
+        {
+            "id": 7630,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-01-20T20:37:06Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1181"
+                }
+            ]
+        },
+        {
+            "id": 8378,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "{TODO} -Check for robustness of the db code.- (done, didn't found any issue)",
+            "created_on": "2019-07-12T10:54:34Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8472,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-09-10T11:05:38Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 8556,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "{TODO}\r\n* -check sess.time* values when player disconnect then reconnect on the same match.- (done, fixed data not retrieved and refactored db code)",
+            "created_on": "2019-11-28T18:22:40Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 8557,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-11-29T12:36:48Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 8617,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-12-24T10:20:53Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1376"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 140,
+            "name": "Spyhawk"
+        },
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 403,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Add bayesian skill rating",
+    "description": "The idea is simple: Implement a new, proved metric that can be used to compare skill of players over time.\r\n\r\nThe existing XPs count measures player's score based on of specific action (kills, construction, revive, ..) but is far from evaluating all aspects of the 'skill' of a player. Also, XPs are useful to control the various skill levels, but don't give any indication of the real global performance - they basically only give a hint about the time the player has played on a specific server (xpsave).\r\n\r\nA 'skill rating' could be defined as a metric measuring \"all the parameters of a player that help his team to win\" and the only way to do that is by a probabilistic, Bayesian approach. It simply should look at the global output of a game instead of the various micro-parameters (accuracy, number of kill, ... you-name-it).\r\n\r\nETPub implements such a metric with its \"Player Rating\", giving a normalized skill score. The TrueSkill system is a more modern algorythm that has been developed by MicroSoft for its XBox matching service. It has the advantage over the ETPub PR that it starts very low and increases over time (like XPs), before stabilizing when the skill rating is accurate (like the ETPub PR).\r\n\r\nThe algorythm is well documented (see Mooserware below) and several existing implementation can be found on the Internet, including this \"Lua implementation\":https://bitbucket.org/visionik/forged-alliance-forever-lua.\r\n\r\nAlso, we could use that Skill Rating to develop several nice feature later (showing probability of winning a map, team balancing, or even match making with players of similar skills, ... )\r\n\r\n* http://en.wikipedia.org/wiki/TrueSkill\r\n* http://www.moserware.com/2010/03/computing-your-skill.html\r\n\r\n*Update:*\r\n\r\nMore detail and analysis is available on the wiki here \"Bayesian skill rating\":http://dev.etlegacy.com/projects/etlegacy/wiki/Bayesian_skill_rating",
+    "start_date": "2018-12-23",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-11-18T16:47:16Z",
+    "updated_on": "2019-11-29T12:36:48Z",
+    "closed_on": "2019-11-29T12:36:48Z"
+}

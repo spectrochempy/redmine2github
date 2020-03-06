@@ -1,0 +1,98 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 458,
+            "issue_id": 1365,
+            "issue_to_id": 1245,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 8364,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-07-08T10:32:48Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "22",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 8642,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-12-29T21:57:25Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1365"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1245,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 6,
+        "name": "Urgent"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 5,
+        "name": "Server"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Bad command byte for client warning",
+    "description": "Report from TM:\r\n\r\n<pre>\r\nWARNING: bad command byte for client 31\r\nWARNING: bad command byte for client 31\r\nWARNING: bad command byte for client 31\r\nWARNING: bad command byte for client 31\r\n...\r\n</pre>\r\n\r\n\r\nThis warning happens \"on the host, and make people kinda lag out and not be able to move at all\". \"You have to disconnect your self or you kinda in limbo, can read the text on screen but can't move or anything else\".\r\nThe issue is inconsistent: \"will have to see if it keeps doing it again only happened twice today\".\r\n\r\nThe warning is generated in `sv_client.c`:\r\n<pre>\r\nif (c != clc_EOF)\r\n\t{\r\n\t\tCom_Printf(\"WARNING: bad command byte for client %i\\n\", (int) (cl - svs.clients));\r\n\t}\r\n</pre>\r\n It might be related to changes done to MSG_ReadByte(), or might simply due to an indexed array issue.\r\nClosest commit that _might_ be related to that issue can be found \"here\":https://github.com/etlegacy/etlegacy/commit/40c4697cbdaea8abf8cca0304f8a0bc62a96e273\r\n",
+    "start_date": "2019-04-07",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-04-07T17:51:28Z",
+    "updated_on": "2019-07-08T10:32:48Z"
+}

@@ -1,0 +1,65 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 6864,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "",
+            "created_on": "2017-08-01T09:09:46Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 964,
+    "project": {
+        "id": 8,
+        "name": "ModelTool"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 44,
+        "name": "Jacker"
+    },
+    "assigned_to": {
+        "id": 44,
+        "name": "Jacker"
+    },
+    "subject": "Re -enable md3 export",
+    "description": "Need to rewrite the old md3 export code, before this feature can be activated again.",
+    "start_date": "2016-11-09",
+    "done_ratio": 100,
+    "created_on": "2016-11-09T12:07:27Z",
+    "updated_on": "2017-08-01T09:09:46Z",
+    "closed_on": "2017-08-01T09:09:46Z"
+}

@@ -1,0 +1,133 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "c46d951b6b1bd8d9c923a623924f4fb18f78e6cc",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "game: set proper colors for white names, refs #673",
+            "committed_on": "2014-11-28T18:51:21Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3907,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "I almost forgot that when you file the complaint it will show the message: \"boi just lost 3 skill points for skill Light Weapons\" all of it in the colour your name is. So what I suggest is that the message is all white but the name is in the original colours. For example your name is grey and the message otherwise would be all white.\r\n\r\n-*S",
+            "created_on": "2014-11-28T14:18:27Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "446",
+                    "new_value": "skills.jpg"
+                }
+            ]
+        },
+        {
+            "id": 3920,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "",
+            "created_on": "2014-11-28T18:57:21Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3926,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-29T10:06:04Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "13"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 673,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 13,
+        "name": "RaFaL"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Name colour issue when complaint pop-up comes",
+    "description": "See the first screenshot when the name is grey, it works alright.\r\nAnd see the second screenshot when the name is white, it shows the name as yellow when a complaint pop-up comes.\r\n\r\n-*S",
+    "start_date": "2014-11-28",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-28T14:13:28Z",
+    "updated_on": "2014-11-29T10:06:04Z",
+    "closed_on": "2014-11-28T18:57:21Z"
+}

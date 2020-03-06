@@ -1,0 +1,136 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 6827,
+            "user": {
+                "id": 697,
+                "name": "artium"
+            },
+            "notes": "P.S: Is the console log being written to the disk? What is the path?\r\n",
+            "created_on": "2017-07-21T12:36:01Z",
+            "details": []
+        },
+        {
+            "id": 6830,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": ">etpubc: r_detailtextures CVAR_EQ violation - [1] should be EQ [0]\r\n>etpubc: r_depthbits CVAR_INSIDE violation - [0] should be INSIDE [24 32]\r\nYour first case is easy to fix: Set r_detailtextures cvar  to 0 and  r_depthbits to 24/32 or adjust the server config files (see forcing cvars).\r\n\r\nThe other issue is already filed see Bug #952.\r\n\r\nI'll close this. Thank you for reporting.\r\n",
+            "created_on": "2017-07-21T13:38:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "19"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 6832,
+            "user": {
+                "id": 697,
+                "name": "artium"
+            },
+            "notes": "IR4T4 wrote:\r\n> >etpubc: r_detailtextures CVAR_EQ violation - [1] should be EQ [0]\r\n> >etpubc: r_depthbits CVAR_INSIDE violation - [0] should be INSIDE [24 32]\r\n> Your first case is easy to fix: Set r_detailtextures cvar  to 0 and  r_depthbits to 24/32 or adjust the server config files (see forcing cvars).\r\n> \r\n> The other issue is already filed see Bug #952.\r\n> \r\n> I'll close this. Thank you for reporting.\r\n\r\nI understand that I can solve these or any specific issues. The main problem is that a repetitive error or warning message have the ability to spam the console and make it useless.",
+            "created_on": "2017-07-22T12:58:46Z",
+            "details": []
+        },
+        {
+            "id": 6833,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "artium wrote: \r\n> I understand that I can solve these or any specific issues. The main problem is that a repetitive error or warning message have the ability to spam the console and make it useless.\r\nI'm also with you but this range check is a third party issue and these prints are cause by etpubc (whatever that is).\r\n\r\n> P.S: Is the console log being written to the disk? What is the path?\r\nAll user data (configs, pk3s & logs ...) are stored in fs_homepath. \r\n",
+            "created_on": "2017-07-22T17:27:14Z",
+            "details": []
+        },
+        {
+            "id": 6847,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "etpubc = etpub client (as in \"client side mod\"). This is a mod issue, nothing we can do here.",
+            "created_on": "2017-07-24T14:15:51Z",
+            "details": []
+        }
+    ],
+    "watchers": [
+        {
+            "id": 697,
+            "name": "artium"
+        }
+    ],
+    "time_entries": null,
+    "id": 1048,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 697,
+        "name": "artium"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "CVAR_EQ violation spam",
+    "description": "On some maps the console is spammed with these repetitive \"CVAR_EQ violation\" messages which makes it impossible to read other messages.\r\n\r\nThe problem is not only with the appearance of these specific messages but more with the fact that an error message could spam the console so much that it becomes useless.\r\n\r\nTarget version: 2.75\r\n\r\nHere is an example from railgun and vanilla renderer:\r\n\r\netpubc: r_depthbits CVAR_INSIDE violation - [0] should be INSIDE [24 32]\r\netpubc: r_detailtextures CVAR_EQ violation - [1] should be EQ [0]\r\netpubc: r_depthbits CVAR_INSIDE violation - [0] should be INSIDE [24 32]\r\netpubc: r_detailtextures CVAR_EQ violation - [1] should be EQ [0]\r\netpubc: r_depthbits CVAR_INSIDE violation - [0] should be INSIDE [24 32]\r\netpubc: r_detailtextures CVAR_EQ violation - [1] should be EQ [0]\r\netpubc: r_depthbits CVAR_INSIDE violation - [0] should be INSIDE [24 32]\r\netpubc: r_detailtextures CVAR_EQ violation - [1] should be EQ [0]\r\netpubc: r_depthbits CVAR_INSIDE violation - [0] should be INSIDE [24 32]\r\netpubc: r_detailtextures CVAR_EQ violation - [1] should be EQ [0]\r\netpubc: r_depthbits CVAR_INSIDE violation - [0] should be INSIDE [24 32]\r\netpubc: r_detailtextures CVAR_EQ violation - [1] should be EQ [0]\r\netpubc: r_depthbits CVAR_INSIDE violation - [0] should be INSIDE [24 32]\r\netpubc: r_detailtextures CVAR_EQ violation - [1] should be EQ [0]\r\netpubc: r_depthbits CVAR_INSIDE violation - [0] should be INSIDE [24 32]\r\netpubc: r_detailtextures CVAR_EQ violation - [1] should be EQ [0]\r\netpubc: r_depthbits CVAR_INSIDE violation - [0] should be INSIDE [24 32]\r\netpubc: r_detailtextures CVAR_EQ violation - [1] should be EQ [0]\r\netpubc: r_depthbits CVAR_INSIDE violation - [0] should be INSIDE [24 32]\r\netpubc: r_detailtextures CVAR_EQ violation - [1] should be EQ [0]\r\netpubc: r_depthbits CVAR_INSIDE violation - [0] should be INSIDE [24 32]\r\netpubc: r_detailtextures CVAR_EQ violation - [1] should be EQ [0]\r\netpubc: r_depthbits CVAR_INSIDE violation - [0] should be INSIDE [24 32]\r\netpubc: r_detailtextures CVAR_EQ violation - [1] should be EQ [0]\r\netpubc: r_depthbits CVAR_INSIDE violation - [0] should be INSIDE [24 32]\r\n\r\nHere is an example from goldrush  and ET:LEgacy renderer:\r\n\r\nGLSL_SelectTexture: Trying to select non existing texture 21 vertexLighting_DBS_entity\r\nGLSL_SelectTexture: Trying to select non existing texture 22 vertexLighting_DBS_entity\r\netpubc: r_depthbits CVAR_INSIDE violation - [0] should be INSIDE [24 32]\r\netpubc: r_detailtextures CVAR_EQ violation - [1] should be EQ [0]\r\nGLSL_SelectTexture: Trying to select non existing texture 21 vertexLighting_DBS_entity\r\nGLSL_SelectTexture: Trying to select non existing texture 22 vertexLighting_DBS_entity\r\netpubc: r_depthbits CVAR_INSIDE violation - [0] should be INSIDE [24 32]\r\netpubc: r_detailtextures CVAR_EQ violation - [1] should be EQ [0]\r\nGLSL_SelectTexture: Trying to select non existing texture 21 vertexLighting_DBS_entity\r\nGLSL_SelectTexture: Trying to select non existing texture 22 vertexLighting_DBS_entity\r\netpubc: r_depthbits CVAR_INSIDE violation - [0] should be INSIDE [24 32]\r\netpubc: r_detailtextures CVAR_EQ violation - [1] should be EQ [0]\r\n\r\n\r\n\r\n\r\n",
+    "start_date": "2017-07-21",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": "64-bit"
+        }
+    ],
+    "created_on": "2017-07-21T12:34:26Z",
+    "updated_on": "2017-07-24T14:15:51Z",
+    "closed_on": "2017-07-21T13:38:31Z"
+}

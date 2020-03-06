@@ -1,0 +1,306 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 136,
+            "issue_id": 552,
+            "issue_to_id": 554,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 219,
+            "issue_id": 552,
+            "issue_to_id": 621,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 355,
+            "issue_id": 555,
+            "issue_to_id": 552,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 356,
+            "issue_id": 1058,
+            "issue_to_id": 552,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "d2378ce4e18125dc3b4f55d3de7d4922c854cc87",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "r2: added part of the foliage code, refs #552",
+            "committed_on": "2014-08-06T12:34:19Z"
+        },
+        {
+            "revision": "f35f11b0700eea171d4665f7ee4e37507f42dcf7",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "renderer2: activate Tess_SurfaceFoliage refs #552",
+            "committed_on": "2017-11-20T10:30:38Z"
+        },
+        {
+            "revision": "1f1f49019e914bd96e6122a71476122f725112a3",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "renderer2: hello foliage vbo/ibo refs #552",
+            "committed_on": "2018-01-11T06:09:54Z"
+        },
+        {
+            "revision": "b327052d0696f7ce3dcd852263ee1ee28b0757ea",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "renderer2: adjust foliage data structure refs #552, typo fix",
+            "committed_on": "2018-01-16T11:02:54Z"
+        },
+        {
+            "revision": "88a9e67fb17bce53624697538d24f160ca8ba725",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "renderer: tiny changes for foliage refs #552, rework of\nTess_SurfacePolychain - merged from daemon engine",
+            "committed_on": "2018-01-18T11:24:28Z"
+        },
+        {
+            "revision": "30da8a0916782d4d722ac9a9a910071cfba5c630",
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "comments": "renderer2: add foliage, fix surface vertex lit\n\nadds support for vbo/software foliage (r_vboFoliage)\nfixes surface vertex lighting\nrefs #552, #555",
+            "committed_on": "2018-02-11T14:54:14Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3314,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-08-03T08:35:36Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "554"
+                }
+            ]
+        },
+        {
+            "id": 3319,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-08-03T21:17:39Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "15"
+                }
+            ]
+        },
+        {
+            "id": 4616,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-02-16T19:18:42Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "621"
+                }
+            ]
+        },
+        {
+            "id": 6653,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "maybe something like this?\r\n\r\nhttp://www.geeks3d.com/20140807/billboarding-vertex-shader-glsl/",
+            "created_on": "2017-04-08T15:29:04Z",
+            "details": []
+        },
+        {
+            "id": 6656,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "This is to make a sprite effect, not randomly setting a particular model on a surface ^^'",
+            "created_on": "2017-04-08T20:33:04Z",
+            "details": []
+        },
+        {
+            "id": 6994,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-11-24T14:20:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 7010,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-12-17T00:59:31Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "555"
+                }
+            ]
+        },
+        {
+            "id": 7017,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-01-10T12:12:23Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1058"
+                }
+            ]
+        },
+        {
+            "id": 7019,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "{FIXME}\r\n\r\n-create foliage vbo-\r\n\r\nfog doesn't want to cooperate with foliage triangles ",
+            "created_on": "2018-01-10T12:28:11Z",
+            "details": []
+        },
+        {
+            "id": 7167,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-03-13T07:44:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "505"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 552,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 301,
+        "name": "ZTM"
+    },
+    "assigned_to": {
+        "id": 505,
+        "name": "ryven"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 15,
+        "name": "renderer2"
+    },
+    "subject": "renderer2: missing foliage support",
+    "description": "Radar level uses foliage extensively for plants and rain drop splashes. They are missing when using opengl2 renderer.\r\n\r\nUsing opengl2 the console shows warnings that \"distanceCull\" shader keyword is not implemented when loading Radar. distanceCull is used for fading out foliage at a distance in opengl1 renderer.\r\n\r\nIn src/renderer2/tr_bsp.c in R_LoadSurfaces, MST_FOLIAGE is treated as a triangle mesh and has a comment \"TODO ParseFoliage\".",
+    "start_date": "2014-08-01",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": "64-bit"
+        }
+    ],
+    "created_on": "2014-08-01T21:03:37Z",
+    "updated_on": "2018-03-13T07:44:36Z",
+    "closed_on": "2018-03-13T07:44:36Z"
+}

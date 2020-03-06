@@ -1,0 +1,222 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 187,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-07-26T20:50:40Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 468,
+            "user": {
+                "id": 68,
+                "name": "boutetnico"
+            },
+            "notes": "Some memory leaks on Linux 32-bit when running command:\n\n$ valgrind --leak-check=full  /usr/local/games/enemy-territory/etlded +set fs_basepath \"/usr/local/games/enemy-territory\" +set fs_game legacy +set dedicated 1 +map goldrush\n\n==10550== HEAP SUMMARY:\n==10550==     in use at exit: 159,908,051 bytes in 15 blocks\n==10550==   total heap usage: 708 allocs, 693 frees, 168,673,869 bytes allocated\n==10550== \n==10550== 160 (40 direct, 120 indirect) bytes in 1 blocks are definitely lost in loss record 12 of 15\n==10550==    at 0x402BE68: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)\n==10550==    by 0x41959DE: nss_parse_service_list (nsswitch.c:678)\n==10550==    by 0x4196159: __nss_database_lookup (nsswitch.c:175)\n==10550==    by 0x403D168: ???\n==10550==    by 0x403EB5C: ???\n==10550==    by 0x414D126: getpwuid_r@@GLIBC_2.1.2 (getXXbyYY_r.c:256)\n==10550==    by 0x414CA6D: getpwuid (getXXbyYY.c:117)\n==10550==    by 0x8099E0F: Sys_GetCurrentUser (in /usr/local/games/enemy-territory/etlded)\n==10550==    by 0x8098EDE: Sys_Init (in /usr/local/games/enemy-territory/etlded)\n==10550==    by 0x80751E3: Com_Init (in /usr/local/games/enemy-territory/etlded)\n==10550==    by 0x80998AD: main (in /usr/local/games/enemy-territory/etlded)\n==10550== \n==10550== 134,217,759 bytes in 1 blocks are possibly lost in loss record 15 of 15\n==10550==    at 0x402A5E6: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)\n==10550==    by 0x80731BB: Com_InitHunkMemory (in /usr/local/games/enemy-territory/etlded)\n==10550==    by 0x8074DCF: Com_Init (in /usr/local/games/enemy-territory/etlded)\n==10550==    by 0x80998AD: main (in /usr/local/games/enemy-territory/etlded)\n==10550== \n==10550== LEAK SUMMARY:\n==10550==    definitely lost: 40 bytes in 1 blocks\n==10550==    indirectly lost: 120 bytes in 10 blocks\n==10550==      possibly lost: 134,217,759 bytes in 1 blocks\n==10550==    still reachable: 25,690,132 bytes in 3 blocks\n==10550==         suppressed: 0 bytes in 0 blocks\n\nUpdate:\n\nMemory leak from getpwuid seems to be a false positive from Valgrind. Source: http://stackoverflow.com/questions/4778244/what-does-one-do-about-buggy-posix-apis-which-leak-memory",
+            "created_on": "2012-11-09T09:53:20Z",
+            "details": []
+        },
+        {
+            "id": 471,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I have nearly the same results as above.\n\nRun omnibots with valgrind and you'll get tons of ouputs. We (crapshoot & myself) did test ET+mod+bots a long time ago and came to the conclusion that most results are false positves so I'm not really convinced anymore valgrind is 'our' tool to find memory issues. Maybe it's worth to start ETL & valgrind on a bigger server with real humans connected but that's really the last trial with valgrind :/ ",
+            "created_on": "2012-11-09T14:11:27Z",
+            "details": []
+        },
+        {
+            "id": 1944,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-09-14T12:34:21Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "191",
+                    "new_value": "valgrind.log"
+                }
+            ]
+        },
+        {
+            "id": 1945,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "The attached log is from valgrind with current ETL & shipped OB version (quit after 2 min).\r\n\r\n<pre>\r\nvalgrind --leak-check=yes --track-origins=yes --log-file=\"valgrind.log\"  ./etlded \r\n</pre>\r\n\r\nWorth to read:\r\nhttp://stackoverflow.com/questions/14952637/valgrind-conditional-jump-or-move-depends-on-uninitialised-values-does-this\r\n\r\n",
+            "created_on": "2013-09-14T12:49:26Z",
+            "details": []
+        },
+        {
+            "id": 2949,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "user:swillits ran Apple Instruments analysis on ET:L and the current code seems to be leak-free. ",
+            "created_on": "2014-02-03T00:24:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 2952,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Valgrind still reports issues but it's no compare to the results we have had 2 years ago :D",
+            "created_on": "2014-02-04T19:10:51Z",
+            "details": []
+        },
+        {
+            "id": 2955,
+            "user": {
+                "id": 300,
+                "name": "swillits"
+            },
+            "notes": "(Keeping in mind I don't have a great depth of experience with the custom allocation in Q3 etc\u2026)\r\n\r\nBecause the engine uses custom allocators, there's two kinds of leaks: there's malloc-level leaks, and then there's leaking at the custom-allocator level. There was just one real malloc-level leak that I saw, but it was trivial, very infrequent, and existed in the official code with a comment that (IIRC) they someday should do something about it. Since most of the allocation is done through the custom zone allocator, standard leak testing just isn't going to be useful. You'd really need a custom leak checker to know whether there are leaks happening in the zone/hunk allocators at specific times. ",
+            "created_on": "2014-02-04T22:35:17Z",
+            "details": []
+        },
+        {
+            "id": 2961,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Right. The 'custom leak checker' seems to be implemented - there are some macros to enable memory debugging. Gonna activate those by time ... ",
+            "created_on": "2014-02-05T14:24:51Z",
+            "details": []
+        },
+        {
+            "id": 2962,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-02-05T14:25:48Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Test the code with valgrind",
+                    "new_value": "Test the code with valgrind/enable memory debug macros - find memory leaks"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "30"
+                }
+            ]
+        },
+        {
+            "id": 5086,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-08-08T18:47:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        },
+        {
+            "id": 300,
+            "name": "swillits"
+        }
+    ],
+    "time_entries": null,
+    "id": 43,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 2,
+        "name": "In Progress"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Test the code with valgrind/enable memory debug macros - find memory leaks",
+    "description": "See http://valgrind.org/",
+    "start_date": "2012-05-04",
+    "done_ratio": 30,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2012-05-04T19:04:22Z",
+    "updated_on": "2015-08-08T18:47:54Z"
+}

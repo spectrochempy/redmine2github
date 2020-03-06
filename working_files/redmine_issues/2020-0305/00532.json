@@ -1,0 +1,91 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 3150,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-04-10T15:12:34Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "\"SVF_SELF_PORTAL is broken in the engine. trying to use it \"as intended\" will only result in tears (and server engine crashes)\"\r\n\r\nhttp://bani.anime.net/banimod/forums/viewtopic.php?t=6184",
+                    "new_value": "Bani: \"SVF_SELF_PORTAL is broken in the engine. trying to use it \"as intended\" will only result in tears (and server engine crashes)\"\r\n\r\nhttp://bani.anime.net/banimod/forums/viewtopic.php?t=6184"
+                }
+            ]
+        },
+        {
+            "id": 5336,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-10-17T11:15:22Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "4"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 532,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 4,
+        "name": "ALL"
+    },
+    "subject": "Fix SVF_SELF_PORTAL ",
+    "description": "Bani: \"SVF_SELF_PORTAL is broken in the engine. trying to use it \"as intended\" will only result in tears (and server engine crashes)\"\r\n\r\nhttp://bani.anime.net/banimod/forums/viewtopic.php?t=6184",
+    "start_date": "2014-04-10",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-04-10T14:52:44Z",
+    "updated_on": "2015-10-17T11:15:22Z"
+}

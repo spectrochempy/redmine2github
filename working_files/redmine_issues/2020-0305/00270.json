@@ -1,0 +1,137 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "3420fd0b331f86afbdd3a6c2ed84ae3b0c35503b",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "misc: g_protectLog changed to sv_protectLog in etl_server.cfg fixes #270",
+            "committed_on": "2013-03-28T12:31:01Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1439,
+            "user": {
+                "id": 145,
+                "name": "100zherBG"
+            },
+            "notes": "",
+            "created_on": "2013-03-28T12:16:30Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "145"
+                }
+            ]
+        },
+        {
+            "id": 1441,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-03-28T12:41:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1442,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Applied in changeset commit:3420fd0b331f86afbdd3a6c2ed84ae3b0c35503b.",
+            "created_on": "2013-03-28T12:51:09Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 2440,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "created_on": "2013-12-14T18:01:05Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "new_value": "Linux"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 270,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 145,
+        "name": "100zherBG"
+    },
+    "category": {
+        "id": 5,
+        "name": "Server"
+    },
+    "fixed_version": {
+        "id": 7,
+        "name": "2.71rc2"
+    },
+    "subject": "Wrong server cvar g_protectLog at etl_server.cfg",
+    "description": "Change g_protectLog to sv_protectLog (2.71rc1 Linux)...",
+    "start_date": "2013-03-28",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-03-28T11:55:14Z",
+    "updated_on": "2013-12-14T18:01:05Z",
+    "closed_on": "2013-03-28T12:51:09Z"
+}

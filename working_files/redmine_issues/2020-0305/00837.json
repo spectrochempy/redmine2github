@@ -1,0 +1,148 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "f41836bb471df6e30ec9c963a06628d786ab7555",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: do not display medic icon after respawn on command map, fixes #837",
+            "committed_on": "2015-04-06T19:40:33Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 4908,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "Apparently it is related to NQ.\r\n\r\nNQ behaviour:\r\nPlayericon appears in commandmap/compass the moment the player spawns. \r\nHowever the first second it shows the icon of a player waiting for revive.\r\n\r\nET/ET:L behaviour:\r\nPlayericon appears in commandmap/compass AFTER a second and is shown correctly.\r\n\r\nEither the bug is present in ET/ET:L and just hidden by the missing playericon in the first second, OR nq introduced the bug.",
+            "created_on": "2015-04-06T18:35:18Z",
+            "details": []
+        },
+        {
+            "id": 4909,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I can reproduce on Legacy mod too. The icon seems to be updated about ~1 sec after spawn, but this is a server issue. The medic icon can be solved easily though.",
+            "created_on": "2015-04-06T19:05:22Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "21"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "8"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "17"
+                }
+            ]
+        },
+        {
+            "id": 4910,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:f41836bb471df6e30ec9c963a06628d786ab7555.",
+            "created_on": "2015-04-06T19:46:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 4911,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-04-06T19:53:01Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 837,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "'medic' playericon on spawn",
+    "description": "On spawn the player icon in the command map is shown as the 'medic' (revive) icon for one or two seconds.",
+    "start_date": "2015-04-06",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-04-06T17:26:19Z",
+    "updated_on": "2015-04-06T19:53:01Z",
+    "closed_on": "2015-04-06T19:46:54Z"
+}

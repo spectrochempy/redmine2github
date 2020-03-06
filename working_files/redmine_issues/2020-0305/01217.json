@@ -1,0 +1,91 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "3fbf7db205439ed0132d2777f1a5ee898b5c1ccd",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "misc: Fix MP34 animations (see pickup names of items in bg_misc.c) fixes\n#1217",
+            "committed_on": "2019-03-08T14:29:46Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7855,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Applied in changeset commit:3fbf7db205439ed0132d2777f1a5ee898b5c1ccd.",
+            "created_on": "2019-03-08T14:36:39Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1217,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Coverops animation with MP34 is wrong",
+    "description": "Covops with MP34 animation is buggy. See standing and crouching position, compared with the Sten equivalent. Prone looks however good.",
+    "start_date": "2019-03-07",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-03-07T10:40:24Z",
+    "updated_on": "2019-03-08T14:36:39Z",
+    "closed_on": "2019-03-08T14:36:39Z"
+}

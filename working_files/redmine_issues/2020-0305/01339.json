@@ -1,0 +1,137 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 460,
+            "issue_id": 1382,
+            "issue_to_id": 1339,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 462,
+            "issue_id": 1383,
+            "issue_to_id": 1339,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 8443,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "",
+            "created_on": "2019-08-23T12:25:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 8659,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2020-01-05T08:38:27Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8661,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2020-01-05T08:40:31Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1382"
+                }
+            ]
+        },
+        {
+            "id": 8665,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2020-01-05T10:24:28Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1383"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1339,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 251,
+        "name": "Aranud"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Improved mortar attack requests on command map",
+    "description": "As Spyhawk describe the feature :\r\n\r\nbq. When the fieldops does an arty strike (with binoc), the position is also drawn on the command map and reticule of the mortar soldier.\r\nIt's probably one of the lesser known feature of vanilla ET.\r\n\r\nThis feature could improved in some way :\r\n\r\nbq. There is an issue with it: when the fieldops is out of charge, the attack will fail (as expected), but the reticule/position will also not be drawn for the mortar guy. That should happen ideally.\r\nAnd maybe the mortar guys should get some message like \"your fieldops sent you coordinate to attack\", or something along the line.\r\nOr maybe the mortar and field opd should be decoupled, as indeed arti and mortar strike on the same spot is not really needed. But for strategic purpose, a fieldops could ask a mortar attack.\r\n\r\n\r\n",
+    "start_date": "2019-08-23",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-08-23T12:25:12Z",
+    "updated_on": "2020-01-05T08:38:27Z"
+}

@@ -1,0 +1,208 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 369,
+            "issue_id": 1137,
+            "issue_to_id": 403,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "a65ed1e8f15059b17b836d930d691246717a14b2",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: display switch help text on scoreboard, refs #1137",
+            "committed_on": "2018-12-23T23:05:10Z"
+        },
+        {
+            "revision": "b334986092424a2d86f95826ca9351646277ec48",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: enabled SR scoreboard by default, refs #403 #1137",
+            "committed_on": "2018-12-24T00:27:07Z"
+        },
+        {
+            "revision": "10dcedc91d346221cec19c051f0c466153455e7d",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: adjusted map bias display on SR scoreboard, refs #403 #1137",
+            "committed_on": "2018-12-24T14:57:28Z"
+        },
+        {
+            "revision": "19420cb62db4af69c7ecd1e42be88e6df76f91c4",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: display scoreboard type in infotext area, refs #403 #1137",
+            "committed_on": "2018-12-26T18:18:54Z"
+        },
+        {
+            "revision": "e23d262244a8b962084b350cad2e923192b92607",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed help string overlapping chat area, refs #403 #1137",
+            "committed_on": "2018-12-26T18:31:57Z"
+        },
+        {
+            "revision": "a282c2d3542b15cd29fba717eac35357ada08351",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: removed scoreboard string to avoid overlapping, refs #403 #1137\n\nThere isn't space anywhere!",
+            "committed_on": "2018-12-30T16:41:59Z"
+        },
+        {
+            "revision": "38999eb088f5b865ff4433598baf26de925459a6",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: display scorboard mode in help text, refs #403 #1137",
+            "committed_on": "2018-12-30T17:11:29Z"
+        },
+        {
+            "revision": "711edfc747dbcae44f0427d6bee79b04acc7ef12",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: hide scoreboard help text in intermission, refs #403 #1137",
+            "committed_on": "2018-12-31T00:22:30Z"
+        },
+        {
+            "revision": "2f2420213a77720212961fea76bf181da6e4d754",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed default scoreboard with g_SkillRating 1, refs #403 #1137",
+            "committed_on": "2019-01-21T12:15:24Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7369,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-12-22T21:54:35Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "When skill rating is enabled, XP are displayed by default and a double tap is required to show SR.\r\n\r\nChange it to:\r\n* If enabled, display SK by default\r\n* Add a note somewhere to 'double tab to switch view' (adjust cg_displayhint?)\r\n\r\nAlso, the double percentage at the top is confusing.\r\n* first is real time win chance percentage\r\n* second is map bias (used only when g_skillrating = 2)\r\n\r\nFind a less confusing way to display this map bias percentage.",
+                    "new_value": "When skill rating is enabled, XP are displayed by default and a double tap is required to show SR.\r\n\r\nChange it to:\r\n* If enabled, display SR by default\r\n* Add a note somewhere to 'double tab to switch view' (adjust cg_displayhint?)\r\n\r\nAlso, the double percentage at the top is confusing.\r\n* first is real time win chance percentage\r\n* second is map bias (used only when g_skillrating = 2)\r\n\r\nFind a less confusing way to display this map bias percentage."
+                }
+            ]
+        },
+        {
+            "id": 7370,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-12-22T21:55:01Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "403"
+                }
+            ]
+        },
+        {
+            "id": 7392,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-12-24T14:59:22Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1137,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "SR scoreboard should be default when g_skillRating is enabled",
+    "description": "When skill rating is enabled, XP are displayed by default and a double tap is required to show SR.\r\n\r\nChange it to:\r\n* If enabled, display SR by default\r\n* Add a note somewhere to 'double tab to switch view' (adjust cg_displayhint?)\r\n\r\nAlso, the double percentage at the top is confusing.\r\n* first is real time win chance percentage\r\n* second is map bias (used only when g_skillrating = 2)\r\n\r\nFind a less confusing way to display this map bias percentage.",
+    "start_date": "2018-12-22",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2018-12-22T21:54:08Z",
+    "updated_on": "2018-12-24T14:59:22Z",
+    "closed_on": "2018-12-24T14:59:22Z"
+}

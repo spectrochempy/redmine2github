@@ -1,0 +1,210 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 3039,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-02-16T11:06:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 7959,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Hey and long time no see!\r\n\r\nI started to investigate this issue and have actually found the cause of it. But there are certain questions according this issue.\r\n\r\n* When current player dies and you start to follow next player, should you be able to follow the player again that died and is currently on reinforcement queue?\r\n\r\nIf yes:\r\n\r\n* Should the spectator be able to \\follow a player during its reinforcement queue?\r\n\r\nIn my opinion it's rather strange to wait a player to be spawn until you are able to spectate a specific player. Since if a player dies, you are still able to spectate this player.\r\n\r\nIn my opinion spectator needs the flexibility and freedom to choose who to spectate.\r\n\r\n-*S",
+            "created_on": "2019-04-15T09:45:33Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "16",
+                    "new_value": "21"
+                }
+            ]
+        },
+        {
+            "id": 7960,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2019-04-15T11:14:33Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 7965,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "Saukko wrote:\r\n> Hey and long time no see!\r\n> \r\n> I started to investigate this issue and have actually found the cause of it. But there are certain questions according this issue.\r\n> \r\n> * When current player dies and you start to follow next player, should you be able to follow the player again that died and is currently on reinforcement queue?\r\n> \r\n> If yes:\r\n> \r\n> * Should the spectator be able to \\follow a player during its reinforcement queue?\r\n> \r\n> In my opinion it's rather strange to wait a player to be spawn until you are able to spectate a specific player. Since if a player dies, you are still able to spectate this player.\r\n> \r\n> In my opinion spectator needs the flexibility and freedom to choose who to spectate.\r\n> \r\n> -*S\r\n\r\nSound fine !",
+            "created_on": "2019-04-15T15:54:49Z",
+            "details": []
+        },
+        {
+            "id": 7966,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I think that is done on purpose (from what I remember of the comment of that section). The view is \"locked\" on the next player so it can successfully resume once the spectated player is back in the game.\r\nI usually press spacebar to unlock the view, then process as usual to follow someone else. It's definitively not ideal though. If someone has a better implementation to suggest, I'll take it.\r\n\r\nAlso: welcome back!",
+            "created_on": "2019-04-15T17:36:25Z",
+            "details": []
+        },
+        {
+            "id": 8029,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Some WIP here: https://github.com/etlegacy/etlegacy/pull/359",
+            "created_on": "2019-04-21T18:37:27Z",
+            "details": []
+        },
+        {
+            "id": 8043,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-25T15:09:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "20"
+                }
+            ]
+        },
+        {
+            "id": 8047,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-26T12:13:14Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "tracker_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 8098,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2019-05-02T15:39:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "22",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 471,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 2,
+        "name": "In Progress"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Can't switch the player you spectate when the current player is in reinforcement queue",
+    "description": "Here's an example: You spectate \"Player X\" and he dies, you start to spectate the player which \"Player X\" spectates during the reinforcement queue. While the reinforcement time is on, you can't spectate another player by pressing MOUSE1 or MOUSE2. After the \"Player X\" respawns you can switch the player you want to spectate.\r\n\r\n-*S",
+    "start_date": "2014-01-04",
+    "done_ratio": 20,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-01-04T17:38:51Z",
+    "updated_on": "2019-05-02T15:39:50Z"
+}

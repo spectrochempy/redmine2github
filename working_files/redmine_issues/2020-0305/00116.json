@@ -1,0 +1,282 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 380,
+            "issue_id": 1078,
+            "issue_to_id": 116,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 58,
+            "issue_id": 194,
+            "issue_to_id": 116,
+            "relation_type": "duplicates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "cb35462e9c706be536de82d4176c2883c4724980",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: hide cg_shadows >= 2, refs #116",
+            "committed_on": "2014-12-16T17:35:00Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 513,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "cg_shadows seems to have issues in general. cg_shadows 2 doesn't update the screen on my system and causes strange effects. ",
+            "created_on": "2012-11-13T06:49:35Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Max shadow setting bug (Player model black-skinned as a shadow)",
+                    "new_value": "Max shadow setting bug (Player model black-skinned as a shadow) / cg_shadows has issues"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 2532,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "It seems only cg_shadows 1 works properly.",
+            "created_on": "2013-12-24T15:12:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Max shadow setting bug (Player model black-skinned as a shadow) / cg_shadows has issues",
+                    "new_value": "Max shadow setting bug (Player model black-skinned as a shadow) / fix cg_shadows"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 2533,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-12-24T15:12:48Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 2684,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-01-02T08:54:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 3217,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "We should limit the range of cg_shadows as tmp solution (0-1). When cg_shadows 2 is set the game becomes uncontrollable.",
+            "created_on": "2014-05-31T08:39:30Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 4162,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-12-18T16:46:01Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "1",
+                    "new_value": "21"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "6",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 7567,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-01-17T13:17:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 7568,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-01-17T13:18:09Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Max shadow setting bug (Player model black-skinned as a shadow) / fix cg_shadows",
+                    "new_value": "Fix: cg_shadows 2 (r2 - max shadow setting bug (Player model black-skinned as a shadow)"
+                }
+            ]
+        },
+        {
+            "id": 7569,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "@Mateos The image link is not valid, can you still reproduce?",
+            "created_on": "2019-01-17T13:20:16Z",
+            "details": []
+        },
+        {
+            "id": 7571,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-01-17T13:20:38Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1078"
+                }
+            ]
+        },
+        {
+            "id": 7758,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-02-14T10:22:34Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "22",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 116,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 9,
+        "name": "Mateos"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Fix: cg_shadows 2 (r2 - max shadow setting bug (Player model black-skinned as a shadow)",
+    "description": "Good evening,\r\n\r\nI suspect the highest shadowing algorithm to cause this:\r\nhttp://www5.picturepush.com/photo/a/11385593/640/Screenshots-for-Forums/2012-11-11-203749-fueldump.jpg\r\n\r\nBecause, here I have it in front, but when I'm walking on the terrain itself it is right under me\r\n\r\nOnly tested on Fuel Dump yet",
+    "start_date": "2012-11-12",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2012-11-12T19:52:24Z",
+    "updated_on": "2019-02-14T10:22:34Z"
+}

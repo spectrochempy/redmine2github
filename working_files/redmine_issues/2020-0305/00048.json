@@ -1,0 +1,157 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 10,
+            "issue_id": 17,
+            "issue_to_id": 48,
+            "relation_type": "duplicates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "5123596963d2d8feda7208134476d082dc1f0142",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "Don't limit game complete messages to master servers in SVC_Status()\nfixes #47 (morsik's commit is undone) refs #48",
+            "committed_on": "2012-05-11T20:21:44Z"
+        },
+        {
+            "revision": "1888b72238e8be172a8c1187a9b42cbea71f7689",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "prevent using getinfo as an amplifier for DDOS attacks. Patch by\nDevHC/thilo from ioquake3 refs #48 refs #24",
+            "committed_on": "2012-08-05T09:58:34Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 108,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-05-12T13:10:48Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 186,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-07-26T20:50:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 326,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-09-29T16:19:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "7",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 5087,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-08-08T18:48:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 48,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 5,
+        "name": "Server"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Refactor SVC_BucketForAddress",
+    "description": "Morsik's change to fix ticket #47 caused my attention ...\r\n\r\nTo clarify:\r\n------------------------------------------\r\n1) Do we have to put NA_BAD (and other non explicitly dealed ) types into the bucket? Looks like a waste here ... NA_BAD should always be rejected?!\r\n-------------------------------------------\r\n2) Do we have to execute the loops if param address is of type NA_BAD, (and other types like NA_BOT( should never happen) ... ? - see also 1)\r\n-------------------------------------------\r\n3) Do we deal with all bucket types (netaddress types) ... what about remote cmds from local network?\r\n------------------------------------------\r\n\r\n\r\n\r\n\r\n\r\n",
+    "start_date": "2012-05-10",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2012-05-10T04:30:31Z",
+    "updated_on": "2015-08-08T18:48:03Z"
+}

@@ -1,0 +1,324 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 220,
+            "issue_id": 823,
+            "issue_to_id": 822,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "f56e13bd0a4dd6a0c292085ff0d503ce9f4ae86d",
+            "user": {
+                "id": 424,
+                "name": "Zecklar"
+            },
+            "comments": "general: Block client from entering the game if download in progress, refs #823",
+            "committed_on": "2015-03-18T14:11:27Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 4663,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-02-23T19:04:47Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "822"
+                }
+            ]
+        },
+        {
+            "id": 4665,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-02-23T19:05:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "I've noticed a bug in client the client-server download process. Sometimes the client doesn't connect after map downloads while the server shows client already as connected. \r\n\r\nTest case:\r\n- open a listen server and put some custom maps (more than 5) into fs_basepath\r\n- connect with another client (fresh and clean fs_homepath)\r\n- wait (or force map change while download)\r\n\r\n/reconnect solves the issue but isn't a solution ...\r\n",
+                    "new_value": "I've noticed a bug in client-server download process. Sometimes the client doesn't connect after map downloads while the server shows client already as connected. \r\n\r\nTest case:\r\n- open a listen server and put some custom maps (more than 5) into fs_basepath\r\n- connect with another client (fresh and clean fs_homepath)\r\n- wait (or force map change while download)\r\n\r\n/reconnect solves the issue but isn't a solution ...\r\n"
+                }
+            ]
+        },
+        {
+            "id": 4666,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-02-25T16:21:55Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "I've noticed a bug in client-server download process. Sometimes the client doesn't connect after map downloads while the server shows client already as connected. \r\n\r\nTest case:\r\n- open a listen server and put some custom maps (more than 5) into fs_basepath\r\n- connect with another client (fresh and clean fs_homepath)\r\n- wait (or force map change while download)\r\n\r\n/reconnect solves the issue but isn't a solution ...\r\n",
+                    "new_value": "I've noticed a bug in client-server download process. Sometimes the client doesn't connect after map downloads while the server shows client already as connected. \r\n\r\nTest case:\r\n- open a listen server and put some custom maps into fs_basepath (more than 5 so other client is forced to download) \r\n- connect with another client (fresh and clean fs_homepath), client should start a download \r\n- start another map f.e. oasis\r\n- after warmup when SV_MapRestart_f is called the other client goes from connecting to connected *boom*\r\n\r\n/reconnect solves the issue but isn't a solution ...\r\n\r\n*Line 383 in SV_MapRestart_f of sv_ccmds.c calls SV_ClientEnterWorld(client, NULL); which sets CS_ACTIVE and causes our issue.*"
+                }
+            ]
+        },
+        {
+            "id": 4798,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-03-17T15:29:04Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 4804,
+            "user": {
+                "id": 424,
+                "name": "Zecklar"
+            },
+            "notes": "",
+            "created_on": "2015-03-18T15:18:34Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 4812,
+            "user": {
+                "id": 424,
+                "name": "Zecklar"
+            },
+            "notes": "I tested it and there was no issues anymore on my side. Also now the player status stays as \"Connecting\" after the map start if the player is still downloading. I'd like someone to confirm that there is no *boom* anymore.",
+            "created_on": "2015-03-19T18:52:56Z",
+            "details": []
+        },
+        {
+            "id": 4813,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Alright, let's also check vanilla clients because the change affects them too.",
+            "created_on": "2015-03-19T18:55:30Z",
+            "details": []
+        },
+        {
+            "id": 4873,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-03-25T17:11:01Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 4915,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I can't reproduce this anymore. \r\n\r\n{TODO}\r\n- run test case with vanilla client and etl server\r\n",
+            "created_on": "2015-04-16T19:02:43Z",
+            "details": []
+        },
+        {
+            "id": 4916,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-04-16T19:02:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 4927,
+            "user": {
+                "id": 177,
+                "name": "Zelly"
+            },
+            "notes": "I can reproduce getting stuck loading map with latest build.\r\nThere were no downloads involved.\r\nI can tell it is attempting to retry to load because it flashes the console very slightly every second or so.\r\nI used rcon to change map right before I clicked join on my client, but it has happened before with a normal rotation switch.\r\nTested on silent mod etl client, et300 server.",
+            "created_on": "2015-05-11T21:44:54Z",
+            "details": []
+        },
+        {
+            "id": 4928,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Zelly wrote:\r\n> Tested on silent mod etl client, et300 server.\r\n\r\nThis is seemingly a server issue. Can you reproduce when connecting to an ET:L server, not et300?\r\n\r\n",
+            "created_on": "2015-05-12T09:48:45Z",
+            "details": []
+        },
+        {
+            "id": 4929,
+            "user": {
+                "id": 177,
+                "name": "Zelly"
+            },
+            "notes": "Could not reproduce on etlded server.\r\nOne time it did disconnect for unknown reason though, couldn't get it to happen twice though.",
+            "created_on": "2015-05-12T18:00:18Z",
+            "details": []
+        },
+        {
+            "id": 5064,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-08-07T20:28:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 5115,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-08-08T20:56:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "17",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 5460,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-11-25T15:03:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        },
+        {
+            "id": 405,
+            "name": "Latch"
+        }
+    ],
+    "time_entries": null,
+    "id": 823,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 7,
+        "name": "Immediate"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "Client map download not working properly",
+    "description": "I've noticed a bug in client-server download process. Sometimes the client doesn't connect after map downloads while the server shows client already as connected. \r\n\r\nTest case:\r\n- open a listen server and put some custom maps into fs_basepath (more than 5 so other client is forced to download) \r\n- connect with another client (fresh and clean fs_homepath), client should start a download \r\n- start another map f.e. oasis\r\n- after warmup when SV_MapRestart_f is called the other client goes from connecting to connected *boom*\r\n\r\n/reconnect solves the issue but isn't a solution ...\r\n\r\n*Line 383 in SV_MapRestart_f of sv_ccmds.c calls SV_ClientEnterWorld(client, NULL); which sets CS_ACTIVE and causes our issue.*",
+    "start_date": "2015-02-23",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-02-23T19:04:23Z",
+    "updated_on": "2015-11-25T15:03:17Z",
+    "closed_on": "2015-11-25T15:03:17Z"
+}

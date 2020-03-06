@@ -1,0 +1,87 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 2808,
+            "user": {
+                "id": 300,
+                "name": "swillits"
+            },
+            "notes": "",
+            "created_on": "2014-01-12T21:46:26Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "The current build scripts are building 32-bit explicitly rather than whatever the host architecture is at build time. ",
+                    "new_value": "The current build scripts are building 32-bit explicitly rather than whatever the host architecture is at build time. \r\n\r\nThe legacy cgame and ui libs are already building as universal, but qagame, etl, and etlded are not by default. The reasoning is that if etl/etlded are universal, they'll by default launch as 64-bit on the vast majority of systems (32-bit systems are rare these days), but the mods the user may be using may be 32-bit only leading a problem.\r\n\r\nIf etl and etlded are built as 32/64 universal, then the simplest strategy for dealing with 32-bit-only mods is to launch etl/etlded in 32-bit mode. Since etl.app is a bundle,  the user could use the \"Open in 32-bit mode\" checkbox in Finder. For etlded the user would need to launch the server explicitly in 32-bit mode via `arch -arch i386 etlded`. Both are easy, the only drawback is knowing you need to do it. In the case of etlded, it'd be trivial in releases to also ship an etlded64 so the release package has both 32 and 64 versions, but it's strange to do so for the client app bundle.\r\n\r\nThe \"best\" solution would be to detect that a given mod cannot be loaded for the current architecture, inform the user of this in-game, and then offer to\u00a0automatically relaunch in the appropriate architecture. OS X's  System Preferences app does this for example, when a given third-party preference pane is 32-bit only. It's doable but more complex. (The only time where it may be odd is if the user is connecting via their 64-bit client to a server that has only a 32-bit mod, the mod is then auto-downloaded, but the game has to restart in 32 to use it. So the game would relaunch, passing \"connect ip\" as arguments so it auto reconnects to the server, but there's a tiny race condition where their slot may have been taken by another player in the mean time if it's a full and popular server. Other than that, I can't think of a downside.)"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 300,
+            "name": "swillits"
+        },
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 482,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 300,
+        "name": "swillits"
+    },
+    "assigned_to": {
+        "id": 300,
+        "name": "swillits"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 4,
+        "name": "ALL"
+    },
+    "subject": "Build 32/64 bit universal binaries on OS X",
+    "description": "The current build scripts are building 32-bit explicitly rather than whatever the host architecture is at build time. \r\n\r\nThe legacy cgame and ui libs are already building as universal, but qagame, etl, and etlded are not by default. The reasoning is that if etl/etlded are universal, they'll by default launch as 64-bit on the vast majority of systems (32-bit systems are rare these days), but the mods the user may be using may be 32-bit only leading a problem.\r\n\r\nIf etl and etlded are built as 32/64 universal, then the simplest strategy for dealing with 32-bit-only mods is to launch etl/etlded in 32-bit mode. Since etl.app is a bundle,  the user could use the \"Open in 32-bit mode\" checkbox in Finder. For etlded the user would need to launch the server explicitly in 32-bit mode via `arch -arch i386 etlded`. Both are easy, the only drawback is knowing you need to do it. In the case of etlded, it'd be trivial in releases to also ship an etlded64 so the release package has both 32 and 64 versions, but it's strange to do so for the client app bundle.\r\n\r\nThe \"best\" solution would be to detect that a given mod cannot be loaded for the current architecture, inform the user of this in-game, and then offer to\u00a0automatically relaunch in the appropriate architecture. OS X's  System Preferences app does this for example, when a given third-party preference pane is 32-bit only. It's doable but more complex. (The only time where it may be odd is if the user is connecting via their 64-bit client to a server that has only a 32-bit mod, the mod is then auto-downloaded, but the game has to restart in 32 to use it. So the game would relaunch, passing \"connect ip\" as arguments so it auto reconnects to the server, but there's a tiny race condition where their slot may have been taken by another player in the mean time if it's a full and popular server. Other than that, I can't think of a downside.)",
+    "start_date": "2014-01-12",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "OS X"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-01-12T19:14:07Z",
+    "updated_on": "2014-01-12T21:46:26Z"
+}

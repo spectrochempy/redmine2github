@@ -1,0 +1,74 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 8730,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2020-02-15T20:07:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1021,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Add real time player behavior analysis",
+    "description": "I have trouble calling this an \"anticheat\" since it's radically different from traditional anticheat, so let's say this feature is about an \"automated monitoring of players behavior\" using Machine Learning techniques.\r\nThe necessary framework exists already and minimal work is required to implement its interface in ETL code. The core feature itself which is/will be implemented in python, leveraging the power of the scikit-learn library.\r\n\r\nThis is the perfect companion of the server side anti-wallhack feature (by Laszlo) that we already implemented.\r\n\r\nFrom the \"forums\":https://dev.etlegacy.com/boards/1/topics/465?r=3019#message-3019:\r\n\r\nbq. I worked on an opensource anticheat architecture, completely server-sided (so that cheaters can\u2019t avoid it), based on behavior analysis automated by machine learning.\r\n\r\nbq. There are several research papers about automated behavior analysis to detect cheaters, it works well. My architecture goes beyond simply doing behavior analysis by providing a full architecture to produce the necessary behavior data from servers automatically, then ease the analysis (using any algorithm you want), the sharing of behavior analysis parameters (so that server administrators can share the parameters or even the behaviors databases in order to construct big datasets to get better parameters) and finally allows for ban/kick/demo recording/any rcon command as a final measure.\r\n\r\nbq. The whole project is here, made for OpenArena, but easily translatable to any ioq3 based game:\r\n* https://github.com/lrq3000/openarena_engine_oacs\r\n* https://github.com/lrq3000/oacs\r\n\r\nbq. That being said, I stopped the project because of a lack of time, but it fully works. The only downfall is that the algorithms I used are not efficient enough. I plan to add support for scikit-learn, leveraging the big library of machine learning algorithms scikit-learn offers. Also, better behavior features could provide better results, such as a better reaction time estimator and a crosshair estimator (is the crosshair aiming at a player\u2019s head? for how long? etc.).\r\n\r\nbq. This approach was implemented by the mod ExcessivePlus (along with an enhanced antiwallhack but stemming from the same Laszlo patch). If anybody is interested into reviving this project, I can supervise the effort and provide the update to support scikit-learn.\r\n\r\nbq. To clarify what is the goal of such a system: with behavior analysis, you analyze what are \"normal\" players behavior (non-cheaters), and from that you can detect \"anomalous\" behaviors (cheaters). This has the big advantage that you just need to get data from normal players, which is readily available. It will also be robust enough to detect new cheats (because we don\u2019t model the cheats anyway but the non-cheat).\r\n\r\nbq. In the end, cheats can still work, but only if they do not display \"anomalous\" behavior, such as a too high precision or unnatural human movements or reaction time. So in the end, such cheats are not a threat anymore, since they do not give a \"surnatural\" power, because they simply are not allowed to trespass the \"natural ability\" threshold.\r\n\r\nbq. Of course that\u2019s in theory, and in practice there will be several false positives. But the goal of the system is NOT to auto-ban or auto-kick (even if it is possible), but rather to autodetect suspicious behavior, and launch an autorecord of them, for later review by the server administrator. This would also be the most efficient, as delaying the punition will reduce the clues cheaters can have (indeed if they get kicked instantly, they can iteratively refine their cheats, whereas if the punition is delayed, they can\u2019t know what version of their cheat did that).\r\n\r\nbq. I\u2019m convinced this is the best approach for an opensource anticheating system, as it will leverage the collaborative nature of opensource, because:\r\n1. you can share datasets and parameters, everything is anonymized, the ids are not necessary for the behavior analysis).\r\n2. having the database/parameters does not provide the program (since it is learnt by a machine), and even if learnt, it cannot be bypassed (since everything is analyzed server-side). This is why this approach is also being investigated by AAA studios currently such as Battlefields.\r\n\r\nI'm personally familiar with ML and scikit-learn, and seeing that the existing framework does all the nitty-gritty already, most of the effort could be spent on doing the relevant ML work.",
+    "start_date": "2017-03-13",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-03-12T23:53:55Z",
+    "updated_on": "2020-02-15T20:07:49Z"
+}

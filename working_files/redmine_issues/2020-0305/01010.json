@@ -1,0 +1,193 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 318,
+            "issue_id": 1010,
+            "issue_to_id": 403,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 328,
+            "issue_id": 975,
+            "issue_to_id": 1010,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "d8642636209bb347b0608aedeb5d0b8a83d53ef2",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "Dynamite planted!",
+            "committed_on": "2017-02-06T17:13:08Z"
+        },
+        {
+            "revision": "93c2dfbd1d4aa3258c088a6008e2345a66d6c7d0",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "db: use db_mode 2 by default for now\n\nDynamite defused! See d8642636209bb347b0608aedeb5d0b8a83d53ef2",
+            "committed_on": "2017-02-26T23:56:06Z"
+        },
+        {
+            "revision": "0e7fd9fbf6ce4805d23f859c09b468a70a497e3e",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "general: use SQLite shared cache with db_mode 1",
+            "committed_on": "2017-02-26T23:56:58Z"
+        },
+        {
+            "revision": "1bfae65b93c0ba4879da7a6558372f32660299c5",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "luasql: readded SQLITE_OPEN_SHAREDCACHE, refs #1010",
+            "committed_on": "2017-03-08T21:42:51Z"
+        },
+        {
+            "revision": "0048613797e046c33ff78a020fef661031d7b623",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "db: added check for enabled shared memory db",
+            "committed_on": "2017-03-09T15:49:52Z"
+        },
+        {
+            "revision": "60dab94035a66863864880c885c46e88b5a9574a",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "luasql: updated to LuaSQL 2.5.0 and readded SQLITE_OPEN_SHAREDCACHE, refs #1010",
+            "committed_on": "2019-12-18T16:26:00Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 6475,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-02-27T18:02:00Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "403"
+                }
+            ]
+        },
+        {
+            "id": 6660,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-04-10T14:40:58Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "975"
+                }
+            ]
+        },
+        {
+            "id": 7060,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-01-31T13:48:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "5",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 7082,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-02-13T12:31:51Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1010,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Engine db_mode 1 isn't accessible from mod and LuaSQL",
+    "description": "The in-memory db mode (db_mode 1) create the engine database in memory, but while the mod and LuaSQL can access it, the table created in engine aren't visible to them.\r\nOn-disk memory mode (db_mode 2) is actually used as default as a fallback.",
+    "start_date": "2017-02-27",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-02-27T17:59:49Z",
+    "updated_on": "2018-02-13T12:31:51Z"
+}

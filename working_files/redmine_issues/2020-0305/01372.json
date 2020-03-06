@@ -1,0 +1,91 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "7958699054cebc7784d1759522000eddafc5313b",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed empty name when awarded players disconnect early, fixes #1372",
+            "committed_on": "2019-12-13T11:32:08Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 8611,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:7958699054cebc7784d1759522000eddafc5313b.",
+            "created_on": "2019-12-13T14:40:40Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1372,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Missing name in awards screen when player has disconnected",
+    "description": "Awards are computed at the end of map, right before intermission and sent as a series of numbers to client (award id, player slot id, score in CS_ENDGAME_STATS). When a rewarded player disconnects at the beginning of intermission, when other clients already received the awards string but before they clicked the \"more\" button to display the \"roll of honor\" screen, the slot id will be unused, and no name will be displayed for the award.\r\n\r\nPossible solution: build a copy of list of players name right after the CS_ENDGAME_STATS string is parsed, and use it to display the players names rather than matching with slot id when the \"more\" button is clicked.\r\n\r\n",
+    "start_date": "2019-12-13",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-12-13T11:07:11Z",
+    "updated_on": "2019-12-13T14:40:40Z",
+    "closed_on": "2019-12-13T14:40:40Z"
+}

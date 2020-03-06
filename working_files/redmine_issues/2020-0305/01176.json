@@ -1,0 +1,148 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7612,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "There is a very old forum report \"here\"://forums.libsdl.org/viewtopic.php?p=5015 with the relevant bug report here: https://bugzilla.libsdl.org/show_bug.cgi?id=164 (check last post in the bug thread).\r\nI don't know if the current behaviour is actually intended or not.\r\n\r\nTypical example of this issue: Some players use custom bind on NumLock key, so the numeric 5 key randomly works, depending on the numlock bind.",
+            "created_on": "2019-01-19T15:39:32Z",
+            "details": []
+        },
+        {
+            "id": 7679,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-01-24T13:31:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "NUMLOCK 5 status fails",
+                    "new_value": "NUMLOCK 5 status fails *SDL related*"
+                }
+            ]
+        },
+        {
+            "id": 7763,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-02-14T10:34:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "22",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 7895,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-03-22T09:34:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "1",
+                    "new_value": "26"
+                }
+            ]
+        },
+        {
+            "id": 8499,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "Fixed in SDL 2.0.10",
+            "created_on": "2019-10-09T14:41:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1176,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 26,
+        "name": "Libs"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "NUMLOCK 5 status fails *SDL related*",
+    "description": "https://bugzilla.libsdl.org/show_bug.cgi?id=4443",
+    "start_date": "2019-01-19",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-01-19T15:36:21Z",
+    "updated_on": "2019-10-09T14:41:29Z",
+    "closed_on": "2019-10-09T14:41:29Z"
+}

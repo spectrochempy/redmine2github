@@ -1,0 +1,173 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 159,
+            "issue_id": 681,
+            "issue_to_id": 683,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "38756a1ae808d8faaf79fa9d67c7c41008721eca",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed covops 'enemy spotted' message",
+            "committed_on": "2014-11-29T14:08:29Z"
+        },
+        {
+            "revision": "09541f9a0c36bf4143a34ac8de516df50e844d80",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: spammy fragments from never existing server command 'tt' removed.\nfixes #683",
+            "committed_on": "2014-11-30T12:12:14Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3933,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2014-11-29T17:20:41Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "450",
+                    "old_value": "tt2.jpg"
+                }
+            ]
+        },
+        {
+            "id": 3934,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "-*S",
+            "created_on": "2014-11-29T17:21:15Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "457",
+                    "new_value": "cpm.jpg"
+                }
+            ]
+        },
+        {
+            "id": 3940,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-11-30T11:03:30Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "681"
+                }
+            ]
+        },
+        {
+            "id": 3941,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Sorry I did commit these prints but the error was/is new. Well things start to work ... the latest changes of command map code made genuine code work as intended. ",
+            "created_on": "2014-11-30T11:16:11Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 3942,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Applied in changeset commit:09541f9a0c36bf4143a34ac8de516df50e844d80.",
+            "created_on": "2014-11-30T11:21:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 683,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Killing an enemy as covert op will cause an error message",
+    "description": "I haven't seen this bug until now. But how to reproduce:\r\n1. Take covert op\r\n2. Go and kill an enemy\r\n3. Wait for the corpse to moulder",
+    "start_date": "2014-11-29",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-29T17:17:33Z",
+    "updated_on": "2014-11-30T11:21:00Z",
+    "closed_on": "2014-11-30T11:21:00Z"
+}

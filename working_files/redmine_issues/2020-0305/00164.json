@@ -1,0 +1,160 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "8e9685f6851dd4c2db0abafda5f2c60edeb45246",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: fix for #164, separate prone trace for legs/head",
+            "committed_on": "2013-01-07T17:54:30Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 905,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-01-06T13:11:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "1",
+                    "new_value": "16"
+                }
+            ]
+        },
+        {
+            "id": 907,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-01-06T15:36:43Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Weapon doesn't raise after phroning",
+                    "new_value": "Weapon doesn't raise after proning"
+                },
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "phrone -> move left/right until weapon disapears because of phroning -> stand up = no weapon available\r\n\r\n2.70rc1 is already affected",
+                    "new_value": "prone -> move left/right until weapon disapears because of proning -> stand up = no weapon available\r\n\r\n2.70rc1 is already affected"
+                }
+            ]
+        },
+        {
+            "id": 924,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-01-07T18:07:21Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "7",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 925,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-01-07T18:07:33Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 164,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 5,
+        "name": "2.71rc1"
+    },
+    "subject": "Weapon doesn't raise after proning",
+    "description": "prone -> move left/right until weapon disapears because of proning -> stand up = no weapon available\r\n\r\n2.70rc1 is already affected",
+    "start_date": "2013-01-06",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-01-06T13:10:06Z",
+    "updated_on": "2013-01-07T18:07:33Z",
+    "closed_on": "2013-01-07T18:07:21Z"
+}

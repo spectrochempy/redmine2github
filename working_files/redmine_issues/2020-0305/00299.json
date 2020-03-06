@@ -1,0 +1,257 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "13b43587777f65d24256bc87a2b2aa179eb0673c",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "server: changed the error to a print until the valinna client connection is fixed, refs #299",
+            "committed_on": "2013-04-30T16:22:18Z"
+        },
+        {
+            "revision": "e1e7a8f8d38ffbf12a809ce31a40c287c76f74ff",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "client: fix for the mp_bin issue, thanks to spyhawk, fixes #299",
+            "committed_on": "2013-09-04T13:32:54Z"
+        },
+        {
+            "revision": "36177ad364afd9f62f206f33ad5db10270d40c70",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "qcommon: let 2.60b clients connect again fixes #299",
+            "committed_on": "2013-09-05T18:11:08Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1635,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "You mean legacy mod or ET:L server binary?",
+            "created_on": "2013-04-30T14:18:11Z",
+            "details": []
+        },
+        {
+            "id": 1636,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "I changed that warning to an error after I thought I removed the dependency on mp_bin.pk3. I will fix it when I get back to ET:L development next month.",
+            "created_on": "2013-04-30T14:35:27Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1637,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Changed the error back to a message until Radegast has the time to get back to the game :)",
+            "created_on": "2013-04-30T16:26:14Z",
+            "details": []
+        },
+        {
+            "id": 1647,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "There is a bug in the way ET count the packages in the local side, so the count comparison between ET:L server and ET:L client fails. If one package is added (mp_bin.pk3, or any dummy package) the client count is correct, but this seems purely incidental.\r\n\r\nI have corrected this client count in my \"local branch\":https://github.com/Spyhawk/etlegacy/commit/58078b6e0cbb7f9b06dc7f192278b9d6c6b1ffdb , and can successfully run ET:L without needing the mp_bin.pk3 at all. However, keeping compatibility with 2.60b is a bit annoying as the client count is still buggy on the client side.\r\n\r\nOne way to bypass this could be to still require the original mp_bin.pk3 in the /etmain directory, or add a dummy pk3 shipped with the ET:L installer.",
+            "created_on": "2013-05-01T11:53:53Z",
+            "details": []
+        },
+        {
+            "id": 1648,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "> or add a dummy pk3 shipped with the ET:L installer.\r\n\r\nOn second thoughts, that would probably not work either, as the dummy pk3 will add to the count of client side pk3. Maybe the way to go is to lie to 260b clients and always return the same value?",
+            "created_on": "2013-05-01T16:47:50Z",
+            "details": []
+        },
+        {
+            "id": 1649,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "I am a little bit lost here. Let's take an example from 2.55+ binary (I do realize you hate when someone starts talking about this but that's the best example). You install 2.55 server, than copy 2.55+ binary (which is hex modified 2.6b) and all client versions can join with no probs, the server only contains pak0.pk3 but there's no problem if 2.60b client with all the packages (pak0, pak1, pak2, mp_bin) join. How can there be a problem if etlded server doesn't have mp_bin and 2.60b client *with* this package wants to join?",
+            "created_on": "2013-05-01T17:00:21Z",
+            "details": []
+        },
+        {
+            "id": 1650,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Dragonji wrote:\r\n> I am a little bit lost here. Let's take an example from 2.55+ binary (I do realize you hate when someone starts talking about this but that's the best example). You install 2.55 server, than copy 2.55+ binary (which is hex modified 2.6b) and all client versions can join with no probs, the server only contains pak0.pk3 but there's no problem if 2.60b client with all the packages (pak0, pak1, pak2, mp_bin) join. How can there be a problem if etlded server doesn't have mp_bin and 2.60b client *with* this package wants to join?\r\n\r\nAs far as I see it, pakX.pk3 files are counted separately. A 2.60b client without mp_bin.pk3 and trying to connect to a 2.55+ server might be rejected as well(?).\r\n",
+            "created_on": "2013-05-01T17:31:03Z",
+            "details": []
+        },
+        {
+            "id": 1651,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Spyhawk wrote:\r\n> A 2.60b client without mp_bin.pk3 and trying to connect to a 2.55+ server might be rejected as well(?).\r\nThe thing is it isn't.",
+            "created_on": "2013-05-01T18:15:09Z",
+            "details": []
+        },
+        {
+            "id": 1652,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Dragonji wrote:\r\n> The thing is it isn't.\r\n\r\nNo idea then. Maybe this bug happens only in ET:L because of the new path structure.",
+            "created_on": "2013-05-01T19:58:49Z",
+            "details": []
+        },
+        {
+            "id": 1903,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Applied in changeset commit:e1e7a8f8d38ffbf12a809ce31a40c287c76f74ff.",
+            "created_on": "2013-09-04T13:35:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 1904,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Doesn't work for me. ET:L client is fine, genuine not.",
+            "created_on": "2013-09-04T19:46:21Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 1905,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Applied in changeset commit:36177ad364afd9f62f206f33ad5db10270d40c70.",
+            "created_on": "2013-09-05T18:20:40Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 44,
+            "name": "Jacker"
+        }
+    ],
+    "time_entries": null,
+    "id": 299,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 6,
+        "name": "Urgent"
+    },
+    "author": {
+        "id": 110,
+        "name": "Harlekin"
+    },
+    "assigned_to": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 7,
+        "name": "2.71rc2"
+    },
+    "subject": "ET 2.60 can't connect to ET: Legacy (build from git)",
+    "description": "ET 2.60 can't connect to ET: Legacy (build from git).\r\nERROR:\r\nCouldn't load an official pak file... see attachment\r\n\r\nThe pk3 files i am using:\r\n-etmain\r\n--pak0.pk3\r\n--pak1.pk3\r\n--pak2.pk3\r\n--mp_bin.pk3\r\n-legacy\r\n--pak3_v2.70rc1.pk3\r\n--etl_bin_v2.70rc1.pk3\r\n\r\nserver: et3.hirntot.org:27999",
+    "start_date": "2013-04-30",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-04-30T10:47:50Z",
+    "updated_on": "2013-09-05T18:20:40Z",
+    "closed_on": "2013-09-05T18:20:40Z"
+}

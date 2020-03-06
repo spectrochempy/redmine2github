@@ -1,0 +1,208 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 144,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2012-06-19T08:09:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "1",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 145,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Not present on Debian.\r\n\r\n> Just tested at etpub server... don't appear to me this bug. My system is a Debian testing with ET:Legacy 2012-06-17 22:48:37 from http://download.opensuse.org/reposit...bian_6.0/i386/\r\n> -- *100zherBG*",
+            "created_on": "2012-06-20T18:09:48Z",
+            "details": []
+        },
+        {
+            "id": 386,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-10-21T15:07:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 2413,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "created_on": "2013-12-14T17:55:46Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "new_value": "Linux"
+                }
+            ]
+        },
+        {
+            "id": 3960,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2014-12-01T10:43:04Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Ubuntu 12.04: Cannot jump while running when sprint is bound to left shift",
+                    "new_value": "Cannot jump while running when sprint is bound to left shift"
+                }
+            ]
+        },
+        {
+            "id": 5083,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-08-08T18:46:35Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 5413,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Closed. (No further reports, SDL 1 issue, probably driver related and/or fixed)",
+            "created_on": "2015-11-23T19:09:23Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "7"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 5415,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-11-23T19:27:18Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "7",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 5418,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-11-23T21:48:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "2"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 62,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "Cannot jump while running when sprint is bound to left shift",
+    "description": "This curious bug seems to be Ubuntu specific as I don't see it on my Gentoo box. Jumping while running works with anything but *left shift* key. Using right shift or binding @sprint@ to another key solves the problem.\r\n\r\nWhen @in_keyboardDebug@ is enabled pressing space key (jump) while holding left shift results in left shift key up event:\r\n\r\n<pre>\r\n+ 0x19 \"w\" Q:0x77(w) U:0x77(w)\r\n+ 0x32 \"left shift\" Q:0x8a(SHIFT)\r\n  0x32 \"left shift\" Q:0x8a(SHIFT) <-- SPACE was pressed\r\n+ 0x32 \"left shift\" Q:0x8a(SHIFT)\r\n  0x32 \"left shift\" Q:0x8a(SHIFT) <-- SPACE was pressed\r\n+ 0x32 \"left shift\" Q:0x8a(SHIFT)\r\n+ 0x41 \"space\" KMOD_LSHIFT Q:0x20(SPACE) U:0x20\r\n  0x19 \"w\" KMOD_LSHIFT Q:0x77(w)\r\n</pre>\r\n\r\nTested both the \"deb package\":http://etlegacy.com/projects/etlegacy/wiki/Ubuntu_1204 and binary compiled from source on Ubuntu 12.04 (i386) both with the system SDL (1.2.14-6.4ubuntu3) and the bundled SDL.\r\n",
+    "start_date": "2012-06-19",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2012-06-19T08:08:50Z",
+    "updated_on": "2015-11-23T21:48:36Z",
+    "closed_on": "2015-11-23T19:27:18Z"
+}

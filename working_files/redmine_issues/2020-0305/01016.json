@@ -1,0 +1,91 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "e65721ffb300d5fc3c4f722cf29cddeed7bf797b",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed landmine being planted not visible to spectators, fixes #1016",
+            "committed_on": "2017-03-05T22:31:35Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 6514,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:e65721ffb300d5fc3c4f722cf29cddeed7bf797b.",
+            "created_on": "2017-03-05T23:03:43Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1016,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Landmine being planted are not visible to spectators",
+    "description": "The 3D model of landmines being planted by engi aren't visible to spectators. Enemies and teammates can see them correctly.\r\nDynamites being armed are visible to spectators.",
+    "start_date": "2017-03-04",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-03-04T22:29:04Z",
+    "updated_on": "2017-03-05T23:03:43Z",
+    "closed_on": "2017-03-05T23:03:43Z"
+}

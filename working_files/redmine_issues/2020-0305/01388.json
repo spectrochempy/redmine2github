@@ -1,0 +1,86 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 8681,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Forums are definitely closed due to heavy spam issues, but one can still read the content.\r\nUse the discord channel instead.",
+            "created_on": "2020-01-11T11:40:25Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "10"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1388,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 15,
+        "name": "muessli"
+    },
+    "category": {
+        "id": 23,
+        "name": "Website"
+    },
+    "fixed_version": {
+        "id": 10,
+        "name": "N/A"
+    },
+    "subject": "add new entry in forum",
+    "description": "I cannot add new posts in the forum;\r\nthe button for it is missing\r\n",
+    "start_date": "2020-01-10",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2020-01-10T14:07:59Z",
+    "updated_on": "2020-01-11T11:40:25Z",
+    "closed_on": "2020-01-11T11:40:25Z"
+}

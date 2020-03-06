@@ -1,0 +1,140 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "50f287760d8f9c88d509632e9bd5d7a0a664a0f4",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed seizure inducing effects on trickjump maps, refs #1210\n\nThis reverts commit f69622782232400cd116ac8894b2660a5aa6ccff.",
+            "committed_on": "2019-03-14T10:48:21Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7814,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Additional info:\r\n\r\nryven: yeah teleports are causing it\r\nryven: ir4 has enabled hyperspace effect, which was unused before, which is supposed to save a bit bandwidth, but it's apparently broken in etlegacy",
+            "created_on": "2019-02-23T21:45:37Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 7815,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "https://dev.etlegacy.com/projects/etlegacy/repository/revisions/f69622782232400cd116ac8894b2660a5aa6ccff/diff/src/cgame/cg_predict.c",
+            "created_on": "2019-02-24T10:39:35Z",
+            "details": []
+        },
+        {
+            "id": 7870,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-03-14T10:50:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "1",
+                    "new_value": "16"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 7871,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-03-14T10:50:16Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "old_value": "Linux",
+                    "new_value": ""
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1210,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 840,
+        "name": "swecide"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Trickjump maps have a seizure inducing white flash",
+    "description": "On most Trickjump maps players spawn correctly and can move around but the entire screen is filled with a white-grayish flashing layer. Using the vanilla renderer.",
+    "start_date": "2019-02-23",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-02-23T19:05:33Z",
+    "updated_on": "2019-03-14T10:50:16Z",
+    "closed_on": "2019-03-14T10:50:02Z"
+}

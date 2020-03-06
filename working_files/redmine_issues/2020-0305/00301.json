@@ -1,0 +1,136 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 1715,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-06-03T09:40:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "7",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 3705,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I cannot reproduce, is this issue still valid? Stats seem reset after map_restart.",
+            "created_on": "2014-11-13T21:54:25Z",
+            "details": []
+        },
+        {
+            "id": 3709,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Yeah. Same here, can't reproduce.\r\n\r\n-*S",
+            "created_on": "2014-11-14T17:18:44Z",
+            "details": []
+        },
+        {
+            "id": 3711,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Title is updated and more precise. Basically we don't call G_WriteClientSessionData while map_restart process.",
+            "created_on": "2014-11-14T18:13:23Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Client weapon stats aren't reset after /map_restart cmd",
+                    "new_value": "session<NUM> and sessionstats<NUM> cvars are not cleaned/reset after /map_restart"
+                }
+            ]
+        },
+        {
+            "id": 3712,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "IR4T4 wrote:\r\n> Basically we don't call G_WriteClientSessionData while map_restart process.\r\n\r\nI'm actually not sure we should do that. For example, _client->sess.sessionTeam_ or _client->sess.playerWeapon_ shouldn't be reset, right? We might want to call G_deleteStats() instead.",
+            "created_on": "2014-11-14T19:42:14Z",
+            "details": []
+        },
+        {
+            "id": 5125,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "We have to have a closer look here. I'm not sure if all these stat values should be cleaned in campaign mode f.e.",
+            "created_on": "2015-08-09T09:12:01Z",
+            "details": []
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 301,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "session<NUM> and sessionstats<NUM> cvars are not cleaned/reset after /map_restart",
+    "description": "As the title says - clients don't start with empty stats.",
+    "start_date": "2013-05-10",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-05-10T09:33:53Z",
+    "updated_on": "2015-08-09T09:12:01Z"
+}

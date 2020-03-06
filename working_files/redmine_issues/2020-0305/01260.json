@@ -1,0 +1,108 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "d9ca9544985af27342a7e6e895e36f376f4dbdba",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed cg_teamChatsOnly filters fireteam chat, fixes #1260",
+            "committed_on": "2019-04-22T13:18:26Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 8033,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-22T13:20:37Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "cg_teamChatsOnly filters fFT chat",
+                    "new_value": "cg_teamChatsOnly filters Fireteam chat"
+                }
+            ]
+        },
+        {
+            "id": 8034,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:d9ca9544985af27342a7e6e895e36f376f4dbdba.",
+            "created_on": "2019-04-22T13:20:40Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1260,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "cg_teamChatsOnly filters Fireteam chat",
+    "description": "The cg_teamChatsOnly is used to only display team chat, so public chat is filtered out.\r\nHowever, it incidentally also filters fireteam chat, which isn't expected.",
+    "start_date": "2019-04-22",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-04-22T13:18:03Z",
+    "updated_on": "2019-04-22T13:20:40Z",
+    "closed_on": "2019-04-22T13:20:40Z"
+}

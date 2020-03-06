@@ -1,0 +1,180 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "6dbde6c416a51f3c0acaa5c3029673cf0c7f7dc0",
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "comments": "general: fix engine crash on 64bit systems, refs #1351 #1211 #1089\n\nEngine was crashing on startup on 64 bit systems on Release builds.\n\nIt was happening due to SSE optimizations taking place, yielded by the\ncompiler on default settings (ETLegacy does not specify any optimization\nflags by default). Most specifically the \"movaps\" instruction was failing\nbecause it could not null several structure fields (in token_t) at once,\nbecause it could not operate properly on Z_Malloc'ed memory block, as the\ninstruction requires a 16 byte boundary alignments, where Z_Malloc only does\n4/8 byte paddings (depending on the system). The token_t alignment was 16 byte\ndue to the usage of \"long double\" type on \"floatvalue\" field, which is\nextraordinarily big, even though on the 32bit systems it still occupies\n12bytes, the struct alignment stays within 4 bytes, because the type is\nnon-atomic. The token_t \"floatvalue\" and \"intvalue\" now matching the\n\"pc_token_t\" field types, as this makes more sense, since \"pc_token_t\" is the\nstructure used to receive \"token_t\" values on the mod side.\n\n* fixed botlib token_t alignment, was breaking sse optimization (causing\nthe crash)\n* shut some botlib warnings",
+            "committed_on": "2019-10-24T13:17:50Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7816,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "This is issue is system dependant and was one of the reasons why our last release was delayed. See #1089\r\n\r\nWhich distribution is this? ",
+            "created_on": "2019-02-25T17:05:49Z",
+            "details": []
+        },
+        {
+            "id": 7817,
+            "user": {
+                "id": 372,
+                "name": "Ododo"
+            },
+            "notes": "IR4T4 wrote:\r\n> This is issue is system dependant and was one of the reasons why our last release was delayed. See #1089\r\n> \r\n> Which distribution is this?\r\n\r\nThis was on ArchLinux\r\n\r\nLinux 4.19.15-rt12-1-rt #1 SMP PREEMPT RT Mon Feb 18 15:51:39 CET 2019 x86_64 GNU/Linux\r\n\r\n\r\nEDIT: gcc --version\r\ngcc (GCC) 8.2.1 2018112",
+            "created_on": "2019-02-25T17:38:13Z",
+            "details": []
+        },
+        {
+            "id": 7818,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Arch Linux is affected by the issue (even when set up as a strictly minimal system). So far, only _some_ systems work when etl is build in a container. See #1089.",
+            "created_on": "2019-02-25T18:39:41Z",
+            "details": []
+        },
+        {
+            "id": 7823,
+            "user": {
+                "id": 372,
+                "name": "Ododo"
+            },
+            "notes": "Guess for that precise segault (not related to other 64bit build issue):\r\n\r\nthe asm instruction that segfault is movaps\r\nmovaps  usually segfault  on  alignment issues\r\nOccurs after GetMemory that uses Z_TagMalloc which is architecture dependant.\r\n\r\nMaybe something has changed in common.c ?\r\n\r\n",
+            "created_on": "2019-02-28T16:31:52Z",
+            "details": []
+        },
+        {
+            "id": 7830,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-03-01T14:14:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8061,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-26T22:35:11Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "22",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 8503,
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "notes": "Hey Ododo, could you please recheck latest master, my commit should have fixed the issue, would be great to hear any confirmations from you. \r\n\r\n\r\n",
+            "created_on": "2019-10-24T17:11:44Z",
+            "details": []
+        },
+        {
+            "id": 8544,
+            "user": {
+                "id": 372,
+                "name": "Ododo"
+            },
+            "notes": "Hello, it works for me so look like it's fixed :)\r\nGood work !",
+            "created_on": "2019-11-19T00:06:11Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1211,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 372,
+        "name": "Ododo"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Segfault on client linux x64 at startup (master branch)",
+    "description": "<pre><code>\r\nStarting program: /home/olivier/etlegacy/etl\r\n[Thread debugging using libthread_db enabled]\r\nUsing host libthread_db library \"/usr/lib/libthread_db.so.1\".\r\nET Legacy v2.76-139-g1abf64a5 linux-x86_64 Feb 25 2019\r\nZone megs: 64\r\nInfo: fs_game now defaults to 'legacy' mod instead of 'etmain'\r\n----- FS_Startup -----\r\nCurrent search path:\r\n    /home/olivier/.etlegacy/legacy\r\n    ./legacy\r\n    ./legacy/pak3_v2.76_dirty.pk3 (1122 files)\r\n    ./legacy/etl_bin_v2.76_dirty.pk3 (2 files)\r\n    /home/olivier/.etlegacy/etmain\r\n    ./etmain\r\n    ./etmain/pak2.pk3 (22 files)\r\n    ./etmain/pak1.pk3 (10 files)\r\n    ./etmain/pak0.pk3 (3725 files)\r\n\r\n----------------------\r\n4881 files in pk3 files\r\nSQLite3 libversion 3.26.0 - database URI 'etl.db' - in file\r\n... loading existing database '/home/olivier/.etlegacy/etl.db'\r\n... database file '/home/olivier/.etlegacy/etl.db' loaded\r\nSQLite3 ETL: DB init #2/home/olivier/.etlegacy/etl.db in [0] ms - autocommit 1\r\nSQLite3 ETL: DB schema version #2 is up to date!\r\nWarning: etl_pakmeta.txt was not found.\r\nexecing default.cfg\r\ncouldn't exec autoexec.cfg\r\nHunk_Clear: reset the hunk ok\r\nNot logging server attacks to disk.\r\n----- Client Initialization -----\r\n----- Initializing Renderer ----\r\nTrying to load \"librenderer_opengl1_x86_64.so\" from \"/home/olivier/etlegacy\"...\r\n-------------------------------\r\nETKEY found.\r\nAvailable client translations: Bulgarian Czech German Greek English Esperanto Spanish Finnish French Hungarian Italian Korean Dutch Norwegian Polish Portuguese Romanian Russian Slovak Slovenian Serbian Swedish Turkish\r\nAvailable mod translations: Bulgarian Czech German Greek English Esperanto Spanish Finnish French Hungarian Italian Korean Dutch Norwegian Polish Portuguese Romanian Russian Slovak Slovenian Serbian Swedish Turkish\r\nLanguage set to English\r\n----- Client Initialization Complete -----\r\n----- R_Init -----\r\nSDL build version 2.0.9 - link version 2.0.9.\r\nSDL initialized driver \"x11\"\r\nInitializing OpenGL display\r\nEstimated display aspect: 1.781\r\n...setting mode -2: 1368x768\r\nUsing 24 color bits, 24 depth, 0 stencil display.\r\nAvailable modes [22]: '684x384 1368x768 432x243 480x270 512x288 640x360 800x450 864x486 960x540 1024x576 1280x720 1600x900 640x400 1280x800 700x450 1400x900 320x240 400x300 512x384 640x480 800x600 1024x768'\r\nUsing GLEW 2.1.0\r\nGL_VENDOR: NVIDIA Corporation\r\nGL_RENDERER: GeForce 610M/PCIe/SSE2\r\nGL_VERSION: 4.6.0 NVIDIA 390.87\r\nUsing vanilla renderer\r\nInitializing OpenGL extensions\r\n...found OpenGL extension - GL_EXT_texture_compression_s3tc\r\n...found OpenGL extension - GL_EXT_texture_env_add\r\n...found OpenGL extension - GL_ARB_multitexture\r\nGL_VENDOR: NVIDIA Corporation\r\nGL_RENDERER: GeForce 610M/PCIe/SSE2\r\nGL_VERSION: 4.6.0 NVIDIA 390.87\r\nGL_MAX_TEXTURE_SIZE: 16384\r\nGL_MAX_ACTIVE_TEXTURES_ARB: 4\r\nPIXELFORMAT: color(24-bits) Z(24-bit) stencil(0-bits)\r\nMODE: -2, SCREEN: 1368 x 768 fullscreen (ratio 1.7812) Hz:N/A\r\nGAMMA: hardware w/ 0 overbright bits\r\nrendering primitives: single glDrawElements\r\ntexturemode: GL_LINEAR_MIPMAP_NEAREST\r\npicmip: 1\r\ntexture bits: 0\r\nmultitexture: enabled\r\ncompiled vertex arrays: enabled\r\ntexenv add: enabled\r\ncompressed textures: enabled\r\nInitializing Shaders\r\n----- finished R_Init -----\r\n------ Initializing Sound (1)------\r\nSDL_Init( SDL_INIT_AUDIO )... [New Thread 0x7fffd380d700 (LWP 22078)]\r\nOK\r\nSDL audio driver is \"pulseaudio\".\r\n[New Thread 0x7fffd37cc700 (LWP 22079)]\r\nSDL_AudioSpec:\r\n  Format:   AUDIO_S16LSB\r\n  Freq:     44100\r\n  Samples:  1024\r\n  Channels: 2\r\n  Silence:  0\r\n  Size:     4096\r\nStarting SDL audio callback...\r\nSDL audio initialized.\r\n----- Sound Info -----\r\nsound system is muted\r\n    2 channels\r\n32768 samples\r\n   16 samplebits\r\n    1 submission_chunk\r\n44100 speed\r\n0x5555583dd500 dma buffer\r\nNo background file.\r\n----------------------\r\nSound initialization successfully done\r\ns_backend set to SDL2\r\n--------------------------------\r\nSound memory manager started\r\nSys_LoadGameDll -> FS_CL_ExtractFromPakFile(/home/olivier/.etlegacy, legacy, ui.mp.x86_64.so)\r\nSys_LoadDll(/home/olivier/.etlegacy/legacy/ui.mp.x86_64.so)... succeeded\r\nSys_LoadDll(legacy/ui) found vmMain function at 0x7fffd2bd0b30\r\nInitializing Legacy ui v2.76-139-g1abf64a5\r\n150 UI cvars in use.\r\n\r\nThread 1 \"etl\" received signal SIGSEGV, Segmentation fault\r\n\r\n(gdb) bt\r\n#0  0x00005555555d6665 in PC_Directive_define.part.7 ()\r\n#1  0x00005555555d6da1 in PC_DefineFromString ()\r\n#2  0x00005555555d6eb9 in PC_AddGlobalDefine ()\r\n#3  0x00005555555fc189 in CL_UISystemCalls ()\r\n#4  0x00005555555cec43 in VM_DllSyscall ()\r\n#5  0x00007fffd2bea4a4 in ?? () from /home/olivier/.etlegacy/legacy/ui.mp.x86_64.so\r\n#6  0x00007fffd2bce494 in ?? () from /home/olivier/.etlegacy/legacy/ui.mp.x86_64.so\r\n#7  0x00007fffd2bd056a in ?? () from /home/olivier/.etlegacy/legacy/ui.mp.x86_64.so\r\n#8  0x00007fffd2bd0bc9 in vmMain () from /home/olivier/.etlegacy/legacy/ui.mp.x86_64.so\r\n#9  0x00005555555cfb6b in VM_CallFunc ()\r\n#10 0x00005555555a5f39 in Com_Init ()\r\n#11 0x0000555555591de6 in main ()\r\n\r\n</code></pre>",
+    "start_date": "2019-02-25",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": "64-bit"
+        }
+    ],
+    "created_on": "2019-02-25T01:50:55Z",
+    "updated_on": "2019-11-19T00:06:10Z",
+    "closed_on": "2019-11-19T00:06:10Z"
+}

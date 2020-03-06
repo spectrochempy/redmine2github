@@ -1,0 +1,194 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "8f8294386646c9fb7e9ff0b3d5fc910aa07677f8",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: g_moverScale cvar implementation of etpub - refs #293",
+            "committed_on": "2013-04-26T06:43:55Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1565,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-04-26T06:24:15Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "cg_moverscale",
+                    "new_value": "Add g_moverscale"
+                },
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "cg_moverscale like b_moverscale to manipulate tank/truck moving speed. Used by league configs.",
+                    "new_value": "g_moverscale like b_moverscale to manipulate tank/truck moving speed. Used by league configs."
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1566,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-04-26T06:45:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "3",
+                    "new_value": "110"
+                }
+            ]
+        },
+        {
+            "id": 1567,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-04-26T06:45:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 1568,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-04-26T06:45:35Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "5",
+                    "new_value": "17"
+                }
+            ]
+        },
+        {
+            "id": 1581,
+            "user": {
+                "id": 110,
+                "name": "Harlekin"
+            },
+            "notes": "",
+            "created_on": "2013-04-26T17:35:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "110",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 110,
+            "name": "Harlekin"
+        }
+    ],
+    "time_entries": null,
+    "id": 293,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 110,
+        "name": "Harlekin"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 7,
+        "name": "2.71rc2"
+    },
+    "subject": "Add g_moverscale",
+    "description": "g_moverscale like b_moverscale to manipulate tank/truck moving speed. Used by league configs.",
+    "start_date": "2013-04-25",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-04-25T21:29:47Z",
+    "updated_on": "2013-04-26T17:35:20Z",
+    "closed_on": "2013-04-26T17:35:20Z"
+}

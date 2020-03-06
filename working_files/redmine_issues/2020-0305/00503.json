@@ -1,0 +1,260 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 120,
+            "issue_id": 198,
+            "issue_to_id": 503,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 283,
+            "issue_id": 428,
+            "issue_to_id": 503,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 411,
+            "issue_id": 1174,
+            "issue_to_id": 503,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 467,
+            "issue_id": 1208,
+            "issue_to_id": 503,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "a711af4b4e488af467212dd660c2e96e7c5ce1ca",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: hitbox adjustments for proning & dead players",
+            "committed_on": "2014-02-07T18:18:03Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2945,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-02-01T23:56:20Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "198"
+                }
+            ]
+        },
+        {
+            "id": 3083,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-02-25T15:45:51Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "11",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 3293,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-07-10T21:57:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Fix dead player hitbox direction",
+                    "new_value": "Fix dead player hitbox direction and bb height"
+                },
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Current hitbox:\r\nhttp://bani.anime.net/etpro/corpsebb-old.jpg\r\n\r\nBetter:\r\nhttp://bani.anime.net/etpro/corpsebb-rtcw.jpg",
+                    "new_value": "Current hitbox:\r\nhttp://bani.anime.net/etpro/corpsebb-old.jpg\r\n\r\nBetter:\r\nhttp://bani.anime.net/etpro/corpsebb-rtcw.jpg\r\n\r\n{FIXME}\r\nThe bb height is also wrong. \r\nReproduce: throw a nade on dead player."
+                }
+            ]
+        },
+        {
+            "id": 4208,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Hitbox drection is adjusted (in 2.71). Nades still fly over hitboxes.",
+            "created_on": "2014-12-21T22:32:22Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "16"
+                }
+            ]
+        },
+        {
+            "id": 4311,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-01-07T13:59:14Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "16",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 5857,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-03-27T00:33:57Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "428"
+                }
+            ]
+        },
+        {
+            "id": 7963,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2019-04-15T12:36:01Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1174"
+                }
+            ]
+        },
+        {
+            "id": 8722,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2020-02-11T12:01:22Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8724,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2020-02-11T12:02:30Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1208"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 140,
+            "name": "Spyhawk"
+        },
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 503,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Fix dead player hitbox direction and bb height",
+    "description": "Current hitbox:\r\nhttp://bani.anime.net/etpro/corpsebb-old.jpg\r\n\r\nBetter:\r\nhttp://bani.anime.net/etpro/corpsebb-rtcw.jpg\r\n\r\n{FIXME}\r\nThe bb height is also wrong. \r\nReproduce: throw a nade on dead player.",
+    "start_date": "2014-02-01",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-02-01T22:28:26Z",
+    "updated_on": "2020-02-11T12:01:22Z"
+}

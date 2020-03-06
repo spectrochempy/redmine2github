@@ -1,0 +1,172 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 514,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-11-13T06:49:48Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 516,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "There is no widescreen support at the moment :P\r\n\r\nCustom resolutions are displayed in 4:3 ratio.",
+            "created_on": "2012-11-13T15:44:13Z",
+            "details": []
+        },
+        {
+            "id": 522,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-11-13T23:13:14Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "3",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 535,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-11-15T19:27:18Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "1",
+                    "new_value": "16"
+                }
+            ]
+        },
+        {
+            "id": 587,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "fixed in commit:c7de820e9d1078ad46191fd65c359ae161fd45f2",
+            "created_on": "2012-11-17T20:54:38Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 655,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-11-26T19:57:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 968,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-01-14T18:03:34Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 117,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 9,
+        "name": "Mateos"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 5,
+        "name": "2.71rc1"
+    },
+    "subject": "Widescreen (better) support",
+    "description": "Good evening,\r\n\r\nWell, the current build includes custom widescreen modes such as 1360x768 (Old 16:9), but it seems more like a stretched 1024x768 (4:3) than a real coded widescreen display. Why, which elements make me say this?\r\n\r\nAlmost the whole screen is stretched, only the compass directions are still a perfect circle, while the background texture is stretched; As well, you should be able to see \"more the gun\", I mean it seems cropped in the middle.\r\n\r\nSo, it behaves like in original ET when you do r_mode \"-1\" and you define a custom width and height through the 2 related cvars :/\r\n\r\nNo hurt, just so it is perfect and can fit most of the screens, because there's less and less 4:3 ones.\r\n\r\nThanks again for all your work, the changelog is very impressive. I wish I could help, but for now I just begin my computing studies ^^' So only I can test and report.",
+    "start_date": "2012-11-12",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-11-12T20:00:45Z",
+    "updated_on": "2013-01-14T18:03:34Z",
+    "closed_on": "2012-11-17T20:54:38Z"
+}

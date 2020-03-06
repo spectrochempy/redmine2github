@@ -1,0 +1,185 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 5310,
+            "user": {
+                "id": 513,
+                "name": "gh3"
+            },
+            "notes": "Using latest SDL and recompiling seems to fix the crash issue",
+            "created_on": "2015-10-08T22:56:11Z",
+            "details": []
+        },
+        {
+            "id": 5311,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-10-09T08:26:37Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "8"
+                },
+                {
+                    "property": "cf",
+                    "name": "2",
+                    "old_value": "64-bit",
+                    "new_value": "N/A"
+                }
+            ]
+        },
+        {
+            "id": 5315,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "gh3 wrote:\r\n> Using latest SDL and recompiling seems to fix the crash issue\r\nWhat is your latest version?\r\n",
+            "created_on": "2015-10-11T08:32:52Z",
+            "details": []
+        },
+        {
+            "id": 5337,
+            "user": {
+                "id": 513,
+                "name": "gh3"
+            },
+            "notes": "IR4T4 wrote:\r\n> gh3 wrote:\r\n> > Using latest SDL and recompiling seems to fix the crash issue\r\n> What is your latest version?\r\n\r\n2.0.3",
+            "created_on": "2015-10-17T15:07:24Z",
+            "details": []
+        },
+        {
+            "id": 5338,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Releases are built with SDL 2.03.",
+            "created_on": "2015-10-17T16:30:14Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 5339,
+            "user": {
+                "id": 513,
+                "name": "gh3"
+            },
+            "notes": "IR4T4 wrote:\r\n> Releases are built with SDL 2.03.\r\n\r\ndunno is the unique thing I changed in the libs auto downloaded by the script and it managed to work fine now.\r\n\r\nthe other lib I have updated with latest version is curl with 7.45\r\n\r\nthen I compiled using 10.11 mac using latest stable xcode-tools",
+            "created_on": "2015-10-18T15:58:23Z",
+            "details": []
+        },
+        {
+            "id": 5340,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "OK, we should implement #800 for the next release but I don't think curl is responsible for random crashes. There is no ingame file transfer/download @ \"Fullmonty ate his own rifle grenade. \" ... SDL2 2.03 fixes a lot of issues and is latest stable.",
+            "created_on": "2015-10-19T15:33:15Z",
+            "details": []
+        },
+        {
+            "id": 5342,
+            "user": {
+                "id": 513,
+                "name": "gh3"
+            },
+            "notes": "IR4T4 wrote:\r\n> OK, we should implement #800 for the next release but I don't think curl is responsible for random crashes. There is no ingame file transfer/download @ \"Fullmonty ate his own rifle grenade. \" ... SDL2 2.03 fixes a lot of issues and is latest stable.\r\n\r\nDunno, I tried first compiling with easy script after git clone and testing the game and it always crashed.\r\nThen I upgraded that two libs, recompiled without downloading the app and setting debug and it started working fine.\r\n\r\nIf I have a little time during weekend I'll give it a try again and keep you posted. ",
+            "created_on": "2015-10-20T20:28:15Z",
+            "details": []
+        },
+        {
+            "id": 5432,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-11-23T21:52:40Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "2"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 883,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 6,
+        "name": "Urgent"
+    },
+    "author": {
+        "id": 513,
+        "name": "gh3"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "OSX 10.11 app crashes ",
+    "description": "I noticed that game crashes randomly after a little time, I noticed it happens with legacy or silent mod looking at the console log this is the output prompted:\r\n\r\n<pre><code class=\"cmake\">Fullmonty ate his own rifle grenade.\r\n----- CL_Shutdown -----\r\n----- FS_Startup -----\r\nCurrent search path:\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/silent\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/silent/\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f.pk3 (19 files)\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/silent/~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}.pk3 (5 files)\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/silent/~~~~silent~rc12.pk3 (234 files)\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/silent/~fearless_ssp_b1.pk3 (38 files)\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/silent/zz_silent82-0.6c2.pk3 (8 files)\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/silent/zzz_DRI_vsays_02.pk3 (176 files)\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/silent/zzz_DRI_sounds_02.pk3 (139 files)\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/silent/zzz_DRI_silent_02.pk3 (1    /Users/matteocrippa/Library/Application Support/etlegacy/silent/zB2-20150315.pk3 (321 files)\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/silent/XBO-DRI.pk3 (22 files)\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/silent/silent-0.8.2.pk3 (528 files)\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/silent/rays_chicken_grenades.pk3 (21 files)\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/silent/raybans_pumpkin_head_patch.pk3 (8 files)\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/silent/raybans_pumpkin_head_glow.pk3 (56 files)\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/silent/mml_minastirith_fp3_timefix.pk3 (11 files)\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/silent/B1Posters1.pk3 (24 files)\r\n    /Applications/ET Legacy/silent\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/etmain\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/etmain/\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f.pk3 (42 files)\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/etmain/~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.pk3 (206 files)\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/etmain/teuthonia_final.pk3 (144 files)\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/etmain/sw_oasis_b3.pk3 (45 files)\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/etmain/supply.pk3 (44 files)\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/etmain/school.pk3 (115 files)\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/etmain/resurrection.pk3 (305 files)\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/etmain/parisbastille_b3.pk3 (116 files)\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/etmain/over_the_top.pk3 (144 files)\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/etmain/goldrush-ga.pk3 (36 files)\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/etmain/fueldump_revenge.pk3 (125 files)\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/etmain/et_beach.pk3 (177 files)\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/etmain/de_dusted2B1.pk3 (259 files)\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/etmain/cathedral_final.pk3 (82 files)\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/etmain/baserace_desert_extra.pk3 (9 files)\r\n    /Users/matteocrippa/Library/Application Support/etlegacy/etmain/baserace_desert.pk3 (154 files)\r\n    /Applications/ET Legacy/etmain\r\n    /Applications/ET Legacy/etmain/pak2.pk3 (22 files)\r\n    /Applications/ET Legacy/etmain/pak1.pk3 (10 files)\r\n    /Applications/ET Legacy/etmain/pak0.pk3 (3725 files)\r\n    /Applications/ET Legacy/etmain/mp_bin.pk3 (6 files)\r\n\r\n----------------------\r\n7496 files in pk3 files\r\nSys_LoadGameDll -> FS_CL_ExtractFromPakFile(/Users/matteocrippa/Library/Application Support/etlegacy, silent, ui_mac)\r\nSys_LoadDll -> Sys_TryLibraryLoad(/Users/matteocrippa/Library/Application Support/etlegacy, silent, ui_mac)...\r\n-- Trying zipped .bundle... succeeded\r\nSys_LoadDll(ui) found vmMain function at 0x223c7740\r\nR_LoadScalableFont: Unable to find any supported font files by the name of ariblk\r\nR_LoadScalableFont: Unable to find any supported font files by the name of ariblk\r\nR_LoadScalableFont: Unable to find any supported font files by the name of ariblk\r\nR_LoadScalableFont: Unable to find any supported font files by the name of courbd\r\nR_LoadScalableFont: Unable to find any supported font files by the name of courbd\r\nR_LoadScalableFont: Unable to find any supported font files by the name of courbd\r\nTotal favourite servers restored: 0\r\nClosing SDL audio device...\r\nSDL audio device shut down.\r\nRE_Shutdown( 1 )\r\nSDL input devices shut down.\r\n-----------------------\r\nPID file removed.</code></pre>\r\n\r\nIs there any chance to increase log verbosity?\r\nI compiled the git master version of the app but I noticed the same issue.\r\nI tried to update SDL and CURL libs with latest version, but the error still occurs. I'm highlighting this because it seems pretty related to something related to gfx fx or sound.",
+    "start_date": "2015-10-08",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "OS X"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": "N/A"
+        }
+    ],
+    "created_on": "2015-10-08T18:05:59Z",
+    "updated_on": "2015-11-23T21:52:40Z",
+    "closed_on": "2015-10-17T16:30:14Z"
+}

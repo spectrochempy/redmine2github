@@ -1,0 +1,132 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 3365,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Ok I just noticed that it's not only setting changes that make this problem occur. Even mod change or profile changes make it happen.\r\n\r\n-*S",
+            "created_on": "2014-08-16T20:57:09Z",
+            "details": []
+        },
+        {
+            "id": 3366,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2014-08-16T21:23:26Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "12"
+                }
+            ]
+        },
+        {
+            "id": 3469,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-09-19T13:35:30Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "old_value": "",
+                    "new_value": "Windows"
+                }
+            ]
+        },
+        {
+            "id": 3518,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "This has been fixed, same as the problem in #559.\r\n\r\n-*S",
+            "created_on": "2014-10-08T22:17:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                },
+                {
+                    "property": "attr",
+                    "name": "parent_id",
+                    "new_value": "559"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 560,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "parent": {
+        "id": 559
+    },
+    "subject": "Settings that need restart won't get you back to the game",
+    "description": "So here's the thing, it happens with every setting that requires \"vid_restart\" or even \"snd_restart\". For example, I change my resolution press 'Apply' it changes it but won't set me back to the game. Note that the game is still running. Normally when you change these kind of settings it will just get you back to the settings menu. This time it just puts you to your desktop.\r\n\r\n-*S",
+    "start_date": "2014-08-15",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Windows"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-08-15T01:40:30Z",
+    "updated_on": "2014-10-08T22:17:05Z",
+    "closed_on": "2014-10-08T22:17:05Z"
+}

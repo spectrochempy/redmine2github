@@ -1,0 +1,73 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 8540,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "",
+            "created_on": "2019-11-15T23:40:34Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1361,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 13,
+        "name": "RaFaL"
+    },
+    "assigned_to": {
+        "id": 13,
+        "name": "RaFaL"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "subject": "Port of ET Legacy to Android compatible Devices",
+    "description": "Most of the work has been done  and Game is running at Android Phones.\r\nCurrent Supported arch/API Devices:\r\n\r\nbq. armeabi-v7a - 16 API and up\r\narm64-v8a - 21 to 26 API\r\n\r\nAt this moment will not write System Requirements.\r\n\r\nThere are few bugs remaining  which makes game crashable like cg_shadows 1, but game is mostly playabble and enjoyable as Touch Contoll game gets.",
+    "start_date": "2019-11-15",
+    "done_ratio": 70,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-11-15T22:37:26Z",
+    "updated_on": "2019-11-15T23:40:34Z"
+}

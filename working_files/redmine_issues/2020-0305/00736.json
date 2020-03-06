@@ -1,0 +1,285 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "5885eadf61d72ed7cafc853b84f4c0aabf5eb18b",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "added a misc flag to disable knockback on team members, fixes #736",
+            "committed_on": "2014-12-18T10:25:57Z"
+        },
+        {
+            "revision": "95e1b47a78382c4d9216bfbbf663be3090ba0a79",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "Revert \"added a misc flag to disable knockback on team members, fixes #736\"\n\nThis reverts commit 5885eadf61d72ed7cafc853b84f4c0aabf5eb18b.",
+            "committed_on": "2014-12-18T23:35:34Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 4143,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Added this now, but please no more \"public only\" modifications like this. These things really hurt the credibility of the mod for the clan scene.",
+            "created_on": "2014-12-18T10:31:21Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 4144,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Works.\r\n\r\n-*S",
+            "created_on": "2014-12-18T10:38:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 4169,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Following our discussion on IRC, I'm reverting this commit.\r\nI'm not against improving no-FF features, but using a cvar just for that is a bit... too much? Maybe we should implement it by default or improve g_shove instead, or done in Lua(?).\r\n\r\nAnyway, reverted for now and delayed to the next version. This is also a feature request.",
+            "created_on": "2014-12-19T00:42:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "tracker_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "16",
+                    "new_value": "21"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "6",
+                    "new_value": "8"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "0"
+                }
+            ]
+        },
+        {
+            "id": 4170,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:95e1b47a78382c4d9216bfbbf663be3090ba0a79.",
+            "created_on": "2014-12-19T01:05:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 4171,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-12-19T07:47:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 4175,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Spyhawk wrote:\r\n> I'm not against improving no-FF features, but using a cvar just for that is a bit... too much? Maybe we should implement it by default or improve g_shove instead, or done in Lua(?)\r\nThis should be cvar controlled IMO.",
+            "created_on": "2014-12-19T13:13:20Z",
+            "details": []
+        },
+        {
+            "id": 4177,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Of course explosives and bullets can move your teammate. I don't see a problem here. Or is this about friendly fire off?\r\n\r\n",
+            "created_on": "2014-12-19T14:25:12Z",
+            "details": []
+        },
+        {
+            "id": 4183,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Yeah FF off. When I made this ticket, I had my FF off and I could fly all over the place when nades under my feet. Could be easily abused. That's why I thought about adding a possible CVAR for it to control it. But seems like so many are against the idea.\r\n\r\n-*S",
+            "created_on": "2014-12-19T18:03:16Z",
+            "details": []
+        },
+        {
+            "id": 5943,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-08-29T16:25:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 7530,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-01-06T08:42:26Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8048,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-26T16:18:15Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "22",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 736,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Explosives and bullets can move your teammate",
+    "description": "Alright. Title and then this attached demo will also show the current problem. Probably add a CVAR for it?\r\nTried also g_shove \"0\" without succession.\r\n\r\n-*S",
+    "start_date": "2014-12-18",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-12-18T09:50:04Z",
+    "updated_on": "2019-04-26T16:18:15Z",
+    "closed_on": "2014-12-19T01:05:36Z"
+}

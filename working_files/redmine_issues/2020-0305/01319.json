@@ -1,0 +1,215 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "990dc4744dd3333d795d1f3ef6f7ef9145e37acb",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "mod: fix compatibility with older demo for gamesound index, refs #1319",
+            "committed_on": "2019-07-12T14:59:34Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 8349,
+            "user": {
+                "id": 697,
+                "name": "artium"
+            },
+            "notes": "Could be related to  #1315",
+            "created_on": "2019-07-04T23:44:51Z",
+            "details": []
+        },
+        {
+            "id": 8352,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-07-05T06:34:12Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1320"
+                }
+            ]
+        },
+        {
+            "id": 8354,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "On which version were these demo recorded?",
+            "created_on": "2019-07-05T06:34:42Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "21"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8357,
+            "user": {
+                "id": 697,
+                "name": "artium"
+            },
+            "notes": "Spyhawk wrote:\r\n> On which version were these demo recorded?\r\n\r\nI can't remember. One demo was recorded last month, the other in February.\r\n\r\nI play on teammuppet server, so versions change all the time. \r\n\r\nThus the suggestion to store the version in the demo and display it in the menu.",
+            "created_on": "2019-07-05T11:31:39Z",
+            "details": []
+        },
+        {
+            "id": 8358,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Thanks. This is due to a sound index change in a recent snapshot versions. We'll make sure these are the same as 2.76 version in the next test release to ensure backward compatibility. Your most recent demo might become permanently buggy (but official 2.77 will read 2.76 demo just fine).",
+            "created_on": "2019-07-05T11:56:40Z",
+            "details": []
+        },
+        {
+            "id": 8368,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-07-08T10:36:25Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "old_value": "1320"
+                }
+            ]
+        },
+        {
+            "id": 8371,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-07-08T10:36:39Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "duplicated",
+                    "new_value": "1320"
+                }
+            ]
+        },
+        {
+            "id": 8380,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "",
+            "created_on": "2019-07-12T15:00:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "251"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 8382,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "",
+            "created_on": "2019-07-12T15:01:02Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "duplicated",
+                    "old_value": "1320"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1319,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 697,
+        "name": "artium"
+    },
+    "assigned_to": {
+        "id": 251,
+        "name": "Aranud"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Some sound are wrong on replayes",
+    "description": "I watched some old replays that were probably recorded not by the current test version I use (g6e02b0e).\r\n\r\nIt seems that there are some sound effects that are wrong. I attached two demos where you can hear referee whistle, vote bell, construction and wall breaking sounds when these sounds should not have been played.\r\n\r\nIf this is version incompatibility issue, I think a reasonable mitigation could be to add the version of the recording engine to the demo files and display it in the menu.",
+    "start_date": "2019-07-05",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-07-04T23:42:11Z",
+    "updated_on": "2019-07-12T15:00:30Z",
+    "closed_on": "2019-07-12T15:00:30Z"
+}

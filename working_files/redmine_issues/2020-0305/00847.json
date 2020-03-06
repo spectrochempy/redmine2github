@@ -1,0 +1,105 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 4984,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-07-22T18:57:47Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 5014,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "I am not really sure how this applies to ET:L since you do not need to use the port if the port is the standard one, but in the case the it isn't usually means that there are multiple server running in the target computer in which case you need to define the port either way..",
+            "created_on": "2015-07-24T09:21:05Z",
+            "details": []
+        },
+        {
+            "id": 5343,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-10-21T18:46:30Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "4"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 395,
+            "name": "XelA"
+        }
+    ],
+    "time_entries": null,
+    "id": 847,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 395,
+        "name": "XelA"
+    },
+    "category": {
+        "id": 5,
+        "name": "Server"
+    },
+    "fixed_version": {
+        "id": 4,
+        "name": "ALL"
+    },
+    "subject": "SRV records support",
+    "description": "An SRV (Service) record points one domain to another domain name using a specific destination port.  It can also designate some hosts as primary servers  and others as backups (MX like). \r\n\r\nIt's already implemented in several services/game: https://en.wikipedia.org/wiki/SRV_record#Usage\r\n\r\nWith SRV records, no need to specify the port anymore when connecting to a \"non-default port\" server with a domain name.",
+    "start_date": "2015-07-22",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-07-22T18:22:04Z",
+    "updated_on": "2015-10-21T18:46:30Z"
+}

@@ -1,0 +1,105 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "c28f5390384db502dcdc2a7fc805d481ea3ed1ea",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "qagame: k43 and Garand clips now match, refs #231",
+            "committed_on": "2013-03-27T21:24:34Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1314,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-03-13T08:58:18Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1434,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Just committed the change.",
+            "created_on": "2013-03-27T21:26:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 231,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 110,
+        "name": "Harlekin"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 7,
+        "name": "2.71rc2"
+    },
+    "subject": "Garand & K43 ammo clip",
+    "description": "Would be nice to have K43 & Garand having 10 bullets per clip",
+    "start_date": "2013-03-05",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-03-05T13:44:40Z",
+    "updated_on": "2013-03-27T21:26:08Z",
+    "closed_on": "2013-03-27T21:26:08Z"
+}

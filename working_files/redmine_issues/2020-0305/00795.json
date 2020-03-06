@@ -1,0 +1,129 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 4492,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2015-01-23T14:40:50Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "537",
+                    "new_value": "demo0022.dm_84"
+                }
+            ]
+        },
+        {
+            "id": 4493,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "I haven't tried other combinations. This might happen also with airstrike canister and smokegrenade and satchel. I haven't tried out but I will when I get back home. This might not only be occured with landmines. But I'll let you know later.\r\n\r\n-*S",
+            "created_on": "2015-01-23T15:09:25Z",
+            "details": []
+        },
+        {
+            "id": 7038,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "",
+            "created_on": "2018-01-25T15:28:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 7049,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-01-25T18:40:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 795,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Switch weapon manually after throwing a landmine is bugged",
+    "description": "When you throw a landmine and swap to another weapon, these things will happen:\r\n\r\n1. Thompson/MP40 or M1 Garand/K43 as primary\r\n- When switching to pistol after throwing a landmine will cause that Thompson/MP40 will be shown during the switch to pistol. This will also happen with any other weapon except Thompson/MP40\r\n\r\n2. Riflegrenade as \"primary\"\r\n- When switching trying to switch to any weapon after throwing a landmine will switch to your riflegrenade every time\r\n\r\n-*S",
+    "start_date": "2015-01-22",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-01-22T15:05:56Z",
+    "updated_on": "2018-01-25T18:40:24Z",
+    "closed_on": "2018-01-25T15:28:58Z"
+}

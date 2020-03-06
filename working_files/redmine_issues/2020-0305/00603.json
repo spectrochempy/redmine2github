@@ -1,0 +1,268 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "254b19bc50ba3d9357ca762e1c2a76f7299e3d9c",
+            "user": {
+                "id": 424,
+                "name": "Zecklar"
+            },
+            "comments": "game: Added weapon_smokeBombExplode call to G_ExplodeMissile, fixes #603",
+            "committed_on": "2016-02-08T23:01:03Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3640,
+            "user": {
+                "id": 364,
+                "name": "winrid"
+            },
+            "notes": "",
+            "created_on": "2014-11-09T01:21:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "364"
+                }
+            ]
+        },
+        {
+            "id": 3641,
+            "user": {
+                "id": 364,
+                "name": "winrid"
+            },
+            "notes": "Saukko wrote:\r\n> So the title explains almost everything but here's how to reproduce the bug:\r\n> \r\n> 1. Take covert ops and equip smokegrenade\r\n> 2. Throw the smokegrenade and instantly \\kill yourself\r\n> 3. Smokegrenade won't detonate\r\n> \r\n> Doing the same with normal grenade will make it explode but with smokegrenade there's this bug that it won't detonate.\r\n> \r\n> -*S\r\n\r\nI can't replicate this... Is it still broken for you?",
+            "created_on": "2014-11-09T03:31:57Z",
+            "details": []
+        },
+        {
+            "id": 3643,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "I'm unable to record due to the Unknown event: 129 error. But yeah, I still can reproduce this bug. It kind of throws the smokegrenade behind you, but you are also able to throw it a little bit forward too if timed right. And still it won't detonate. It's all if you kill yourself too fast, even visually you have thrown the smokegrenade or it has dropped, it won't detonate.\r\n\r\n-*S",
+            "created_on": "2014-11-09T03:42:08Z",
+            "details": []
+        },
+        {
+            "id": 3678,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I can't reproduce.",
+            "created_on": "2014-11-10T16:32:28Z",
+            "details": []
+        },
+        {
+            "id": 3679,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Cannot reproduce either.\r\n\r\nSaukko, please ensure this issue is also not related to #614. There are always weird issues if your qgame/cgame file version diverge.",
+            "created_on": "2014-11-10T18:49:12Z",
+            "details": []
+        },
+        {
+            "id": 3680,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Ok since now I was able to take a demo, now you can see what I mean. This bug is reproducible 100% of the time. I also threw grenade to show that it explodes but smokegrenade doesn't. I have removed the unnecessary files so, there should be no problem with that.\r\n\r\nSee the demo attached.\r\n\r\n-*S",
+            "created_on": "2014-11-10T21:12:21Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "383",
+                    "new_value": "demo0009.dm_84"
+                }
+            ]
+        },
+        {
+            "id": 3681,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "All right, I can see the issue now. You basically have to /kill at the same time you \"shoot\" the smoke can.\r\n\r\nI first thought of fireDelayTime (in weapon table, see bg_misc.c), but the set value is similar to nades.",
+            "created_on": "2014-11-10T22:29:47Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "16",
+                    "new_value": "17"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 3682,
+            "user": {
+                "id": 364,
+                "name": "winrid"
+            },
+            "notes": "Spyhawk wrote:\r\n> All right, I can see the issue now. You basically have to /kill at the same time you \"shoot\" the smoke can.\r\n> \r\n> I first thought of fireDelayTime (in weapon table, see bg_misc.c), but the set value is similar to nades.\r\n\r\nPerhaps I'm not doing it fast enough. Will try again.",
+            "created_on": "2014-11-11T01:59:22Z",
+            "details": []
+        },
+        {
+            "id": 3683,
+            "user": {
+                "id": 364,
+                "name": "winrid"
+            },
+            "notes": "Okay I still can't reproduce this. :( Replay attached.",
+            "created_on": "2014-11-11T07:21:57Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "384",
+                    "new_value": "demo0000.dm_84"
+                }
+            ]
+        },
+        {
+            "id": 3684,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "winrid wrote:\r\n> Okay I still can't reproduce this. :( Replay attached.\r\n\r\nYes, not fast enough. You can reproduce the bug when you died before you get the time to fully throw the can ahead of you (so the can falls where you are, or sometimes even behind you).\r\n\r\nI'm actually not even sure if this is really a bug, as it looks like the smoke can isn't fully armed. But yes, a similar issue exists with grenades and they however explode in any case.",
+            "created_on": "2014-11-11T08:52:09Z",
+            "details": []
+        },
+        {
+            "id": 3685,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "You can try airstrike canister too. It will detonate, grenades will detonate but not smokegrenades.\r\n\r\n-*S",
+            "created_on": "2014-11-11T17:55:55Z",
+            "details": []
+        },
+        {
+            "id": 3752,
+            "user": {
+                "id": 364,
+                "name": "winrid"
+            },
+            "notes": "Saukko wrote:\r\n> You can try airstrike canister too. It will detonate, grenades will detonate but not smokegrenades.\r\n> \r\n> -*S\r\nYeah I can replicate this now. Looking into it.\r\n",
+            "created_on": "2014-11-20T04:33:43Z",
+            "details": []
+        },
+        {
+            "id": 5833,
+            "user": {
+                "id": 424,
+                "name": "Zecklar"
+            },
+            "notes": "",
+            "created_on": "2016-02-08T23:08:21Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 5845,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-03-05T19:11:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "2"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 364,
+            "name": "winrid"
+        }
+    ],
+    "time_entries": null,
+    "id": 603,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 364,
+        "name": "winrid"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "Throwing smokegreande + \\kill won't detonate the smokegrenade",
+    "description": "So the title explains almost everything but here's how to reproduce the bug:\r\n\r\n1. Take covert ops and equip smokegrenade\r\n2. Throw the smokegrenade and instantly \\kill yourself\r\n3. Smokegrenade won't detonate\r\n\r\nDoing the same with normal grenade will make it explode but with smokegrenade there's this bug that it won't detonate.\r\n\r\n-*S",
+    "start_date": "2014-10-23",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-10-23T16:47:47Z",
+    "updated_on": "2016-03-05T19:11:28Z",
+    "closed_on": "2016-02-08T23:08:21Z"
+}

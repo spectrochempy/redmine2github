@@ -1,0 +1,105 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "82e4da36a8af7eb1bdfd72dde2e10c4aafde2b9d",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "client: updated the window icon to match our new icon/logo",
+            "committed_on": "2014-06-10T13:02:46Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3254,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "I added to new icon in commit:82e4da36 but if we wont embed it in the future i will add the windows code to use the .ico instead.",
+            "created_on": "2014-06-10T13:09:44Z",
+            "details": []
+        },
+        {
+            "id": 3283,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "All right, since Jacker has done the work, let's leave it the way it is for now.",
+            "created_on": "2014-07-04T20:26:27Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 544,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "assigned_to": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Replace old client icon with the new \"L\" icon",
+    "description": "Client currently uses the embedded icon because of @USE_ICON@ define in CMake. We should use the new icon, but not embed it anymore because its resolution is too high.",
+    "start_date": "2014-05-31",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-05-31T19:20:43Z",
+    "updated_on": "2014-07-04T20:26:27Z",
+    "closed_on": "2014-07-04T20:26:27Z"
+}

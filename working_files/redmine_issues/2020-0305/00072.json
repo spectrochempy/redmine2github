@@ -1,0 +1,289 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 20,
+            "issue_id": 72,
+            "issue_to_id": 39,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 24,
+            "issue_id": 82,
+            "issue_to_id": 72,
+            "relation_type": "blocks",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "203364648ff5f6e44be684f426e8e9941c26140d",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "client: 'obsolete cgame trap' drove me crazy, sorry IR4T4, refs #72",
+            "committed_on": "2012-09-14T20:28:36Z"
+        },
+        {
+            "revision": "a26f1d703ab03b2b311f454fe0c8bdf928bda20e",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "client: 'Obsolete cgame system trap' message re-enabled for debug builds, refs #72",
+            "committed_on": "2012-09-18T21:57:14Z"
+        },
+        {
+            "revision": "ead8b9583ed948951505774b492f9020d12776bf",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "client: don't drop when the official pak file is not verified, refs #72",
+            "committed_on": "2012-10-02T15:26:45Z"
+        },
+        {
+            "revision": "897180ace67d688c0d1f0de25dfc0d0af4912efd",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "general linux: default fs_hompath is set to 'etlwolf' refs #72 refs #82\n& other side effects. We no longer use genuine ET files (cfg/pk3 etc\n...) !!!,\nfixed\na\ncompiler\nwarning\nin\nSys_Dialog()",
+            "committed_on": "2012-10-22T08:17:02Z"
+        },
+        {
+            "revision": "58b5e54445fe76b1e7faa4b13652923d75f575c7",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "general Windows: unique default fs_homepath name 'WolfETL' for Windows\nrefs\n#72\nrefs #82 - see last commit",
+            "committed_on": "2012-10-22T08:20:08Z"
+        },
+        {
+            "revision": "0b4ec89e89bcce8c8437180b9255ab9855047f47",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "general: legacy mod is started per default when fs_game isn't set via\nparam refs #72, refs #39, refs #82",
+            "committed_on": "2012-10-27T09:06:15Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 239,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Possible solution:\r\nThe installer should copy etl cgame and ui into fs_homepath/etmain too.\r\n\r\nTODO: check case when a client connects to a pure etl server with no mod installed (mp_bin.pk3 is genuine) ",
+            "created_on": "2012-08-07T09:02:06Z",
+            "details": []
+        },
+        {
+            "id": 261,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Info update:\r\nYou'll still get PB and etpro servers in the browser list if vanilla UI is used. CGAME init throws many 'Obsolete cgame system trap' messages in that case.",
+            "created_on": "2012-08-13T12:15:10Z",
+            "details": []
+        },
+        {
+            "id": 262,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-08-13T14:13:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Legacy client not using ui",
+                    "new_value": "Legacy client not using UI/CGAME"
+                }
+            ]
+        },
+        {
+            "id": 311,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Radegast, I just kept this message to have a good indicator when vanilla mod code is loaded. As written in the comment ... let's activate this for debug builds only :)",
+            "created_on": "2012-09-16T09:11:03Z",
+            "details": []
+        },
+        {
+            "id": 314,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "IR4T4 wrote:\r\n> Radegast, I just kept this message to have a good indicator when vanilla mod code is loaded. As written in the comment ... let's activate this for debug builds only :)\r\nOK, the message will show up again in the debug builds, but I don't see the point. Every mod including NoQuarter will trigger this CGAME message and it repeats indefinitely. Maybe I just don't understand it right.",
+            "created_on": "2012-09-18T23:01:28Z",
+            "details": []
+        },
+        {
+            "id": 321,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "See http://etpub.org/viewtopic.php?f=9&t=74",
+            "created_on": "2012-09-25T06:49:51Z",
+            "details": []
+        },
+        {
+            "id": 323,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "aha, I get it now",
+            "created_on": "2012-09-25T17:52:52Z",
+            "details": []
+        },
+        {
+            "id": 338,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "In a way there is a need for a debug variable to make modders happy ... ",
+            "created_on": "2012-10-02T19:36:07Z",
+            "details": []
+        },
+        {
+            "id": 380,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "See http://www.etlegacy.com/projects/etlegacy/wiki/ET_Legacy_path_structure",
+            "created_on": "2012-10-21T14:29:47Z",
+            "details": []
+        },
+        {
+            "id": 398,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-10-22T08:37:21Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 407,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I'll close this one. It's finally same as #82.",
+            "created_on": "2012-10-23T11:07:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 412,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-10-26T09:29:37Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 72,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 1,
+        "name": "2.70rc1"
+    },
+    "subject": "Legacy client not using UI/CGAME",
+    "description": "I have noticed the legacy ui lib isn't used in at least one case:\r\n\r\n*Test case:*\r\n- install etlegacy in fs_basepath\r\n- start etl with fresh fs_homepath\r\n\r\nIn that case the ui lib from mp_bin.pk3 is copied into fs_hompath/etmain. On init fs_homepath (/home/etl/.et_legacy/) is 1st searchpath:\r\n\r\nSound memory manager started\r\nSys_LoadDll(/home/etl/.et_legacy/etmain/ui.mp.i386.so)... \r\nSys_LoadDll(/home/etl/.et_legacy/etmain/ui.mp.i386.so): succeeded ...\r\n\r\n---------------------------------------------------------------------- \r\n\r\nProbably cgame is also affected. ",
+    "start_date": "2012-08-07",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-08-07T08:37:57Z",
+    "updated_on": "2012-10-26T09:29:37Z",
+    "closed_on": "2012-10-26T09:29:37Z"
+}

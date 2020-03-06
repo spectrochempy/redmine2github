@@ -1,0 +1,225 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 417,
+            "issue_id": 1170,
+            "issue_to_id": 1183,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 418,
+            "issue_id": 854,
+            "issue_to_id": 1170,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "7494df2dd1151c9ca72e96f30e9815fd3b8e90f8",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "Revert \"qcommon:  Don't let VMs change engine latch cvars immediately\", refs #854 #1170\n\nThis reverts commit bbb68d3af07f3025b10e9f593095f8b51d5c2473.\n\nWhile preventing a potential rare crash in theory, this commit\nintroduces way too many side effects and issues to be worth keeping.\n\nIt also been pointed out this security fixe is fragile, and has\nsubsequently also been reverted in ioq3. See:\nhttps://github.com/ioquake/ioq3/commit/738465d677bddac1385da7d6099b58ca0c4a797f",
+            "committed_on": "2019-04-26T18:33:03Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7564,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-01-17T12:19:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 7643,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "There is an issue with latched gametype. Servers are started with the default g_gametype (default 4, campaign), even if they're using map rotation (6) as shipped with the default config. Since the value is latched, the server is still considered running campaign mode and as such only campaign are available in the referee maps menu.\r\nWhen the next map is loaded (or by using !nextmap), both campaigns and maps can be selected.\r\n",
+            "created_on": "2019-01-21T16:36:55Z",
+            "details": []
+        },
+        {
+            "id": 7644,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-01-21T16:37:12Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "1",
+                    "new_value": "17"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 7645,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-01-21T16:37:31Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "old_value": "Linux",
+                    "new_value": ""
+                },
+                {
+                    "property": "cf",
+                    "name": "2",
+                    "old_value": "64-bit",
+                    "new_value": ""
+                }
+            ]
+        },
+        {
+            "id": 7732,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I think I've found the reason for the g_gametype issue:\r\n\r\nSince some version we are using Cvar_SetSafe instead of Cvar_Set for trap_Cvar_Set mod calls:\r\n\r\n<pre>\r\n\t\t// don't let VMs or server change engine latched cvars instantly\r\n\t\tif ((flags & CVAR_LATCH) && !(flags & CVAR_VM_CREATED))\r\n\t\t{\r\n\t\t\tforce = qfalse;\r\n\t\t}\r\n</pre>\r\n\r\n",
+            "created_on": "2019-02-05T18:17:01Z",
+            "details": []
+        },
+        {
+            "id": 8018,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-21T14:51:58Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1183"
+                }
+            ]
+        },
+        {
+            "id": 8023,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-21T14:52:41Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "854"
+                }
+            ]
+        },
+        {
+            "id": 8053,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-26T18:36:01Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 846,
+            "name": "RedDwarf"
+        }
+    ],
+    "time_entries": null,
+    "id": 1170,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 840,
+        "name": "swecide"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Only campaigns in map list when referee",
+    "description": "As a referee, only the campaigns are visible in the referee menu map list.",
+    "start_date": "2019-01-17",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-01-17T12:10:18Z",
+    "updated_on": "2019-04-26T18:36:01Z",
+    "closed_on": "2019-04-26T18:36:01Z"
+}

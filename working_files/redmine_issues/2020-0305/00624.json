@@ -1,0 +1,269 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "5c0b291ae035bdf2f841984db5efbf038dea8e80",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: fixed server max length in server browser, fixes #624",
+            "committed_on": "2014-11-23T00:13:31Z"
+        },
+        {
+            "revision": "5af6c982011280e228aee5c6680c82a281c23df0",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "client/ui: WIP: take into account colour codes and UTF-8 char in server browser, refs #624\n\nWIP: - Need to check with other mods\n- Check if UTF-8 char are really take into account in server browser. If\nUTF-8 char are taken into account, the buffer size should be increase",
+            "committed_on": "2018-03-21T11:50:08Z"
+        },
+        {
+            "revision": "41dabdc62a33a33d9f45b669f0904be33d0ec29a",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "ui: no need to check for UTF-8 char into server name (not supported), refs #624",
+            "committed_on": "2018-03-21T23:23:52Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3835,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:5c0b291ae035bdf2f841984db5efbf038dea8e80.",
+            "created_on": "2014-11-23T00:32:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3837,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2014-11-23T09:00:09Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                }
+            ]
+        },
+        {
+            "id": 3847,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Unfortunately, colour codes are also taken into account. As a result the colored strings will be cut short, and the more colored, the more shortened the server name string will be.",
+            "created_on": "2014-11-23T11:01:27Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 3851,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-23T11:07:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Max length of server name in server browser is too long",
+                    "new_value": "Server name strings in server browser cut short"
+                }
+            ]
+        },
+        {
+            "id": 3864,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Spyhawk wrote:\r\n> Unfortunately, colour codes are also taken into account. As a result the colored strings will be cut short, and the more colored, the more shortened the server name string will be.\r\n\r\nIsn't there any function that determines string length without colorcodes?",
+            "created_on": "2014-11-23T14:36:53Z",
+            "details": []
+        },
+        {
+            "id": 3868,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Dragonji wrote:\r\n> Isn't there any function that determines string length without colorcodes?\r\n\r\nIt's more complex than that. The whole list of servers (FEEDER) accepts only 1 max length value in the UI code.\r\nWe could workaround server side by sending only a cleaned version without color code, but we'd lose the color here.\r\n",
+            "created_on": "2014-11-23T15:32:20Z",
+            "details": []
+        },
+        {
+            "id": 3956,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-30T18:33:46Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "6",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 7181,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "",
+            "created_on": "2018-03-21T23:24:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 7218,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-04-29T05:40:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 624,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 15,
+        "name": "Mod UI"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Server name strings in server browser cut short",
+    "description": "The maximum server name length displayed in the server browser is too long (see screenshot).\r\nIt should be reduced by 1 or maybe 2 characters. ",
+    "start_date": "2014-11-13",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-13T14:51:51Z",
+    "updated_on": "2018-04-29T05:40:50Z",
+    "closed_on": "2018-04-29T05:40:50Z"
+}

@@ -1,0 +1,132 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 4318,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "I seemed to have been too blind to see that there's actually a possibility to add logfile through cg_logFile. But in the end it doesn't change the fact that the logfile, could use some improvements.\r\n\r\n-*S",
+            "created_on": "2015-01-08T04:05:12Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Client logfile",
+                    "new_value": "Improve client logfile"
+                }
+            ]
+        },
+        {
+            "id": 4319,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2015-01-08T04:05:33Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "tracker_id",
+                    "old_value": "2",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 6256,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-01-23T09:50:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 6296,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Client log does already exist and is printing the time as well. I don't see any reason to add <dd.mm.yyyy> because we know when this file is created (see OS file info).\r\n\r\nIf you are still missing gimmicks please open a new file and specify exactly what you want.\r\n\r\n",
+            "created_on": "2017-02-01T15:49:38Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 753,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Improve client logfile",
+    "description": "Create a logfile for clients similar to NQ.\r\n\r\nHow it works in NQ:    <hh:mm:ss> <name>: <text/event>\r\n\r\nAnd I think it's quite nice but the events that are shown in the client.log are quite useless in my opinion. But something what could be the best addition to this kind of design is to add dates in the start of each day. In NQ you can see the day change only by hour. So how it would look like then:\r\n\r\n<dd.mm.yyyy>\r\n<hh:mm:ss> <name>: <text>\r\n\r\nThe text would be any text you recieve, like private messages or teamchat or normal chat. Also possibly there would be voicechats and such. I don't know would it be also good to show things like the server where the exact messages took place. This is currently just brainstorming. But the main idea is to get a working client.log for legacy mod.\r\n\r\n-*S",
+    "start_date": "2015-01-03",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-01-02T23:24:15Z",
+    "updated_on": "2017-02-01T15:49:38Z",
+    "closed_on": "2017-02-01T15:49:38Z"
+}

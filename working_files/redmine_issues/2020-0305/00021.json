@@ -1,0 +1,206 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 58,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "A few small changes were made to the input code. Please try the etl-2.70-beta4b version from the \"files section\":http://www.etlegacy.com/projects/etlegacy/files",
+            "created_on": "2012-03-22T10:35:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 84,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "I think I finally understand what's going on here. It had been fixed in ioquake3 in several different commits and it will require significant overhaul of the input code in ET:L, so I am setting the target version to 2.80.",
+            "created_on": "2012-04-25T10:25:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "10"
+                }
+            ]
+        },
+        {
+            "id": 1472,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "> (on Linux i didn\u2019t test yet)\r\n\r\nIt seems this result on a black screen. After minimizing, the system is not able to recover ET:L after a new Alt+Tab.\r\n\r\n",
+            "created_on": "2013-04-02T14:52:58Z",
+            "details": []
+        },
+        {
+            "id": 1956,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "We should focus this again. Many changes have been done in the related code. Please give some feedback after the release of rc2.",
+            "created_on": "2013-09-18T18:39:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "9"
+                }
+            ]
+        },
+        {
+            "id": 1957,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-09-18T18:40:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 1959,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Works now as expected (Linux, last git build).",
+            "created_on": "2013-09-19T08:43:22Z",
+            "details": []
+        },
+        {
+            "id": 1960,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-09-19T09:18:52Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "10",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 1961,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-09-19T12:57:56Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "9",
+                    "new_value": "7"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        },
+        {
+            "id": 5,
+            "name": "acqu"
+        }
+    ],
+    "time_entries": null,
+    "id": 21,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 5,
+        "name": "acqu"
+    },
+    "assigned_to": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 7,
+        "name": "2.71rc2"
+    },
+    "subject": "Alt+Tab minimize",
+    "description": "The ALT+TAB shortcut standardly minimizes the game on Windows (on Linux i didn't test yet). Two issues, after minimize (from fullscreen mode) and then maximize again:\r\n\r\na) the game still thinks tab key is held down (tab menu gets displayed without tab key pressed)\r\nb) the client's crosshair will 'zip', that means the player will unintentionally move his crosshair from one point to another (this is similar behaviour as with 'extended ascii userinfo bug', where a player who connects with bad chars in userinfo will make all clients on the server zip their crosshair)\r\n\r\nb is very interesting. Maybe you can debug command buffer to see what is happening there.",
+    "start_date": "2012-03-11",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-03-11T20:29:30Z",
+    "updated_on": "2013-09-19T12:57:56Z",
+    "closed_on": "2013-09-19T09:18:52Z"
+}

@@ -1,0 +1,278 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 420,
+            "issue_id": 1165,
+            "issue_to_id": 1025,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "8e731a6029813c9eee2ef3d3d4ad449cccb77469",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "misc: Merge some file writing extension checks from OpenJK refs #1025",
+            "committed_on": "2017-04-10T15:06:25Z"
+        },
+        {
+            "revision": "3500f7bccb9128125504a28277fb23d271f9b848",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "sys: Don't load faulty DLLs - initial patch by ioq3/SmileTheory/Chomenor\nrefs #1025",
+            "committed_on": "2017-05-09T13:08:37Z"
+        },
+        {
+            "revision": "f7aacf32b6cf892dfcc2f43006c02c347eb41ca7",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "misc: merged latest ioq3 security files checks refs #1025",
+            "committed_on": "2017-10-20T15:16:41Z"
+        },
+        {
+            "revision": "4a982fe56fcaf4cb59035bae9bc0dbdbb158a158",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "qcommon: fix donwload issue refs #1025",
+            "committed_on": "2018-02-21T09:55:40Z"
+        },
+        {
+            "revision": "07d509fadd61a408af06b167ea789ca6581fa158",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "qcommon: fix clean command, fix updater removing old update binary file\nrefs #1025",
+            "committed_on": "2018-02-21T13:20:00Z"
+        },
+        {
+            "revision": "642f3acd674b989d73e6821e13cedb01904d2d67",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "misc: check for invalid game dirs - patch by ioq3 refs #1025",
+            "committed_on": "2018-02-21T13:40:57Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 6649,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-04-03T08:32:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 6650,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-04-03T09:00:21Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Import OpenJDK files check security fix from last month (thx Ensiform).\r\n\r\n* https://github.com/JACoders/OpenJK/commit/05928a57f9e4aae15a3bd0\r\n* https://github.com/JACoders/OpenJK/commit/ef124fd0fc48af164581176\r\n\r\nIn ioq3:\r\n\r\n* https://github.com/ioquake/ioq3/commit/376267d534476a875d8b9228149c4ee18b74a4fd\r\n* https://github.com/ioquake/ioq3/commit/f61fe5f6a0419ef4a88d46a128052f2e8352e85d\r\n* https://github.com/ioquake/ioq3/commit/b173ac05993f634a42be3d3535e1b158de0c3372\r\n\r\nSee also https://ioquake3.org/2017/03/13/important-security-update-please-update-ioquake3-immediately/\r\n",
+                    "new_value": "Import ioq3/OpenJDK files check security fix from last month (thx Ensiform).\r\n\r\nSee also https://ioquake3.org/2017/03/13/important-security-update-please-update-ioquake3-immediately/\r\n\r\nIn OJDK:\r\n\r\n* https://github.com/JACoders/OpenJK/commit/05928a57f9e4aae15a3bd0\r\n* https://github.com/JACoders/OpenJK/commit/ef124fd0fc48af164581176\r\n\r\nIn ioq3:\r\n\r\n* https://github.com/ioquake/ioq3/commit/376267d534476a875d8b9228149c4ee18b74a4fd\r\n* https://github.com/ioquake/ioq3/commit/f61fe5f6a0419ef4a88d46a128052f2e8352e85d\r\n* https://github.com/ioquake/ioq3/commit/b173ac05993f634a42be3d3535e1b158de0c3372\r\n\r\n"
+                },
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "12",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 6651,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "We shouldn't merge it directly. COM_DefaultExtension is involved for checking file extensions. We should just make this function stronger and check the last chars directly.",
+            "created_on": "2017-04-03T13:02:58Z",
+            "details": []
+        },
+        {
+            "id": 6807,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-07-02T10:10:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                }
+            ]
+        },
+        {
+            "id": 6952,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Latest changes form ioq3 are merged. Please verify.",
+            "created_on": "2017-10-20T15:22:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 7011,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "-Our clean command isn't working properly anymore.-\r\n\r\n-Case 'clean all *.pk3' drops the game because we are using FS_Remove() instead of FS_HomeRemove in Cmd_CleanHomepath_f-\r\n\r\nCode & clean command needs some rework:\r\n\r\n{FIXME}\r\n-1. We should use FS_HomeRemove in Cmd_CleanHomepath_f instead (requires changes to accept absolute paths or adjust Cmd_CleanHomepath_f)-\r\n-2. 'force' param is using plain remove() which is  bypassing our  security fixes- Why there is a force param?\r\n3. Inspect FS_DeleteDir & -FS_Delete-, both call remove()\r\n\r\n\r\n",
+            "created_on": "2017-12-20T12:57:50Z",
+            "details": []
+        },
+        {
+            "id": 7196,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-03-30T09:51:39Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "7",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 7512,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-01-06T08:20:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8056,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-26T19:51:26Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1165"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1025,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 4,
+        "name": "Feedback"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Security files check",
+    "description": "Import ioq3/OpenJDK files check security fix from last month (thx Ensiform).\r\n\r\nSee also https://ioquake3.org/2017/03/13/important-security-update-please-update-ioquake3-immediately/\r\n\r\nIn OJDK:\r\n\r\n* https://github.com/JACoders/OpenJK/commit/05928a57f9e4aae15a3bd0\r\n* https://github.com/JACoders/OpenJK/commit/ef124fd0fc48af164581176\r\n\r\nIn ioq3:\r\n\r\n* https://github.com/ioquake/ioq3/commit/376267d534476a875d8b9228149c4ee18b74a4fd\r\n* https://github.com/ioquake/ioq3/commit/f61fe5f6a0419ef4a88d46a128052f2e8352e85d\r\n* https://github.com/ioquake/ioq3/commit/b173ac05993f634a42be3d3535e1b158de0c3372\r\n\r\n",
+    "start_date": "2017-04-03",
+    "done_ratio": 90,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-04-03T08:32:11Z",
+    "updated_on": "2019-01-06T08:20:06Z"
+}

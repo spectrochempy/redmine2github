@@ -1,0 +1,132 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 12,
+            "issue_id": 63,
+            "issue_to_id": 60,
+            "relation_type": "duplicates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "ef760e34d16e135100ebdab59a8feea47ba50f39",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "client: use GL_CLAMP_TO_EDGE instead of GL_CLAMP, fixes #60",
+            "committed_on": "2012-06-08T13:29:46Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 139,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "This bug has been with ET:L since the beginning, so I guess it came with the SDL port.",
+            "created_on": "2012-06-07T23:37:28Z",
+            "details": []
+        },
+        {
+            "id": 140,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2012-06-08T16:49:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 141,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2012-06-08T16:50:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 1,
+            "name": "Radegast"
+        }
+    ],
+    "time_entries": null,
+    "id": 60,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 1,
+        "name": "2.70rc1"
+    },
+    "subject": "Skybox edge can be seen in some maps",
+    "description": "See attached screenshot.\r\n\r\n!skybox_edges_bug.jpg!",
+    "start_date": "2012-06-08",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-06-07T23:34:19Z",
+    "updated_on": "2012-06-08T16:50:13Z",
+    "closed_on": "2012-06-08T16:50:13Z"
+}

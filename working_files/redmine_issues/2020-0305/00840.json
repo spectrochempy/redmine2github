@@ -1,0 +1,150 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "86f12808694f6d81b61e0d032e155eb3156f5b23",
+            "user": {
+                "id": 424,
+                "name": "Zecklar"
+            },
+            "comments": "game: Fix for dynamite defuse message, fixes #840",
+            "committed_on": "2015-05-19T10:52:39Z"
+        },
+        {
+            "revision": "0468ff189cfe922ca402bd54013ab29a7e7f3d58",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: ignore players and corpses in trace of DynaFree() too fixes refs\n#840",
+            "committed_on": "2015-05-19T15:54:35Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 4931,
+            "user": {
+                "id": 424,
+                "name": "Zecklar"
+            },
+            "notes": "Applied in changeset commit:86f12808694f6d81b61e0d032e155eb3156f5b23.",
+            "created_on": "2015-05-19T12:22:51Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 4932,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I think function DynaFree(gentity_t *self) (g_missile.c) is affected too.",
+            "created_on": "2015-05-19T14:57:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 4933,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "DynaFree() is only called in fire_grenade() when dynamite is not put into game by the engineer. I don't know if this ever happens. However bodies and corpses in trace of DynaFree() are ignored too now. ",
+            "created_on": "2015-05-19T18:01:19Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 5090,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-08-08T18:52:12Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "17"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 840,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 348,
+        "name": "palota"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "no message when dynamite is defused",
+    "description": "Nothing is printed to the console and no voice message is heard if dynamite is defused and player is between dynamite and objective.\r\nThis bug has already been fixed in the omnibot mod, so it should be easy to fix it in the legacy mod too.\r\n\"https://github.com/jswigart/omni-bot/commit/61e266ded37e06532dbf6c173cf18d0ad94729f2\":https://github.com/jswigart/omni-bot/commit/61e266ded37e06532dbf6c173cf18d0ad94729f2\r\n",
+    "start_date": "2015-05-18",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-05-18T12:04:38Z",
+    "updated_on": "2015-08-08T18:52:12Z",
+    "closed_on": "2015-05-19T18:01:19Z"
+}

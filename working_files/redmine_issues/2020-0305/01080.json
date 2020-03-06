@@ -1,0 +1,114 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7160,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-03-09T13:37:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "1.) There are reddish visual effecs on ST_DIFFUSEMAP stages.\r\n\r\nNote: CGEN_LIGHTING_DIFFUSE is missing. \r\nClarify if \"rgbGen lightingDiffuse\" shader param creates an implicit ST_DIFFUSEMAP stage (see xreal tr_shader.c)\r\n\r\n<pre>\r\n6.3.8 rgbGen lightingDiffuse\r\nColors are computed using a standard diffuse lighting equation. It uses the vertex normals to illuminate the object correctly.\r\n\r\nDesign Note: - rgbGen lightingDiffuse is used when you want the RGB values to be\r\ncomputed for a dynamic model (i.e. non-map object) in the world using\r\nregular in-game lighting. For example, you would specify on shaders for\r\nitems, characters, weapons, etc.\r\n</pre>\r\n\r\n2.) There is no reflection\r\nSee MP40.(spawn as axis on radar and move the weapon) \r\nChanging UNIFORM_VIEWORIGIN to viewOrigin might help.\r\n",
+                    "new_value": "1.) There are reddish visual effecs on ST_DIFFUSEMAP stages.\r\n\r\nNote: CGEN_LIGHTING_DIFFUSE is missing?!\r\n\r\n2.) There is no reflection\r\nSee MP40.(spawn as axis on radar and move the weapon) \r\nChanging UNIFORM_VIEWORIGIN to viewOrigin might help.\r\n"
+                }
+            ]
+        },
+        {
+            "id": 7161,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-03-10T15:29:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Fix Render_vertexLighting_DBS_entity/ST_DIFFUSEMAP stages",
+                    "new_value": "Fix r_rimlighting &  Render_vertexLighting_DBS_entity/ST_DIFFUSEMAP stages"
+                },
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "1.) There are reddish visual effecs on ST_DIFFUSEMAP stages.\r\n\r\nNote: CGEN_LIGHTING_DIFFUSE is missing?!\r\n\r\n2.) There is no reflection\r\nSee MP40.(spawn as axis on radar and move the weapon) \r\nChanging UNIFORM_VIEWORIGIN to viewOrigin might help.\r\n",
+                    "new_value": "There are reddish visual effecs on ST_DIFFUSEMAP stages with r_rimlighting enabled."
+                }
+            ]
+        },
+        {
+            "id": 8512,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "",
+            "created_on": "2019-10-27T19:28:43Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1080,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 15,
+        "name": "renderer2"
+    },
+    "subject": "Fix r_rimlighting &  Render_vertexLighting_DBS_entity/ST_DIFFUSEMAP stages",
+    "description": "There are reddish visual effecs on ST_DIFFUSEMAP stages with r_rimlighting enabled.",
+    "start_date": "2018-03-09",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2018-03-09T07:53:59Z",
+    "updated_on": "2019-10-27T19:28:43Z"
+}

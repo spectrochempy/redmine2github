@@ -1,0 +1,325 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 224,
+            "issue_id": 826,
+            "issue_to_id": 171,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 226,
+            "issue_id": 814,
+            "issue_to_id": 826,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "fc4957662e66ac45ac61efc49b9aa078f2fe6476",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "fonts: wrapped the font structures in a helper struct. TODO: cleanup the memory allocated",
+            "committed_on": "2015-07-20T12:39:14Z"
+        },
+        {
+            "revision": "4ae3071a2ef927c95943c4760ba05877a17a0c2f",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "free the fonts on shutdown and moved the fonts to the proper places",
+            "committed_on": "2015-07-20T13:16:59Z"
+        },
+        {
+            "revision": "1d16e1eba50e02eab92ffcb0d1f31e1e3475f359",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "moved the ui font count to a define and fixed a possible memory issue when registering a font",
+            "committed_on": "2015-07-20T13:27:14Z"
+        },
+        {
+            "revision": "a9c4d0c91fe1a5be85877a9fae209051dc6a9775",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "removed the extra ui shutdown function and moved the font free to the main shutdown function",
+            "committed_on": "2015-07-20T13:34:03Z"
+        },
+        {
+            "revision": "cf5623169e3beccee31e85c4f08d20bbae640f6d",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "make the compilers happy",
+            "committed_on": "2015-07-20T13:38:18Z"
+        },
+        {
+            "revision": "77e58223501cf8eb43ea811405e7f8bdc8240678",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "utf: cleanup",
+            "committed_on": "2015-07-21T06:52:31Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 4699,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-03-01T19:19:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Latest master client can't connect to 2.72",
+                    "new_value": "Latest client (master) can't connect to Legacy 2.72 servers"
+                }
+            ]
+        },
+        {
+            "id": 4702,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-03-02T16:10:54Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "171"
+                }
+            ]
+        },
+        {
+            "id": 4738,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-03-08T23:53:58Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "814"
+                }
+            ]
+        },
+        {
+            "id": 4898,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-04-02T14:18:09Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 4926,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-05-10T18:24:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 4944,
+            "user": {
+                "id": 424,
+                "name": "Zecklar"
+            },
+            "notes": "Can someone update the ticket, does this...orange thing still happen?",
+            "created_on": "2015-06-21T11:30:14Z",
+            "details": []
+        },
+        {
+            "id": 4946,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Zecklar wrote:\r\n> Can someone update the ticket, does this...orange thing still happen?\r\n\r\nI could reproduce just a few weeks ago. There haven't been any significant commit pushed since then.\r\nNote the orange color might not display, and you might obseve an empty ui instead (only background is visible).",
+            "created_on": "2015-06-22T03:10:09Z",
+            "details": []
+        },
+        {
+            "id": 4980,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-07-22T08:45:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "44"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 4982,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I still can't connect with latest master & updated libs. It just freezes after showing the loading screen and completing the progress bar.\r\n\r\n<pre>\r\n...hud count: 4\r\nLOADING...  - weapons -\r\nLOADING...  - items -\r\nLOADING...  - inline models -\r\nLOADING...  - server models -\r\nLOADING...  - particles -\r\nLOADING...  - classes -\r\nLOADING...  - game media -\r\nLOADING...  - flamechunks -\r\nLOADING...  - clients -\r\nLoadLocations: location data for map oasis loaded\r\n114 locations loaded.\r\nCL_InitCGame:  2.73 seconds\r\nCom_TouchMemory: 2 msec -53036386 \r\n</pre>",
+            "created_on": "2015-07-22T10:16:13Z",
+            "details": []
+        },
+        {
+            "id": 4983,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "IR4T4 wrote:\r\n> I still can't connect with latest master & updated libs. It just freezes after showing the loading screen and completing the progress bar.\r\n> \r\n> [...]\r\n\r\nThe fix was not in the master untill today. Please retest :)",
+            "created_on": "2015-07-22T10:32:06Z",
+            "details": []
+        },
+        {
+            "id": 4986,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "No way. It's same freeze.",
+            "created_on": "2015-07-22T21:31:57Z",
+            "details": []
+        },
+        {
+            "id": 4999,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "It's working now.\r\n",
+            "created_on": "2015-07-24T05:14:39Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        },
+        {
+            "id": 44,
+            "name": "Jacker"
+        }
+    ],
+    "time_entries": null,
+    "id": 826,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 7,
+        "name": "Immediate"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 44,
+        "name": "Jacker"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "Latest client (master) can't connect to Legacy 2.72 servers",
+    "description": "Clients built from latest master can't connect to legacy 2.72 servers without being rejected.\r\nOnce the downloaded 2.72 bin and pak pk3 files have been downloaded in fs_homepath, ET:Legacy can't load properly without displaying an ugly orange color everywhere (2.72 ui file loaded by default).\r\n\r\nAfter bisect, the responsible commit is \"697ae51b0accd05246e5bb7b9fbfaa6db9fad237\":https://github.com/etlegacy/etlegacy/commit/697ae51b0accd05246e5bb7b9fbfaa6db9fad237\r\n\r\nThis is related to Unicode support.",
+    "start_date": "2015-03-01",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-03-01T19:13:02Z",
+    "updated_on": "2015-07-24T05:14:39Z",
+    "closed_on": "2015-07-24T05:14:39Z"
+}

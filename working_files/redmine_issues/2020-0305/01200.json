@@ -1,0 +1,133 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 395,
+            "issue_id": 1201,
+            "issue_to_id": 1200,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 394,
+            "issue_id": 1200,
+            "issue_to_id": 507,
+            "relation_type": "duplicates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7738,
+            "user": {
+                "id": 392,
+                "name": "Timothy"
+            },
+            "notes": "",
+            "created_on": "2019-02-07T18:13:18Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "duplicates",
+                    "new_value": "507"
+                }
+            ]
+        },
+        {
+            "id": 7740,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Duplicate of #507. Closing now.",
+            "created_on": "2019-02-07T18:28:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "21"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 7743,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-02-08T15:24:15Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1201"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1200,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Obituary messages (and also other events?!) are not always reaching/executed by clients",
+    "description": "I've noticed on some servers obituary messages are sometimes not shown/printed (console & cpm).\r\n\r\n",
+    "start_date": "2019-02-07",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-02-07T18:04:04Z",
+    "updated_on": "2019-02-07T18:28:32Z",
+    "closed_on": "2019-02-07T18:28:32Z"
+}

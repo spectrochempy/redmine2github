@@ -1,0 +1,168 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 387,
+            "issue_id": 1179,
+            "issue_to_id": 477,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 2764,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2014-01-06T12:45:22Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Upgrade GeoIP coutry database to GeoLite2",
+                    "new_value": "Upgrade GeoIP country database to GeoLite2"
+                }
+            ]
+        },
+        {
+            "id": 2765,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "It's not the time to do now. Currently I don't see any advantages if we switch from 'GEOIP Legacy' to 'GEOIP2' ... it's more the opposite see http://dev.maxmind.com/geoip/geoip2/whats-new-in-geoip2/\r\n\r\n \"Downloadable databases for GeoIP2 are not yet available.\" \r\n\r\n- We would have IP data requests at runtime which would burdens a game server additionally. \r\n\r\nOur current solution does it's job - so why we should switch? Is there any missing feature?\r\n\r\n\r\n\r\n",
+            "created_on": "2014-01-06T14:43:27Z",
+            "details": []
+        },
+        {
+            "id": 2769,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "That's outdated news. GeoIPLite2 downloadable database has been made available since then and it has a stable API. You can find it at the link in the ticket.\r\n\r\nWe could use the city db to announce which part of the country a user has connected from. It would be particularly useful on servers where one nation has the majority of players. It's also actively updated while the old version receives updates from time to time, but it won't do indefinitely.",
+            "created_on": "2014-01-06T16:47:19Z",
+            "details": []
+        },
+        {
+            "id": 7485,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "GeoIP Legacy update has stopped being updated in March 2018, and will be removed from Maxmind website on January 2, 2019 (tomorrow).\r\n\r\nbq. Updated versions of the GeoLite Legacy databases are now only available to redistribution license customers, although anyone can continue to download the March 2018 GeoLite Legacy builds. Starting January 2, 2019, the last build will be removed from our website. GeoLite Legacy database users will need to switch to the GeoLite2 or commercial GeoIP databases and update their integrations by January 2, 2019.\r\n\r\nThis is the version we're currently using. We have a copy of it on our own server, but we need to upgrade to GeoLite2 as data will increasingle become inaccurate with time.\r\nThe API code is quite different, as the format of GeoLite2 is radically different from GeoIP Legacy.\r\n\r\nResource:\r\n* https://github.com/maxmind/libmaxminddb\r\n* https://github.com/maxmind/geoipupdate\r\n* https://github.com/maxmind/geoipupdate-legacy",
+            "created_on": "2019-01-01T15:56:46Z",
+            "details": []
+        },
+        {
+            "id": 7619,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-01-20T18:08:07Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1179"
+                }
+            ]
+        },
+        {
+            "id": 8638,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Looks like using GeoIP2 freely isn't possible anymore, due to the upcoming California Consumer Privacy Act. See related blogpost: https://blog.maxmind.com/2019/12/18/significant-changes-to-accessing-and-using-geolite2-databases/\r\n\r\nIt was fine to use under GDPR, but CCPA seems to make it legally ambiguous, and free access under a  Creative Common license is replaced by a required (free) account.\r\n\r\nbq. The California Consumer Privacy Act (CCPA) mandates that businesses honor valid \u201cDo Not Sell\u201d requests from California residents. In this context, complying with a valid request involves MaxMind removing IP addresses from the GeoLite2 data and communicating to GeoLite2 users that the IP addresses in question should (immediately) not be utilized for uses covered under the CCPA. We have been advised that any download, including one without charge, constitutes a sale. Serving GeoLite2 database downloads on a public page simply does not allow us to communicate and honor valid \u201cDo Not Sell\u201d requests we receive from individuals.\r\n\r\nbq. The solution we have chosen is to introduce a new end-user license agreement containing the relevant data processing provisions that both we, as the business providing data, and you, as the third party user of the data, need to comply with applicable data privacy regulations. Additionally, by requiring a MaxMind account and contact information from you, we will be able to communicate all valid \u201cDo Not Sell\u201d requests to you as we receive them.\r\n\r\nbq. With this approach, we can continue to offer GeoLite2 databases, without charge, while remaining responsible stewards of data that improves the experience of countless users across the internet.\r\n\r\nDo we really want the legal hassle here?\r\n\r\nbq. Starting December 30, 2019, we will be requiring users of our GeoLite2 databases to register for a MaxMind account and obtain a license key in order to download GeoLite2 databases. We will continue to offer the GeoLite2 databases without charge, and with the ability to redistribute with proper attribution and in compliance with privacy regulations. In addition, we are introducing a new end-user license agreement to govern your use of the GeoLite2 databases. Previously, GeoLite2 databases were accessible for download to the public on our developer website and were licensed under the Creative Commons Attribution-ShareAlike 4.0 International License.\r\n\r\nbq. Starting December 30, 2019, downloads will no longer be served from our public GeoLite2 page, from geolite.maxmind.com/download/geoip/database/*, or from any other public URL.\r\n",
+            "created_on": "2019-12-29T14:12:52Z",
+            "details": []
+        },
+        {
+            "id": 8639,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Spyhawk wrote:\r\n> Looks like using GeoIP2 freely isn't possible anymore, due to the upcoming California Consumer Privacy Act. See related blogpost: https://blog.maxmind.com/2019/12/18/significant-changes-to-accessing-and-using-geolite2-databases/\r\n> \r\n> It was fine to use under GDPR, but CCPA seems to make it legally ambiguous, and free access under a  Creative Common license is replaced by a required (free) account.\r\n> \r\n> bq. The California Consumer Privacy Act (CCPA) mandates that businesses honor valid \u201cDo Not Sell\u201d requests from California residents. In this context, complying with a valid request involves MaxMind removing IP addresses from the GeoLite2 data and communicating to GeoLite2 users that the IP addresses in question should (immediately) not be utilized for uses covered under the CCPA. We have been advised that any download, including one without charge, constitutes a sale. Serving GeoLite2 database downloads on a public page simply does not allow us to communicate and honor valid \u201cDo Not Sell\u201d requests we receive from individuals.\r\n> \r\n> bq. The solution we have chosen is to introduce a new end-user license agreement containing the relevant data processing provisions that both we, as the business providing data, and you, as the third party user of the data, need to comply with applicable data privacy regulations. Additionally, by requiring a MaxMind account and contact information from you, we will be able to communicate all valid \u201cDo Not Sell\u201d requests to you as we receive them.\r\n> \r\n> bq. With this approach, we can continue to offer GeoLite2 databases, without charge, while remaining responsible stewards of data that improves the experience of countless users across the internet.\r\n> \r\n> Do we really want the legal hassle here?\r\n\r\nWe could possibly move the checkup to the master server's end. Servers would need to query the country information for the clients. The master server already has an geoip implementation that is used internally to check the server locations, but it could be easily made accessible with the udp protocol too.",
+            "created_on": "2019-12-29T14:49:42Z",
+            "details": []
+        },
+        {
+            "id": 8640,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "That would bypass the issue of being able to distribute the GeoIP data, but I'm afraid that won't cover us legally speaking since we'd still be in violation of CCPA, as I understand it.\r\n\r\nI really don't see us turning off the option by default (almost nobody would opt in), and add some legal disclaimer when using the feature, nor we would be able to remove/filter out the data in case someone ask not to have their IP/country identified (legally speaking).\r\n\r\nAt this point, I'd very much would suggest to scrap the feature entirely.",
+            "created_on": "2019-12-29T19:06:03Z",
+            "details": []
+        },
+        {
+            "id": 8651,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Note: beside the legal issue mentioned above, \"this(https://github.com/sherpya/geolite2legacy)\":https://github.com/sherpya/geolite2legacy can be used to convert GeoLite2 database to GeoLite1 Legacy format - so we could update the current data from March 2018 to December 2019. Pre-converted database can be found \"here\":https://mailfud.org/geoip-legacy/.",
+            "created_on": "2019-12-31T16:30:09Z",
+            "details": []
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 477,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Upgrade GeoIP country database to GeoLite2",
+    "description": "More information: http://dev.maxmind.com/geoip/geoip2/geolite2\r\n\r\nSuggested by user:Dragonji.\r\n\r\n",
+    "start_date": "2014-01-06",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-01-06T12:45:05Z",
+    "updated_on": "2019-12-31T16:30:09Z"
+}

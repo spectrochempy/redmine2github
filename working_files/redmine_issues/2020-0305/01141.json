@@ -1,0 +1,113 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7378,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "This is a job for WolfAdmin. These chats with keywords should filtered by the game manager. ",
+            "created_on": "2018-12-23T21:52:29Z",
+            "details": []
+        },
+        {
+            "id": 7383,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2018-12-23T23:20:38Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 7418,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Timo mentioned he'll work on this.",
+            "created_on": "2018-12-26T21:10:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "5",
+                    "new_value": "21"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1141,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 110,
+        "name": "Harlekin"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "g_cursefilter and g_cursefilteraction",
+    "description": "Prevent player eg.: Clan-Member spreading out server passwords by mistake for: Privateslot, ref, rcon or just to be used as bad word filter.\r\n\r\nExample g_password magicpass in console with a forgoten leading / makes a normal chat message out of it\r\n\r\ndescription copied from etpro homepage\r\n\r\n_cursefilter\tDetermines which words you would like filtered out, but it\u2019s not a good filter as players can spell swear words in many different ways using numbers, letter spacing etc and there are just to many variations to include in this filter. A good use for it, is to help protect your rcon, ref, semiadmin etc passwords, just in case a trusted member or even yourself forget to put the / (slash) before said passwords when signing in. Should you wish to use it, just list all the passwords/forbidden words leaving a space between each word (i.e. set b_cursefilter \"pass1 pass2 swear1 swear2 etc\"), default \"\", disabled.\r\n\r\n_cursefilteraction\tControls what action to take with filtered words, default 3...... 0 = do nothing (not a wise choice if your wishing to filter certain words out lol), 1 = silently filter the messages (it will still appear to the player as though his/her message was sent), 2 = censor (e.g. \"hey, you are a *******\"), 3 = filter the message (it isn't displayed to anybody).",
+    "start_date": "2018-12-23",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2018-12-23T21:47:51Z",
+    "updated_on": "2018-12-26T21:10:17Z",
+    "closed_on": "2018-12-26T21:10:17Z"
+}

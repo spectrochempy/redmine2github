@@ -1,0 +1,91 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "2d4bf7dbe50edd83bf4aa2509edda98edd8bd173",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "renderer2: good day ambient lighting fixes #1082\n\n- added a scale factor for ambient lighting in entity renderer - based\non a patch by Thunder\n\n- disabled r_forceAmbient so we are using world ambient lighting ^^\nrefs #1083\n\n- set r_normalmapping and r_materialscan cvars to better values (users\nrequire additional assets which are not shipped)",
+            "committed_on": "2018-03-12T14:22:11Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 7166,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Applied in changeset commit:2d4bf7dbe50edd83bf4aa2509edda98edd8bd173.",
+            "created_on": "2018-03-12T16:12:55Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1082,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 15,
+        "name": "renderer2"
+    },
+    "subject": "Fix weapon reflection in r2",
+    "description": "There is no reflection on weapons. See MP40 - spawn as axis on radar and move the weapon.\r\n",
+    "start_date": "2018-03-10",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2018-03-10T15:31:47Z",
+    "updated_on": "2018-03-12T16:12:55Z",
+    "closed_on": "2018-03-12T16:12:55Z"
+}

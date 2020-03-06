@@ -1,0 +1,154 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 201,
+            "issue_id": 785,
+            "issue_to_id": 784,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "0c5c783fd80fae6dea77402e8bf9a6ce70446ab3",
+            "comments": "cgame: fixed MG reload animation, fixes #784",
+            "committed_on": "2015-01-17T11:22:20Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 4396,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "",
+            "created_on": "2015-01-16T16:39:10Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "785"
+                }
+            ]
+        },
+        {
+            "id": 4417,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "Fixed now.\r\n\r\n-*S",
+            "created_on": "2015-01-17T04:16:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "90"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 4419,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-01-17T11:10:27Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "As the title says, the animations are a bit bugged.",
+                    "new_value": "As the title says, the animations are a bit bugged (reload in prone animation)."
+                }
+            ]
+        },
+        {
+            "id": 4434,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-01-18T21:16:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "17"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 784,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "MG and Browning reload animations are bugged",
+    "description": "As the title says, the animations are a bit bugged (reload in prone animation).",
+    "start_date": "2015-01-16",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-01-16T16:37:25Z",
+    "updated_on": "2015-01-18T21:16:07Z",
+    "closed_on": "2015-01-17T04:16:32Z"
+}

@@ -1,0 +1,253 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "e914ab9d541a84cb40b54d95f3453fc665e03336",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: check SDL2 version in cmake file, refs #622",
+            "committed_on": "2014-11-12T22:20:28Z"
+        },
+        {
+            "revision": "6fb3c2e3791f2eb2cc78417c8e21570679e08127",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "general: removed SDL hardcoded version check, fixes #622",
+            "committed_on": "2014-11-12T22:55:34Z"
+        },
+        {
+            "revision": "0827db40fb99588c650cdaa41f3ed02e35c9f10b",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "general: removed now orphaned defines, refs #622",
+            "committed_on": "2014-11-13T13:06:01Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3690,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-11-12T05:22:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Expand FindSDL2.cmake for version check",
+                    "new_value": "Expand FindSDL2.cmake for version check (SDL2 2.0.3))"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 3691,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-11-12T05:22:26Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Expand FindSDL2.cmake for version check (SDL2 2.0.3))",
+                    "new_value": "Expand FindSDL2.cmake for version check (SDL2 2.0.3)"
+                }
+            ]
+        },
+        {
+            "id": 3693,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I expanded the cmake script for version check (tested for both 32 and 64 builds), and also removed the whole hardcoded check in the code. As the Linux binary is statically compiled in, that the Win version is shipped with the required SDL dll, I don't think it is needed at all.\r\n\r\nIf absolutely needed, the second commit can be reverted.",
+            "created_on": "2014-11-12T23:07:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3697,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Doesn't it make sense to keep the code check for non bundled builds to avoid runtime issues?",
+            "created_on": "2014-11-13T07:52:29Z",
+            "details": []
+        },
+        {
+            "id": 3698,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "IR4T4 wrote:\r\n> Doesn't it make sense to keep the code check for non bundled builds to avoid runtime issues?\r\n\r\nIn which situation would this happen? I just can't think of any real user case, apart from people messing badly with their system and deleting the SDL.dll from the etl folder (but why would they do that?). On Linux, dependencies are handled by the packaging system.",
+            "created_on": "2014-11-13T08:46:17Z",
+            "details": []
+        },
+        {
+            "id": 3699,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Well just in case packet system hasn't got latest SDL2 available or people spread non bundled versions and the the target system hasn't got SDL2 installed. ",
+            "created_on": "2014-11-13T10:53:52Z",
+            "details": []
+        },
+        {
+            "id": 3700,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "In the first case CMake will let you know that a newer version of SDL is required with this spyhawk's change and I don't see the second case as a big issue either because every distro will sooner or later update the libsdl package and it's obvious that people should use the latest libraries for bug fixes.",
+            "created_on": "2014-11-13T11:16:24Z",
+            "details": []
+        },
+        {
+            "id": 3701,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "> In the first case CMake will let you know that a newer version of SDL\r\n\r\nYes. I might also be able to provide the needed SDL2 version with the Linux builds in the OBS soon.\r\n\r\nThe only possible issue as I see it is people spreading self-compiled non bundled version, and that have no idea what they are doing. But even here, the real issue seems to be more the current lack of nightly builds provided by the project. I'd prefer to work on this task rather than having some hacky workaround for unlikely situation.",
+            "created_on": "2014-11-13T11:38:28Z",
+            "details": []
+        },
+        {
+            "id": 3702,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "There are some orphaned defines left: https://github.com/etlegacy/etlegacy/blob/master/src/sys/sys_local.h#L41",
+            "created_on": "2014-11-13T11:51:43Z",
+            "details": []
+        },
+        {
+            "id": 3703,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Thx, fixed.",
+            "created_on": "2014-11-13T13:12:19Z",
+            "details": []
+        },
+        {
+            "id": 3704,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Why remove this? The checking is there so that people wont use old system libraries.........",
+            "created_on": "2014-11-13T16:28:15Z",
+            "details": []
+        },
+        {
+            "id": 3714,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Jacker wrote:\r\n> Why remove this? The checking is there so that people wont use old system libraries.........\r\n\r\nFor the above reasons. Yes, it's technically possible to mess around and launch with an old lib, but I don't think this is realistic.\r\nAlternatively, it might be possible to generate the hard check dynamically from the CMake script (like it is done with the version number).\r\n\r\n",
+            "created_on": "2014-11-14T20:08:01Z",
+            "details": []
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 622,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Expand FindSDL2.cmake for version check (SDL2 2.0.3)",
+    "description": "Currently, the version check for the required SDL2 version is hardcoded in sys/sys_main.c.\r\nThis should be moved to the cmake prebuild system (at least for the check done at build time).\r\n\r\nCheck FindLua.cmake for a version check example.",
+    "start_date": "2014-11-12",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-11T23:05:22Z",
+    "updated_on": "2014-11-14T20:08:01Z",
+    "closed_on": "2014-11-12T23:07:44Z"
+}

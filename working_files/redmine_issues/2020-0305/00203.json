@@ -1,0 +1,125 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "4c2bb9c045844859b957992624501fbf4af2bb7c",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "ui: added new features into menu files refs #203",
+            "committed_on": "2013-02-11T17:23:23Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1143,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-02-10T23:02:45Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1150,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "",
+            "created_on": "2013-02-11T17:26:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 1151,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "",
+            "created_on": "2013-02-11T17:48:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 13,
+            "name": "RaFaL"
+        }
+    ],
+    "time_entries": null,
+    "id": 203,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 110,
+        "name": "Harlekin"
+    },
+    "assigned_to": {
+        "id": 13,
+        "name": "RaFaL"
+    },
+    "category": {
+        "id": 15,
+        "name": "Mod UI"
+    },
+    "fixed_version": {
+        "id": 7,
+        "name": "2.71rc2"
+    },
+    "subject": "Menu Files",
+    "description": "options_controls.menu\r\nadded missing m_pitch to the mouse section\r\n\r\noptions_customise_game.menu\r\nmoved \"Downloads\" to options_system.menu\r\nadded missind Chat options: cg_teamChatsOnly, noVoiceChats, noVoiceText\r\n\r\noptions_customise_hud.menu\r\nchanged cg_fov values to league allowed values (90-120) also added status of current fov.\r\n\r\noptions_system.menu\r\nadded game sound on/off (s_mute)\r\nadded \"Downloads\" to options_system.menu\r\nremoved useless \"Memory\" section\r\n\r\npopupServerRedirect.menu\r\nadded missing retry button. now it contains: Yes, No & Retry (maybe rename to reconnect)\r\n\r\nAll changes in etl.zip\r\n",
+    "start_date": "2013-02-10",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-02-10T22:01:39Z",
+    "updated_on": "2013-02-11T17:48:00Z",
+    "closed_on": "2013-02-11T17:48:00Z"
+}

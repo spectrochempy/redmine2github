@@ -1,0 +1,415 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "de0ef00fabfd1015b08edc6fc86a0747802cfbe8",
+            "comments": "misc: FSH installation compliance, fixes #81",
+            "committed_on": "2012-09-30T10:24:46Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 325,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-09-29T15:25:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "9"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 327,
+            "user": {
+                "id": 2,
+                "name": "Anonymous"
+            },
+            "notes": "Applied in changeset commit:de0ef00fabfd1015b08edc6fc86a0747802cfbe8.",
+            "created_on": "2012-09-30T10:35:10Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 328,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "There are three new variables in cmake:\r\n\r\n* *@INSTALL_DEFAULT_BASEDIR@*: sets default @fs_basepath@, i.e. where @etl@ and @etlded@ executables look for data files. Should be @CMAKE_INSTALL_PREFIX@+@INSTALL_DEFAULT_MODDIR@. Defaults to empty value, because we want @fs_basepath@ to be the current working directory when not installing the game system-wide.\r\n* *@INSTALL_DEFAULT_BINDIR@*: Appended to @CMAKE_INSTALL_PREFIX@. Defaults to \"bin\".\r\n* *@INSTALL_DEFAULT_MODDIR@*: Appended to @CMAKE_INSTALL_PREFIX@. Defaults to \"share/etlegacy\" and then \"etmain\" is appended to it.\r\n\r\nExample:\r\n<pre>\r\ncmake -DCMAKE_INSTALL_PREFIX=\"/usr\" -DINSTALL_DEFAULT_BASEDIR=\"/usr/share/etlegacy\"\r\n...\r\nsudo make install\r\n...\r\n-- Installing: /usr/bin/etl\r\n-- Installing: /usr/bin/etlded\r\n-- Installing: /usr/share/etlegacy/etmain/cgame.mp.i386.so\r\n-- Installing: /usr/share/etlegacy/etmain/qagame.mp.i386.so\r\n-- Installing: /usr/share/etlegacy/etmain/ui.mp.i386.so\r\n-- Installing: /usr/share/etlegacy/etmain/mp_bin.pk3\r\n-- Installing: /usr/share/etlegacy/etmain/pak3.pk3\r\n</pre>",
+            "created_on": "2012-09-30T10:58:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 332,
+            "user": {
+                "id": 58,
+                "name": "Matt"
+            },
+            "notes": "Binaries are not allowed in /usr/share so you need to put the *.so libraries into /usr/lib/etlegacy/etmain",
+            "created_on": "2012-10-02T12:35:40Z",
+            "details": []
+        },
+        {
+            "id": 333,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Matt wrote:\r\n> Binaries are not allowed in /usr/share so you need to put the *.so libraries into /usr/lib/etlegacy/etmain\r\nIn that case both the libraries and paks need to go to @/usr/lib/etlegacy/etmain@ for now.",
+            "created_on": "2012-10-02T13:31:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 379,
+            "user": {
+                "id": 58,
+                "name": "Matt"
+            },
+            "notes": "As the mp_bin.pk3 probably also contains binaries (rpmlint will check) putting everything into /usr/lib/etlegacy/etmain should be okay.",
+            "created_on": "2012-10-20T13:37:11Z",
+            "details": []
+        },
+        {
+            "id": 381,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Matt, \n\nplease have a look at this page: http://www.etlegacy.com/projects/etlegacy/wiki/ET_Legacy_path_structure\n\nLet's ensure we have a proper install on all systems. Is this structure still FHS compliant when /usr/lib/etlegacy/ is fs_basepath and fs_homepath is just up to the user?\n\nWhat about creating symlinks /usr/bin/etl -> /usr/lib/etlegacy/etl  ?\n",
+            "created_on": "2012-10-21T14:42:10Z",
+            "details": []
+        },
+        {
+            "id": 395,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "IR4T4 wrote:\n> Is this structure still FHS compliant when /usr/lib/etlegacy/ is fs_basepath and fs_homepath is just up to the user?\nAs discussed with user:morsik, to be compliant we must separate executables, libraries and other data like this:\n\n* */usr/bin* <- @etl@ and @etlded@ binaries\n* */usr/lib/etlegacy* <- @ui@, @cgame@ and @qagame@ libraries including @mp_bin.pk3@\n* */usr/share/etlegacy* <- game assets, i.e. @pakX.pk3@\n\nWe can already set @fs_basepath@ to point to @/usr/lib/etlegacy@ by default in cmake. We'll have to add another cvar called @fs_datapath@ to point to @/usr/share/etlegacy@.\n\n@fs_homepath@ will work the way it did.\n \nIR4T4 wrote:\n> What about creating symlinks /usr/bin/etl -> /usr/lib/etlegacy/etl  ?\n\nmatt wrote:\n> Also installing the binaries and data files to /usr/lib or do some *ln -sf crap* is not optimal. ",
+            "created_on": "2012-10-21T22:07:21Z",
+            "details": []
+        },
+        {
+            "id": 396,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Owww - I see. Thank you for the info update. Now I'm not sure about the pure check if we split those files into 2 pathes. Looks like we have to modify a lot to introduce fs_datapath ...\r\n\r\n\r\n\r\n",
+            "created_on": "2012-10-22T06:55:13Z",
+            "details": []
+        },
+        {
+            "id": 405,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Radegast, worth to read: \r\n\r\nhttps://bugzilla.icculus.org/show_bug.cgi?id=5780 *see attachments*\r\n\r\nhttps://bugzilla.icculus.org/show_bug.cgi?id=5767\r\n",
+            "created_on": "2012-10-22T13:18:39Z",
+            "details": []
+        },
+        {
+            "id": 436,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "i still think that distro packages should care about packaging. gentoo uses /usr/share/games for games directory (gentoo does not really case about FHS compliance, it cares about different things)...",
+            "created_on": "2012-11-03T18:20:02Z",
+            "details": []
+        },
+        {
+            "id": 441,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "morsik wrote:\n> i still think that distro packages should care about packaging. gentoo uses /usr/share/games for games directory (gentoo does not really case about FHS compliance, it cares about different things)...\n\nIf we were LibreOffice developers I'm sure most distros would adapt to our needs, but since our userbase consists of only a handful of people and we +want+ to be accepted to OpenSuse Games repo, then we are the ones who need to adapt.\n\n\n\nuser:Matt, we want to release version:2.70 sometime next week. Is this hierarchy acceptable for now? \n\n<pre>\n/usr/bin/etl\n/usr/bin/etlded\n/usr/lib/etlegacy/legacy/cgame.mp.i386.so\n/usr/lib/etlegacy/legacy/qagame.mp.i386.so\n/usr/lib/etlegacy/legacy/ui.mp.i386.so\n/usr/lib/etlegacy/legacy/mp_bin.pk3 <- zipped libraries\n/usr/lib/etlegacy/legacy/pak3.pk3 <- contains only game assets\n</pre>\n\nNote that we changed our main mod directory from @etmain@ to @legacy@, but W:ET 2.60b files still stay at @etmain@, so I don't think you need to make any changes to the \"enemy-territory-data\":http://software.opensuse.org/package/enemy-territory-data package.",
+            "created_on": "2012-11-03T20:36:08Z",
+            "details": []
+        },
+        {
+            "id": 442,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "OpenSUSE is not only one distro ;P\r\nThere are many others too and writing correct rpm spec is not big deal...",
+            "created_on": "2012-11-03T20:39:46Z",
+            "details": []
+        },
+        {
+            "id": 447,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Radegast wrote:\r\n> /usr/lib/etlegacy/legacy/mp_bin.pk3 <- zipped libraries\r\n\r\nNote to avoid confusion: ET:L bins are no longer put into a pk3 'mp_bin.pk3', it's 'etl_bin.pk3'.",
+            "created_on": "2012-11-04T04:12:55Z",
+            "details": []
+        },
+        {
+            "id": 455,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "btw, ader's new ET:L icon (source:misc/etl.svg) has been added to our main repo and can be used to create desktop files",
+            "created_on": "2012-11-04T16:57:19Z",
+            "details": []
+        },
+        {
+            "id": 457,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-11-04T22:03:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 489,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-11-11T22:39:51Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 494,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2012-11-11T23:03:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "5",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 539,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "The question is just how '/usr/lib' is defined to be FHS compliant.  \r\nThe file structure Radgegast pointed to should do the trick when we start etl (in bin path) by +set fs_basepath \"/usr/lib/etlegacy/\". \r\n\r\n\r\nFrom http://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard\r\n\"        \r\n/usr/share - Architecture-independent (shared) data.\r\n...\r\n/usr/lib - Libraries for the binaries in /usr/bin/ and /usr/sbin/.\r\n\"",
+            "created_on": "2012-11-15T20:00:32Z",
+            "details": []
+        },
+        {
+            "id": 805,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Any updates on this? ",
+            "created_on": "2012-12-15T11:43:22Z",
+            "details": []
+        },
+        {
+            "id": 822,
+            "user": {
+                "id": 58,
+                "name": "Matt"
+            },
+            "notes": "<pre>\r\ncmake . -DCMAKE_INSTALL_PREFIX=%{_prefix} \\\r\n        -DINSTALL_DEFAULT_BASEDIR=%{_libdir}/enemy-territory \\\r\n        -DINSTALL_DEFAULT_MODDIR=%{_libdir}/enemy-territory \\\r\n</pre>\r\nworks fine. Just COPYING and README.md should not be installed there, too.",
+            "created_on": "2012-12-15T19:12:22Z",
+            "details": []
+        },
+        {
+            "id": 823,
+            "user": {
+                "id": 58,
+                "name": "Matt"
+            },
+            "notes": "Mods should also not install .so files into $HOME and mp_bin.pk3 is also dubious, but I guess you can't change this as this is inherited from Quake\u00b3.",
+            "created_on": "2012-12-15T20:48:04Z",
+            "details": []
+        },
+        {
+            "id": 829,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Matt wrote:\r\n> Mods should also not install .so files into $HOME and mp_bin.pk3 is also dubious, but I guess you can't change this as this is inherited from Quake\u00b3.\r\nUnfortunately not w/o a huge effort.",
+            "created_on": "2012-12-16T22:04:37Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "6",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 830,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-12-16T22:04:52Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 2459,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "created_on": "2013-12-14T18:07:40Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "new_value": "Linux"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 58,
+            "name": "Matt"
+        },
+        {
+            "id": 1,
+            "name": "Radegast"
+        }
+    ],
+    "time_entries": null,
+    "id": 81,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 58,
+        "name": "Matt"
+    },
+    "assigned_to": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 5,
+        "name": "2.71rc1"
+    },
+    "subject": "FHS compliance",
+    "description": "As discussed in IRC:\r\n\r\nAt the moment\r\n<pre>\r\ncmake -DETLEGACY_INSTALL_DIRECTORY=\"/usr/lib/etlegacy\"\r\n</pre>\r\nis ignored. It still installs into /usr/games which is not allowed for openSUSE.\r\n\r\nAlso installing the binaries and data files to /usr/lib or do some ln -sf crap is not optimal. It would be great if it could search for pk3 in /usr/share/etlegacy store the *.so libraries in /usr/lib and install the binaries in /usr/bin.\r\n\r\nThis seems to be a problem in all http://ioquake3.org/ derivatives so a fix should be contributed up-upstream. :)",
+    "start_date": "2012-09-28",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-09-28T19:42:08Z",
+    "updated_on": "2013-12-14T18:07:40Z",
+    "closed_on": "2012-12-16T22:04:52Z"
+}

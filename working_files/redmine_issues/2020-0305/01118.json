@@ -1,0 +1,108 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7304,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-10-15T22:37:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Server admins often don't synchronize external downloads (if set).\r\n\r\nCreate a command which proves integrity for admins.",
+                    "new_value": "Server admins often don't synchronize external downloads (if set).\r\n\r\nCreate a command which prooves integrity for admins."
+                }
+            ]
+        },
+        {
+            "id": 7305,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-10-15T22:38:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Add a server command to proove external downloads ",
+                    "new_value": "Add a server command to prove external downloads "
+                }
+            ]
+        },
+        {
+            "id": 7306,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-10-15T22:39:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Server admins often don't synchronize external downloads (if set).\r\n\r\nCreate a command which prooves integrity for admins.",
+                    "new_value": "Server admins often don't synchronize external downloads (if set).\r\n\r\nCreate a command which proves integrity for admins."
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1118,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 5,
+        "name": "Server"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Add a server command to prove external downloads ",
+    "description": "Server admins often don't synchronize external downloads (if set).\r\n\r\nCreate a command which proves integrity for admins.",
+    "start_date": "2018-10-16",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2018-10-15T22:36:53Z",
+    "updated_on": "2018-10-15T22:39:13Z"
+}

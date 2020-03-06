@@ -1,0 +1,232 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 138,
+            "issue_id": 122,
+            "issue_to_id": 570,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 140,
+            "issue_id": 599,
+            "issue_to_id": 570,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "a072d064a8f31258783a84f90c6887bb002ce299",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "sdl: fixed glimp_detectavailablemodes, refs #570",
+            "committed_on": "2014-08-30T18:08:32Z"
+        },
+        {
+            "revision": "7402560dcf44db2aa57c24054cf58022412b4532",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "set the default r_mode to -2 and remove the second mode detection from glimp ,refs #570",
+            "committed_on": "2014-10-26T15:30:18Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3409,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-08-29T11:41:03Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "122"
+                }
+            ]
+        },
+        {
+            "id": 3411,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Screen is null the first call and modes can't be detected. Message changed to  \"Couldn't get display mode, screen is not initialized\" see http://dev.etlegacy.com/projects/etlegacy/repository/revisions/18b86a64cb4484b0d9737fdc6cea39eca659de03/diff/src/sdl/sdl_glimp.c",
+            "created_on": "2014-08-30T15:06:43Z",
+            "details": []
+        },
+        {
+            "id": 3412,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "I added some code related to this yesterday, have you pulled the latest and tested?",
+            "created_on": "2014-08-30T15:12:50Z",
+            "details": []
+        },
+        {
+            "id": 3413,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Yes. To me the first call of GLimp_DetectAvailableModes in GLimp_SetMode is kind of useless. 'screen' is null at that point because it's init later on in same function (line 817).",
+            "created_on": "2014-08-30T17:15:44Z",
+            "details": []
+        },
+        {
+            "id": 3414,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Please try it now, pushed some fixes :)",
+            "created_on": "2014-08-30T18:11:06Z",
+            "details": []
+        },
+        {
+            "id": 3415,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "My system detects 1 mode ... there should be more?\r\n\r\n<pre>\r\nEstimated display aspect: 1.600\r\nAvailable modes: '1680x1050'\r\n</pre>\r\n\r\nI've also realized new r_mode, vid_reastart have no effect. I can't change from r_mode -1 at runtime.",
+            "created_on": "2014-08-30T18:34:43Z",
+            "details": []
+        },
+        {
+            "id": 3417,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "<pre>Available modes: '1280x800 1440x900 1680x1050 2048x1280 2560x1600 2880x1800 640x480 800x600 1024x768'\r\n...setting mode -1: 1024x768\r\nUsing 24 color bits, 24 depth, 0 stencil display.\r\nUsing GLEW 1.10.0\r\nAvailable modes: '1280x800 1440x900 1680x1050 2048x1280 2560x1600 2880x1800 640x480 800x600 1024x768'</pre>\r\n\r\nYea, there are several in my case, but is there a reason that they are being detected twice?\r\n\r\nIR4T4 wrote:\r\n> I've also realized new r_mode, vid_reastart have no effect. I can't change from r_mode -1 at runtime.\r\n\r\nWorks for me :-O",
+            "created_on": "2014-08-31T11:49:23Z",
+            "details": []
+        },
+        {
+            "id": 3547,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-10-17T10:44:43Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "599"
+                }
+            ]
+        },
+        {
+            "id": 3591,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "<pre>\r\nEstimated display aspect: 1.600\r\nAvailable modes [1]: '1680x1050'\r\n...setting mode -1: 1680x1050\r\nUsing 24 color bits, 24 depth, 0 stencil display.\r\nUsing GLEW 1.11.0\r\nAvailable modes [1]: '1680x1050'\r\n</pre>\r\n\r\n1. For some reasons (driver or system settings) my system detects one mode only\r\n\r\n2. Why do we call GLimp_DetectAvailableModes twice?",
+            "created_on": "2014-10-26T08:58:20Z",
+            "details": []
+        },
+        {
+            "id": 3592,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Closing this since it is no longer called twice and it does not affect anything.",
+            "created_on": "2014-10-27T11:17:40Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3593,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Let's keep in mind some x11 systems don't detect modes properly. ",
+            "created_on": "2014-10-27T15:04:34Z",
+            "details": []
+        }
+    ],
+    "watchers": [
+        {
+            "id": 44,
+            "name": "Jacker"
+        }
+    ],
+    "time_entries": null,
+    "id": 570,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "GLimp_DetectAvailableModes fails the first call on X11",
+    "description": "Fix \"Couldn\u2019t get window display mode, no resolutions detected\", SDL2 error: \"Invalid window\" (occures on linux)",
+    "start_date": "2014-08-29",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-08-29T11:20:31Z",
+    "updated_on": "2014-10-27T15:04:34Z",
+    "closed_on": "2014-10-27T11:17:40Z"
+}

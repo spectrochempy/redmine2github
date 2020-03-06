@@ -1,0 +1,314 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "f0633a99f12f7cb2fbca2ceea9a57238610c8c67",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "renderer2: q3/ET fog enabled refs #553",
+            "committed_on": "2017-09-29T15:28:50Z"
+        },
+        {
+            "revision": "d6e402081b165758740d88cbf2141c8c6f5628ee",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "renderer2: read all available submodel data from bsp and set model num\nin fog_t refs #553",
+            "committed_on": "2018-08-19T14:16:29Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3308,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-08-02T07:19:39Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 3318,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-08-03T21:17:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "15"
+                }
+            ]
+        },
+        {
+            "id": 3336,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "This needs to be fixed with a custom glsl shader path, not a hard fix to do :)",
+            "created_on": "2014-08-06T07:24:12Z",
+            "details": []
+        },
+        {
+            "id": 6654,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "http://in2gpu.com/2014/07/22/create-fog-shader/",
+            "created_on": "2017-04-08T15:38:46Z",
+            "details": []
+        },
+        {
+            "id": 6655,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "",
+            "created_on": "2017-04-08T17:17:50Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "742",
+                    "new_value": "shader_fog_fragment.glsl"
+                },
+                {
+                    "property": "attachment",
+                    "name": "743",
+                    "new_value": "shader_fog_vertex.glsl"
+                },
+                {
+                    "property": "attachment",
+                    "name": "744",
+                    "new_value": "shader_phong_fragment.glsl"
+                },
+                {
+                    "property": "attachment",
+                    "name": "745",
+                    "new_value": "shader_phong_vertex.glsl"
+                }
+            ]
+        },
+        {
+            "id": 6899,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I've had a look at this again and figured out why q3/ET fog wasn't visible in general. This has been fixed. \r\n\r\n{FIXME}\r\n- Make fog more foggy. Compared to r1 it's currently more a cut at the horizon.\r\n-  Rework SetFarClip() - see buildings (f.e. baserace) on different distances. It doesn't look natural.",
+            "created_on": "2017-09-29T15:43:00Z",
+            "details": []
+        },
+        {
+            "id": 6978,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "FIxed https://dev.etlegacy.com/projects/etlegacy/repository/revisions/7559cf478e9b50f9def18714aa2f44df5afa07ec",
+            "created_on": "2017-11-21T21:36:04Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 7072,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Re-opened. Fog needs some optimizations see baserace or radar. \r\nCompared to r2 It looks a bit too intensive and the sky on radar isn't visible.",
+            "created_on": "2018-02-11T15:55:21Z",
+            "details": []
+        },
+        {
+            "id": 7073,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-02-11T15:55:59Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "8"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 7180,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "{FIXME}\r\nMaps with fogvars set don't display this fog. Example: https://www.wolffiles.de/index.php?filebase&fid=4901\r\n\r\n",
+            "created_on": "2018-03-20T09:42:31Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "renderer2: fix fog",
+                    "new_value": "renderer2: fix 'fogvars' fog"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "70"
+                }
+            ]
+        },
+        {
+            "id": 7188,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Fog has been reworked (should be fine for a release) but it's still WIP.\r\n",
+            "created_on": "2018-03-24T13:36:05Z",
+            "details": []
+        },
+        {
+            "id": 7189,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "{FIXME}\r\n- inspect global world fog using static density?",
+            "created_on": "2018-03-27T08:55:48Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "renderer2: fix 'fogvars' fog",
+                    "new_value": "renderer2: fix 'fogvars' fog / fog issues"
+                }
+            ]
+        },
+        {
+            "id": 8494,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "still need to get both fogs on the maps loaded with shader only",
+            "created_on": "2019-09-29T12:24:39Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "70",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 8497,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "cant fix that maps issues atm..",
+            "created_on": "2019-10-06T11:19:10Z",
+            "details": []
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 553,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 8,
+        "name": "Confirmed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 15,
+        "name": "renderer2"
+    },
+    "subject": "renderer2: fix 'fogvars' fog / fog issues",
+    "description": "As the title says - fog doesn't work.\r\n\r\nAffected maps (f.e.):\r\n- stalingrad\r\n- baserace\r\n\r\nActually q3 and ET use different foq code! Vanilla ET/r1 don't use the fogTable. This has been removed with http://dev.etlegacy.com/projects/etlegacy/repository/revisions/4e5eba5b3977847342143350f0603514a495d3b9\r\n\r\nI did try to add the q3 style for r1 but I wasn't able to adjust the density of foq to 'known ET' style fog. See attached images. Unfortunately I didn't do a screeny of a wide sight - the range of view is very short (max 1024 game units). \r\n",
+    "start_date": "2014-08-02",
+    "done_ratio": 80,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-08-02T07:19:11Z",
+    "updated_on": "2019-10-06T11:19:10Z",
+    "closed_on": "2017-11-21T21:36:04Z"
+}

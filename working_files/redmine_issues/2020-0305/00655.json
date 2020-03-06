@@ -1,0 +1,125 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "4f43c1fecc6e72c824ba8de86210985caeeb9950",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "misc: let cmake script search for Lua 5.2 (if not bundled)",
+            "committed_on": "2014-11-01T11:21:19Z"
+        },
+        {
+            "revision": "515d00b26d2c4b99e0bf472843147c869d8c2063",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: no longer support Lua < 5.2",
+            "committed_on": "2014-11-20T19:04:12Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3776,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-20T18:25:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "44"
+                }
+            ]
+        },
+        {
+            "id": 3807,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Already done. Windows compiles Lua from sources since a few weeks. The lua-windows folder in etlegacy-libs is deprecated.",
+            "created_on": "2014-11-22T00:09:48Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 655,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 44,
+        "name": "Jacker"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Update Windows embedded  Lua libs to 5.2",
+    "description": "We currently support Lua 5.1 and 5.2.\r\n\r\nHowever, Lua 5.2 breaks the API and there are serious incompatibilities between Lua script written for 5.1 and 5.2.\r\nAs Lua 5.1 has been released 8 years ago (2006), we should move towards the newest version and drop support for 5.1.\r\n\r\nThe CMake script version check should be updated, but we first need to update the embedded Lua libs for Windows (already done for *nix by IR4).\r\n\r\nhttp://code.google.com/p/luaforwindows/ doesn't provide Lua 5.2, but some are provided here:\r\nhttp://sourceforge.net/projects/luabinaries/ (see download / Windows Libraries / Static)",
+    "start_date": "2014-11-20",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-20T18:16:42Z",
+    "updated_on": "2014-11-22T00:09:48Z",
+    "closed_on": "2014-11-22T00:09:48Z"
+}

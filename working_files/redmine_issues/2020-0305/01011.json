@@ -1,0 +1,135 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 391,
+            "issue_id": 1186,
+            "issue_to_id": 1011,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "be32c15bfee0eb80e0119689dfaf37f3a65d1575",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "sdl: print warning when fullsreen failed (was debug print)",
+            "committed_on": "2017-03-02T17:02:22Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 6479,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Might be driver related ...",
+            "created_on": "2017-02-28T14:35:37Z",
+            "details": []
+        },
+        {
+            "id": 6556,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Might be. See the log attached in https://dev.etlegacy.com/boards/2/topics/2995?r=3026#message-3026\r\n\r\n*** invalid open call: O_CREAT or O_TMPFILE without mode ***: . terminated\r\n======= Backtrace: =========\r\n/lib/i386-linux-gnu/libc.so.6(+0x67377)[0xf737b377]\r\n/lib/i386-linux-gnu/libc.so.6(__fortify_fail+0x68)[0xf740b548]\r\n/lib/i386-linux-gnu/libc.so.6(+0xd5627)[0xf73e9627]\r\n.[0x810f181]\r\n.[0x8083cb4]\r\n.[0x8086797]\r\n.[0x80eb2fb]\r\n.[0x8073af3]\r\n.[0x80b5e56]\r\n.[0x8099885]\r\n.[0x805f646]\r\n/lib/i386-linux-gnu/libc.so.6(__libc_start_main+0xf7)[0xf732c637]\r\n.[0x805fa90]\r\n======= Memory map: ========\r\n08048000-08466000 r-xp 00000000 08:01 7865131                            /home/james/.wolfetnew/src/etlegacy/build/etl\r\n08467000-08468000 r--p 0041e000 08:01 7865131                            /home/james/.wolfetnew/src/etlegacy/build/etl\r\n08468000-0846f000 rw-p 0041f000 08:01 7865131                            /home/james/.wolfetnew/src/etlegacy/build/etl\r\n0846f000-0a747000 rw-p 00000000 00:00 0 \r\n0bdce000-0c174000 rw-p 00000000 00:00 0                                  [heap]\r\nd320f000-dd300000 rw-p 00000000 00:00 0 \r\ndd300000-dd321000 rw-p 00000000 00:00 0 \r\ndd321000-dd400000 ---p 00000000 00:00 0 \r\ndd4e8000-dd8e8000 rw-s 3c583e000 00:06 499                               /dev/nvidiactl\r\ndd8e8000-ddae8000 rw-s 3c6525000 00:06 499                               /dev/nvidiactl\r\nddae8000-ddfea000 rw-p 00000000 00:00 0 \r\nddfea000-de06a000 rw-s 387375000 00:06 499                               /dev/nvidiactl\r\nde06a000-de16a000 rw-s 3c5475000 00:06 499                               /dev/nvidiactl\r\nde16a000-de1aa000 rw-s 3c3000000 00:06 499                               /dev/nvidiactl\r\nde1aa000-de1ca000 rw-s 3c533b000 00:06 499                               /dev/nvidiactl\r\nde1ca000-de27d000 rw-p 00000000 00:00 0 \r\nde2e2000-de396000 rw-s 3c3ca3000 00:06 499                               /dev/nvidiactl\r\nde396000-de48f000 rw-p 00000000 00:00 0 \r\nde493000-de494000 rw-p 00000000 00:00 0 \r\nde494000-de495000 ---p 00000000 00:00 0 \r\nde495000-de4a5000 rw-p 00000000 00:00 0 \r\nde4a5000-de4a7000 rw-s 00000000 08:01 2359427                            /tmp/.glafnvdG (deleted)\r\nde4a7000-de519000 rw-p 00000000 00:00 0 \r\nde519000-de719000 r--p 00000000 08:01 7341044                            /usr/lib/locale/locale-archive\r\nde719000-de71e000 r-xp 00000000 08:01 9568928                            /usr/lib/i386-linux-gnu/libXxf86vm.so.1.0.0\r\nde71e000-de71f000 r--p 00004000 08:01 9568928                            /usr/lib/i386-linux-gnu/libXxf86vm.so.1.0.0\r\nde71f000-de720000 rw-p 00005000 08:01 9568928                            /usr/lib/i386-linux-gnu/libXxf86vm.so.1.0.0\r\nde720000-dff21000 rw-p 00000000 00:00 0 \r\ndff21000-dff26000 r-xp 00000000 08:01 9568281                            /usr/lib/i386-linux-gnu/libXdmcp.so.6.0.0\r\ndff26000-dff27000 r--p 00004000 08:01 9568281                            /usr/lib/i386-linux-gnu/libXdmcp.so.6.0.0\r\ndff27000-dff28000 rw-p 00005000 08:01 9568281                            /usr/lib/i386-linux-gnu/libXdmcp.so.6.0.0\r\ndff28000-dff2a000 r-xp 00000000 08:01 9569856                            /usr/lib/i386-linux-gnu/libXau.so.6.0.0\r\ndff2a000-dff2b000 r--p 00001000 08:01 9569856                            /usr/lib/i386-linux-gnu/libXau.so.6.0.0\r\ndff2b000-dff2c000 rw-p 00002000 08:01 9569856                            /usr/lib/i386-linux-gnu/libXau.so.6.0.0\r\ndff2c000-dff50000 r-xp 00000000 08:01 9568273                            /usr/lib/i386-linux-gnu/libxcb.so.1.1.0\r\ndff50000-dff51000 r--p 00023000 08:01 9568273                            /usr/lib/i386-linux-gnu/libxcb.so.1.1.0\r\ndff51000-dff52000 rw-p 00024000 08:01 9568273                            /usr/lib/i386-linux-gnu/libxcb.so.1.1.0\r\ndff52000-dff65000 r-xp 00000000 08:01 9568548                            /usr/lib/i386-linux-gnu/libXext.so.6.4.0\r\ndff65000-dff66000 r--p 00012000 08:01 9568548                            /usr/lib/i386-linux-gnu/libXext.so.6.4.0\r\ndff66000-dff67000 rw-p 00013000 08:01 9568548                            /usr/lib/i386-linux-gnu/libXext.so.6.4.0\r\ndff67000-e00ad000 r-xp 00000000 08:01 9568277                            /usr/lib/i386-linux-gnu/libX11.so.6.3.0\r\ne00ad000-e00ae000 ---p 00146000 08:01 9568277                            /usr/lib/i386-linux-gnu/libX11.so.6.3.0\r\ne00ae000-e00af000 r--p 00146000 08:01 9568277                            /usr/lib/i386-linux-gnu/libX11.so.6.3.0\r\ne00af000-e00b1000 rw-p 00147000 08:01 9568277                            /usr/lib/i386-linux-gnu/libX11.so.6.3.0\r\ne00b1000-e00b2000 rw-p 00000000 00:00 0 \r\ne00b2000-e199c000 r-xp 00000000 08:01 7349866                            /usr/lib32/nvidia-340/libnvidia-glcore.so.340.101\r\ne199c000-e19b9000 rwxp 018ea000 08:01 7349866                            /usr/lib32/nvidia-340/libnvidia-glcore.so.340.101\r\ne19b9000-e25ed000 r-xp 01907000 08:01 7349866                            /usr/lib32/nvidia-340/libnvidia-glcore.so.340.101\r\ne25ed000-e2630000 rw-p 0253a000 08:01 7349866                            /usr/lib32/nvidia-340/libnvidia-glcore.so.340.101\r\ne2630000-e2646000 rw-p 00000000 00:00 0 \r\ne2646000-e264a000 r-xp 00000000 08:01 7349811                            /usr/lib32/nvidia-340/tls/libnvidia-tls.so.340.101\r\ne264a000-e264b000 rw-p 00003000 08:01 7349811                            /usr/lib32/nvidia-340/tls/libnvidia-tls.so.340.101\r\ne264b000-e2701000 r-xp 00000000 08:01 7349824                            /usr/lib32/nvidia-340/libGL.so.340.101\r\ne2701000-e271e000 rwxp 000b6000 08:01 7349824                            /usr/lib32/nvidia-340/libGL.so.340.101\r\ne271e000-e274e000 r-xp 000d3000 08:01 7349824                            /usr/lib32/nvidia-340/libGL.so.340.101\r\ne274e000-e2753000 rw-p 00102000 08:01 7349824                            /usr/lib32/nvidia-340/libGL.so.340.101\r\ne2753000-e2762000 rw-p 00000000 00:00 0 \r\ne2762000-e2946000 r-xp 00000000 08:01 7865105                            /home/james/.wolfetnew/src/etlegacy/build/librenderer_opengl1_i386.so\r\ne2946000-e2947000 r--p 001e3000 08:01 7865105                            /home/james/.wolfetnew/src/etlegacy/build/librenderer_opengl1_i386.so\r\ne2947000-e294a000 rw-p 001e4000 08:01 7865105                            /home/james/.wolfetnew/src/etlegacy/build/librenderer_opengl1_i386.so\r\ne294a000-e3249000 rw-p 00000000 00:00 0 \r\ne3249000-e3254000 r-xp 00000000 08:01 14418085                           /lib/i386-linux-gnu/libnss_files-2.23.so\r\ne3254000-e3255000 r--p 0000a000 08:01 14418085                           /lib/i386-linux-gnu/libnss_files-2.23.so\r\ne3255000-e3256000 rw-p 0000b000 08:01 14418085                           /lib/i386-linux-gnu/libnss_files-2.23.so\r\ne3256000-e325c000 rw-p 00000000 00:00 0 \r\ne325c000-e3267000 r-xp 00000000 08:01 14418016                           /lib/i386-linux-gnu/libnss_nis-2.23.so\r\ne3267000-e3268000 r--p 0000a000 08:01 14418016                           /lib/i386-linux-gnu/libnss_nis-2.23.so\r\ne3268000-e3269000 rw-p 0000b000 08:01 14418016                           /lib/i386-linux-gnu/libnss_nis-2.23.so\r\ne3269000-e3280000 r-xp 00000000 08:01 14418071                           /lib/i386-linux-gnu/libnsl-2.23.so\r\ne3280000-e3281000 r--p 00016000 08:01 14418071                           /lib/i386-linux-gnu/libnsl-2.23.so\r\ne3281000-e3282000 rw-p 00017000 08:01 14418071                           /lib/i386-linux-gnu/libnsl-2.23.so\r\ne3282000-e3284000 rw-p 00000000 00:00 0 \r\ne3284000-e328c000 r-xp 00000000 08:01 14418081                           /lib/i386-linux-gnu/libnss_compat-2.23.so\r\ne328c000-e328d000 r--p 00007000 08:01 14418081                           /lib/i386-linux-gnu/libnss_compat-2.23.so\r\ne328d000-e328e000 rw-p 00008000 08:01 14418081                           /lib/i386-linux-gnu/libnss_compat-2.23.so\r\ne328e000-f7314000 rw-p 00000000 00:00 0 \r\nf7314000-f74c3000 r-xp 00000000 08:01 14418034                           /lib/i386-linux-gnu/libc-2.23.so\r\nf74c3000-f74c4000 ---p 001af000 08:01 14418034                           /lib/i386-linux-gnu/libc-2.23.so\r\nf74c4000-f74c6000 r--p 001af000 08:01 14418034                           /lib/i386-linux-gnu/libc-2.23.so\r\nf74c6000-f74c7000 rw-p 001b1000 08:01 14418034                           /lib/i386-linux-gnu/libc-2.23.so\r\nf74c7000-f74ca000 rw-p 00000000 00:00 0 \r\nf74ca000-f74e6000 r-xp 00000000 08:01 14418205                           /lib/i386-linux-gnu/libgcc_s.so.1\r\nf74e6000-f74e7000 rw-p 0001b000 08:01 14418205                           /lib/i386-linux-gnu/libgcc_s.so.1\r\nf74e7000-f753a000 r-xp 00000000 08:01 14418062                           /lib/i386-linux-gnu/libm-2.23.so\r\nf753a000-f753b000 r--p 00052000 08:01 14418062                           /lib/i386-linux-gnu/libm-2.23.so\r\nf753b000-f753c000 rw-p 00053000 08:01 14418062                           /lib/i386-linux-gnu/libm-2.23.so\r\nf753c000-f76a9000 r-xp 00000000 08:01 9568779                            /usr/lib/i386-linux-gnu/libstdc++.so.6.0.21\r\nf76a9000-f76aa000 ---p 0016d000 08:01 9568779                            /usr/lib/i386-linux-gnu/libstdc++.so.6.0.21\r\nf76aa000-f76af000 r--p 0016d000 08:01 9568779                            /usr/lib/i386-linux-gnu/libstdc++.so.6.0.21\r\nf76af000-f76b0000 rw-p 00172000 08:01 9568779                            /usr/lib/i386-linux-gnu/libstdc++.so.6.0.21\r\nf76b0000-f76b3000 rw-p 00000000 00:00 0 \r\nf76b3000-f76cc000 r-xp 00000000 08:01 14418064                           /lib/i386-linux-gnu/libpthread-2.23.so\r\nf76cc000-f76cd000 r--p 00018000 08:01 14418064                           /lib/i386-linux-gnu/libpthread-2.23.so\r\nf76cd000-f76ce000 rw-p 00019000 08:01 14418064                           /lib/i386-linux-gnu/libpthread-2.23.so\r\nf76ce000-f76d0000 rw-p 00000000 00:00 0 \r\nf76d0000-f76d7000 r-xp 00000000 08:01 14418010                           /lib/i386-linux-gnu/librt-2.23.so\r\nf76d7000-f76d8000 r--p 00006000 08:01 14418010                           /lib/i386-linux-gnu/librt-2.23.so\r\nf76d8000-f76d9000 rw-p 00007000 08:01 14418010                           /lib/i386-linux-gnu/librt-2.23.so\r\nf76d9000-f76dc000 r-xp 00000000 08:01 14418020                           /lib/i386-linux-gnu/libdl-2.23.so\r\nf76dc000-f76dd000 r--p 00002000 08:01 14418020                           /lib/i386-linux-gnu/libdl-2.23.so\r\nf76dd000-f76de000 rw-p 00003000 08:01 14418020                           /lib/i386-linux-gnu/libdl-2.23.so\r\nf76de000-f76e0000 r-xs 00000000 08:01 2359427                            /tmp/.glafnvdG (deleted)\r\nf76e0000-f76e7000 rw-s 38737c000 00:06 499                               /dev/nvidiactl\r\nf76e7000-f76e8000 rw-s b0015000 00:06 500                                /dev/nvidia1\r\nf76e8000-f76e9000 rw-s 38737d000 00:06 499                               /dev/nvidiactl\r\nf76e9000-f76ed000 rw-s 38737f000 00:06 499                               /dev/nvidiactl\r\nf76ed000-f76ee000 rw-s d5c06000 00:06 500                                /dev/nvidia1\r\nf76ee000-f76ef000 rw-s d5641000 00:06 500                                /dev/nvidia1\r\nf76ef000-f76f0000 rw-s 3c42f6000 00:06 499                               /dev/nvidiactl\r\nf76f0000-f76f1000 rw-s 3c533a000 00:06 499                               /dev/nvidiactl\r\nf76f1000-f76f2000 rw-s d5060000 00:06 500                                /dev/nvidia1\r\nf76f2000-f76f9000 r--s 00000000 08:01 9570505                            /usr/lib/i386-linux-gnu/gconv/gconv-modules.cache\r\nf76f9000-f76fa000 r--p 002cc000 08:01 7341044                            /usr/lib/locale/locale-archive\r\nf76fa000-f76fc000 rw-p 00000000 00:00 0 \r\nf76fc000-f76fe000 r--p 00000000 00:00 0                                  [vvar]\r\nf76fe000-f76ff000 r-xp 00000000 00:00 0                                  [vdso]\r\nf76ff000-f7721000 r-xp 00000000 08:01 14417971                           /lib/i386-linux-gnu/ld-2.23.so\r\nf7721000-f7722000 rw-p 00000000 00:00 0 \r\nf7722000-f7723000 r--p 00022000 08:01 14417971                           /lib/i386-linux-gnu/ld-2.23.so\r\nf7723000-f7724000 rw-p 00023000 08:01 14417971                           /lib/i386-linux-gnu/ld-2.23.so\r\nff8ca000-ff96d000 rw-p 00000000 00:00 0                                  [stack]\r\n----- CL_Shutdown -----\r\nClosing SDL audio device...\r\nSDL audio device shut down.\r\nRE_Shutdown( 1 )\r\nSDL input devices shut down.\r\n-----------------------\r\nSys_FOpen: open('/home/james/.etlegacy/legacy/profiles/profile.pid', 0) failed: errno 2\r\nSys_Exit warning - PID file doesn't exist /home/james/.etlegacy/legacy/profiles//profile.pid",
+            "created_on": "2017-03-12T13:32:28Z",
+            "details": []
+        },
+        {
+            "id": 6795,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I'll close this - see https://dev.etlegacy.com/boards/2/topics/2995?r=3110#message-3110\r\n\r\nFor the log: old nvidia driver might fail in fullscreen mode  ",
+            "created_on": "2017-07-02T09:53:59Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 7650,
+            "user": {
+                "id": 392,
+                "name": "Timothy"
+            },
+            "notes": "",
+            "created_on": "2019-01-22T10:55:42Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1186"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1011,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Fails to load in fullscreen mode",
+    "description": "In some Linux distributions, the game fails to load in fullscreen mode. This seems to happen with some distribution only, and only with some architecture (32 bit).\r\n\r\nSee forum post \"here\":https://dev.etlegacy.com/boards/2/topics/2995?r=3007\r\n\r\n> Fullscreen is broken - The reason I was getting black screen before when I first tried the game was because no profile was set up and the game reverted to full screen causing it to crash.\r\n> By using version 2.72 I was able to create a profile, once this was done I was able to launch the latest version compiled from source with \"+set r_fullscreen 0 +set r_mode 3\"\r\n> this allowed the game to start windowed and can play on all servers, no problems just cannot use fullscreen mode. \"Windowed fullscreen\" works; I also tried changing the renderer but if fullsceen is selected it will go to a black screen until the revert settings timer counts down (does not crash).\r\n> If I try to start without a windowed mode enabled it will hang on a black screen as it did before with 2.75.\r\n\r\nThe issue happens on a SDL level. I'd suggest to use fullscreen windowed mode instead of fullscreen by default.",
+    "start_date": "2017-02-28",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": "32-bit"
+        }
+    ],
+    "created_on": "2017-02-28T13:49:13Z",
+    "updated_on": "2017-07-02T09:53:59Z",
+    "closed_on": "2017-07-02T09:53:59Z"
+}

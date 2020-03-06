@@ -1,0 +1,273 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "b41cbcdb04032f161506e084f868eedb949f75d8",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "general: standardised preprocessor definitions, refs #85",
+            "committed_on": "2012-11-19T17:26:50Z"
+        },
+        {
+            "revision": "1a701b7a90ae62fdb53b7e35011a72fac6ed4ac8",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "misc: replaced MACOS_X define with standard __APPLE__, refs #85",
+            "committed_on": "2012-11-19T18:01:02Z"
+        },
+        {
+            "revision": "7acf9c36493c207fca0bab390650b10f57cdad25",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "misc: allow per-lib selection of bundled libs, refs #85",
+            "committed_on": "2012-11-20T17:13:34Z"
+        },
+        {
+            "revision": "a602e3b34375cbb243ccd1b9b94ab065196f62c1",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "misc: forgot to use new CMake var, refs #85",
+            "committed_on": "2012-11-21T11:44:09Z"
+        },
+        {
+            "revision": "ec8d3ed12d458933b850f1a0a428f44e2baaacb5",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: omni-bot build fix refs #85",
+            "committed_on": "2012-11-21T12:53:46Z"
+        },
+        {
+            "revision": "d9a7080704c2d537d6eae08c32146b9fcd44a6a1",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "general: Lua libraries for Windows added, fixes #87, refs #85",
+            "committed_on": "2013-01-02T12:30:29Z"
+        },
+        {
+            "revision": "4475a7351a3baa1e14fd5b4621b547e552c4838d",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "misc: added bundled OGG and Vorbis File libraries for unix, refs #85",
+            "committed_on": "2013-01-24T15:49:56Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 437,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "libjpeg is needed by SDL, so you need to compile libjpeg and sdl at once anyway...\r\nwe can do this, but it's not worth because there are only 3 packages.",
+            "created_on": "2012-11-03T18:24:07Z",
+            "details": []
+        },
+        {
+            "id": 593,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "user:merethan: I'm stealing this issue for myself, unless you still want it.\r\n\r\nWe've added lua and Ogg is on the way, so we should make per-lib selection possible and add some macros to simplify the build script - it is getting rather chaotic.",
+            "created_on": "2012-11-18T16:22:56Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "59",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 609,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I'm not able to build anymore after revision 7acf9c36\r\n\r\neasyscript.sh fails\r\n<pre>\r\n...\r\nlibtool: link: ar cru build/.libs/libSDLmain.a  build/SDL_dummy_main.o\r\nlibtool: link: ranlib build/.libs/libSDLmain.a\r\nlibtool: link: ( cd \"build/.libs\" && rm -f \"libSDLmain.la\" && ln -s \"../libSDLmain.la\" \"libSDLmain.la\" )\r\n[ 20%] Built target bundled_sdl\r\nScanning dependencies of target etl\r\n[ 20%] Building C object CMakeFiles/etl.dir/src/qcommon/net_ip.c.o \r\n...\r\n[ 33%] Building C object CMakeFiles/etl.dir/src/client/cl_keys.c.o  \r\n/home/myhome/git/etl/src/client/cl_keys.c:37:27: error: SDL_video.h: file or path not found                                                                                                                                                                             \r\nmake[2]: *** [CMakeFiles/etl.dir/src/client/cl_keys.c.o] error 1\r\nmake[1]: *** [CMakeFiles/etl.dir/all] error 2\r\n</pre>",
+            "created_on": "2012-11-20T22:54:56Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "3",
+                    "new_value": "7"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 610,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "user:IR4T4: it builds fine on Mac and on Gentoo at etlegacy.com. All @_BUNDLED_@ vars are set in the CMakeLists.txt of the libs submodule. See line 17:\r\n\r\n<pre>\r\n<code class=\"cmake\">\r\n\t#-----------------------------------------------------------------\r\n\t# Build bundled SDL library\r\n\t#-----------------------------------------------------------------\r\n\tif(BUNDLED_SDL)\r\n\t\tadd_custom_command(OUTPUT ${CMAKE_SOURCE_DIR}/libs/sdl/build/.libs/libSDL.a\r\n\t\t\t# disable svga and directfb modules for cross-compiling on 64bit Debian Squeezy\r\n\t\t\tCOMMAND ${CROSS_COMPILE32_FLAGS} ./configure --disable-video-svga --disable-video-directfb && make\r\n\t\t\tWORKING_DIRECTORY ${CMAKE_SOURCE_DIR}/libs/sdl\r\n\t\t)\r\n\t\tadd_custom_target(bundled_sdl\r\n\t\t\tDEPENDS ${CMAKE_SOURCE_DIR}/libs/sdl/build/.libs/libSDL.a\r\n\t\t)\r\n\t\tif(CMAKE_SYSTEM MATCHES \"Darwin\")\r\n\t\t\tset(SDL32_BUNDLED_LIBRARIES ${SDL32_BUNDLED_LIBRARIES} \"${CMAKE_SOURCE_DIR}/libs/sdl/build/.libs/libSDLmain.a\")\r\n\t\tendif(CMAKE_SYSTEM MATCHES \"Darwin\")\r\n\t\tset(SDL32_BUNDLED_LIBRARIES ${SDL32_BUNDLED_LIBRARIES} \"${CMAKE_SOURCE_DIR}/libs/sdl/build/.libs/libSDL.a\" PARENT_SCOPE)\r\n\t\tset(SDL32_BUNDLED_INCLUDE_DIR \"${CMAKE_SOURCE_DIR}/libs/sdl/include\" PARENT_SCOPE)\r\n\tendif(BUNDLED_SDL)\r\n</code>\r\n</pre>\r\nI'll install linux in a VM and check it again tonight.",
+            "created_on": "2012-11-21T11:38:22Z",
+            "details": []
+        },
+        {
+            "id": 611,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2012-11-21T11:49:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "60"
+                }
+            ]
+        },
+        {
+            "id": 612,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "It does build again. Bot precompiler macros are revised.",
+            "created_on": "2012-11-21T13:15:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "7",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "60",
+                    "new_value": "70"
+                }
+            ]
+        },
+        {
+            "id": 652,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "{FIXME} Lua for Windows\n\n{FIXME} OpenAL (optional)\n\n{FIXME} Freetype (optional)",
+            "created_on": "2012-11-26T19:45:25Z",
+            "details": []
+        },
+        {
+            "id": 1023,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "OGG was the last bundled library to be added. Although it is optional library, it could help us attract modders.",
+            "created_on": "2013-01-24T16:01:47Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "70",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 2460,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "created_on": "2013-12-14T18:07:40Z",
+            "details": [
+                {
+                    "property": "cf",
+                    "name": "1",
+                    "new_value": "Linux"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 85,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 59,
+        "name": "merethan"
+    },
+    "assigned_to": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 5,
+        "name": "2.71rc1"
+    },
+    "subject": "Allow per-lib selection of system lib/bundled lib at build time",
+    "description": "The build scripts allow you to either use the bundled libs or your system's libs. At present it is not possible to select them out as you wish.\r\n \r\nIn my case I had trouble using my system's libjpeg, but libcurl and libsdl were compatible. Yet I could either use all of the bundled libs or none of them.",
+    "start_date": "2012-10-09",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-10-09T09:54:25Z",
+    "updated_on": "2013-12-14T18:07:40Z",
+    "closed_on": "2013-01-24T16:01:47Z"
+}

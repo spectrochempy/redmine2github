@@ -1,0 +1,305 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "693edf2093a194d0dede309c169e765d903fb769",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "general: WIP move g_ip_max_clients from game side to sv_ip_max_clients from server side, refs #812\n\nThe Fake Ip Connection check is moved to server side. But it is\npartially implemented, the rate check doesn't work.\n\nMoreover, it seem this check can be done earlier, before the new\nconnection is created. This need more investigation for optimisation.",
+            "committed_on": "2017-08-01T13:13:37Z"
+        },
+        {
+            "revision": "31d43266c0535602c165fff1b417dabb9c2e6868",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "general: use userinfo to retrieve IP and rate from client for SV_IsFakepConnection + camelCase sv_ip_max_clients + cleanup, refs #812",
+            "committed_on": "2017-08-02T12:57:55Z"
+        },
+        {
+            "revision": "8d2f1e1365a24f41fdd1657b6e176d9b3373d6a5",
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "comments": "server: typo + cleanup, refs #812",
+            "committed_on": "2017-08-02T13:12:33Z"
+        },
+        {
+            "revision": "6bce894d78f60d5c61159cdce253865dd4008b55",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "server: some rework of sv_ipMaxClients/SV_DirectConnect implementation -\nwe are no longer creating a client when connection limit is reached",
+            "committed_on": "2017-08-04T07:42:50Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 5573,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-12-06T19:10:56Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 5642,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "If we implement this engine side, would it make sense to remove the existing mod code that does the same (g_ip_max_clients)? Legacy mod currently works on 2.60b server, but it's not designed for it nor can (should?) we ensure it will be the case in the future. The database feature (see #309) will tie Legacy mod to ET:Legacy engine anyway.",
+            "created_on": "2015-12-11T16:17:38Z",
+            "details": []
+        },
+        {
+            "id": 5643,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "From my point of view we can drop g_ip_max_clients when sv_ip_max_clients is done. The legacy mod doesn't work with punkbuster and there is no reason to run it on 2.60b servers. It seems admins have  more reasons to run ET:L servers -  see http://dev.etlegacy.com/boards/3/topics/2258?r=2269#message-2269 and most existing popular mods have this functionality.",
+            "created_on": "2015-12-11T16:50:50Z",
+            "details": []
+        },
+        {
+            "id": 5644,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-12-11T17:10:36Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Add q3fill fix server side",
+                    "new_value": "Move q3fill fix server side"
+                }
+            ]
+        },
+        {
+            "id": 5786,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-01-19T17:05:07Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "blocked",
+                    "new_value": "309"
+                }
+            ]
+        },
+        {
+            "id": 5787,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2016-01-19T17:06:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "2",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 6335,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-02-07T14:19:41Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "blocked",
+                    "old_value": "309"
+                }
+            ]
+        },
+        {
+            "id": 6868,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "The Fake Ip Connection check is moved to server side. But it is partially implemented, the rate check doesn't work.\r\n\r\nMoreover, it seem this check can be done earlier, before the new connection is created. This need more investigation for optimisation.",
+            "created_on": "2017-08-01T13:15:04Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "251"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "70"
+                }
+            ]
+        },
+        {
+            "id": 6870,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "I'm wondering why this cvar has an ugly name like this. It doesn't follow the camelCase convention.\r\n\r\nFor example, ETPub and all derivatives use *g_maxConnsPerIP* which is gramatically correct and follows the convention.\r\n\r\nIt's a good time to discuss this as you rename it anyway to have sv_ prefix.",
+            "created_on": "2017-08-01T19:02:19Z",
+            "details": []
+        },
+        {
+            "id": 6871,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "Dragonji wrote:\r\n> I'm wondering why this cvar has an ugly name like this. It doesn't follow the camelCase convention.\r\n> \r\n> For example, ETPub and all derivatives use *g_maxConnsPerIP* which is gramatically correct and follows the convention.\r\n> \r\n> It's a good time to discuss this as you rename it anyway to have sv_ prefix.\r\n\r\nIndeed ! This must be changed to camelCase convention, there is no reason to keep it as it.\r\n\r\n",
+            "created_on": "2017-08-02T07:17:30Z",
+            "details": []
+        },
+        {
+            "id": 6872,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "Need feedback ! ",
+            "created_on": "2017-08-02T13:04:57Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "70",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 6873,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-08-02T14:48:55Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 7030,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-01-24T23:23:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 812,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 4,
+        "name": "Feedback"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "assigned_to": {
+        "id": 251,
+        "name": "Aranud"
+    },
+    "category": {
+        "id": 5,
+        "name": "Server"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Move q3fill fix server side",
+    "description": "Currently we fix q3fill exploit in mod game code. We should also add sv_ip_max_clients.",
+    "start_date": "2015-02-10",
+    "done_ratio": 90,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-02-10T16:15:56Z",
+    "updated_on": "2018-01-24T23:23:07Z"
+}

@@ -1,0 +1,101 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7322,
+            "user": {
+                "id": 251,
+                "name": "Aranud"
+            },
+            "notes": "Supposed commit fixing it : https://github.com/etlegacy/etlegacy/commit/1f10135ae7b083fb2a241bdc750dc57fa638964a#diff-527b2df1ec30e61905a970a0488497f2",
+            "created_on": "2018-10-30T15:34:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "251"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 790,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "assigned_to": {
+        "id": 251,
+        "name": "Aranud"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Limbomenu showing wrong weapon selected after map change",
+    "description": "As the title says and how to reproduce:\r\n\r\n1. Select for example a covert op with a sniper\r\n2. Wait until the map ends\r\n3. Limbomenu opens automatically at the start of the map and shows covert op with Sten\r\n\r\nBut to prevent this doing that it selects automatically Sten for you after the warmup has ended, you need to close limbomenu and open it again. That way the right weapon will be displayed.\r\n\r\n-*S",
+    "start_date": "2015-01-18",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-01-18T14:49:23Z",
+    "updated_on": "2018-10-30T15:34:16Z",
+    "closed_on": "2018-10-30T15:34:16Z"
+}

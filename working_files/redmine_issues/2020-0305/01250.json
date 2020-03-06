@@ -1,0 +1,91 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7973,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2019-04-17T21:50:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "There are *way* too many demo related CVARs.\r\nCan they be reorganized to a few concise ones and the others be removed?\r\n\r\ncg_autoAction\r\ncl_aviDemo\r\ncl_aviDemoType\r\ncl_aviMotionJpeg\r\ncl_demoFileName\r\ncl_demoOffset\r\ncl_demoRecording\r\ncl_forceAviDemo\r\ncl_freezeDemo\r\ncl_timedemo\r\ncl_waveFileRecord\r\ncl_waveFileName\r\ncl_waveOffset\r\ncl_waveRecording",
+                    "new_value": "There are *way* too many demo related CVARs.\r\nCan they be reorganized to a few concise ones and the others be removed?\r\n\r\ncg_autoAction\r\ncl_autoRecord\r\ncl_aviDemo\r\ncl_aviDemoType\r\ncl_aviMotionJpeg\r\ncl_demoFileName\r\ncl_demoOffset\r\ncl_demoRecording\r\ncl_forceAviDemo\r\ncl_freezeDemo\r\ncl_timedemo\r\ncl_waveFileRecord\r\ncl_waveFileName\r\ncl_waveOffset\r\ncl_waveRecording"
+                }
+            ]
+        },
+        {
+            "id": 8118,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2019-05-04T08:28:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "There are *way* too many demo related CVARs.\r\nCan they be reorganized to a few concise ones and the others be removed?\r\n\r\ncg_autoAction\r\ncl_autoRecord\r\ncl_aviDemo\r\ncl_aviDemoType\r\ncl_aviMotionJpeg\r\ncl_demoFileName\r\ncl_demoOffset\r\ncl_demoRecording\r\ncl_forceAviDemo\r\ncl_freezeDemo\r\ncl_timedemo\r\ncl_waveFileRecord\r\ncl_waveFileName\r\ncl_waveOffset\r\ncl_waveRecording",
+                    "new_value": "There are *way* too many demo related CVARs.\r\nCan they be reorganized to a few concise ones and the others be removed?\r\n\r\ncg_autoAction\r\ncl_autoRecord\r\ncl_aviDemo\r\ncl_aviDemoType\r\ncl_aviMotionJpeg\r\ncl_demoFileName\r\ncl_demoOffset\r\ncl_demoRecording\r\ncl_forceAviDemo\r\ncl_freezeDemo\r\ncl_timedemo\r\ncl_waveFileRecord\r\ncl_waveFileName\r\ncl_waveOffset\r\ncl_waveRecording\r\ndemo_avifpsF1\r\ndemo_avifpsF2\r\ndemo_avifpsF3\r\ndemo_avifpsF4\r\ndemo_avifpsF5\r\ndemo_drawTimeScale\r\ndemo_infoWindow\r\ndemo_weaponcam\r\ndemo_followDistance\r\ndemo_yawPitchRollSpeed\r\ndemo_lookat\r\ndemo_teamonlymissilecam\r\ndemo_autotimescale\r\ndemo_autotimescaleweapons\r\ndemo_freecamspeed\r\ndemo_nopitch\r\ndemo_pvshint\r\n"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1250,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Reorganize demo related CVARs",
+    "description": "There are *way* too many demo related CVARs.\r\nCan they be reorganized to a few concise ones and the others be removed?\r\n\r\ncg_autoAction\r\ncl_autoRecord\r\ncl_aviDemo\r\ncl_aviDemoType\r\ncl_aviMotionJpeg\r\ncl_demoFileName\r\ncl_demoOffset\r\ncl_demoRecording\r\ncl_forceAviDemo\r\ncl_freezeDemo\r\ncl_timedemo\r\ncl_waveFileRecord\r\ncl_waveFileName\r\ncl_waveOffset\r\ncl_waveRecording\r\ndemo_avifpsF1\r\ndemo_avifpsF2\r\ndemo_avifpsF3\r\ndemo_avifpsF4\r\ndemo_avifpsF5\r\ndemo_drawTimeScale\r\ndemo_infoWindow\r\ndemo_weaponcam\r\ndemo_followDistance\r\ndemo_yawPitchRollSpeed\r\ndemo_lookat\r\ndemo_teamonlymissilecam\r\ndemo_autotimescale\r\ndemo_autotimescaleweapons\r\ndemo_freecamspeed\r\ndemo_nopitch\r\ndemo_pvshint\r\n",
+    "start_date": "2019-04-17",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-04-17T21:35:25Z",
+    "updated_on": "2019-05-04T08:28:20Z"
+}

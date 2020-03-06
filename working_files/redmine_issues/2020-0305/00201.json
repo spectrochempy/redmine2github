@@ -1,0 +1,123 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 63,
+            "issue_id": 209,
+            "issue_to_id": 201,
+            "relation_type": "duplicates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "20269f83f2cde2a0bb54e9bc700c9c84629f1a89",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "client: the number buttons now work on windows when ctrl is pressed, refs #201",
+            "committed_on": "2013-02-17T20:56:09Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1137,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-02-10T21:28:19Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "7",
+                    "new_value": "5"
+                }
+            ]
+        },
+        {
+            "id": 1186,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "",
+            "created_on": "2013-02-17T21:48:10Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 201,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 44,
+        "name": "Jacker"
+    },
+    "assigned_to": {
+        "id": 44,
+        "name": "Jacker"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 5,
+        "name": "2.71rc1"
+    },
+    "subject": "Ctrl disables number keys",
+    "description": "While the Ctrl button is pressed the normal key buttons are disabled and not usable.",
+    "start_date": "2013-02-10",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-02-10T21:26:23Z",
+    "updated_on": "2013-02-17T21:48:10Z",
+    "closed_on": "2013-02-17T21:48:10Z"
+}

@@ -1,0 +1,84 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 1737,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "",
+            "created_on": "2013-06-09T18:31:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "If fps are higher than mouse polling rate, turning spread reduces.\r\nIf you get twice the fps than your mouse polling rate (e.g 250fps/125hz) you get 0 added spread by moving your mouse.\r\nOverall turning spread seems to be somewhat fps dependant.\r\nMaybe it's fixable or made selectable through a server cvar?",
+                    "new_value": "If FPS are higher than mouse polling rate, turning spread reduces.\r\nIf you get twice the FPS than your mouse polling rate (e.g 250FPS/125Hz) you get 0 added spread by moving your mouse.\r\nOverall turning spread seems to be somewhat FPS dependant.\r\nMaybe it's fixable or made selectable through a server cvar?\r\n\r\nhttp://dev.etlegacy.com/boards/3/topics/513"
+                }
+            ]
+        },
+        {
+            "id": 1754,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-07-12T02:14:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 313,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 206,
+        "name": "S3ti"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Mouserate/FPS dependant turnspread",
+    "description": "If FPS are higher than mouse polling rate, turning spread reduces.\r\nIf you get twice the FPS than your mouse polling rate (e.g 250FPS/125Hz) you get 0 added spread by moving your mouse.\r\nOverall turning spread seems to be somewhat FPS dependant.\r\nMaybe it's fixable or made selectable through a server cvar?\r\n\r\nhttp://dev.etlegacy.com/boards/3/topics/513",
+    "start_date": "2013-06-09",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-06-09T17:30:42Z",
+    "updated_on": "2013-07-12T02:14:32Z"
+}

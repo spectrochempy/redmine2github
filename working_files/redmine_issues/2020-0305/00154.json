@@ -1,0 +1,296 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 96,
+            "issue_id": 365,
+            "issue_to_id": 154,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "0bc269eeb97931ab9b64e802d29e1f7f5b114cbc",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "cgame: additional param color for CG_AddPMItem() to drawn colored\nobituary icons refs #154",
+            "committed_on": "2013-04-29T21:49:49Z"
+        },
+        {
+            "revision": "6a0ccad38daed900ed67961c2343ebf61b013884",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: send weapon in obituaries events refs #154",
+            "committed_on": "2013-08-07T16:37:21Z"
+        },
+        {
+            "revision": "bf91fb97841a365986bf211c343717a4839a79ba",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: added cg_graphicObituaries, refs #154",
+            "committed_on": "2013-11-04T20:57:09Z"
+        },
+        {
+            "revision": "935b72dbe7769098ae7815cf6f6e481deb56153d",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: added cg_graphicObituaries option, refs #154",
+            "committed_on": "2013-11-04T20:57:15Z"
+        },
+        {
+            "revision": "414ac5ed7e6796da006a8a278f3e07ebfea4f545",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: minor cleanup, refs #154\n\n... and compile fix for VS.",
+            "committed_on": "2013-11-04T21:26:20Z"
+        },
+        {
+            "revision": "09b10e063c65e96e412637948e523e8fd506bebf",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: MOD and splashMOD fixed for allied grenade refs #154",
+            "committed_on": "2013-11-05T15:18:06Z"
+        },
+        {
+            "revision": "46e0c2d57007e29c28d39d597d8788829330d678",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed cg_obituaries 2 display order, refs #154",
+            "committed_on": "2013-11-05T16:18:33Z"
+        },
+        {
+            "revision": "2597bccb8b56a5373410e0190957ffc742c89786",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: added cg_graphicObituaries 2 option, refs #154",
+            "committed_on": "2013-11-05T16:18:33Z"
+        },
+        {
+            "revision": "d9a17c34bfe08c2de51345ed4d33b279c9b95345",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed teamkill colored console message, refs #154",
+            "committed_on": "2013-11-06T00:00:59Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 838,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2012-12-18T13:44:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "5",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1410,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-03-26T23:07:29Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "7",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 1962,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-09-19T12:59:26Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "9"
+                }
+            ]
+        },
+        {
+            "id": 2039,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-10-05T16:17:35Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "9",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 2185,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2013-11-01T10:45:42Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                }
+            ]
+        },
+        {
+            "id": 2214,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "This is mostly done.\r\n\r\nHowever, I've seen that the allies nade (pineapple nade) is displayed with the axis nade icon. This is not strictly related to this feature, but might be related to weapon tables.\r\n\r\nThere is also a new warning to fix (warning: implicit declaration of function \u2018weaponIconScale\u2019).\r\n",
+            "created_on": "2013-11-04T21:12:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 2217,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-11-05T15:27:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 2222,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Fixed some regression and enabled 'cg_graphicObituaries = 2' in the UI.\r\n\r\nI played some games and checked for other icon errors, but couldn't find any. Some weapons use the generic skull icon and might be improved later (artillery strike, mounted MG, tank MG) with the planned weapon table, but that is not directly related to this feature so I'm closing it.",
+            "created_on": "2013-11-06T19:51:41Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 154,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "Add NQ like graphic obituaries",
+    "description": ".. text obituaries eat half of the screen ... let's fix that.",
+    "start_date": "2012-12-18",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-12-18T13:43:40Z",
+    "updated_on": "2013-11-06T19:51:41Z",
+    "closed_on": "2013-11-06T19:51:41Z"
+}

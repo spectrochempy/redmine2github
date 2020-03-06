@@ -1,0 +1,74 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 8095,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2019-05-02T15:18:33Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "22",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1173,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Make effects display options consistent",
+    "description": "Depending on the effects display options selected, some players might have an advantage over others.\r\n\r\nIndeed, some features can be disabled by default (cg_particules), while some can't (foliage, that is cheat protected).\r\nSome are more game changing (explosion), while other are completely cosmetics (blood effects, atmospheric effects), and some cosmetics effects currently can't be disabled at all (debris effects of 2.76, airstrike plane model in soon-to-be-released 2.77, etc.).\r\n\r\nFind a way to make this consistent accross the game options, while keeping performances and unfair advantages in mind.\r\n\r\nA few arguments when this issue was discussed:\r\n\r\nspyhawk\r\n\r\nbq. maybe it would be good to add an \"In-Game Effect\" cvar to disable debris and plane effects. Save a few FPS.\r\n\r\nhatcher\r\n\r\nbq. Explosions should not be allowed to be turned off anymore. It's basically wallhack then. I played with potato graphics back in the day but now I refuse to do that because that's not the way forward and I often feel at a disadvantage behind explosions.\r\n\r\nspyhawk\r\n\r\nbq. I disagree: not a wallhack. Or we should disallow brass and blood (flash effect).\r\n\r\nhatcher\r\n\r\nbq. If you turn it off, you can but those peopel who don't turn it off, they can't. It's an unfair advantage that forces everyone to turn it off leading to the same thing that happened in the 2000's. Potato graphics. That's not the way forward in 2019.\r\n\r\nhatcher\r\n\r\nbq. bobbing and blood flash shouldn't be there to begin with\r\n\r\nspyhawk\r\n\r\nbq. Blood flash is exactly that, no?\r\nthose that disable it have an advantage\r\n\r\nIR4\r\n\r\nbq. it's a 1st p effect\r\nexplosions not\r\nthe blend stuff\r\n\r\nspyhawk\r\n\r\nbq. hmm okay. I'd accept that argument.\r\nBut still: 1st person effects are a drawback for those that enable them.\r\n\r\nhatcher\r\n\r\nbq. I don't know why a mathematical formula would be needed to decide what should be allowed and what shouldn't be, it's just what people decide but that also depends on where players are coming from. Old competetive players would want everything off, old casual players may want everything on. New players wouldn't even understand why it's even possible to turn off something like explosions but most would agree that flashing blood that covers the screen is stupid. On the other hand, something that happens in the world is not stupid just because you can't see through it and eats a few FPS.",
+    "start_date": "2019-01-18",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-01-18T13:07:07Z",
+    "updated_on": "2019-05-02T15:18:33Z"
+}

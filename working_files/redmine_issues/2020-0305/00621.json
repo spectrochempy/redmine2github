@@ -1,0 +1,370 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 219,
+            "issue_id": 552,
+            "issue_to_id": 621,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 298,
+            "issue_id": 621,
+            "issue_to_id": 924,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 339,
+            "issue_id": 1045,
+            "issue_to_id": 621,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 341,
+            "issue_id": 1051,
+            "issue_to_id": 621,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "a865a0e39a55b6afbe3ceebb3adac0259401e430",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "renderer2: fix image loading of inner-/outerbox, hotfix to avoid eye\ncancer on maps using these boxes refs #621",
+            "committed_on": "2017-08-11T13:08:38Z"
+        },
+        {
+            "revision": "36957a89609e3196655e5b6989468467c56b02f3",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "renderer2: merged some code & structure from r1, notes refs #621",
+            "committed_on": "2017-08-15T14:06:11Z"
+        },
+        {
+            "revision": "4c551d4ad4161625e493fc9b0824c5c180c9500f",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "renderer2: fix portal skies (see map marketgarden f.e.) refs #621 and\nother mark leaves issues\n\nIt turned out the code part at end of loop has never been reached when\nit should.",
+            "committed_on": "2017-11-15T14:32:36Z"
+        },
+        {
+            "revision": "af284334cbd0d27e2ad7a0dd9f3d7beef2897e6d",
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "comments": "renderer2: Fix maps (decoder/uje_ambush but not all!) creating sky by\nskyparams refs #621\n\nThere are still maps not showing a proper sky. See rop_river f.e.",
+            "committed_on": "2017-11-18T12:22:31Z"
+        },
+        {
+            "revision": "99baf1cb2ad15de9fd5410aac020da6f733700c2",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "renderer2: fix innerbox image loading refs #621",
+            "committed_on": "2017-11-18T13:55:41Z"
+        },
+        {
+            "revision": "0ac8a137f3a4704df85564b5c64b26535c2a7c24",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "renderer: dirty hack to ensure sky cubemap is created with proper\ndimension refs #621",
+            "committed_on": "2017-11-19T22:08:09Z"
+        },
+        {
+            "revision": "60ee9f7978d0777321e5539541e2385222064dee",
+            "user": {
+                "id": 505,
+                "name": "ryven"
+            },
+            "comments": "r2: fix skyshader issue with clampmap'ed textures\n\nclampmap'ed textures in renderer2 were not positioned\ncorrectly in skyboxes due to getting wrong wrap setting\non image initialization\nrefs #621",
+            "committed_on": "2018-03-13T19:52:04Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3686,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-11-11T20:54:37Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Skybox issues on some maps",
+                    "new_value": "renderer2: Skybox issues on some maps"
+                }
+            ]
+        },
+        {
+            "id": 3688,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "For me it looks like those maps dont have skybox at all just 1 texture\r\nr_fastsky 0 fixes it",
+            "created_on": "2014-11-12T00:30:19Z",
+            "details": []
+        },
+        {
+            "id": 3689,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "r_fastsky is no fix - it's just the current option to play those maps without getting eye cancer.",
+            "created_on": "2014-11-12T05:16:05Z",
+            "details": []
+        },
+        {
+            "id": 4617,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-02-16T19:18:43Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "552"
+                }
+            ]
+        },
+        {
+            "id": 4618,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-02-16T19:19:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Some maps don't show the skybox\r\n\r\n- UJE Ambush\r\n- ROP RIVER\r\n- et dam (Bramberg)\r\n...",
+                    "new_value": "Some maps don't show the skybox\r\n\r\n- UJE Ambush\r\n- ROP RIVER\r\n- et dam (Bramberg)\r\n- bridges\r\n- decoder beta 4\r\n..."
+                }
+            ]
+        },
+        {
+            "id": 6220,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-01-15T08:05:28Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "924"
+                }
+            ]
+        },
+        {
+            "id": 6814,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-07-08T06:54:50Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1045"
+                }
+            ]
+        },
+        {
+            "id": 6856,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-07-27T12:18:59Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1051"
+                }
+            ]
+        },
+        {
+            "id": 6880,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "{FIXME}\r\n-sky outerbox and innerbox are not drawn see Tess_StageIteratorSky DrawBox/DrawBoxInner\r\nouterbox sample maps: decoder_beta4 uje_ambush (I haven't found a map where innerbox is used)-\r\n\r\n-portalskies don't work (see RDF_SKYBOXPORTAL which isn't fully ported and not set in r2)\r\ncurrent error: caught OpenGL error: GL_INVALID_ENUM in file /home/olaf/ETL/etlegacy/src/renderer2/tr_shade.c line 445\r\nsample map: uje_marketgarden-",
+            "created_on": "2017-08-15T13:54:05Z",
+            "details": []
+        },
+        {
+            "id": 6964,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-11-15T14:36:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "8"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "40"
+                }
+            ]
+        },
+        {
+            "id": 6975,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Some maps don't show proper sky textures. Looks like wrong dimensions are used. This might be related to tga textures ...\r\n\r\n{TODO}\r\n- uje_the_best\r\n- rop_river\r\n- uje_amsterdam\r\n\r\nAre there any maps with innerboxes?",
+            "created_on": "2017-11-18T12:55:35Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "40",
+                    "new_value": "60"
+                }
+            ]
+        },
+        {
+            "id": 6992,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "As far as I can see all the skybox and fog issues are fixed. R2 starts getting playable :) \r\n\r\n{FIXME}\r\n- Fix/scale wrong image size\r\nThe textures to create sky cubemaps have to be of same dimensions but some maps contain smaller bottom textures to save space.\r\n At present we are loading the first texture for this image again and in most cases this does the trick - players don't see the bottom anyway.\r\nSee https://dev.etlegacy.com/projects/etlegacy/repository/revisions/0ac8a137f3a4704df85564b5c64b26535c2a7c24\r\n\r\n- Fix texture rendering of images (circle view)",
+            "created_on": "2017-11-24T09:05:46Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "60",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 7226,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-05-30T05:39:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "8",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 621,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 15,
+        "name": "renderer2"
+    },
+    "subject": "renderer2: Skybox issues on some maps",
+    "description": "Some maps don't show the skybox\r\n\r\n- UJE Ambush\r\n- ROP RIVER\r\n- et dam (Bramberg)\r\n- bridges\r\n- decoder beta 4\r\n...",
+    "start_date": "2014-11-11",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-11T20:54:05Z",
+    "updated_on": "2018-05-30T05:39:05Z",
+    "closed_on": "2018-05-30T05:39:05Z"
+}

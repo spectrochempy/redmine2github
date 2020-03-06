@@ -1,0 +1,149 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "50bc3825830a7c5e7af8f0e55873802c6ff9c74b",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: make noclip clients truly invisible, fixes #879",
+            "committed_on": "2015-09-12T17:37:35Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 5261,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-09-05T10:20:41Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "21"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 5282,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-09-12T17:44:48Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 5428,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-11-23T21:51:30Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "2"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 879,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 363,
+        "name": "illwieckz"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "noclip spectators have a shadow",
+    "description": "Hi, I've just notified that spectators have a shadow when they are spectating using @noclip@.\r\n\r\nnormal spectator:\r\n!http://dl.illwieckz.net/b/etlegacy/etlegacy-2.74/bugs/2015-09-05-120342-battery.720.jpg!:http://dl.illwieckz.net/b/etlegacy/etlegacy-2.74/bugs/2015-09-05-120342-battery.jpg\r\nnoclip spectator:\r\n!http://dl.illwieckz.net/b/etlegacy/etlegacy-2.74/bugs/2015-09-05-120353-battery.720.jpg!:http://dl.illwieckz.net/b/etlegacy/etlegacy-2.74/bugs/2015-09-05-120353-battery.jpg\r\n\r\nThey also make circles in water:\r\n\r\n!http://dl.illwieckz.net/b/etlegacy/etlegacy-2.74/bugs/2015-09-05-121027-battery.720.jpg!:http://dl.illwieckz.net/b/etlegacy/etlegacy-2.74/bugs/2015-09-05-121027-battery.jpg",
+    "start_date": "2015-09-05",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-09-05T10:15:32Z",
+    "updated_on": "2015-11-23T21:51:30Z",
+    "closed_on": "2015-09-12T17:44:48Z"
+}

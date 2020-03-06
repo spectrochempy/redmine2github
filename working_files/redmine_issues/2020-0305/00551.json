@@ -1,0 +1,131 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 3294,
+            "user": {
+                "id": 58,
+                "name": "Matt"
+            },
+            "notes": "Trying to update the https://build.opensuse.org/package/show/games/etlegacy package for RC4.",
+            "created_on": "2014-07-20T15:01:09Z",
+            "details": []
+        },
+        {
+            "id": 3296,
+            "user": {
+                "id": 58,
+                "name": "Matt"
+            },
+            "notes": "Nevermind, this just happens when setting -DCROSS_COMPILE32=1.",
+            "created_on": "2014-07-20T15:18:01Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3300,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "To be 2.60b compatible you have to set CROSS_COMPILE32=1. Is curl:i386 installed?",
+            "created_on": "2014-07-21T10:01:27Z",
+            "details": []
+        },
+        {
+            "id": 3301,
+            "user": {
+                "id": 58,
+                "name": "Matt"
+            },
+            "notes": "There is no libcurl-devel-32bit at https://build.opensuse.org/package/binaries/devel:libraries:c_c++/curl?repository=openSUSE_13.1 so that may be the problem.",
+            "created_on": "2014-07-21T19:26:29Z",
+            "details": []
+        },
+        {
+            "id": 3303,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Try this: https://build.opensuse.org/package/binary/devel:libraries:c_c++/curl?arch=i586&filename=libcurl4-32bit-7.37.0-115.1.x86_64.rpm&repository=openSUSE_13.1",
+            "created_on": "2014-07-22T00:54:29Z",
+            "details": []
+        },
+        {
+            "id": 3305,
+            "user": {
+                "id": 58,
+                "name": "Matt"
+            },
+            "notes": "Already tried that. It is not a -devel-32bit package. If I simply disable curl there are also other various problems with OGG/Vorbis etc. Don't really have the time and motivation to dick through the problem.",
+            "created_on": "2014-07-22T17:23:53Z",
+            "details": []
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 551,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 58,
+        "name": "Matt"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Could NOT find CURL (missing: CURL_LIBRARY) (found version \"7.32.0\")",
+    "description": "http://software.opensuse.org/package/libcurl4 devel package is installed and even detected. Still cmake throws for no reason.",
+    "start_date": "2014-07-20",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-07-20T15:00:27Z",
+    "updated_on": "2014-07-22T17:23:53Z",
+    "closed_on": "2014-07-20T15:18:01Z"
+}

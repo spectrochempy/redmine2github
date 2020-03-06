@@ -1,0 +1,244 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "dd0a71df72a9674c0a8908fb464a237ba86b5a42",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "qagame: added g_pronedelay, fixes #374",
+            "committed_on": "2013-10-19T18:02:20Z"
+        },
+        {
+            "revision": "ad36aae2abffc0e292401fcf6de313208a391792",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "qagame: readding minus mark to the pronetime when raising from prone. This was a mistakenly removed originally, refs #374",
+            "committed_on": "2013-10-22T12:09:30Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2123,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Applied in changeset commit:dd0a71df72a9674c0a8908fb464a237ba86b5a42.",
+            "created_on": "2013-10-19T19:25:33Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 2131,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "This commit breaks the prone feature. When in prone position, you can't stand up anymore: The animation is reversed and goes from stand up to prone. The following commit https://github.com/etlegacy/etlegacy/commit/b081799e55b1ee7d5bb18a04cb6ef0866d2f7b11 does not seem to help either.",
+            "created_on": "2013-10-21T20:04:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "100",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 2132,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-10-21T23:46:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "44"
+                }
+            ]
+        },
+        {
+            "id": 2133,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Spyhawk wrote:\r\n> This commit breaks the prone feature. When in prone position, you can't stand up anymore: The animation is reversed and goes from stand up to prone. The following commit https://github.com/etlegacy/etlegacy/commit/b081799e55b1ee7d5bb18a04cb6ef0866d2f7b11 does not seem to help either.\r\n\r\nCould you please make sure that both your qagame and cgame updated to the latest version (because the bug you are talking about can be produced if the versions mismatch). I cannot reproduce any problems with or without pronedelay set on the latest code.\r\n",
+            "created_on": "2013-10-22T06:31:33Z",
+            "details": []
+        },
+        {
+            "id": 2134,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Yes, I confirm. Last git version, clean build, empty .etlwolf/legacy, empty profile - issue still occurs.\r\nCan anyone else try and see if this is happening?",
+            "created_on": "2013-10-22T07:00:58Z",
+            "details": []
+        },
+        {
+            "id": 2135,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "Do you have the bug only when g_pronedelay is 1 or also when it is 0 ?",
+            "created_on": "2013-10-22T08:22:59Z",
+            "details": []
+        },
+        {
+            "id": 2137,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "The bug occurs in both situations.",
+            "created_on": "2013-10-22T10:38:22Z",
+            "details": []
+        },
+        {
+            "id": 2138,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "This must then be related to something else because of the simple fact that when g_pronedelay is 0 the default original implementation is used. Could you describe the bug a in more detail, just in case i misunderstood you.",
+            "created_on": "2013-10-22T10:44:58Z",
+            "details": []
+        },
+        {
+            "id": 2139,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Sorry, I've just realized that you might not see this bug if you \"jump\" to stand up - the bug occurs when using the \"prone\" key (\"x\" by default), which activates the two way \"stand up to prone\" and \"prone to stand up\" position. Here the \"stand up to prone\" animation is used in both cases.\r\n\r\nThe commit right before that one works without problem (639da8595a5647cf71e91794473564abd50fd779 - gen: legacyclient information) so the bug is introduced here.\r\n\r\n ",
+            "created_on": "2013-10-22T11:15:02Z",
+            "details": []
+        },
+        {
+            "id": 2140,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Reverting the following in bg_pmove.c seems to fix the issue for me (line 1012):\r\n\r\nChange\r\npm->pmext->proneTime = pm->cmd.serverTime; // timestamp 'stop prone'\r\nto\r\npm->pmext->proneTime = - pm->cmd.serverTime; // timestamp 'stop prone' (without the leading space before '-')",
+            "created_on": "2013-10-22T11:24:01Z",
+            "details": []
+        },
+        {
+            "id": 2141,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "OK, now i get the issue, ill commit a fix asap.",
+            "created_on": "2013-10-22T11:59:45Z",
+            "details": []
+        },
+        {
+            "id": 2142,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2013-10-22T12:37:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 374,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 44,
+        "name": "Jacker"
+    },
+    "assigned_to": {
+        "id": 44,
+        "name": "Jacker"
+    },
+    "category": {
+        "id": 17,
+        "name": "Mod QAGAME"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "Prone delay",
+    "description": "Implement the etpro like prone delay as it is used in almost every etpro server and is also forced in competitive settings.",
+    "start_date": "2013-10-19",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-10-19T13:31:48Z",
+    "updated_on": "2013-10-22T12:37:50Z",
+    "closed_on": "2013-10-22T12:37:50Z"
+}

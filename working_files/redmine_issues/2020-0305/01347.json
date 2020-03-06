@@ -1,0 +1,115 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 446,
+            "issue_id": 1347,
+            "issue_to_id": 936,
+            "relation_type": "duplicates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 8477,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-09-13T12:07:47Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "duplicates",
+                    "new_value": "936"
+                }
+            ]
+        },
+        {
+            "id": 8479,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I don't have a MacOS X machine, but here is the current state of the Apple platform to the best of my current knowledge:\r\n* OSX ETLegacy 64bit build are problematic. We have a hard-to-solve issue with 64bit build on that platform, and for this reason we only ship the 32 bit version. Other mods only exist as a 32 bit version too.\r\n\r\n* OSX 10.13: Legacy and many other mods work.\r\n* OSX 10.14: Legacy mod works, other mods likely do not.\r\n* OSX 10.15: Apple is dropping 32bit support, and as such others mods will never work, and that is completely out of our control.  Legacy mod most likely won't work either.\r\n\r\nI'd suggest you to either:\r\n* use bootcamp and run the windows version, or\r\n* do not update to OSX 10.15, stick to Legacy mod, and blame Apple.\r\n\r\n(duplicate of #936, closing this ticket now)",
+            "created_on": "2019-09-13T12:09:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "12"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "10"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1347,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 983,
+        "name": "SilentDanger"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 10,
+        "name": "N/A"
+    },
+    "subject": "Mac OS: Crashes when trying to connect to silent Servers",
+    "description": "Hello there!\r\n\r\n\r\n\r\nFirst of all, THANK YOU so much for bringing this gorgeous game back to (more) life. I just downloaded it today and am truly happy to be back.\r\nI've been playing on a server that runs the Legacy mod today, without any problems. But as the silent-servers do have a lot more players I wanted to connect to some of those. At every instance the same thing happened: I connected to the server to the point that all maps etc. were downloaded. Just before the game would usually start (that is, just before I would be ingame and ready to go) ET:L crashes altogether and I'm back on my Mac home screen.\r\n\r\nI installed \"Mac OS X 32-bit installer (size 47.972 MB)\" and added pk0, pk1, pk2 from ET:W which I downloaded directly from splash damage (as suggested in the installation guide). As I said, everything in Legacy Mod works fine, it's just that I had read that the Mac OS version would be able to run silent mod as well. I run on Mojave (10.14.6).\r\n\r\nAnyways, even if I keep playing 6 vs 6, I really appreciate your work. Thumbs up ;)",
+    "start_date": "2019-09-13",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "OS X"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-09-12T22:52:12Z",
+    "updated_on": "2019-09-13T12:09:03Z",
+    "closed_on": "2019-09-13T12:09:03Z"
+}

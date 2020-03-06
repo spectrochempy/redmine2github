@@ -1,0 +1,355 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 37,
+            "issue_id": 93,
+            "issue_to_id": 149,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 766,
+            "user": {
+                "id": 15,
+                "name": "muessli"
+            },
+            "notes": "Hi Radegast,\r\nwhen ET:L is actually available on ModDB,\r\ncould it also available on Desura?\r\nWould be great!\r\nmfg muessli",
+            "created_on": "2012-12-11T08:57:18Z",
+            "details": []
+        },
+        {
+            "id": 774,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "Hard to say... Desura needs binary files. Prefered way to distribute linux binaries are native distro packages.\r\n\r\nWell, it's possible, but you definitely should use packages from distro (they will be created for distros repos).",
+            "created_on": "2012-12-12T13:05:21Z",
+            "details": []
+        },
+        {
+            "id": 778,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "This may be hard to make a gameplay video :O\r\nNot sure what to inculde in this video",
+            "created_on": "2012-12-12T15:37:23Z",
+            "details": []
+        },
+        {
+            "id": 780,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "What to show: new features ^^' This is THE point of making a video about a product; What makes Legacy different from ETmain?",
+            "created_on": "2012-12-12T16:52:48Z",
+            "details": []
+        },
+        {
+            "id": 784,
+            "user": {
+                "id": 4,
+                "name": "morsik"
+            },
+            "notes": "Mateos wrote:\r\n> What to show: new features ^^' This is THE point of making a video about a product; What makes Legacy different from ETmain?\r\n\r\nAlmost nothing currently :D\r\nMany things are changed under the hood.",
+            "created_on": "2012-12-13T08:42:37Z",
+            "details": []
+        },
+        {
+            "id": 785,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "morsik wrote:\r\n> Almost nothing currently :D\r\n> Many things are changed under the hood.\r\nThat's why there is no point in making a video...",
+            "created_on": "2012-12-13T15:42:04Z",
+            "details": []
+        },
+        {
+            "id": 786,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "This ticket doesn't need to be done and closed in the next week. When the focus will be on (mainly?) new things, a video would be appropriated :)",
+            "created_on": "2012-12-13T15:48:36Z",
+            "details": []
+        },
+        {
+            "id": 787,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "RaFal, just create a video of the easy install process of ET:L (no patches, no PB shit). In my eyes this is one of the big benefits of ET:L. \nShow there is a new path structure (see fs_homepath on windows). \nStart a listen server and add some bots ... at the end list all features of our main page (http://www.etlegacy.com/).  \n",
+            "created_on": "2012-12-13T16:45:51Z",
+            "details": []
+        },
+        {
+            "id": 792,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "",
+            "created_on": "2012-12-14T13:22:46Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "20"
+                }
+            ]
+        },
+        {
+            "id": 795,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "",
+            "created_on": "2012-12-14T16:58:42Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "20",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 826,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "",
+            "created_on": "2012-12-16T01:04:03Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "70"
+                }
+            ]
+        },
+        {
+            "id": 843,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "https://www.youtube.com/watch?v=9_T_S-daSjo\r\n\r\nPS: I will close this ticket when I make sure that movie is aproved :D",
+            "created_on": "2012-12-20T21:03:51Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "83",
+                    "new_value": "screenshots.zip"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "70",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 901,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "user:Rafal, I suggest some improvements to this video. \r\n\r\n# Cut off the last half a minute, so it ends at 2:52.\r\n# During the installation process set the video speed to 2x or more. People don't like looking at a progress bar for 20 seconds. \r\n# Correct a few mistakes and typos, e.g. \"have been\" instead of \"has been\" and \"will be have to choose\"\r\n\r\nGood job.",
+            "created_on": "2013-01-04T23:32:02Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                }
+            ]
+        },
+        {
+            "id": 903,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "+ 1\r\n\r\nWhile you are showing the ETL website at end add some text on top like:\r\n\r\n\r\n\r\nVisit www.etlegacy.com \r\n\r\n\r\nGet involved. We do appreciate any contribution to the project such as patches, suggestions or comments.\r\n\r\n\r\nIRC #etlegecy\r\n\r\n\r\nThank you for watching the vid!\r\n\r\n",
+            "created_on": "2013-01-05T15:25:04Z",
+            "details": []
+        },
+        {
+            "id": 904,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "UPDATE:\r\nhttps://www.youtube.com/watch?v=Xglw1xS6r04\r\n\r\nFIX:\r\nhttp://www.youtube.com/watch?v=JndneDDZyHM&feature=youtu.be",
+            "created_on": "2013-01-05T19:19:42Z",
+            "details": []
+        },
+        {
+            "id": 909,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "0:20 abble -> able, require -> required\r\n0:29 Punctuation needed, and maybe after also\r\n\r\nThis is just to help, not meant to hurt in any way ^^'",
+            "created_on": "2013-01-06T18:59:37Z",
+            "details": []
+        },
+        {
+            "id": 910,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "I think you could hide the icons on the desktop and maybe cut off the taskbar in your editing program.\r\n\r\nAlso, font's color is way too... ekhm... oczojebny :D",
+            "created_on": "2013-01-06T19:24:35Z",
+            "details": []
+        },
+        {
+            "id": 911,
+            "user": {
+                "id": 9,
+                "name": "Mateos"
+            },
+            "notes": "Fences to hide easily the Desktop icons (Take a version before 2.0, a still-free one)\r\nKill explorer.exe for the bar :)",
+            "created_on": "2013-01-06T19:26:16Z",
+            "details": []
+        },
+        {
+            "id": 912,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "Mateos wrote:\r\n> Fences to hide easily the Desktop icons (Take a version before 2.0, a still-free one)\r\nRMB on the desktop -> View -> Show icons on the desktop ;)",
+            "created_on": "2013-01-06T19:27:42Z",
+            "details": []
+        },
+        {
+            "id": 917,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "UPDATE:\r\nhttp://www.youtube.com/watch?v=3zCuWbY8tSE&feature=youtu.be\r\n\r\nPS: @Mateos ye I fixed those typos I was typing too fast ",
+            "created_on": "2013-01-07T13:36:47Z",
+            "details": []
+        },
+        {
+            "id": 1118,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-02-09T07:17:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "5",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1304,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "",
+            "created_on": "2013-03-12T20:04:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 1,
+            "name": "Radegast"
+        },
+        {
+            "id": 13,
+            "name": "RaFaL"
+        },
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 149,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "assigned_to": {
+        "id": 13,
+        "name": "RaFaL"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 7,
+        "name": "2.71rc2"
+    },
+    "subject": "Make screenshots and video for ModDB and LGDB",
+    "description": "We need the following:\r\n\r\n* start up and gameplay video, 1.5 or 2 minutes should be enough\r\n* widescreen screenshots, 5 to 10 should be enough\r\n* cropped screenshots to be used as banners:\r\n** one ModDB profile header: 200kb max, 950x150 px recommended\r\n** one LGDB banner header: 50 KB max, must be _exactly_ 960x120 pixels\r\n\r\nI assigned this issue to user:RaFaL since he already started making an intro video, but anyone can contribute.",
+    "start_date": "2012-12-11",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2012-12-11T01:39:55Z",
+    "updated_on": "2013-03-12T20:04:24Z",
+    "closed_on": "2013-03-12T20:04:24Z"
+}

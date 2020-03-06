@@ -1,0 +1,164 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7680,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2019-01-24T13:31:34Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "OSX is dropping frames ...",
+                    "new_value": "OSX is dropping frames ... *SDL related*"
+                }
+            ]
+        },
+        {
+            "id": 7766,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-02-14T10:35:04Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "22",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 7861,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-03-09T18:52:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Caused by SDL\r\n\r\nSee https://discourse.libsdl.org/t/macos-experiencing-strange-fps-behaviour-with-sdl-2-0-9/25603",
+                    "new_value": "Caused by SDL\r\n\r\nhttps://bugzilla.libsdl.org/show_bug.cgi?id=4481"
+                }
+            ]
+        },
+        {
+            "id": 7894,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "This will be fixed in SDL 2.0.10. See above link.\r\nWe might be able to ship the new version. depending on their release schedule.",
+            "created_on": "2019-03-22T09:26:26Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "26"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8419,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "SDL 2.0.10 has been released. See release announcement: https://discourse.libsdl.org/t/sdl-2-0-10-released/26429",
+            "created_on": "2019-07-28T19:09:36Z",
+            "details": []
+        },
+        {
+            "id": 8421,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-08-01T21:23:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1193,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 26,
+        "name": "Libs"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "OSX is dropping frames ... *SDL related*",
+    "description": "Caused by SDL\r\n\r\nhttps://bugzilla.libsdl.org/show_bug.cgi?id=4481",
+    "start_date": "2019-01-24",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "OS X"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-01-24T10:37:43Z",
+    "updated_on": "2019-08-01T21:23:24Z",
+    "closed_on": "2019-08-01T21:23:24Z"
+}

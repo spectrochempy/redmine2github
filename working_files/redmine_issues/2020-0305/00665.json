@@ -1,0 +1,195 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "b5ecddffe0090d986bd8242eb130284b1b2ad079",
+            "user": {
+                "id": 370,
+                "name": "hifi"
+            },
+            "comments": "misc: fixed MinGW toolchain for mingw-w64 and added windres",
+            "committed_on": "2014-11-26T22:23:40Z"
+        },
+        {
+            "revision": "660ff19d390dccc04959a5f031574298cfc1d624",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: renamed mingw cmake file and updated README",
+            "committed_on": "2014-11-26T22:28:10Z"
+        },
+        {
+            "revision": "ddd778770404ab905db7f3a2603efbb583f0c894",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "general: fixed a few MinGW issues",
+            "committed_on": "2014-11-27T00:01:35Z"
+        },
+        {
+            "revision": "f555b5fec5d93ea6297bc0031ec15c2ebb2bee42",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "general: fixed MinGW warnings, refs #665",
+            "committed_on": "2014-11-27T12:00:26Z"
+        },
+        {
+            "revision": "6f7a69518395bc8d427535495af0aade7bd49d17",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: additional MinGW fixes using embedded libs, refs #665",
+            "committed_on": "2014-12-05T22:16:38Z"
+        },
+        {
+            "revision": "0fa100fe3dc40c0286bd7691ad07b85b71796210",
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "comments": "fixed the build on mingw64",
+            "committed_on": "2015-07-22T09:24:26Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3891,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-27T07:26:58Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Using MinGW-w64 cross-compiler from Linux, I'm able to compile the server and mod code for win32. The client won't compile for now.\r\n\r\n* The FindSDL2.cmake file can't find the system SDL2,\r\n* Check compilation using embedded libs.",
+                    "new_value": "I also changed the default cross compiler from MinGW (ex-MinGW32) to the more advanced MinGW-w64, since the later supports a much larger part of the Windows API (and also because MinGW32 isn't even available on my distribution).\r\n\r\nUsing MinGW-w64 cross-compiler from Linux, I'm able to compile the server and mod code for win32. The client won't compile for now.\r\n\r\nA few notes:\r\n* MinGW can't find FLT_EPSILON and it needs to be redefined (using an ugly macro redefinition for now).\r\n* The FindSDL2.cmake file can't find the system SDL2,\r\n* compilation needs to be checked when using embedded libs."
+                }
+            ]
+        },
+        {
+            "id": 3892,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-11-27T07:47:41Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "I also changed the default cross compiler from MinGW (ex-MinGW32) to the more advanced MinGW-w64, since the later supports a much larger part of the Windows API (and also because MinGW32 isn't even available on my distribution).\r\n\r\nUsing MinGW-w64 cross-compiler from Linux, I'm able to compile the server and mod code for win32. The client won't compile for now.\r\n\r\nA few notes:\r\n* MinGW can't find FLT_EPSILON and it needs to be redefined (using an ugly macro redefinition for now).\r\n* The FindSDL2.cmake file can't find the system SDL2,\r\n* compilation needs to be checked when using embedded libs.",
+                    "new_value": "-I- (actually, hifi did) changed the default cross compiler from \"MinGW\":http://www.mingw.org/ (ex-MinGW32) to the more advanced \"MinGW-w64\":http://mingw-w64.sourceforge.net/, since the later supports a \"much larger part of the Windows API\":http://en.wikipedia.org/wiki/MinGW#MinGW-w64 (and also because MinGW32 isn't even available on my distribution).\r\n\r\nUsing MinGW-w64 cross-compiler from Linux, I'm able to compile the server and mod code for win32. The client won't compile for now.\r\n\r\nA few notes:\r\n* MinGW can't find FLT_EPSILON and it needs to be redefined (using an ugly macro redefinition for now).\r\n* The FindSDL2.cmake file can't find the system SDL2,\r\n* compilation needs to be checked when using embedded libs."
+                }
+            ]
+        },
+        {
+            "id": 3895,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Did a few changes and the client compiles fine with the system libs.\r\nHowever, I'm stuck with this error when trying to compile with the embedded Glew lib:\r\n\r\n<pre>\r\nLinking C shared module librenderer_opengl1_x86.dll                                                                           \r\nlibbundled_glew.a(glew.c.obj): In function `glewInit_GL_VERSION_1_2':                                                         \r\n/home/remy/dev/etlegacy/libs/glew/src/glew.c:3445: undefined reference to `_imp__wglGetProcAddress@4'\r\n/home/remy/dev/etlegacy/libs/glew/src/glew.c:3446: undefined reference to `_imp__wglGetProcAddress@4'\r\n/home/remy/dev/etlegacy/libs/glew/src/glew.c:3447: undefined reference to `_imp__wglGetProcAddress@4'\r\n/home/remy/dev/etlegacy/libs/glew/src/glew.c:3448: undefined reference to `_imp__wglGetProcAddress@4'\r\nlibbundled_glew.a(glew.c.obj): In function `glewInit_GL_VERSION_1_3':\r\n/home/remy/dev/etlegacy/libs/glew/src/glew.c:3465: undefined reference to `_imp__wglGetProcAddress@4'\r\nlibbundled_glew.a(glew.c.obj):/home/remy/dev/etlegacy/libs/glew/src/glew.c:3466: more undefined references to `_imp__wglGetProcAddress@4' follow\r\nlibbundled_glew.a(glew.c.obj): In function `wglewGetExtension@4':\r\n/home/remy/dev/etlegacy/libs/glew/src/glew.c:12833: undefined reference to `_imp__wglGetCurrentDC@0'\r\nlibbundled_glew.a(glew.c.obj): In function `wglewContextInit@0':\r\n/home/remy/dev/etlegacy/libs/glew/src/glew.c:12846: undefined reference to `_imp__wglGetProcAddress@4'\r\n/home/remy/dev/etlegacy/libs/glew/src/glew.c:12847: undefined reference to `_imp__wglGetProcAddress@4'\r\n/home/remy/dev/etlegacy/libs/glew/src/glew.c:12855: undefined reference to `_imp__wglGetCurrentDC@0'\r\ncollect2: error: ld returned 1 exit status\r\nCMakeFiles/renderer_opengl1_x86.dir/build.make:1053: recipe for target 'librenderer_opengl1_x86.dll' failed\r\nmake[2]: *** [librenderer_opengl1_x86.dll] Error 1\r\nCMakeFiles/Makefile2:306: recipe for target 'CMakeFiles/renderer_opengl1_x86.dir/all' failed\r\nmake[1]: *** [CMakeFiles/renderer_opengl1_x86.dir/all] Error 2\r\nMakefile:137: recipe for target 'all' failed\r\nmake: *** [all] Error \r\n</pre>\r\n\r\nAny idea? I guess glew can't link to openGL, but I'm completly clueless about how to solve this issue.",
+            "created_on": "2014-11-27T17:50:45Z",
+            "details": []
+        },
+        {
+            "id": 4981,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-07-22T09:48:04Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "44"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "17"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 665,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 44,
+        "name": "Jacker"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "allow compiling with MinGW",
+    "description": "-I- (actually, hifi did) changed the default cross compiler from \"MinGW\":http://www.mingw.org/ (ex-MinGW32) to the more advanced \"MinGW-w64\":http://mingw-w64.sourceforge.net/, since the later supports a \"much larger part of the Windows API\":http://en.wikipedia.org/wiki/MinGW#MinGW-w64 (and also because MinGW32 isn't even available on my distribution).\r\n\r\nUsing MinGW-w64 cross-compiler from Linux, I'm able to compile the server and mod code for win32. The client won't compile for now.\r\n\r\nA few notes:\r\n* MinGW can't find FLT_EPSILON and it needs to be redefined (using an ugly macro redefinition for now).\r\n* The FindSDL2.cmake file can't find the system SDL2,\r\n* compilation needs to be checked when using embedded libs.",
+    "start_date": "2014-11-27",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-27T07:18:20Z",
+    "updated_on": "2015-07-22T09:48:04Z",
+    "closed_on": "2015-07-22T09:48:04Z"
+}

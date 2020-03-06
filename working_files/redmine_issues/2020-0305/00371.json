@@ -1,0 +1,322 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 217,
+            "issue_id": 813,
+            "issue_to_id": 371,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "a22eb57057ddd3a0e4512241c00d9bf6ca176072",
+            "user": {
+                "id": 102,
+                "name": "BSzili"
+            },
+            "comments": "general: initial MorphOS support refs #371",
+            "committed_on": "2013-10-18T10:43:42Z"
+        },
+        {
+            "revision": "355e9ef16541921f1784afc3a32a663bbce19959",
+            "user": {
+                "id": 102,
+                "name": "BSzili"
+            },
+            "comments": "general: everything builds now on MOS refs #371",
+            "committed_on": "2013-10-18T13:46:07Z"
+        },
+        {
+            "revision": "a67b340c4643bef19873e1cb4cca02c821786b24",
+            "user": {
+                "id": 102,
+                "name": "BSzili"
+            },
+            "comments": "client: fixed syscalls on MorphOS refs #371",
+            "committed_on": "2013-10-18T14:22:10Z"
+        },
+        {
+            "revision": "dc1601e2544abfba2b69b739a9c3f9e5abbd7595",
+            "user": {
+                "id": 102,
+                "name": "BSzili"
+            },
+            "comments": "general: fixed wrong capitalization of MorphOS refs #371",
+            "committed_on": "2013-10-18T19:10:29Z"
+        },
+        {
+            "revision": "c87ef328aadd70377325c0e457f0ddd5bcbabd2e",
+            "user": {
+                "id": 102,
+                "name": "BSzili"
+            },
+            "comments": "client: now AROS and MorphOS has a separate fs_homepath too, refs #371",
+            "committed_on": "2013-10-19T10:24:59Z"
+        },
+        {
+            "revision": "4d75c3c3b18273b10c812d74cd45ac7f321320f8",
+            "user": {
+                "id": 102,
+                "name": "BSzili"
+            },
+            "comments": "general: fixed string to float conversions on MorphOS, refs #371",
+            "committed_on": "2013-10-19T14:41:30Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2090,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-10-18T09:19:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "6"
+                }
+            ]
+        },
+        {
+            "id": 2092,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "glew is already available in the lib path",
+            "created_on": "2013-10-18T10:05:09Z",
+            "details": []
+        },
+        {
+            "id": 2093,
+            "user": {
+                "id": 102,
+                "name": "BSzili"
+            },
+            "notes": "IR4T4 wrote:\r\n> glew is already available in the lib path\r\n\r\nI know, but the way TinyGL is implemented makes it a bit hard to port GLEW. It has a fixed function set, there's no getprocaddress and the GL functions are declared as macros like this:\r\n#define glBegin(mode) GLBegin(__tglContext, mode)\r\nwhere GLBegin is the \"real\" library function. There are also tons of nasty namespace clashes with glew.h. I'll probably go for the workaround, since TGL on MorphOS a nice homogeneous environment. ",
+            "created_on": "2013-10-18T10:22:44Z",
+            "details": []
+        },
+        {
+            "id": 2096,
+            "user": {
+                "id": 102,
+                "name": "BSzili"
+            },
+            "notes": "",
+            "created_on": "2013-10-18T14:23:06Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "40"
+                }
+            ]
+        },
+        {
+            "id": 2116,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Is there no separate fs_homepath on MOS and AROS - see FS_Startup()? ",
+            "created_on": "2013-10-19T06:38:26Z",
+            "details": []
+        },
+        {
+            "id": 2117,
+            "user": {
+                "id": 102,
+                "name": "BSzili"
+            },
+            "notes": "IR4T4 wrote:\r\n> Is there no separate fs_homepath on MOS and AROS - see FS_Startup()?\r\n\r\nNo, both are single-user systems. There was a 3rd party multi-user extension to amigaos-classic, but it never caught on, and it's not implemented in any of the NG AmigaOS-like systems.",
+            "created_on": "2013-10-19T06:56:25Z",
+            "details": []
+        },
+        {
+            "id": 2119,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "BSzili wrote:\r\n> No, both are single-user systems.\r\nThe point of homepath is not that it is different for each user, but that it is separate from basepath, so if files get deleted or corrupted in homepath, there is always backup at basepath.\r\n\r\nI still don't like that ET:L forces this behaviour for clients instead of just printing a warning, but if we are going to do this then it should be the same on all our supported platforms.",
+            "created_on": "2013-10-19T10:12:14Z",
+            "details": []
+        },
+        {
+            "id": 2120,
+            "user": {
+                "id": 102,
+                "name": "BSzili"
+            },
+            "notes": "Radegast wrote:\r\n> BSzili wrote:\r\n> > No, both are single-user systems.\r\n> The point of homepath is not that it is different for each user, but that it is separate from basepath, so if files get deleted or corrupted in homepath, there is always backup at basepath.\r\n> \r\n> I still don't like that ET:L forces this behaviour for clients instead of just printing a warning, but if we are going to do this then it should be the same on all our supported platforms.\r\n\r\nOkay, I fixed this to make it consistent with the other supported platforms.",
+            "created_on": "2013-10-19T10:30:30Z",
+            "details": []
+        },
+        {
+            "id": 2122,
+            "user": {
+                "id": 102,
+                "name": "BSzili"
+            },
+            "notes": "",
+            "created_on": "2013-10-19T17:23:54Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "40",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 4211,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Is there any progress? 2.71 release is tagged: https://github.com/etlegacy/etlegacy/tags",
+            "created_on": "2014-12-22T07:06:42Z",
+            "details": []
+        },
+        {
+            "id": 4220,
+            "user": {
+                "id": 102,
+                "name": "BSzili"
+            },
+            "notes": "IR4T4 wrote:\r\n> Is there any progress? 2.71 release is tagged: https://github.com/etlegacy/etlegacy/tags\r\n\r\nUnfortunately no. There is a serious bug which prevents online play that I couldn't fix.",
+            "created_on": "2014-12-24T09:51:07Z",
+            "details": []
+        },
+        {
+            "id": 4239,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "",
+            "created_on": "2014-12-29T14:37:08Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "6",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 4607,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-02-16T14:21:41Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "813"
+                }
+            ]
+        },
+        {
+            "id": 5193,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "The code for other platforms has been removed from master - it's not maintained.",
+            "created_on": "2015-08-22T10:40:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 102,
+            "name": "BSzili"
+        }
+    ],
+    "time_entries": null,
+    "id": 371,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 102,
+        "name": "BSzili"
+    },
+    "assigned_to": {
+        "id": 102,
+        "name": "BSzili"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 4,
+        "name": "ALL"
+    },
+    "subject": "MorphOS port",
+    "description": "Create a port for MorphOS: http://morphos-team.net\r\nThis possibly includes a GLEW port, or some workaround for that, because TinyGL has a fixed feature set.",
+    "start_date": "2013-10-18",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-10-18T08:45:12Z",
+    "updated_on": "2015-08-22T10:40:50Z",
+    "closed_on": "2015-08-22T10:40:50Z"
+}

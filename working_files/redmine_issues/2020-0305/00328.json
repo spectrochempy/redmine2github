@@ -1,0 +1,129 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 1803,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-08-09T07:29:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "1"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 1861,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "There is CVAR cl_renderer - but I don't know if this will be available in the releases for some reasons.",
+            "created_on": "2013-08-27T15:11:05Z",
+            "details": []
+        },
+        {
+            "id": 3443,
+            "user": {
+                "id": 44,
+                "name": "Jacker"
+            },
+            "notes": "When we allow r2 in release builds this will be enabled as well and as such there is no point in having a task for this as there are multiple tasks for r2.",
+            "created_on": "2014-09-09T11:54:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 3444,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-09-09T16:41:07Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 328,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 236,
+        "name": "chriswww"
+    },
+    "category": {
+        "id": 1,
+        "name": "Client"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "implement cvar r_render to give users choice which render extension is used.",
+    "description": "Some other opengl games of quake3 engine era allow users to choose their preferred rendering extension used. It should improve performance quite a bit compared to using the default render method that was available when ET was written originally.",
+    "start_date": "2013-08-09",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-08-09T04:17:40Z",
+    "updated_on": "2014-09-09T16:41:07Z",
+    "closed_on": "2014-09-09T11:54:32Z"
+}

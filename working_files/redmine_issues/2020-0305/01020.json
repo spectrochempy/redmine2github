@@ -1,0 +1,139 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 323,
+            "issue_id": 1020,
+            "issue_to_id": 1003,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "3f45b3314d41c2e4ad8610ad292ad210710d821e",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: fix ET_EXPLOSIVE_INDICATOR not drawn on command map for opposite\nteam - see fueldump",
+            "committed_on": "2017-03-12T11:32:49Z"
+        },
+        {
+            "revision": "4359187b18fe064e978a9439695f40aeadd26a73",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: show opposite team objectives on command map (see radar - radar\nparts, goldrush goldbars etc ...)",
+            "committed_on": "2017-03-12T21:36:32Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 6553,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-03-11T23:56:15Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1003"
+                }
+            ]
+        },
+        {
+            "id": 6557,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-03-12T13:37:37Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Objective icon missing on command",
+                    "new_value": "Objective icon missing on command map"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1020,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Objective icon missing on command map",
+    "description": "For some reason, the fueldump icon is not displayed on the command map for the Axis side, only the dyna is for the Allies. Compare with oasis (wall + dyna).\r\nThe issue might be specific to fueldump only, or be a more general issue.\r\n\r\nThis is reproducible on Vanilla and all existing mod. ",
+    "start_date": "2017-03-12",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-03-11T23:56:03Z",
+    "updated_on": "2017-03-12T13:37:37Z",
+    "closed_on": "2017-03-12T13:37:37Z"
+}

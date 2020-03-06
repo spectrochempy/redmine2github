@@ -1,0 +1,197 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "30fc07e38dbdbe1641bbeabbe5a49b447e7d13a8",
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "comments": "client: fixed NQ/ETPub incompatibility in CG_REMOVECOMMAND, refs #275",
+            "committed_on": "2013-04-02T15:32:19Z"
+        },
+        {
+            "revision": "c6507d5522db474e42a2fe6284d455cbab55561e",
+            "comments": "general: disallow mods to remove system commands, refs #275",
+            "committed_on": "2013-04-02T19:04:44Z"
+        },
+        {
+            "revision": "ad4884dc58550fdd86a822373c72d41b5372ef9f",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "client/cgame: allow to remove some commands by mod code again +\ntest/anti abuse code from ETPub refs #275",
+            "committed_on": "2013-04-12T18:49:51Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1473,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-04-02T15:38:48Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "Aftere ioquake3 file system merge NQ and ETPub drop client with this message: *Restricted source tried to remove +lookup*\r\n\r\nsource:src/client/cl_cgame.c\r\n<pre><code class=\"C\">\r\ncase CG_REMOVECOMMAND:\r\n\t// FIXME: NQ/ETPub drop client if Cmd_RemoveCommandSafe is used here\r\n\tCmd_RemoveCommand(VMA(1));\r\n\treturn 0;\r\n</code></pre>",
+                    "new_value": "Aftere ioquake3 file system merge NQ and ETPub drop client with this message: *Restricted source tried to remove system command \"+lookup\"*\r\n\r\nsource:src/client/cl_cgame.c\r\n<pre><code class=\"C\">\r\ncase CG_REMOVECOMMAND:\r\n\t// FIXME: NQ/ETPub drop client if Cmd_RemoveCommandSafe is used here\r\n\tCmd_RemoveCommand(VMA(1));\r\n\treturn 0;\r\n</code></pre>"
+                }
+            ]
+        },
+        {
+            "id": 1514,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "The following commands are considered cheat commands, so we can whitelist them in the @Cmd_RemoveCommand@ function. The primary goal of the function is to block mods from removing commands such as @+quit@.\r\n\r\n<pre>\r\nRestricted source tried to remove system command \"+lookup\"\r\nRestricted source tried to remove system command \"+lookdown\"\r\nRestricted source tried to remove system command \"-lookup\"\r\nRestricted source tried to remove system command \"-lookdown\"\r\nRestricted source tried to remove system command \"configstrings\" <--- why?\r\n</pre>\r\n\r\nThere are more issues in the server compatiblity with NQ and other mods after the ioquake3 filesystem merge.",
+            "created_on": "2013-04-10T13:46:52Z",
+            "details": []
+        },
+        {
+            "id": 1529,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-04-12T06:25:25Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "4",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1533,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Tbh I don't see any reason to restrict the removal of system commands. Are modders interested in removing the quit cmd? I don't think so. If cmds are removed there is a damn good reason on mod side. 'configstrings' cmd f.e. offers the client the IP of other clients - see CS_PLAYERS. Quite deadly for 2.55 clients if their IP is known ...",
+            "created_on": "2013-04-12T07:07:53Z",
+            "details": []
+        },
+        {
+            "id": 1534,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "Where does it show other clients' ip addresses?",
+            "created_on": "2013-04-12T07:24:37Z",
+            "details": []
+        },
+        {
+            "id": 1535,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "CS_PLAYERS\r\n\r\nEdit: Oops - I was wrong IPs are not part of this CS. However there are some info in the string the client shouldn't know ...",
+            "created_on": "2013-04-12T07:25:51Z",
+            "details": []
+        },
+        {
+            "id": 1654,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Issue is fixed.",
+            "created_on": "2013-05-02T08:40:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "7"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 1,
+            "name": "Radegast"
+        }
+    ],
+    "time_entries": null,
+    "id": 275,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 7,
+        "name": "Immediate"
+    },
+    "author": {
+        "id": 1,
+        "name": "Radegast"
+    },
+    "assigned_to": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 7,
+        "name": "2.71rc2"
+    },
+    "subject": "Using Cmd_RemoveCommandSafe for CG_REMOVECOMMAND breaks compatibility with NQ/ETPub",
+    "description": "Aftere ioquake3 file system merge NQ and ETPub drop client with this message: *Restricted source tried to remove system command \"+lookup\"*\r\n\r\nsource:src/client/cl_cgame.c\r\n<pre><code class=\"C\">\r\ncase CG_REMOVECOMMAND:\r\n\t// FIXME: NQ/ETPub drop client if Cmd_RemoveCommandSafe is used here\r\n\tCmd_RemoveCommand(VMA(1));\r\n\treturn 0;\r\n</code></pre>",
+    "start_date": "2013-04-02",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-04-02T15:31:24Z",
+    "updated_on": "2013-05-02T08:40:49Z",
+    "closed_on": "2013-05-02T08:40:49Z"
+}

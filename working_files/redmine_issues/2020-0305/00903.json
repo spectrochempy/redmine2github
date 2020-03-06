@@ -1,0 +1,142 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 269,
+            "issue_id": 903,
+            "issue_to_id": 661,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "ccf1a89b90c2d823c4b6203266f313bfbd0bcff3",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed blinking map entities when players connect, fixes #903",
+            "committed_on": "2015-12-12T16:22:37Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 5626,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-12-09T18:17:42Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "The icons on map tend to blink a few time for anout ~5 sec, before being correctly displayed.\r\n\r\nTwo recents changes modified map entities update (1f29885aa65e3fd095ff89a9150018222bb1fb30 and cb541c323d5bc24e2924075c26a50cffddfbb74a), and reverting them actually change the behavior of this bug. Without these commits, the map entities will totally disappear after ~10sec and then reappear ~10sec later. ",
+                    "new_value": "The icons on map tend to blink a few time for about ~5 sec, before being correctly displayed.\r\n\r\nTwo recents changes modified map entities update (1f29885aa65e3fd095ff89a9150018222bb1fb30 and cb541c323d5bc24e2924075c26a50cffddfbb74a, see #661), and reverting them actually change the behavior of this bug. Without these commits, the map entities will totally disappear after ~10sec and then reappear ~10sec later. "
+                }
+            ]
+        },
+        {
+            "id": 5627,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-12-09T18:17:51Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "661"
+                }
+            ]
+        },
+        {
+            "id": 5654,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "This is not a recent regression; this issue exists on 2.74 too. The modified map entity update time made it only more visible. ",
+            "created_on": "2015-12-12T06:44:33Z",
+            "details": []
+        },
+        {
+            "id": 5659,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:ccf1a89b90c2d823c4b6203266f313bfbd0bcff3.",
+            "created_on": "2015-12-12T16:28:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 903,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 5,
+        "name": "High"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 2,
+        "name": "2.75"
+    },
+    "subject": "Map entities blinking",
+    "description": "The icons on map tend to blink a few time for about ~5 sec, before being correctly displayed.\r\n\r\nTwo recents changes modified map entities update (1f29885aa65e3fd095ff89a9150018222bb1fb30 and cb541c323d5bc24e2924075c26a50cffddfbb74a, see #661), and reverting them actually change the behavior of this bug. Without these commits, the map entities will totally disappear after ~10sec and then reappear ~10sec later. ",
+    "start_date": "2015-12-09",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-12-09T18:15:52Z",
+    "updated_on": "2015-12-12T16:28:44Z",
+    "closed_on": "2015-12-12T16:28:44Z"
+}

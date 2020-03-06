@@ -1,0 +1,107 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "6adac7a04227bf88fa2f109c0ea7f02d7aa75fce",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "mod: adjusted default cvar values in code and configs, fixes #1272",
+            "committed_on": "2019-05-03T19:29:37Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 8100,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-05-02T16:24:44Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "14"
+                }
+            ]
+        },
+        {
+            "id": 8113,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:6adac7a04227bf88fa2f109c0ea7f02d7aa75fce.",
+            "created_on": "2019-05-03T19:42:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1272,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 821,
+        "name": "Bystry"
+    },
+    "category": {
+        "id": 14,
+        "name": "Mod pak3.pk3"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Change default public and comp server config",
+    "description": "Add to default public and comp server config:\r\n- g_fixedphysics \"1\"\r\n- g_fixedphysicsfps \"125\" \r\n- g_antiwarp \"1\" \r\n- g_shove \"60\" \r\n- force maxpackets \r\n- force rate",
+    "start_date": "2019-05-02",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-05-02T15:47:06Z",
+    "updated_on": "2019-05-03T19:42:28Z",
+    "closed_on": "2019-05-03T19:42:28Z"
+}

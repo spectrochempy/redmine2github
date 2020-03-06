@@ -1,0 +1,155 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 333,
+            "issue_id": 1029,
+            "issue_to_id": 1002,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 6424,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2017-02-16T14:20:28Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "715",
+                    "new_value": "ranks.jpg"
+                }
+            ]
+        },
+        {
+            "id": 6707,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "",
+            "created_on": "2017-05-09T13:36:51Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1029"
+                }
+            ]
+        },
+        {
+            "id": 6770,
+            "user": {
+                "id": 281,
+                "name": "thunder"
+            },
+            "notes": "are these in legacy shaders or in normal ui shaders?",
+            "created_on": "2017-06-11T07:06:46Z",
+            "details": []
+        },
+        {
+            "id": 7005,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "Fixed the alpha channel for German rank icons. ",
+            "created_on": "2017-12-09T21:00:17Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "786",
+                    "new_value": "ranks.7z"
+                },
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "12",
+                    "new_value": "14"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "19"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1002,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "assigned_to": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "category": {
+        "id": 14,
+        "name": "Mod pak3.pk3"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "parent": {
+        "id": 218
+    },
+    "subject": "fix alpha channel for rank icons",
+    "description": "The freshly added German rank icons don't have proper alpha channels.\r\n\r\nWhile at it, also recreate the rank icons in HQ to get away from licenses.",
+    "start_date": "2017-02-16",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-02-16T14:20:10Z",
+    "updated_on": "2017-12-09T21:00:17Z",
+    "closed_on": "2017-12-09T21:00:17Z"
+}

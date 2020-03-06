@@ -1,0 +1,107 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 3794,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Not a bug, and I don't see this as a valid feature either.\r\n\r\nThe issue with XP whore people is that they like XP too much, and the responsible feature here is XP Save.",
+            "created_on": "2014-11-21T16:18:15Z",
+            "details": []
+        },
+        {
+            "id": 3795,
+            "user": {
+                "id": 90,
+                "name": "Saukko"
+            },
+            "notes": "I just think that it's not much of a major loss if the engineer can't get his xp from damaging his own MG.\r\nYou don't need to prevent engineer repairing the MG he damaged himself, but to prevent the xp gain if he was the one damaging it. Though then we could go deeper that there are two pariticipants abusing this. That your teammate damages the MG and then you repair the MG to get the xp. So whenever a teammate or you damage the MG, you can't gain XP from repairing it. So the only way to gain that 3 extra xp is that an enemy damages the MG and you will repair it after that.\r\n\r\n-*S",
+            "created_on": "2014-11-21T16:38:21Z",
+            "details": []
+        },
+        {
+            "id": 3803,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "There are several ways to gain XP for other classes too. F.e. dropping packs at spawn only.  In the end we can't avoid all. Good engineer ET players make more XP with real actions. \r\n\r\n+ 1 for closing this issue.",
+            "created_on": "2014-11-21T19:58:55Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 657,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Gaining xp for repairing MG that you have damaged",
+    "description": "How to reproduce:\r\n1. Construct MG, f.e. as Allies in Oasis near the flag\r\n2. Throw a grenade(s) to damage the MG\r\n3. Repair the MG\r\n\r\nThis bug or I don't know is it a feature is sort of an issue. This leads to a possible abuse to gain xp.\r\n\r\nThere's a demo attached to show that you gain 3 xp each time you repair the MG when it's damaged.\r\n\r\n-*S",
+    "start_date": "2014-11-21",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-11-21T16:02:16Z",
+    "updated_on": "2014-11-21T19:58:55Z",
+    "closed_on": "2014-11-21T19:58:55Z"
+}

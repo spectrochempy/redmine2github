@@ -1,0 +1,102 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [],
+    "journals": [
+        {
+            "id": 6910,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "Can't reproduce. Works fine with 2.75. \r\n\r\nI also can't come up with an explanation why exactly the 'lights' folder should be problematic.\r\nI don't know what we did wrong in the past, but it certainly works now.\r\n\r\nTicket can be set to 'invalid'",
+            "created_on": "2017-10-08T12:40:18Z",
+            "details": []
+        },
+        {
+            "id": 6944,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-10-10T04:06:13Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "4",
+                    "new_value": "19"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 809,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 380,
+        "name": "Lammert"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Custom texture Lights not working",
+    "description": "Hello,\r\n\r\nI made a custom z_lights.pk3.\r\nWithin that pk3 I got the folder textures -> lights\r\nWithin the lights folder I got the proper *.TGA files.\r\n\r\nWhen I try to test it with ET:L the custom lights doesn't show.\r\nWhen I try the same pk3 with vanilla, it works.\r\nI asked Kemon and he has the same issue (vanilla works ET:L doesn't).\r\n\r\nSeems that the \"lights\" folder is the only folder with this problem.\r\nThe custom lights will not load with ET:L\r\n\r\nI attached the used pk3.\r\n\r\nGreetz",
+    "start_date": "2015-02-06",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": "Windows"
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-02-06T16:18:38Z",
+    "updated_on": "2017-10-10T04:06:13Z",
+    "closed_on": "2017-10-10T04:06:13Z"
+}

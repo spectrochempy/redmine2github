@@ -1,0 +1,114 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "4df3ea27077cea97a05d740cf96214ba9238fafb",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: removed dynamite tick sound and pulse icon, fixes #1285",
+            "committed_on": "2019-05-09T17:10:49Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 8155,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Hu... I never realized you could do that with dyna.\r\nThe weapon icon shouldn't \"pulse\" either.",
+            "created_on": "2019-05-09T16:51:14Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "21",
+                    "new_value": "16"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "22"
+                }
+            ]
+        },
+        {
+            "id": 8156,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:4df3ea27077cea97a05d740cf96214ba9238fafb.",
+            "created_on": "2019-05-09T17:26:47Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1285,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 3,
+        "name": "Low"
+    },
+    "author": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Remove dynamite \"cooking\"",
+    "description": "In RtCW you could \"cook\" your dynamite to change the timer. (probably SP only?)\r\nThis has actually always bugged me in ET that you could cook the dynamite and it would do the same ticking as with a nade, however, it has no effect.\r\n\r\nI don't know if it's wise to immediately drop the dynamite so the player is not able to hold mouse1 anymore, however, it should definitely not tick when being held.",
+    "start_date": "2019-05-09",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-05-09T16:05:03Z",
+    "updated_on": "2019-05-09T17:26:47Z",
+    "closed_on": "2019-05-09T17:26:47Z"
+}

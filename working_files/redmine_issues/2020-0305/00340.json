@@ -1,0 +1,280 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "d84615fdfe71763493069252b4688fa2759d3e72",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "ui: logo II refs #340",
+            "committed_on": "2013-10-18T15:28:10Z"
+        },
+        {
+            "revision": "1ce0f482291695f5e9b68926eed405539ed3b2d0",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "ui: etl filter icon refs #340",
+            "committed_on": "2013-10-18T15:42:07Z"
+        },
+        {
+            "revision": "d155549c742282eb1e1c433e16a5751f665441fc",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: disabled console logo, refs #340",
+            "committed_on": "2013-11-30T22:12:03Z"
+        },
+        {
+            "revision": "0fdcfd1bcdac5d916e784a85b4584c13f79e2fd4",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "client: disabled console logo, refs #340",
+            "committed_on": "2013-12-11T20:42:26Z"
+        },
+        {
+            "revision": "89b358606b9c9eb8394572dba08a96d940ff0359",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: replaced images with new logo, refs #340",
+            "committed_on": "2014-03-18T13:18:41Z"
+        },
+        {
+            "revision": "95bfabc93768587c249f61042b42a20b15ff8bba",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "misc: added new logo files, refs #340",
+            "committed_on": "2014-03-23T14:28:09Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1964,
+            "user": {
+                "id": 1,
+                "name": "Radegast"
+            },
+            "notes": "",
+            "created_on": "2013-09-19T16:42:12Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "7",
+                    "new_value": "9"
+                }
+            ]
+        },
+        {
+            "id": 2094,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "https://github.com/etlegacy/etlegacy/commit/82a553199511340e006356e7de5fbd88b3c4f2f7",
+            "created_on": "2013-10-18T14:03:24Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "20"
+                }
+            ]
+        },
+        {
+            "id": 2101,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-10-18T14:59:20Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "9",
+                    "new_value": "11"
+                }
+            ]
+        },
+        {
+            "id": 2129,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-10-21T14:44:04Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "200",
+                    "new_value": "Unbenannt.tga"
+                }
+            ]
+        },
+        {
+            "id": 2701,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-01-02T11:33:27Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "1"
+                }
+            ]
+        },
+        {
+            "id": 3047,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "{FIXME} Find an artist willing an able to draw a proper ET: Legacy background logo",
+            "created_on": "2014-02-16T12:42:43Z",
+            "details": []
+        },
+        {
+            "id": 3130,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Changed the logo, based on the file deep created. There's still a few thing to do (ico, svg files, loading bitmap and installer gfx update). Shall we readd the logo on the console background too?",
+            "created_on": "2014-03-18T15:56:25Z",
+            "details": []
+        },
+        {
+            "id": 3131,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "I'd keep the console as clean as possible. Meaning also no (possible) distractions in the background.",
+            "created_on": "2014-03-18T16:14:27Z",
+            "details": []
+        },
+        {
+            "id": 3132,
+            "user": {
+                "id": 35,
+                "name": "Dragonji"
+            },
+            "notes": "I like having a logo in console :P",
+            "created_on": "2014-03-18T17:01:44Z",
+            "details": []
+        },
+        {
+            "id": 3138,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-03-23T17:14:00Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "20",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 9,
+            "name": "Mateos"
+        }
+    ],
+    "time_entries": null,
+    "id": 340,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 15,
+        "name": "Mod UI"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "Change images",
+    "description": "- background\r\n- legacy mod filter\r\n\r\n",
+    "start_date": "2013-09-05",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-09-05T21:11:57Z",
+    "updated_on": "2014-03-23T17:14:00Z",
+    "closed_on": "2014-03-23T17:14:00Z"
+}

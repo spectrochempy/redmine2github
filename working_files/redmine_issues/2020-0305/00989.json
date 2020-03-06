@@ -1,0 +1,135 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "abfdf8de3595de17327ccba389ea542c1c61794e",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed cabinet crates disappearing, fixes #989",
+            "committed_on": "2017-02-05T20:51:04Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 6323,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I've also recently seen that bug on oasis.",
+            "created_on": "2017-02-05T14:59:16Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "21"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "19"
+                }
+            ]
+        },
+        {
+            "id": 6327,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I bisected the issue to https://github.com/etlegacy/etlegacy/commit/b52b7ea6d2b9964593cd0b92d9cb7f387912dc2f",
+            "created_on": "2017-02-05T20:44:52Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 6328,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Applied in changeset commit:abfdf8de3595de17327ccba389ea542c1c61794e.",
+            "created_on": "2017-02-05T22:06:12Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "2",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "50",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 989,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 392,
+        "name": "Timothy"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "subject": "Health packs/ammo crates disappearing",
+    "description": "As discussed with Spy:\r\n\r\nWhen I take only one health pack/ammo crate, 5 of them disappear and only 1 remains in the cabinet. However, the capacity didn't drain, as I am able to completely empty the cabinets after a while.",
+    "start_date": "2017-02-05",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-02-05T14:52:29Z",
+    "updated_on": "2017-02-05T22:06:12Z",
+    "closed_on": "2017-02-05T22:06:12Z"
+}

@@ -1,0 +1,298 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 327,
+            "issue_id": 981,
+            "issue_to_id": 591,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 336,
+            "issue_id": 1037,
+            "issue_to_id": 981,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 363,
+            "issue_id": 1072,
+            "issue_to_id": 981,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 412,
+            "issue_id": 1224,
+            "issue_to_id": 981,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 6276,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-01-31T13:18:14Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Semi-colon don't appear in chat",
+                    "new_value": "Semi-colon characters don't appear in chat"
+                }
+            ]
+        },
+        {
+            "id": 6281,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Seems intended (but not sure) to deny command injections.\r\n",
+            "created_on": "2017-01-31T15:13:40Z",
+            "details": []
+        },
+        {
+            "id": 6341,
+            "user": {
+                "id": 530,
+                "name": "Dominator56"
+            },
+            "notes": "IR4T4 wrote:\r\n> Seems intended (but not sure) to deny command injections.\r\n\r\nIt works normally in vanilla tho, and it never cause issues afaik",
+            "created_on": "2017-02-07T18:05:56Z",
+            "details": []
+        },
+        {
+            "id": 6609,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-03-21T17:29:21Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Semi-colon characters don't appear in chat",
+                    "new_value": "Some characters don't appear in chat"
+                },
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "The semi colon character (;) doesn't appear in chat. Check why this is filtered and if this is intended.",
+                    "new_value": "The semi colon (;) and percentage (%) characters doesn't appear in chat. Check why this is filtered and if this is intended."
+                }
+            ]
+        },
+        {
+            "id": 6616,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2017-03-21T23:47:07Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "591"
+                }
+            ]
+        },
+        {
+            "id": 6629,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "The % character replacement is related to the translation system. I have not be able to find where the semi-colon is dropped. I am not sure the reason is to avoid injection here, as the chat text is internally enclosed by double prime marks.",
+            "created_on": "2017-03-23T21:44:43Z",
+            "details": []
+        },
+        {
+            "id": 6750,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-05-29T16:44:55Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "The semi colon (;) and percentage (%) characters doesn't appear in chat. Check why this is filtered and if this is intended.",
+                    "new_value": "The semi colon (;) and percentage (%) and UTF characters doesn't appear in chat. Check why this is filtered and if this is intended."
+                }
+            ]
+        },
+        {
+            "id": 6752,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-05-29T16:45:17Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1037"
+                }
+            ]
+        },
+        {
+            "id": 6809,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2017-07-02T10:14:50Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 7148,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-02-28T12:45:55Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1072"
+                }
+            ]
+        },
+        {
+            "id": 7150,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Status:\r\n-  (;) , (\") and percentage (%) are not displayed\r\n- UTF chars seem to work when chat is initiated via chat window\r\n- console replaces UTF8 chars by .\r\n- *intermission chat shows strange behavour when UTF chars are entered (displays random strings from the game)* ",
+            "created_on": "2018-02-28T12:57:01Z",
+            "details": []
+        },
+        {
+            "id": 7359,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-12-21T13:10:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "19",
+                    "new_value": "8"
+                }
+            ]
+        },
+        {
+            "id": 7972,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-17T21:23:05Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1224"
+                }
+            ]
+        },
+        {
+            "id": 7975,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-04-18T09:20:04Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "The semi colon (;) and percentage (%) and UTF characters doesn't appear in chat. Check why this is filtered and if this is intended.",
+                    "new_value": "The semi-colon (;), quote (\"), percentage (%) and UTF characters don't appear in chat. Check why this is filtered and if this is intended.\r\n* Percentage is related to the translation system. It is replaced by (.) in the MSG_{Write*,Read*,HashKey} functions; \r\n* Semi-colon and quote are likely dropped to prevent cmd injection. They are dropped but not replaced by anything."
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 981,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 8,
+        "name": "Confirmed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Some characters don't appear in chat",
+    "description": "The semi-colon (;), quote (\"), percentage (%) and UTF characters don't appear in chat. Check why this is filtered and if this is intended.\r\n* Percentage is related to the translation system. It is replaced by (.) in the MSG_{Write*,Read*,HashKey} functions; \r\n* Semi-colon and quote are likely dropped to prevent cmd injection. They are dropped but not replaced by anything.",
+    "start_date": "2017-01-31",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2017-01-31T10:18:56Z",
+    "updated_on": "2019-04-18T09:20:04Z"
+}

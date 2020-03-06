@@ -1,0 +1,115 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "f0253a55de07165398987a47fa180cd29eec768e",
+            "user": {
+                "id": 424,
+                "name": "Zecklar"
+            },
+            "comments": "cgame: Added ping info for spectators to scoreboard, refs #856",
+            "committed_on": "2015-08-07T15:33:30Z"
+        },
+        {
+            "revision": "c1c042106a6766a7bbdde46c8bfa001c5fb81434",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "cgame: fixed compiler warning, refs #856",
+            "committed_on": "2015-08-07T21:22:40Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 5063,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-08-07T16:08:05Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "424"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "17"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 856,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "assigned_to": {
+        "id": 424,
+        "name": "Zecklar"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "Add ping info for spectators to scoreboard",
+    "description": "As the title says ... it's nice to have that info for all players.",
+    "start_date": "2015-08-02",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-08-02T18:08:30Z",
+    "updated_on": "2015-08-07T16:08:05Z",
+    "closed_on": "2015-08-07T16:08:05Z"
+}

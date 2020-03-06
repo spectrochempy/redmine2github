@@ -1,0 +1,327 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "deabf733595d5a872252b39fcfc72c25a8452fa0",
+            "comments": "game: replaced luaL_checkint with luaL_checkinteger\n\nLua 5.3 deprecates `luaL_checkint`. It is replaced by `(int)luaL_checkinteger`.",
+            "committed_on": "2015-07-04T17:24:00Z"
+        },
+        {
+            "revision": "633d30a2cd3acc55336cb765ef57bb4e9bbcb542",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: replaced luaL_optint with luaL_optinteger",
+            "committed_on": "2015-07-04T17:24:01Z"
+        },
+        {
+            "revision": "edcb39bcc85e221aff41b4a6b48e2b7718b2d347",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "general: set minimum Lua version to 5.3",
+            "committed_on": "2015-07-04T17:24:01Z"
+        },
+        {
+            "revision": "90bf994cd9ccdd5e641fbe761560bff7aa7dda81",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "game: fixed lua warning, refs #842\n\nSee Lua 5.3 manual, Section 8.3",
+            "committed_on": "2015-07-24T06:51:53Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 4952,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2015-07-03T07:49:41Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "140"
+                }
+            ]
+        },
+        {
+            "id": 4953,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "See https://github.com/etlegacy/etlegacy/pull/174",
+            "created_on": "2015-07-04T13:17:18Z",
+            "details": []
+        },
+        {
+            "id": 4954,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "This is now done, but the change broke Travis (because Debian doesn't have Lua 5.3).\r\n\r\nI'm not sure how to fix it:\r\n- prepare some Lua 5.3 package for Debian and put them in a ppa, or\r\n- set Travis to use embedded libs.\r\n\r\nAny advice welcome here.",
+            "created_on": "2015-07-04T22:51:59Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 4955,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Spyhawk wrote:\r\n> - set Travis to use embedded libs.\r\n> \r\n> Any advice welcome here.\r\nI wonder why we aren't using our bundled libs. We do that for releases anyway. Let's add the missing dependencies and let travis build our libs too.\r\n",
+            "created_on": "2015-07-05T05:26:51Z",
+            "details": []
+        },
+        {
+            "id": 4956,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Changed Travis to use BUNDLED_LIBS. All good, apart from OGG which needs an old automake (1.13) not available on Debian.\r\nI then changed to BUNDLED_OGG=0, and use the libogg/libvorbis system lib.\r\n\r\nGetting closer, but the build is still failing. See latest travis log. Probably some linker commands or something..",
+            "created_on": "2015-07-05T07:46:15Z",
+            "details": []
+        },
+        {
+            "id": 4957,
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "notes": "I tried to compile etl under my linux virtual machine and it worked I used my system one ogg libs.",
+            "created_on": "2015-07-06T10:48:57Z",
+            "details": []
+        },
+        {
+            "id": 4958,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "RaFaL wrote:\r\n> I tried to compile etl under my linux virtual machine and it worked I used my system one ogg libs.\r\n\r\nThis is only an issue when using embedded libs. Compiling with libogg/libvorbis will succeed. However, the official Linux release is compiled as static only.",
+            "created_on": "2015-07-06T11:05:09Z",
+            "details": []
+        },
+        {
+            "id": 4965,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "I updated libogg lib with some upstream patches. Now I can successfully build bundled ogg/vorbis on my Linux with recent automake (1.13 was required before, and newer version didn't work).\r\n\r\nTo fix Travis, we now only need to provide a recent automake in 64 bits. Latest Debian should work as it is shipped with automake 1.14.",
+            "created_on": "2015-07-13T14:38:59Z",
+            "details": []
+        },
+        {
+            "id": 4967,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "I've got a new error with latest master (lib path is updated):\r\n\r\n<pre>\r\ncanning dependencies of target bundled_ogg\r\n[ 17%] Generating ../libs/ogg/src/.libs/libogg.a\r\nmake[3]: *** Keine Regel, um \u00bbclean\u00ab zu erstellen.  Schluss.\r\nUpdating build configuration files for libogg, please wait....\r\nlibtoolize: putting auxiliary files in `.'.\r\nlibtoolize: copying file `./ltmain.sh'\r\nlibtoolize: putting macros in `m4'.\r\nlibtoolize: copying file `m4/libtool.m4'\r\nlibtoolize: copying file `m4/ltoptions.m4'\r\nlibtoolize: copying file `m4/ltsugar.m4'\r\nlibtoolize: copying file `m4/ltversion.m4'\r\nlibtoolize: copying file `m4/lt~obsolete.m4'\r\nlibtoolize: Consider adding `AC_CONFIG_MACRO_DIR([m4])' to configure.ac and\r\nlibtoolize: rerunning libtoolize, to keep the correct libtool macros in-tree.\r\nconfigure.ac:6: error: possibly undefined macro: AC_CONFIG_MACRO_DIRS\r\n      If this token and others are legitimate, please use m4_pattern_allow.\r\n      See the Autoconf documentation.\r\nautoreconf: /usr/bin/autoconf failed with exit status: 1\r\nmake[2]: *** [../libs/ogg/src/.libs/libogg.a] Fehler 1\r\nmake[1]: *** [CMakeFiles/bundled_ogg.dir/all] Fehler 2\r\nmake: *** [all] Fehler 2\r\n</pre>",
+            "created_on": "2015-07-14T14:40:50Z",
+            "details": []
+        },
+        {
+            "id": 4969,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Could you provide the version of automake, autoconf, m4 and libtoolize you're using?\r\nAlso, you might need pkg-config installed too.",
+            "created_on": "2015-07-14T14:49:17Z",
+            "details": []
+        },
+        {
+            "id": 4970,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Both 32 and 64 bit builds create this error.\r\n\r\nHere are the default versions of current Debian stable:\r\n- automake (GNU automake) 1.11.6\r\n- autoconf (GNU Autoconf) 2.69\r\n- m4 (GNU M4) 1.4.16\r\n\r\n pkg-config 0.26 and :i386 are installed.",
+            "created_on": "2015-07-14T15:14:33Z",
+            "details": []
+        },
+        {
+            "id": 4971,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Seems you're still using Debian 7 (wheezy). Current stable ships the newer \"automake 1.14\":https://packages.debian.org/jessie/automake.",
+            "created_on": "2015-07-14T15:49:17Z",
+            "details": []
+        },
+        {
+            "id": 4976,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Allright. I did fix that. My current error with bundled libs is this:\r\n<pre>\r\nScanning dependencies of target bundled_ogg_vorbis_file\r\n[ 17%] Generating ../libs/vorbis/lib/.libs/libvorbisfile.a\r\nmake[3]: *** No rule to make target 'clean'.  Schluss.\r\nchecking build system type... x86_64-unknown-linux-gnu\r\nchecking host system type... x86_64-unknown-linux-gnu\r\nchecking target system type... x86_64-unknown-linux-gnu\r\n\r\n...\r\n\r\nchecking for OGG... no\r\nchecking for Ogg... yes\r\nchecking for oggpack_writealign... no\r\nconfigure: error: Ogg >= 1.0 required !\r\nCMakeFiles/bundled_ogg_vorbis_file.dir/build.make:51: recipe for target '../libs/vorbis/lib/.libs/libvorbisfile.a' failed\r\nmake[2]: *** [../libs/vorbis/lib/.libs/libvorbisfile.a] Error 1\r\nCMakeFiles/Makefile2:285: recipe for target 'CMakeFiles/bundled_ogg_vorbis_file.dir/all' failed\r\nmake[1]: *** [CMakeFiles/bundled_ogg_vorbis_file.dir/all] Error 2\r\nMakefile:137: recipe for target 'all' failed\r\n</pre>\r\n\r\nOdd ...\r\n\r\n1.) I've had a look at libs/CMakeLists.txt and this file seems a bit messed.  In line 6 there is if(WIN32). The following lines are in scope of that condition (UNIX starts at line 347):\r\n- line 181 if(NOT WIN32) .. doesn't make sense to me\r\n- line 196 if(WIN64) ... is WIN32 also WIN64?\r\n- line 228 IF(\"${CMAKE_SYSTEM_NAME}\" STREQUAL \"Linux\") .. inside scope of if(WIN32) ?!\r\n\r\n2.)  As I can see travis has also issues with ogg/vorbis. The above error seems to be caused by \r\n<pre>\r\n\t\tadd_custom_command(\r\n\t\t\tOUTPUT ${CMAKE_CURRENT_LIST_DIR}/vorbis/lib/.libs/libvorbisfile.a\r\n\t\t\tCOMMAND make clean || true\r\n\t\t\tCOMMAND ${CROSS_COMPILE32_FLAGS} ./configure --disable-oggtest && make\r\n\t\t\tWORKING_DIRECTORY ${CMAKE_CURRENT_LIST_DIR}/vorbis\r\n\t\t)\r\n</pre>\r\n\r\nWe probably have to pass --with-ogg=<OUR_BUNDLED_LIB_PATH>\r\nSee http://lists.xiph.org/pipermail/vorbis/2004-February/024821.html\r\n\r\nGonna have a closer look tonight ...",
+            "created_on": "2015-07-16T09:15:13Z",
+            "details": []
+        },
+        {
+            "id": 4977,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2015-07-16T09:16:28Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Update Lua to version 5.3",
+                    "new_value": "Update Lua to version 5.3 / Fix bundled lib issues"
+                },
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "17",
+                    "new_value": "12"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "80"
+                }
+            ]
+        },
+        {
+            "id": 4978,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Fix to lib rep committed. Debian should build latest master again.\r\n\r\nNew warnings:\r\n<pre>\r\netlegacy/src/game/g_lua.c: In function \u2018_et_gentity_get\u2019:\r\netlegacy/src/game/g_lua.c:1387:24: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]\r\n   lua_pushinteger(L, (*(int *)(addr + (sizeof(int) * luaL_optinteger(L, 3, 0)))));\r\n                        ^\r\netlegacy/src/game/g_lua.c:1393:23: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]\r\n   lua_pushnumber(L, (*(float *)(addr + (sizeof(int) * luaL_optinteger(L, 3, 0)))));\r\n                       ^\r\netlegacy/src/game/g_lua.c:1396:32: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]\r\n   _et_gentity_getweaponstat(L, (weapon_stat_t *)(addr + (sizeof(weapon_stat_t) * luaL_optinteger(L, 3, 0))));\r\n                                ^\r\n</pre>",
+            "created_on": "2015-07-16T12:16:36Z",
+            "details": []
+        },
+        {
+            "id": 4979,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Finally found a recent automake (1.14) and set it up on Travis.\r\nClang build on Travis is now fixed, but there is still an _undefined reference_ error to `dlopen', dlerror', dlsym' and 'dlclose' happening with GCC. Maybe a linker -ldl flag missing somewhere?",
+            "created_on": "2015-07-20T20:40:51Z",
+            "details": []
+        },
+        {
+            "id": 4998,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "Travis has been fixed (incidentally when fixing mingw-w64 support, see #665).",
+            "created_on": "2015-07-23T21:59:12Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "80",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 5002,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "See #811#note-6. Closed.",
+            "created_on": "2015-07-24T05:22:30Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 842,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "assigned_to": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 12,
+        "name": "General"
+    },
+    "fixed_version": {
+        "id": 17,
+        "name": "2.74"
+    },
+    "subject": "Update Lua to version 5.3 / Fix bundled lib issues",
+    "description": "As the title says ... \r\n\r\nhttp://www.lua.org/manual/5.3/readme.html",
+    "start_date": "2015-06-10",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2015-06-10T17:46:32Z",
+    "updated_on": "2015-07-24T05:22:30Z",
+    "closed_on": "2015-07-24T05:22:30Z"
+}

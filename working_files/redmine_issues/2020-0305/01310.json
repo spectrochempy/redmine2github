@@ -1,0 +1,98 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 447,
+            "issue_id": 1308,
+            "issue_to_id": 1310,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 8523,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-11-09T14:42:55Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1308"
+                }
+            ]
+        },
+        {
+            "id": 8547,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2019-11-25T18:07:11Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "When a vote is passed in warmup, it will be cancelled when the warmup ends if the vote timer isn't finished at that time even if it looks like the vote would have passed.\r\nCheck the set vote percentage limit, and approve the vote if it passed when warmup ends.",
+                    "new_value": "When a vote is passed in warmup, it will be cancelled when the warmup ends if the vote timer isn't finished at that time even if it looks like the vote would have passed.\r\nCheck the set vote percentage limit, and approve the vote if it passed when warmup ends.\r\nAlternatively, shorten the vote duration to warmup duration. This might be a much simpler/cleaner solution."
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1310,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 1,
+        "name": "New"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 140,
+        "name": "Spyhawk"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 22,
+        "name": "2.77"
+    },
+    "subject": "Successful vote cancelled when warmup ends",
+    "description": "When a vote is passed in warmup, it will be cancelled when the warmup ends if the vote timer isn't finished at that time even if it looks like the vote would have passed.\r\nCheck the set vote percentage limit, and approve the vote if it passed when warmup ends.\r\nAlternatively, shorten the vote duration to warmup duration. This might be a much simpler/cleaner solution.",
+    "start_date": "2019-06-22",
+    "done_ratio": 0,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2019-06-21T22:10:41Z",
+    "updated_on": "2019-11-25T18:07:11Z"
+}

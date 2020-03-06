@@ -1,0 +1,122 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 109,
+            "issue_id": 465,
+            "issue_to_id": 68,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 2713,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2014-01-02T13:54:53Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "68"
+                }
+            ]
+        },
+        {
+            "id": 2770,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "//INVALID\r\nSomehow my installation weirded... That is actually only a RtcW model and not present in (vanilla) ET",
+            "created_on": "2014-01-06T18:12:47Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 2771,
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "notes": "",
+            "created_on": "2014-01-06T18:18:46Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "5",
+                    "new_value": "6"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 465,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 1,
+        "name": "Bug"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "category": {
+        "id": 14,
+        "name": "Mod pak3.pk3"
+    },
+    "fixed_version": {
+        "id": 11,
+        "name": "2.71rc4"
+    },
+    "subject": "Fix faulty skull_tilt1.md3 model",
+    "description": "The skull_tilt1.md3 from models/mapobjects/skull/skull_tilt1.md3 is faulty.\r\nThe modelfile points to \"models\\mapobjects\\*S*kull\\skull.tga\"\r\nIn the editor the texture is displayed correctly, but apparently the game itself differs between small and capital letters\r\nChanging the path to \"models\\mapobjects\\*s*kull\\skull\" fixes it easily.\r\n\r\n\r\nI attached a fixed version of it again.\r\n\r\n\r\n//Category and Target version are copied from the secretdocs ticket [Bug #452]. Please feel free to change them accordingly.",
+    "start_date": "2014-01-02",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-01-02T13:28:54Z",
+    "updated_on": "2014-01-06T18:18:46Z",
+    "closed_on": "2014-01-06T18:12:47Z"
+}

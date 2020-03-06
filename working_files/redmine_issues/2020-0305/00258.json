@@ -1,0 +1,221 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "6f6e09910d56008bbe279ffb27e01c6a0b017ea0",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: g_mapscriptdirectory introduced refs #258",
+            "committed_on": "2013-03-18T09:05:36Z"
+        },
+        {
+            "revision": "61f5486d8f6195348bf43674fd9b8a8ce2194c82",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: ETPro mapscripting fixes refs #258 refs #180",
+            "committed_on": "2013-04-14T07:51:20Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 1341,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-03-18T09:16:25Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "new_value": "16"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "4"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "new_value": "3"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "new_value": "7"
+                }
+            ]
+        },
+        {
+            "id": 1342,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-03-18T09:16:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "90"
+                }
+            ]
+        },
+        {
+            "id": 1372,
+            "user": {
+                "id": 110,
+                "name": "Harlekin"
+            },
+            "notes": "Enable spawning!\r\n********************\r\nERROR: SV_SetBrushModel: NULL\r\n********************\r\n----- Server Shutdown -----",
+            "created_on": "2013-03-19T20:42:24Z",
+            "details": []
+        },
+        {
+            "id": 1373,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Harle, attach the used script.",
+            "created_on": "2013-03-19T21:13:20Z",
+            "details": []
+        },
+        {
+            "id": 1376,
+            "user": {
+                "id": 110,
+                "name": "Harlekin"
+            },
+            "notes": "Used the scripts that come with etpro 3.2.6",
+            "created_on": "2013-03-20T15:12:51Z",
+            "details": [
+                {
+                    "property": "attachment",
+                    "name": "143",
+                    "new_value": "battery.script"
+                }
+            ]
+        },
+        {
+            "id": 1539,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "The above error shouldn't occure anymore. Time to load more custom scipts - g_mapscriptdirectory CVAR itself works as expected.",
+            "created_on": "2013-04-14T08:00:09Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "subject",
+                    "old_value": "Server: b_mapscriptdirectory",
+                    "new_value": "Server: g_mapscriptdirectory / ETPro scripting issues"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "4",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "assigned_to_id",
+                    "old_value": "3",
+                    "new_value": "110"
+                },
+                {
+                    "property": "attr",
+                    "name": "priority_id",
+                    "old_value": "3",
+                    "new_value": "4"
+                }
+            ]
+        },
+        {
+            "id": 1540,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-04-14T08:00:17Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "90",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [
+        {
+            "id": 110,
+            "name": "Harlekin"
+        }
+    ],
+    "time_entries": null,
+    "id": 258,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 110,
+        "name": "Harlekin"
+    },
+    "assigned_to": {
+        "id": 110,
+        "name": "Harlekin"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 7,
+        "name": "2.71rc2"
+    },
+    "subject": "Server: g_mapscriptdirectory / ETPro scripting issues",
+    "description": "b_mapscriptdirectory - etpro style custom map scripts. most popular: Battery Backdoor dynamitable & Fueldump CP Spawn",
+    "start_date": "2013-03-17",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS"
+        },
+        {
+            "id": 2,
+            "name": "Arch"
+        }
+    ],
+    "created_on": "2013-03-17T22:35:38Z",
+    "updated_on": "2013-04-14T08:00:17Z",
+    "closed_on": "2013-04-14T08:00:09Z"
+}

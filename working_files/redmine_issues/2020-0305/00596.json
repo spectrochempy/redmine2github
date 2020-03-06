@@ -1,0 +1,106 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": null,
+    "changesets": [
+        {
+            "revision": "76b69e858592e1333395505c1e02375b0958918f",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: inform user about sucess of igore/unignore refs #596",
+            "committed_on": "2014-10-09T19:19:50Z"
+        },
+        {
+            "revision": "231730cea58f70bd3f35082132f21d0ed74b2558",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "game: players cmds extended - print ignore & muted player info refs #596",
+            "committed_on": "2014-10-23T19:47:13Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 3574,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Info about muted or ignored client is available with /players command now. I think it does make more sense to have this info centralized. /ignore with no parameter should just print the usage. Keep it simple.",
+            "created_on": "2014-10-23T17:48:49Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "5"
+                },
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 596,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 5,
+        "name": "Fixed"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 90,
+        "name": "Saukko"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 6,
+        "name": "2.71"
+    },
+    "subject": "Show a text when \\ignore someone",
+    "description": "So what I basically would like to see how \\ignore and \\unignore handles this stuff... Here are my suggestions:\r\n\r\n1. When you \\ignore or \\unignore, it should only tell you that you are (un)ignoring the person you just (un)ignored\r\n2. There should be list of the players you can unignore when doing just \\unignore in console\r\n\r\nBecause now it basically doesn't inform you when you have ignored someone.\r\n\r\n-*S",
+    "start_date": "2014-10-09",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2014-10-09T11:44:51Z",
+    "updated_on": "2014-10-23T17:48:49Z",
+    "closed_on": "2014-10-23T17:48:49Z"
+}

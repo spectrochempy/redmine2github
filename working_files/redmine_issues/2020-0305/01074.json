@@ -1,0 +1,168 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 360,
+            "issue_id": 1074,
+            "issue_to_id": 1073,
+            "relation_type": "relates",
+            "delay": null
+        },
+        {
+            "id": 361,
+            "issue_id": 1074,
+            "issue_to_id": 907,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [],
+    "journals": [
+        {
+            "id": 7108,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2018-02-21T15:21:35Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "1073"
+                }
+            ]
+        },
+        {
+            "id": 7110,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "",
+            "created_on": "2018-02-21T15:21:46Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "907"
+                }
+            ]
+        },
+        {
+            "id": 7114,
+            "user": {
+                "id": 256,
+                "name": "keMoN"
+            },
+            "notes": "The description field can use line-breaks with *\\n*.\r\nIf proper line-breaks are used the description is aligned correctly.\r\n\r\nTranslators should therefore use line-breaks to keep it readable and ensure proper positioning of the description field.",
+            "created_on": "2018-02-22T12:47:20Z",
+            "details": []
+        },
+        {
+            "id": 7115,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-02-22T12:59:32Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "6"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "100"
+                }
+            ]
+        },
+        {
+            "id": 7116,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "Please do this for the descriptions in the menu only!",
+            "created_on": "2018-02-22T13:00:23Z",
+            "details": []
+        },
+        {
+            "id": 7201,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2018-03-30T10:00:14Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "8",
+                    "new_value": "19"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 1074,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 3,
+        "name": "Task"
+    },
+    "status": {
+        "id": 6,
+        "name": "Invalid"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 256,
+        "name": "keMoN"
+    },
+    "category": {
+        "id": 16,
+        "name": "Mod CGAME"
+    },
+    "fixed_version": {
+        "id": 19,
+        "name": "2.76"
+    },
+    "parent": {
+        "id": 1000
+    },
+    "subject": "Flexible description strings in the menus",
+    "description": "Make description fields in the menus flexible.\r\nDepending on the active translation they might increase in size and therefore move out of the screen.\r\nTheir position should always start with the upper-left corner on the mouse-cursor.\r\nAlso if they extend over a certain length, they should be changed into multiple-string fields.",
+    "start_date": "2018-02-21",
+    "done_ratio": 100,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2018-02-21T15:21:24Z",
+    "updated_on": "2018-03-30T10:00:14Z",
+    "closed_on": "2018-02-22T12:59:32Z"
+}

@@ -1,0 +1,226 @@
+{
+    "children": null,
+    "attachments": null,
+    "relations": [
+        {
+            "id": 164,
+            "issue_id": 381,
+            "issue_to_id": 372,
+            "relation_type": "relates",
+            "delay": null
+        }
+    ],
+    "changesets": [
+        {
+            "revision": "e75fa0fddc93745c7f1532e8eb0cb8eef4a8a3d7",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "mod: g_oss cvar introduced - refs #372",
+            "committed_on": "2014-12-10T15:53:59Z"
+        },
+        {
+            "revision": "dfeb5204ea71d9dbbf8a3c8f774c4f22606ff8e2",
+            "user": {
+                "id": 13,
+                "name": "RaFaL"
+            },
+            "comments": "ui: added filter showing supported operating systems by server, refs #372",
+            "committed_on": "2014-12-10T18:16:30Z"
+        },
+        {
+            "revision": "0d0c0c4b0628b33faddc6098672799c7522cd449",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "ui: bitflag checkboxes for menus refs #372",
+            "committed_on": "2014-12-13T12:15:20Z"
+        },
+        {
+            "revision": "0642d9064030fe0b89a10748c4bfd27ce0818c01",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "ui: ui_browserOssFilter cvar added refs #372",
+            "committed_on": "2014-12-13T12:36:50Z"
+        },
+        {
+            "revision": "51bb502419a0eb0e57cd4a7c51cede90f36309a3",
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "comments": "ui: filter Linux 64 added refs #372",
+            "committed_on": "2014-12-13T14:53:11Z"
+        },
+        {
+            "revision": "d19083957778e7820c14b5409f03ed82a8e00787",
+            "user": {
+                "id": 140,
+                "name": "Spyhawk"
+            },
+            "comments": "ui: replaced buggy bitflag checkbox, minor ui alignment fixes",
+            "committed_on": "2014-12-16T17:34:46Z"
+        }
+    ],
+    "journals": [
+        {
+            "id": 2111,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-10-18T17:06:10Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "It's time to think about a way to let online players know which OS (or mod binary) is supported on the server. \r\n\r\n* Parse server mod pk3s for supported OS binaries -> create a list (populate 'osFlags' - might be done while q3 gamepath is created)\r\n\r\n* Add new serverinfo cvar 'osFlags'\r\n1 - Windows\r\n2 - Linux\r\n4 - Apple\r\n8 - AROS\r\n16 - Pandora\r\n32 - MorphOS\r\n64 - Android\r\n...tbc\r\n\r\n* Add a new filter to gamebrowser\r\n\r\n",
+                    "new_value": "It's time to think about a way to let online players know which OS (or mod binary) is supported on the server. \r\n\r\n* Parse server mod pk3s for supported OS binaries -> create a list (populate 'osFlags' - might be done while q3 gamepath is created)\r\n\r\n* Add new serverinfo cvar 'osFlags'\r\n1 - Windows\r\n2 - Linux\r\n4 - Linux64\r\n8 - Apple\r\n16 - AROS\r\n32 - Pandora\r\n64 - MorphOS\r\n64 - Android\r\n...tbc\r\n\r\n* Add a new filter to gamebrowser\r\n\r\n"
+                }
+            ]
+        },
+        {
+            "id": 2112,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2013-10-18T17:07:55Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "description",
+                    "old_value": "It's time to think about a way to let online players know which OS (or mod binary) is supported on the server. \r\n\r\n* Parse server mod pk3s for supported OS binaries -> create a list (populate 'osFlags' - might be done while q3 gamepath is created)\r\n\r\n* Add new serverinfo cvar 'osFlags'\r\n1 - Windows\r\n2 - Linux\r\n4 - Linux64\r\n8 - Apple\r\n16 - AROS\r\n32 - Pandora\r\n64 - MorphOS\r\n64 - Android\r\n...tbc\r\n\r\n* Add a new filter to gamebrowser\r\n\r\n",
+                    "new_value": "It's time to think about a way to let online players know which OS (or mod binary) is supported on the server. \r\n\r\n* Parse server mod pk3s for supported OS binaries -> create a list (populate 'osFlags' - might be done while q3 gamepath is created)\r\n\r\n* Add new serverinfo cvar 'osFlags'\r\n1 - Windows\r\n2 - Linux\r\n4 - Linux64\r\n8 - Apple\r\n16 - AROS\r\n32 - Pandora\r\n64 - MorphOS\r\n128 - Android\r\n...tbc\r\n\r\n* Add a new filter to gamebrowser\r\n\r\n"
+                }
+            ]
+        },
+        {
+            "id": 4003,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-12-06T10:47:55Z",
+            "details": [
+                {
+                    "property": "relation",
+                    "name": "relates",
+                    "new_value": "381"
+                }
+            ]
+        },
+        {
+            "id": 4028,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "g_oss (os support) cvar has been added.\r\n\r\n{FIXME}\r\n- add a filter to server browser\r\n- auto setup this cvar & parse the binaries in path (atm admins have to set this cvar explicitly)\r\n- add a warning when client tries to connect a server with unsupported os ",
+            "created_on": "2014-12-10T16:09:48Z",
+            "details": []
+        },
+        {
+            "id": 4055,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-12-13T12:42:38Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "category_id",
+                    "old_value": "5",
+                    "new_value": "21"
+                },
+                {
+                    "property": "attr",
+                    "name": "status_id",
+                    "old_value": "1",
+                    "new_value": "2"
+                },
+                {
+                    "property": "attr",
+                    "name": "done_ratio",
+                    "old_value": "0",
+                    "new_value": "50"
+                }
+            ]
+        },
+        {
+            "id": 4191,
+            "user": {
+                "id": 3,
+                "name": "IR4T4"
+            },
+            "notes": "",
+            "created_on": "2014-12-21T12:40:25Z",
+            "details": [
+                {
+                    "property": "attr",
+                    "name": "fixed_version_id",
+                    "old_value": "6",
+                    "new_value": "8"
+                }
+            ]
+        }
+    ],
+    "watchers": [],
+    "time_entries": null,
+    "id": 372,
+    "project": {
+        "id": 1,
+        "name": "ET: Legacy Development"
+    },
+    "tracker": {
+        "id": 2,
+        "name": "Feature"
+    },
+    "status": {
+        "id": 2,
+        "name": "In Progress"
+    },
+    "priority": {
+        "id": 4,
+        "name": "Normal"
+    },
+    "author": {
+        "id": 3,
+        "name": "IR4T4"
+    },
+    "category": {
+        "id": 21,
+        "name": "Mod generic"
+    },
+    "fixed_version": {
+        "id": 8,
+        "name": "2.78"
+    },
+    "subject": "Let the server show supported client OS",
+    "description": "It's time to think about a way to let online players know which OS (or mod binary) is supported on the server. \r\n\r\n* Parse server mod pk3s for supported OS binaries -> create a list (populate 'osFlags' - might be done while q3 gamepath is created)\r\n\r\n* Add new serverinfo cvar 'osFlags'\r\n1 - Windows\r\n2 - Linux\r\n4 - Linux64\r\n8 - Apple\r\n16 - AROS\r\n32 - Pandora\r\n64 - MorphOS\r\n128 - Android\r\n...tbc\r\n\r\n* Add a new filter to gamebrowser\r\n\r\n",
+    "start_date": "2013-10-18",
+    "done_ratio": 50,
+    "custom_fields": [
+        {
+            "id": 1,
+            "name": "OS",
+            "value": ""
+        },
+        {
+            "id": 2,
+            "name": "Arch",
+            "value": ""
+        }
+    ],
+    "created_on": "2013-10-18T10:58:17Z",
+    "updated_on": "2014-12-21T12:40:25Z"
+}
