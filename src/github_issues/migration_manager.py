@@ -208,11 +208,11 @@ class MigrationManager:
                 time.sleep(1)
 
 if __name__=='__main__':
-    json_input_directory = os.path.join(REDMINE_ISSUES_DIRECTORY, '2020-0227')
+    json_input_directory = os.path.join(REDMINE_ISSUES_DIRECTORY, '2020-0305')
 
     kwargs = dict(include_comments=True\
                 , redmine_issue_start_number=1\
-                , redmine_issue_end_number=5000\
+                , redmine_issue_end_number=1400\
                 , user_mapping_filename=USER_MAP_FILE       # optional
                 , include_assignee=False    # Optional. Assignee must be in the github repo and USER_MAP_FILE above
                 , label_mapping_filename=LABEL_MAP_FILE     # optional
