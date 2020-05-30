@@ -1,4 +1,8 @@
 pygithub33>=0.6.2
 python-redmine==0.8.2
 Jinja2>=2.7.3
+<<<<<<< HEAD
 requests>=2.4
+=======
+requests==2.20.0
+>>>>>>> 787c83b28cc30c1fe80a43f0456be39be54aa890
