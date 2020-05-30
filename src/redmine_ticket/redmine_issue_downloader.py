@@ -105,7 +105,7 @@ class RedmineIssueDownloader:
             msg('Data from request (as text): %s' % r.text)
             raise Exception('Failed to convert issue count data to JSON.\nUrl: %s\nAuth:%s" % (url, auth)')
 
-        if 'total_count' not in data:
+        if not data.has_key('total_count'):
             msgx('Total count not found in data: \n[%s]' % data)
 
         return data['total_count']
@@ -280,7 +280,7 @@ print (data['total_count'])
         :returns: json string with issue information
         """
         # test using .issue.get
-        issue = self.redmine_conn.issue.get(issue_id, include='children,journals,watchers,relations,changesets')
+        issue = self.redmine_conn.issue.get(issue_id, include='children,attachments,journals,watchers,relations,changesets')
         json_str = json.dumps(issue._attributes, indent=4)
         msg('Issue retrieved: %s' % issue_id)
         return json_str
