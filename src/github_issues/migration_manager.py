@@ -234,27 +234,31 @@ class MigrationManager:
                          , 'include_comments' : self.include_comments \
                          , 'include_attachments' : self.include_attachments \
                         }
-            github_issue_number = gm.make_github_issue(json_fname_fullpath, **gm_kwargs)
+
+            try:
+                github_issue_number = gm.make_github_issue(json_fname_fullpath, **gm_kwargs)
         
-            if github_issue_number:
-                mapping_dict.update({ redmine_issue_num : github_issue_number})
-                self.save_dict_to_file(mapping_dict)
-        
-            if issue_cnt % 50 == 0:
-                msgt('sleep 1 seconds....')
-                time.sleep(1)
+                if github_issue_number:
+                    mapping_dict.update({ redmine_issue_num : github_issue_number})
+                    self.save_dict_to_file(mapping_dict)
+
+                if issue_cnt % 50 == 0:
+                    msgt('sleep 1 seconds....')
+                    time.sleep(1)
+            except:
+                print(f"\n\n\t\t\tERROR WITH '{json_fname}'\n\n\n")
 
 if __name__=='__main__':
-    json_input_directory = os.path.join(REDMINE_ISSUES_DIRECTORY, '2020-0305')
+    json_input_directory = os.path.join(REDMINE_ISSUES_DIRECTORY, '2020-0530')
 
     kwargs = dict(include_comments=True\
                 , redmine_issue_start_number=1\
-                , redmine_issue_end_number=1400\
+                , redmine_issue_end_number=75\
                 , user_mapping_filename=USER_MAP_FILE       # optional
-                , include_assignee=False    # Optional. Assignee must be in the github repo and USER_MAP_FILE above
+                , include_assignee=True    # Optional. Assignee must be in the github repo and USER_MAP_FILE above
                 , include_attachments=True                  # optional
                 , label_mapping_filename=LABEL_MAP_FILE     # optional
-                , milestone_mapping_filename=MILESTONE_MAP_FILE # optional
+                #, milestone_mapping_filename=MILESTONE_MAP_FILE # optional
             )
     mm = MigrationManager(json_input_directory\
                             , REDMINE_TO_GITHUB_MAP_FILE\
@@ -263,7 +267,9 @@ if __name__=='__main__':
     #-------------------------------------------------
     # Run 1 - migrate issues from redmine to github
     #-------------------------------------------------
+    print('started')
     mm.migrate_issues()
+    print('end od process')
 
     #-------------------------------------------------
     # Run 2 - Using the issues maps created in Run 1 (redmine issue num -> new github issue num),

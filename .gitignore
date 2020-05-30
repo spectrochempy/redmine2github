@@ -60,3 +60,4 @@ coverage.xml
 docs/_build/
 
 *.orig
+!/src/settings/user_map.csv
